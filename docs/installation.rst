@@ -127,6 +127,7 @@ make sure you have installed version 4.0.200 or higher
       :width: 600
       :alt: Installation interface step 01
 
+.. _installation_step_1:
 
 Step 1 (Addon Activation)
 **************************
@@ -340,6 +341,7 @@ So all downloaded materials will remain as such, the installation process can be
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _move_license_to_another_computer:
 
 Move license to another Computer
 --------------------------------
@@ -374,7 +376,30 @@ and press “Activate on this computer”. If everything is right, the key icon 
 
 
 
+Migrate On Other Computer/Blender Version
+-----------------------------------------
 
+To migrate to another computer:
+Install Extreme PBR on the other computer, Follow this guide from :ref:`installation_step_1`, you just need to install the single addon without the libraries.
+
+If you had already installed the libraries on computer n1, You can move libraries via an External Hard Drive, It will be sufficient to move the 2 main folders of the Extreme PBR libraries EXTREME_PBR_DEFAULT_LIB and EXTREME_PBR_USER_LIB to computer n2
+
+At this point you will only have to indicate the path in Library Manager:
+
+
+.. image:: _static/_images/installation/extreme_pbr_menu_library_manager_01.jpg
+        :align: center
+        :width: 800
+        :alt: Extreme PBR Menu Library Manager
+
+
+Activate on another computer
+----------------------------
+
+If you want to activate Extreme PBR on computer n2, you will need to move the license to computer n2
+
+
+Here is the section to activate the license on another computer: :ref:`move_license_to_another_computer`
 
 
 
