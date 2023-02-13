@@ -6,6 +6,11 @@
 Welcome to Extreme PBR's documentation!
 =======================================
 
+.. image:: _static/_images/arts/pastrokkio_baloon.png
+      :align: center
+      :width: 800
+      :alt: Unistall example panel
+
 .. toctree::
    :maxdepth: 4
    :caption: Get started:
