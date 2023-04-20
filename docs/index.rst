@@ -27,6 +27,14 @@ Welcome to Extreme PBR's documentation!
 
 
 .. toctree::
+   :maxdepth: 4
+   :caption: FAQs & Troubleshooting:
+
+   faqs
+   bugreport_info
+
+
+.. toctree::
     :maxdepth: 4
     :caption: Changelog:
 
