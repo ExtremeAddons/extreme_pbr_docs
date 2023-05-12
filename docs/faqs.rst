@@ -99,7 +99,7 @@ Are there any video tutorials?
 Yes, on my channel you will find some useful videos, I suggest you subscribe to the channel and activate the bell to
 receive notifications: https://www.youtube.com/watch?v=3UCpnJ9i8qk&list=PL7TaxhAdM_6lNOftiPMJes0rLTDB51I2v&index=2
 
-------------------------------------------------------------------------------------------------------------------------
+
 
 
 
