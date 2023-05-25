@@ -25,6 +25,13 @@ Welcome to Extreme PBR's documentation!
    preferences
 
 
+.. toctree::
+   :maxdepth: 4
+   :caption: Tutorials:
+
+   video_tutorials
+
+
 
 .. toctree::
    :maxdepth: 4

@@ -39,7 +39,6 @@ In any case I have inserted in each Material the type of license of use. This ca
 "Info" as in the image below, a popup opens, and from there you can see the type of license of use.
 
 
-
 ------------------------------------------------------------------------------------------------------------------------
 
 
@@ -98,7 +97,6 @@ Are there any video tutorials?
 
 Yes, on my channel you will find some useful videos, I suggest you subscribe to the channel and activate the bell to
 receive notifications: https://www.youtube.com/watch?v=3UCpnJ9i8qk&list=PL7TaxhAdM_6lNOftiPMJes0rLTDB51I2v&index=2
-
 
 
 ------------------------------------------------------------------------------------------------------------------------

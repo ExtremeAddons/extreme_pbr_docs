@@ -1,6 +1,15 @@
 Updates Log
 ===========
 
+4.0.206
+-------
+
+**Release date: 10-05-2023 (D/M/Y)**
+
+- **Patch - Previews Disappear into Blender 3.6 alpha**
+
+    Using Blender 3.6 Alpha, for some reason it damages the preview images of the materials, once damaged, not even using another version of Blender will be displayed correctly. I added a button in Options (Patch Preview) that should solve the problem by regenerating the previews that are no longer displayed
+
 4.0.205
 -------
 

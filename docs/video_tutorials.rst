@@ -1,0 +1,210 @@
+Tutorials
+=========
+
+Here a series of tutorials on how to use HDRi Maker, I strongly recommend you to subscribe to the channel to stay updated
+on new tutorials and news.
+
+
+.. Tip:: At the moment all the video tutorials are on my youtube channel, I strongly recommend you to subscribe to stay updated on new tutorials and news.
+         Also activate the bell to receive a notification when I publish a new video.
+
+         .. image:: _static/_images/logos/yt_logo_rgb_light.png
+                  :align: center
+                  :width: 300
+                  :alt: Addon zipped 01
+
+         |
+
+         This is the link to my official channel on Youtube: https://www.youtube.com/channel/UCe5vB8ehr9hrQrYvfCb8j9w
+
+
+
+.. _installation_tutorial_01:
+
+Installation
+-----------------
+
+
+Here's how to install the version of Extreme PBR before version 4.1.100
+
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/YtqJbMsp2XU" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Displacement
+-----------------
+
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/onDYhvu-nco" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Material Editor
+-----------------
+
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/SPLF1PJ2zmc" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Texture Paint
+-----------------
+
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/indoam-dITI" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Fx Layers
+-----------------
+
+
+..  raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/FtNYGoMtgjg" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Add Remove Replace Materials
+--------------------------------
+
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/_LtwxkxU5aU" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+Fx Dynamic Mask Types
+--------------------------
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/9NLzTwFU3B0" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Multiple Displacement Modifier
+--------------------------------
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/U_ZwEf8uo3w" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Create your PBR Material
+--------------------------
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/mCeNkTVWh3w" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Fx Layer Masks
+--------------------------
+
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/J6wYJPAIZrQ" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Materials Tag & Search System
+--------------------------------
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/QpjSb8Jvjy4" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Car Paint Material
+--------------------------
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DLS-9YdiI1k" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+How to self update the addon Core (Only for version prior to 4.1.100)
+-----------------------------------------------------------------------
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6j3OEDXp21A" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
