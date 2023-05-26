@@ -1,0 +1,151 @@
+Troubleshooting
+===============
+
+In this section there are some tips to solve known problems.
+This section will be updated over time based on the major problems encountered by users.
+Problems related to HDRi Maker bugs are usually solved. Here are some of the most common problems.
+Question and answer
+
+
+I do not receive mail from BlenderMarket
+-----------------------------------------
+
+Make sure you consented to receive emails from creators in your Blender Market account preferences:
+https://blendermarket.com/account/privacy-center/consents
+
+------------------------------------------------------------------------------------------------------------------------
+
+Find Options Menu
+------------------
+
+To go to the HDRi Maker options, you have to go to the addon preferences. But to make this process easier there is
+a button directly in the HDRi Maker interface:
+
+.. image:: _static/_images/troubleshooting/options_button_01.png
+    :align: center
+    :width: 200
+    :alt: Options Button 01
+
+------------------------------------------------------------------------------------------------------------------------
+
+Pink Background
+---------------
+
+If you find yourself in a situation of background or Dome with Pink color, this means in 99% of cases that the image
+to which the background refers is no longer linked to the project.
+
+.. image:: _static/_images/troubleshooting/pink_background_01.png
+    :align: center
+    :width: 600
+    :alt: Pink Background 01
+
+
+To solve the problem, go to the HDRi Maker options and click on the "Find Lost Images" button
+
+.. image:: _static/_images/troubleshooting/find_lost_images_01.png
+    :align: center
+    :width: 600
+    :alt: Find Lost Images 01
+
+A file search window will open. Indicate the path where the HDRi Maker library is located or where you think
+that the file you are looking for may be. Once the path is indicated, click on "Find Missing Files".
+
+The search will be performed in the indicated path and in all subfolders.
+
+**Note**: The process may take a while, depending on the number of files in the library.
+
+
+.. image:: _static/_images/troubleshooting/find_missing_files_01.png
+    :align: center
+    :width: 600
+    :alt: Find Missing Files 01
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Black Background
+----------------
+
+In this case there may be a problem when creating a file in a newer version of Blender, and then after saving the project
+it is opened in a previous version of Blender.
+
+Sometimes Blender updates its nodes, so it may be that the nodes are no longer retro compatible with the previous version.
+To solve this I have provided a function that tries to replace the "Unknown" nodes
+
+You can find it in the HDRi Maker Options menu:
+
+.. image:: _static/_images/troubleshooting/fix_unknown_nodes_01.png
+    :align: center
+    :width: 600
+    :alt: Fix Unknown Nodes 01
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Moving libraries to another computer
+------------------------------------
+
+To move the libraries to another computer, just copy the "EXTREME_PBR_DEFAULT_LIB" and "EXTREME_PBR_USER_LIB" folders
+
+
+If once connected the libraries from the "Libraries" menu in HDRi Maker preferences the addon does not work,
+it could be that in the folders mentioned above, the "._data" folders are missing, so make sure they are inside each library.
+
+.. image:: _static/_images/troubleshooting/data_folder.png
+    :align: center
+    :width: 600
+    :alt: Data Folder
+
+- **To Show the hidden folders in Windows:**
+
+    1. Open File Explorer from the application bar.
+    2. Select View > Options > Modify folder and search options.
+    3. Select the View tab and in Advanced settings, select Show hidden folders, files and drives and OK.
+
+- **To Show the hidden folders in Mac:**
+
+    1. Access the folder where you think there are hidden files.
+    2. Step 2: Press the keys "Command + Shift + (.)"
+
+    Or:
+
+    1. In Finder, open up your Macintosh HD folder
+    2. Press Command+Shift+Dot
+    3. Your hidden files will become visible. Repeat step 2 to hide them again!
+
+- **To Show the hidden folders in Linux:**
+
+    Press the menu button in the top-right corner of the window and select Show Hidden Files, or press Ctrl+H.
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Why if I export the project to another computer I can no longer see the materials?
+****************************************************************************************
+
+This is quite normal, by default blender does not package images in .blend files, to do this you have to go to
+
+- File > External Data > Automatically Pack Resources
+
+Then save the project, and finally you can move it to any other computer. It will contain all the images you used.
+
+Pay attention to this, because your .blend files after these operations will contain all the image files present
+in your project is present an image of 100MB (For example) your .blend file will become 100MB more.
+
+
+.. image:: _static/_images/troubleshooting/auto_pack_resources_01.png
+    :align: center
+    :width: 600
+    :alt: Auto Pack Resources 01
+
+
+
+
+
+
+
+
+
+
+

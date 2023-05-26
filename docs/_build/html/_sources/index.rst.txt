@@ -32,12 +32,12 @@ Welcome to Extreme PBR's documentation!
    video_tutorials
 
 
-
 .. toctree::
    :maxdepth: 4
    :caption: FAQs & Troubleshooting:
 
    faqs
+   troubleshooting
    bugreport_info
 
 
