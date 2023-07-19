@@ -1,6 +1,15 @@
 Updates Log
 ===========
 
+4.0.207
+-------
+
+**Release date: 05-07-2023 (D/M/Y)**
+
+- **Patch - Stuck during the material download phase**
+
+    During the download phase an error was raised during the execution of os.remove() of the file 'exa_files.json' this blocked the dowload. Now an exception in case 'exa_files.json' does not exist, no longer raises errors as it is checked with os.path.isfile ()
+
 4.0.206
 -------
 
