@@ -11,6 +11,23 @@ Welcome to Extreme PBR's documentation!
       :width: 800
       :alt: Unistall example panel
 
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+.. tip::
+     Most of the buttons and properties of Extreme PBR are documented with a Tooltip and a direct link to the documentation.
+     Just press the right mouse button on a button or property to display the link to the documentation:
+
+
+    .. image:: _static/_images/undocumented/online_manual.png
+          :align: center
+          :width: 300
+          :alt: online manual
+
+------------------------------------------------------------------------------------------------------------------------
+
+
 .. toctree::
    :maxdepth: 4
    :caption: Get started:
