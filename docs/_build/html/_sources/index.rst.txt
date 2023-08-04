@@ -39,6 +39,7 @@ Welcome to Extreme PBR's documentation!
    :maxdepth: 4
    :caption: Interface and functions:
 
+   main_panel
    preferences
 
 
