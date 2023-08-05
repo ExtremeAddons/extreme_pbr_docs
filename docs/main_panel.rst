@@ -150,7 +150,7 @@ Up/Down Arrow
 
 .. image:: _static/_images/main_panel/scroll_up_down_category_01.png
     :align: center
-    :width: 800
+    :width: 200
     :alt: Up/Down Arrow
 
 
@@ -163,7 +163,7 @@ Left/Right Arrow
 
 .. image:: _static/_images/main_panel/scroll_left_right_material_01.png
     :align: center
-    :width: 800
+    :width: 200
     :alt: Left/Right Arrow
 
 
@@ -176,7 +176,7 @@ Open Options
 
 .. image:: _static/_images/main_panel/open_options_button_01.png
     :align: center
-    :width: 800
+    :width: 400
     :alt: Open Options
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -189,7 +189,7 @@ Reload Preview Icons
 
 .. image:: _static/_images/main_panel/reload_preview_icons_01.png
     :align: center
-    :width: 800
+    :width: 400
     :alt: Reload Preview Icons
 
 
@@ -237,6 +237,12 @@ Search Background by entering text
 
    - This allows you to search for a background by typing the name of the background (It work with the tag Restrictions if you need)
 
+.. note::
+    This function will search for all the materials in the selected library, it will exclude the non-selected libraries, so make sure
+    to search in the right library via the "Libraries selector" drop-down menu
+
+|
+
 .. image:: _static/_images/main_panel/search_background_dropdown_01.png
     :align: center
     :width: 600
@@ -255,7 +261,7 @@ Info & Tag
 .. image:: _static/_images/main_panel/info_tag_panel_popup_01.png
     :align: center
     :width: 600
-    :alt: Info & Tag Panel
+    :alt: Info Tag Panel Popup 01
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -269,7 +275,7 @@ Show info
 .. image:: _static/_images/main_panel/show_info_panel_01.png
     :align: center
     :width: 600
-    :alt: Show info
+    :alt: Show info panel 01
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -286,7 +292,7 @@ Edit Tags
 .. image:: _static/_images/main_panel/edit_tags_01.png
     :align: center
     :width: 600
-    :alt: Edit Tags
+    :alt: Edit Tags 01
 
 |
 
@@ -306,7 +312,7 @@ Material Version Selector
 .. image:: _static/_images/main_panel/material_version_selector_01.png
     :align: center
     :width: 400
-    :alt: Material Version Selector
+    :alt: Material Version Selector 01
 
 |
 
@@ -319,29 +325,132 @@ Material Version Selector
 
 .. _add_remove_buttons:
 
-Add Remove Buttons
-------------------
+Add Replace Remove Buttons
+---------------------------
 
-    - Add (From the preview) / Remove (From the scene) buttons
+    - Add (From the preview) / Replace active material / Remove active Material buttons
 
 
-..
-    .. image:: _static/_images/main_panel/add_remove_buttons_01.png
-        :align: center
-        :width: 300
-        :alt: Add Remove Buttons
+.. image:: _static/_images/main_panel/add_replace_remove_01.png
+    :align: center
+    :width: 800
+    :alt:  Add Replace Remove Buttons 01
+
+
+|
+
+    - In Edit Mode, other buttons will be added
+
+
+.. image:: _static/_images/main_panel/add_replace_remove_edit_mode_01.png
+    :align: center
+    :width: 400
+    :alt: Add Replace Remove Buttons Edit Mode 01
+
+------------------------------------------------------------------------------------------------------------------------
+
+Add New
+********
+
+.. image:: _static/_images/main_panel/add_new.png
+    :align: center
+    :width: 400
+    :alt: Add New
+
+|
+
+    - This button loads the materials and applies them to the selected object, if no object is selected, this will have no effect.
+    - If you are in Edit mode and have a face of the selected object selected, the material will be applied only to that face if there are already 1 or more materials on the object.
+
+.. note::
+    This button will always add a new material to the list of materials of the selected object, if you want to replace
+    the active material, use the **Replace** button described below
+
+------------------------------------------------------------------------------------------------------------------------
+
+Replace
+**********
+
+
+.. image:: _static/_images/main_panel/replace.png
+    :align: center
+    :width: 400
+    :alt: Replace
+
+|
+
+    - **This button will be visible only if there is one or more materials on the selected object**
+      replaces the active material (From the material list: "TODO: Mettere collegamento a material list" ) with the material in preview, if no material is selected, this will have no effect.
+
+    - If you are in Edit mode and have a face of the selected object selected, the material will be applied only to that face if there are already 1 or more materials on the object.
+
+    - **If there is some displacement active in this material, it will be removed before applying the new material**
+
+
+.. important::
+      If the material you want to replace is present on more objects in the scene, you can replace the material on all objects
+      by activating the **Replace All** option, the button will take on a different color to indicate that this option is active.
+
+      .. image:: _static/_images/main_panel/replace_all_01.png
+          :align: center
+          :width: 400
+          :alt: Replace All 01
+
+------------------------------------------------------------------------------------------------------------------------
+
+Remove
+*******
+
+.. image:: _static/_images/main_panel/remove_01.png
+    :align: center
+    :width: 400
+    :alt: Remove
+
+|
+
+    - This button removes the selected material from the material list.
+    - **If there is some displacement active in this material, it will be removed before applying the new material**
+
 
 ------------------------------------------------------------------------------------------------------------------------
 
 .. _material_list:
 
-Material List
--------------
+Material List Section
+-----------------------
 
-    - This is the list of materials that are in the current active object.
+    - In this section there are the materials that have been added to the selected object.
+      These materials can be added via the **Add** or **Replace** button.
+      The materials can be removed via the **Remove** button or replaced via the **Replace** button.
+      There are also other buttons that we will see below.
 
+.. image:: _static/_images/main_panel/material_list_zoom_01.png
+    :align: center
+    :width: 800
+    :alt: Material List Zoom 01
 
 ------------------------------------------------------------------------------------------------------------------------
+
+Active Material
+****************
+
+
+
+.. image:: _static/_images/main_panel/active_material_list.png
+    :align: center
+    :width: 400
+    :alt: Active Material list
+
+|
+
+    - This is the active material, you can select it directly with the mouse cursor, just click on it.
+
+    - With double click of the mouse you can also rename the active material
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
 
 .. _box_utility:
 

@@ -77,8 +77,16 @@
 <li class="toctree-l3"><a class="reference internal" href="#material-version-selector">Material Version Selector</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#add-remove-buttons">Add Remove Buttons</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#material-list">Material List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-replace-remove-buttons">Add Replace Remove Buttons</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#add-new">Add New</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#replace">Replace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove">Remove</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#material-list-section">Material List Section</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#active-material">Active Material</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#box-utility">Box Utility</a></li>
 </ul>
 </li>
@@ -134,8 +142,8 @@
 <li><p><a class="reference internal" href="#libraries-selector"><span class="std std-ref">Libraries selector</span></a></p></li>
 <li><p><a class="reference internal" href="#material-browser"><span class="std std-ref">Material Browser</span></a></p></li>
 <li><p><a class="reference internal" href="#tag-search-size-selector"><span class="std std-ref">Tag Search Size Selector</span></a></p></li>
-<li><p><a class="reference internal" href="#add-remove-buttons"><span class="std std-ref">Add Remove Buttons</span></a></p></li>
-<li><p><a class="reference internal" href="#material-list"><span class="std std-ref">Material List</span></a></p></li>
+<li><p><a class="reference internal" href="#add-remove-buttons"><span class="std std-ref">Add Replace Remove Buttons</span></a></p></li>
+<li><p><a class="reference internal" href="#material-list"><span class="std std-ref">Material List Section</span></a></p></li>
 <li><p><a class="reference internal" href="#box-utility"><span class="std std-ref">Box Utility</span></a></p></li>
 </ol>
 </td>
@@ -242,7 +250,7 @@ with the list of preview backgrounds</p></li>
 <li><p>These two buttons allow you to switch to the previous or next category.</p></li>
 </ul>
 </div></blockquote>
-<a class="reference internal image-reference" href="_images/scroll_up_down_category_01.png"><img alt="Up/Down Arrow" class="align-center" src="_images/scroll_up_down_category_01.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/scroll_up_down_category_01.png"><img alt="Up/Down Arrow" class="align-center" src="_images/scroll_up_down_category_01.png" style="width: 200px;" /></a>
 </section>
 <hr class="docutils" />
 <section id="left-right-arrow">
@@ -252,7 +260,7 @@ with the list of preview backgrounds</p></li>
 <li><p>These two buttons allow you to switch to the previous or next material in the current category.</p></li>
 </ul>
 </div></blockquote>
-<a class="reference internal image-reference" href="_images/scroll_left_right_material_01.png"><img alt="Left/Right Arrow" class="align-center" src="_images/scroll_left_right_material_01.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/scroll_left_right_material_01.png"><img alt="Left/Right Arrow" class="align-center" src="_images/scroll_left_right_material_01.png" style="width: 200px;" /></a>
 </section>
 <hr class="docutils" />
 <section id="open-options">
@@ -262,7 +270,7 @@ with the list of preview backgrounds</p></li>
 <li><p>This button will open the Extreme PBR preferences exactly in the Options section</p></li>
 </ul>
 </div></blockquote>
-<a class="reference internal image-reference" href="_images/open_options_button_01.png"><img alt="Open Options" class="align-center" src="_images/open_options_button_01.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/open_options_button_01.png"><img alt="Open Options" class="align-center" src="_images/open_options_button_01.png" style="width: 400px;" /></a>
 </section>
 <hr class="docutils" />
 <section id="reload-preview-icons">
@@ -273,7 +281,7 @@ with the list of preview backgrounds</p></li>
 in addition, it also reloads the interface icons</p></li>
 </ul>
 </div></blockquote>
-<a class="reference internal image-reference" href="_images/reload_preview_icons_01.png"><img alt="Reload Preview Icons" class="align-center" src="_images/reload_preview_icons_01.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/reload_preview_icons_01.png"><img alt="Reload Preview Icons" class="align-center" src="_images/reload_preview_icons_01.png" style="width: 400px;" /></a>
 <hr class="docutils" />
 </section>
 </section>
@@ -313,6 +321,14 @@ Contains The search for tag / background name and information on the background 
 <li><p>This allows you to search for a background by typing the name of the background (It work with the tag Restrictions if you need)</p></li>
 </ul>
 </div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This function will search for all the materials in the selected library, it will exclude the non-selected libraries, so make sure
+to search in the right library via the “Libraries selector” drop-down menu</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <a class="reference internal image-reference" href="_images/search_background_dropdown_01.png"><img alt="Search Background by entering text" class="align-center" src="_images/search_background_dropdown_01.png" style="width: 600px;" /></a>
 </section>
 <hr class="docutils" />
@@ -325,7 +341,7 @@ inside there will be information about the author, the license.
 There will also be the tags that have been assigned to the material, they can also be modified from here.</p></li>
 </ul>
 </div></blockquote>
-<a class="reference internal image-reference" href="_images/info_tag_panel_popup_01.png"><img alt="Info &amp; Tag Panel" class="align-center" src="_images/info_tag_panel_popup_01.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/info_tag_panel_popup_01.png"><img alt="Info Tag Panel Popup 01" class="align-center" src="_images/info_tag_panel_popup_01.png" style="width: 600px;" /></a>
 <hr class="docutils" />
 <section id="show-info">
 <h4>Show info<a class="headerlink" href="#show-info" title="Permalink to this heading"></a></h4>
@@ -335,7 +351,7 @@ There will also be the tags that have been assigned to the material, they can al
 on the material in preview (If existing)</p></li>
 </ul>
 </div></blockquote>
-<a class="reference internal image-reference" href="_images/show_info_panel_01.png"><img alt="Show info" class="align-center" src="_images/show_info_panel_01.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/show_info_panel_01.png"><img alt="Show info panel 01" class="align-center" src="_images/show_info_panel_01.png" style="width: 600px;" /></a>
 </section>
 <hr class="docutils" />
 <section id="edit-tags">
@@ -349,7 +365,7 @@ that will ask you if you want to delete the tag.
 This tag will then be useful for searching for material by tag.</p></li>
 </ul>
 </div></blockquote>
-<a class="reference internal image-reference" href="_images/edit_tags_01.png"><img alt="Edit Tags" class="align-center" src="_images/edit_tags_01.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/edit_tags_01.png"><img alt="Edit Tags 01" class="align-center" src="_images/edit_tags_01.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -371,7 +387,7 @@ This tag will then be useful for searching for material by tag.</p></li>
 </li>
 </ul>
 </div></blockquote>
-<a class="reference internal image-reference" href="_images/material_version_selector_01.png"><img alt="Material Version Selector" class="align-center" src="_images/material_version_selector_01.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/material_version_selector_01.png"><img alt="Material Version Selector 01" class="align-center" src="_images/material_version_selector_01.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -385,26 +401,109 @@ because it would not make sense to select a version if there is only one.</p></l
 <hr class="docutils" />
 </section>
 </section>
-<section id="add-remove-buttons">
-<span id="id4"></span><h2>Add Remove Buttons<a class="headerlink" href="#add-remove-buttons" title="Permalink to this heading"></a></h2>
+<section id="add-replace-remove-buttons">
+<span id="add-remove-buttons"></span><h2>Add Replace Remove Buttons<a class="headerlink" href="#add-replace-remove-buttons" title="Permalink to this heading"></a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><p>Add (From the preview) / Remove (From the scene) buttons</p></li>
+<li><p>Add (From the preview) / Replace active material / Remove active Material buttons</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/add_replace_remove_01.png"><img alt="Add Replace Remove Buttons 01" class="align-center" src="_images/add_replace_remove_01.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p>In Edit Mode, other buttons will be added</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/add_replace_remove_edit_mode_01.png"><img alt="Add Replace Remove Buttons Edit Mode 01" class="align-center" src="_images/add_replace_remove_edit_mode_01.png" style="width: 400px;" /></a>
+<hr class="docutils" />
+<section id="add-new">
+<h3>Add New<a class="headerlink" href="#add-new" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/add_new.png"><img alt="Add New" class="align-center" src="_images/add_new.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p>This button loads the materials and applies them to the selected object, if no object is selected, this will have no effect.</p></li>
+<li><p>If you are in Edit mode and have a face of the selected object selected, the material will be applied only to that face if there are already 1 or more materials on the object.</p></li>
+</ul>
+</div></blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This button will always add a new material to the list of materials of the selected object, if you want to replace
+the active material, use the <strong>Replace</strong> button described below</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="replace">
+<h3>Replace<a class="headerlink" href="#replace" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/replace.png"><img alt="Replace" class="align-center" src="_images/replace.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p><strong>This button will be visible only if there is one or more materials on the selected object</strong>
+replaces the active material (From the material list: “TODO: Mettere collegamento a material list” ) with the material in preview, if no material is selected, this will have no effect.</p></li>
+<li><p>If you are in Edit mode and have a face of the selected object selected, the material will be applied only to that face if there are already 1 or more materials on the object.</p></li>
+<li><p><strong>If there is some displacement active in this material, it will be removed before applying the new material</strong></p></li>
+</ul>
+</div></blockquote>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If the material you want to replace is present on more objects in the scene, you can replace the material on all objects
+by activating the <strong>Replace All</strong> option, the button will take on a different color to indicate that this option is active.</p>
+<a class="reference internal image-reference" href="_images/replace_all_01.png"><img alt="Replace All 01" class="align-center" src="_images/replace_all_01.png" style="width: 400px;" /></a>
+</div>
+</section>
+<hr class="docutils" />
+<section id="remove">
+<h3>Remove<a class="headerlink" href="#remove" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/remove_01.png"><img alt="Remove" class="align-center" src="_images/remove_01.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p>This button removes the selected material from the material list.</p></li>
+<li><p><strong>If there is some displacement active in this material, it will be removed before applying the new material</strong></p></li>
 </ul>
 </div></blockquote>
 <hr class="docutils" />
 </section>
-<section id="material-list">
-<span id="id5"></span><h2>Material List<a class="headerlink" href="#material-list" title="Permalink to this heading"></a></h2>
+</section>
+<section id="material-list-section">
+<span id="material-list"></span><h2>Material List Section<a class="headerlink" href="#material-list-section" title="Permalink to this heading"></a></h2>
 <blockquote>
 <div><ul class="simple">
-<li><p>This is the list of materials that are in the current active object.</p></li>
+<li><p>In this section there are the materials that have been added to the selected object.
+These materials can be added via the <strong>Add</strong> or <strong>Replace</strong> button.
+The materials can be removed via the <strong>Remove</strong> button or replaced via the <strong>Replace</strong> button.
+There are also other buttons that we will see below.</p></li>
+</ul>
+</div></blockquote>
+<a class="reference internal image-reference" href="_images/material_list_zoom_01.png"><img alt="Material List Zoom 01" class="align-center" src="_images/material_list_zoom_01.png" style="width: 800px;" /></a>
+<hr class="docutils" />
+<section id="active-material">
+<h3>Active Material<a class="headerlink" href="#active-material" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/active_material_list.png"><img alt="Active Material list" class="align-center" src="_images/active_material_list.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><ul class="simple">
+<li><p>This is the active material, you can select it directly with the mouse cursor, just click on it.</p></li>
+<li><p>With double click of the mouse you can also rename the active material</p></li>
 </ul>
 </div></blockquote>
 <hr class="docutils" />
+</section>
 </section>
 <section id="box-utility">
-<span id="id6"></span><h2>Box Utility<a class="headerlink" href="#box-utility" title="Permalink to this heading"></a></h2>
+<span id="id4"></span><h2>Box Utility<a class="headerlink" href="#box-utility" title="Permalink to this heading"></a></h2>
 <blockquote>
 <div><ul class="simple">
 <li><p>This box contains some useful and fundamental functions of Extreme PBR</p></li>
