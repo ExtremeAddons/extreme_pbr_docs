@@ -449,6 +449,39 @@ Active Material
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Displace On/Off
+****************
+
+.. image:: _static/_images/main_panel/displace_on_off_button_01.png
+    :align: center
+    :width: 400
+    :alt: Displace On/Off 01
+
+|
+
+    - This button activates or deactivates the displacement.
+      If the displacement is active, the button will be blue, if it is inactive, the button will be gray.
+
+    - Once activated, a further interface dedicated to displacement will appear which we can see in this section:
+      TODO: Mettere collegamento a displacement
+
+
+.. image:: _static/_images/main_panel/displace_on_off_3d_example_01.png
+    :align: center
+    :width: 800
+    :alt: Displace On/Off 3D Example 01
+
+|
+
+
+.. important::
+        This button will be present only if the material has a Bump / Displacement map
+        if it is not present, it means that there is no Bump / Displacement map in the
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 
 
 
@@ -458,13 +491,5 @@ Box Utility
 -----------
 
     - This box contains some useful and fundamental functions of Extreme PBR
-
-
-
-
-
-
-
-
 
 
