@@ -655,6 +655,47 @@ This button is used to adjust the **Shade Smooth** and **Auto Smooth** in 3 step
       as soon as the button is pressed, this will resynchronize the steps again in accordance with the state of the object.
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+Copy Material (Smart)
+**********************
+
+.. image:: _static/_images/main_panel/copy_material_smart_button_01.jpg
+    :align: center
+    :width: 400
+    :alt: Copy Material (Smart) Button 01
+
+|
+
+
+This button allows you to copy all the materials and the displacement from the active object, directly to the selected objects.
+
+Here is an example, to better understand:
+
+- In order to obtain this situation, make sure to hold down the SHIFT button and select the objects you want to copy,
+  the last object you select will be the active object, so make sure it is the one that contains the materials you want to copy.
+
+.. image:: _static/_images/main_panel/smart_copy_step_01.jpg
+    :align: center
+    :width: 800
+    :alt: Smart Copy Step 01
+
+|
+
+- Once you have selected the objects, press the **Copy Material** button, this will copy all the materials
+  and the displacement from the active object, directly to the selected objects.
+
+.. image:: _static/_images/main_panel/smart_copy_step_02.jpg
+    :align: center
+    :width: 800
+    :alt: Smart Copy Step 02
+
+
+
+
+
+
+
 
 
 
