@@ -69,6 +69,8 @@ and the "User" library, which is the library where you can add your saved backgr
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _minimize_button:
+
 Minimize Button
 ***************
 
@@ -568,12 +570,18 @@ Duplicate Material
 *******************
 
 
-To DO
+.. image:: _static/_images/main_panel/duplicate_material_01.png
+    :align: center
+    :width: 400
+    :alt: Duplicate Material 01
 
+|
 
-
-
-
+This button allows you to duplicate the active material in the material list, this will make it independent if it is present
+on other objects. A suffix will be added to the name of the material, it will be numeric and will grow with each duplication.
+You can replace the name of the material with the one you prefer, just double click on the name of the material from
+the material list and enter the desired name.
+This function also duplicates the groups or images contained in the material nodes, in short, it makes everything independent.
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -582,5 +590,75 @@ To DO
 Box Utility
 -----------
 
-    - This box contains some useful and fundamental functions of Extreme PBR
+This box contains some very useful functions of Extreme PBR, the buttons in this box may vary depending on the context you are in,
+for example, if you have selected an object or not.
+
+.. image:: _static/_images/main_panel/box_utility_01.png
+    :align: center
+    :width: 800
+    :alt: Box Utility 01
+
+|
+
+.. note::
+        The box will not be visible if the Minimize mode is activated, check here: :ref:`minimize_button` for more information
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Smart Shade Smooth
+******************
+
+.. image:: _static/_images/main_panel/smart_shade_smooth_button.jpg
+    :align: center
+    :width: 400
+    :alt: Smart Shade Smooth Button
+
+|
+
+Works only on an active object of type **Mesh**
+
+This button is used to adjust the **Shade Smooth** and **Auto Smooth** in 3 steps, here are the steps:
+
+- **Step 0:** **Shade Smooth** deactivated / **Auto Smooth** deactivated, the object has a sharp appearance
+
+
+.. image:: _static/_images/main_panel/smooth_step_000.jpg
+    :align: center
+    :width: 800
+    :alt: Smooth Step 000
+
+|
+
+- **Step 1:** **Shade Smooth** activated / **Auto Smooth** activated, the object appears to be more rounded, angles equal
+  to or greater than 45 ° will not be rounded
+
+.. image:: _static/_images/main_panel/smooth_step_001.jpg
+    :align: center
+    :width: 800
+    :alt: Smooth Step 001
+
+|
+
+- **Step 2:** **Shade Smooth** activated / **Auto Smooth** deactivated, the object appears to be completely rounded,
+  all angles are rounded
+
+.. image:: _static/_images/main_panel/smooth_step_002.jpg
+    :align: center
+    :width: 800
+    :alt: Smooth Step 002
+
+|
+
+.. note::
+      There are some cases where the object may already have the Shade Smooth while the indicator marks for example step 0,
+      as soon as the button is pressed, this will resynchronize the steps again in accordance with the state of the object.
+
+
+
+
+
+
+
+
 

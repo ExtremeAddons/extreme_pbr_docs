@@ -93,7 +93,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#duplicate-material">Duplicate Material</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#box-utility">Box Utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#box-utility">Box Utility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#smart-shade-smooth">Smart Shade Smooth</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
@@ -181,10 +184,10 @@ on how to use the addon</p>
 By default this Drop-down menu, contains the “Default” library, which is the library that comes with the addon.
 and the “User” library, which is the library where you can add your saved backgrounds.</p>
 <a class="reference internal image-reference" href="_images/libraries_selector_popup_01.png"><img alt="Libraries selector" class="align-center" src="_images/libraries_selector_popup_01.png" style="width: 400px;" /></a>
-</section>
 <hr class="docutils" />
+</section>
 <section id="minimize-button">
-<h3>Minimize Button<a class="headerlink" href="#minimize-button" title="Permalink to this heading"></a></h3>
+<span id="id2"></span><h3>Minimize Button<a class="headerlink" href="#minimize-button" title="Permalink to this heading"></a></h3>
 <p>This button allows you to minimize the main panel, to have more space in the 3D view.</p>
 <a class="reference internal image-reference" href="_images/minimize_main_panel_01.png"><img alt="Minimize Button" class="align-center" src="_images/minimize_main_panel_01.png" style="width: 800px;" /></a>
 </section>
@@ -210,7 +213,7 @@ and the “User” library, which is the library where you can add your saved ba
 </section>
 </section>
 <section id="material-browser">
-<span id="id2"></span><h2>Material Browser<a class="headerlink" href="#material-browser" title="Permalink to this heading"></a></h2>
+<span id="id3"></span><h2>Material Browser<a class="headerlink" href="#material-browser" title="Permalink to this heading"></a></h2>
 <p>This section is dedicated to displaying the material previews.</p>
 <a class="reference internal image-reference" href="_images/material_browser_01.png"><img alt="Material Browser" class="align-center" src="_images/material_browser_01.png" style="width: 800px;" /></a>
 <hr class="docutils" />
@@ -248,7 +251,7 @@ in addition, it also reloads the interface icons</p>
 </section>
 </section>
 <section id="tag-search-size-selector">
-<span id="id3"></span><h2>Tag Search Size Selector<a class="headerlink" href="#tag-search-size-selector" title="Permalink to this heading"></a></h2>
+<span id="id4"></span><h2>Tag Search Size Selector<a class="headerlink" href="#tag-search-size-selector" title="Permalink to this heading"></a></h2>
 <p>This small menu in the box, allows you to Select the size / version of the material (If there is an alternative)
 Contains The search for tag / background name and information on the background currently in the preview.</p>
 <a class="reference internal image-reference" href="_images/tag_search_size_selector_01.png"><img alt="Tag Search Size Selector" class="align-center" src="_images/tag_search_size_selector_01.png" style="width: 800px;" /></a>
@@ -514,18 +517,69 @@ of materials present in the current project <strong>bpy.data.materials</strong> 
 <hr class="docutils" />
 </section>
 <section id="duplicate-material">
-<span id="id4"></span><h3>Duplicate Material<a class="headerlink" href="#duplicate-material" title="Permalink to this heading"></a></h3>
-<p>To DO</p>
+<span id="id5"></span><h3>Duplicate Material<a class="headerlink" href="#duplicate-material" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/duplicate_material_01.png"><img alt="Duplicate Material 01" class="align-center" src="_images/duplicate_material_01.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button allows you to duplicate the active material in the material list, this will make it independent if it is present
+on other objects. A suffix will be added to the name of the material, it will be numeric and will grow with each duplication.
+You can replace the name of the material with the one you prefer, just double click on the name of the material from
+the material list and enter the desired name.
+This function also duplicates the groups or images contained in the material nodes, in short, it makes everything independent.</p>
 <hr class="docutils" />
 </section>
 </section>
 <section id="box-utility">
-<span id="id5"></span><h2>Box Utility<a class="headerlink" href="#box-utility" title="Permalink to this heading"></a></h2>
-<blockquote>
-<div><ul class="simple">
-<li><p>This box contains some useful and fundamental functions of Extreme PBR</p></li>
+<span id="id6"></span><h2>Box Utility<a class="headerlink" href="#box-utility" title="Permalink to this heading"></a></h2>
+<p>This box contains some very useful functions of Extreme PBR, the buttons in this box may vary depending on the context you are in,
+for example, if you have selected an object or not.</p>
+<a class="reference internal image-reference" href="_images/box_utility_01.png"><img alt="Box Utility 01" class="align-center" src="_images/box_utility_01.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The box will not be visible if the Minimize mode is activated, check here: <a class="reference internal" href="#minimize-button"><span class="std std-ref">Minimize Button</span></a> for more information</p>
+</div>
+<hr class="docutils" />
+<section id="smart-shade-smooth">
+<h3>Smart Shade Smooth<a class="headerlink" href="#smart-shade-smooth" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/smart_shade_smooth_button.jpg"><img alt="Smart Shade Smooth Button" class="align-center" src="_images/smart_shade_smooth_button.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Works only on an active object of type <strong>Mesh</strong></p>
+<p>This button is used to adjust the <strong>Shade Smooth</strong> and <strong>Auto Smooth</strong> in 3 steps, here are the steps:</p>
+<ul class="simple">
+<li><p><strong>Step 0:</strong> <strong>Shade Smooth</strong> deactivated / <strong>Auto Smooth</strong> deactivated, the object has a sharp appearance</p></li>
 </ul>
-</div></blockquote>
+<a class="reference internal image-reference" href="_images/smooth_step_000.jpg"><img alt="Smooth Step 000" class="align-center" src="_images/smooth_step_000.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Step 1:</strong> <strong>Shade Smooth</strong> activated / <strong>Auto Smooth</strong> activated, the object appears to be more rounded, angles equal
+to or greater than 45 ° will not be rounded</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/smooth_step_001.jpg"><img alt="Smooth Step 001" class="align-center" src="_images/smooth_step_001.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><p><strong>Step 2:</strong> <strong>Shade Smooth</strong> activated / <strong>Auto Smooth</strong> deactivated, the object appears to be completely rounded,
+all angles are rounded</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/smooth_step_002.jpg"><img alt="Smooth Step 002" class="align-center" src="_images/smooth_step_002.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>There are some cases where the object may already have the Shade Smooth while the indicator marks for example step 0,
+as soon as the button is pressed, this will resynchronize the steps again in accordance with the state of the object.</p>
+</div>
+</section>
 </section>
 </section>
 
