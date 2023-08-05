@@ -27,7 +27,7 @@ Il pannello principale di Extreme PBR Nexus dalla versione 4.1.100
 Libraries selector
 ------------------
 
-    - This area is used to choose the library, the category (of the library) and the category search via the text field.
+This area is used to choose the library, the category (of the library) and the category search via the text field.
 
 
 .. image:: _static/_images/main_panel/main_panel_magnify_library_selector_01.png
@@ -40,8 +40,8 @@ Libraries selector
 Helps Button
 ************
 
-    - This button opens the Help section in the addon preferences window. This is useful to find more information
-      on how to use the addon
+This button opens the Help section in the addon preferences window. This is useful to find more information
+on how to use the addon
 
 
 .. image:: _static/_images/main_panel/helps_button_main_panel_01.png
@@ -55,10 +55,10 @@ Helps Button
 Library Selector (Drop-down menu)
 *********************************
 
-    - This allows you to select the background library you want to use. All libraries added via
-      "Libraries" in the addon preferences menu will be displayed in this drop-down menu.
-      By default this Drop-down menu, contains the "Default" library, which is the library that comes with the addon.
-      and the "User" library, which is the library where you can add your saved backgrounds.
+This allows you to select the background library you want to use. All libraries added via
+"Libraries" in the addon preferences menu will be displayed in this drop-down menu.
+By default this Drop-down menu, contains the "Default" library, which is the library that comes with the addon.
+and the "User" library, which is the library where you can add your saved backgrounds.
 
 
 .. image:: _static/_images/main_panel/libraries_selector_popup_01.png
@@ -72,7 +72,7 @@ Library Selector (Drop-down menu)
 Minimize Button
 ***************
 
-    - This button allows you to minimize the main panel, to have more space in the 3D view.
+This button allows you to minimize the main panel, to have more space in the 3D view.
 
 
 .. image:: _static/_images/main_panel/minimize_main_panel_01.png
@@ -104,7 +104,7 @@ This Button allows you to search for a category without opening the drop-down me
 Category Selector (Drop-down Menu)
 ************************************
 
-   - This allows you to select the category (Each library will have its own category)
+This allows you to select the category (Each library will have its own category)
 
 .. image:: _static/_images/main_panel/category_popup_01.png
     :align: center
@@ -119,7 +119,7 @@ Category Selector (Drop-down Menu)
 Material Browser
 -------------------
 
-    - This section is dedicated to displaying the material previews.
+This section is dedicated to displaying the material previews.
 
 
 .. image:: _static/_images/main_panel/material_browser_01.png
@@ -133,8 +133,8 @@ Material Browser
 Preview Popup
 *************
 
-   - This allows you to select the background (Each library will have its own background), a pop-up window will appear
-     with the list of preview backgrounds
+This allows you to select the background (Each library will have its own background), a pop-up window will appear
+with the list of preview backgrounds
 
 .. image:: _static/_images/main_panel/material_browser_popup_01.png
     :align: center
@@ -146,7 +146,7 @@ Preview Popup
 Up/Down Arrow
 **************
 
-    - These two buttons allow you to switch to the previous or next category.
+These two buttons allow you to switch to the previous or next category.
 
 .. image:: _static/_images/main_panel/scroll_up_down_category_01.png
     :align: center
@@ -159,7 +159,7 @@ Up/Down Arrow
 Left/Right Arrow
 *****************
 
-    - These two buttons allow you to switch to the previous or next material in the current category.
+These two buttons allow you to switch to the previous or next material in the current category.
 
 .. image:: _static/_images/main_panel/scroll_left_right_material_01.png
     :align: center
@@ -172,7 +172,7 @@ Left/Right Arrow
 Open Options
 **************
 
-    - This button will open the Extreme PBR preferences exactly in the Options section
+This button will open the Extreme PBR preferences exactly in the Options section
 
 .. image:: _static/_images/main_panel/open_options_button_01.png
     :align: center
@@ -184,8 +184,8 @@ Open Options
 Reload Preview Icons
 *********************
 
-    - It may happen that the material icons are not loaded correctly, this button allows you to reload the material icons.
-      in addition, it also reloads the interface icons
+It may happen that the material icons are not loaded correctly, this button allows you to reload the material icons.
+in addition, it also reloads the interface icons
 
 .. image:: _static/_images/main_panel/reload_preview_icons_01.png
     :align: center
@@ -202,8 +202,8 @@ Reload Preview Icons
 Tag Search Size Selector
 ------------------------
 
-    - This small menu in the box, allows you to Select the size / version of the material (If there is an alternative)
-      Contains The search for tag / background name and information on the background currently in the preview.
+This small menu in the box, allows you to Select the size / version of the material (If there is an alternative)
+Contains The search for tag / background name and information on the background currently in the preview.
 
 
 .. image:: _static/_images/main_panel/tag_search_size_selector_01.png
@@ -217,13 +217,13 @@ Tag Search Size Selector
 Search for tag
 **************
 
-   - This allows you to search for a background by typing the name of the tag
-      - In the upper field, you can enter the name of the tag you want to include in the search
-      - In the lower field, you can enter the name of the tag you want to exclude from the search
+This allows you to search for a background by typing the name of the tag
+- In the upper field, you can enter the name of the tag you want to include in the search
+- In the lower field, you can enter the name of the tag you want to exclude from the search
 
-      Keep the tags separated with a space if you want to include more than one tag in the search.
+Keep the tags separated with a space if you want to include more than one tag in the search.
 
-      In this way, the categories and the previews will be filtered according to the tags entered.
+In this way, the categories and the previews will be filtered according to the tags entered.
 
 .. image:: _static/_images/main_panel/tag_search_menu_button_01.png
     :align: center
@@ -235,7 +235,7 @@ Search for tag
 Search Background by entering text
 **********************************
 
-   - This allows you to search for a background by typing the name of the background (It work with the tag Restrictions if you need)
+This allows you to search for a background by typing the name of the background (It work with the tag Restrictions if you need)
 
 .. note::
     This function will search for all the materials in the selected library, it will exclude the non-selected libraries, so make sure
@@ -254,9 +254,9 @@ Search Background by entering text
 Info & Tag
 **********
 
-    - This button will open a dialog window with information about the background currently in preview.
-      inside there will be information about the author, the license.
-      There will also be the tags that have been assigned to the material, they can also be modified from here.
+This button will open a dialog window with information about the background currently in preview.
+inside there will be information about the author, the license.
+There will also be the tags that have been assigned to the material, they can also be modified from here.
 
 .. image:: _static/_images/main_panel/info_tag_panel_popup_01.png
     :align: center
@@ -269,8 +269,8 @@ Info & Tag
 Show info
 #############
 
-    - By pressing the arrow-shaped button, the section will be shown or hidden where there is information
-      on the material in preview (If existing)
+By pressing the arrow-shaped button, the section will be shown or hidden where there is information
+on the material in preview (If existing)
 
 .. image:: _static/_images/main_panel/show_info_panel_01.png
     :align: center
@@ -282,11 +282,11 @@ Show info
 Edit Tags
 #########
 
-    - In the info & Tag panel you can edit the tags assigned to the background.
-      To do this, just click on the **Edit Tags** button and enter the desired tags.
-      You can also delete existing tags, just press on them, and a dialog box will be displayed
-      that will ask you if you want to delete the tag.
-      This tag will then be useful for searching for material by tag.
+In the info & Tag panel you can edit the tags assigned to the background.
+To do this, just click on the **Edit Tags** button and enter the desired tags.
+You can also delete existing tags, just press on them, and a dialog box will be displayed
+that will ask you if you want to delete the tag.
+This tag will then be useful for searching for material by tag.
 
 
 .. image:: _static/_images/main_panel/edit_tags_01.png
@@ -305,9 +305,9 @@ Edit Tags
 Material Version Selector
 *************************
 
-    - If in the library there are different versions of the same material, this selection allows you to choose which version to load
+- If in the library there are different versions of the same material, this selection allows you to choose which version to load
 
-      **This will only take effect when loading the material, it will not affect the material already loaded in the scene**
+  **This will only take effect when loading the material, it will not affect the material already loaded in the scene**
 
 .. image:: _static/_images/main_panel/material_version_selector_01.png
     :align: center
@@ -328,7 +328,7 @@ Material Version Selector
 Add Replace Remove Buttons
 ---------------------------
 
-    - Add (From the preview) / Replace active material / Remove active Material buttons
+- Add (From the preview) / Replace active material / Remove active Material buttons
 
 
 .. image:: _static/_images/main_panel/add_replace_remove_01.png
@@ -339,7 +339,7 @@ Add Replace Remove Buttons
 
 |
 
-    - In Edit Mode, other buttons will be added
+- In Edit Mode, other buttons will be added
 
 
 .. image:: _static/_images/main_panel/add_replace_remove_edit_mode_01.png
@@ -390,7 +390,8 @@ Replace
 
 |
 
-    - **If there is some displacement active in this material, it will be removed before applying the new material**
+
+- **If there is some displacement active in this material, it will be removed before applying the new material**
 
 
 .. important::
@@ -414,8 +415,8 @@ Remove
 
 |
 
-    - This button removes the selected material from the material list.
-    - **If there is some displacement active in this material, it will be removed before applying the new material**
+- This button removes the selected material from the material list.
+- **If there is some displacement active in this material, it will be removed before applying the new material**
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -423,9 +424,27 @@ Remove
 Assign Mat
 ***********
 
-    - Questo pulsante sarà visibile solo in edit mode, quindi potrai selezionare le facce dell'oggetto e assegnare il materiale
-      attivo nella Material List spiegata qui: :ref:`material_list`
+**This button will be visible only in edit mode**, so you can select the faces of the object and assign the active material
+in the Material List explained here: :ref:`material_list`
 
+.. image:: _static/_images/main_panel/assign_mat_example_01.png
+    :align: center
+    :width: 800
+    :alt: Assign Mat example 01
+
+------------------------------------------------------------------------------------------------------------------------
+
+Select By material
+******************
+
+**This button will be visible only in edit mode**, so you can select the faces of the object and assign the active material
+if the material selected in the material list is not present on any face of the object, this button will have no effect.
+
+
+.. image:: _static/_images/main_panel/select_by_material_example_01.png
+    :align: center
+    :width: 800
+    :alt: Select By material example 01
 
 
 
@@ -436,10 +455,10 @@ Assign Mat
 Material List Section
 -----------------------
 
-    - In this section there are the materials that have been added to the selected object.
-      These materials can be added via the **Add** or **Replace** button.
-      The materials can be removed via the **Remove** button or replaced via the **Replace** button.
-      There are also other buttons that we will see below.
+In this section there are the materials that have been added to the selected object.
+These materials can be added via the **Add** or **Replace** button.
+The materials can be removed via the **Remove** button or replaced via the **Replace** button.
+There are also other buttons that we will see below.
 
 .. image:: _static/_images/main_panel/material_list_zoom_01.png
     :align: center
@@ -460,9 +479,9 @@ Active Material
 
 |
 
-    - This is the active material, you can select it directly with the mouse cursor, just click on it.
+This is the active material, you can select it directly with the mouse cursor, just click on it.
 
-    - With double click of the mouse you can also rename the active material
+With double click of the mouse you can also rename the active material
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -476,11 +495,11 @@ Displace On/Off
 
 |
 
-    - This button activates or deactivates the displacement.
-      If the displacement is active, the button will be blue, if it is inactive, the button will be gray.
+This button activates or deactivates the displacement.
+If the displacement is active, the button will be blue, if it is inactive, the button will be gray.
 
-    - Once activated, a further interface dedicated to displacement will appear which we can see in this section:
-      TODO: Mettere collegamento a displacement
+Once activated, a further interface dedicated to displacement will appear which we can see in this section:
+TODO: Mettere collegamento a displacement
 
 
 .. image:: _static/_images/main_panel/displace_on_off_3d_example_01.png
@@ -495,12 +514,68 @@ Displace On/Off
         This button will be present only if the material has a Bump / Displacement map
         if it is not present, it means that there is no Bump / Displacement map in the
 
+.. tip::
+        Se lo stesso materiale identico, è presente anche su altri oggetti, il displacement si attiverà anche sugli altri oggetti.
+        Se vuoi evitare questo, puoi rendere il materiale unico copiandolo tramite il pulsante **Duplicate Material** descritto
+        in questo paragrafo: :ref:`duplicate_material`
 
 
 ------------------------------------------------------------------------------------------------------------------------
 
 
+Search and Replace
+******************
 
+.. image:: _static/_images/main_panel/search_and_replace_data_materials_01.png
+    :align: center
+    :width: 400
+    :alt: Search and Replace Data Materials 01
+
+|
+
+As soon as you press the button, a small drop-down menu will appear, then you will have the possibility to search in the list
+of materials present in the current project **bpy.data.materials** and **replace** the active material with the material found.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Search and Add
+***************
+
+.. image:: _static/_images/main_panel/search_and_add_data_materials_01.png
+    :align: center
+    :width: 400
+    :alt: Search and Add Data Materials 01
+
+|
+
+As soon as you press the button, a small drop-down menu will appear, then you will have the possibility to search in the list
+of materials present in the current project **bpy.data.materials** and **add** the material found to the list of materials of the selected object.
+
+|
+
+**Edit Mode Features:**
+    - If you are in edit mode and have some faces selected, the material will be applied to those faces, otherwise it will only be added to the material list
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _duplicate_material:
+
+Duplicate Material
+*******************
+
+
+To DO
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
 
 .. _box_utility:
 
@@ -508,11 +583,4 @@ Box Utility
 -----------
 
     - This box contains some useful and fundamental functions of Extreme PBR
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-.. image:: _static/_images/main_panel/2023-08-05_18-59-33.mp4
-     :class: autoplay-video
-
 
