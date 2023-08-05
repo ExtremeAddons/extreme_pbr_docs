@@ -1,4 +1,6 @@
 # Queste funzioni vengono eseguite al momento della compilazione della documentazione, dal file conf.py
+import os
+
 
 def update_changelog():
 
@@ -44,3 +46,59 @@ def update_changelog():
                 f.write("\n")
 
     print("updates_log.rst recompiled :)")
+
+
+def compile_al_materials_previews():
+    path = "G:\\Cc0 Archivio Ufficiale\\EXTREME_PBR_DEFAULT_LIB"
+
+
+    mat_previews = {}
+
+    for cat in os.listdir(path):
+        if cat.startswith("."):
+            continue
+
+        mat_files = mat_previews[cat] = {}
+
+        cat_path = os.path.join(path, cat)
+
+        for mat in os.listdir(cat_path):
+            if not os.path.isdir(os.path.join(cat_path, mat)):
+                continue
+            mat_path = os.path.join(cat_path, mat)
+
+            preview_folder = os.path.join(mat_path, "data", "previews", "default")
+            if not os.path.isdir(preview_folder):
+                continue
+
+            for preview in os.listdir(preview_folder):
+                preview_path = os.path.join(preview_folder, preview)
+                # Se i file sono di tipo png o jpg li aggiungo alla lista
+                if preview.endswith(".png") or preview.endswith(".jpg"):
+                    mat_files[mat] = preview_path
+
+    material_previews = os.path.join(os.path.dirname(__file__), "material_previews.rst")
+    with open(material_previews, "w") as f:
+        f.write("All Materials\n")
+        f.write("===========\n")
+        f.write("\n")
+
+        for cat, mats in mat_previews.items():
+            f.write(cat + "\n")
+            f.write("-" * len(cat) + "\n")
+            f.write("\n")
+
+            for mat, preview_file in mats.items():
+                f.write(mat + "\n")
+                f.write("*" * len(mat) + "\n")
+                f.write("    .. image:: {}\n".format(preview_file))
+                f.write(":align: center\n")
+                f.write(":width: 300\n")
+                f.write(":alt: {}\n".format(mat))
+
+
+
+
+
+
+

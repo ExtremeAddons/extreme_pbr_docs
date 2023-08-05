@@ -30,14 +30,14 @@ Welcome to Extreme PBR's documentation!
 
 .. toctree::
    :maxdepth: 4
-   :caption: Get started:
+   :caption: Get started: 🚀
 
    installation
 
 
 .. toctree::
    :maxdepth: 4
-   :caption: Interface and functions:
+   :caption: Interface and functions: 📱
 
    main_panel
    preferences
@@ -45,14 +45,14 @@ Welcome to Extreme PBR's documentation!
 
 .. toctree::
    :maxdepth: 4
-   :caption: Tutorials:
+   :caption: Tutorials: 📺
 
    video_tutorials
 
 
 .. toctree::
    :maxdepth: 4
-   :caption: FAQs & Troubleshooting:
+   :caption: FAQs & Troubleshooting: 💡
 
    faqs
    troubleshooting
@@ -61,7 +61,7 @@ Welcome to Extreme PBR's documentation!
 
 .. toctree::
     :maxdepth: 4
-    :caption: Changelog:
+    :caption: Changelog: ⏲
 
     updates_log
     undocumented

@@ -7,6 +7,7 @@
   <title>Main Panel &mdash; Extreme PBR 4.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/custom.css" type="text/css" />
     <link rel="shortcut icon" href="_static/extreme_addons_red_32.ico"/>
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -43,11 +44,11 @@
   </form>
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
-              <p class="caption" role="heading"><span class="caption-text">Get started:</span></p>
+              <p class="caption" role="heading"><span class="caption-text">Get started: 🚀</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Interface and functions:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Interface and functions: 📱</span></p>
 <ul class="current">
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Main Panel</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#libraries-selector">Libraries selector</a><ul>
@@ -81,6 +82,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#add-new">Add New</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#replace">Replace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#remove">Remove</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#assign-mat">Assign Mat</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#material-list-section">Material List Section</a><ul>
@@ -93,17 +95,17 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Tutorials:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="video_tutorials.html">Tutorials</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">FAQs &amp; Troubleshooting:</span></p>
+<p class="caption" role="heading"><span class="caption-text">FAQs &amp; Troubleshooting: 💡</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
 </ul>
-<p class="caption" role="heading"><span class="caption-text">Changelog:</span></p>
+<p class="caption" role="heading"><span class="caption-text">Changelog: ⏲</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="updates_log.html">Updates Log</a></li>
 <li class="toctree-l1"><a class="reference internal" href="undocumented.html">Undocumented</a></li>
@@ -426,12 +428,22 @@ because it would not make sense to select a version if there is only one.</p></l
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<blockquote>
-<div><ul class="simple">
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Object Mode</strong></dt><dd><ul>
 <li><p>This button loads the materials and applies them to the selected object, if no object is selected, this will have no effect.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Edit Mode</strong></dt><dd><ul>
 <li><p>If you are in Edit mode and have a face of the selected object selected, the material will be applied only to that face if there are already 1 or more materials on the object.</p></li>
 </ul>
-</div></blockquote>
+</dd>
+</dl>
+</li>
+</ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>This button will always add a new material to the list of materials of the selected object, if you want to replace
@@ -445,11 +457,28 @@ the active material, use the <strong>Replace</strong> button described below</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Object Mode</strong></dt><dd><ul>
+<li><p><strong>This button will be visible only if there is one or more materials on the selected object</strong>
+replaces the active material (From the material list: <a class="reference internal" href="#material-list"><span class="std std-ref">Material List Section</span></a>) with the material in preview, if no material is selected, this will have no effect.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Edit Mode</strong></dt><dd><ul>
+<li><p>If you are in Edit mode and have a face of the selected object selected, the material will be applied only to that face if there are already 1 or more materials on the object.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <blockquote>
 <div><ul class="simple">
-<li><p><strong>This button will be visible only if there is one or more materials on the selected object</strong>
-replaces the active material (From the material list: “TODO: Mettere collegamento a material list” ) with the material in preview, if no material is selected, this will have no effect.</p></li>
-<li><p>If you are in Edit mode and have a face of the selected object selected, the material will be applied only to that face if there are already 1 or more materials on the object.</p></li>
 <li><p><strong>If there is some displacement active in this material, it will be removed before applying the new material</strong></p></li>
 </ul>
 </div></blockquote>
@@ -471,6 +500,16 @@ by activating the <strong>Replace All</strong> option, the button will take on a
 <div><ul class="simple">
 <li><p>This button removes the selected material from the material list.</p></li>
 <li><p><strong>If there is some displacement active in this material, it will be removed before applying the new material</strong></p></li>
+</ul>
+</div></blockquote>
+</section>
+<hr class="docutils" />
+<section id="assign-mat">
+<h3>Assign Mat<a class="headerlink" href="#assign-mat" title="Permalink to this heading"></a></h3>
+<blockquote>
+<div><ul class="simple">
+<li><p>Questo pulsante sarà visibile solo in edit mode, quindi potrai selezionare le facce dell’oggetto e assegnare il materiale
+attivo nella Material List spiegata qui: <a class="reference internal" href="#material-list"><span class="std std-ref">Material List Section</span></a></p></li>
 </ul>
 </div></blockquote>
 <hr class="docutils" />
@@ -535,6 +574,10 @@ if it is not present, it means that there is no Bump / Displacement map in the</
 <li><p>This box contains some useful and fundamental functions of Extreme PBR</p></li>
 </ul>
 </div></blockquote>
+<hr class="docutils" />
+<video class="autoplay-video" src="_images/2023-08-05_18-59-33.mp4" title="_images/2023-08-05_18-59-33.mp4">
+<a href="_images/2023-08-05_18-59-33.mp4">_images/2023-08-05_18-59-33.mp4</a>
+</video>
 </section>
 </section>
 

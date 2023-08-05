@@ -22,9 +22,10 @@ sys.path.append(os.path.relpath(os.path.dirname(__file__)))
 # -- General configuration ---------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
-from convert_json_updates_to_rst import update_changelog
+from convert_json_updates_to_rst import update_changelog, compile_al_materials_previews
 
 update_changelog()
+# compile_al_materials_previews()
 
 extensions = ['sphinx_rtd_theme']
 
@@ -48,3 +49,8 @@ html_theme_path = ["_themes", ]
 html_static_path = ['_static']
 
 html_favicon = "extreme_addons_red_32.ico"
+
+
+def setup(app):
+    app.add_css_file('custom.css')
+

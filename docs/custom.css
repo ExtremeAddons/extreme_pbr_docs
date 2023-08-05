@@ -1,0 +1,27 @@
+.autoplay-video {
+    width: 640px; /* Modifica la larghezza del video se necessario */
+    height: 360px; /* Modifica l'altezza del video se necessario */
+}
+.autoplay-video video {
+    width: 100%;
+    height: 100%;
+}
+.autoplay-video video:focus {
+    outline: none;
+}
+.autoplay-video video::-webkit-media-controls-start-playback-button {
+    display: none;
+}
+.autoplay-video video {
+    display: block;
+    visibility: visible;
+    margin: 0 auto;
+    cursor: pointer;
+    pointer-events: auto;
+}
+.autoplay-video video[controls] {
+    display: none;
+}
+.autoplay-video video:not([controls]) {
+    pointer-events: none;
+}

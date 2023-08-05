@@ -359,7 +359,10 @@ Add New
 
 |
 
+- **Object Mode**
     - This button loads the materials and applies them to the selected object, if no object is selected, this will have no effect.
+
+- **Edit Mode**
     - If you are in Edit mode and have a face of the selected object selected, the material will be applied only to that face if there are already 1 or more materials on the object.
 
 .. note::
@@ -371,7 +374,6 @@ Add New
 Replace
 **********
 
-
 .. image:: _static/_images/main_panel/replace.png
     :align: center
     :width: 400
@@ -379,10 +381,14 @@ Replace
 
 |
 
+- **Object Mode**
     - **This button will be visible only if there is one or more materials on the selected object**
-      replaces the active material (From the material list: "TODO: Mettere collegamento a material list" ) with the material in preview, if no material is selected, this will have no effect.
+      replaces the active material (From the material list: :ref:`material_list`) with the material in preview, if no material is selected, this will have no effect.
 
+- **Edit Mode**
     - If you are in Edit mode and have a face of the selected object selected, the material will be applied only to that face if there are already 1 or more materials on the object.
+
+|
 
     - **If there is some displacement active in this material, it will be removed before applying the new material**
 
@@ -410,6 +416,17 @@ Remove
 
     - This button removes the selected material from the material list.
     - **If there is some displacement active in this material, it will be removed before applying the new material**
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Assign Mat
+***********
+
+    - Questo pulsante sarà visibile solo in edit mode, quindi potrai selezionare le facce dell'oggetto e assegnare il materiale
+      attivo nella Material List spiegata qui: :ref:`material_list`
+
+
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -491,5 +508,11 @@ Box Utility
 -----------
 
     - This box contains some useful and fundamental functions of Extreme PBR
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. image:: _static/_images/main_panel/2023-08-05_18-59-33.mp4
+     :class: autoplay-video
 
 
