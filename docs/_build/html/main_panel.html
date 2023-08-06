@@ -20,7 +20,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Preferences" href="preferences.html" />
+    <link rel="next" title="Bake Editor Panel" href="bake_panel.html" />
     <link rel="prev" title="Installation" href="installation.html" /> 
 </head>
 
@@ -100,12 +100,9 @@
 <li class="toctree-l3"><a class="reference internal" href="#bake-editor-button">Bake Editor Button</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#bake-editor-panel">Bake Editor Panel</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#bake-editor-bsdf-mode">Bake Editor Bsdf Mode</a></li>
 </ul>
 </li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
@@ -682,50 +679,11 @@ is a little less sharp, so I added some edges to “Accompany” the displacemen
 <hr class="docutils" />
 <section id="bake-editor-button">
 <h3>Bake Editor Button<a class="headerlink" href="#bake-editor-button" title="Permalink to this heading"></a></h3>
-<a class="reference internal image-reference" href="_images/bake_editor_button_01.png"><img alt="Bake Editor Button 01" class="align-center" src="_images/bake_editor_button_01.png" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_static/_images/main_panel/bake_editor_button_01.png"><img alt="Bake Editor Button 01" class="align-center" src="_static/_images/main_panel/bake_editor_button_01.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>This button allows you to access the Bake Editor Panel, which allows you to bake the materials present on the object</p>
-</section>
-</section>
-<hr class="docutils" />
-<section id="bake-editor-panel">
-<h2>Bake Editor Panel<a class="headerlink" href="#bake-editor-panel" title="Permalink to this heading"></a></h2>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<ul class="simple">
-<li><p>The Bake Editor Panel remains in Beta phase as it is still under development, there are still some cases in which
-the Bake will not work correctly, although they are very few.</p></li>
-<li><p>The bake is a fairly slow and heavy process, this tool has been designed to facilitate the Bake process,
-which normally in Blender is a much more complex and long process and requires a lot of experience and time.</p></li>
-</ul>
-</div>
-<div class="admonition hint">
-<p class="admonition-title">Hint</p>
-<p><strong>What is the Bake?</strong></p>
-<p>The Bake is a process that is normally used to merge into a single material (Textures) so that it can be exported
-to a game engine.</p>
-<p><strong>Do you have to use the bake to export an object with material to a game engine?</strong></p>
-<p>Actually no, in fact I personally do not recommend it. The best practice (Where possible) would be to export the object
-and then in the game engine hook up the textures correctly in the material of the game engine.
-There are many different techniques and many different approaches, so there is no fixed rule, but in general
-it is always better to avoid the bake, unless it is strictly necessary.</p>
-<p><strong>Why is it sometimes better to avoid the bake?</strong></p>
-<p>From my point of view, it is a problem of file size, I’ll give you an example:</p>
-<p>Suppose you have 1 house, 1 wall, 1 floor in a game, and on them there is the same material (For example cement)
-if you wanted to bake these 3 objects, you would have 3 different bakes, and therefore 3 different textures, while
-if you exported the 3 objects with the original material, you would only have 1 texture, and therefore a much smaller file.
-in addition, the bake makes a unique texture for each object, so this would also require a large resolution,
-because the cooked texture, in most cases, has no continuity! It is wrapped all over the object.</p>
-</div>
-<p>The bake editor panel has 3 different <strong>Bake Mode</strong>, depending on which mode you choose, the panel will take on a
-slightly different appearance.</p>
-<a class="reference internal image-reference" href="_images/bake_editor_modes_01.jpg"><img alt="Bake Editor Panel 01" class="align-center" src="_images/bake_editor_modes_01.jpg" style="width: 800px;" /></a>
-<hr class="docutils" />
-<section id="bake-editor-bsdf-mode">
-<h3>Bake Editor Bsdf Mode<a class="headerlink" href="#bake-editor-bsdf-mode" title="Permalink to this heading"></a></h3>
-<a class="reference internal image-reference" href="_images/bake_editor_bsdf_mode_01.jpg"><img alt="Bake Editor Bsdf Mode 01" class="align-center" src="_images/bake_editor_bsdf_mode_01.jpg" style="width: 800px;" /></a>
 </section>
 </section>
 </section>
@@ -735,7 +693,7 @@ slightly different appearance.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="installation.html" class="btn btn-neutral float-left" title="Installation" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="preferences.html" class="btn btn-neutral float-right" title="Preferences" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="bake_panel.html" class="btn btn-neutral float-right" title="Bake Editor Panel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bake Editor Panel &mdash; Extreme PBR 4.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/extreme_addons_red_32.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Preferences" href="preferences.html" />
+    <link rel="prev" title="Main Panel" href="main_panel.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Extreme PBR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Get started: 🚀</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Interface and functions: 📱</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="main_panel.html">Main Panel</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Bake Editor Panel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#bake-modes">Bake Modes</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#output-format">Output Format</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bake-device">Bake Device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bake-samples">Bake Samples</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bake-size">Bake Size</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-new-uv-map">Create new UV Map</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#island-margin">Island Margin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#move-bake-object-in-a-new-scene">Move Bake object in a new scene</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bake-editor-bsdf-mode">Bake Editor Bsdf Mode</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="video_tutorials.html">Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQs &amp; Troubleshooting: 💡</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Changelog: ⏲</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="updates_log.html">Updates Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="undocumented.html">Undocumented</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Extreme PBR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Bake Editor Panel</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/bake_panel.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="bake-editor-panel">
+<h1>Bake Editor Panel<a class="headerlink" href="#bake-editor-panel" title="Permalink to this heading"></a></h1>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>In Blender 3.6.0 there is an Blender Crash during the Bake, please update Blender to 3.6.1 or higher!
+I tried to do a bugfix, but it doesn’t depend on me in that version 3.6.0 there is a Bug</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<ul class="simple">
+<li><p>The Bake Editor Panel remains in Beta phase as it is still under development, there are still some cases in which
+the Bake will not work correctly, although they are very few.</p></li>
+<li><p>The bake is a fairly slow and heavy process, this tool has been designed to facilitate the Bake process,
+which normally in Blender is a much more complex and long process and requires a lot of experience and time.</p></li>
+</ul>
+</div>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p><strong>What is the Bake?</strong></p>
+<p>The Bake is a process that is normally used to merge into a single material (Textures) so that it can be exported
+to a game engine.</p>
+<p><strong>Do you have to use the bake to export an object with material to a game engine?</strong></p>
+<p>Actually no, in fact I personally do not recommend it. The best practice (Where possible) would be to export the object
+and then in the game engine hook up the textures correctly in the material of the game engine.
+There are many different techniques and many different approaches, so there is no fixed rule, but in general
+it is always better to avoid the bake, unless it is strictly necessary.</p>
+<p><strong>Why is it sometimes better to avoid the bake?</strong></p>
+<p>From my point of view, it is a problem of file size, I’ll give you an example:</p>
+<p>Suppose you have 1 house, 1 wall, 1 floor in a game, and on them there is the same material (For example cement)
+if you wanted to bake these 3 objects, you would have 3 different bakes, and therefore 3 different textures, while
+if you exported the 3 objects with the original material, you would only have 1 texture, and therefore a much smaller file.
+in addition, the bake makes a unique texture for each object, so this would also require a large resolution,
+because the cooked texture, in most cases, has no continuity! It is wrapped all over the object.</p>
+</div>
+<section id="bake-modes">
+<h2>Bake Modes<a class="headerlink" href="#bake-modes" title="Permalink to this heading"></a></h2>
+<p>The bake editor panel has 3 different <strong>Bake Mode</strong>, depending on which mode you choose, the panel will take on a
+slightly different appearance in the <strong>Lighting</strong> section</p>
+<a class="reference internal image-reference" href="_images/bake_editor_modes_01.jpg"><img alt="Bake Editor Panel 01" class="align-center" src="_images/bake_editor_modes_01.jpg" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="output-format">
+<h2>Output Format<a class="headerlink" href="#output-format" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/bake_editor_output_format.jpg"><img alt="Bake Editor Output Format" class="align-center" src="_images/bake_editor_output_format.jpg" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Qui puoi scegliere il formato di output della texture, puoi scegliere tra:</p>
+<p><strong>(PNG, JPEG, EXR, TIFF, TGA)</strong></p>
+</section>
+<hr class="docutils" />
+<section id="bake-device">
+<h2>Bake Device<a class="headerlink" href="#bake-device" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/bake_editor_device.jpg"><img alt="Bake Editor Device 01" class="align-center" src="_images/bake_editor_device.jpg" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Here you can choose with which device to do the Bake, you can choose between <strong>CPU</strong> and <strong>GPU</strong></p>
+<p><strong>GPU:</strong></p>
+<ul class="simple">
+<li><p>This is the fastest way to do the Bake! In fact, it will be the graphics card that will render the material.
+Keep in mind, however, if you have a GPU with relatively little RAM, you may have memory problems during the Bake,
+so in most cases, if during the Bake process the addon should encounter an error, it will pass
+silently and automatically in CPU mode and will try to render again.</p></li>
+</ul>
+<p><strong>CPU:</strong></p>
+<ul class="simple">
+<li><p>In this way the Bake will be much slower, but you should not have memory problems if your computer is equipped
+with at least 16GB of RAM.</p></li>
+</ul>
+<p>These 2 indications are for information purposes only and in principle, outside there are the latest generation graphics
+cards that go much faster than a CPU, but there may be some cases where this rule is not necessarily valid.</p>
+</section>
+<hr class="docutils" />
+<section id="bake-samples">
+<h2>Bake Samples<a class="headerlink" href="#bake-samples" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/bake_editor_samples.jpg"><img alt="Bake Editor Samples" class="align-center" src="_images/bake_editor_samples.jpg" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The samples are the number of times the Bake will render the material, the higher the number of samples, the more the
+Bake will be precise, but also slower. This rule is almost the same as that of a normal rendering.</p>
+</section>
+<hr class="docutils" />
+<section id="bake-size">
+<h2>Bake Size<a class="headerlink" href="#bake-size" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/bake_size.jpg"><img alt="Bake Size" class="align-center" src="_images/bake_size.jpg" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Here you decide the resolution of the texture that will be created, the higher the resolution, the more detailed the
+texture will be, but be careful, the higher the resolution, the slower and heavier the Bake will be, in addition it will</p>
+</section>
+<hr class="docutils" />
+<section id="create-new-uv-map">
+<h2>Create new UV Map<a class="headerlink" href="#create-new-uv-map" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/bake_create_new_uv_map.jpg"><img alt="Bake Editor Create New UV Map" class="align-center" src="_images/bake_create_new_uv_map.jpg" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>If active, the addon will create a Smart projection on a new UV Map, this UV Map will be used for the Bake, so
+I recommend you leave this box active.</p>
+</section>
+<hr class="docutils" />
+<section id="island-margin">
+<h2>Island Margin<a class="headerlink" href="#island-margin" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/bake_island_margin.jpg"><img alt="Bake Editor Island Margin" class="align-center" src="_images/bake_island_margin.jpg" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This value is used to create a margin between the islands, this margin is used to avoid the problem of bleeding,
+which is a problem that occurs when the Bake is done, and the texture is not perfectly aligned with the UV Map,
+so there is a small space between the islands, and this space is filled with the color of the adjacent island.</p>
+</section>
+<hr class="docutils" />
+<section id="move-bake-object-in-a-new-scene">
+<h2>Move Bake object in a new scene<a class="headerlink" href="#move-bake-object-in-a-new-scene" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/move_bake_objs_in_new_scene.jpg"><img alt="Move Bake Objs In New Scene" class="align-center" src="_images/move_bake_objs_in_new_scene.jpg" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Bake of Extreme PBR always creates New objects that are a copy of the original object, this is to avoid
+ruining the original object.</p>
+</div>
+<p>So here you can decide whether to move the Bake objects to a new scene, in this way you will not have the Bake objects
+in the original scene, but in a new scene. A new scene will be created where only the Bake objects will be present,
+and the original scene will remain unchanged.</p>
+<p>At the end of the Bake, in the main panel, if this option is active, a button will be displayed to return to the
+original scene and delete the Bake scene.</p>
+<a class="reference internal image-reference" href="_images/delete_current_bake_scene_button.jpg"><img alt="Delete Current Bake Scene Button" class="align-center" src="_images/delete_current_bake_scene_button.jpg" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Make sure you don’t work in the bake scene, otherwise you could lose the work done in that particular scene.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="bake-editor-bsdf-mode">
+<h2>Bake Editor Bsdf Mode<a class="headerlink" href="#bake-editor-bsdf-mode" title="Permalink to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This type of Bake works only and exclusively if a Principled BSDF type node is present before the Output node</p>
+<a class="reference internal image-reference" href="_images/principled_bsdf_for_bake_01.jpg"><img alt="Principled BSDF For Bake 01" class="align-center" src="_images/principled_bsdf_for_bake_01.jpg" style="width: 400px;" /></a>
+</div>
+<a class="reference internal image-reference" href="_images/bake_editor_bsdf_mode_01.jpg"><img alt="Bake Editor Bsdf Mode 01" class="align-center" src="_images/bake_editor_bsdf_mode_01.jpg" style="width: 800px;" /></a>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="main_panel.html" class="btn btn-neutral float-left" title="Main Panel" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="preferences.html" class="btn btn-neutral float-right" title="Preferences" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Andrea Donati.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>  
+
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: #222222;
+    }
+    /* Sidebar */
+    .wy-nav-side {
+      background: #222222;
+    }
+  </style>
+
+
+</body>
+</html>

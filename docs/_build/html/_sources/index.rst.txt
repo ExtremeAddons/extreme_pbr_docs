@@ -40,6 +40,7 @@ Welcome to Extreme PBR's documentation!
    :caption: Interface and functions: 📱
 
    main_panel
+   bake_panel
    preferences
 
 
