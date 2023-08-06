@@ -5,7 +5,7 @@ The main panel of Extreme PBR Nexus from version 4.1.100, if you have an older v
 this guide: TODO: Inserire link alla guida di aggiornamento
 
 .. |main_panel| image:: _static/_images/main_panel/main_panel_01.png
-                    :width: 800
+                    :width: 400
                     :alt: Main Panel 01
 
 
@@ -780,6 +780,38 @@ This button allows you to access the Bake Editor Panel, which allows you to bake
 
 Bake Editor Panel
 -----------------
+
+.. important::
+        - The Bake Editor Panel remains in Beta phase as it is still under development, there are still some cases in which
+          the Bake will not work correctly, although they are very few.
+        - The bake is a fairly slow and heavy process, this tool has been designed to facilitate the Bake process,
+          which normally in Blender is a much more complex and long process and requires a lot of experience and time.
+
+
+.. hint::
+        **What is the Bake?**
+
+        The Bake is a process that is normally used to merge into a single material (Textures) so that it can be exported
+        to a game engine.
+
+        **Do you have to use the bake to export an object with material to a game engine?**
+
+        Actually no, in fact I personally do not recommend it. The best practice (Where possible) would be to export the object
+        and then in the game engine hook up the textures correctly in the material of the game engine.
+        There are many different techniques and many different approaches, so there is no fixed rule, but in general
+        it is always better to avoid the bake, unless it is strictly necessary.
+
+
+        **Why is it sometimes better to avoid the bake?**
+
+        From my point of view, it is a problem of file size, I'll give you an example:
+
+        Suppose you have 1 house, 1 wall, 1 floor in a game, and on them there is the same material (For example cement)
+        if you wanted to bake these 3 objects, you would have 3 different bakes, and therefore 3 different textures, while
+        if you exported the 3 objects with the original material, you would only have 1 texture, and therefore a much smaller file.
+        in addition, the bake makes a unique texture for each object, so this would also require a large resolution,
+        because the cooked texture, in most cases, has no continuity! It is wrapped all over the object.
+
 
 The bake editor panel has 3 different **Bake Mode**, depending on which mode you choose, the panel will take on a
 slightly different appearance.
