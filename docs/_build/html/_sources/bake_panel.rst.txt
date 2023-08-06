@@ -194,27 +194,300 @@ original scene and delete the Bake scene.
 .. important::
         Make sure you don't work in the bake scene, otherwise you could lose the work done in that particular scene.
 
+------------------------------------------------------------------------------------------------------------------------
 
+Export FBX object
+------------------
+
+.. image:: _static/_images/bake_panel/export_fbx_object.jpg
+    :align: center
+    :width: 600
+    :alt: Export FBX Object
+
+|
+
+If active, at the end of the Bake, an FBX of the original object will be exported, this FBX will contain the original
+object with the textures in the same folder.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Flip X Axis
+*************
+
+Engines like Unreal and Unity 3D, have Global X-Y-Z axes different from Blender, so the X axis is usually reversed.
+If you check this box, the addon will try to invert your model on the X axis. For any problem,
+if you encounter any problems, please uncheck this box.
+
+.. note::
+      This function is a bit experimental, there may be cases where the result is not what you expected.
+      Pay attention when you use this function, and always check the final result if it is what you expect.
 
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Bake Editor Bsdf Mode
----------------------
+Lighting
+--------------
+
+
+.. image:: _static/_images/bake_panel/direct_light_indirect_light.jpg
+    :align: center
+    :width: 600
+    :alt: Direct Light Indirect Light
+
+
+Direct Light
+****************
+
+If active, it adds direct light to the Bake, so if you have a light source in your scene, this will be added to the Bake.
+The object will be illuminated by direct light.
+
+Indirect Light
+****************
+
+If active, it adds indirect light to the Bake, so if you have a light source in your scene, and for example it bounces
+on a floor or a wall, this light will contribute to illuminate the object, so the object will be illuminated by
+indirect lights even in the bake.
 
 .. note::
-        This type of Bake works only and exclusively if a Principled BSDF type node is present before the Output node
-
-        .. image:: _static/_images/bake_panel/principled_bsdf_for_bake_01.jpg
-            :align: center
-            :width: 400
-            :alt: Principled BSDF For Bake 01
+      Is possible to leave both options inactive, in this way the light of the scene will not affect the Bake,
+      but pay attention, this can only be done in **COMBINED** bake mode, in fact this mode requires that one of the
+      2 options is active, otherwise the Bake will not even start.
 
 
-.. image:: _static/_images/bake_panel/bake_editor_bsdf_mode_01.jpg
+**Here is an example:**
+
+.. image:: _static/_images/bake_panel/examples_bake_direct_indirect.jpg
     :align: center
     :width: 800
-    :alt: Bake Editor Bsdf Mode 01
+    :alt: Examples Bake Direct Indirect
+
+|
+
+As can be seen from this example above, the final material (ie Bake) is very different depending on whether you choose
+to activate or not the direct and indirect light.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Bake maps BSDF mode
+---------------------
+
+.. image:: _static/_images/bake_panel/bake_maps_bsdf.jpg
+    :align: center
+    :width: 800
+    :alt: Bake Maps BSDF
+
+|
+
+.. note::
+        The bake in BSDF mode works in accordance with the Principled BSDF node, so during this process, all the maps
+        that have been selected for the bake, will be temporarily inserted into the **Base Color** socket of the Principled BSDF node.
+        **This Bake mode is only possible if the BSDF node is present and connected to the Material Output node**
+
+        .. image:: _static/_images/bake_panel/principled_bsdf_node.jpg
+            :align: center
+            :width: 200
+            :alt: Principled BSDF Node
+
+|
+
+**Below is a description of each option in the Bake Maps BSDF Mode:**
+
+**Diffuse**
+   - If active, the Bake will create a Diffuse texture, ie everything that is inserted in the BSDF node in the **Base Color** input
+     will be baked into a Diffuse texture.
+
+
+
+**Specular**
+    - If active, the Bake will create a Specular texture, ie everything that is inserted in the BSDF node in the **Specular** input
+      will be connect in the **Base Color** socket and then baked into a Specular texture.
+
+
+**Roughness**
+    - If active, the Bake will create a Roughness texture, ie everything that is inserted in the BSDF node in the **Roughness** input
+      will be connect in the **Base Color** socket and then baked into a Roughness texture.
+
+
+**Metallic**
+    - If active, the Bake will create a Metallic texture, ie everything that is inserted in the BSDF node in the **Metallic** input
+      will be connect in the **Base Color** socket and then baked into a Metallic texture.
+
+**Transmission**
+    - If active, the Bake will create a Transmission texture, ie everything that is inserted in the BSDF node in the **Transmission** input
+      will be baked connect in the **Base Color** socket and then baked into a Transmission texture.
+
+**Emission**
+    - If active, the Bake will create an Emission texture, ie everything that is inserted in the BSDF node in the **Emision** input
+      will be connect in the **Base Color** socket and then baked into an Emission texture.
+
+**Normal**
+    - If active, the Bake will create a Normal texture, ie everything that is inserted in the BSDF node in the **Normal** input
+      will be connect in the **Base Color** socket and then baked into a Normal texture.
+
+**Alpha**
+    - If active, the Bake will create an Alpha texture, ie everything that is inserted in the BSDF node in the **Alpha** input
+      will be baked connect in the **Base Color** socket and then baked into an Alpha texture.
+
+**Subsurface**
+    - If active, the Bake will create a Subsurface texture, ie everything that is inserted in the BSDF node in the **Subsurface** input
+      will be connect in the **Base Color** socket and then baked into a Subsurface texture.
+
+**Alpha in separate texture**
+    - If active:
+        The Bake will create an Alpha texture, ie everything that is inserted in the BSDF node in the **Alpha** input
+        will be connect in the **Base Color** socket and then baked into an Alpha texture.
+    - If inactive:
+        The Bake will create an Alpha texture and if the **Diffuse** item is active, a texture with the Alpha channel included in the Diffuse map will be created.
+
+**Normal type**
+    (Works in accordance with the **Normal** item if active)
+     - **OpenGL (+Y):**
+        The Bake will create a Normal texture with the Y channel inverted, this is necessary for some game engines like Unity 3D.
+     - **DirectX (-Y):**
+        The Bake will create a Normal texture with the Y channel not inverted, this is necessary for some game engines like Unreal Engine.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Bake maps Cycles Standard mode
+-------------------------------
+
+.. image:: _static/_images/bake_panel/bake_maps_cycles_standard.jpg
+    :align: center
+    :width: 800
+    :alt: Bake Maps Cycles Standard
+
+|
+
+This Bake mode uses Blender's standard Bake mode, does not require a Principled BSDF node,
+and uses the options already present in blender as in this example:
+
+.. image:: _static/_images/bake_panel/cycles_bake_standard_blender_example.jpg
+    :align: center
+    :width: 600
+    :alt: Cycles Bake Standard Blender Example
+
+|
+
+So for each map selected for the Bake, Extreme PBR will set the options and perform the bake.
+
+**Below is a description of each option in the Bake Maps Cycles Standard Mode:**
+
+**Diffuse**
+   - If active, the Blender Bake will be set to **Diffuse** and execute the Bake. So it will create and export a Diffuse texture.
+
+**Glossy**
+    - If active, the Blender Bake will be set to **Glossy** and execute the Bake. So it will create and export a Glossy texture.
+
+**Roughness**
+    - If active, the Blender Bake will be set to **Roughness** and execute the Bake. So it will create and export a Roughness texture.
+
+**Emit**
+    - If active, the Blender Bake will be set to **Emit** and execute the Bake. So it will create and export a Emit texture.
+
+**Transmission**
+    - If active, the Blender Bake will be set to **Transmission** and execute the Bake. So it will create and export a Transmission texture.
+
+**Normal**
+    - If active, the Blender Bake will be set to **Normal** and execute the Bake. So it will create and export a Normal texture.
+
+**Alpha**
+    - If active, the Blender Bake will be set to **Alpha** and execute the Bake. So it will create and export a Alpha texture.
+
+**Alpha in a separate texture**
+    - If active:
+        the Blender Bake will be set to **Alpha** and execute the Bake. So it will create and export a Alpha texture.
+    - If inactive:
+        the Blender Bake will be set to **Diffuse** and execute the Bake. So it will create and export a Diffuse texture with the Alpha channel included.
+
+**Normal type**
+    (Works in accordance with the **Normal** item if active)
+     - **OpenGL (+Y):**
+        the Blender Bake will be set to **Normal** and execute the Bake. So it will create and export a Normal texture with the Y channel inverted, this is necessary for some game engines like Unity 3D.
+     - **DirectX (-Y):**
+        the Blender Bake will be set to **Normal** and execute the Bake. So it will create and export a Normal texture with the Y channel not inverted, this is necessary for some game engines like Unreal Engine.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Bake Maps Combined mode
+------------------------
+
+
+.. important::
+        This mode necessarily needs to have activated at least one of the 2 options **Direct Light** or **Indirect Light**,
+        otherwise the Bake will not even start.
+
+|
+
+.. image:: _static/_images/bake_panel/bake_maps_combined.jpg
+    :align: center
+    :width: 800
+    :alt: Bake Maps Combined
+
+|
+
+This type of Bake is practically the reproduction of the one already present in Blender as follows in the image:
+
+.. image:: _static/_images/bake_panel/combine_bake_standard_blender_example.jpg
+    :align: center
+    :width: 600
+    :alt: Combine Bake Standard Blender Example
+
+|
+
+.. hint::
+    Do not be fooled by this introduction, this tool is very complex and does not limit itself to reproducing that of
+    Blender, but rather to prepare all the necessary nodes, select them, bake them and save them in the format you choose.
+    A very long and tedious process in Blender at the moment
+
+
+So as already anticipated, one of the two options **Direct Light** or **Indirect Light** must be active, in this way
+the Bake will start and create a **Combined** texture.
+
+
+**Below is a description of each option in the Bake Maps Combined Mode:**
+
+**Diffuse**
+   - If active, the Blender Bake will be set to **Diffuse** and execute the Bake. So this step will be included in the
+     resulting single texture, (So the diffuse map)
+
+**Glossy**
+    - If active, the Blender Bake will be set to **Glossy** and execute the Bake. So this step will be included in the
+      resulting single texture, (So the diffuse map)
+
+**Transmission**
+    - If active, the Blender Bake will be set to **Transmission** and execute the Bake. So this step will be included in
+      the resulting single texture, (So the diffuse map)
+
+**Emit**
+    - If active, the Blender Bake will be set to **Emit** and execute the Bake. So this step will be included in the
+      resulting single texture, (So the diffuse map)
+
+**Alpha in separate texture**
+    - If active and the material has an Alpha map, the bake will create a separate Alpha texture, otherwise the Alpha
+      will be included in the Diffuse texture in the Alpha channel.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Choose Bake Destination
+------------------------
+
+.. image:: _static/_images/bake_panel/choose_bake_destination.jpg
+    :align: center
+    :width: 600
+    :alt: Choose Bake Destination
+
+|
+
+This button opens a file browser, where you can choose the destination folder of the Bake
+
+
+.. note::
+        In the folder chosen as the destination (Only if the Bake has been started), a folder with the name of the
+        current project will be created, inside of it the necessary files will be created, Images and in case you have
+        chosen to export an FBX, also the FBX.
+        **Each object will be contained in a folder with the name of the object itself**
 
 
 
