@@ -96,6 +96,12 @@
 <li class="toctree-l2"><a class="reference internal" href="#box-utility">Box Utility</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#smart-shade-smooth">Smart Shade Smooth</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#copy-material-smart">Copy Material (Smart)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#smart-vertex-groups">Smart Vertex Groups</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bake-editor-button">Bake Editor Button</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#bake-editor-panel">Bake Editor Panel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bake-editor-bsdf-mode">Bake Editor Bsdf Mode</a></li>
 </ul>
 </li>
 </ul>
@@ -144,7 +150,8 @@
              
   <section id="main-panel">
 <h1>Main Panel<a class="headerlink" href="#main-panel" title="Permalink to this heading"></a></h1>
-<p>Il pannello principale di Extreme PBR Nexus dalla versione 4.1.100</p>
+<p>The main panel of Extreme PBR Nexus from version 4.1.100, if you have an older version, you can update it by following
+this guide: TODO: Inserire link alla guida di aggiornamento</p>
 <table class="docutils align-default">
 <tbody>
 <tr class="row-odd"><td></td>
@@ -189,17 +196,20 @@ and the “User” library, which is the library where you can add your saved ba
 </section>
 <section id="minimize-button">
 <span id="id2"></span><h3>Minimize Button<a class="headerlink" href="#minimize-button" title="Permalink to this heading"></a></h3>
-<p>This button allows you to minimize the main panel, to have more space in the 3D view.</p>
 <a class="reference internal image-reference" href="_images/minimize_main_panel_01.png"><img alt="Minimize Button" class="align-center" src="_images/minimize_main_panel_01.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button allows you to minimize the main panel, to have more space in the 3D view.</p>
 </section>
 <hr class="docutils" />
 <section id="search-category">
 <h3>Search Category<a class="headerlink" href="#search-category" title="Permalink to this heading"></a></h3>
-<p>This Button allows you to search for a category without opening the drop-down menu.</p>
 <a class="reference internal image-reference" href="_images/search_category_botton_01.png"><img alt="Search Category" class="align-right" src="_images/search_category_botton_01.png" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+<p>This Button allows you to search for a category without opening the drop-down menu.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The categories are relative to the selected library, at the moment the categories contained in a non-selected library will not be displayed</p>
@@ -208,63 +218,90 @@ and the “User” library, which is the library where you can add your saved ba
 <hr class="docutils" />
 <section id="category-selector-drop-down-menu">
 <h3>Category Selector (Drop-down Menu)<a class="headerlink" href="#category-selector-drop-down-menu" title="Permalink to this heading"></a></h3>
-<p>This allows you to select the category (Each library will have its own category)</p>
 <a class="reference internal image-reference" href="_images/category_popup_01.png"><img alt="Category Selector" class="align-center" src="_images/category_popup_01.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This allows you to select the category (Each library will have its own category)</p>
 <hr class="docutils" />
 </section>
 </section>
 <section id="material-browser">
 <span id="id3"></span><h2>Material Browser<a class="headerlink" href="#material-browser" title="Permalink to this heading"></a></h2>
-<p>This section is dedicated to displaying the material previews.</p>
 <a class="reference internal image-reference" href="_images/material_browser_01.png"><img alt="Material Browser" class="align-center" src="_images/material_browser_01.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This section is dedicated to displaying the material previews.</p>
 <hr class="docutils" />
 <section id="preview-popup">
 <h3>Preview Popup<a class="headerlink" href="#preview-popup" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/material_browser_popup_01.png"><img alt="Preview Popup" class="align-center" src="_images/material_browser_popup_01.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <p>This allows you to select the background (Each library will have its own background), a pop-up window will appear
 with the list of preview backgrounds</p>
-<a class="reference internal image-reference" href="_images/material_browser_popup_01.png"><img alt="Preview Popup" class="align-center" src="_images/material_browser_popup_01.png" style="width: 800px;" /></a>
 </section>
 <hr class="docutils" />
 <section id="up-down-arrow">
 <h3>Up/Down Arrow<a class="headerlink" href="#up-down-arrow" title="Permalink to this heading"></a></h3>
-<p>These two buttons allow you to switch to the previous or next category.</p>
 <a class="reference internal image-reference" href="_images/scroll_up_down_category_01.png"><img alt="Up/Down Arrow" class="align-center" src="_images/scroll_up_down_category_01.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These two buttons allow you to switch to the previous or next category.</p>
 </section>
 <hr class="docutils" />
 <section id="left-right-arrow">
 <h3>Left/Right Arrow<a class="headerlink" href="#left-right-arrow" title="Permalink to this heading"></a></h3>
-<p>These two buttons allow you to switch to the previous or next material in the current category.</p>
 <a class="reference internal image-reference" href="_images/scroll_left_right_material_01.png"><img alt="Left/Right Arrow" class="align-center" src="_images/scroll_left_right_material_01.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These two buttons allow you to switch to the previous or next material in the current category.</p>
 </section>
 <hr class="docutils" />
 <section id="open-options">
 <h3>Open Options<a class="headerlink" href="#open-options" title="Permalink to this heading"></a></h3>
-<p>This button will open the Extreme PBR preferences exactly in the Options section</p>
 <a class="reference internal image-reference" href="_images/open_options_button_01.png"><img alt="Open Options" class="align-center" src="_images/open_options_button_01.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button will open the Extreme PBR preferences exactly in the Options section</p>
 </section>
 <hr class="docutils" />
 <section id="reload-preview-icons">
 <h3>Reload Preview Icons<a class="headerlink" href="#reload-preview-icons" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/reload_preview_icons_01.png"><img alt="Reload Preview Icons" class="align-center" src="_images/reload_preview_icons_01.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <p>It may happen that the material icons are not loaded correctly, this button allows you to reload the material icons.
 in addition, it also reloads the interface icons</p>
-<a class="reference internal image-reference" href="_images/reload_preview_icons_01.png"><img alt="Reload Preview Icons" class="align-center" src="_images/reload_preview_icons_01.png" style="width: 400px;" /></a>
 <hr class="docutils" />
 </section>
 </section>
 <section id="tag-search-size-selector">
 <span id="id4"></span><h2>Tag Search Size Selector<a class="headerlink" href="#tag-search-size-selector" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/tag_search_size_selector_01.png"><img alt="Tag Search Size Selector" class="align-center" src="_images/tag_search_size_selector_01.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <p>This small menu in the box, allows you to Select the size / version of the material (If there is an alternative)
 Contains The search for tag / background name and information on the background currently in the preview.</p>
-<a class="reference internal image-reference" href="_images/tag_search_size_selector_01.png"><img alt="Tag Search Size Selector" class="align-center" src="_images/tag_search_size_selector_01.png" style="width: 800px;" /></a>
 <hr class="docutils" />
 <section id="search-for-tag">
 <h3>Search for tag<a class="headerlink" href="#search-for-tag" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/tag_search_menu_button_01.png"><img alt="Search for tag" class="align-center" src="_images/tag_search_menu_button_01.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <p>This allows you to search for a background by typing the name of the tag
 - In the upper field, you can enter the name of the tag you want to include in the search
 - In the lower field, you can enter the name of the tag you want to exclude from the search</p>
 <p>Keep the tags separated with a space if you want to include more than one tag in the search.</p>
 <p>In this way, the categories and the previews will be filtered according to the tags entered.</p>
-<a class="reference internal image-reference" href="_images/tag_search_menu_button_01.png"><img alt="Search for tag" class="align-center" src="_images/tag_search_menu_button_01.png" style="width: 800px;" /></a>
 </section>
 <hr class="docutils" />
 <section id="search-background-by-entering-text">
@@ -478,13 +515,13 @@ TODO: Mettere collegamento a displacement</p>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>This button will be present only if the material has a Bump / Displacement map
-if it is not present, it means that there is no Bump / Displacement map in the</p>
+if it is not present, it means that there is no Bump / Displacement map in the material.</p>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>Se lo stesso materiale identico, è presente anche su altri oggetti, il displacement si attiverà anche sugli altri oggetti.
-Se vuoi evitare questo, puoi rendere il materiale unico copiandolo tramite il pulsante <strong>Duplicate Material</strong> descritto
-in questo paragrafo: <a class="reference internal" href="#duplicate-material"><span class="std std-ref">Duplicate Material</span></a></p>
+<p>If the same identical material is also present on other objects, the displacement will also be activated on the other objects.
+If you want to avoid this, you can make the material unique by copying it via the <strong>Duplicate Material</strong> button described
+in this paragraph: <a class="reference internal" href="#duplicate-material"><span class="std std-ref">Duplicate Material</span></a></p>
 </div>
 </section>
 <hr class="docutils" />
@@ -552,25 +589,34 @@ for example, if you have selected an object or not.</p>
 </div>
 <p>Works only on an active object of type <strong>Mesh</strong></p>
 <p>This button is used to adjust the <strong>Shade Smooth</strong> and <strong>Auto Smooth</strong> in 3 steps, here are the steps:</p>
-<ul class="simple">
-<li><p><strong>Step 0:</strong> <strong>Shade Smooth</strong> deactivated / <strong>Auto Smooth</strong> deactivated, the object has a sharp appearance</p></li>
+<dl class="simple">
+<dt><strong>Step 0:</strong></dt><dd><ul class="simple">
+<li><p><strong>Shade Smooth</strong> deactivated / <strong>Auto Smooth</strong> deactivated, the object has a sharp appearance</p></li>
 </ul>
+</dd>
+</dl>
 <a class="reference internal image-reference" href="_images/smooth_step_000.jpg"><img alt="Smooth Step 000" class="align-center" src="_images/smooth_step_000.jpg" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<ul class="simple">
-<li><p><strong>Step 1:</strong> <strong>Shade Smooth</strong> activated / <strong>Auto Smooth</strong> activated, the object appears to be more rounded, angles equal
+<dl class="simple">
+<dt><strong>Step 1:</strong></dt><dd><ul class="simple">
+<li><p><strong>Shade Smooth</strong> activated / <strong>Auto Smooth</strong> activated, the object appears to be more rounded, angles equal
 to or greater than 45 ° will not be rounded</p></li>
 </ul>
+</dd>
+</dl>
 <a class="reference internal image-reference" href="_images/smooth_step_001.jpg"><img alt="Smooth Step 001" class="align-center" src="_images/smooth_step_001.jpg" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<ul class="simple">
-<li><p><strong>Step 2:</strong> <strong>Shade Smooth</strong> activated / <strong>Auto Smooth</strong> deactivated, the object appears to be completely rounded,
+<dl class="simple">
+<dt><strong>Step 2:</strong></dt><dd><ul class="simple">
+<li><p><strong>Shade Smooth</strong> activated / <strong>Auto Smooth</strong> deactivated, the object appears to be completely rounded,
 all angles are rounded</p></li>
 </ul>
+</dd>
+</dl>
 <a class="reference internal image-reference" href="_images/smooth_step_002.jpg"><img alt="Smooth Step 002" class="align-center" src="_images/smooth_step_002.jpg" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -589,7 +635,7 @@ as soon as the button is pressed, this will resynchronize the steps again in acc
 <div class="line"><br /></div>
 </div>
 <p>This button allows you to copy all the materials and the displacement from the active object, directly to the selected objects.</p>
-<p>Here is an example, to better understand:</p>
+<p><strong>Here is an example, to better understand:</strong></p>
 <ul class="simple">
 <li><p>In order to obtain this situation, make sure to hold down the SHIFT button and select the objects you want to copy,
 the last object you select will be the active object, so make sure it is the one that contains the materials you want to copy.</p></li>
@@ -603,6 +649,56 @@ the last object you select will be the active object, so make sure it is the one
 and the displacement from the active object, directly to the selected objects.</p></li>
 </ul>
 <a class="reference internal image-reference" href="_images/smart_copy_step_02.jpg"><img alt="Smart Copy Step 02" class="align-center" src="_images/smart_copy_step_02.jpg" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="smart-vertex-groups">
+<h3>Smart Vertex Groups<a class="headerlink" href="#smart-vertex-groups" title="Permalink to this heading"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This button is useful only if you have 2 or more materials on the same object and you are using the corresponding displacement of each material.
+the displacements must be of type <strong>Modifier</strong> because if the Displacment is of type <strong>Microdisplacement</strong> this will be useless.
+|
+<strong>For more information on how to use displacement, see this section:</strong> TODO: Refer to the displacement section</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="_images/smart_vertex_groups_button_01.png"><img alt="Smart Vertex Groups Button 01" class="align-center" src="_images/smart_vertex_groups_button_01.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Here is how an object with 2 materials and 2 displacements, one for each material, is presented, thanks to this button
+the faces with the corresponding materials will be assigned to the respective vertex groups, in this way you can use the
+correct displacement for each material.</p>
+<p><strong>Note how both materials in the list have the displacement active:</strong></p>
+<a class="reference internal image-reference" href="_images/double_displacement_same_object_01.jpg"><img alt="Double Displacement Same Object 01" class="align-center" src="_images/double_displacement_same_object_01.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Here’s how I prepared the object for this example, I divided the faces into more so that the division between the two materials
+is a little less sharp, so I added some edges to “Accompany” the displacement between the two materials.</p>
+<a class="reference internal image-reference" href="_images/object_subdivision_for_double_displacement.jpg"><img alt="Object Subdivision For Double Displacement" class="align-center" src="_images/object_subdivision_for_double_displacement.jpg" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="bake-editor-button">
+<h3>Bake Editor Button<a class="headerlink" href="#bake-editor-button" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/bake_editor_button_01.png"><img alt="Bake Editor Button 01" class="align-center" src="_images/bake_editor_button_01.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button allows you to access the Bake Editor Panel, which allows you to bake the materials present on the object</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="bake-editor-panel">
+<h2>Bake Editor Panel<a class="headerlink" href="#bake-editor-panel" title="Permalink to this heading"></a></h2>
+<p>The bake editor panel has 3 different <strong>Bake Mode</strong>, depending on which mode you choose, the panel will take on a
+slightly different appearance.</p>
+<a class="reference internal image-reference" href="_images/bake_editor_modes_01.jpg"><img alt="Bake Editor Panel 01" class="align-center" src="_images/bake_editor_modes_01.jpg" style="width: 800px;" /></a>
+<hr class="docutils" />
+<section id="bake-editor-bsdf-mode">
+<h3>Bake Editor Bsdf Mode<a class="headerlink" href="#bake-editor-bsdf-mode" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/bake_editor_bsdf_mode_01.jpg"><img alt="Bake Editor Bsdf Mode 01" class="align-center" src="_images/bake_editor_bsdf_mode_01.jpg" style="width: 800px;" /></a>
 </section>
 </section>
 </section>

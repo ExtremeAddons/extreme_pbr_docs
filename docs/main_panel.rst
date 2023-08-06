@@ -1,7 +1,8 @@
 Main Panel
 ===========================
 
-Il pannello principale di Extreme PBR Nexus dalla versione 4.1.100
+The main panel of Extreme PBR Nexus from version 4.1.100, if you have an older version, you can update it by following
+this guide: TODO: Inserire link alla guida di aggiornamento
 
 .. |main_panel| image:: _static/_images/main_panel/main_panel_01.png
                     :width: 800
@@ -74,13 +75,15 @@ and the "User" library, which is the library where you can add your saved backgr
 Minimize Button
 ***************
 
-This button allows you to minimize the main panel, to have more space in the 3D view.
-
-
 .. image:: _static/_images/main_panel/minimize_main_panel_01.png
     :align: center
     :width: 800
     :alt: Minimize Button
+
+|
+
+This button allows you to minimize the main panel, to have more space in the 3D view.
+
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -88,14 +91,14 @@ This button allows you to minimize the main panel, to have more space in the 3D 
 Search Category
 ***************
 
-This Button allows you to search for a category without opening the drop-down menu.
-
 .. image:: _static/_images/main_panel/search_category_botton_01.png
     :align: right
     :width: 600
     :alt: Search Category
 
 |
+
+This Button allows you to search for a category without opening the drop-down menu.
 
 .. note::
         The categories are relative to the selected library, at the moment the categories contained in a non-selected library will not be displayed
@@ -106,12 +109,14 @@ This Button allows you to search for a category without opening the drop-down me
 Category Selector (Drop-down Menu)
 ************************************
 
-This allows you to select the category (Each library will have its own category)
-
 .. image:: _static/_images/main_panel/category_popup_01.png
     :align: center
     :width: 800
     :alt: Category Selector
+
+|
+
+This allows you to select the category (Each library will have its own category)
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -121,13 +126,14 @@ This allows you to select the category (Each library will have its own category)
 Material Browser
 -------------------
 
-This section is dedicated to displaying the material previews.
-
-
 .. image:: _static/_images/main_panel/material_browser_01.png
     :align: center
     :width: 800
     :alt: Material Browser
+
+|
+
+This section is dedicated to displaying the material previews.
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -135,25 +141,29 @@ This section is dedicated to displaying the material previews.
 Preview Popup
 *************
 
-This allows you to select the background (Each library will have its own background), a pop-up window will appear
-with the list of preview backgrounds
-
 .. image:: _static/_images/main_panel/material_browser_popup_01.png
     :align: center
     :width: 800
     :alt: Preview Popup
+
+|
+
+This allows you to select the background (Each library will have its own background), a pop-up window will appear
+with the list of preview backgrounds
 
 ------------------------------------------------------------------------------------------------------------------------
 
 Up/Down Arrow
 **************
 
-These two buttons allow you to switch to the previous or next category.
-
 .. image:: _static/_images/main_panel/scroll_up_down_category_01.png
     :align: center
     :width: 200
     :alt: Up/Down Arrow
+
+|
+
+These two buttons allow you to switch to the previous or next category.
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -161,12 +171,15 @@ These two buttons allow you to switch to the previous or next category.
 Left/Right Arrow
 *****************
 
-These two buttons allow you to switch to the previous or next material in the current category.
-
 .. image:: _static/_images/main_panel/scroll_left_right_material_01.png
     :align: center
     :width: 200
     :alt: Left/Right Arrow
+
+|
+
+These two buttons allow you to switch to the previous or next material in the current category.
+
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -174,26 +187,32 @@ These two buttons allow you to switch to the previous or next material in the cu
 Open Options
 **************
 
-This button will open the Extreme PBR preferences exactly in the Options section
-
 .. image:: _static/_images/main_panel/open_options_button_01.png
     :align: center
     :width: 400
     :alt: Open Options
+
+|
+
+
+This button will open the Extreme PBR preferences exactly in the Options section
+
 
 ------------------------------------------------------------------------------------------------------------------------
 
 Reload Preview Icons
 *********************
 
-It may happen that the material icons are not loaded correctly, this button allows you to reload the material icons.
-in addition, it also reloads the interface icons
 
 .. image:: _static/_images/main_panel/reload_preview_icons_01.png
     :align: center
     :width: 400
     :alt: Reload Preview Icons
 
+|
+
+It may happen that the material icons are not loaded correctly, this button allows you to reload the material icons.
+in addition, it also reloads the interface icons
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -204,20 +223,29 @@ in addition, it also reloads the interface icons
 Tag Search Size Selector
 ------------------------
 
-This small menu in the box, allows you to Select the size / version of the material (If there is an alternative)
-Contains The search for tag / background name and information on the background currently in the preview.
-
 
 .. image:: _static/_images/main_panel/tag_search_size_selector_01.png
     :align: center
     :width: 800
     :alt: Tag Search Size Selector
 
+|
+
+This small menu in the box, allows you to Select the size / version of the material (If there is an alternative)
+Contains The search for tag / background name and information on the background currently in the preview.
+
 
 ------------------------------------------------------------------------------------------------------------------------
 
 Search for tag
 **************
+
+.. image:: _static/_images/main_panel/tag_search_menu_button_01.png
+    :align: center
+    :width: 800
+    :alt: Search for tag
+
+|
 
 This allows you to search for a background by typing the name of the tag
 - In the upper field, you can enter the name of the tag you want to include in the search
@@ -227,10 +255,6 @@ Keep the tags separated with a space if you want to include more than one tag in
 
 In this way, the categories and the previews will be filtered according to the tags entered.
 
-.. image:: _static/_images/main_panel/tag_search_menu_button_01.png
-    :align: center
-    :width: 800
-    :alt: Search for tag
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -514,12 +538,12 @@ TODO: Mettere collegamento a displacement
 
 .. important::
         This button will be present only if the material has a Bump / Displacement map
-        if it is not present, it means that there is no Bump / Displacement map in the
+        if it is not present, it means that there is no Bump / Displacement map in the material.
 
 .. tip::
-        Se lo stesso materiale identico, è presente anche su altri oggetti, il displacement si attiverà anche sugli altri oggetti.
-        Se vuoi evitare questo, puoi rendere il materiale unico copiandolo tramite il pulsante **Duplicate Material** descritto
-        in questo paragrafo: :ref:`duplicate_material`
+        If the same identical material is also present on other objects, the displacement will also be activated on the other objects.
+        If you want to avoid this, you can make the material unique by copying it via the **Duplicate Material** button described
+        in this paragraph: :ref:`duplicate_material`
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -558,8 +582,6 @@ of materials present in the current project **bpy.data.materials** and **add** t
 
 **Edit Mode Features:**
     - If you are in edit mode and have some faces selected, the material will be applied to those faces, otherwise it will only be added to the material list
-
-
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -620,7 +642,8 @@ Works only on an active object of type **Mesh**
 
 This button is used to adjust the **Shade Smooth** and **Auto Smooth** in 3 steps, here are the steps:
 
-- **Step 0:** **Shade Smooth** deactivated / **Auto Smooth** deactivated, the object has a sharp appearance
+**Step 0:**
+  - **Shade Smooth** deactivated / **Auto Smooth** deactivated, the object has a sharp appearance
 
 
 .. image:: _static/_images/main_panel/smooth_step_000.jpg
@@ -630,8 +653,9 @@ This button is used to adjust the **Shade Smooth** and **Auto Smooth** in 3 step
 
 |
 
-- **Step 1:** **Shade Smooth** activated / **Auto Smooth** activated, the object appears to be more rounded, angles equal
-  to or greater than 45 ° will not be rounded
+**Step 1:**
+  - **Shade Smooth** activated / **Auto Smooth** activated, the object appears to be more rounded, angles equal
+    to or greater than 45 ° will not be rounded
 
 .. image:: _static/_images/main_panel/smooth_step_001.jpg
     :align: center
@@ -640,8 +664,9 @@ This button is used to adjust the **Shade Smooth** and **Auto Smooth** in 3 step
 
 |
 
-- **Step 2:** **Shade Smooth** activated / **Auto Smooth** deactivated, the object appears to be completely rounded,
-  all angles are rounded
+**Step 2:**
+  - **Shade Smooth** activated / **Auto Smooth** deactivated, the object appears to be completely rounded,
+    all angles are rounded
 
 .. image:: _static/_images/main_panel/smooth_step_002.jpg
     :align: center
@@ -691,18 +716,88 @@ This button allows you to copy all the materials and the displacement from the a
     :alt: Smart Copy Step 02
 
 
+------------------------------------------------------------------------------------------------------------------------
 
 
+Smart Vertex Groups
+*********************
+
+.. note::
+        This button is useful only if you have 2 or more materials on the same object and you are using the corresponding displacement of each material.
+        the displacements must be of type **Modifier** because if the Displacment is of type **Microdisplacement** this will be useless.
+        |
+        **For more information on how to use displacement, see this section:** TODO: Refer to the displacement section
+
+|
+
+.. image:: _static/_images/main_panel/smart_vertex_groups_button_01.png
+    :align: center
+    :width: 400
+    :alt: Smart Vertex Groups Button 01
+
+|
 
 
+Here is how an object with 2 materials and 2 displacements, one for each material, is presented, thanks to this button
+the faces with the corresponding materials will be assigned to the respective vertex groups, in this way you can use the
+correct displacement for each material.
+
+**Note how both materials in the list have the displacement active:**
+
+.. image:: _static/_images/main_panel/double_displacement_same_object_01.jpg
+    :align: center
+    :width: 800
+    :alt: Double Displacement Same Object 01
 
 
+|
+
+Here's how I prepared the object for this example, I divided the faces into more so that the division between the two materials
+is a little less sharp, so I added some edges to "Accompany" the displacement between the two materials.
+
+.. image:: _static/_images/main_panel/object_subdivision_for_double_displacement.jpg
+    :align: center
+    :width: 800
+    :alt: Object Subdivision For Double Displacement
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+Bake Editor Button
+*******************
+
+.. image:: _static/_images/main_panel/bake_editor_button_01.png
+    :align: center
+    :width: 400
+    :alt: Bake Editor Button 01
+
+|
+
+This button allows you to access the Bake Editor Panel, which allows you to bake the materials present on the object
+
+------------------------------------------------------------------------------------------------------------------------
 
 
+Bake Editor Panel
+-----------------
+
+The bake editor panel has 3 different **Bake Mode**, depending on which mode you choose, the panel will take on a
+slightly different appearance.
+
+.. image:: _static/_images/main_panel/bake_editor_modes_01.jpg
+    :align: center
+    :width: 800
+    :alt: Bake Editor Panel 01
+
+------------------------------------------------------------------------------------------------------------------------
+
+Bake Editor Bsdf Mode
+*********************
 
 
-
+.. image:: _static/_images/main_panel/bake_editor_bsdf_mode_01.jpg
+    :align: center
+    :width: 800
+    :alt: Bake Editor Bsdf Mode 01
 
 
