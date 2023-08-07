@@ -53,7 +53,18 @@
 <li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapping_editor.html">Mapping Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Displacement</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Displacement</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction-to-the-displacement-modifier">Introduction to the displacement modifier</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#displacement-modifier">Displacement Modifier</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#microdisplacement">Microdisplacement</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#displacement-panel-modifier">Displacement Panel (Modifier)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#toggle-wireframe">Toggle Wireframe</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
 <ul>
@@ -111,6 +122,38 @@ see the displacement panel.</p>
 This is intended, as these materials do not need displacement. The button will be visible, only if in the
 material there is a Bump or Displacement map.</p>
 </div>
+<section id="introduction-to-the-displacement-modifier">
+<h2>Introduction to the displacement modifier<a class="headerlink" href="#introduction-to-the-displacement-modifier" title="Permalink to this heading"></a></h2>
+<p>Il displacement può essere usato in due modi:</p>
+<section id="displacement-modifier">
+<h3>Displacement Modifier<a class="headerlink" href="#displacement-modifier" title="Permalink to this heading"></a></h3>
+<p>It works in Eevee and Cycles mode, in fact it uses the Blender Modifiers to create the displacement,
+this is very useful if you do not want to use Cycles, but also if you use Cycles, the displacement will work anyway.</p>
+<p>Here’s what it does exactly once you activate the displacement from the button in the <a class="reference internal" href="main_panel.html#displace-on-off"><span class="std std-ref">Displace On/Off</span></a>:</p>
+<a class="reference internal image-reference" href="_images/displace_modifier_corrispective_modifiers_01.jpg"><img alt="Displace Modifier Corrispective Modifiers 01" class="align-center" src="_images/displace_modifier_corrispective_modifiers_01.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="microdisplacement">
+<h3>Microdisplacement<a class="headerlink" href="#microdisplacement" title="Permalink to this heading"></a></h3>
+</section>
+</section>
+<section id="displacement-panel-modifier">
+<h2>Displacement Panel (Modifier)<a class="headerlink" href="#displacement-panel-modifier" title="Permalink to this heading"></a></h2>
+<p>Here is how the displacement panel looks like once you activate the <strong>Displacement</strong> button.
+By default it will be set to <strong>Modifiers</strong></p>
+<a class="reference internal image-reference" href="_images/displacement_panel_modifier_01.jpg"><img alt="Displacement Panel Modifier 01" class="align-center" src="_images/displacement_panel_modifier_01.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="toggle-wireframe">
+<h3>Toggle Wireframe<a class="headerlink" href="#toggle-wireframe" title="Permalink to this heading"></a></h3>
+<p>This button allows you to control the mesh of the selected model, it also allows you to see all the subdivisions
+that have been applied to the model by the modifier</p>
+<a class="reference internal image-reference" href="_images/toggle_wireframe.png"><img alt="Toggle Wireframe" class="align-center" src="_images/toggle_wireframe.png" style="width: 800px;" /></a>
+</section>
+</section>
 </section>
 
 
