@@ -54,15 +54,28 @@
 <li class="toctree-l1"><a class="reference internal" href="mapping_editor.html">Mapping Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Displacement</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#introduction-to-the-displacement-modifier">Introduction to the displacement modifier</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#displacement-modifier">Displacement Modifier</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#microdisplacement">Microdisplacement</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#displacement-panel-modifier">Displacement Panel (Modifier)</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#displace-type">Displace Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#displacement-modifier-explained">Displacement Modifier Explained</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#displacement-modifier">Displacement (Modifier)</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#toggle-wireframe">Toggle Wireframe</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#subdivision-type">Subdivision Type</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#catmull-clark-subdivision">Catmull-Clark Subdivision</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#simple-subdivision">Simple Subdivision</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#viewport-render-subdivision">Viewport/Render Subdivision</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#displace-strength">Displace Strength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#displace-midlevel">Displace Midlevel</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#smooth-factor">Smooth Factor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#smooth-repeat">Smooth Repeat</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#brightness">Brightness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#contrast">Contrast</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bake-displacement">Bake Displacement</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#displacement-microdisplacement">Displacement Microdisplacement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#multiple-displacement-modifier">Multiple Displacement Modifier</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#multiple-microdisplacement">Multiple Microdisplacement</a></li>
 </ul>
 </li>
 </ul>
@@ -122,37 +135,264 @@ see the displacement panel.</p>
 This is intended, as these materials do not need displacement. The button will be visible, only if in the
 material there is a Bump or Displacement map.</p>
 </div>
-<section id="introduction-to-the-displacement-modifier">
-<h2>Introduction to the displacement modifier<a class="headerlink" href="#introduction-to-the-displacement-modifier" title="Permalink to this heading"></a></h2>
-<p>Il displacement può essere usato in due modi:</p>
-<section id="displacement-modifier">
-<h3>Displacement Modifier<a class="headerlink" href="#displacement-modifier" title="Permalink to this heading"></a></h3>
+<section id="displace-type">
+<h2>Displace Type<a class="headerlink" href="#displace-type" title="Permalink to this heading"></a></h2>
+<p>This selector allows you to switch from one type of displacement to another, in this way you can choose which type of displacement to use.
+The displacement can be used in two ways <a class="reference internal" href="#displace-modifier"><span class="std std-ref">Displacement Modifier Explained</span></a>: or <a class="reference internal" href="#microdisplacement"><span class="std std-ref">Displacement Microdisplacement</span></a></p>
+<a class="reference internal image-reference" href="_images/displace_type_selector.jpg"><img alt="Displace Type Selector" class="align-center" src="_images/displace_type_selector.jpg" style="width: 400px;" /></a>
+<hr class="docutils" />
+</section>
+<section id="displacement-modifier-explained">
+<span id="displace-modifier"></span><h2>Displacement Modifier Explained<a class="headerlink" href="#displacement-modifier-explained" title="Permalink to this heading"></a></h2>
 <p>It works in Eevee and Cycles mode, in fact it uses the Blender Modifiers to create the displacement,
 this is very useful if you do not want to use Cycles, but also if you use Cycles, the displacement will work anyway.</p>
 <p>Here’s what it does exactly once you activate the displacement from the button in the <a class="reference internal" href="main_panel.html#displace-on-off"><span class="std std-ref">Displace On/Off</span></a>:</p>
-<a class="reference internal image-reference" href="_images/displace_modifier_corrispective_modifiers_01.jpg"><img alt="Displace Modifier Corrispective Modifiers 01" class="align-center" src="_images/displace_modifier_corrispective_modifiers_01.jpg" style="width: 800px;" /></a>
+<p>As you can see, the displacement button, has activated 3 Modifiers:</p>
+<dl class="simple">
+<dt><strong>Subdivision Surface</strong></dt><dd><ul class="simple">
+<li><p>This modifier is used to subdivide the mesh, in order to have more geometry to displace.</p></li>
+<li><p>The subdivision surface modifier will always be 2 regardless of how many materials with displacement are present in the object,
+and will always be at the beginning of the modifier list.</p></li>
+</ul>
+</dd>
+<dt><strong>Displace</strong></dt><dd><ul class="simple">
+<li><p>This modifier is used to displace the mesh, it uses the displacement map that you have set in the material.
+Is based on a texture, the texture is the one that will displace the mesh.</p></li>
+</ul>
+</dd>
+<dt><strong>Smooth</strong></dt><dd><ul class="simple">
+<li><p>This modifier is used to smooth the mesh, in order to have a less angular mesh.</p></li>
+<li><p>The smooth modifier will always be 1 regardless of how many materials with displacement are present in the object,
+and will always be at the end of the modifier list.</p></li>
+</ul>
+</dd>
+</dl>
+<a class="reference internal image-reference" href="_images/displace_modifier_corresponding_modifiers_01.jpg"><img alt="Displace Modifier Corresponding Modifiers" class="align-center" src="_images/displace_modifier_corresponding_modifiers_01.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The displacement button also activates a texture slot, where the image texture that will be used for displacement will be placed.</p>
+<a class="reference internal image-reference" href="_images/brightness_contrast_texture_slot.jpg"><img alt="Brightness Contrast Texture Slot" class="align-center" src="_images/brightness_contrast_texture_slot.jpg" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 </section>
-<section id="microdisplacement">
-<h3>Microdisplacement<a class="headerlink" href="#microdisplacement" title="Permalink to this heading"></a></h3>
-</section>
-</section>
-<section id="displacement-panel-modifier">
-<h2>Displacement Panel (Modifier)<a class="headerlink" href="#displacement-panel-modifier" title="Permalink to this heading"></a></h2>
+<section id="displacement-modifier">
+<h2>Displacement (Modifier)<a class="headerlink" href="#displacement-modifier" title="Permalink to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Per utilizzare piu displacement modifier su un oggetto, fare riferimento a questo paragrafo: <a class="reference internal" href="#multiple-displacement-modifier"><span class="std std-ref">Multiple Displacement Modifier</span></a></p>
+</div>
 <p>Here is how the displacement panel looks like once you activate the <strong>Displacement</strong> button.
 By default it will be set to <strong>Modifiers</strong></p>
 <a class="reference internal image-reference" href="_images/displacement_panel_modifier_01.jpg"><img alt="Displacement Panel Modifier 01" class="align-center" src="_images/displacement_panel_modifier_01.jpg" style="width: 400px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
+<hr class="docutils" />
 <section id="toggle-wireframe">
 <h3>Toggle Wireframe<a class="headerlink" href="#toggle-wireframe" title="Permalink to this heading"></a></h3>
 <p>This button allows you to control the mesh of the selected model, it also allows you to see all the subdivisions
 that have been applied to the model by the modifier</p>
 <a class="reference internal image-reference" href="_images/toggle_wireframe.png"><img alt="Toggle Wireframe" class="align-center" src="_images/toggle_wireframe.png" style="width: 800px;" /></a>
 </section>
+<hr class="docutils" />
+<section id="subdivision-type">
+<h3>Subdivision Type<a class="headerlink" href="#subdivision-type" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/subdivision_type_selector.jpg"><img alt="Subdivision Type Selector" class="align-center" src="_images/subdivision_type_selector.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The subdivision algorithm that will be used to subdivide the mesh will change the result very much depending on some
+situations. Le opzioni disponibili sono <a class="reference internal" href="#simple"><span class="std std-ref">Simple Subdivision</span></a>, <a class="reference internal" href="#catmull-clark"><span class="std std-ref">Catmull-Clark Subdivision</span></a></p>
+<hr class="docutils" />
+<section id="catmull-clark-subdivision">
+<span id="catmull-clark"></span><h4>Catmull-Clark Subdivision<a class="headerlink" href="#catmull-clark-subdivision" title="Permalink to this heading"></a></h4>
+<p>In this example <strong>Edit Mode</strong> we have a cube <strong>not subdivided manually</strong> (six faces of the cube) with <strong>Catmull-Clark</strong> algorithm</p>
+<a class="reference internal image-reference" href="_images/cube_unsubdivided_catmull_clark_edit_mode.jpg"><img alt="Cube Unsubdivided Catmull Clark Edit Mode" class="align-center" src="_images/cube_unsubdivided_catmull_clark_edit_mode.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Here is the result of the displacement in <strong>Object Mode</strong> with <strong>Catmull-Clark</strong> algorithm <strong>not subdivided manually</strong> (six faces of the cube)</p>
+<a class="reference internal image-reference" href="_images/cube_unsubdivided_catmull_clark_render.jpg"><img alt="Cube Unsubdivided Catmull Clark Render" class="align-center" src="_images/cube_unsubdivided_catmull_clark_render.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In this example <strong>Edit Mode</strong> we have a cube <strong>subdivided manually</strong> (six faces of the cube subdivided into 4 faces each) with <strong>Catmull-Clark</strong> algorithm</p>
+<a class="reference internal image-reference" href="_images/cube_subdivided_catmull_clark_edit_mode.jpg"><img alt="Cube Subdivided Catmull Clark Edit Mode" class="align-center" src="_images/cube_subdivided_catmull_clark_edit_mode.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Here is the result of the displacement in <strong>Object Mode</strong> with <strong>Catmull-Clark</strong> algorithm <strong>subdivided manually</strong> (six faces of the cube subdivided into 4 faces each)</p>
+<a class="reference internal image-reference" href="_images/cube_subdivided_catmull_clark_render.jpg"><img alt="Cube Subdivided Catmull Clark Render" class="align-center" src="_images/cube_subdivided_catmull_clark_render.jpg" style="width: 800px;" /></a>
+<hr class="docutils" />
+</section>
+<section id="simple-subdivision">
+<span id="simple"></span><h4>Simple Subdivision<a class="headerlink" href="#simple-subdivision" title="Permalink to this heading"></a></h4>
+<p>This type of subdivision is the default one, and usually it is the most used.</p>
+<p>The cube in this case is <strong>not subdivided manually</strong> (six faces of the cube) with <strong>Simple</strong> algorithm</p>
+<a class="reference internal image-reference" href="_images/cube_unsubdivided_simple_render.jpg"><img alt="Cube Unsubdivided Simple Edit Mode" class="align-center" src="_images/cube_unsubdivided_simple_render.jpg" style="width: 800px;" /></a>
+</section>
+</section>
+<hr class="docutils" />
+<section id="viewport-render-subdivision">
+<h3>Viewport/Render Subdivision<a class="headerlink" href="#viewport-render-subdivision" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/viewport_render_subdivision.jpg"><img alt="Viewport Render Subdivision" class="align-center" src="_images/viewport_render_subdivision.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These two properties decide how many subdivisions you want to apply to the model, this makes the model richer in details, but it has a cost
+not cheap, as the higher the number of subdivisions the heavier and slower the model will be.</p>
+<p>By default the parameters can be set between 1 and 6 with the mouse, but can be forced to a higher subdivision
+manually entering the desired number.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Be careful to use too high subdivision numbers, as blender could lock up for a long time or even
+block altogether. This is a problem that has been known for years in the <strong>Subdivision Surface</strong> modifier of Blender.</p>
+</div>
+<dl class="simple">
+<dt><strong>Viewport Subdivision</strong></dt><dd><ul class="simple">
+<li><p>This regulates the subdivision of the model in the viewport, that is when you are working on the model, so you can think
+to set a low value, to have a lighter and faster model to edit. It will not affect the final render.</p></li>
+</ul>
+</dd>
+<dt><strong>Render Subdivision</strong></dt><dd><ul class="simple">
+<li><p>This regulates the subdivision of the model in the final render, that is when you render the model, so you can think
+to set a high value, to have a model richer in details. It will not affect the viewport. You will see
+the result only when the render is completed. (F12 to render)</p></li>
+</ul>
+</dd>
+</dl>
+</section>
+<hr class="docutils" />
+<section id="displace-strength">
+<h3>Displace Strength<a class="headerlink" href="#displace-strength" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/displace_strength.jpg"><img alt="Displace Strength" class="align-center" src="_images/displace_strength.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This property regulates the strength of the displacement, that is how strong the displacement will be. It can also be negative,
+in fact if you want to create a carving effect, you have to set a negative value.</p>
+<p>Here is an example that includes some situations:</p>
+<ul class="simple">
+<li><p>Displacement Negative -0.1</p></li>
+<li><p>Displacement Positive 0.25</p></li>
+<li><p>Displacement Positive 0.1</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/displacement_strength_example_01.jpg"><img alt="Displacement Strength Example 01" class="align-center" src="_images/displacement_strength_example_01.jpg" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="displace-midlevel">
+<h3>Displace Midlevel<a class="headerlink" href="#displace-midlevel" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/displace_midlevel.jpg"><img alt="Displace Midlevel" class="align-center" src="_images/displace_midlevel.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The midlevel is used to adjust the position of the displacement, so that it can be moved up or down.
+you can say that it is an offset of the displacement.</p>
+</section>
+<hr class="docutils" />
+<section id="smooth-factor">
+<h3>Smooth Factor<a class="headerlink" href="#smooth-factor" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/smooth_factor.jpg"><img alt="Smooth Factor" class="align-center" src="_images/smooth_factor.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The smooth factor is used to smooth the displacement, in order to have a less angular mesh. The higher the value, the more
+the mesh will be smoothed.
+This value work in conjunction with the <strong>Smooth Repeat</strong> value.</p>
+</section>
+<hr class="docutils" />
+<section id="smooth-repeat">
+<h3>Smooth Repeat<a class="headerlink" href="#smooth-repeat" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/smooth_repeat.jpg"><img alt="Smooth Repeat" class="align-center" src="_images/smooth_repeat.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The smooth repeat is used to repeat the smooth, in order to have a less angular mesh. The higher the value, the more
+the mesh will be smoothed in large areas.</p>
+<p>This value work in conjunction with the <strong>Smooth Factor</strong> value.</p>
+</section>
+<hr class="docutils" />
+<section id="brightness">
+<h3>Brightness<a class="headerlink" href="#brightness" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/displace_brightness.jpg"><img alt="Displace Brightness" class="align-center" src="_images/displace_brightness.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This value regulates the brightness of the displacement texture, so that it can be made brighter or darker.
+In fact, the displacement works according to the White / Black map, so if the map is too dark, the displacement will not be seen,
+or you will see little, so this value is very useful for adjusting the brightness of the map.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All the displacement maps of the Extreme PBR library have been optimized to have a value of brightness
+as correct as possible, but there are some cases where it is necessary to adjust this value, especially if you are
+importing a displacement map.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="contrast">
+<h3>Contrast<a class="headerlink" href="#contrast" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/displace_contrast.jpg"><img alt="Displace Contrast" class="align-center" src="_images/displace_contrast.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This value regulates the contrast of the displacement texture, so that it can be made more contrasted or less contrasted.
+In fact, the displacement works according to the White / Black map, so if the map is too contrasted, the displacement will be
+too strong, or you will see little, so this value is very useful for adjusting the contrast of the map.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All the displacement maps of the Extreme PBR library have been optimized to have a value of contrast
+as correct as possible, but there are some cases where it is necessary to adjust this value, especially if you are
+importing a displacement map.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="bake-displacement">
+<h3>Bake Displacement<a class="headerlink" href="#bake-displacement" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/bake_displacement.jpg"><img alt="Bake Displacement" class="align-center" src="_images/bake_displacement.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button is the equivalent of the <strong>Apply</strong> buttons present in the Blender modifiers, so what it will do is
+apply all the modifiers of the displacement mentioned in this paragraph: <a class="reference internal" href="#displace-modifier"><span class="std std-ref">Displacement Modifier Explained</span></a> and make them permanent.</p>
+<p>This operation makes the displacement definitive and no longer adjustable, so if you want to go back the only way is
+do an Undo (CTRL + Z). The mesh will become heavier and will have the shape given by the modifiers.</p>
+<hr class="docutils" />
+</section>
+</section>
+<section id="displacement-microdisplacement">
+<span id="microdisplacement"></span><h2>Displacement Microdisplacement<a class="headerlink" href="#displacement-microdisplacement" title="Permalink to this heading"></a></h2>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Microdisplacement is only available in Cycles mode, and it is not available in Eevee mode. It works only with the
+render mode preview or into the final render.</p>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Per utilizzare piu microdisplacement su un oggetto, fare riferimento a questo paragrafo: <a class="reference internal" href="#multiple-microdisplacement"><span class="std std-ref">Multiple Microdisplacement</span></a></p>
+</div>
+<hr class="docutils" />
+</section>
+<section id="multiple-displacement-modifier">
+<span id="id1"></span><h2>Multiple Displacement Modifier<a class="headerlink" href="#multiple-displacement-modifier" title="Permalink to this heading"></a></h2>
+<p>So if you have followed the previous paragraphs, you may already have the opportunity to have understood how the displacement works,
+but it may be unclear how to use for example 2 materials with 2 different displacements on the same object.</p>
+<p>In this case it is simple, just add the second material to the faces of the model you want, turn on the displacement
+<a class="reference internal" href="main_panel.html#displace-on-off"><span class="std std-ref">Displace On/Off</span></a> and then press the button <a class="reference internal" href="main_panel.html#smart-vertex-groups-button"><span class="std std-ref">Smart Vertex Groups</span></a> to separate the vertex groups of the two materials.</p>
+<a class="reference internal image-reference" href="_images/smart_vertex_groups_button_01.png"><img alt="Smart Vertex Groups Button 01" class="align-center" src="_images/smart_vertex_groups_button_01.png" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Every time you make a change to the mesh (Add or delete faces), you will have to press the button again to
+update the vertex group, as if there are new ones, or you have removed old faces, the vertex group
+will no longer be updated.</p>
+</div>
+<p>Here is well explained here: <a class="reference internal" href="main_panel.html#smart-vertex-groups-button"><span class="std std-ref">Smart Vertex Groups</span></a></p>
+<hr class="docutils" />
+</section>
+<section id="multiple-microdisplacement">
+<span id="id2"></span><h2>Multiple Microdisplacement<a class="headerlink" href="#multiple-microdisplacement" title="Permalink to this heading"></a></h2>
+<p>TODO</p>
 </section>
 </section>
 

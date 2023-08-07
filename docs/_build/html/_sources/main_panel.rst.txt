@@ -720,6 +720,7 @@ This button allows you to copy all the materials and the displacement from the a
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _smart_vertex_groups_button:
 
 Smart Vertex Groups
 *********************
