@@ -1,5 +1,20 @@
+.. _bake_editor_panel:
+
 Bake Editor Panel
 ===================
+
+Introduction
+--------------
+
+**To access this panel, you must be in the Main Panel and press the Bake Editor button** Here is the section of the Main
+Panel :ref:`bake_editor_button`
+
+.. image:: _static/_images/main_panel/bake_editor_button_01.png
+    :align: center
+    :width: 400
+    :alt: Bake Editor Button 01
+
+|
 
 .. warning::
         In Blender 3.6.0 there is an Blender Crash during the Bake, please update Blender to 3.6.1 or higher!
@@ -35,6 +50,23 @@ Bake Editor Panel
         if you exported the 3 objects with the original material, you would only have 1 texture, and therefore a much smaller file.
         in addition, the bake makes a unique texture for each object, so this would also require a large resolution,
         because the cooked texture, in most cases, has no continuity! It is wrapped all over the object.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Basic Usage
+-------------
+
+At the end of the process, you will have chosen a destination path, you will find a new folder, containing all your
+baked textures and your model saved as Fbx (If you have chosen to export the Fbx), ready to import into another file or
+another software
+
+.. image:: _static/_images/bake_panel/bake_file_example_01.jpg
+    :align: center
+    :width: 800
+    :alt: Bake File Example 01
+
+
+------------------------------------------------------------------------------------------------------------------------
 
 
 Bake Modes
@@ -193,6 +225,16 @@ original scene and delete the Bake scene.
 
 .. important::
         Make sure you don't work in the bake scene, otherwise you could lose the work done in that particular scene.
+
+
+|
+
+In the Blend file a new scene is created, containing a copy of the model with a new simple PBR Material and a new UV Layout.
+
+.. image:: _static/_images/bake_panel/object_in_new_scene_with_bake_example_01.jpg
+    :align: center
+    :width: 800
+    :alt: Object In New Scene With Bake Example 01
 
 ------------------------------------------------------------------------------------------------------------------------
 

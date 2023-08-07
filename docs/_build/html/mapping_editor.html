@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mapping Editor &mdash; Extreme PBR 4.0 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/extreme_addons_red_32.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Preferences" href="preferences.html" />
+    <link rel="prev" title="Bake Editor Panel" href="bake_panel.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Extreme PBR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Get started: 🚀</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Interface and functions: 📱</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="main_panel.html">Main Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Mapping Editor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#brief-introduction">Brief introduction</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#method-01">Method 01</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#method-02">Method 02</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#uv-mapping-type">UV Mapping Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reset-all-parameter">Reset All Parameter</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#select-face">Select Face</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#lock-x-y">Lock X/Y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uvs-size">UVS Size</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uvs-pos-x-y">UVs Pos X/Y</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uvs-rot">UVs Rot</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#cube-projection">Cube Projection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#smart-projection">Smart Projection</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#mapping-box-type">Mapping Box Type</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="video_tutorials.html">Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQs &amp; Troubleshooting: 💡</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Changelog: ⏲</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="updates_log.html">Updates Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="undocumented.html">Undocumented</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Extreme PBR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Mapping Editor</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/mapping_editor.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="mapping-editor">
+<span id="mapping-editor-panel"></span><h1>Mapping Editor<a class="headerlink" href="#mapping-editor" title="Permalink to this heading"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to access the <strong>Mapping Editor</strong> panel you must be in the <strong>Main Panel</strong> and press the button with the symbol
+of the Texture. Here the <strong>Main Panel</strong> section: <a class="reference internal" href="main_panel.html#mapping-editor-button"><span class="std std-ref">Mapping Editor Button</span></a></p>
+<a class="reference internal image-reference" href="_images/mapping_editor_button_01.png"><img alt="Mapping Editor Button 01" class="align-center" src="_images/mapping_editor_button_01.png" style="width: 400px;" /></a>
+</div>
+<p>Mapping editor is a tool to manipulate UV mapping without necessarily having to use the Blender UV editor.
+This tool was built to <strong>Scale</strong>, <strong>Move</strong> and <strong>Rotate</strong> UV maps on the fly without having to enter
+in the UV editor. Clearly it is not a substitute for the UV editor, but it contains the most used functions, especially in the field
+of architecture.</p>
+<a class="reference internal image-reference" href="_images/mapping_editor_panel.jpg"><img alt="Mapping Editor Panel" class="align-center" src="_images/mapping_editor_panel.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This tool has nothing to do with <strong>Scale</strong> <strong>Rotate</strong> or <strong>Location</strong> of the material, this tool is
+able to translate the UV coordinates present on the object. This is necessary especially if you are using the displacement
+in <strong>Modifier</strong> mode to also move the displacement coordinates. The displacement section can be found here: TODO: Put link to the displacement section</p>
+</div>
+<hr class="docutils" />
+<section id="brief-introduction">
+<h2>Brief introduction<a class="headerlink" href="#brief-introduction" title="Permalink to this heading"></a></h2>
+<p>There are two ways in which you can manipulate mapping:</p>
+<p>In this example a texture is placed into the Square Texture space (left), an UV Map of the object lays on top (Center)
+and a correspondence is set between faces of the object and colors of the texture (right)</p>
+<a class="reference internal image-reference" href="_images/uv_mapping_example_01.jpg"><img alt="UV Mapping Example 01" class="align-center" src="_images/uv_mapping_example_01.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="method-01">
+<span id="mapping-method-01"></span><h3>Method 01<a class="headerlink" href="#method-01" title="Permalink to this heading"></a></h3>
+<p>The first method is to move, rotate and scale the Map, so to vary the correspondence between Texture space and Map.</p>
+<a class="reference internal image-reference" href="_images/uv_mapping_example_02.jpg"><img alt="UV Mapping Example 02" class="align-center" src="_images/uv_mapping_example_02.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="method-02">
+<h3>Method 02<a class="headerlink" href="#method-02" title="Permalink to this heading"></a></h3>
+<p>The second method is to move, rotate and scale the Texture: so to vary the correspondence between Texture image and Texture space.</p>
+<a class="reference internal image-reference" href="_images/uv_mapping_example_03.jpg"><img alt="UV Mapping Example 03" class="align-center" src="_images/uv_mapping_example_03.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Using the Mapping Editor lets you use the <a class="reference internal" href="#mapping-method-01"><span class="std std-ref">Method 01</span></a>: <strong>manipulating the correspondence between Texture space and Map</strong></p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="uv-mapping-type">
+<h2>UV Mapping Type<a class="headerlink" href="#uv-mapping-type" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/uv_mapping_type.jpg"><img alt="UV Mapping Type" class="align-center" src="_images/uv_mapping_type.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This selector allows you to choose the type of Mapping you want to use on the selected active object.</p>
+<p>Bellow the corresponding example of a <strong>UV</strong>, <strong>Box</strong>, <strong>Sphere</strong> and <strong>Tube</strong> (Cylinder) mapping.</p>
+<a class="reference internal image-reference" href="_images/mapping_types_example_01.jpg"><img alt="UV Mapping Type" class="align-center" src="_images/mapping_types_example_01.jpg" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="reset-all-parameter">
+<h2>Reset All Parameter<a class="headerlink" href="#reset-all-parameter" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/reset_all_parameter_01.jpg"><img alt="Reset All Parameter 01" class="align-center" src="_images/reset_all_parameter_01.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>It resets all the mapping parameters, bringing them back to the default values, but only in the panel, it will have no effect
+on the object.</p>
+</section>
+<hr class="docutils" />
+<section id="select-face">
+<h2>Select Face<a class="headerlink" href="#select-face" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/select_face_01.jpg"><img alt="Select Face 01" class="align-center" src="_images/select_face_01.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Select the face / faces of the active object, based on the material selected in the material list. Here the section on
+material list: <a class="reference internal" href="main_panel.html#material-list"><span class="std std-ref">Material List Section</span></a></p>
+</section>
+<hr class="docutils" />
+<section id="lock-x-y">
+<h2>Lock X/Y<a class="headerlink" href="#lock-x-y" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/lock_x_y_01.jpg"><img alt="Lock x y 01" class="align-center" src="_images/lock_x_y_01.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>If the checkbox on one of the two axes is active, it will lock the scale of the corresponding axis, so you can
+scale only along the other axis during the UVS Size operation described below</p>
+</section>
+<hr class="docutils" />
+<section id="uvs-size">
+<h2>UVS Size<a class="headerlink" href="#uvs-size" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/uv_size_01.jpg"><img alt="UV Size 01" class="align-center" src="_images/uv_size_01.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This resizes the UV map, if you increase the value, the UV map enlarges, if you decrease the value, the UV map decreases.</p>
+</section>
+<hr class="docutils" />
+<section id="uvs-pos-x-y">
+<h2>UVs Pos X/Y<a class="headerlink" href="#uvs-pos-x-y" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/uvs_pos_x_y_01.jpg"><img alt="UVs Pos X Y 01" class="align-center" src="_images/uvs_pos_x_y_01.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These two sliders are used to translate the UV map on its X and Y axes depending on the slider you are using.</p>
+</section>
+<hr class="docutils" />
+<section id="uvs-rot">
+<h2>UVs Rot<a class="headerlink" href="#uvs-rot" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/uvs_rot.jpg"><img alt="UV Rot" class="align-center" src="_images/uvs_rot.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This slider is used to rotate the UV map.</p>
+</section>
+<hr class="docutils" />
+<section id="cube-projection">
+<h2>Cube Projection<a class="headerlink" href="#cube-projection" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/cube_projection.jpg"><img alt="Cube Projection" class="align-center" src="_images/cube_projection.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button allows you to make a cubic mapping on the fly. Useful to re-project a UV mapping when you modify the geometry
+of the object.</p>
+</section>
+<hr class="docutils" />
+<section id="smart-projection">
+<h2>Smart Projection<a class="headerlink" href="#smart-projection" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/smart_projection.jpg"><img alt="Smart Projection" class="align-center" src="_images/smart_projection.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button allows you to make a smart mapping on the fly. Useful to re-project a UV mapping when you modify the geometry</p>
+</section>
+<hr class="docutils" />
+<section id="mapping-box-type">
+<h2>Mapping Box Type<a class="headerlink" href="#mapping-box-type" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/mapping_box_type.jpg"><img alt="Mapping Box Type" class="align-center" src="_images/mapping_box_type.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In this mode, the addon sets the nodes with image textures (if present) in <strong>Box</strong> mode. In addition, the <strong>Blend</strong> slider
+allows you to control the corresponding Blend values of the image texture nodes.</p>
+<p>Here the Material nodes in Box Mode:</p>
+<a class="reference internal image-reference" href="_images/box_blend_example.jpg"><img alt="Box Blend Example" class="align-center" src="_images/box_blend_example.jpg" style="width: 800px;" /></a>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="bake_panel.html" class="btn btn-neutral float-left" title="Bake Editor Panel" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="preferences.html" class="btn btn-neutral float-right" title="Preferences" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Andrea Donati.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>  
+
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: #222222;
+    }
+    /* Sidebar */
+    .wy-nav-side {
+      background: #222222;
+    }
+  </style>
+
+
+</body>
+</html>

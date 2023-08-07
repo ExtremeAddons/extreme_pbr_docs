@@ -763,6 +763,8 @@ is a little less sharp, so I added some edges to "Accompany" the displacement be
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _bake_editor_button:
+
 Bake Editor Button
 *******************
 
@@ -774,6 +776,24 @@ Bake Editor Button
 |
 
 This button allows you to access the Bake Editor Panel, which allows you to bake the materials present on the object
+
+The Bake Editor section is explained in this section: :ref:`bake_editor_panel`
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _mapping_editor_button:
+
+Mapping Editor Button
+**********************
+
+.. image:: _static/_images/main_panel/mapping_editor_button_01.png
+    :align: center
+    :width: 400
+    :alt: Mapping Editor Button 01
+
+This button allows you to access the Mapping Editor panel, which allows you to edit the UV mapping of the active object.
+You can find the section dedicated to the Mapping Editor here: :ref:`mapping_editor_panel`
 
 
 
