@@ -390,13 +390,16 @@ In this case it is simple, just add the second material to the faces of the mode
 
 |
 
+.. seealso::
+     Here is well explained here: :ref:`smart_vertex_groups_button`
+
 .. note::
         Every time you make a change to the mesh (Add or delete faces), you will have to press the button again to
         update the vertex group, as if there are new ones, or you have removed old faces, the vertex group
         will no longer be updated.
 
 
-Here is well explained here: :ref:`smart_vertex_groups_button`
+
 
 ------------------------------------------------------------------------------------------------------------------------
 
