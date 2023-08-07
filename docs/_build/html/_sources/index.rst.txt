@@ -43,6 +43,7 @@ Welcome to Extreme PBR's documentation!
    bake_panel
    mapping_editor
    preferences
+   displacement
 
 
 .. toctree::

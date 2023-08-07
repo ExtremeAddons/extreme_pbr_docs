@@ -99,6 +99,11 @@
 <li class="toctree-l3"><a class="reference internal" href="#smart-vertex-groups">Smart Vertex Groups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#bake-editor-button">Bake Editor Button</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#mapping-editor-button">Mapping Editor Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#box-utility-dropdown-menu">Box Utility Dropdown Menu</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#remove-unused-slots">Remove unused slots</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#purge-data">Purge Data</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -106,6 +111,7 @@
 <li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapping_editor.html">Mapping Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
 <ul>
@@ -495,10 +501,10 @@ There are also other buttons that we will see below.</p>
 </div>
 <p>This is the active material, you can select it directly with the mouse cursor, just click on it.</p>
 <p>With double click of the mouse you can also rename the active material</p>
-</section>
 <hr class="docutils" />
+</section>
 <section id="displace-on-off">
-<h3>Displace On/Off<a class="headerlink" href="#displace-on-off" title="Permalink to this heading"></a></h3>
+<span id="id5"></span><h3>Displace On/Off<a class="headerlink" href="#displace-on-off" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/displace_on_off_button_01.png"><img alt="Displace On/Off 01" class="align-center" src="_images/displace_on_off_button_01.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -554,7 +560,7 @@ of materials present in the current project <strong>bpy.data.materials</strong> 
 <hr class="docutils" />
 </section>
 <section id="duplicate-material">
-<span id="id5"></span><h3>Duplicate Material<a class="headerlink" href="#duplicate-material" title="Permalink to this heading"></a></h3>
+<span id="id6"></span><h3>Duplicate Material<a class="headerlink" href="#duplicate-material" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/duplicate_material_01.png"><img alt="Duplicate Material 01" class="align-center" src="_images/duplicate_material_01.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -568,7 +574,7 @@ This function also duplicates the groups or images contained in the material nod
 </section>
 </section>
 <section id="box-utility">
-<span id="id6"></span><h2>Box Utility<a class="headerlink" href="#box-utility" title="Permalink to this heading"></a></h2>
+<span id="id7"></span><h2>Box Utility<a class="headerlink" href="#box-utility" title="Permalink to this heading"></a></h2>
 <p>This box contains some very useful functions of Extreme PBR, the buttons in this box may vary depending on the context you are in,
 for example, if you have selected an object or not.</p>
 <a class="reference internal image-reference" href="_images/box_utility_01.png"><img alt="Box Utility 01" class="align-center" src="_images/box_utility_01.png" style="width: 800px;" /></a>
@@ -680,7 +686,7 @@ is a little less sharp, so I added some edges to “Accompany” the displacemen
 <hr class="docutils" />
 </section>
 <section id="bake-editor-button">
-<span id="id7"></span><h3>Bake Editor Button<a class="headerlink" href="#bake-editor-button" title="Permalink to this heading"></a></h3>
+<span id="id8"></span><h3>Bake Editor Button<a class="headerlink" href="#bake-editor-button" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/bake_editor_button_01.png"><img alt="Bake Editor Button 01" class="align-center" src="_images/bake_editor_button_01.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -690,10 +696,33 @@ is a little less sharp, so I added some edges to “Accompany” the displacemen
 <hr class="docutils" />
 </section>
 <section id="mapping-editor-button">
-<span id="id8"></span><h3>Mapping Editor Button<a class="headerlink" href="#mapping-editor-button" title="Permalink to this heading"></a></h3>
+<span id="id9"></span><h3>Mapping Editor Button<a class="headerlink" href="#mapping-editor-button" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/mapping_editor_button_01.png"><img alt="Mapping Editor Button 01" class="align-center" src="_images/mapping_editor_button_01.png" style="width: 400px;" /></a>
 <p>This button allows you to access the Mapping Editor panel, which allows you to edit the UV mapping of the active object.
 You can find the section dedicated to the Mapping Editor here: <a class="reference internal" href="mapping_editor.html#mapping-editor-panel"><span class="std std-ref">Mapping Editor</span></a></p>
+</section>
+<hr class="docutils" />
+<section id="box-utility-dropdown-menu">
+<h3>Box Utility Dropdown Menu<a class="headerlink" href="#box-utility-dropdown-menu" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/box_utility_dropdown_menu_button.jpg"><img alt="Box Utility Dropdown Menu" class="align-center" src="_images/box_utility_dropdown_menu_button.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>From this button, you can access the drop-down menu, which contains other useful functions.</p>
+<a class="reference internal image-reference" href="_images/box_utility_dropdown_menu.jpg"><img alt="Box Utility Dropdown Menu" class="align-center" src="_images/box_utility_dropdown_menu.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="remove-unused-slots">
+<h4>Remove unused slots<a class="headerlink" href="#remove-unused-slots" title="Permalink to this heading"></a></h4>
+<p>Remove the materials from the object if they are not applied to any face</p>
+</section>
+<section id="purge-data">
+<h4>Purge Data<a class="headerlink" href="#purge-data" title="Permalink to this heading"></a></h4>
+<p>Purge the project data (Orphan Data) from Materials no longer used, images no longer used, etc …</p>
+<p>This button is the equivalent of the “Purge” button present in Blender in Orphan data:</p>
+<a class="reference internal image-reference" href="_images/purge_orphan_data_standard.jpg"><img alt="Purge Orphan Data Standard" class="align-center" src="_images/purge_orphan_data_standard.jpg" style="width: 400px;" /></a>
+</section>
 </section>
 </section>
 </section>

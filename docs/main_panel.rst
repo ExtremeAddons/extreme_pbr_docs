@@ -511,6 +511,8 @@ With double click of the mouse you can also rename the active material
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _displace_on_off:
+
 Displace On/Off
 ****************
 
@@ -794,6 +796,53 @@ Mapping Editor Button
 
 This button allows you to access the Mapping Editor panel, which allows you to edit the UV mapping of the active object.
 You can find the section dedicated to the Mapping Editor here: :ref:`mapping_editor_panel`
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Box Utility Dropdown Menu
+*************************
+
+.. image:: _static/_images/main_panel/box_utility_dropdown_menu_button.jpg
+    :align: center
+    :width: 400
+    :alt: Box Utility Dropdown Menu
+
+|
+
+From this button, you can access the drop-down menu, which contains other useful functions.
+
+
+.. image:: _static/_images/main_panel/box_utility_dropdown_menu.jpg
+    :align: center
+    :width: 400
+    :alt: Box Utility Dropdown Menu
+
+|
+
+Remove unused slots
+##########################
+
+Remove the materials from the object if they are not applied to any face
+
+Purge Data
+##########################
+
+Purge the project data (Orphan Data) from Materials no longer used, images no longer used, etc ...
+
+This button is the equivalent of the "Purge" button present in Blender in Orphan data:
+
+.. image:: _static/_images/main_panel/purge_orphan_data_standard.jpg
+    :align: center
+    :width: 400
+    :alt: Purge Orphan Data Standard
+
+
+
+
+
 
 
 

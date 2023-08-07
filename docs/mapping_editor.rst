@@ -243,24 +243,3 @@ Here the Material nodes in Box Mode:
     :width: 800
     :alt: Box Blend Example
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
