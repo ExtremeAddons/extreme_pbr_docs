@@ -277,6 +277,8 @@ This allows you to search for a background by typing the name of the background 
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _info_and_tag:
+
 Info & Tag
 **********
 

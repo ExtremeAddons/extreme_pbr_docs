@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Save Editor &mdash; Extreme PBR 4.1.100 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/extreme_addons_red_32.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Preferences" href="preferences.html" />
+    <link rel="prev" title="Displacement" href="displacement.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Extreme PBR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Get started: 🚀</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Interface and functions: 📱</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="main_panel.html">Main Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_editor.html">Mapping Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material_editor.html">Material Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Save Editor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#render-engine">Render Engine</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#device">Device</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#render-quality">Render Quality</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#save-material">Save Material</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#preview-with-displace">Preview with Displace</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-watermark">Use Watermark</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#displace-strength">Displace Strength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#preview-with-bloom">Preview with Bloom</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-asset-props">Use asset props</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bloom-strength">Bloom Strength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#bloom-size">Bloom Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#material-name">Material Name</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#author-info">Author info</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#save-module">Save Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#user-category-list">User Category List</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-cat">Add Cat</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#icon-type">Icon Type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#background">Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uv-rotation">UV Rotation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#uv-scale">UV Scale</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#delete-category">Delete Category</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#delete-material">Delete Material</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="video_tutorials.html">Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQs &amp; Troubleshooting: 💡</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Changelog: ⏲</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="updates_log.html">Updates Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="undocumented.html">Undocumented</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Extreme PBR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Save Editor</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/save_editor.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="save-editor">
+<h1>Save Editor<a class="headerlink" href="#save-editor" title="Permalink to this heading"></a></h1>
+<p>The save editor panel is dedicated to saving materials in the User Library, the user Library is a Library of Extreme PBR
+which will initially be empty, but you can populate it with the materials created with Extreme PBR, so that you can reuse them in the future
+directly from the Extreme PBR interface.</p>
+<p>This process will also save the material preview, so you can see it in the library.</p>
+<a class="reference internal image-reference" href="_images/save_editor_panel_01.jpg"><img alt="Save Editor Panel 01" class="align-center" src="_images/save_editor_panel_01.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to correctly display the panel, you must be positioned on the <strong>User Library</strong>, otherwise not all tools will be visible.</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<hr class="docutils" />
+<section id="render-engine">
+<h2>Render Engine<a class="headerlink" href="#render-engine" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/se_render_engine.jpg"><img alt="Render Engine" class="align-center" src="_images/se_render_engine.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In this menu you can choose which Engine must render the material to transform it into a preview icon you can choose
+between <strong>Cycle</strong> and <strong>Eevee</strong>. Cycles will have a better result in 99% of cases, but it is much slower than Eevee.</p>
+</section>
+<hr class="docutils" />
+<section id="device">
+<h2>Device<a class="headerlink" href="#device" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/se_device.jpg"><img alt="Device" class="align-center" src="_images/se_device.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In this menu you can choose which device must render the material to transform it into a preview icon you can choose
+between <strong>CPU</strong> and <strong>GPU</strong>. GPU è molto piu veloce di CPU, ma ci sono alcuni casi che con certi computer con poca memoria
+ram della scheda video potrebbero avere problemi, quindi potrai scegliere CPU.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This option if set to GPU, at the time of saving the material, if the computer encounters an error during rendering
+will try again in CPU mode silently</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="render-quality">
+<h2>Render Quality<a class="headerlink" href="#render-quality" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/se_render_quality.jpg"><img alt="Render Quality" class="align-center" src="_images/se_render_quality.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>From this menu slider you can choose the rendering quality, the higher the rendering quality, the more precise and
+quality the rendering will be, but also slower. The default value is 64.</p>
+<hr class="docutils" />
+</section>
+<section id="save-material">
+<span id="se-save-material"></span><h2>Save Material<a class="headerlink" href="#save-material" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/se_save_material_panel_01.jpg"><img alt="Save Material Panel 01" class="align-center" src="_images/se_save_material_panel_01.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By pressing the <strong>Save Material</strong> button a dialog box will open where you can choose:</p>
+<section id="preview-with-displace">
+<h3>Preview with Displace<a class="headerlink" href="#preview-with-displace" title="Permalink to this heading"></a></h3>
+<p>If active and if the material has a displace in the nodes, it will be applied to the material before rendering the preview</p>
+</section>
+<section id="use-watermark">
+<h3>Use Watermark<a class="headerlink" href="#use-watermark" title="Permalink to this heading"></a></h3>
+<ul class="simple">
+<li><p>Case where you are saving a material: Icon “Material”</p></li>
+<li><p>Case where you are saving a group (Module): Icon “Node Group”</p></li>
+</ul>
+</section>
+<section id="displace-strength">
+<h3>Displace Strength<a class="headerlink" href="#displace-strength" title="Permalink to this heading"></a></h3>
+<p>Here you decide the strength of the displace to be applied to the material before rendering the preview</p>
+</section>
+<section id="preview-with-bloom">
+<h3>Preview with Bloom<a class="headerlink" href="#preview-with-bloom" title="Permalink to this heading"></a></h3>
+<p>If active, a Bloom effect will be applied to the final render, useful for materials that have emissive parts</p>
+</section>
+<section id="use-asset-props">
+<h3>Use asset props<a class="headerlink" href="#use-asset-props" title="Permalink to this heading"></a></h3>
+<p>If the material is present in the asset browser, save the author the tags and description</p>
+</section>
+<section id="bloom-strength">
+<h3>Bloom Strength<a class="headerlink" href="#bloom-strength" title="Permalink to this heading"></a></h3>
+<p>If the Bloom is active, here you can decide the strength of the Bloom, the higher the value, the more intense the Bloom will be.</p>
+</section>
+<section id="bloom-size">
+<h3>Bloom Size<a class="headerlink" href="#bloom-size" title="Permalink to this heading"></a></h3>
+<p>If the Bloom is active, here you can decide the size of the Bloom, the higher the value, the more large the Bloom will be.</p>
+</section>
+<section id="material-name">
+<h3>Material Name<a class="headerlink" href="#material-name" title="Permalink to this heading"></a></h3>
+<p>Here you can enter the name of the material on the fly, by default it will be the name of the material of the project.</p>
+</section>
+<section id="author-info">
+<h3>Author info<a class="headerlink" href="#author-info" title="Permalink to this heading"></a></h3>
+<p>The data entered here will be visible in the <a class="reference internal" href="main_panel.html#info-and-tag"><span class="std std-ref">Info &amp; Tag</span></a> panel already described in the chapter dedicated to the Main Panel.</p>
+<ul class="simple">
+<li><p><strong>Author</strong>: The name of the author of the material</p></li>
+<li><p><strong>Website Name</strong>: The name of the website of the author of the material</p></li>
+<li><p><strong>Author Website</strong>: The Url of the website of the author of the material</p></li>
+<li><p><strong>License</strong>: The license of the material</p></li>
+<li><p><strong>License Link</strong>: The Url of the license of the material</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="save-module">
+<h2>Save Module<a class="headerlink" href="#save-module" title="Permalink to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Salva il modulo Nexus, questo bottone appare solo se il materiale è stato creato in modalità Nexus: TODO: Mettere link alle preferenze al nexus options</p>
+</div>
+<a class="reference internal image-reference" href="_images/se_save_module_button.jpg"><img alt="Save Module Button" class="align-center" src="_images/se_save_module_button.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>All the settings of the Popup panel are practically identical to those of the <strong>Save Material</strong> button described
+here <a class="reference internal" href="#se-save-material"><span class="std std-ref">Save Material</span></a></p>
+<hr class="docutils" />
+</section>
+<section id="user-category-list">
+<span id="se-user-category-list"></span><h2>User Category List<a class="headerlink" href="#user-category-list" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/se_user_cat_list.jpg"><img alt="User Category List" class="align-center" src="_images/se_user_cat_list.jpg" style="width: 400px;" /></a>
+<p>Here you can choose in which category to save the material. If there is not even 1, you will have to create a new one
+following the instructions just below.</p>
+</section>
+<hr class="docutils" />
+<section id="add-cat">
+<h2>Add Cat<a class="headerlink" href="#add-cat" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/se_add_cat_01.jpg"><img alt="Add Cat" class="align-center" src="_images/se_add_cat_01.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By this button, you can create new categories, for example <strong>Wood</strong>, <strong>Metal</strong>, <strong>Plastic</strong> etc etc.
+this allows you to have an organized and orderly library.</p>
+<p>Make sure to enter a name in the text box next to it.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Attention to the names of the categories, uppercase / lowercase, <strong>My Cat</strong> is the equivalent of <strong>my cat</strong> or <strong>MY CAT</strong>
+So it will not be possible to create 2 categories with the same name but with different uppercase and lowercase letters.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="icon-type">
+<h2>Icon Type<a class="headerlink" href="#icon-type" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/se_icon_type.jpg"><img alt="Icon Type" class="align-center" src="_images/se_icon_type.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>From this menu you can choose the type of geometry on which the material will be applied to render the icon, you can choose between:</p>
+<ul class="simple">
+<li><p><strong>Sphere</strong>: A sphere</p></li>
+<li><p><strong>Plane</strong>: A Vertical plane</p></li>
+<li><p><strong>Uv Sphere</strong>: A UV sphere</p></li>
+<li><p><strong>Cube</strong>: A cube</p></li>
+<li><p><strong>Shader Ball</strong>: A sphere with a shader ball model</p></li>
+<li><p><strong>Monkey</strong>: A sphere with a Blender monkey model (Suzanne)</p></li>
+<li><p><strong>Road</strong>: A road with curves</p></li>
+<li><p><strong>Car Shape</strong>: A model with a car body shape</p></li>
+<li><p><strong>Square</strong>: A square</p></li>
+<li><p><strong>Low Poly Sphere</strong>: A Low Poly sphere</p></li>
+<li><p><strong>Cone</strong>: A cone</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="background">
+<h2>Background<a class="headerlink" href="#background" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/se_background.jpg"><img alt="Background" class="align-center" src="_images/se_background.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>From this menu you can choose the environment to use lighting, it will be an HDR that will act as a light for the
+material to be rendered</p>
+</section>
+<hr class="docutils" />
+<section id="uv-rotation">
+<h2>UV Rotation<a class="headerlink" href="#uv-rotation" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/se_uv_r.jpg"><img alt="UV Rotation" class="align-center" src="_images/se_uv_r.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>From this menu you can change the rotation of the UV mapping to be applied to the object, so this allows you to rotate the
+image applied to the object to be rendered.</p>
+</section>
+<hr class="docutils" />
+<section id="uv-scale">
+<h2>UV Scale<a class="headerlink" href="#uv-scale" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/se_uv_s.jpg"><img alt="UV Scale" class="align-center" src="_images/se_uv_s.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>From this menu you can change the scale of the UV mapping to be applied to the object, so this allows you to scale the
+image applied to the object to be rendered.</p>
+</section>
+<hr class="docutils" />
+<section id="delete-category">
+<h2>Delete Category<a class="headerlink" href="#delete-category" title="Permalink to this heading"></a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Attention, all the materials contained in this category will be deleted with it. <strong>The action is not reversible</strong></p>
+</div>
+<a class="reference internal image-reference" href="_images/se_delete_cat.jpg"><img alt="Se Delete Cat" class="align-center" src="_images/se_delete_cat.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Delete the category <a class="reference internal" href="#se-user-category-list"><span class="std std-ref">User Category List</span></a> selected. and all the materials contained in it.</p>
+</section>
+<hr class="docutils" />
+<section id="delete-material">
+<h2>Delete Material<a class="headerlink" href="#delete-material" title="Permalink to this heading"></a></h2>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Attention, the action is not reversible</p>
+</div>
+<a class="reference internal image-reference" href="_images/se_delete_mat.jpg"><img alt="Se Delete Mat" class="align-center" src="_images/se_delete_mat.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Delete definitively the active material in the <a class="reference internal" href="main_panel.html#material-browser"><span class="std std-ref">Material Browser</span></a>, the action is not reversible.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="displacement.html" class="btn btn-neutral float-left" title="Displacement" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="preferences.html" class="btn btn-neutral float-right" title="Preferences" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Andrea Donati.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>  
+
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: #222222;
+    }
+    /* Sidebar */
+    .wy-nav-side {
+      background: #222222;
+    }
+  </style>
+
+
+</body>
+</html>

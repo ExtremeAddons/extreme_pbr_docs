@@ -31,3 +31,9 @@ This section is under construction.
 .. only:: builder_html
 
    - This site can be downloaded for offline use:
+
+
+.. image:: https://drive.google.com/file/d/11uueqJ6T1v1vYPMvoDJ2Wh4KmXV0izef/view
+      :width: 400px
+      :align: center
+      :target: https://drive.google.com/file/d/11uueqJ6T1v1vYPMvoDJ2Wh4KmXV0izef/view

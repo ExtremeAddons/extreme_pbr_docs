@@ -44,8 +44,8 @@ Welcome to Extreme PBR's documentation!
    mapping_editor
    material_editor
    displacement
+   save_editor
    preferences
-
 
 
 .. toctree::
