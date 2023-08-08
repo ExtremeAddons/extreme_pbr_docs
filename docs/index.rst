@@ -42,8 +42,9 @@ Welcome to Extreme PBR's documentation!
    main_panel
    bake_panel
    mapping_editor
-   preferences
+   material_editor
    displacement
+   preferences
 
 
 .. toctree::

@@ -50,5 +50,8 @@ html_static_path = ['_static']
 
 html_favicon = "extreme_addons_red_32.ico"
 
-
+if html_theme == "sphinx_rtd_theme":
+    html_css_files = [
+        "css/theme_overrides.css"
+                      ]
 

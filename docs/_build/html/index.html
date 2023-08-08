@@ -7,6 +7,7 @@
   <title>Welcome to Extreme PBR’s documentation! &mdash; Extreme PBR 4.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme_overrides.css" type="text/css" />
     <link rel="shortcut icon" href="_static/extreme_addons_red_32.ico"/>
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -51,8 +52,9 @@
 <li class="toctree-l1"><a class="reference internal" href="main_panel.html">Main Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapping_editor.html">Mapping Editor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material_editor.html">Material Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
 <ul>
@@ -245,28 +247,7 @@ Just press the right mouse button on a button or property to display the link to
 <li class="toctree-l2"><a class="reference internal" href="mapping_editor.html#mapping-box-type">Mapping Box Type</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="preferences.html#library-management">Library Management</a></li>
-<li class="toctree-l2"><a class="reference internal" href="preferences.html#options">Options</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="preferences.html#check-for-updates">Check For Updates</a></li>
-<li class="toctree-l3"><a class="reference internal" href="preferences.html#show-name-label-in-preview-button">Show name label in preview button</a></li>
-<li class="toctree-l3"><a class="reference internal" href="preferences.html#icon-preview-dimension">Icon Preview Dimension</a></li>
-<li class="toctree-l3"><a class="reference internal" href="preferences.html#icon-popup-size">Icon Popup Size</a></li>
-<li class="toctree-l3"><a class="reference internal" href="preferences.html#show-hidden-sockets">Show hidden sockets</a></li>
-<li class="toctree-l3"><a class="reference internal" href="preferences.html#show-group-options">Show group options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="preferences.html#auto-uv-map">Auto Uv Map</a></li>
-<li class="toctree-l3"><a class="reference internal" href="preferences.html#safety-paint-uv-map">Safety Paint Uv Map</a></li>
-<li class="toctree-l3"><a class="reference internal" href="preferences.html#smart-texture-limiter">Smart Texture Limiter</a></li>
-<li class="toctree-l3"><a class="reference internal" href="preferences.html#anti-crash">Anti Crash</a></li>
-<li class="toctree-l3"><a class="reference internal" href="preferences.html#default-mapping-type">Default Mapping Type</a></li>
-<li class="toctree-l3"><a class="reference internal" href="preferences.html#show-creator-utility">Show Creator Utility</a></li>
-<li class="toctree-l3"><a class="reference internal" href="preferences.html#findo-lost-images">Findo Lost Images</a></li>
-<li class="toctree-l3"><a class="reference internal" href="preferences.html#update-library-register">Update Library Register</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="preferences.html#update">Update</a></li>
-</ul>
-</li>
+<li class="toctree-l1"><a class="reference internal" href="material_editor.html">Material Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="displacement.html#displace-type">Displace Type</a></li>
 <li class="toctree-l2"><a class="reference internal" href="displacement.html#displacement-modifier-explained">Displacement Modifier Explained</a></li>
@@ -290,6 +271,28 @@ Just press the right mouse button on a button or property to display the link to
 <li class="toctree-l2"><a class="reference internal" href="displacement.html#displacement-microdisplacement">Displacement Microdisplacement</a></li>
 <li class="toctree-l2"><a class="reference internal" href="displacement.html#multiple-displacement-modifier">Multiple Displacement Modifier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="displacement.html#multiple-microdisplacement">Multiple Microdisplacement</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="preferences.html#library-management">Library Management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="preferences.html#options">Options</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="preferences.html#check-for-updates">Check For Updates</a></li>
+<li class="toctree-l3"><a class="reference internal" href="preferences.html#show-name-label-in-preview-button">Show name label in preview button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="preferences.html#icon-preview-dimension">Icon Preview Dimension</a></li>
+<li class="toctree-l3"><a class="reference internal" href="preferences.html#icon-popup-size">Icon Popup Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="preferences.html#show-hidden-sockets">Show hidden sockets</a></li>
+<li class="toctree-l3"><a class="reference internal" href="preferences.html#show-group-options">Show group options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="preferences.html#auto-uv-map">Auto Uv Map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="preferences.html#safety-paint-uv-map">Safety Paint Uv Map</a></li>
+<li class="toctree-l3"><a class="reference internal" href="preferences.html#smart-texture-limiter">Smart Texture Limiter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="preferences.html#anti-crash">Anti Crash</a></li>
+<li class="toctree-l3"><a class="reference internal" href="preferences.html#default-mapping-type">Default Mapping Type</a></li>
+<li class="toctree-l3"><a class="reference internal" href="preferences.html#show-creator-utility">Show Creator Utility</a></li>
+<li class="toctree-l3"><a class="reference internal" href="preferences.html#findo-lost-images">Findo Lost Images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="preferences.html#update-library-register">Update Library Register</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="preferences.html#update">Update</a></li>
 </ul>
 </li>
 </ul>

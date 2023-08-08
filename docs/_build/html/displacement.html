@@ -7,6 +7,7 @@
   <title>Displacement &mdash; Extreme PBR 4.0 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme_overrides.css" type="text/css" />
     <link rel="shortcut icon" href="_static/extreme_addons_red_32.ico"/>
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -20,8 +21,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Tutorials" href="video_tutorials.html" />
-    <link rel="prev" title="Preferences" href="preferences.html" /> 
+    <link rel="next" title="Preferences" href="preferences.html" />
+    <link rel="prev" title="Material Editor" href="material_editor.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -52,7 +53,7 @@
 <li class="toctree-l1"><a class="reference internal" href="main_panel.html">Main Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapping_editor.html">Mapping Editor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material_editor.html">Material Editor</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Displacement</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#displace-type">Displace Type</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#displacement-modifier-explained">Displacement Modifier Explained</a></li>
@@ -78,6 +79,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#multiple-microdisplacement">Multiple Microdisplacement</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
 <ul>
@@ -360,6 +362,11 @@ do an Undo (CTRL + Z). The mesh will become heavier and will have the shape give
 </section>
 <section id="displacement-microdisplacement">
 <span id="microdisplacement"></span><h2>Displacement Microdisplacement<a class="headerlink" href="#displacement-microdisplacement" title="Permalink to this heading"></a></h2>
+<p>The microdisplacement differs from that with modifiers. In fact, it uses the Cycles render engine</p>
+<a class="reference internal image-reference" href="_images/microdisplacement_mode.jpg"><img alt="Microdisplacement Mode" class="align-center" src="_images/microdisplacement_mode.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>Microdisplacement is only available in Cycles mode, and it is not available in Eevee mode. It works only with the
@@ -367,8 +374,9 @@ render mode preview or into the final render.</p>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>Per utilizzare piu microdisplacement su un oggetto, fare riferimento a questo paragrafo: <a class="reference internal" href="#multiple-microdisplacement"><span class="std std-ref">Multiple Microdisplacement</span></a></p>
+<p>In order to use more microdisplacement on an object, refer to this paragraph: <a class="reference internal" href="#multiple-microdisplacement"><span class="std std-ref">Multiple Microdisplacement</span></a></p>
 </div>
+<p><strong>Per regolare il Microdisplacement, a differenza del Displacement con Modifiers, si utilizza il pannello</strong></p>
 <hr class="docutils" />
 </section>
 <section id="multiple-displacement-modifier">
@@ -377,6 +385,7 @@ render mode preview or into the final render.</p>
 but it may be unclear how to use for example 2 materials with 2 different displacements on the same object.</p>
 <p>In this case it is simple, just add the second material to the faces of the model you want, turn on the displacement
 <a class="reference internal" href="main_panel.html#displace-on-off"><span class="std std-ref">Displace On/Off</span></a> and then press the button <a class="reference internal" href="main_panel.html#smart-vertex-groups-button"><span class="std std-ref">Smart Vertex Groups</span></a> to separate the vertex groups of the two materials.</p>
+<p>Make sure you have selected the material that has the active displacement from the <a class="reference internal" href="main_panel.html#material-list"><span class="std std-ref">Material List Section</span></a> otherwise you will not</p>
 <a class="reference internal image-reference" href="_images/smart_vertex_groups_button_01.png"><img alt="Smart Vertex Groups Button 01" class="align-center" src="_images/smart_vertex_groups_button_01.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -395,7 +404,7 @@ will no longer be updated.</p>
 </section>
 <section id="multiple-microdisplacement">
 <span id="id2"></span><h2>Multiple Microdisplacement<a class="headerlink" href="#multiple-microdisplacement" title="Permalink to this heading"></a></h2>
-<p>TODO</p>
+<p>Il multiple</p>
 </section>
 </section>
 
@@ -403,8 +412,8 @@ will no longer be updated.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="preferences.html" class="btn btn-neutral float-left" title="Preferences" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="video_tutorials.html" class="btn btn-neutral float-right" title="Tutorials" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="material_editor.html" class="btn btn-neutral float-left" title="Material Editor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="preferences.html" class="btn btn-neutral float-right" title="Preferences" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

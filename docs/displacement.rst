@@ -360,13 +360,30 @@ do an Undo (CTRL + Z). The mesh will become heavier and will have the shape give
 Displacement Microdisplacement
 -----------------------------------
 
+The microdisplacement differs from that with modifiers. In fact, it uses the Cycles render engine
+
+.. image:: _static/_images/displacement/microdisplacement_mode.jpg
+    :align: center
+    :width: 400
+    :alt: Microdisplacement Mode
+
+|
+
 .. important::
+
         Microdisplacement is only available in Cycles mode, and it is not available in Eevee mode. It works only with the
         render mode preview or into the final render.
 
 
 .. note::
-        Per utilizzare piu microdisplacement su un oggetto, fare riferimento a questo paragrafo: :ref:`multiple_microdisplacement`
+
+        In order to use more microdisplacement on an object, refer to this paragraph: :ref:`multiple_microdisplacement`
+
+
+**Per regolare il Microdisplacement, a differenza del Displacement con Modifiers, si utilizza il pannello**
+
+
+
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -381,6 +398,8 @@ but it may be unclear how to use for example 2 materials with 2 different displa
 
 In this case it is simple, just add the second material to the faces of the model you want, turn on the displacement
 :ref:`displace_on_off` and then press the button :ref:`smart_vertex_groups_button` to separate the vertex groups of the two materials.
+
+Make sure you have selected the material that has the active displacement from the :ref:`material_list` otherwise you will not
 
 
 .. image:: _static/_images/main_panel/smart_vertex_groups_button_01.png
@@ -408,7 +427,7 @@ In this case it is simple, just add the second material to the faces of the mode
 Multiple Microdisplacement
 -----------------------------------
 
-TODO
+Il multiple
 
 
 
