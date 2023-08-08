@@ -26,3 +26,8 @@ This section is under construction.
 .. seealso:: seealso
 
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+
+.. only:: builder_html
+
+   - This site can be downloaded for offline use:
