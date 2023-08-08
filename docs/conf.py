@@ -10,7 +10,7 @@
 project = 'Extreme PBR'
 copyright = '2023, Andrea Donati'
 author = 'Andrea Donati'
-release = '4.0'
+release = '4.1.100'
 
 import os, sys
 
@@ -33,25 +33,26 @@ templates_path = ['_templates']
 exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 
 
-
 # -- Options for HTML output -------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#options-for-html-output
-
 
 html_theme = "sphinx_rtd_theme"
 
 os.path.join(os.path.relpath(os.path.dirname(__file__)), "docs", "_static", "_images", "logos",
              "exa_logo_orange_512.png")
 
-
 html_theme_path = ["_themes", ]
-
 html_static_path = ['_static']
 
 html_favicon = "extreme_addons_red_32.ico"
 
-if html_theme == "sphinx_rtd_theme":
-    html_css_files = [
-        "css/theme_overrides.css"
-                      ]
+html_css_files = [
+    '_static/css/custom.css',
+                  ]
+
+# def setup(app):
+#     app.add_css_file('_static/css/theme_overrides.css')
+
+
+
 

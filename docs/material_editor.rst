@@ -12,5 +12,4 @@ This section is under construction.
 
 
 .. seealso::
-
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
