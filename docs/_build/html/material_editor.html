@@ -53,8 +53,21 @@
 <li class="toctree-l1"><a class="reference internal" href="main_panel.html">Main Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapping_editor.html">Mapping Editor</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Material Editor</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Material Editor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#material-nexus-type">Material Nexus type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#show-hide-group">Show / Hide Group</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#search-module">Search Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-name-group-name">Module Name (Group Name)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#replace-module">Replace Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#reset-values">Reset Values</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#info">Info</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#tips">Tips</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#texture-paint">Texture Paint</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-module">Add Module</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
@@ -98,32 +111,109 @@
            <div itemprop="articleBody">
              
   <section id="material-editor">
-<h1>Material Editor<a class="headerlink" href="#material-editor" title="Permalink to this heading"></a></h1>
-<p>This section is under construction.</p>
-<div class="admonition-custom-title admonition">
-<p class="admonition-title">Custom title!</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-</div>
+<span id="id1"></span><h1>Material Editor<a class="headerlink" href="#material-editor" title="Permalink to this heading"></a></h1>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>Here you can find the section dedicated to video tutorials, it may be useful to you: <a class="reference internal" href="video_tutorials.html#vt-material-editor"><span class="std std-ref">Material Editor</span></a></p>
 </div>
-<aside class="sidebar">
-<p class="sidebar-title">Optional Sidebar Title</p>
-<p class="sidebar-subtitle">Optional Sidebar Subtitle</p>
-<p>Subsequent indented lines comprise
-the body of the sidebar, and are
-interpreted as body elements.</p>
-</aside>
-<div class="admonition seealso">
-<p class="admonition-title">See also</p>
-<p>seealso</p>
-<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+<p>The material editor is a very important panel, and it takes many different forms depending on the type of material applied
+<strong>Nexus</strong> / <strong>Simple PBR</strong> (Explained here: TODO: Link to the options of the preferences)</p>
+<p>Example Material Editor Nexus with 4 Modules for painting:</p>
+<a class="reference internal image-reference" href="_images/material_editor_nexus_four_modules.jpg"><img alt="Material Editor Nexus Four Modules" class="align-center" src="_images/material_editor_nexus_four_modules.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
 </div>
-<ul class="simple">
-<li><p>This site can be downloaded for offline use:</p></li>
-</ul>
-<a class="reference external image-reference" href="https://drive.google.com/file/d/11uueqJ6T1v1vYPMvoDJ2Wh4KmXV0izef/view"><img alt="https://drive.google.com/file/d/11uueqJ6T1v1vYPMvoDJ2Wh4KmXV0izef/view" class="align-center" src="https://drive.google.com/file/d/11uueqJ6T1v1vYPMvoDJ2Wh4KmXV0izef/view" style="width: 400px;" /></a>
+<p>From this panel you can also access painting and many other features!</p>
+<hr class="docutils" />
+<section id="material-nexus-type">
+<h2>Material Nexus type<a class="headerlink" href="#material-nexus-type" title="Permalink to this heading"></a></h2>
+<p>If you are in Nexus mode, or have applied materials that support nexus modules, (Type <strong>Car Paint</strong> or <strong>Water</strong>)
+The panel looks like this:</p>
+<a class="reference internal image-reference" href="_images/material_editor_before_add_module.jpg"><img alt="Material Editor Before Add Module" class="align-center" src="_images/material_editor_before_add_module.jpg" style="width: 400px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="show-hide-group">
+<h2>Show / Hide Group<a class="headerlink" href="#show-hide-group" title="Permalink to this heading"></a></h2>
+<p>This button allows you to hide or show all the properties of a group (Nexus Module), it is useful if you are using the
+FX Module, it makes the workspace cleaner and allows you to focus only on what you are doing.</p>
+<a class="reference internal image-reference" href="_images/me_show_hide_group_01.png"><img alt="Material Editor Show Hide Group" class="align-center" src="_images/me_show_hide_group_01.png" style="width: 400px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="search-module">
+<h2>Search Module<a class="headerlink" href="#search-module" title="Permalink to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Useful only if there are 2 or more modules present in the material.</p>
+</div>
+<p>This button opens a search menu, which allows you to replace / move the modules present in the material.
+As soon as you select a module, the module from where you are starting will be replaced with the one you have chosen and vice versa.</p>
+<a class="reference internal image-reference" href="_images/me_search_module.png"><img alt="Material Editor Search Module" class="align-center" src="_images/me_search_module.png" style="width: 400px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="module-name-group-name">
+<h2>Module Name (Group Name)<a class="headerlink" href="#module-name-group-name" title="Permalink to this heading"></a></h2>
+<p>From here you can view and also change the name of the group (Nexus Module) you are using.</p>
+<a class="reference internal image-reference" href="_images/me_module_name.png"><img alt="Module Name" class="align-center" src="_images/me_module_name.png" style="width: 600px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="replace-module">
+<h2>Replace Module<a class="headerlink" href="#replace-module" title="Permalink to this heading"></a></h2>
+<p>The Replace Module button allows you to replace the module you are using by loading another module, in accordance with the preview
+of the <a class="reference internal" href="main_panel.html#material-browser"><span class="std std-ref">Material Browser</span></a> you have chosen.</p>
+<a class="reference internal image-reference" href="_images/me_replace_module.png"><img alt="Replace Module" class="align-center" src="_images/me_replace_module.png" style="width: 400px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="reset-values">
+<h2>Reset Values<a class="headerlink" href="#reset-values" title="Permalink to this heading"></a></h2>
+<p>The Reset Values Button allows you to reset the properties of the module you are using to the default values.</p>
+<a class="reference internal image-reference" href="_images/me_reset_values.png"><img alt="Reset Values" class="align-center" src="_images/me_reset_values.png" style="width: 600px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="info">
+<h2>Info<a class="headerlink" href="#info" title="Permalink to this heading"></a></h2>
+<p>The Info button allows you to view the information of the module you are using, for example the name of the author etc.</p>
+<a class="reference internal image-reference" href="_images/me_info.png"><img alt="Info" class="align-center" src="_images/me_info.png" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Not all modules necessarily have the info button, it depends on who created them, sometimes it is not present, but usually
+this information is in the <a class="reference internal" href="main_panel.html#info-and-tag"><span class="std std-ref">Info &amp; Tag</span></a> menu</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="tips">
+<h2>Tips<a class="headerlink" href="#tips" title="Permalink to this heading"></a></h2>
+<p>This button allows you to view or hide the hint next to each slider of the module you are using.
+so by pressing the hint buttons, you will see a window appear with a description of the parameter you are using.</p>
+<a class="reference internal image-reference" href="_images/me_tips.png"><img alt="Tips" class="align-center" src="_images/me_tips.png" style="width: 600px;" /></a>
+<hr class="docutils" />
+</section>
+<section id="texture-paint">
+<span id="id2"></span><h2>Texture Paint<a class="headerlink" href="#texture-paint" title="Permalink to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to access the painting you will have to be in Nexus mode TODO: put link to nexus mode preferences
+and you will have to have added a material with the <a class="reference internal" href="#add-module"><span class="std std-ref">Add Module</span></a> button</p>
+</div>
+<hr class="docutils" />
+</section>
+<section id="add-module">
+<span id="id3"></span><h2>Add Module<a class="headerlink" href="#add-module" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/add_module_example_01.png"><img alt="Add Module Example 01" class="align-center" src="_images/add_module_example_01.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>With this button you can add up to a maximum of 4 modules, which will allow you to paint <a class="reference internal" href="#texture-paint"><span class="std std-ref">Texture Paint</span></a> them on
+the object you are working on.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to add a module, rely on the <a class="reference internal" href="main_panel.html#material-browser"><span class="std std-ref">Material Browser</span></a> in fact you will add exactly what you have in the preview,
+or you can add via TODO: Link to shader maker for the materials you want to import.</p>
+<p>Add Module will not work with Non Nexus type materials!</p>
+</div>
+</section>
 </section>
 
 

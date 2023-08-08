@@ -24,7 +24,6 @@
 	background-color: #f6f3a5
 }
 
-
 .refbox .admonition-title::before {
 	content: "\f00b"
 }
