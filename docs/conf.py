@@ -47,11 +47,9 @@ html_static_path = ['_static']
 html_favicon = "extreme_addons_red_32.ico"
 
 html_css_files = [
-    '_static/css/custom.css',
+    'css/custom.css',
                   ]
 
-# def setup(app):
-#     app.add_css_file('_static/css/theme_overrides.css')
 
 
 

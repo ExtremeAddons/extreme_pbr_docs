@@ -205,9 +205,13 @@ manually entering the desired number.
        Be careful to use too high subdivision numbers, as blender could lock up for a long time or even
        block altogether. This is a problem that has been known for years in the **Subdivision Surface** modifier of Blender.
 
+.. _viewport_subdivision:
+
 **Viewport Subdivision**
     - This regulates the subdivision of the model in the viewport, that is when you are working on the model, so you can think
       to set a low value, to have a lighter and faster model to edit. It will not affect the final render.
+
+.. _render_subdivision:
 
 **Render Subdivision**
     - This regulates the subdivision of the model in the final render, that is when you render the model, so you can think
@@ -369,10 +373,28 @@ The microdisplacement differs from that with modifiers. In fact, it uses the Cyc
 
 |
 
-.. important::
+The settings in the panel in Microdisplacement mode are the same as those in Modifiers mode:
 
-        Microdisplacement is only available in Cycles mode, and it is not available in Eevee mode. It works only with the
-        render mode preview or into the final render.
+- **Catmull-Clark**
+    Here the reference: :ref:`catmull_clark`
+- **Simple**
+    Here the reference: :ref:`simple`
+- **Viewport Subdivision**
+    Here the reference: :ref:`viewport_subdivision`
+- **Render Subdivision**
+    Here the reference: :ref:`render_subdivision`
+- **Adaptive Subdivision**
+    Activates the adaptive subdivision, automatically sets the "Experimental Features" of cycles.
+
+
+.. important::
+        Make sure you are in Cycles mode and Render Preview otherwise the microdisplacement will not work.
+        Microdisplacement is only available in Cycles mode, and it is not available in Eevee mode.
+
+        .. image:: _static/_images/displacement/cycles_render_mode.jpg
+            :align: center
+            :width: 600
+            :alt: Cycles Render Mode
 
 
 .. note::
@@ -380,9 +402,45 @@ The microdisplacement differs from that with modifiers. In fact, it uses the Cyc
         In order to use more microdisplacement on an object, refer to this paragraph: :ref:`multiple_microdisplacement`
 
 
-**Per regolare il Microdisplacement, a differenza del Displacement con Modifiers, si utilizza il pannello**
+------------------------------------------------------------------------------------------------------------------------
+
+How to adjust the Microdisplacement
+**************************************
+
+In order to adjust the Microdisplacement, unlike the Displacement with Modifiers, you use the Material Editor panel
+
+Nexus Mode
+####################
 
 
+In the Nexus mode (TODO: Inserire link alle preferenze per impostare Nexus mode), accessing the Material Editor panel (TODO: Link al pannello Material Editor in modalità Nexus)
+you can adjust the intensity of the Microdisplacement through the **Bump** and **Bump Distance** parameters present in the panel.
+Make sure you have selected the material that has the active Microdisplacement from the :ref:`material_list` otherwise you will not
+see the corresponding Material Editor panel for the selected material.
+
+
+.. image:: _static/_images/displacement/adjust_displacement_material_editor_nexus.png
+    :align: center
+    :width: 800
+    :alt:  Adjust Displacement Material Editor Nexus
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Simple PBR Mode
+####################
+
+
+In Simple PBR mode, (TODO: Insert link to preferences to set Simple PBR mode), accessing the Material Editor panel
+(TODO: Link to Material Editor panel in Simple PBR mode) you can adjust the intensity of the Microdisplacement using
+the **Displacement MidLevel** and **Displacement Scale** parameters present in the panel.
+Make sure you have selected the material that has the active Microdisplacement from the :ref:`material_list`
+otherwise you will not
+
+.. image:: _static/_images/displacement/adjust_displacement_material_editor_simple_pbr.png
+    :align: center
+    :width: 800
+    :alt:  Adjust Displacement Material Editor Simple PBR
 
 
 

@@ -7,7 +7,7 @@
   <title>Displacement &mdash; Extreme PBR 4.1.100 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
-      <link rel="stylesheet" href="_static/static/css/custom.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
     <link rel="shortcut icon" href="_static/extreme_addons_red_32.ico"/>
   <!--[if lt IE 9]>
     <script src="_static/js/html5shiv.min.js"></script>
@@ -74,7 +74,14 @@
 <li class="toctree-l3"><a class="reference internal" href="#bake-displacement">Bake Displacement</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#displacement-microdisplacement">Displacement Microdisplacement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#displacement-microdisplacement">Displacement Microdisplacement</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#how-to-adjust-the-microdisplacement">How to adjust the Microdisplacement</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#nexus-mode">Nexus Mode</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#simple-pbr-mode">Simple PBR Mode</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#multiple-displacement-modifier">Multiple Displacement Modifier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#multiple-microdisplacement">Multiple Microdisplacement</a></li>
 </ul>
@@ -249,12 +256,14 @@ manually entering the desired number.</p>
 <p>Be careful to use too high subdivision numbers, as blender could lock up for a long time or even
 block altogether. This is a problem that has been known for years in the <strong>Subdivision Surface</strong> modifier of Blender.</p>
 </div>
-<dl class="simple">
+<dl class="simple" id="viewport-subdivision">
 <dt><strong>Viewport Subdivision</strong></dt><dd><ul class="simple">
 <li><p>This regulates the subdivision of the model in the viewport, that is when you are working on the model, so you can think
 to set a low value, to have a lighter and faster model to edit. It will not affect the final render.</p></li>
 </ul>
 </dd>
+</dl>
+<dl class="simple" id="render-subdivision">
 <dt><strong>Render Subdivision</strong></dt><dd><ul class="simple">
 <li><p>This regulates the subdivision of the model in the final render, that is when you render the model, so you can think
 to set a high value, to have a model richer in details. It will not affect the viewport. You will see
@@ -367,17 +376,68 @@ do an Undo (CTRL + Z). The mesh will become heavier and will have the shape give
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
+<p>The settings in the panel in Microdisplacement mode are the same as those in Modifiers mode:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Catmull-Clark</strong></dt><dd><p>Here the reference: <a class="reference internal" href="#catmull-clark"><span class="std std-ref">Catmull-Clark Subdivision</span></a></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Simple</strong></dt><dd><p>Here the reference: <a class="reference internal" href="#simple"><span class="std std-ref">Simple Subdivision</span></a></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Viewport Subdivision</strong></dt><dd><p>Here the reference: <a class="reference internal" href="#viewport-subdivision"><span class="std std-ref">Viewport Subdivision</span></a></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Render Subdivision</strong></dt><dd><p>Here the reference: <a class="reference internal" href="#render-subdivision"><span class="std std-ref">Render Subdivision</span></a></p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Adaptive Subdivision</strong></dt><dd><p>Activates the adaptive subdivision, automatically sets the “Experimental Features” of cycles.</p>
+</dd>
+</dl>
+</li>
+</ul>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
-<p>Microdisplacement is only available in Cycles mode, and it is not available in Eevee mode. It works only with the
-render mode preview or into the final render.</p>
+<p>Make sure you are in Cycles mode and Render Preview otherwise the microdisplacement will not work.
+Microdisplacement is only available in Cycles mode, and it is not available in Eevee mode.</p>
+<a class="reference internal image-reference" href="_images/cycles_render_mode.jpg"><img alt="Cycles Render Mode" class="align-center" src="_images/cycles_render_mode.jpg" style="width: 600px;" /></a>
 </div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In order to use more microdisplacement on an object, refer to this paragraph: <a class="reference internal" href="#multiple-microdisplacement"><span class="std std-ref">Multiple Microdisplacement</span></a></p>
 </div>
-<p><strong>Per regolare il Microdisplacement, a differenza del Displacement con Modifiers, si utilizza il pannello</strong></p>
 <hr class="docutils" />
+<section id="how-to-adjust-the-microdisplacement">
+<h3>How to adjust the Microdisplacement<a class="headerlink" href="#how-to-adjust-the-microdisplacement" title="Permalink to this heading"></a></h3>
+<p>In order to adjust the Microdisplacement, unlike the Displacement with Modifiers, you use the Material Editor panel</p>
+<section id="nexus-mode">
+<h4>Nexus Mode<a class="headerlink" href="#nexus-mode" title="Permalink to this heading"></a></h4>
+<p>In the Nexus mode (TODO: Inserire link alle preferenze per impostare Nexus mode), accessing the Material Editor panel (TODO: Link al pannello Material Editor in modalità Nexus)
+you can adjust the intensity of the Microdisplacement through the <strong>Bump</strong> and <strong>Bump Distance</strong> parameters present in the panel.
+Make sure you have selected the material that has the active Microdisplacement from the <a class="reference internal" href="main_panel.html#material-list"><span class="std std-ref">Material List Section</span></a> otherwise you will not
+see the corresponding Material Editor panel for the selected material.</p>
+<a class="reference internal image-reference" href="_images/adjust_displacement_material_editor_nexus.png"><img alt="Adjust Displacement Material Editor Nexus" class="align-center" src="_images/adjust_displacement_material_editor_nexus.png" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="simple-pbr-mode">
+<h4>Simple PBR Mode<a class="headerlink" href="#simple-pbr-mode" title="Permalink to this heading"></a></h4>
+<p>In Simple PBR mode, (TODO: Insert link to preferences to set Simple PBR mode), accessing the Material Editor panel
+(TODO: Link to Material Editor panel in Simple PBR mode) you can adjust the intensity of the Microdisplacement using
+the <strong>Displacement MidLevel</strong> and <strong>Displacement Scale</strong> parameters present in the panel.
+Make sure you have selected the material that has the active Microdisplacement from the <a class="reference internal" href="main_panel.html#material-list"><span class="std std-ref">Material List Section</span></a>
+otherwise you will not</p>
+<a class="reference internal image-reference" href="_images/adjust_displacement_material_editor_simple_pbr.png"><img alt="Adjust Displacement Material Editor Simple PBR" class="align-center" src="_images/adjust_displacement_material_editor_simple_pbr.png" style="width: 800px;" /></a>
+<hr class="docutils" />
+</section>
+</section>
 </section>
 <section id="multiple-displacement-modifier">
 <span id="id1"></span><h2>Multiple Displacement Modifier<a class="headerlink" href="#multiple-displacement-modifier" title="Permalink to this heading"></a></h2>

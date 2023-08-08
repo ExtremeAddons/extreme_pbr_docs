@@ -13,3 +13,16 @@ This section is under construction.
 
 .. seealso::
     Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+
+.. sidebar:: Optional Sidebar Title
+   :subtitle: Optional Sidebar Subtitle
+
+   Subsequent indented lines comprise
+   the body of the sidebar, and are
+   interpreted as body elements.
+
+
+.. seealso:: seealso
+
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
