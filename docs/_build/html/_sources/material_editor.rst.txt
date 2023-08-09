@@ -198,7 +198,7 @@ Diffuse Color
 This color box allows you to choose a color to apply to the diffuse texture, in case there is no texture, this takes the place of the texture as a solid color.
 
 .. note::
-        If the texture is present, this color works in accordance with the :ref:`colorize_strength`
+        This color works in accordance with the :ref:`colorize_strength`
 
 .. image:: _static/_images/material_editor/me_diffuse_color.png
     :align: center
@@ -302,6 +302,16 @@ the whole material in this case will be transparent according to the set value.
 Note, in **Eevee render** and only in **Eevee render** transparency is handled differently, so you will have to use
 the button next to the slider (Transparent Mode button) to choose how to handle transparency, you can choose between these settings:
 
+
+**This material use a transparency map:**
+
+.. image:: _static/_images/material_editor/metal_walkway_002.png
+    :align: center
+    :width: 400
+    :alt: Metal Walkway 002
+
+|
+
 Transparent Mode
 *****************
 
@@ -380,12 +390,202 @@ then this slider will adjust the general metallic of the material, the whole mat
 depending on the set value, a metallic value of 1.0 and a Roughness of 0.0, will render the material as a
 shiny metal, while a metallic value of 0.0 and a Roughness of 1.0 will render the material as a non-metallic material
 
+.. image:: _static/_images/material_editor/metal_004.png
+    :align: center
+    :width: 400
+    :alt: Metallic Example
+
 
 .. hint::
         On a completely black material, setting the Metallic will have no effect, as the black color
         does not reflect light, so no effect will be seen, to see the effect of the Metallic, it is necessary
         set a color other than black, even if it is a very dark color, in this way you will see the effect of the Metallic.
         In short, everything except total black 😊
+
+------------------------------------------------------------------------------------------------------------------------
+
+Specular/Tint
+--------------
+
+.. image:: _static/_images/material_editor/me_specular_tint.webp
+    :align: center
+    :width: 400
+    :alt: Specular Tint
+
+|
+
+This 2 properties work in symbiosis:
+
+Specular
+*********
+
+This slider adjusts the specular of the material, if a specular map is present, then this slider will only adjust
+some areas of the material, while if it is not present, then it will adjust the general specular of the material.
+
+
+Specular Tint
+**************
+
+Mix between white and the base color in order to tint the specular highlights.
+
+**Example between Specular tint at 0.0 and 1.0, on the left 0.0, on the right 1.0**
+
+.. image:: _static/_images/material_editor/specular_tint_example.webp
+    :align: center
+    :width: 800
+    :alt: Specular Tint Example
+
+------------------------------------------------------------------------------------------------------------------------
+
+Roughness
+----------
+
+.. image:: _static/_images/material_editor/me_roughness.webp
+    :align: center
+    :width: 400
+    :alt: Roughness
+
+|
+
+This slider allows you to adjust the Roughness of the material, if a Roughness map is present, then this slider will only adjust
+some areas of the material, while if it is not present, then it will adjust the general roughness of the material.
+
+
+**Example, on the left the roughness is at 0.0 on the right at 1.0:**
+
+.. image:: _static/_images/material_editor/me_roughness_zero_to_max.webp
+    :align: center
+    :width: 800
+    :alt: Roughness Zero To Max
+
+------------------------------------------------------------------------------------------------------------------------
+
+Sheen / Sheen Tint
+-------------------
+
+.. image:: _static/_images/material_editor/me_sheen_and_tint.webp
+    :align: center
+    :width: 400
+    :alt: Sheen and Tint
+
+|
+
+These 2 properties work in symbiosis:
+
+Sheen
+******
+
+The sheen is a soft velvet-like reflection that appears in the areas where the light is reflected, value 0.0 means no sheen,
+while value 1.0 means maximum sheen.
+
+Sheen Tint
+***********
+
+Mix between white and the base color in order to tint the sheen. Value 0.0 means no tint, while value 1.0 means maximum tint.
+
+**Sheen Example:**
+First image, **Sheen 0.0** **Sheen Tint 0.0**, Second image **Sheen 1.0** **Sheen Tint 0.0**, Third image **Sheen 1.0** **Sheen Tint 1.0**
+
+.. image:: _static/_images/material_editor/me_sheen_tint_example.webp
+    :align: center
+    :width: 800
+    :alt: Sheen Example
+
+------------------------------------------------------------------------------------------------------------------------
+
+Clearcoat / Roughness
+----------------------
+
+.. image:: _static/_images/material_editor/me_clearcoat_and_roughness.webp
+    :align: center
+    :width: 400
+    :alt: Clearcoat and Roughness
+
+|
+
+Clearcoat
+**********
+
+The clearcoat is a layer of varnish that is applied to the material, it is a layer that is applied on top of the material,
+this is similar to the clearcoat of a car.
+
+Clearcoat Roughness
+*******************
+
+In accordance with the clearcoat, this slider allows you to adjust the roughness of the clearcoat.
+
+**Example, First Image Clearcoat 0.0, Second Image Clearcoat 1.0 and Roughness 0.0, Third Image Clearcoat 1.0 and Roughness 0.25**
+
+.. image:: _static/_images/material_editor/me_clearcoat_example.webp
+    :align: center
+    :width: 800
+    :alt: Clearcoat Example
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Transmission
+-------------
+
+.. image:: _static/_images/material_editor/me_transmission_section.webp
+    :align: center
+    :width: 400
+    :alt: Transmission
+
+|
+
+The transmission is the ability of a material to let light pass through it, this is very useful for materials
+like glass, water etc.
+
+This property works in symbiosis with the **IOR** and **Transmission Roughness** properties
+
+The value of the transmission is a value between 0.0 and 1.0, where 0.0 means no transmission, while 1.0
+means maximum transmission (To simulate a normal glass it will have 1.0 of transmission)
+
+Ray Tracer Button
+******************
+
+The button Raytracer, activate or deactivate, the Screen Space Refractions (For the Glass). Eevee only, in Cycles, this is not necessary,
+in Eevee Render it is really necessary to activate it if you want to get a realistic result even if not perfect.
+
+This button activates or deactivates the **Screen Space Refractions** in the material properties and deactivates the property
+**Subsurface Translucent** if it is active, otherwise they will go into contrast (This is only necessary for the
+Eevee rendering engine, it is not necessary in Cycles)
+
+IOR
+*****
+
+The IOR is the index of refraction, it is a value that is used to calculate the refraction of the material.
+For example the IOR of the glass is 1.45, the IOR of the water is 1.33, the IOR of the diamond is 2.42 etc...
+
+Transmission Roughness
+***********************
+
+This slider allows you to adjust the roughness of the transmission. The transmission Roughness will make the material
+more or less transparent, the higher the value, the less transparent the material will be, the lower the value, the more transparent
+the material will be.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
