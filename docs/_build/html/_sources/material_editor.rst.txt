@@ -1228,6 +1228,200 @@ Make Noise Worn Edges
 By pressing this button, the mask will be baked on the sharpest corners of the object, but with a noise effect.
 This type of Bake is with noise, so it is much more noisy.
 
+------------------------------------------------------------------------------------------------------------------------
+
+Worn Edge Reset Value
+######################
+
+.. image:: _static/_images/fx_layer/fx_worn_edge_reset_value.webp
+    :align: center
+    :width: 400
+    :alt: Fx Worn Edge Reset Value
+
+|
+
+This button resets the value of the sliders to the default value into the Worn Edges panel.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Worn Edge Invert Mask
+########################
+
+.. image:: _static/_images/fx_layer/fx_worn_edge_invert_mask.webp
+    :align: center
+    :width: 400
+    :alt: Fx Worn Edge Invert Mask
+
+|
+
+This button inverts the mask, so where there was black before, now there will be white and vice versa.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Worn Edge Expand Edges
+########################
+
+.. image:: _static/_images/fx_layer/fx_worn_edge_expand_edges.webp
+    :align: center
+    :width: 400
+    :alt: Fx Worn Edge Expand Edges
+
+|
+
+This slider allows you to expand the mask around the corners, so you can make the mask more or less large.
+
+**Here an example of the expansion of the edges Mask:**
+
+.. image:: _static/_images/fx_layer/fx_expand_edge_mask_example.webp
+    :align: center
+    :width: 800
+    :alt: Fx Expand Edge Mask Example
+
+------------------------------------------------------------------------------------------------------------------------
+
+Edges Strength
+################
+
+.. image:: _static/_images/fx_layer/fx_worn_edge_edges_strength.webp
+    :align: center
+    :width: 400
+    :alt: Fx Worn Edge Edges Strength
+
+|
+
+Edges Strength adjust the strength of the mask, the higher the value, the stronger the mask will be, the lower the value, the weaker the mask will be.
+So it can be said that a low value of the mask, will make the mask more blurred, while a high value will make the mask stronger.
+
+**Here an example between a low value and a high value of the Edges Strength:**
+
+.. image:: _static/_images/fx_layer/fx_worn_edges_strength_example.webp
+    :align: center
+    :width: 800
+    :alt: Fx Edges Strength Example
+
+------------------------------------------------------------------------------------------------------------------------
+
+Dynamic Mask Z-Mix V2
+**********************
+
+.. image:: _static/_images/fx_layer/fx_z_mix_panel.webp
+    :align: center
+    :width: 400
+    :alt: Fx Z-Mix Panel
+
+|
+
+Z-Mix V2 allows you to mix the Fx Layer vertically, useful for simulating the effect of a material that has been consumed
+vertically, or to simulate grass or "Climbing" vegetation or moss.
+
+**Here some examples of Z-Mix V2:**
+
+.. image:: _static/_images/fx_layer/fx_dynmask_zmix_v2_example_00.webp
+    :align: center
+    :width: 400
+    :alt: Fx Dynmask Z-Mix V2
+
+.. image:: _static/_images/fx_layer/fx_dynmask_zmix_v2_example_01.webp
+    :align: center
+    :width: 400
+    :alt: Fx Dynmask Z-Mix V2 Example 01
+
+.. image:: _static/_images/fx_layer/fx_dynmask_zmix_v2_example_02.webp
+    :align: center
+    :width: 400
+    :alt: Fx Dynmask Z-Mix V2 Example 02
+
+------------------------------------------------------------------------------------------------------------------------
+
+Z-Mix V2 Reset Value
+#####################
+
+.. image:: _static/_images/fx_layer/fx_z_mix_reset_value.webp
+    :align: center
+    :width: 400
+    :alt: Fx Z-Mix V2 Reset Value
+
+|
+
+This button resets the value of the sliders to the default value into the Z-Mix V2 panel.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Z-Mix V2 Altitude Level
+########################
+
+.. image:: _static/_images/fx_layer/fx_z_mix_altitude_level.webp
+    :align: center
+    :width: 400
+    :alt: Fx Z-Mix V2 Altitude Level
+
+|
+
+This slider adjusts the height of the Z-Mix V2 level.
+
+**Example of 2 different Altitude Level:**
+
+.. image:: _static/_images/fx_layer/fx_z_mix_altitude_example_01.webp
+    :align: center
+    :width: 800
+    :alt: Fx Z-Mix V2 Altitude Example 01
+
+------------------------------------------------------------------------------------------------------------------------
+
+Z-Mix V2 Dead Line
+###################
+
+.. image:: _static/_images/fx_layer/fx_z_mix_dead_line.webp
+    :align: center
+    :width: 400
+    :alt: Fx Z-Mix V2 Dead Line
+
+|
+
+
+By adjusting this slider you can adjust the Dead Line, i.e. the line of separation between the base material and the Fx material.
+A higher value will make the Dead Line sharper, while a lower value will make the Dead Line more blurred.
+
+**Example, on the left a dead line with value 0.0, on the right a dead line with a higher value**
+
+.. image:: _static/_images/fx_layer/fx_z_mix_dead_line_example_01.webp
+    :align: center
+    :width: 800
+    :alt: Fx Z-Mix V2 Dead Line Example 01
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Z-Mix V2 Deadline Noise
+########################
+
+.. image:: _static/_images/fx_layer/fx_z_mix_dead_line_noise.webp
+    :align: center
+    :width: 400
+    :alt: Fx Z-Mix V2 Deadline Noise
+
+|
+
+.. note::
+        If activated, it will give access to other properties described later
+
+
+Once activated, it will make the deadline between one material and another, more noisy, so more natural.
+
+**Here an example of a Deadline without Noise, and with Noise:**
+
+.. image:: _static/_images/fx_layer/fx_dynmask_zmix_v2_deadline_noide_example.webp
+    :align: center
+    :width: 800
+    :alt: Fx Dynmask Z-Mix V2 Deadline Noide Example
+
+
+
+
+
+
+
+
 
 
 

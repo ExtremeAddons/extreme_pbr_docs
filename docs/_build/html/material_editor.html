@@ -139,6 +139,17 @@
 <li class="toctree-l3"><a class="reference internal" href="#dynamic-mask-worn-edges">Dynamic Mask Worn Edges</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#make-worn-edges">Make Worn Edges</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#make-noise-worn-edges">Make Noise Worn Edges</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#worn-edge-reset-value">Worn Edge Reset Value</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#worn-edge-invert-mask">Worn Edge Invert Mask</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#worn-edge-expand-edges">Worn Edge Expand Edges</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#edges-strength">Edges Strength</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#dynamic-mask-z-mix-v2">Dynamic Mask Z-Mix V2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-reset-value">Z-Mix V2 Reset Value</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-altitude-level">Z-Mix V2 Altitude Level</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-dead-line">Z-Mix V2 Dead Line</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-deadline-noise">Z-Mix V2 Deadline Noise</a></li>
 </ul>
 </li>
 </ul>
@@ -952,6 +963,108 @@ This type of Bake is with denoising, so it is much more homogeneous and without 
 </div>
 <p>By pressing this button, the mask will be baked on the sharpest corners of the object, but with a noise effect.
 This type of Bake is with noise, so it is much more noisy.</p>
+</section>
+<hr class="docutils" />
+<section id="worn-edge-reset-value">
+<h4>Worn Edge Reset Value<a class="headerlink" href="#worn-edge-reset-value" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_worn_edge_reset_value.webp"><img alt="Fx Worn Edge Reset Value" class="align-center" src="_images/fx_worn_edge_reset_value.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button resets the value of the sliders to the default value into the Worn Edges panel.</p>
+</section>
+<hr class="docutils" />
+<section id="worn-edge-invert-mask">
+<h4>Worn Edge Invert Mask<a class="headerlink" href="#worn-edge-invert-mask" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_worn_edge_invert_mask.webp"><img alt="Fx Worn Edge Invert Mask" class="align-center" src="_images/fx_worn_edge_invert_mask.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button inverts the mask, so where there was black before, now there will be white and vice versa.</p>
+</section>
+<hr class="docutils" />
+<section id="worn-edge-expand-edges">
+<h4>Worn Edge Expand Edges<a class="headerlink" href="#worn-edge-expand-edges" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_worn_edge_expand_edges.webp"><img alt="Fx Worn Edge Expand Edges" class="align-center" src="_images/fx_worn_edge_expand_edges.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This slider allows you to expand the mask around the corners, so you can make the mask more or less large.</p>
+<p><strong>Here an example of the expansion of the edges Mask:</strong></p>
+<a class="reference internal image-reference" href="_images/fx_expand_edge_mask_example.webp"><img alt="Fx Expand Edge Mask Example" class="align-center" src="_images/fx_expand_edge_mask_example.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="edges-strength">
+<h4>Edges Strength<a class="headerlink" href="#edges-strength" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_worn_edge_edges_strength.webp"><img alt="Fx Worn Edge Edges Strength" class="align-center" src="_images/fx_worn_edge_edges_strength.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Edges Strength adjust the strength of the mask, the higher the value, the stronger the mask will be, the lower the value, the weaker the mask will be.
+So it can be said that a low value of the mask, will make the mask more blurred, while a high value will make the mask stronger.</p>
+<p><strong>Here an example between a low value and a high value of the Edges Strength:</strong></p>
+<a class="reference internal image-reference" href="_images/fx_worn_edges_strength_example.webp"><img alt="Fx Edges Strength Example" class="align-center" src="_images/fx_worn_edges_strength_example.webp" style="width: 800px;" /></a>
+</section>
+</section>
+<hr class="docutils" />
+<section id="dynamic-mask-z-mix-v2">
+<h3>Dynamic Mask Z-Mix V2<a class="headerlink" href="#dynamic-mask-z-mix-v2" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/fx_z_mix_panel.webp"><img alt="Fx Z-Mix Panel" class="align-center" src="_images/fx_z_mix_panel.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Z-Mix V2 allows you to mix the Fx Layer vertically, useful for simulating the effect of a material that has been consumed
+vertically, or to simulate grass or “Climbing” vegetation or moss.</p>
+<p><strong>Here some examples of Z-Mix V2:</strong></p>
+<a class="reference internal image-reference" href="_images/fx_dynmask_zmix_v2_example_00.webp"><img alt="Fx Dynmask Z-Mix V2" class="align-center" src="_images/fx_dynmask_zmix_v2_example_00.webp" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/fx_dynmask_zmix_v2_example_01.webp"><img alt="Fx Dynmask Z-Mix V2 Example 01" class="align-center" src="_images/fx_dynmask_zmix_v2_example_01.webp" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/fx_dynmask_zmix_v2_example_02.webp"><img alt="Fx Dynmask Z-Mix V2 Example 02" class="align-center" src="_images/fx_dynmask_zmix_v2_example_02.webp" style="width: 400px;" /></a>
+<hr class="docutils" />
+<section id="z-mix-v2-reset-value">
+<h4>Z-Mix V2 Reset Value<a class="headerlink" href="#z-mix-v2-reset-value" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_z_mix_reset_value.webp"><img alt="Fx Z-Mix V2 Reset Value" class="align-center" src="_images/fx_z_mix_reset_value.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button resets the value of the sliders to the default value into the Z-Mix V2 panel.</p>
+</section>
+<hr class="docutils" />
+<section id="z-mix-v2-altitude-level">
+<h4>Z-Mix V2 Altitude Level<a class="headerlink" href="#z-mix-v2-altitude-level" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_z_mix_altitude_level.webp"><img alt="Fx Z-Mix V2 Altitude Level" class="align-center" src="_images/fx_z_mix_altitude_level.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This slider adjusts the height of the Z-Mix V2 level.</p>
+<p><strong>Example of 2 different Altitude Level:</strong></p>
+<a class="reference internal image-reference" href="_images/fx_z_mix_altitude_example_01.webp"><img alt="Fx Z-Mix V2 Altitude Example 01" class="align-center" src="_images/fx_z_mix_altitude_example_01.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="z-mix-v2-dead-line">
+<h4>Z-Mix V2 Dead Line<a class="headerlink" href="#z-mix-v2-dead-line" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_z_mix_dead_line.webp"><img alt="Fx Z-Mix V2 Dead Line" class="align-center" src="_images/fx_z_mix_dead_line.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By adjusting this slider you can adjust the Dead Line, i.e. the line of separation between the base material and the Fx material.
+A higher value will make the Dead Line sharper, while a lower value will make the Dead Line more blurred.</p>
+<p><strong>Example, on the left a dead line with value 0.0, on the right a dead line with a higher value</strong></p>
+<a class="reference internal image-reference" href="_images/fx_z_mix_dead_line_example_01.webp"><img alt="Fx Z-Mix V2 Dead Line Example 01" class="align-center" src="_images/fx_z_mix_dead_line_example_01.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="z-mix-v2-deadline-noise">
+<h4>Z-Mix V2 Deadline Noise<a class="headerlink" href="#z-mix-v2-deadline-noise" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_z_mix_dead_line_noise.webp"><img alt="Fx Z-Mix V2 Deadline Noise" class="align-center" src="_images/fx_z_mix_dead_line_noise.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If activated, it will give access to other properties described later</p>
+</div>
+<p>Once activated, it will make the deadline between one material and another, more noisy, so more natural.</p>
+<p><strong>Here an example of a Deadline without Noise, and with Noise:</strong></p>
+<a class="reference internal image-reference" href="_images/fx_dynmask_zmix_v2_deadline_noide_example.webp"><img alt="Fx Dynmask Z-Mix V2 Deadline Noide Example" class="align-center" src="_images/fx_dynmask_zmix_v2_deadline_noide_example.webp" style="width: 800px;" /></a>
 </section>
 </section>
 </section>
