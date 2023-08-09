@@ -105,8 +105,15 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#locations-xyz">Locations XYZ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#rotation-xyz">Rotation XYZ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scale-xyz">Scale XYZ</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#scale-uniform">Scale Uniform</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#world-coordinate">World Coordinate</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-fx-layer">Add Fx Layer</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#adjust-node-tree">Adjust Node Tree</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="#fx-layer">Fx Layer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="texture_manager.html">Texture Manager Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="texture_paint.html">Texture Paint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="color_lab.html">Color Lab</a></li>
@@ -555,6 +562,11 @@ of greater relief than the normal map.</p>
 </div>
 <p>These 3 sliders <strong>LX</strong> <strong>LY</strong> <strong>LZ</strong> allow you to adjust the location of the texture, this is useful if you want to move
 the position of the texture on the object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Location Z</strong> property will only work if the mapping type is set to <strong>Box</strong>, <strong>Sphere</strong> or <strong>Tube</strong>
+To access these properties refer to this paragraph: <a class="reference internal" href="mapping_editor.html#mapping-editor-panel"><span class="std std-ref">Mapping Editor</span></a> and here: <a class="reference internal" href="main_panel.html#mapping-editor-button"><span class="std std-ref">Mapping Editor Button</span></a></p>
+</div>
 <div class="admonition attention">
 <p class="admonition-title">Attention</p>
 <p>If you are using the displacement Modifier, these sliders will not move the Displacement effect, to move the
@@ -564,6 +576,113 @@ because these sliders will not move the UV mapping. If you are using the Displac
 then these sliders will also work to move the displacement effect, but only in <strong>Cycles Render</strong> mode</p>
 </div>
 </section>
+<hr class="docutils" />
+<section id="rotation-xyz">
+<h2>Rotation XYZ<a class="headerlink" href="#rotation-xyz" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/me_rotation_xyz.webp"><img alt="Rotation XYZ" class="align-center" src="_images/me_rotation_xyz.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These 3 sliders <strong>RX</strong> <strong>RY</strong> <strong>RZ</strong> allow you to adjust the rotation of the texture, this is useful if you want to rotate
+the position of the texture on the object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Rotation Z</strong> property will only work if the mapping type is set to <strong>Box</strong>, <strong>Sphere</strong> or <strong>Tube</strong>
+To access these properties refer to this paragraph: <a class="reference internal" href="mapping_editor.html#mapping-editor-panel"><span class="std std-ref">Mapping Editor</span></a> and here: <a class="reference internal" href="main_panel.html#mapping-editor-button"><span class="std std-ref">Mapping Editor Button</span></a></p>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>If you are using the displacement Modifier, these sliders will not rotate the Displacement effect, to rotate the
+displacement effect together with the texture, you have to use the <strong>Mapping Editor</strong> described here: <a class="reference internal" href="mapping_editor.html#mapping-editor-panel"><span class="std std-ref">Mapping Editor</span></a>
+and here: <a class="reference internal" href="main_panel.html#mapping-editor-button"><span class="std std-ref">Mapping Editor Button</span></a>
+because these sliders will not rotate the UV mapping. If you are using the Displacement <strong>Microdisplacement</strong>
+then these sliders will also work to rotate the displacement effect, but only in <strong>Cycles Render</strong> mode</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="scale-xyz">
+<h2>Scale XYZ<a class="headerlink" href="#scale-xyz" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/me_scale_xyz.webp"><img alt="Scale XYZ" class="align-center" src="_images/me_scale_xyz.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These 3 sliders <strong>SX</strong> <strong>SY</strong> <strong>SZ</strong> allow you to adjust the scale of the texture, this is useful if you want to scale
+the position of the texture on the object.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <strong>Scale Z</strong> property will only work if the mapping type is set to <strong>Box</strong>, <strong>Sphere</strong> or <strong>Tube</strong>
+To access these properties refer to this paragraph: <a class="reference internal" href="mapping_editor.html#mapping-editor-panel"><span class="std std-ref">Mapping Editor</span></a> and here: <a class="reference internal" href="main_panel.html#mapping-editor-button"><span class="std std-ref">Mapping Editor Button</span></a></p>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>If you are using the displacement Modifier, these sliders will not scale the Displacement effect, to scale the
+displacement effect together with the texture, you have to use the <strong>Mapping Editor</strong> described here: <a class="reference internal" href="mapping_editor.html#mapping-editor-panel"><span class="std std-ref">Mapping Editor</span></a>
+and here: <a class="reference internal" href="main_panel.html#mapping-editor-button"><span class="std std-ref">Mapping Editor Button</span></a>
+because these sliders will not scale the UV mapping. If you are using the Displacement <strong>Microdisplacement</strong>
+then these sliders will also work to scale the displacement effect, but only in <strong>Cycles Render</strong> mode</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="scale-uniform">
+<h2>Scale Uniform<a class="headerlink" href="#scale-uniform" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/me_scale_uniform.webp"><img alt="Scale Uniform" class="align-center" src="_images/me_scale_uniform.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This slider allows you to scale the texture uniformly, this is useful if you want to scale the texture uniformly.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>If you are using the displacement Modifier, this slider will not scale the Displacement effect, to scale the
+displacement effect together with the texture, you have to use the <strong>Mapping Editor</strong> described here: <a class="reference internal" href="mapping_editor.html#mapping-editor-panel"><span class="std std-ref">Mapping Editor</span></a>
+and here: <a class="reference internal" href="main_panel.html#mapping-editor-button"><span class="std std-ref">Mapping Editor Button</span></a>
+because this slider will not scale the UV mapping. If you are using the Displacement <strong>Microdisplacement</strong>
+then this slider will also work to scale the displacement effect, but only in <strong>Cycles Render</strong> mode</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="world-coordinate">
+<h2>World Coordinate<a class="headerlink" href="#world-coordinate" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/me_world_coordinate.webp"><img alt="World Coordinate" class="align-center" src="_images/me_world_coordinate.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The World Coordinate button, if active, allows you to use the coordinates of the world, otherwise it uses the coordinates of the object,
+if you move the object once the button is activated, you will see that the texture will move together with the object when you move the object.
+from its position.</p>
+</section>
+<hr class="docutils" />
+<section id="add-fx-layer">
+<h2>Add Fx Layer<a class="headerlink" href="#add-fx-layer" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/me_add_fx_layer.webp"><img alt="Add Fx Layer" class="align-center" src="_images/me_add_fx_layer.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This Button, in accordance with the material preview present in the <a class="reference internal" href="main_panel.html#material-browser"><span class="std std-ref">Material Browser</span></a> allows you to add an effect
+to the material. This is explained well in this chapter: <a class="reference internal" href="#fx-layer"><span class="std std-ref">Fx Layer</span></a></p>
+</section>
+<hr class="docutils" />
+<section id="adjust-node-tree">
+<h2>Adjust Node Tree<a class="headerlink" href="#adjust-node-tree" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/me_adjust_node_tree.webp"><img alt="Adjust Node Tree" class="align-center" src="_images/me_adjust_node_tree.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Adjust Node Tree button, if the nodes of Extreme PBR Nexus have been disconnected (For example due to an error, or an involuntary manipulation)
+allows you to reconnect all Nexus nodes, and realigns them so that they have a correct order.</p>
+<p>Here is an extreme example, before and after:</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td><p><a class="reference internal" href="_images/me_module_unconnected.jpg"><img alt="Before" src="_images/me_module_unconnected.jpg" style="width: 100%;" /></a></p></td>
+</tr>
+<tr class="row-even"><td><p><a class="reference internal" href="_images/me_module_reconnected.jpg"><img alt="After" src="_images/me_module_reconnected.jpg" style="width: 100%;" /></a></p></td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="fx-layer">
+<span id="id9"></span><h1>Fx Layer<a class="headerlink" href="#fx-layer" title="Permalink to this heading"></a></h1>
+<p>TODO</p>
 </section>
 
 

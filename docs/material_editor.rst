@@ -647,6 +647,10 @@ Locations XYZ
 These 3 sliders **LX** **LY** **LZ** allow you to adjust the location of the texture, this is useful if you want to move
 the position of the texture on the object.
 
+.. note::
+        The **Location Z** property will only work if the mapping type is set to **Box**, **Sphere** or **Tube**
+        To access these properties refer to this paragraph: :ref:`mapping_editor_panel` and here: :ref:`mapping_editor_button`
+
 
 .. attention::
         If you are using the displacement Modifier, these sliders will not move the Displacement effect, to move the
@@ -654,6 +658,157 @@ the position of the texture on the object.
         and here: :ref:`mapping_editor_button`
         because these sliders will not move the UV mapping. If you are using the Displacement **Microdisplacement**
         then these sliders will also work to move the displacement effect, but only in **Cycles Render** mode
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Rotation XYZ
+-------------
+
+.. image:: _static/_images/material_editor/me_rotation_xyz.webp
+    :align: center
+    :width: 400
+    :alt: Rotation XYZ
+
+|
+
+These 3 sliders **RX** **RY** **RZ** allow you to adjust the rotation of the texture, this is useful if you want to rotate
+the position of the texture on the object.
+
+.. note::
+        The **Rotation Z** property will only work if the mapping type is set to **Box**, **Sphere** or **Tube**
+        To access these properties refer to this paragraph: :ref:`mapping_editor_panel` and here: :ref:`mapping_editor_button`
+
+.. attention::
+        If you are using the displacement Modifier, these sliders will not rotate the Displacement effect, to rotate the
+        displacement effect together with the texture, you have to use the **Mapping Editor** described here: :ref:`mapping_editor_panel`
+        and here: :ref:`mapping_editor_button`
+        because these sliders will not rotate the UV mapping. If you are using the Displacement **Microdisplacement**
+        then these sliders will also work to rotate the displacement effect, but only in **Cycles Render** mode
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Scale XYZ
+----------
+
+.. image:: _static/_images/material_editor/me_scale_xyz.webp
+    :align: center
+    :width: 400
+    :alt: Scale XYZ
+
+|
+
+These 3 sliders **SX** **SY** **SZ** allow you to adjust the scale of the texture, this is useful if you want to scale
+the position of the texture on the object.
+
+.. note::
+        The **Scale Z** property will only work if the mapping type is set to **Box**, **Sphere** or **Tube**
+        To access these properties refer to this paragraph: :ref:`mapping_editor_panel` and here: :ref:`mapping_editor_button`
+
+.. attention::
+        If you are using the displacement Modifier, these sliders will not scale the Displacement effect, to scale the
+        displacement effect together with the texture, you have to use the **Mapping Editor** described here: :ref:`mapping_editor_panel`
+        and here: :ref:`mapping_editor_button`
+        because these sliders will not scale the UV mapping. If you are using the Displacement **Microdisplacement**
+        then these sliders will also work to scale the displacement effect, but only in **Cycles Render** mode
+
+------------------------------------------------------------------------------------------------------------------------
+
+Scale Uniform
+--------------
+
+.. image:: _static/_images/material_editor/me_scale_uniform.webp
+    :align: center
+    :width: 400
+    :alt: Scale Uniform
+
+|
+
+This slider allows you to scale the texture uniformly, this is useful if you want to scale the texture uniformly.
+
+.. attention::
+        If you are using the displacement Modifier, this slider will not scale the Displacement effect, to scale the
+        displacement effect together with the texture, you have to use the **Mapping Editor** described here: :ref:`mapping_editor_panel`
+        and here: :ref:`mapping_editor_button`
+        because this slider will not scale the UV mapping. If you are using the Displacement **Microdisplacement**
+        then this slider will also work to scale the displacement effect, but only in **Cycles Render** mode
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+World Coordinate
+-----------------
+
+.. image:: _static/_images/material_editor/me_world_coordinate.webp
+    :align: center
+    :width: 400
+    :alt: World Coordinate
+
+|
+
+The World Coordinate button, if active, allows you to use the coordinates of the world, otherwise it uses the coordinates of the object,
+if you move the object once the button is activated, you will see that the texture will move together with the object when you move the object.
+from its position.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Add Fx Layer
+-------------
+
+.. image:: _static/_images/material_editor/me_add_fx_layer.webp
+    :align: center
+    :width: 400
+    :alt: Add Fx Layer
+
+|
+
+This Button, in accordance with the material preview present in the :ref:`material_browser` allows you to add an effect
+to the material. This is explained well in this chapter: :ref:`fx_layer`
+
+------------------------------------------------------------------------------------------------------------------------
+
+Adjust Node Tree
+-----------------
+
+.. image:: _static/_images/material_editor/me_adjust_node_tree.webp
+    :align: center
+    :width: 400
+    :alt: Adjust Node Tree
+
+|
+
+Adjust Node Tree button, if the nodes of Extreme PBR Nexus have been disconnected (For example due to an error, or an involuntary manipulation)
+allows you to reconnect all Nexus nodes, and realigns them so that they have a correct order.
+
+
+Here is an extreme example, before and after:
+
+.. |Before| image:: _static/_images/material_editor/me_module_unconnected.jpg
+    :width: 100%
+
+.. |After| image:: _static/_images/material_editor/me_module_reconnected.jpg
+    :width: 100%
+
++-------------------+
+| |Before|          |
++-------------------+
+| |After|           |
++-------------------+
+
+
+
+
+
+.. _fx_layer:
+
+Fx Layer
+=========
+
+TODO
+
 
 
 
