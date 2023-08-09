@@ -64,6 +64,8 @@ the object you are working on.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _show_hide_group:
+
 Show / Hide Group
 -------------------
 
@@ -77,6 +79,8 @@ FX Module, it makes the workspace cleaner and allows you to focus only on what y
 
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _search_module:
 
 Search Module
 --------------
@@ -96,6 +100,8 @@ As soon as you select a module, the module from where you are starting will be r
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _module_name:
+
 Module Name (Group Name)
 -------------------------
 
@@ -107,6 +113,8 @@ From here you can view and also change the name of the group (Nexus Module) you 
     :alt: Module Name
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _replace_module:
 
 Replace Module
 ---------------
@@ -122,6 +130,34 @@ of the :ref:`material_browser` you have chosen.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _module_clip_texture:
+
+Clip Texture
+-------------
+
+.. image:: _static/_images/material_editor/me_clip_texture_button.webp
+    :align: center
+    :width: 600
+    :alt: Clip Texture
+
+|
+
+
+This button allows you to clip the texture, clip texture means that the texture will not be repeated, but will only be once,
+so, the object will have only one texture, without repetitions, no seamless.
+
+**Example of a texture clipped:**
+
+.. image:: _static/_images/material_editor/me_clip_texture_example.webp
+    :align: center
+    :width: 800
+    :alt: Clip Texture Example
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _module_reset_values:
+
 Reset Values
 ------------
 
@@ -133,6 +169,8 @@ The Reset Values Button allows you to reset the properties of the module you are
     :alt: Reset Values
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _module_info:
 
 Info
 -----
@@ -151,6 +189,8 @@ The Info button allows you to view the information of the module you are using, 
         this information is in the :ref:`info_and_tag` menu
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _module_tips:
 
 Tips
 -----
@@ -754,6 +794,7 @@ from its position.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _add_fx_layer:
 
 Add Fx Layer
 -------------
@@ -800,14 +841,103 @@ Here is an extreme example, before and after:
 
 
 
-
-
 .. _fx_layer:
 
 Fx Layer
 =========
 
-TODO
+.. note::
+        In order to add the Fx Layer you will have to use the **Add Fx** button described here: :ref:`add_fx_layer`
+
+
+The Fx Layer allows you to add **Above** the material (Module) you are using, an effect, such as
+a **Fingerprints** effect or a **Dust** effect or a **Scratches** effect etc ...
+
+To add an Fx Layers, make sure you have applied the material with the **Nexus** option, as the materials applied
+with the **Simple PBR** mode do not support Fx Layers.
+
+
+**An example, wood material, without Fx Layer**
+
+.. image:: _static/_images/fx_layer/fx_plane_no_fx_example.webp
+    :align: center
+    :width: 100%
+    :alt: Fx Plane No Fx Example
+
+**An example, wood material, with Fx Layer Colored**
+
+.. image:: _static/_images/fx_layer/fx_plane_fingerprint_white_example.webp
+    :align: center
+    :width: 100%
+    :alt: Fx Plane Fingerprint White Example
+
+**An example, wood material, with Fx Layer Normal and Roughness**
+
+.. image:: _static/_images/fx_layer/fx_plane_fingerprint_normal_example.webp
+    :align: center
+    :width: 100%
+    :alt: Fx Plane Fingerprint Normal Example
+
+|
+
+.. note::
+        All Texture-based materials can become Fx Layers, the Fx Layer in fact uses the maps present in any material
+        of the Extreme PBR library, so you have a wide choice. For example you can also apply an FX layer of another wood to the material,
+        this will use the maps of the other wood in addition to the underlying material
+
+------------------------------------------------------------------------------------------------------------------------
+
+Fx Layer Panel
+----------------
+
+
+Here is how an Fx Layer panel looks inside the material editor, in fact, once added, it will be
+underneath the corresponding material panel (Nexus Module), you can also add 2 Fx Layers if you want, but
+it is not recommended to exaggerate with the Fx Layers, as they could slow down the rendering, in addition at the moment, Blender
+supports a maximum of 24 Textures per material, so using the Fx Layers, you could exceed this limit, and make it become
+the material unusable in Blender.
+
+
+
+
+.. image:: _static/_images/fx_layer/fx_layer_panel_01.webp
+    :align: center
+    :width: 400
+    :alt: Fx Layer Panel 01
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Fx Layer same tools
+--------------------
+
+Molti riferimenti sono gli stessi del pannello del materiale, quindi non li ripeterò, ma lascio il riferimento al pannello del materiale
+poichè hanno le stesse funzioni:
+
+
+- **Show / Hide Group:** :ref:`show_hide_group`
+- **Search Module/Fx:** :ref:`search_module`
+- **Module/Fx Name:** :ref:`module_name`
+- **Replace Module/Fx:** :ref:`replace_module`
+
+
+Remove Fx Layer
+****************
+
+In addition to removing the Fx Layer, just press the **Remove Fx Layer** button here:
+
+.. image:: _static/_images/fx_layer/fr_layer_remove_button.webp
+    :align: center
+    :width: 400
+    :alt: Fx Layer Remove Button
+
+|
+
+**Clip Texture:** :ref:`module_clip_texture`
+
+
+
+
 
 
 

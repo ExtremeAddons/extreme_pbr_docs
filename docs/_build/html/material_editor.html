@@ -60,6 +60,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#search-module">Search Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-name-group-name">Module Name (Group Name)</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#replace-module">Replace Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#clip-texture">Clip Texture</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reset-values">Reset Values</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#info">Info</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tips">Tips</a></li>
@@ -78,7 +79,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#metallic">Metallic</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#specular-tint">Specular/Tint</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#specular">Specular</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id6">Specular Tint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id9">Specular Tint</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#roughness">Roughness</a></li>
@@ -89,7 +90,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#clearcoat-roughness">Clearcoat / Roughness</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#clearcoat">Clearcoat</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id7">Clearcoat Roughness</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id10">Clearcoat Roughness</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#transmission">Transmission</a><ul>
@@ -101,7 +102,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#normal">Normal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bump-distance">Bump / Distance</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#bump">Bump</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#id8">Bump Distance</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id11">Bump Distance</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#locations-xyz">Locations XYZ</a></li>
@@ -113,7 +114,14 @@
 <li class="toctree-l2"><a class="reference internal" href="#adjust-node-tree">Adjust Node Tree</a></li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="#fx-layer">Fx Layer</a></li>
+<li class="toctree-l1"><a class="reference internal" href="#fx-layer">Fx Layer</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#fx-layer-panel">Fx Layer Panel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fx-layer-same-tools">Fx Layer same tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#remove-fx-layer">Remove Fx Layer</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="texture_manager.html">Texture Manager Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="texture_paint.html">Texture Paint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="color_lab.html">Color Lab</a></li>
@@ -197,17 +205,17 @@ the object you are working on.</p>
 or you can add via TODO: Link to shader maker for the materials you want to import.</p>
 <p>Add Module will not work with Non Nexus type materials!</p>
 </div>
-</section>
 <hr class="docutils" />
+</section>
 <section id="show-hide-group">
-<h2>Show / Hide Group<a class="headerlink" href="#show-hide-group" title="Permalink to this heading"></a></h2>
+<span id="id2"></span><h2>Show / Hide Group<a class="headerlink" href="#show-hide-group" title="Permalink to this heading"></a></h2>
 <p>This button allows you to hide or show all the properties of a group (Nexus Module), it is useful if you are using the
 FX Module, it makes the workspace cleaner and allows you to focus only on what you are doing.</p>
 <a class="reference internal image-reference" href="_images/me_show_hide_group_01.png"><img alt="Material Editor Show Hide Group" class="align-center" src="_images/me_show_hide_group_01.png" style="width: 400px;" /></a>
-</section>
 <hr class="docutils" />
+</section>
 <section id="search-module">
-<h2>Search Module<a class="headerlink" href="#search-module" title="Permalink to this heading"></a></h2>
+<span id="id3"></span><h2>Search Module<a class="headerlink" href="#search-module" title="Permalink to this heading"></a></h2>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Useful only if there are 2 or more modules present in the material.</p>
@@ -215,29 +223,41 @@ FX Module, it makes the workspace cleaner and allows you to focus only on what y
 <p>This button opens a search menu, which allows you to replace / move the modules present in the material.
 As soon as you select a module, the module from where you are starting will be replaced with the one you have chosen and vice versa.</p>
 <a class="reference internal image-reference" href="_images/me_search_module.png"><img alt="Material Editor Search Module" class="align-center" src="_images/me_search_module.png" style="width: 400px;" /></a>
-</section>
 <hr class="docutils" />
+</section>
 <section id="module-name-group-name">
-<h2>Module Name (Group Name)<a class="headerlink" href="#module-name-group-name" title="Permalink to this heading"></a></h2>
+<span id="module-name"></span><h2>Module Name (Group Name)<a class="headerlink" href="#module-name-group-name" title="Permalink to this heading"></a></h2>
 <p>From here you can view and also change the name of the group (Nexus Module) you are using.</p>
 <a class="reference internal image-reference" href="_images/me_module_name.png"><img alt="Module Name" class="align-center" src="_images/me_module_name.png" style="width: 600px;" /></a>
-</section>
 <hr class="docutils" />
+</section>
 <section id="replace-module">
-<h2>Replace Module<a class="headerlink" href="#replace-module" title="Permalink to this heading"></a></h2>
+<span id="id4"></span><h2>Replace Module<a class="headerlink" href="#replace-module" title="Permalink to this heading"></a></h2>
 <p>The Replace Module button allows you to replace the module you are using by loading another module, in accordance with the preview
 of the <a class="reference internal" href="main_panel.html#material-browser"><span class="std std-ref">Material Browser</span></a> you have chosen.</p>
 <a class="reference internal image-reference" href="_images/me_replace_module.png"><img alt="Replace Module" class="align-center" src="_images/me_replace_module.png" style="width: 400px;" /></a>
-</section>
 <hr class="docutils" />
+</section>
+<section id="clip-texture">
+<span id="module-clip-texture"></span><h2>Clip Texture<a class="headerlink" href="#clip-texture" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/me_clip_texture_button.webp"><img alt="Clip Texture" class="align-center" src="_images/me_clip_texture_button.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button allows you to clip the texture, clip texture means that the texture will not be repeated, but will only be once,
+so, the object will have only one texture, without repetitions, no seamless.</p>
+<p><strong>Example of a texture clipped:</strong></p>
+<a class="reference internal image-reference" href="_images/me_clip_texture_example.webp"><img alt="Clip Texture Example" class="align-center" src="_images/me_clip_texture_example.webp" style="width: 800px;" /></a>
+<hr class="docutils" />
+</section>
 <section id="reset-values">
-<h2>Reset Values<a class="headerlink" href="#reset-values" title="Permalink to this heading"></a></h2>
+<span id="module-reset-values"></span><h2>Reset Values<a class="headerlink" href="#reset-values" title="Permalink to this heading"></a></h2>
 <p>The Reset Values Button allows you to reset the properties of the module you are using to the default values.</p>
 <a class="reference internal image-reference" href="_images/me_reset_values.png"><img alt="Reset Values" class="align-center" src="_images/me_reset_values.png" style="width: 600px;" /></a>
-</section>
 <hr class="docutils" />
+</section>
 <section id="info">
-<h2>Info<a class="headerlink" href="#info" title="Permalink to this heading"></a></h2>
+<span id="module-info"></span><h2>Info<a class="headerlink" href="#info" title="Permalink to this heading"></a></h2>
 <p>The Info button allows you to view the information of the module you are using, for example the name of the author etc.</p>
 <a class="reference internal image-reference" href="_images/me_info.png"><img alt="Info" class="align-center" src="_images/me_info.png" style="width: 600px;" /></a>
 <div class="line-block">
@@ -248,17 +268,17 @@ of the <a class="reference internal" href="main_panel.html#material-browser"><sp
 <p>Not all modules necessarily have the info button, it depends on who created them, sometimes it is not present, but usually
 this information is in the <a class="reference internal" href="main_panel.html#info-and-tag"><span class="std std-ref">Info &amp; Tag</span></a> menu</p>
 </div>
-</section>
 <hr class="docutils" />
+</section>
 <section id="tips">
-<h2>Tips<a class="headerlink" href="#tips" title="Permalink to this heading"></a></h2>
+<span id="module-tips"></span><h2>Tips<a class="headerlink" href="#tips" title="Permalink to this heading"></a></h2>
 <p>This button allows you to view or hide the hint next to each slider of the module you are using.
 so by pressing the hint buttons, you will see a window appear with a description of the parameter you are using.</p>
 <a class="reference internal image-reference" href="_images/me_tips.png"><img alt="Tips" class="align-center" src="_images/me_tips.png" style="width: 600px;" /></a>
 <hr class="docutils" />
 </section>
 <section id="texture-manager-button">
-<span id="id2"></span><h2>Texture Manager Button<a class="headerlink" href="#texture-manager-button" title="Permalink to this heading"></a></h2>
+<span id="id5"></span><h2>Texture Manager Button<a class="headerlink" href="#texture-manager-button" title="Permalink to this heading"></a></h2>
 <p>The texture manager buttons allows you to access the <a class="reference internal" href="texture_manager.html#texture-manager-panel"><span class="std std-ref">Texture Manager Panel</span></a> and manage the textures you are using in your material.
 note well, texture manager is explained here: <a class="reference internal" href="texture_manager.html#texture-manager-panel"><span class="std std-ref">Texture Manager Panel</span></a></p>
 <p>When you find these buttons next to the sliders, it means that these sliders are linked to a texture, and therefore
@@ -274,7 +294,7 @@ you can manage the texture through the texture manager.</p>
 <hr class="docutils" />
 </section>
 <section id="diffuse-color">
-<span id="id3"></span><h2>Diffuse Color<a class="headerlink" href="#diffuse-color" title="Permalink to this heading"></a></h2>
+<span id="id6"></span><h2>Diffuse Color<a class="headerlink" href="#diffuse-color" title="Permalink to this heading"></a></h2>
 <p>This color box allows you to choose a color to apply to the diffuse texture, in case there is no texture, this takes the place of the texture as a solid color.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -284,14 +304,14 @@ you can manage the texture through the texture manager.</p>
 <hr class="docutils" />
 </section>
 <section id="color-lab-button">
-<span id="id4"></span><h2>Color Lab Button<a class="headerlink" href="#color-lab-button" title="Permalink to this heading"></a></h2>
+<span id="id7"></span><h2>Color Lab Button<a class="headerlink" href="#color-lab-button" title="Permalink to this heading"></a></h2>
 <p>Color Lab Button gives you access to the popup panel for color management, you can find a detailed explanation
 here: <a class="reference internal" href="color_lab.html#color-lab"><span class="std std-ref">Color Lab</span></a></p>
 <a class="reference internal image-reference" href="_images/color_lab_button.jpg"><img alt="Color Lab Button" class="align-center" src="_images/color_lab_button.jpg" style="width: 800px;" /></a>
 <hr class="docutils" />
 </section>
 <section id="colorize-strength">
-<span id="id5"></span><h2>Colorize Strength<a class="headerlink" href="#colorize-strength" title="Permalink to this heading"></a></h2>
+<span id="id8"></span><h2>Colorize Strength<a class="headerlink" href="#colorize-strength" title="Permalink to this heading"></a></h2>
 <p>This slider allows you to adjust the strength of the color you have chosen in the <a class="reference internal" href="#diffuse-color"><span class="std std-ref">Diffuse Color</span></a> box.</p>
 <a class="reference internal image-reference" href="_images/me_colorize_strength.webp"><img alt="Colorize Strength" class="align-center" src="_images/me_colorize_strength.webp" style="width: 400px;" /></a>
 <div class="line-block">
@@ -416,8 +436,8 @@ In short, everything except total black 😊</p>
 <p>This slider adjusts the specular of the material, if a specular map is present, then this slider will only adjust
 some areas of the material, while if it is not present, then it will adjust the general specular of the material.</p>
 </section>
-<section id="id6">
-<h3>Specular Tint<a class="headerlink" href="#id6" title="Permalink to this heading"></a></h3>
+<section id="id9">
+<h3>Specular Tint<a class="headerlink" href="#id9" title="Permalink to this heading"></a></h3>
 <p>Mix between white and the base color in order to tint the specular highlights.</p>
 <p><strong>Example between Specular tint at 0.0 and 1.0, on the left 0.0, on the right 1.0</strong></p>
 <a class="reference internal image-reference" href="_images/specular_tint_example.webp"><img alt="Specular Tint Example" class="align-center" src="_images/specular_tint_example.webp" style="width: 800px;" /></a>
@@ -468,8 +488,8 @@ First image, <strong>Sheen 0.0</strong> <strong>Sheen Tint 0.0</strong>, Second 
 <p>The clearcoat is a layer of varnish that is applied to the material, it is a layer that is applied on top of the material,
 this is similar to the clearcoat of a car.</p>
 </section>
-<section id="id7">
-<h3>Clearcoat Roughness<a class="headerlink" href="#id7" title="Permalink to this heading"></a></h3>
+<section id="id10">
+<h3>Clearcoat Roughness<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h3>
 <p>In accordance with the clearcoat, this slider allows you to adjust the roughness of the clearcoat.</p>
 <p><strong>Example, First Image Clearcoat 0.0, Second Image Clearcoat 1.0 and Roughness 0.0, Third Image Clearcoat 1.0 and Roughness 0.25</strong></p>
 <a class="reference internal image-reference" href="_images/me_clearcoat_example.webp"><img alt="Clearcoat Example" class="align-center" src="_images/me_clearcoat_example.webp" style="width: 800px;" /></a>
@@ -537,8 +557,8 @@ you will notice that the Bump map is a bit pixelated, this is a limitation of Bl
 <p>The bump map (Only if present) allows you to add details to the material this is very useful for simulating details
 like reliefs, scratches, etc … A value equal to 0.0 means no bump map.</p>
 </section>
-<section id="id8">
-<h3>Bump Distance<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h3>
+<section id="id11">
+<h3>Bump Distance<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h3>
 <p>This slider allows you to adjust the distance of the bump map, the higher the value, the more the bump map will be visible,
 the lower the value, the less the bump map will be visible.</p>
 <p>Here an example, on the left the value of the Bump is 0.0 (Consequently the distance has no effect, on the right the value of the Bump is 0.20 and the distance is 1.0</p>
@@ -649,10 +669,10 @@ then this slider will also work to scale the displacement effect, but only in <s
 <p>The World Coordinate button, if active, allows you to use the coordinates of the world, otherwise it uses the coordinates of the object,
 if you move the object once the button is activated, you will see that the texture will move together with the object when you move the object.
 from its position.</p>
-</section>
 <hr class="docutils" />
+</section>
 <section id="add-fx-layer">
-<h2>Add Fx Layer<a class="headerlink" href="#add-fx-layer" title="Permalink to this heading"></a></h2>
+<span id="id12"></span><h2>Add Fx Layer<a class="headerlink" href="#add-fx-layer" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="_images/me_add_fx_layer.webp"><img alt="Add Fx Layer" class="align-center" src="_images/me_add_fx_layer.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -681,8 +701,61 @@ allows you to reconnect all Nexus nodes, and realigns them so that they have a c
 </section>
 </section>
 <section id="fx-layer">
-<span id="id9"></span><h1>Fx Layer<a class="headerlink" href="#fx-layer" title="Permalink to this heading"></a></h1>
-<p>TODO</p>
+<span id="id13"></span><h1>Fx Layer<a class="headerlink" href="#fx-layer" title="Permalink to this heading"></a></h1>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to add the Fx Layer you will have to use the <strong>Add Fx</strong> button described here: <a class="reference internal" href="#add-fx-layer"><span class="std std-ref">Add Fx Layer</span></a></p>
+</div>
+<p>The Fx Layer allows you to add <strong>Above</strong> the material (Module) you are using, an effect, such as
+a <strong>Fingerprints</strong> effect or a <strong>Dust</strong> effect or a <strong>Scratches</strong> effect etc …</p>
+<p>To add an Fx Layers, make sure you have applied the material with the <strong>Nexus</strong> option, as the materials applied
+with the <strong>Simple PBR</strong> mode do not support Fx Layers.</p>
+<p><strong>An example, wood material, without Fx Layer</strong></p>
+<a class="reference internal image-reference" href="_images/fx_plane_no_fx_example.webp"><img alt="Fx Plane No Fx Example" class="align-center" src="_images/fx_plane_no_fx_example.webp" style="width: 100%;" /></a>
+<p><strong>An example, wood material, with Fx Layer Colored</strong></p>
+<a class="reference internal image-reference" href="_images/fx_plane_fingerprint_white_example.webp"><img alt="Fx Plane Fingerprint White Example" class="align-center" src="_images/fx_plane_fingerprint_white_example.webp" style="width: 100%;" /></a>
+<p><strong>An example, wood material, with Fx Layer Normal and Roughness</strong></p>
+<a class="reference internal image-reference" href="_images/fx_plane_fingerprint_normal_example.webp"><img alt="Fx Plane Fingerprint Normal Example" class="align-center" src="_images/fx_plane_fingerprint_normal_example.webp" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>All Texture-based materials can become Fx Layers, the Fx Layer in fact uses the maps present in any material
+of the Extreme PBR library, so you have a wide choice. For example you can also apply an FX layer of another wood to the material,
+this will use the maps of the other wood in addition to the underlying material</p>
+</div>
+<hr class="docutils" />
+<section id="fx-layer-panel">
+<h2>Fx Layer Panel<a class="headerlink" href="#fx-layer-panel" title="Permalink to this heading"></a></h2>
+<p>Here is how an Fx Layer panel looks inside the material editor, in fact, once added, it will be
+underneath the corresponding material panel (Nexus Module), you can also add 2 Fx Layers if you want, but
+it is not recommended to exaggerate with the Fx Layers, as they could slow down the rendering, in addition at the moment, Blender
+supports a maximum of 24 Textures per material, so using the Fx Layers, you could exceed this limit, and make it become
+the material unusable in Blender.</p>
+<a class="reference internal image-reference" href="_images/fx_layer_panel_01.webp"><img alt="Fx Layer Panel 01" class="align-center" src="_images/fx_layer_panel_01.webp" style="width: 400px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="fx-layer-same-tools">
+<h2>Fx Layer same tools<a class="headerlink" href="#fx-layer-same-tools" title="Permalink to this heading"></a></h2>
+<p>Molti riferimenti sono gli stessi del pannello del materiale, quindi non li ripeterò, ma lascio il riferimento al pannello del materiale
+poichè hanno le stesse funzioni:</p>
+<ul class="simple">
+<li><p><strong>Show / Hide Group:</strong> <a class="reference internal" href="#show-hide-group"><span class="std std-ref">Show / Hide Group</span></a></p></li>
+<li><p><strong>Search Module/Fx:</strong> <a class="reference internal" href="#search-module"><span class="std std-ref">Search Module</span></a></p></li>
+<li><p><strong>Module/Fx Name:</strong> <a class="reference internal" href="#module-name"><span class="std std-ref">Module Name (Group Name)</span></a></p></li>
+<li><p><strong>Replace Module/Fx:</strong> <a class="reference internal" href="#replace-module"><span class="std std-ref">Replace Module</span></a></p></li>
+</ul>
+<section id="remove-fx-layer">
+<h3>Remove Fx Layer<a class="headerlink" href="#remove-fx-layer" title="Permalink to this heading"></a></h3>
+<p>In addition to removing the Fx Layer, just press the <strong>Remove Fx Layer</strong> button here:</p>
+<a class="reference internal image-reference" href="_images/fr_layer_remove_button.webp"><img alt="Fx Layer Remove Button" class="align-center" src="_images/fr_layer_remove_button.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Clip Texture:</strong> <a class="reference internal" href="#module-clip-texture"><span class="std std-ref">Clip Texture</span></a></p>
+</section>
+</section>
 </section>
 
 
