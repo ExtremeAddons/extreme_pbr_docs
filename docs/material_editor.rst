@@ -29,9 +29,9 @@ Material Nexus type
 --------------------
 
 
-If you are in Nexus mode, or have applied materials that support nexus modules, (Type **Car Paint** or **Water**)
-The panel looks like this:
+If you are in Nexus mode, or have applied materials that support nexus modules, The panel looks like this:
 
+**This is the classic Nexus panel of Texture-based materials**
 
 .. image:: _static/_images/material_editor/material_editor_before_add_module.jpg
     :align: center
@@ -911,8 +911,18 @@ the material unusable in Blender.
 Fx Layer same tools
 --------------------
 
-Molti riferimenti sono gli stessi del pannello del materiale, quindi non li ripeterò, ma lascio il riferimento al pannello del materiale
-poichè hanno le stesse funzioni:
+
+Most references are the same as the material panel, so I won't repeat them, but I leave the reference to the material panel
+because they have the same functions:
+
+**Left: Fx Layer, Right: Module**
+
+.. image:: _static/_images/material_editor/fx_layer_same_tools.webp
+    :align: center
+    :width: 600
+    :alt: Fx Layer Same Tools
+
+|
 
 
 - **Show / Hide Group:** :ref:`show_hide_group`
@@ -934,6 +944,321 @@ In addition to removing the Fx Layer, just press the **Remove Fx Layer** button 
 |
 
 **Clip Texture:** :ref:`module_clip_texture`
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _fx_dynamic_mask:
+
+Dynamic Mask
+-------------
+
+.. image:: _static/_images/material_editor/fx_dynamic_mask_section.webp
+    :align: center
+    :width: 600
+    :alt: Dynamic Mask Section
+
+|
+
+By this area you can manage the Fx Layer in 5 modes:
+
+
+**Choose Mask Selector**
+
+.. image:: _static/_images/material_editor/fx_choose_mask_selector.webp
+    :align: center
+    :width: 600
+    :alt: Fx Choose Mask Selector
+
+------------------------------------------------------------------------------------------------------------------------
+
+Dynamic Mask Paint Mode
+************************
+
+This is the default setting once you apply an Fx Layer, in this mode you can paint
+where you want the Fx Layer to be visible on the material.
+
+Paint Tools
+############
+
+.. image:: _static/_images/material_editor/fx_paint_tools_button.webp
+    :align: center
+    :width: 400
+    :alt: Fx Paint Tools
+
+|
+
+Paint Tools Button gives you access to the **Paint Tools** popup panel explained in this chapter: :ref:`paint_tools_panel`
+
+------------------------------------------------------------------------------------------------------------------------
+
+Paint Un-Paint
+################
+
+.. image:: _static/_images/material_editor/fx_paint_unpaint.webp
+    :align: center
+    :width: 400
+    :alt: Fx Paint Un-Paint
+
+|
+
+These 2 buttons are used to paint or delete the mask, the first paints, the second deletes.
+
+.. note::
+        Once you press one of these 2 buttons, the mouse cursor will become a brush, and you can paint,
+        so you will have entered **Paint Mode**. To exit **Paint Mode** just press again the
+        button that was pressed to enter **Paint Mode**, in fact it will become a **Stop**
+
+        .. image:: _static/_images/material_editor/fx_stop_paint_button.webp
+            :align: center
+            :width: 400
+            :alt: Fx Stop Paint Button
+
+
+
+**Example with a corner of FX painted:**
+
+.. image:: _static/_images/material_editor/fx_corner_painted_example.webp
+    :align: center
+    :width: 800
+    :alt: Fx Corner Painted Example
+
+------------------------------------------------------------------------------------------------------------------------
+
+Fill Un-Fill
+##############
+
+.. image:: _static/_images/material_editor/fx_fill_unfill.webp
+    :align: center
+    :width: 400
+    :alt: Fx Fill Un-Fill
+
+|
+
+These 2 buttons are used to fill or delete the mask, so if you press Fill, the whole object where the material is applied
+of the Fx Layer will be filled with a mask, while if you press Un-Fill, the whole mask will be deleted and you will see only the material
+underlying.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Dynamic Mask Noise
+*******************
+
+.. image:: _static/_images/fx_layer/fx_dynamic_mask_noise_panel.webp
+    :align: center
+    :width: 400
+    :alt: Fx Dynamic Mask Noise
+
+
+In this mode, the mask will be controlled by a Noise node. This setting is very useful for making the grass or terrain
+less uniform, as the Noise node generates a noise that can be used to mask the repetitions of the texture, so as to make
+the material more natural.
+
+**Here is an example of Dynamic Mask Noise:**
+
+.. image:: _static/_images/fx_layer/fx_dynmask_noise_grass_example_01.webp
+    :align: center
+    :width: 800
+    :alt: Fx Dynmask Noise Grass Example 01
+
+The Base material is Grass, while the Fx material is another type of Grass. So this Noise effect decides where
+show the Fx layer and where not, based on the mask generated by the Noise.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Detailed Deadlift
+##################
+
+Detailed Deadlift manage how much the noise effect should be sharp or not, the higher the value, the sharper the noise effect will be,
+consequently the Fx Layer will be sharper, while the lower the value, the less sharp the noise effect will be, consequently
+the Fx Layer will be more blurred.
+
+**Here is the example of a Deadlift set to 0.883, so quite strengh:**
+
+.. image:: _static/_images/fx_layer/fx_detailed_deadlift_example.webp
+    :align: center
+    :width: 800
+    :alt: Fx Detailed Deadlift Example
+
+------------------------------------------------------------------------------------------------------------------------
+
+Invert Mask
+############
+
+
+By pressing the Invert Mask button, you will invert the colors of the noise mask, so where there was black before, now there will be white and vice versa.
+consequently the noise effect will be inverted.
+
+**Here is the example of a Invert Mask:**
+
+.. image:: _static/_images/fx_layer/fx_invert_noide_mask_example.webp
+    :align: center
+    :width: 800
+    :alt: Fx Invert Mask Example
+
+------------------------------------------------------------------------------------------------------------------------
+
+Roughness
+##########
+
+.. image:: _static/_images/fx_layer/fx_dynamic_mask_noise_roughness.webp
+    :align: center
+    :width: 400
+    :alt: Fx Dynamic Mask Noise Roughness
+
+|
+
+Roughness Sliders is used to adjust the roughness of the noise, the higher the value, the rougher the noise will be, so it will be
+more rich in details the detachment between the base material and the Fx material.
+
+.. note::
+        This value if set high, increases the rendering time.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Detail
+########
+
+.. image:: _static/_images/fx_layer/fx_dynamic_mask_noise_detail.webp
+    :align: center
+    :width: 400
+    :alt: Fx Dynamic Mask Noise Detail
+
+|
+
+Detail Sliders is used to adjust the detail of the noise, the higher the value, the more detailed the noise will be, so it will be
+more rich in details the detachment between the base material and the Fx material.
+
+.. note::
+        This value if set high, increases the rendering time.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Distortion
+###########
+
+.. image:: _static/_images/fx_layer/fx_dynamic_mask_noise_distortion.webp
+    :align: center
+    :width: 400
+    :alt: Fx Dynamic Mask Noise Distortion
+
+|
+
+Distortion Sliders is used to adjust the distortion of the noise.
+
+**Here an example of Distortion set to 4.0:**
+
+.. image:: _static/_images/fx_layer/fx_noise_distortion_example_01.webp
+    :align: center
+    :width: 800
+    :alt: Fx Noise Distortion Example 01
+
+------------------------------------------------------------------------------------------------------------------------
+
+Scale
+#######
+
+.. image:: _static/_images/fx_layer/fx_dynamic_mask_noise_scale.webp
+    :align: center
+    :width: 400
+    :alt: Fx Dynamic Mask Noise Scale
+
+|
+
+Scale Sliders is used to adjust the scale of the noise.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Dynamic Mask Worn Edges
+************************
+
+.. image:: _static/_images/fx_layer/fx_dynamic_mask_worn_edges_panel.webp
+    :align: center
+    :width: 400
+    :alt: Fx Dynamic Mask Worn Edges
+
+|
+
+.. note::
+        This tool is specially designed to work even in Eevee that does not yet have support for the detector
+        of edges, so this tool is very useful for Eevee, and it also works in Cycles.
+
+
+**Here is an example of Dynamic Mask Worn Edges:**
+
+.. image:: _static/_images/fx_layer/fx_worn_edge_example.webp
+    :align: center
+    :width: 800
+    :alt: Fx Worn Edge Example
+
+|
+
+
+The stressed edges are Pre-Bake, and work as a mask, so this mask will be cooked on the sharpest corners of the object.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Make Worn Edges
+################
+
+.. image:: _static/_images/fx_layer/fx_make_worn_edges_button.webp
+    :align: center
+    :width: 400
+    :alt: Fx Make Worn Edges Button
+
+|
+
+By pressing this button, the mask will be baked on the sharpest corners of the object.
+This type of Bake is with denoising, so it is much more homogeneous and without noise.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Make Noise Worn Edges
+######################
+
+.. image:: _static/_images/fx_layer/fx_make_noise_worn_edges_button.webp
+    :align: center
+    :width: 400
+    :alt: Fx Make Noise Worn Edges Button
+
+|
+
+By pressing this button, the mask will be baked on the sharpest corners of the object, but with a noise effect.
+This type of Bake is with noise, so it is much more noisy.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

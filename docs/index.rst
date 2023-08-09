@@ -45,6 +45,7 @@ Welcome to Extreme PBR's documentation!
    material_editor
    texture_manager
    texture_paint
+   paint_tools
    color_lab
    displacement
    save_editor

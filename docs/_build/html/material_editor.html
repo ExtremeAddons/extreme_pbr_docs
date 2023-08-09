@@ -120,10 +120,34 @@
 <li class="toctree-l3"><a class="reference internal" href="#remove-fx-layer">Remove Fx Layer</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#dynamic-mask">Dynamic Mask</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#dynamic-mask-paint-mode">Dynamic Mask Paint Mode</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#paint-tools">Paint Tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#paint-un-paint">Paint Un-Paint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fill-un-fill">Fill Un-Fill</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#dynamic-mask-noise">Dynamic Mask Noise</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#detailed-deadlift">Detailed Deadlift</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#invert-mask">Invert Mask</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#id14">Roughness</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#detail">Detail</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#distortion">Distortion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scale">Scale</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#dynamic-mask-worn-edges">Dynamic Mask Worn Edges</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#make-worn-edges">Make Worn Edges</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#make-noise-worn-edges">Make Noise Worn Edges</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="texture_manager.html">Texture Manager Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="texture_paint.html">Texture Paint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paint_tools.html">Paint Tools Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="color_lab.html">Color Lab</a></li>
 <li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
@@ -186,8 +210,8 @@
 <hr class="docutils" />
 <section id="material-nexus-type">
 <h2>Material Nexus type<a class="headerlink" href="#material-nexus-type" title="Permalink to this heading"></a></h2>
-<p>If you are in Nexus mode, or have applied materials that support nexus modules, (Type <strong>Car Paint</strong> or <strong>Water</strong>)
-The panel looks like this:</p>
+<p>If you are in Nexus mode, or have applied materials that support nexus modules, The panel looks like this:</p>
+<p><strong>This is the classic Nexus panel of Texture-based materials</strong></p>
 <a class="reference internal image-reference" href="_images/material_editor_before_add_module.jpg"><img alt="Material Editor Before Add Module" class="align-center" src="_images/material_editor_before_add_module.jpg" style="width: 400px;" /></a>
 <hr class="docutils" />
 </section>
@@ -738,8 +762,13 @@ the material unusable in Blender.</p>
 <hr class="docutils" />
 <section id="fx-layer-same-tools">
 <h2>Fx Layer same tools<a class="headerlink" href="#fx-layer-same-tools" title="Permalink to this heading"></a></h2>
-<p>Molti riferimenti sono gli stessi del pannello del materiale, quindi non li ripeterò, ma lascio il riferimento al pannello del materiale
-poichè hanno le stesse funzioni:</p>
+<p>Most references are the same as the material panel, so I won’t repeat them, but I leave the reference to the material panel
+because they have the same functions:</p>
+<p><strong>Left: Fx Layer, Right: Module</strong></p>
+<a class="reference internal image-reference" href="_images/fx_layer_same_tools.webp"><img alt="Fx Layer Same Tools" class="align-center" src="_images/fx_layer_same_tools.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <ul class="simple">
 <li><p><strong>Show / Hide Group:</strong> <a class="reference internal" href="#show-hide-group"><span class="std std-ref">Show / Hide Group</span></a></p></li>
 <li><p><strong>Search Module/Fx:</strong> <a class="reference internal" href="#search-module"><span class="std std-ref">Search Module</span></a></p></li>
@@ -754,6 +783,176 @@ poichè hanno le stesse funzioni:</p>
 <div class="line"><br /></div>
 </div>
 <p><strong>Clip Texture:</strong> <a class="reference internal" href="#module-clip-texture"><span class="std std-ref">Clip Texture</span></a></p>
+<hr class="docutils" />
+</section>
+</section>
+<section id="dynamic-mask">
+<span id="fx-dynamic-mask"></span><h2>Dynamic Mask<a class="headerlink" href="#dynamic-mask" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/fx_dynamic_mask_section.webp"><img alt="Dynamic Mask Section" class="align-center" src="_images/fx_dynamic_mask_section.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By this area you can manage the Fx Layer in 5 modes:</p>
+<p><strong>Choose Mask Selector</strong></p>
+<a class="reference internal image-reference" href="_images/fx_choose_mask_selector.webp"><img alt="Fx Choose Mask Selector" class="align-center" src="_images/fx_choose_mask_selector.webp" style="width: 600px;" /></a>
+<hr class="docutils" />
+<section id="dynamic-mask-paint-mode">
+<h3>Dynamic Mask Paint Mode<a class="headerlink" href="#dynamic-mask-paint-mode" title="Permalink to this heading"></a></h3>
+<p>This is the default setting once you apply an Fx Layer, in this mode you can paint
+where you want the Fx Layer to be visible on the material.</p>
+<section id="paint-tools">
+<h4>Paint Tools<a class="headerlink" href="#paint-tools" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_paint_tools_button.webp"><img alt="Fx Paint Tools" class="align-center" src="_images/fx_paint_tools_button.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Paint Tools Button gives you access to the <strong>Paint Tools</strong> popup panel explained in this chapter: <a class="reference internal" href="paint_tools.html#paint-tools-panel"><span class="std std-ref">Paint Tools Panel</span></a></p>
+</section>
+<hr class="docutils" />
+<section id="paint-un-paint">
+<h4>Paint Un-Paint<a class="headerlink" href="#paint-un-paint" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_paint_unpaint.webp"><img alt="Fx Paint Un-Paint" class="align-center" src="_images/fx_paint_unpaint.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These 2 buttons are used to paint or delete the mask, the first paints, the second deletes.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Once you press one of these 2 buttons, the mouse cursor will become a brush, and you can paint,
+so you will have entered <strong>Paint Mode</strong>. To exit <strong>Paint Mode</strong> just press again the
+button that was pressed to enter <strong>Paint Mode</strong>, in fact it will become a <strong>Stop</strong></p>
+<a class="reference internal image-reference" href="_images/fx_stop_paint_button.webp"><img alt="Fx Stop Paint Button" class="align-center" src="_images/fx_stop_paint_button.webp" style="width: 400px;" /></a>
+</div>
+<p><strong>Example with a corner of FX painted:</strong></p>
+<a class="reference internal image-reference" href="_images/fx_corner_painted_example.webp"><img alt="Fx Corner Painted Example" class="align-center" src="_images/fx_corner_painted_example.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="fill-un-fill">
+<h4>Fill Un-Fill<a class="headerlink" href="#fill-un-fill" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_fill_unfill.webp"><img alt="Fx Fill Un-Fill" class="align-center" src="_images/fx_fill_unfill.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These 2 buttons are used to fill or delete the mask, so if you press Fill, the whole object where the material is applied
+of the Fx Layer will be filled with a mask, while if you press Un-Fill, the whole mask will be deleted and you will see only the material
+underlying.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="dynamic-mask-noise">
+<h3>Dynamic Mask Noise<a class="headerlink" href="#dynamic-mask-noise" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/fx_dynamic_mask_noise_panel.webp"><img alt="Fx Dynamic Mask Noise" class="align-center" src="_images/fx_dynamic_mask_noise_panel.webp" style="width: 400px;" /></a>
+<p>In this mode, the mask will be controlled by a Noise node. This setting is very useful for making the grass or terrain
+less uniform, as the Noise node generates a noise that can be used to mask the repetitions of the texture, so as to make
+the material more natural.</p>
+<p><strong>Here is an example of Dynamic Mask Noise:</strong></p>
+<a class="reference internal image-reference" href="_images/fx_dynmask_noise_grass_example_01.webp"><img alt="Fx Dynmask Noise Grass Example 01" class="align-center" src="_images/fx_dynmask_noise_grass_example_01.webp" style="width: 800px;" /></a>
+<p>The Base material is Grass, while the Fx material is another type of Grass. So this Noise effect decides where
+show the Fx layer and where not, based on the mask generated by the Noise.</p>
+<hr class="docutils" />
+<section id="detailed-deadlift">
+<h4>Detailed Deadlift<a class="headerlink" href="#detailed-deadlift" title="Permalink to this heading"></a></h4>
+<p>Detailed Deadlift manage how much the noise effect should be sharp or not, the higher the value, the sharper the noise effect will be,
+consequently the Fx Layer will be sharper, while the lower the value, the less sharp the noise effect will be, consequently
+the Fx Layer will be more blurred.</p>
+<p><strong>Here is the example of a Deadlift set to 0.883, so quite strengh:</strong></p>
+<a class="reference internal image-reference" href="_images/fx_detailed_deadlift_example.webp"><img alt="Fx Detailed Deadlift Example" class="align-center" src="_images/fx_detailed_deadlift_example.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="invert-mask">
+<h4>Invert Mask<a class="headerlink" href="#invert-mask" title="Permalink to this heading"></a></h4>
+<p>By pressing the Invert Mask button, you will invert the colors of the noise mask, so where there was black before, now there will be white and vice versa.
+consequently the noise effect will be inverted.</p>
+<p><strong>Here is the example of a Invert Mask:</strong></p>
+<a class="reference internal image-reference" href="_images/fx_invert_noide_mask_example.webp"><img alt="Fx Invert Mask Example" class="align-center" src="_images/fx_invert_noide_mask_example.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="id14">
+<h4>Roughness<a class="headerlink" href="#id14" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_dynamic_mask_noise_roughness.webp"><img alt="Fx Dynamic Mask Noise Roughness" class="align-center" src="_images/fx_dynamic_mask_noise_roughness.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Roughness Sliders is used to adjust the roughness of the noise, the higher the value, the rougher the noise will be, so it will be
+more rich in details the detachment between the base material and the Fx material.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This value if set high, increases the rendering time.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="detail">
+<h4>Detail<a class="headerlink" href="#detail" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_dynamic_mask_noise_detail.webp"><img alt="Fx Dynamic Mask Noise Detail" class="align-center" src="_images/fx_dynamic_mask_noise_detail.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Detail Sliders is used to adjust the detail of the noise, the higher the value, the more detailed the noise will be, so it will be
+more rich in details the detachment between the base material and the Fx material.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This value if set high, increases the rendering time.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="distortion">
+<h4>Distortion<a class="headerlink" href="#distortion" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_dynamic_mask_noise_distortion.webp"><img alt="Fx Dynamic Mask Noise Distortion" class="align-center" src="_images/fx_dynamic_mask_noise_distortion.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Distortion Sliders is used to adjust the distortion of the noise.</p>
+<p><strong>Here an example of Distortion set to 4.0:</strong></p>
+<a class="reference internal image-reference" href="_images/fx_noise_distortion_example_01.webp"><img alt="Fx Noise Distortion Example 01" class="align-center" src="_images/fx_noise_distortion_example_01.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="scale">
+<h4>Scale<a class="headerlink" href="#scale" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_dynamic_mask_noise_scale.webp"><img alt="Fx Dynamic Mask Noise Scale" class="align-center" src="_images/fx_dynamic_mask_noise_scale.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Scale Sliders is used to adjust the scale of the noise.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="dynamic-mask-worn-edges">
+<h3>Dynamic Mask Worn Edges<a class="headerlink" href="#dynamic-mask-worn-edges" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/fx_dynamic_mask_worn_edges_panel.webp"><img alt="Fx Dynamic Mask Worn Edges" class="align-center" src="_images/fx_dynamic_mask_worn_edges_panel.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This tool is specially designed to work even in Eevee that does not yet have support for the detector
+of edges, so this tool is very useful for Eevee, and it also works in Cycles.</p>
+</div>
+<p><strong>Here is an example of Dynamic Mask Worn Edges:</strong></p>
+<a class="reference internal image-reference" href="_images/fx_worn_edge_example.webp"><img alt="Fx Worn Edge Example" class="align-center" src="_images/fx_worn_edge_example.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The stressed edges are Pre-Bake, and work as a mask, so this mask will be cooked on the sharpest corners of the object.</p>
+<hr class="docutils" />
+<section id="make-worn-edges">
+<h4>Make Worn Edges<a class="headerlink" href="#make-worn-edges" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_make_worn_edges_button.webp"><img alt="Fx Make Worn Edges Button" class="align-center" src="_images/fx_make_worn_edges_button.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By pressing this button, the mask will be baked on the sharpest corners of the object.
+This type of Bake is with denoising, so it is much more homogeneous and without noise.</p>
+</section>
+<hr class="docutils" />
+<section id="make-noise-worn-edges">
+<h4>Make Noise Worn Edges<a class="headerlink" href="#make-noise-worn-edges" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_make_noise_worn_edges_button.webp"><img alt="Fx Make Noise Worn Edges Button" class="align-center" src="_images/fx_make_noise_worn_edges_button.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By pressing this button, the mask will be baked on the sharpest corners of the object, but with a noise effect.
+This type of Bake is with noise, so it is much more noisy.</p>
+</section>
 </section>
 </section>
 </section>
