@@ -98,6 +98,13 @@
 <li class="toctree-l3"><a class="reference internal" href="#transmission-roughness">Transmission Roughness</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#normal">Normal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#bump-distance">Bump / Distance</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#bump">Bump</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id8">Bump Distance</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#locations-xyz">Locations XYZ</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="texture_manager.html">Texture Manager Panel</a></li>
@@ -492,6 +499,70 @@ For example the IOR of the glass is 1.45, the IOR of the water is 1.33, the IOR 
 more or less transparent, the higher the value, the less transparent the material will be, the lower the value, the more transparent
 the material will be.</p>
 </section>
+</section>
+<hr class="docutils" />
+<section id="normal">
+<h2>Normal<a class="headerlink" href="#normal" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/me_normal.webp"><img alt="Normal" class="align-center" src="_images/me_normal.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The normal map (Only if present) allows you to add details to the material this is very useful for simulating details
+like reliefs, scratches, etc … A value equal to 0.0 means no normal map.</p>
+<p>Here is an example, on the left the value is 0.0, on the right the value is 1.0</p>
+<a class="reference internal image-reference" href="_images/me_normal_example.webp"><img alt="Normal Example" class="align-center" src="_images/me_normal_example.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="bump-distance">
+<h2>Bump / Distance<a class="headerlink" href="#bump-distance" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/me_bump_and_distance.webp"><img alt="Bump and Distance" class="align-center" src="_images/me_bump_and_distance.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In Blender at the moment the Bump map has a small resolution limitation, so if you zoom in very close to the object
+you will notice that the Bump map is a bit pixelated, this is a limitation of Blender at the moment.</p>
+</div>
+<p>These 2 properties work in symbiosis:</p>
+<section id="bump">
+<h3>Bump<a class="headerlink" href="#bump" title="Permalink to this heading"></a></h3>
+<p>The bump map (Only if present) allows you to add details to the material this is very useful for simulating details
+like reliefs, scratches, etc … A value equal to 0.0 means no bump map.</p>
+</section>
+<section id="id8">
+<h3>Bump Distance<a class="headerlink" href="#id8" title="Permalink to this heading"></a></h3>
+<p>This slider allows you to adjust the distance of the bump map, the higher the value, the more the bump map will be visible,
+the lower the value, the less the bump map will be visible.</p>
+<p>Here an example, on the left the value of the Bump is 0.0 (Consequently the distance has no effect, on the right the value of the Bump is 0.20 and the distance is 1.0</p>
+<a class="reference internal image-reference" href="_images/me_bump_distance_example.webp"><img alt="Bump Distance Example" class="align-center" src="_images/me_bump_distance_example.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The Bump Map, unlike the normal map, is less detailed, as the map is in Black and White, but it creates an effect
+of greater relief than the normal map.</p>
+</div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="locations-xyz">
+<h2>Locations XYZ<a class="headerlink" href="#locations-xyz" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/me_locations_xyz.webp"><img alt="Locations XYZ" class="align-center" src="_images/me_locations_xyz.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These 3 sliders <strong>LX</strong> <strong>LY</strong> <strong>LZ</strong> allow you to adjust the location of the texture, this is useful if you want to move
+the position of the texture on the object.</p>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>If you are using the displacement Modifier, these sliders will not move the Displacement effect, to move the
+displacement effect together with the texture, you have to use the <strong>Mapping Editor</strong> described here: <a class="reference internal" href="mapping_editor.html#mapping-editor-panel"><span class="std std-ref">Mapping Editor</span></a>
+and here: <a class="reference internal" href="main_panel.html#mapping-editor-button"><span class="std std-ref">Mapping Editor Button</span></a>
+because these sliders will not move the UV mapping. If you are using the Displacement <strong>Microdisplacement</strong>
+then these sliders will also work to move the displacement effect, but only in <strong>Cycles Render</strong> mode</p>
+</div>
 </section>
 </section>
 

@@ -404,6 +404,8 @@ The settings in the panel in Microdisplacement mode are the same as those in Mod
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _how_to_adjust_microdisplacement:
+
 How to adjust the Microdisplacement
 **************************************
 
@@ -485,7 +487,9 @@ Make sure you have selected the material that has the active displacement from t
 Multiple Microdisplacement
 -----------------------------------
 
-Il multiple
+The multiple microdisplacement is managed by the Material Editor panel, you will not have to use any buttons to separate the vertex groups,
+but remember that the microdisplocement only works in Cycles mode, so make sure you are in Cycles mode and Render Preview.
+The displacement effects are managed by the Material Editor panel :ref:`how_to_adjust_microdisplacement`
 
 
 

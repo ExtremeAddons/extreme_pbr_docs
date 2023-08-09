@@ -565,70 +565,95 @@ This slider allows you to adjust the roughness of the transmission. The transmis
 more or less transparent, the higher the value, the less transparent the material will be, the lower the value, the more transparent
 the material will be.
 
+------------------------------------------------------------------------------------------------------------------------
 
+Normal
+-------
 
+.. image:: _static/_images/material_editor/me_normal.webp
+    :align: center
+    :width: 400
+    :alt: Normal
 
+|
 
+The normal map (Only if present) allows you to add details to the material this is very useful for simulating details
+like reliefs, scratches, etc ... A value equal to 0.0 means no normal map.
 
+Here is an example, on the left the value is 0.0, on the right the value is 1.0
 
+.. image:: _static/_images/material_editor/me_normal_example.webp
+    :align: center
+    :width: 800
+    :alt: Normal Example
 
+------------------------------------------------------------------------------------------------------------------------
 
+Bump / Distance
+----------------
 
+.. image:: _static/_images/material_editor/me_bump_and_distance.webp
+    :align: center
+    :width: 400
+    :alt: Bump and Distance
 
+|
 
+.. note::
+        In Blender at the moment the Bump map has a small resolution limitation, so if you zoom in very close to the object
+        you will notice that the Bump map is a bit pixelated, this is a limitation of Blender at the moment.
 
+These 2 properties work in symbiosis:
 
 
+Bump
+*****
 
+The bump map (Only if present) allows you to add details to the material this is very useful for simulating details
+like reliefs, scratches, etc ... A value equal to 0.0 means no bump map.
 
+Bump Distance
+**************
 
+This slider allows you to adjust the distance of the bump map, the higher the value, the more the bump map will be visible,
+the lower the value, the less the bump map will be visible.
 
 
+Here an example, on the left the value of the Bump is 0.0 (Consequently the distance has no effect, on the right the value of the Bump is 0.20 and the distance is 1.0
 
+.. image:: _static/_images/material_editor/me_bump_distance_example.webp
+    :align: center
+    :width: 800
+    :alt: Bump Distance Example
 
+|
 
+.. note::
+        The Bump Map, unlike the normal map, is less detailed, as the map is in Black and White, but it creates an effect
+        of greater relief than the normal map.
 
+------------------------------------------------------------------------------------------------------------------------
 
+Locations XYZ
+---------------
 
+.. image:: _static/_images/material_editor/me_locations_xyz.webp
+    :align: center
+    :width: 400
+    :alt: Locations XYZ
 
+|
 
+These 3 sliders **LX** **LY** **LZ** allow you to adjust the location of the texture, this is useful if you want to move
+the position of the texture on the object.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.. attention::
+        If you are using the displacement Modifier, these sliders will not move the Displacement effect, to move the
+        displacement effect together with the texture, you have to use the **Mapping Editor** described here: :ref:`mapping_editor_panel`
+        and here: :ref:`mapping_editor_button`
+        because these sliders will not move the UV mapping. If you are using the Displacement **Microdisplacement**
+        then these sliders will also work to move the displacement effect, but only in **Cycles Render** mode
 
 
 
