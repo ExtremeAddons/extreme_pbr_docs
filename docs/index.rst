@@ -43,6 +43,9 @@ Welcome to Extreme PBR's documentation!
    bake_panel
    mapping_editor
    material_editor
+   texture_manager
+   texture_paint
+   color_lab
    displacement
    save_editor
    preferences

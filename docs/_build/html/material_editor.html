@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Material Editor &mdash; Extreme PBR 4.1.100 documentation</title>
+  <title>Material Editor (Nexus) &mdash; Extreme PBR 4.1.100 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
@@ -21,7 +21,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Displacement" href="displacement.html" />
+    <link rel="next" title="Texture Manager Panel" href="texture_manager.html" />
     <link rel="prev" title="Mapping Editor" href="mapping_editor.html" /> 
 </head>
 
@@ -53,8 +53,9 @@
 <li class="toctree-l1"><a class="reference internal" href="main_panel.html">Main Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapping_editor.html">Mapping Editor</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Material Editor</a><ul>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Material Editor (Nexus)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#material-nexus-type">Material Nexus type</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#add-module">Add Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#show-hide-group">Show / Hide Group</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#search-module">Search Module</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#module-name-group-name">Module Name (Group Name)</a></li>
@@ -62,17 +63,31 @@
 <li class="toctree-l2"><a class="reference internal" href="#reset-values">Reset Values</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#info">Info</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#tips">Tips</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#texture-paint">Texture Paint</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#add-module">Add Module</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#texture-manager-button">Texture Manager Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#diffuse-color">Diffuse Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#color-lab-button">Color Lab Button</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#colorize-strength">Colorize Strength</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#colorize-sample">Colorize Sample</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#emission">Emission</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#transparent">Transparent</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#transparent-mode">Transparent Mode</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#subsurface-radius">Subsurface/Radius</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#ambient-occlusion">Ambient Occlusion</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#metallic">Metallic</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="texture_manager.html">Texture Manager Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="texture_paint.html">Texture Paint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="color_lab.html">Color Lab</a></li>
 <li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="video_tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_tutorials.html">Video Tutorials</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">FAQs &amp; Troubleshooting: 💡</span></p>
 <ul>
@@ -100,7 +115,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Material Editor</li>
+      <li class="breadcrumb-item active">Material Editor (Nexus)</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/material_editor.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -110,8 +125,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="material-editor">
-<span id="id1"></span><h1>Material Editor<a class="headerlink" href="#material-editor" title="Permalink to this heading"></a></h1>
+  <section id="material-editor-nexus">
+<span id="material-editor"></span><h1>Material Editor (Nexus)<a class="headerlink" href="#material-editor-nexus" title="Permalink to this heading"></a></h1>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p>Here you can find the section dedicated to video tutorials, it may be useful to you: <a class="reference internal" href="video_tutorials.html#vt-material-editor"><span class="std std-ref">Material Editor</span></a></p>
@@ -130,6 +145,22 @@
 <p>If you are in Nexus mode, or have applied materials that support nexus modules, (Type <strong>Car Paint</strong> or <strong>Water</strong>)
 The panel looks like this:</p>
 <a class="reference internal image-reference" href="_images/material_editor_before_add_module.jpg"><img alt="Material Editor Before Add Module" class="align-center" src="_images/material_editor_before_add_module.jpg" style="width: 400px;" /></a>
+<hr class="docutils" />
+</section>
+<section id="add-module">
+<span id="id1"></span><h2>Add Module<a class="headerlink" href="#add-module" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/add_module_example_01.png"><img alt="Add Module Example 01" class="align-center" src="_images/add_module_example_01.png" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>With this button you can add up to a maximum of 4 modules, which will allow you to paint <a class="reference internal" href="texture_paint.html#texture-paint"><span class="std std-ref">Texture Paint</span></a> them on
+the object you are working on.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to add a module, rely on the <a class="reference internal" href="main_panel.html#material-browser"><span class="std std-ref">Material Browser</span></a> in fact you will add exactly what you have in the preview,
+or you can add via TODO: Link to shader maker for the materials you want to import.</p>
+<p>Add Module will not work with Non Nexus type materials!</p>
+</div>
 </section>
 <hr class="docutils" />
 <section id="show-hide-group">
@@ -190,28 +221,144 @@ so by pressing the hint buttons, you will see a window appear with a description
 <a class="reference internal image-reference" href="_images/me_tips.png"><img alt="Tips" class="align-center" src="_images/me_tips.png" style="width: 600px;" /></a>
 <hr class="docutils" />
 </section>
-<section id="texture-paint">
-<span id="id2"></span><h2>Texture Paint<a class="headerlink" href="#texture-paint" title="Permalink to this heading"></a></h2>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>In order to access the painting you will have to be in Nexus mode TODO: put link to nexus mode preferences
-and you will have to have added a material with the <a class="reference internal" href="#add-module"><span class="std std-ref">Add Module</span></a> button</p>
-</div>
-<hr class="docutils" />
-</section>
-<section id="add-module">
-<span id="id3"></span><h2>Add Module<a class="headerlink" href="#add-module" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/add_module_example_01.png"><img alt="Add Module Example 01" class="align-center" src="_images/add_module_example_01.png" style="width: 800px;" /></a>
+<section id="texture-manager-button">
+<span id="id2"></span><h2>Texture Manager Button<a class="headerlink" href="#texture-manager-button" title="Permalink to this heading"></a></h2>
+<p>The texture manager buttons allows you to access the <a class="reference internal" href="texture_manager.html#texture-manager-panel"><span class="std std-ref">Texture Manager Panel</span></a> and manage the textures you are using in your material.
+note well, texture manager is explained here: <a class="reference internal" href="texture_manager.html#texture-manager-panel"><span class="std std-ref">Texture Manager Panel</span></a></p>
+<p>When you find these buttons next to the sliders, it means that these sliders are linked to a texture, and therefore
+you can manage the texture through the texture manager.</p>
+<a class="reference internal image-reference" href="_images/me_texture_manager_button.png"><img alt="Texture Manager Button" class="align-center" src="_images/me_texture_manager_button.png" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>With this button you can add up to a maximum of 4 modules, which will allow you to paint <a class="reference internal" href="#texture-paint"><span class="std std-ref">Texture Paint</span></a> them on
-the object you are working on.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>In order to add a module, rely on the <a class="reference internal" href="main_panel.html#material-browser"><span class="std std-ref">Material Browser</span></a> in fact you will add exactly what you have in the preview,
-or you can add via TODO: Link to shader maker for the materials you want to import.</p>
-<p>Add Module will not work with Non Nexus type materials!</p>
+<p>If no texture is linked to that property, the button will not have the texture icon, but an <strong>import</strong> icon</p>
+</div>
+<hr class="docutils" />
+</section>
+<section id="diffuse-color">
+<span id="id3"></span><h2>Diffuse Color<a class="headerlink" href="#diffuse-color" title="Permalink to this heading"></a></h2>
+<p>This color box allows you to choose a color to apply to the diffuse texture, in case there is no texture, this takes the place of the texture as a solid color.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If the texture is present, this color works in accordance with the <a class="reference internal" href="#colorize-strength"><span class="std std-ref">Colorize Strength</span></a></p>
+</div>
+<a class="reference internal image-reference" href="_images/me_diffuse_color.png"><img alt="Diffuse Color" class="align-center" src="_images/me_diffuse_color.png" style="width: 800px;" /></a>
+<hr class="docutils" />
+</section>
+<section id="color-lab-button">
+<span id="id4"></span><h2>Color Lab Button<a class="headerlink" href="#color-lab-button" title="Permalink to this heading"></a></h2>
+<p>Color Lab Button gives you access to the popup panel for color management, you can find a detailed explanation
+here: <a class="reference internal" href="color_lab.html#color-lab"><span class="std std-ref">Color Lab</span></a></p>
+<a class="reference internal image-reference" href="_images/color_lab_button.jpg"><img alt="Color Lab Button" class="align-center" src="_images/color_lab_button.jpg" style="width: 800px;" /></a>
+<hr class="docutils" />
+</section>
+<section id="colorize-strength">
+<span id="id5"></span><h2>Colorize Strength<a class="headerlink" href="#colorize-strength" title="Permalink to this heading"></a></h2>
+<p>This slider allows you to adjust the strength of the color you have chosen in the <a class="reference internal" href="#diffuse-color"><span class="std std-ref">Diffuse Color</span></a> box.</p>
+<a class="reference internal image-reference" href="_images/me_colorize_strength.webp"><img alt="Colorize Strength" class="align-center" src="_images/me_colorize_strength.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This slider was created so that a value up to 0.5 will colorize the material, so the color will not replace the texture,
+but it will overlap it, while a value greater than 0.5 will replace the texture with the chosen color up to the value 1.0
+which is the maximum colorization value, so it will be as if you had no texture, but only the chosen color, this
+always keeping the other maps like the specular, the normal etc.</p>
+</section>
+<hr class="docutils" />
+<section id="colorize-sample">
+<h2>Colorize Sample<a class="headerlink" href="#colorize-sample" title="Permalink to this heading"></a></h2>
+<p>By activating this button, 2 new sliders will appear, the first allows you to choose the color to be sampled, the second
+is the <strong>Tolerance</strong> which allows you to choose how much the sampled color must be similar to the original color to be
+replaced.</p>
+<p>So in accordance with these settings, now the colorization will only color the parts that have the color similar to that.</p>
+<a class="reference internal image-reference" href="_images/me_colorize_sample.webp"><img alt="Colorize Sample" class="align-center" src="_images/me_colorize_sample.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="emission">
+<h2>Emission<a class="headerlink" href="#emission" title="Permalink to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In <strong>Cycles Render</strong> the Emission also acts as lighting, in <strong>Eevee</strong> no, in <strong>Eevee</strong> it is only a visual effect.</p>
+</div>
+<a class="reference internal image-reference" href="_images/me_emission.webp"><img alt="Emission" class="align-center" src="_images/me_emission.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This slider is used to set the Emissivity of the material, there are some materials that have a dedicated emissivity map
+type <strong>Facade</strong> where the emissivity maps are on the windows, so if you adjust these sliders with that type of
+material, you will have your emission on the areas where there is the emissivity map, while if there is no emissivity map, then
+this slider will work as general emissivity of the material, the whole material will be emitting.</p>
+</section>
+<hr class="docutils" />
+<section id="transparent">
+<h2>Transparent<a class="headerlink" href="#transparent" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/me_transparent_and_ops.webp"><img alt="Transparent and Ops" class="align-center" src="_images/me_transparent_and_ops.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Transparent slider is used to set the transparency of the material, if a transparency map is present, then this slider
+will only adjust certain areas of the material, while if it is not present, then it will adjust the general transparency of the material,
+the whole material in this case will be transparent according to the set value.</p>
+<p>Note, in <strong>Eevee render</strong> and only in <strong>Eevee render</strong> transparency is handled differently, so you will have to use
+the button next to the slider (Transparent Mode button) to choose how to handle transparency, you can choose between these settings:</p>
+<section id="transparent-mode">
+<h3>Transparent Mode<a class="headerlink" href="#transparent-mode" title="Permalink to this heading"></a></h3>
+<p>This button actually manages the <strong>Blend Mode</strong> and <strong>Shadow Mode</strong> of the material</p>
+<a class="reference internal image-reference" href="_images/blend_mode_shadow_mode.webp"><img alt="Blend Mode Shadow Mode" class="align-center" src="_images/blend_mode_shadow_mode.webp" style="width: 400px;" /></a>
+<p>Settings only for Eevee Render:</p>
+<ul class="simple">
+<li><p><strong>Is Opaque:</strong> Blend Mode: Opaque, Shadow Mode: Opaque</p></li>
+<li><p><strong>Is Blend:</strong> Blend Mode: Alpha Blend, Shadow Mode: Alpha Ashed</p></li>
+<li><p><strong>Is Hashed</strong> Blend Mode: Alpha Hashed, Shadow Mode: Alpha Hashed (The best, but requires more rendering samples to get a good result)</p></li>
+<li><p><strong>Is Clip</strong> Blend Mode: Alpha Clip, Shadow Mode: Alpha Clip</p></li>
+</ul>
+</section>
+</section>
+<hr class="docutils" />
+<section id="subsurface-radius">
+<h2>Subsurface/Radius<a class="headerlink" href="#subsurface-radius" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/me_subsurface_radius.webp"><img alt="Subsurface" class="align-center" src="_images/me_subsurface_radius.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These values allow you to adjust the Subsurface Scattering of the material.
+Subsurface Scattering is the ability of a material to let light pass through it, but not transparently,
+but in a diffuse way, as if the light were diffused inside the material, this is very useful for materials
+like skin, leaves, ears, rubber, plastic, etc.</p>
+<p><strong>Example of Subsurface Scattering:</strong></p>
+<a class="reference internal image-reference" href="_images/subsurface_suzanne.jpg"><img alt="Subsurface Example" class="align-center" src="_images/subsurface_suzanne.jpg" style="width: 400px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="ambient-occlusion">
+<h2>Ambient Occlusion<a class="headerlink" href="#ambient-occlusion" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/me_ambient_occlusion.webp"><img alt="Ambient Occlusion" class="align-center" src="_images/me_ambient_occlusion.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This slider allows you to adjust the Ambient Occlusion of the material, if an Ambient Occlusion map is present.</p>
+<p>This allows you to further simulate the ambient occlusion through its map. This is useful in Eevee, where
+the calculation of the ambient occlusion is quite approximate, this slider will give a touch of realism in addition to the material.</p>
+<p>If you are in Cycles Render, in some cases it can be useful.</p>
+</section>
+<hr class="docutils" />
+<section id="metallic">
+<h2>Metallic<a class="headerlink" href="#metallic" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/me_metallic.webp"><img alt="Metallic" class="align-center" src="_images/me_metallic.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This slider allows you to adjust the Metallic of the material, if a Metallic map is present, if it is not present
+then this slider will adjust the general metallic of the material, the whole material in this case will be metallic
+depending on the set value, a metallic value of 1.0 and a Roughness of 0.0, will render the material as a
+shiny metal, while a metallic value of 0.0 and a Roughness of 1.0 will render the material as a non-metallic material</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>On a completely black material, setting the Metallic will have no effect, as the black color
+does not reflect light, so no effect will be seen, to see the effect of the Metallic, it is necessary
+set a color other than black, even if it is a very dark color, in this way you will see the effect of the Metallic.
+In short, everything except total black 😊</p>
 </div>
 </section>
 </section>
@@ -221,7 +368,7 @@ or you can add via TODO: Link to shader maker for the materials you want to impo
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="mapping_editor.html" class="btn btn-neutral float-left" title="Mapping Editor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="displacement.html" class="btn btn-neutral float-right" title="Displacement" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="texture_manager.html" class="btn btn-neutral float-right" title="Texture Manager Panel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

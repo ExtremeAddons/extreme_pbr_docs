@@ -1,7 +1,7 @@
 .. _video_tutorials:
 
-Tutorials
-=========
+Video Tutorials
+=================
 
 Here a series of tutorials on how to use HDRi Maker, I strongly recommend you to subscribe to the channel to stay updated
 on new tutorials and news.
