@@ -22,7 +22,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Displacement" href="displacement.html" />
-    <link rel="prev" title="Texture Paint" href="texture_paint.html" /> 
+    <link rel="prev" title="Paint Tools Panel" href="paint_tools.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -56,7 +56,16 @@
 <li class="toctree-l1"><a class="reference internal" href="material_editor.html">Material Editor (Nexus)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="texture_manager.html">Texture Manager Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="texture_paint.html">Texture Paint</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Color Lab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paint_tools.html">Paint Tools Panel</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Color Lab</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#color-system">Color System</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#category">Category</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#name">Name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#search-color-name">Search color name</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#preview-color">Preview Color</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#previous-next-color">Previous Next Color</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
@@ -104,14 +113,102 @@
   <section id="color-lab">
 <span id="id1"></span><h1>Color Lab<a class="headerlink" href="#color-lab" title="Permalink to this heading"></a></h1>
 <p>This Panel can be called from the Material Editor Panel here is the section of the <a class="reference internal" href="material_editor.html#color-lab-button"><span class="std std-ref">Color Lab Button</span></a></p>
-<p>TODO</p>
+<a class="reference internal image-reference" href="_images/color_lab_panel.webp"><img alt="Color Lab Panel" class="align-center" src="_images/color_lab_panel.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Color Lab Panel allows according to the RGB color property that resides next to the various interfaces of the material management
+of Extreme PBR, to set the color from a list of predefined and named colors.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>Once you have found the color you are looking for, press the ok button, and the color will be applied to the
+property from which you called the panel.</p>
+</div>
+<hr class="docutils" />
+<section id="color-system">
+<h2>Color System<a class="headerlink" href="#color-system" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/color_system.webp"><img alt="Color System" class="align-center" src="_images/color_system.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This selector, allows you, at the moment, to choose between 2 color systems:</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Ral</strong></dt><dd><ul>
+<li><p>Acronym for “Reichs-Ausschuß für Lieferbedingungen und Gütesicherung”, is a color system developed in
+Germany in 1927 to standardize paint colors. The system consists of 213 colors, each of which
+is identified by a 4-digit code.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><em>Web*</em></dt><dd><ul>
+<li><p>A collection of 960 colors from the web with the corresponding names.</p></li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="category">
+<h2>Category<a class="headerlink" href="#category" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/color_lab_category.webp"><img alt="Color Lab Category" class="align-center" src="_images/color_lab_category.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Here you will see the list of categories corresponding to the selected color system.</p>
+</section>
+<hr class="docutils" />
+<section id="name">
+<h2>Name<a class="headerlink" href="#name" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/color_lab_name.webp"><img alt="Color Lab Name" class="align-center" src="_images/color_lab_name.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>From this drop-down menu, you can have the complete list of the names of the colors present in the selected category.</p>
+</section>
+<hr class="docutils" />
+<section id="search-color-name">
+<h2>Search color name<a class="headerlink" href="#search-color-name" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/color_lab_search_color_name.webp"><img alt="Color Lab Search Color Name" class="align-center" src="_images/color_lab_search_color_name.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By pressing this button a search menu will appear where you can enter the name of the color you want to search for.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This search menu analyzes all color systems and all categories, so you can search for a color
+in any color system and in any category.+</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="preview-color">
+<h2>Preview Color<a class="headerlink" href="#preview-color" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/color_lab_preview_color.webp"><img alt="Color Lab Preview Color" class="align-center" src="_images/color_lab_preview_color.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This is the preview of the selected color, it can also be edited manually, but the header with the exact color name will be lost.</p>
+</section>
+<hr class="docutils" />
+<section id="previous-next-color">
+<h2>Previous Next Color<a class="headerlink" href="#previous-next-color" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/color_lab_previus_next_color.webp"><img alt="Color Lab Previous Next Color" class="align-center" src="_images/color_lab_previus_next_color.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These 2 buttons allow you to switch from one color to another within the selected category and not beyond.
+Useful for browsing colors and seeing in the preview which color it actually is.</p>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="texture_paint.html" class="btn btn-neutral float-left" title="Texture Paint" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="paint_tools.html" class="btn btn-neutral float-left" title="Paint Tools Panel" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="displacement.html" class="btn btn-neutral float-right" title="Displacement" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
