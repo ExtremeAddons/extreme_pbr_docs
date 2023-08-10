@@ -54,8 +54,22 @@
 <li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapping_editor.html">Mapping Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="material_editor.html">Material Editor (Nexus)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Texture Manager Panel</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Texture Manager Panel</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#texture-manager-rgb">Texture Manager RGB</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#material-browser">Material Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#search-category">Search Category</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#search-material">Search Material</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#texture-browser">Texture Browser</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add">Add</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#texture-resolution">Texture resolution</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#search-data-images">Search Data Images</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#texture-name">Texture Name</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="texture_paint.html">Texture Paint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paint_tools.html">Paint Tools Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="color_lab.html">Color Lab</a></li>
 <li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
@@ -103,7 +117,117 @@
              
   <section id="texture-manager-panel">
 <span id="id1"></span><h1>Texture Manager Panel<a class="headerlink" href="#texture-manager-panel" title="Permalink to this heading"></a></h1>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
 <p>In order to access the Texture Manager panel, refer to the <a class="reference internal" href="material_editor.html#texture-manager-button"><span class="std std-ref">Texture Manager Button</span></a> chapter</p>
+</div>
+<p>The texture manager panel is used to access the texture management features of the current material,
+please note, the material must be created with Nexus setting TODO: link to nexus material preferences</p>
+<p>Here’s how the texture manager looks, in an example from the diffuse property:</p>
+<a class="reference internal image-reference" href="_images/tm_panel_diffuse.webp"><img alt="Texture Manager Panel" class="align-center" src="_images/tm_panel_diffuse.webp" style="width: 800px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The texture manager can be of 3 types, for 3 types of Texture Map: <strong>RGB Map</strong>, <strong>Black and White</strong> and <strong>Normal Map</strong></p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>The Texture Manager panel is very interesting, as it allows you to access all the materials present in the library
+of Extreme PBR and therefore to change the texture on the fly on the current material. This allows you to change
+also the roughness maps or any other map, so you can edit the maps of a material
+and customize the situation at will.</p>
+</div>
+<hr class="docutils" />
+<section id="texture-manager-rgb">
+<span id="id2"></span><h2>Texture Manager RGB<a class="headerlink" href="#texture-manager-rgb" title="Permalink to this heading"></a></h2>
+<p>This is the Texture Manger panel to manage RGB type textures:</p>
+<a class="reference internal image-reference" href="_images/tm_panel_rgb_type.webp"><img alt="Texture Manager RGB" class="align-center" src="_images/tm_panel_rgb_type.webp" style="width: 400px;" /></a>
+<hr class="docutils" />
+<section id="material-browser">
+<span id="id3"></span><h3>Material Browser<a class="headerlink" href="#material-browser" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/tm_material_browser.webp"><img alt="Material Browser" class="align-center" src="_images/tm_material_browser.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>From Material Browser you can choose the material present in the selected category and then access its textures, if present
+in the chosen material.</p>
+</section>
+<hr class="docutils" />
+<section id="search-category">
+<h3>Search Category<a class="headerlink" href="#search-category" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/tm_cat_browser.webp"><img alt="Search Category" class="align-center" src="_images/tm_cat_browser.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By clicking on the category search button, you can choose the category of materials from which to choose the material.
+You can enter the name to search for the material you are interested in.</p>
+</section>
+<hr class="docutils" />
+<section id="search-material">
+<h3>Search Material<a class="headerlink" href="#search-material" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/tm_search_material.webp"><img alt="Search Material" class="align-center" src="_images/tm_search_material.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By clicking on the Search Material button you can search for the material you are interested in, entering the name of the
+material to search for. Once identified, it will be shown in the preview <a class="reference internal" href="#material-browser"><span class="std std-ref">Material Browser</span></a> and you can access its textures.</p>
+</section>
+<hr class="docutils" />
+<section id="texture-browser">
+<h3>Texture Browser<a class="headerlink" href="#texture-browser" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/tm_texture_browser.webp"><img alt="Texture Browser" class="align-center" src="_images/tm_texture_browser.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By clicking on Texture Browser you will have access to the preview of all the textures present in the material selected in the <a class="reference internal" href="#material-browser"><span class="std std-ref">Material Browser</span></a>.
+You can import and replace the current texture with the one selected via the <strong>Add</strong> button explained below.</p>
+</section>
+<hr class="docutils" />
+<section id="add">
+<h3>Add<a class="headerlink" href="#add" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/tm_add.webp"><img alt="Add" class="align-center" src="_images/tm_add.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The Add button allows you, once you have chosen the texture to apply (or replace) to apply it to the current property
+in this case the <strong>Diffuse</strong>.
+The texture applied will be shown in the preview of the texture used.</p>
+</section>
+<hr class="docutils" />
+<section id="texture-resolution">
+<h3>Texture resolution<a class="headerlink" href="#texture-resolution" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/tm_resolution.webp"><img alt="Texture resolution" class="align-center" src="_images/tm_resolution.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By the resolution selector, you can choose which resolution to use for the selected texture.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This will only take effect by applying the texture, it will not affect the texture already in use.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="search-data-images">
+<h3>Search Data Images<a class="headerlink" href="#search-data-images" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/tm_search_data_images.webp"><img alt="Search Data Images" class="align-center" src="_images/tm_search_data_images.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By clicking on the <strong>Search Data Images</strong> button you can search for the images present in the scene, that is in the <strong>bpy.data.images</strong>
+of the current project. It allows you to view and search among all the images you are using in the project.
+This is useful for reusing images already present in the project and not having to search for them every time, so as to
+have the project cleaner and less heavy.</p>
+</section>
+<hr class="docutils" />
+<section id="texture-name">
+<h3>Texture Name<a class="headerlink" href="#texture-name" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/tm_texture_name.webp"><img alt="Texture Name" class="align-center" src="_images/tm_texture_name.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By this text box, you can view the name of the current Texture Image and also edit it if necessary,
+simply by clicking on it and typing the new name.</p>
+</section>
+</section>
 </section>
 
 
