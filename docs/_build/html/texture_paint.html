@@ -21,7 +21,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Paint Tools Panel" href="paint_tools.html" />
+    <link rel="next" title="Paint Tools" href="paint_tools.html" />
     <link rel="prev" title="Texture Manager Panel" href="texture_manager.html" /> 
 </head>
 
@@ -63,13 +63,14 @@
 <li class="toctree-l2"><a class="reference internal" href="#texture-paint-editor">Texture Paint Editor</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#show-paint-editor">Show Paint Editor</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#texture-paint-tools-button">Texture Paint Tools Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#re-project">Re-Project</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#paint-module-button">Paint Module Button</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#fill-module">Fill Module</a></li>
 </ul>
 </li>
 </ul>
 </li>
-<li class="toctree-l1"><a class="reference internal" href="paint_tools.html">Paint Tools Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paint_tools.html">Paint Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="color_lab.html">Color Lab</a></li>
 <li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
@@ -167,16 +168,34 @@ Extreme PBR in Nexus mode, to do this check the preferences: TODO: put link to n
 </div>
 <p>The Show Paint Editor button allows you to hide or show the texture paint editor. Useful if you are working on the material and
 you want to keep a more compact interface.</p>
-</section>
 <hr class="docutils" />
+</section>
 <section id="texture-paint-tools-button">
-<h3>Texture Paint Tools Button<a class="headerlink" href="#texture-paint-tools-button" title="Permalink to this heading"></a></h3>
+<span id="tp-texture-paint-tools-button"></span><h3>Texture Paint Tools Button<a class="headerlink" href="#texture-paint-tools-button" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/tp_paint_tools_button.webp"><img alt="Texture Paint Tools Button" class="align-center" src="_images/tp_paint_tools_button.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>The texture paint button, allows you to access the Paint Tools panel, which allows you to access the properties of the brush
-if you are not very familiar with the classic blender tools. Here the chapter dedicated to <a class="reference internal" href="paint_tools.html#paint-tools-panel"><span class="std std-ref">Paint Tools Panel</span></a></p>
+if you are not very familiar with the classic blender tools. Here the chapter dedicated to <a class="reference internal" href="paint_tools.html#paint-tools-panel"><span class="std std-ref">Paint Tools</span></a></p>
+</section>
+<hr class="docutils" />
+<section id="re-project">
+<h3>Re-Project<a class="headerlink" href="#re-project" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/tp_re_project.webp"><img alt="Texture Paint Re-Project" class="align-center" src="_images/tp_re_project.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Re-Project Button, allows you to re-project the texture of the painting, in order to fix it. The important use cases</p>
+<ul class="simple">
+<li><p>The texture on the object has anomalies near the edges.</p></li>
+<li><p>When you modify an object in its shape and geometry, the texture does not adapt to the new shape, so it is necessary
+re-project the texture.</p></li>
+</ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This button appears only when you are in Paint mode</p>
+</div>
 </section>
 <hr class="docutils" />
 <section id="paint-module-button">
@@ -212,7 +231,7 @@ with this button you will return to having a single material, based on which but
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="texture_manager.html" class="btn btn-neutral float-left" title="Texture Manager Panel" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="paint_tools.html" class="btn btn-neutral float-right" title="Paint Tools Panel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="paint_tools.html" class="btn btn-neutral float-right" title="Paint Tools" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>

@@ -17,11 +17,11 @@
 }
 
 .rst-content .important .admonition-title {
-	background-color: #ddca3b
+	background-color: #f08a00
 }
 
 .rst-content .important {
-	background-color: #f6f3a5
+	background-color: #F0DFCC
 }
 
 .refbox .admonition-title::before {

@@ -93,6 +93,7 @@ you want to keep a more compact interface.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _tp_texture_paint_tools_button:
 
 Texture Paint Tools Button
 *******************************
@@ -108,6 +109,28 @@ The texture paint button, allows you to access the Paint Tools panel, which allo
 if you are not very familiar with the classic blender tools. Here the chapter dedicated to :ref:`paint_tools_panel`
 
 ------------------------------------------------------------------------------------------------------------------------
+
+Re-Project
+*******************************
+
+.. image:: _static/_images/texture_paint/tp_re_project.webp
+    :width: 600
+    :align: center
+    :alt: Texture Paint Re-Project
+
+|
+
+Re-Project Button, allows you to re-project the texture of the painting, in order to fix it. The important use cases
+
+- The texture on the object has anomalies near the edges.
+- When you modify an object in its shape and geometry, the texture does not adapt to the new shape, so it is necessary
+  re-project the texture.
+
+.. note::
+        This button appears only when you are in Paint mode
+
+------------------------------------------------------------------------------------------------------------------------
+
 
 Paint Module Button
 *******************************

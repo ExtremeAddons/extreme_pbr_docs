@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Paint Tools Panel &mdash; Extreme PBR 4.1.100 documentation</title>
+  <title>Paint Tools &mdash; Extreme PBR 4.1.100 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
@@ -54,10 +54,31 @@
 <li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapping_editor.html">Mapping Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="material_editor.html">Material Editor (Nexus)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="material_editor.html#fx-layer">Fx Layer</a></li>
 <li class="toctree-l1"><a class="reference internal" href="texture_manager.html">Texture Manager Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="texture_paint.html">Texture Paint</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Paint Tools Panel</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Paint Tools</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#id1">Paint Tools Panel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#paint-maks-size">Paint Maks Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#restore-default">Restore Default</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#brush-size">Brush Size</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#brush-size-pressure">Brush Size Pressure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-unified-radius">Use Unified Radius</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#brush-strength">Brush Strength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#strength-pressure">Strength Pressure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#use-unified-strength">Use Unified Strength</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#zoom-in-out">Zoom In/Out</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#curve-editor">Curve Editor</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-brush-shape">Set Brush Shape</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#stroke-method">Stroke Method</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#jitter">Jitter</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#jitter-pressure">Jitter Pressure</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#input-samples">Input Samples</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#falloff">Falloff</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="color_lab.html">Color Lab</a></li>
 <li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
@@ -93,7 +114,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Paint Tools Panel</li>
+      <li class="breadcrumb-item active">Paint Tools</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/paint_tools.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -103,9 +124,218 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="paint-tools-panel">
-<span id="id1"></span><h1>Paint Tools Panel<a class="headerlink" href="#paint-tools-panel" title="Permalink to this heading"></a></h1>
-<p>TODO</p>
+  <section id="paint-tools">
+<span id="paint-tools-panel"></span><h1>Paint Tools<a class="headerlink" href="#paint-tools" title="Permalink to this heading"></a></h1>
+<dl class="simple">
+<dt>. The Paint Tools Panel can be called up by pressing the button described here:</dt><dd><ul class="simple">
+<li><p><a class="reference internal" href="texture_paint.html#tp-texture-paint-tools-button"><span class="std std-ref">Texture Paint Tools Button</span></a></p></li>
+</ul>
+</dd>
+</dl>
+<a class="reference internal image-reference" href="_images/pt_panel.webp"><img alt="Paint Tools Panel" class="align-center" src="_images/pt_panel.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only if there are at least 2 Nexus modules or more you can access the Paint Tools Panel.</p>
+</div>
+<div class="youtube admonition">
+<p class="admonition-title">Video Tutorial</p>
+<p><strong>Here you can find a video tutorial about texture paint:</strong> <a class="reference internal" href="video_tutorials.html#texture-paint-video-tutorial"><span class="std std-ref">Texture Paint</span></a></p>
+</div>
+<hr class="docutils" />
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<p>The paint tools panel contains some useful tools for modifying the brush, the tools are already present in Blender
+but I decided to concentrate the most useful ones in a single panel, this to facilitate use and understanding.</p>
+</section>
+<hr class="docutils" />
+<section id="id1">
+<h2>Paint Tools Panel<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h2>
+<p>Here is a list of the properties and buttons that make up the panel.</p>
+<hr class="docutils" />
+<section id="paint-maks-size">
+<h3>Paint Maks Size<a class="headerlink" href="#paint-maks-size" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_paint_mask_size.webp"><img alt="Paint Mask Size" class="align-center" src="_images/pt_paint_mask_size.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The Paint Mask Size Property allows you to modify the size of the paint mask, the higher the resolution of the paint
+mask texture and the more detailed the painting will be, as there will be more pixels available for painting.</p>
+<ul class="simple">
+<li><p><strong>Minimum resolution</strong> 256x256 px</p></li>
+<li><p><strong>Maximum resolution</strong> 8192x8192 px</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="restore-default">
+<h3>Restore Default<a class="headerlink" href="#restore-default" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_restore_default.webp"><img alt="Restore Default" class="align-center" src="_images/pt_restore_default.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button allows you to restore the brush settings to their default values. Useful if you have modified something and
+want to bring everything back as before.</p>
+</section>
+<hr class="docutils" />
+<section id="brush-size">
+<h3>Brush Size<a class="headerlink" href="#brush-size" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_brush_size.webp"><img alt="Brush Size" class="align-center" src="_images/pt_brush_size.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Brush Size Slider allows you to modify the size of the brush, the higher the value the larger the brush will be.</p>
+</section>
+<hr class="docutils" />
+<section id="brush-size-pressure">
+<h3>Brush Size Pressure<a class="headerlink" href="#brush-size-pressure" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_brush_size_pressure.webp"><img alt="Brush Size Pressure" class="align-center" src="_images/pt_brush_size_pressure.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>If active, the value of the brush size will be modified according to the pressure exerted on the graphics tablet.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This option is only available if you have a graphics tablet or a device that supports pressure sensitivity.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="use-unified-radius">
+<h3>Use Unified Radius<a class="headerlink" href="#use-unified-radius" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_use_unified_radius.webp"><img alt="Use Unified Radius" class="align-center" src="_images/pt_use_unified_radius.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>If active, the brush size will be the same for all the brushes, if disabled each brush will have its own size.</p>
+</section>
+<hr class="docutils" />
+<section id="brush-strength">
+<h3>Brush Strength<a class="headerlink" href="#brush-strength" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_brush_strength.webp"><img alt="Brush Strength" class="align-center" src="_images/pt_brush_strength.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Brush Strength Slider allows you to modify the strength of the brush, the higher the value the stronger the brush will be.</p>
+</section>
+<hr class="docutils" />
+<section id="strength-pressure">
+<h3>Strength Pressure<a class="headerlink" href="#strength-pressure" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_strength_pressure.webp"><img alt="Strength Pressure" class="align-center" src="_images/pt_strength_pressure.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>If active, the value of the brush strength will be modified according to the pressure exerted on the graphics tablet.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This option is only available if you have a graphics tablet or a device that supports pressure sensitivity.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="use-unified-strength">
+<h3>Use Unified Strength<a class="headerlink" href="#use-unified-strength" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_use_unified_strength.webp"><img alt="Use Unified Strength" class="align-center" src="_images/pt_use_unified_strength.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>If active, the brush strength will be the same for all the brushes, if disabled each brush will have its own strength.</p>
+</section>
+<hr class="docutils" />
+<section id="zoom-in-out">
+<h3>Zoom In/Out<a class="headerlink" href="#zoom-in-out" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_zoom_in_out.webp"><img alt="Zoom In/Out" class="align-center" src="_images/pt_zoom_in_out.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These buttons allow you to zoom in or out the curve editor.</p>
+</section>
+<hr class="docutils" />
+<section id="curve-editor">
+<h3>Curve Editor<a class="headerlink" href="#curve-editor" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_curve_editor.webp"><img alt="Curve Editor" class="align-center" src="_images/pt_curve_editor.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In the curve editor X represent the brush radius, from the center to the border, while Y represent strength</p>
+</section>
+<hr class="docutils" />
+<section id="set-brush-shape">
+<h3>Set Brush Shape<a class="headerlink" href="#set-brush-shape" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_set_brush_shape.webp"><img alt="Set Brush Shape" class="align-center" src="_images/pt_set_brush_shape.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These Buttons allow you to set a preset for the brush shape, you will see the difference in the Curve Editor described
+above.</p>
+</section>
+<hr class="docutils" />
+<section id="stroke-method">
+<h3>Stroke Method<a class="headerlink" href="#stroke-method" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_stroke_method.webp"><img alt="Set Stroke Method" class="align-center" src="_images/pt_stroke_method.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Stroke Method</strong> Menu allows you to choose the type of stroke you want to use, you can choose between:</p>
+<ul class="simple">
+<li><p><strong>Dots:</strong> The brush will be a series of dots, useful for creating a pointillist effect.</p></li>
+<li><p><strong>Airbrush:</strong> The brush will be an airbrush, useful for creating a soft effect.</p></li>
+<li><p><strong>Line:</strong> The brush will be a line, useful for creating a linear effect.</p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="jitter">
+<h3>Jitter<a class="headerlink" href="#jitter" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_jitter.webp"><img alt="Jitter" class="align-center" src="_images/pt_jitter.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Jitter</strong> Slider allows you to modify the jitter of the brush, the higher the value the more the brush will be jittery.</p>
+</section>
+<hr class="docutils" />
+<section id="jitter-pressure">
+<h3>Jitter Pressure<a class="headerlink" href="#jitter-pressure" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_jitter_pressure.webp"><img alt="Jitter Pressure" class="align-center" src="_images/pt_jitter_pressure.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>If active, the value of the brush jitter will be modified according to the pressure exerted on the graphics tablet.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This option is only available if you have a graphics tablet or a device that supports pressure sensitivity.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="input-samples">
+<h3>Input Samples<a class="headerlink" href="#input-samples" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_input_samples.webp"><img alt="Input Samples" class="align-center" src="_images/pt_input_samples.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Input Samples</strong> Slider allows you to modify the number of samples of the brush, the higher the value the more the
+brush will be detailed.</p>
+</section>
+<hr class="docutils" />
+<section id="falloff">
+<h3>Falloff<a class="headerlink" href="#falloff" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/pt_falloff.webp"><img alt="Falloff" class="align-center" src="_images/pt_falloff.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The Falloff menu allows you to choose between some types of falloff, you can choose between:</p>
+<ul class="simple">
+<li><p><strong>Custom</strong></p></li>
+<li><p><strong>Smooth</strong></p></li>
+<li><p><strong>Smoother</strong></p></li>
+<li><p><strong>Sphere</strong></p></li>
+<li><p><strong>Root</strong></p></li>
+<li><p><strong>Sharp</strong></p></li>
+<li><p><strong>Linear</strong></p></li>
+<li><p><strong>Sharper</strong></p></li>
+<li><p><strong>Inverse Square</strong></p></li>
+<li><p><strong>Constant</strong></p></li>
+</ul>
+</section>
+</section>
 </section>
 
 
