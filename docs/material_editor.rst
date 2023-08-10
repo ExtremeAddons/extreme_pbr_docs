@@ -64,10 +64,16 @@ the object you are working on.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _module_material_panel:
+
+Module Material Panel
+-----------------------
+
+
 .. _show_hide_group:
 
 Show / Hide Group
--------------------
+******************
 
 This button allows you to hide or show all the properties of a group (Nexus Module), it is useful if you are using the
 FX Module, it makes the workspace cleaner and allows you to focus only on what you are doing.
@@ -83,7 +89,7 @@ FX Module, it makes the workspace cleaner and allows you to focus only on what y
 .. _search_module:
 
 Search Module
---------------
+**************
 
 .. note::
       Useful only if there are 2 or more modules present in the material.
@@ -103,7 +109,7 @@ As soon as you select a module, the module from where you are starting will be r
 .. _module_name:
 
 Module Name (Group Name)
--------------------------
+*************************
 
 From here you can view and also change the name of the group (Nexus Module) you are using.
 
@@ -117,7 +123,7 @@ From here you can view and also change the name of the group (Nexus Module) you 
 .. _replace_module:
 
 Replace Module
----------------
+***************
 
 
 The Replace Module button allows you to replace the module you are using by loading another module, in accordance with the preview
@@ -133,7 +139,7 @@ of the :ref:`material_browser` you have chosen.
 .. _module_clip_texture:
 
 Clip Texture
--------------
+*************
 
 .. image:: _static/_images/material_editor/me_clip_texture_button.webp
     :align: center
@@ -159,7 +165,7 @@ so, the object will have only one texture, without repetitions, no seamless.
 .. _module_reset_values:
 
 Reset Values
-------------
+**************
 
 The Reset Values Button allows you to reset the properties of the module you are using to the default values.
 
@@ -173,7 +179,7 @@ The Reset Values Button allows you to reset the properties of the module you are
 .. _module_info:
 
 Info
------
+*****
 
 The Info button allows you to view the information of the module you are using, for example the name of the author etc.
 
@@ -193,7 +199,7 @@ The Info button allows you to view the information of the module you are using, 
 .. _module_tips:
 
 Tips
------
+*****
 
 This button allows you to view or hide the hint next to each slider of the module you are using.
 so by pressing the hint buttons, you will see a window appear with a description of the parameter you are using.
@@ -210,7 +216,7 @@ so by pressing the hint buttons, you will see a window appear with a description
 .. _texture_manager_button:
 
 Texture Manager Button
------------------------
+************************
 
 The texture manager buttons allows you to access the :ref:`texture_manager_panel` and manage the textures you are using in your material.
 note well, texture manager is explained here: :ref:`texture_manager_panel`
@@ -233,7 +239,7 @@ you can manage the texture through the texture manager.
 .. _diffuse_color:
 
 Diffuse Color
---------------
+**************
 
 This color box allows you to choose a color to apply to the diffuse texture, in case there is no texture, this takes the place of the texture as a solid color.
 
@@ -250,7 +256,7 @@ This color box allows you to choose a color to apply to the diffuse texture, in 
 .. _color_lab_button:
 
 Color Lab Button
-------------------
+*****************
 
 
 Color Lab Button gives you access to the popup panel for color management, you can find a detailed explanation
@@ -268,7 +274,7 @@ here: :ref:`color_lab`
 .. _colorize_strength:
 
 Colorize Strength
-------------------
+******************
 
 This slider allows you to adjust the strength of the color you have chosen in the :ref:`diffuse_color` box.
 
@@ -289,7 +295,7 @@ always keeping the other maps like the specular, the normal etc.
 ------------------------------------------------------------------------------------------------------------------------
 
 Colorize Sample
-----------------
+****************
 
 By activating this button, 2 new sliders will appear, the first allows you to choose the color to be sampled, the second
 is the **Tolerance** which allows you to choose how much the sampled color must be similar to the original color to be
@@ -306,7 +312,7 @@ So in accordance with these settings, now the colorization will only color the p
 ------------------------------------------------------------------------------------------------------------------------
 
 Emission
----------
+********
 
 .. note::
         In **Cycles Render** the Emission also acts as lighting, in **Eevee** no, in **Eevee** it is only a visual effect.
@@ -326,7 +332,7 @@ this slider will work as general emissivity of the material, the whole material 
 ------------------------------------------------------------------------------------------------------------------------
 
 Transparent
-------------
+************
 
 .. image:: _static/_images/material_editor/me_transparent_and_ops.webp
     :align: center
@@ -353,7 +359,7 @@ the button next to the slider (Transparent Mode button) to choose how to handle 
 |
 
 Transparent Mode
-*****************
+#################
 
 This button actually manages the **Blend Mode** and **Shadow Mode** of the material
 
@@ -372,7 +378,7 @@ Settings only for Eevee Render:
 ------------------------------------------------------------------------------------------------------------------------
 
 Subsurface/Radius
-------------------
+******************
 
 .. image:: _static/_images/material_editor/me_subsurface_radius.webp
     :align: center
@@ -397,7 +403,7 @@ like skin, leaves, ears, rubber, plastic, etc.
 ------------------------------------------------------------------------------------------------------------------------
 
 Ambient Occlusion
-------------------
+******************
 
 .. image:: _static/_images/material_editor/me_ambient_occlusion.webp
     :align: center
@@ -416,7 +422,7 @@ If you are in Cycles Render, in some cases it can be useful.
 ------------------------------------------------------------------------------------------------------------------------
 
 Metallic
----------
+*********
 
 .. image:: _static/_images/material_editor/me_metallic.webp
     :align: center
@@ -445,7 +451,7 @@ shiny metal, while a metallic value of 0.0 and a Roughness of 1.0 will render th
 ------------------------------------------------------------------------------------------------------------------------
 
 Specular/Tint
---------------
+**************
 
 .. image:: _static/_images/material_editor/me_specular_tint.webp
     :align: center
@@ -457,14 +463,14 @@ Specular/Tint
 This 2 properties work in symbiosis:
 
 Specular
-*********
+#########
 
 This slider adjusts the specular of the material, if a specular map is present, then this slider will only adjust
 some areas of the material, while if it is not present, then it will adjust the general specular of the material.
 
 
 Specular Tint
-**************
+##############
 
 Mix between white and the base color in order to tint the specular highlights.
 
@@ -478,7 +484,7 @@ Mix between white and the base color in order to tint the specular highlights.
 ------------------------------------------------------------------------------------------------------------------------
 
 Roughness
-----------
+**********
 
 .. image:: _static/_images/material_editor/me_roughness.webp
     :align: center
@@ -501,7 +507,7 @@ some areas of the material, while if it is not present, then it will adjust the 
 ------------------------------------------------------------------------------------------------------------------------
 
 Sheen / Sheen Tint
--------------------
+*******************
 
 .. image:: _static/_images/material_editor/me_sheen_and_tint.webp
     :align: center
@@ -513,13 +519,13 @@ Sheen / Sheen Tint
 These 2 properties work in symbiosis:
 
 Sheen
-******
+#######
 
 The sheen is a soft velvet-like reflection that appears in the areas where the light is reflected, value 0.0 means no sheen,
 while value 1.0 means maximum sheen.
 
 Sheen Tint
-***********
+###########
 
 Mix between white and the base color in order to tint the sheen. Value 0.0 means no tint, while value 1.0 means maximum tint.
 
@@ -534,7 +540,7 @@ First image, **Sheen 0.0** **Sheen Tint 0.0**, Second image **Sheen 1.0** **Shee
 ------------------------------------------------------------------------------------------------------------------------
 
 Clearcoat / Roughness
-----------------------
+**********************
 
 .. image:: _static/_images/material_editor/me_clearcoat_and_roughness.webp
     :align: center
@@ -544,13 +550,13 @@ Clearcoat / Roughness
 |
 
 Clearcoat
-**********
+##########
 
 The clearcoat is a layer of varnish that is applied to the material, it is a layer that is applied on top of the material,
 this is similar to the clearcoat of a car.
 
 Clearcoat Roughness
-*******************
+###################
 
 In accordance with the clearcoat, this slider allows you to adjust the roughness of the clearcoat.
 
@@ -565,7 +571,7 @@ In accordance with the clearcoat, this slider allows you to adjust the roughness
 ------------------------------------------------------------------------------------------------------------------------
 
 Transmission
--------------
+*************
 
 .. image:: _static/_images/material_editor/me_transmission_section.webp
     :align: center
@@ -583,7 +589,7 @@ The value of the transmission is a value between 0.0 and 1.0, where 0.0 means no
 means maximum transmission (To simulate a normal glass it will have 1.0 of transmission)
 
 Ray Tracer Button
-******************
+##################
 
 The button Raytracer, activate or deactivate, the Screen Space Refractions (For the Glass). Eevee only, in Cycles, this is not necessary,
 in Eevee Render it is really necessary to activate it if you want to get a realistic result even if not perfect.
@@ -593,13 +599,13 @@ This button activates or deactivates the **Screen Space Refractions** in the mat
 Eevee rendering engine, it is not necessary in Cycles)
 
 IOR
-*****
+#####
 
 The IOR is the index of refraction, it is a value that is used to calculate the refraction of the material.
 For example the IOR of the glass is 1.45, the IOR of the water is 1.33, the IOR of the diamond is 2.42 etc...
 
 Transmission Roughness
-***********************
+########################
 
 This slider allows you to adjust the roughness of the transmission. The transmission Roughness will make the material
 more or less transparent, the higher the value, the less transparent the material will be, the lower the value, the more transparent
@@ -608,7 +614,7 @@ the material will be.
 ------------------------------------------------------------------------------------------------------------------------
 
 Normal
--------
+*******
 
 .. image:: _static/_images/material_editor/me_normal.webp
     :align: center
@@ -630,7 +636,7 @@ Here is an example, on the left the value is 0.0, on the right the value is 1.0
 ------------------------------------------------------------------------------------------------------------------------
 
 Bump / Distance
-----------------
+****************
 
 .. image:: _static/_images/material_editor/me_bump_and_distance.webp
     :align: center
@@ -647,13 +653,13 @@ These 2 properties work in symbiosis:
 
 
 Bump
-*****
+#####
 
 The bump map (Only if present) allows you to add details to the material this is very useful for simulating details
 like reliefs, scratches, etc ... A value equal to 0.0 means no bump map.
 
 Bump Distance
-**************
+################
 
 This slider allows you to adjust the distance of the bump map, the higher the value, the more the bump map will be visible,
 the lower the value, the less the bump map will be visible.
@@ -675,7 +681,7 @@ Here an example, on the left the value of the Bump is 0.0 (Consequently the dist
 ------------------------------------------------------------------------------------------------------------------------
 
 Locations XYZ
----------------
+**************
 
 .. image:: _static/_images/material_editor/me_locations_xyz.webp
     :align: center
@@ -703,7 +709,7 @@ the position of the texture on the object.
 ------------------------------------------------------------------------------------------------------------------------
 
 Rotation XYZ
--------------
+**************
 
 .. image:: _static/_images/material_editor/me_rotation_xyz.webp
     :align: center
@@ -730,7 +736,7 @@ the position of the texture on the object.
 ------------------------------------------------------------------------------------------------------------------------
 
 Scale XYZ
-----------
+**********
 
 .. image:: _static/_images/material_editor/me_scale_xyz.webp
     :align: center
@@ -756,7 +762,7 @@ the position of the texture on the object.
 ------------------------------------------------------------------------------------------------------------------------
 
 Scale Uniform
---------------
+**************
 
 .. image:: _static/_images/material_editor/me_scale_uniform.webp
     :align: center
@@ -778,7 +784,7 @@ This slider allows you to scale the texture uniformly, this is useful if you wan
 ------------------------------------------------------------------------------------------------------------------------
 
 World Coordinate
------------------
+*****************
 
 .. image:: _static/_images/material_editor/me_world_coordinate.webp
     :align: center
@@ -808,6 +814,24 @@ Add Fx Layer
 
 This Button, in accordance with the material preview present in the :ref:`material_browser` allows you to add an effect
 to the material. This is explained well in this chapter: :ref:`fx_layer`
+
+By adding an Fx Layer, the addon takes the selected material and analyzes it to understand which map to use as a Mask,
+so the selection order is this:
+
+    1. **mask**
+    2. **imperfections**
+    3. **roughness**
+    4. **specular**
+    5. **occlusion**
+    6. **displace**
+    7. **metal**
+    8. **diffuse**
+    9. **alpha**
+
+So, in order, the addon as soon as it finds a map of those listed above, uses it as a mask to decide where to apply the effect,
+and where not, in fact the first maps are all in black and white, white indicates where to apply the effect, black where not to apply it,
+using the shades of these maps, we get an Fx Layer. You can also disable the mask map at a later time.
+
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -844,7 +868,7 @@ Here is an extreme example, before and after:
 .. _fx_layer:
 
 Fx Layer
-=========
+---------
 
 .. note::
         In order to add the Fx Layer you will have to use the **Add Fx** button described here: :ref:`add_fx_layer`
@@ -909,7 +933,7 @@ the material unusable in Blender.
 
 
 Fx Layer same tools
---------------------
+********************
 
 
 Most references are the same as the material panel, so I won't repeat them, but I leave the reference to the material panel
@@ -951,11 +975,11 @@ In addition to removing the Fx Layer, just press the **Remove Fx Layer** button 
 .. _fx_dynamic_mask:
 
 Dynamic Mask
--------------
+*************
 
 .. image:: _static/_images/material_editor/fx_dynamic_mask_section.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Dynamic Mask Section
 
 |
@@ -973,10 +997,15 @@ By this area you can manage the Fx Layer in 5 modes:
 ------------------------------------------------------------------------------------------------------------------------
 
 Dynamic Mask Paint Mode
-************************
+########################
 
 This is the default setting once you apply an Fx Layer, in this mode you can paint
 where you want the Fx Layer to be visible on the material.
+
+.. important::
+        If you intend to use the same material with the same Fx Layer on multiple objects with different shapes,
+        you will have to make the material unique, because the painting mask will not work on objects with different shapes.
+
 
 Paint Tools
 ############
@@ -1530,4 +1559,106 @@ Z-Mix Invert Z
     :align: center
     :width: 800
     :alt: Fx Z-Mix V2 Global Coordinates Invert Z Example
+
+------------------------------------------------------------------------------------------------------------------------
+
+Mask map
+**********
+
+.. image:: _static/_images/fx_layer/fx_layer_mask_map_texture_manager.webp
+    :align: center
+    :width: 800
+    :alt: Fx Layer Mask Map Texture Manager
+
+|
+
+This button is the **Texture Manager** described here: :ref:`texture_manager_panel` and in this case the texture
+of the mask will be selected automatically from the material that is being applied as Fx Layer, as explained here
+
+
+Exclude Mask
+**************
+
+.. image:: _static/_images/fx_layer/fx_layer_exclude_mask.webp
+    :align: center
+    :width: 800
+    :alt: Fx Layer Exclude Mask
+
+|
+
+
+Exclude Mask Button, excludes the mask completely, so the Fx layer will be homogeneous over the entire surface of the object where
+the material containing the Fx Layer is present.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Invert Fx
+**********
+
+.. image:: _static/_images/fx_layer/fx_layer_invert_fx.webp
+    :align: center
+    :width: 800
+    :alt: Fx Layer Invert Fx
+
+|
+
+Invert Fx Button inverts the Fx Layer Mask, so where there was black before, now there will be white and vice versa.
+
+.. note::
+        This button will not be visible if you activate the **Exclude Mask** button described in the previous paragraph.
+
+------------------------------------------------------------------------------------------------------------------------
+
+From Min From Max
+******************
+
+.. image:: _static/_images/fx_layer/fx_layer_from_min_max.webp
+    :align: center
+    :width: 800
+    :alt: Fx Layer From Min From Max
+
+|
+
+Normally this is used to adjust the shading between the base material and the Fx material, so as to have a desired shading.
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Show Diffuse
+**************
+
+.. image:: _static/_images/fx_layer/fx_layer_show_diffuse.webp
+    :align: center
+    :width: 800
+    :alt: Fx Layer Show Diffuse
+
+|
+
+Questo valore serve se vuoi mostrare il colore del materiale base, in modo da poterlo vedere oppure no.
+Se non vuoi vederlo, impostalo su 0.0, quindi il colore sarà gestito dal Base color.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Fx Layer Properties
+**********************
+
+.. image:: _static/_images/fx_layer/fx_layer_properties.webp
+    :align: center
+    :width: 400
+    :alt: Fx Layer Properties
+
+|
+
+Per tutte le proprietà che sono evidenziate, hai già una descrizione completa di esse nel paragrafo **Module Material Panel**
+tutte le proprietà, appunto sono le stesse, quindi non le ripeterò, ma ti rimando al paragrafo **Module Material Panel** :ref:`module_material_panel`
+
+.. Translate:
+
+For all the properties that are highlighted, you already have a complete description of them in the paragraph
+**Module Material Panel** all the properties, in fact, are the same, so I will not repeat them, but I refer you to
+the paragraph **Module Material Panel** :ref:`module_material_panel`
+
+
+
 
