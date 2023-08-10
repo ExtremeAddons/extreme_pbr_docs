@@ -680,6 +680,8 @@ Here an example, on the left the value of the Bump is 0.0 (Consequently the dist
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _me_vector_location:
+
 Locations XYZ
 **************
 
@@ -708,6 +710,8 @@ the position of the texture on the object.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _me_vector_rotation:
+
 Rotation XYZ
 **************
 
@@ -735,6 +739,8 @@ the position of the texture on the object.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _me_vector_scale:
+
 Scale XYZ
 **********
 
@@ -760,6 +766,8 @@ the position of the texture on the object.
         then these sliders will also work to scale the displacement effect, but only in **Cycles Render** mode
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _me_vector_scale_uniform:
 
 Scale Uniform
 **************
