@@ -59,3 +59,22 @@
 .refbox dl dt {
 	font-weight: normal
 }
+
+
+
+
+
+/* 'Video Tutorial' icon like youtube icon*/
+.admonition.youtube .admonition-title::before {
+    content: "\f16a";
+}
+
+/* Title color */
+.admonition.youtube .admonition-title {
+	background-color: #CD201F;
+}
+
+/* Background color */
+.admonition.youtube {
+   background-color: #FFD8D8;
+

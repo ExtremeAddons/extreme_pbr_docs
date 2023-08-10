@@ -14,7 +14,7 @@ The material editor is a very important panel, and it takes many different forms
 
 Example Material Editor Nexus with 4 Modules for painting:
 
-.. image:: _static/_images/material_editor/material_editor_nexus_four_modules.jpg
+.. image:: _static/_images/material_editor/material_editor_nexus_four_modules.webp
     :align: center
     :width: 800
     :alt: Material Editor Nexus Four Modules

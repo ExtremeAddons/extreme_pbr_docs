@@ -15,9 +15,10 @@ Undocumented
 
 |
 
-For some reason if you are here through a button or a property of Extreme PBR, it means that the property or the
-button is not documented. It could be an error of mine, please contact me if you ended up on this page through
-the right mouse button on a property or a button of Extreme PBR.
+I tried to document all the buttons, maybe some are not yet available in documentation, make sure in case
+you got here, from which section of Extreme PBR you clicked the button, all the panels have an icon in the shape of
+question mark, by clicking on it the documentation related to that panel opens and you will probably find what you are
+looking for.
 
 |
 
