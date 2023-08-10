@@ -1410,62 +1410,124 @@ Once activated, it will make the deadline between one material and another, more
 
 **Here an example of a Deadline without Noise, and with Noise:**
 
-.. image:: _static/_images/fx_layer/fx_dynmask_zmix_v2_deadline_noide_example.webp
+.. image:: _static/_images/fx_layer/fx_dynmask_zmix_v2_deadline_noise_example.webp
     :align: center
     :width: 800
-    :alt: Fx Dynmask Z-Mix V2 Deadline Noide Example
+    :alt: Fx Dynmask Z-Mix V2 Deadline Noise Example
+
+------------------------------------------------------------------------------------------------------------------------
+
+Z-Mix V2 Expand Noise
+######################
+
+.. image:: _static/_images/fx_layer/fx_z_mix_expand_noise.webp
+    :align: center
+    :width: 400
+    :alt: Fx Z-Mix V2 Expand Noise
+
+|
+
+Expand Noise allows you to expand the Noise, so to make it more stretched.
+
+**Here an example of Expand Noise, on the left a noise without Expand Noise, on the right a noise with Expand Noise of higher value**
+
+.. image:: _static/_images/fx_layer/fx_zmix_expand_noise_example.webp
+    :align: center
+    :width: 800
+    :alt: Fx Z-Mix V2 Expand Noise Example
+
+------------------------------------------------------------------------------------------------------------------------
+
+Z-Mix V2 Scale
+###############
+
+.. image:: _static/_images/fx_layer/fx_z_mix_scale.webp
+    :align: center
+    :width: 400
+    :alt: Fx Z-Mix V2 Scale
+
+|
+
+Scale allows you to adjust the scale of the Noise.
+
+**Here an example of Scale, on the left a noise with small scale, on the right a noise most large scale**
+
+.. image:: _static/_images/fx_layer/fx_zmix_scale_noise_example.webp
+    :align: center
+    :width: 800
+    :alt: Fx Z-Mix V2 Scale Example
+
+------------------------------------------------------------------------------------------------------------------------
+
+Z-Mix V2 Stretch Noise
+#######################
+
+.. image:: _static/_images/fx_layer/fx_z_stretch_noise.webp
+    :align: center
+    :width: 400
+    :alt: Fx Z-Mix V2 Stretch Noise
+
+|
+
+Stretch Noise allows you to stretch the Noise, so to make it more stretched or less stretched.
+
+**Here an example of Stretch Noise, on the left a noise with No Stretch Noise, on the right a value of Stretch Noise of 1.0**
+
+.. image:: _static/_images/fx_layer/fx_zmix_stretch_noise_example.webp
+    :align: center
+    :width: 800
+    :alt: Fx Z-Mix V2 Stretch Noise Example
+
+------------------------------------------------------------------------------------------------------------------------
+
+Z-Mix V2 Object Space
+######################
+
+.. image:: _static/_images/fx_layer/fx_z_mix_object_space.webp
+    :align: center
+    :width: 400
+    :alt: Fx Z-Mix V2 Object Space
+
+|
 
 
+**Object Space** Toggle button, if set to Object Space, the Z-Mix is in object space, so if you move the object, the Z-Mix
+will always be in the same position (This is the default) if instead you press the button, you will switch to **Global Space**, so
+the height of the Z-Mix will depend on the position of the object in global space.
 
+**This is useful if for example you have more objects with Lo Z-Mix, and you want for example, the vegetation, or the erosion is
+always at the same height on all objects.**
 
+**Here is an example of setting Z-Mix in Global Space on multiple objects:**
 
+.. image:: _static/_images/fx_layer/fx_z_mix_global_coordinates_example.webp
+    :align: center
+    :width: 800
+    :alt: Fx Z-Mix V2 Global Coordinates Example
 
+------------------------------------------------------------------------------------------------------------------------
 
+Z-Mix Invert Z
+###############
 
+.. image:: _static/_images/fx_layer/fx_z_mix_invert_z.webp
+    :align: center
+    :width: 400
+    :alt: Fx Z-Mix V2 Invert Z
 
+|
 
+**Invert Z** Toggle button, if set to Invert Z, the Z-Mix will be inverted.
 
+**Here 2 images, te first with Invert Z disabled, the second with Invert Z enabled:**
 
+.. image:: _static/_images/fx_layer/fx_z_mix_global_coordinates_example.webp
+    :align: center
+    :width: 800
+    :alt: Fx Z-Mix V2 Global Coordinates Example
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.. image:: _static/_images/fx_layer/fx_z_mix_global_coordinates_invert_z_example.webp
+    :align: center
+    :width: 800
+    :alt: Fx Z-Mix V2 Global Coordinates Invert Z Example
 

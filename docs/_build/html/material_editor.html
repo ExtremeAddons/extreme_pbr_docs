@@ -150,6 +150,11 @@
 <li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-altitude-level">Z-Mix V2 Altitude Level</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-dead-line">Z-Mix V2 Dead Line</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-deadline-noise">Z-Mix V2 Deadline Noise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-expand-noise">Z-Mix V2 Expand Noise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-scale">Z-Mix V2 Scale</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-stretch-noise">Z-Mix V2 Stretch Noise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-object-space">Z-Mix V2 Object Space</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#z-mix-invert-z">Z-Mix Invert Z</a></li>
 </ul>
 </li>
 </ul>
@@ -1064,7 +1069,67 @@ A higher value will make the Dead Line sharper, while a lower value will make th
 </div>
 <p>Once activated, it will make the deadline between one material and another, more noisy, so more natural.</p>
 <p><strong>Here an example of a Deadline without Noise, and with Noise:</strong></p>
-<a class="reference internal image-reference" href="_images/fx_dynmask_zmix_v2_deadline_noide_example.webp"><img alt="Fx Dynmask Z-Mix V2 Deadline Noide Example" class="align-center" src="_images/fx_dynmask_zmix_v2_deadline_noide_example.webp" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/fx_dynmask_zmix_v2_deadline_noise_example.webp"><img alt="Fx Dynmask Z-Mix V2 Deadline Noise Example" class="align-center" src="_images/fx_dynmask_zmix_v2_deadline_noise_example.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="z-mix-v2-expand-noise">
+<h4>Z-Mix V2 Expand Noise<a class="headerlink" href="#z-mix-v2-expand-noise" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_z_mix_expand_noise.webp"><img alt="Fx Z-Mix V2 Expand Noise" class="align-center" src="_images/fx_z_mix_expand_noise.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Expand Noise allows you to expand the Noise, so to make it more stretched.</p>
+<p><strong>Here an example of Expand Noise, on the left a noise without Expand Noise, on the right a noise with Expand Noise of higher value</strong></p>
+<a class="reference internal image-reference" href="_images/fx_zmix_expand_noise_example.webp"><img alt="Fx Z-Mix V2 Expand Noise Example" class="align-center" src="_images/fx_zmix_expand_noise_example.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="z-mix-v2-scale">
+<h4>Z-Mix V2 Scale<a class="headerlink" href="#z-mix-v2-scale" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_z_mix_scale.webp"><img alt="Fx Z-Mix V2 Scale" class="align-center" src="_images/fx_z_mix_scale.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Scale allows you to adjust the scale of the Noise.</p>
+<p><strong>Here an example of Scale, on the left a noise with small scale, on the right a noise most large scale</strong></p>
+<a class="reference internal image-reference" href="_images/fx_zmix_scale_noise_example.webp"><img alt="Fx Z-Mix V2 Scale Example" class="align-center" src="_images/fx_zmix_scale_noise_example.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="z-mix-v2-stretch-noise">
+<h4>Z-Mix V2 Stretch Noise<a class="headerlink" href="#z-mix-v2-stretch-noise" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_z_stretch_noise.webp"><img alt="Fx Z-Mix V2 Stretch Noise" class="align-center" src="_images/fx_z_stretch_noise.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Stretch Noise allows you to stretch the Noise, so to make it more stretched or less stretched.</p>
+<p><strong>Here an example of Stretch Noise, on the left a noise with No Stretch Noise, on the right a value of Stretch Noise of 1.0</strong></p>
+<a class="reference internal image-reference" href="_images/fx_zmix_stretch_noise_example.webp"><img alt="Fx Z-Mix V2 Stretch Noise Example" class="align-center" src="_images/fx_zmix_stretch_noise_example.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="z-mix-v2-object-space">
+<h4>Z-Mix V2 Object Space<a class="headerlink" href="#z-mix-v2-object-space" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_z_mix_object_space.webp"><img alt="Fx Z-Mix V2 Object Space" class="align-center" src="_images/fx_z_mix_object_space.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Object Space</strong> Toggle button, if set to Object Space, the Z-Mix is in object space, so if you move the object, the Z-Mix
+will always be in the same position (This is the default) if instead you press the button, you will switch to <strong>Global Space</strong>, so
+the height of the Z-Mix will depend on the position of the object in global space.</p>
+<p><strong>This is useful if for example you have more objects with Lo Z-Mix, and you want for example, the vegetation, or the erosion is
+always at the same height on all objects.</strong></p>
+<p><strong>Here is an example of setting Z-Mix in Global Space on multiple objects:</strong></p>
+<a class="reference internal image-reference" href="_images/fx_z_mix_global_coordinates_example.webp"><img alt="Fx Z-Mix V2 Global Coordinates Example" class="align-center" src="_images/fx_z_mix_global_coordinates_example.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="z-mix-invert-z">
+<h4>Z-Mix Invert Z<a class="headerlink" href="#z-mix-invert-z" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/fx_z_mix_invert_z.webp"><img alt="Fx Z-Mix V2 Invert Z" class="align-center" src="_images/fx_z_mix_invert_z.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Invert Z</strong> Toggle button, if set to Invert Z, the Z-Mix will be inverted.</p>
+<p><strong>Here 2 images, te first with Invert Z disabled, the second with Invert Z enabled:</strong></p>
+<a class="reference internal image-reference" href="_images/fx_z_mix_global_coordinates_example.webp"><img alt="Fx Z-Mix V2 Global Coordinates Example" class="align-center" src="_images/fx_z_mix_global_coordinates_example.webp" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/fx_z_mix_global_coordinates_invert_z_example.webp"><img alt="Fx Z-Mix V2 Global Coordinates Invert Z Example" class="align-center" src="_images/fx_z_mix_global_coordinates_invert_z_example.webp" style="width: 800px;" /></a>
 </section>
 </section>
 </section>
