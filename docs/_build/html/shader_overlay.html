@@ -22,7 +22,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Save Editor" href="save_editor.html" />
-    <link rel="prev" title="Displacement" href="displacement.html" /> 
+    <link rel="prev" title="Shader Maker Category" href="shader_maker.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -59,7 +59,32 @@
 <li class="toctree-l1"><a class="reference internal" href="paint_tools.html">Paint Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="color_lab.html">Color Lab</a></li>
 <li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Shader Overlay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shader_maker.html">Shader Maker Category</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Shader Overlay</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#shader-overlay-panel">Shader Overlay Panel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#add-from-library">Add From Library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-from-data-material">Add from Data Material</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mixer-node">Mixer Node</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#replace-mixer-node">Replace Mixer Node</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#add">Add</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove">Remove</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shader-gradient">Shader Gradient</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#reset-values">Reset Values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tips">Tips</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#location">Location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#flip-location">Flip Location</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rotation-x-y">Rotation X/Y</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#from-min-max">From Min/Max</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#strength">Strength</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#shader-gradient-glitch-v2">Shader Gradient Glitch V2</a></li>
+</ul>
+</li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 </ul>
@@ -110,14 +135,207 @@
 <p>Here you can find a video tutorial that shows you how to use Shader Overlay: <a class="reference internal" href="video_tutorials.html#shader-overlay-video-tutorial"><span class="std std-ref">Shader Overlay</span></a></p>
 </div>
 <p>Shader overlay is a very useful tool to mix all selected objects (If they have any base material)
-with a material of your choice from the Extreme PBR library or even importing a material via Shader Maker TODO: Link to shader maker</p>
+with a material of your choice from the Extreme PBR library or even importing a material via Shader Maker, you can find
+the Shader Maker You can find the Shader Maker chapter here: <a class="reference internal" href="shader_maker.html#shader-maker"><span class="std std-ref">Shader Maker</span></a></p>
+<p>Shader Overlay allows you to make animations of the Overlay material through the mixer, so that you can see the coverage of the materials
+underlying in an animated way.</p>
+<p>Here an example in 3 separate moments of a scene where the Shader Overlay has been applied to all objects:</p>
+<p><strong>Model Without Shader Overlay:</strong></p>
+<a class="reference internal image-reference" href="_images/mars_one_scene_01.webp"><img alt="Shader Overlay Example 01" class="align-center" src="_images/mars_one_scene_01.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Model with shader overlay adjusted about halfway through the field with tilt:</strong></p>
+<a class="reference internal image-reference" href="_images/mars_one_scene_02.webp"><img alt="Shader Overlay Example 02" class="align-center" src="_images/mars_one_scene_02.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Model completely covered by the shader overlay:</strong></p>
+<a class="reference internal image-reference" href="_images/mars_one_scene_03.webp"><img alt="Shader Overlay Example 03" class="align-center" src="_images/mars_one_scene_03.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="credits admonition">
+<p class="admonition-title">Credits CC-BY</p>
+<p>Model: <strong>“Mars One” Mission - Base</strong> by <strong>admone</strong> from Sketchfab:
+<a class="reference external" href="https://sketchfab.com/3d-models/mars-one-mission-base-83ced347037f47aba8473147d65df074">Link</a></p>
+</div>
+<hr class="docutils" />
+<section id="shader-overlay-panel">
+<h2>Shader Overlay Panel<a class="headerlink" href="#shader-overlay-panel" title="Permalink to this heading"></a></h2>
+<p>Here’s what it looks like the Shader Overlay panel looks in the fullness of its functionality, in the example the
+Procedural material <strong>Blueprint 002</strong> has been applied so you will see the sliders to control the parameters of the
+material mentioned.</p>
+<a class="reference internal image-reference" href="_images/shader_overlay_panel_full.webp"><img alt="Shader Overlay Panel" class="align-center" src="_images/shader_overlay_panel_full.webp" style="width: 400px;" /></a>
+<hr class="docutils" />
+<section id="add-from-library">
+<h3>Add From Library<a class="headerlink" href="#add-from-library" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/so_add_from.webp"><img alt="Shader Overlay Add From" class="align-center" src="_images/so_add_from.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In this situation, no shader overlay has been applied. <strong>Add From</strong> is used to choose where you want to take the
+material to apply as a shader overlay.</p>
+<p>Add From Library allows you to add the shader overlay directly from the Extreme PBR library, just select
+the material you want to apply, from the Extreme PBR library then from the <span class="xref std std-ref">material_browser</span> , and press the button
+<strong>Add</strong>, explained later here: <a class="reference internal" href="#so-add"><span class="std std-ref">Add</span></a></p>
+</section>
+<hr class="docutils" />
+<section id="add-from-data-material">
+<h3>Add from Data Material<a class="headerlink" href="#add-from-data-material" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/so_add_from_data_material.webp"><img alt="Shader Overlay Add From Data Material" class="align-center" src="_images/so_add_from_data_material.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By selecting <strong>Add From Data Material</strong> you will have the list of materials present in the current Blender project
+and you can choose the material you want to apply as Shader Overlay from that list. Once you have selected the material
+you want to apply, press the <strong>Add</strong> button, explained later here: <a class="reference internal" href="#so-add"><span class="std std-ref">Add</span></a></p>
+</section>
+<hr class="docutils" />
+<section id="mixer-node">
+<h3>Mixer Node<a class="headerlink" href="#mixer-node" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/so_mixer_node.webp"><img alt="Shader Overlay Mixer Node" class="align-center" src="_images/so_mixer_node.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>From the Mixer Node menu you can choose the type of Node you want to use to mix the Shader Overlay with the underlying one.
+the nodes will allow you to adjust the settings.</p>
+<p>The nodes available are described below:</p>
+<ul class="simple">
+<li><p><strong>Shader Gradient</strong> <a class="reference internal" href="#so-shader-gradient"><span class="std std-ref">Shader Gradient</span></a></p></li>
+<li><p><strong>Shader Gradient Glitch V2</strong> <a class="reference internal" href="#so-shader-gradient-glitch-v2"><span class="std std-ref">Shader Gradient Glitch V2</span></a></p></li>
+</ul>
+<hr class="docutils" />
+<section id="replace-mixer-node">
+<h4>Replace Mixer Node<a class="headerlink" href="#replace-mixer-node" title="Permalink to this heading"></a></h4>
+<p>Once you have added the Shader Overlay, you can change the type of Node to use for the Mixer, by clicking on the button
+Replace Mixer:</p>
+<a class="reference internal image-reference" href="_images/so_replace_mixer_node.webp"><img alt="Shader Overlay Replace Mixer Node" class="align-center" src="_images/so_replace_mixer_node.webp" style="width: 400px;" /></a>
+<hr class="docutils" />
+</section>
+</section>
+<section id="add">
+<span id="so-add"></span><h3>Add<a class="headerlink" href="#add" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/so_add.webp"><img alt="Shader Overlay Add" class="align-center" src="_images/so_add.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The Add button adds to the selected objects the Shader Overlay that you have chosen from the <strong>Add From</strong> menu.
+If the Shader Overlay is already present on the selected objects, the Add button replace the previous Shader Overlay
+with the new one.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This button adds to all the materials of the selected objects the material chosen as Shader Overlay,
+so if you have selected 10 objects and each of these has 3 materials, the material chosen as Shader Overlay
+will be added to all 30 materials.</p>
+</div>
+<hr class="docutils" />
+</section>
+<section id="remove">
+<span id="so-remove"></span><h3>Remove<a class="headerlink" href="#remove" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/so_remove.webp"><img alt="Shader Overlay Remove" class="align-center" src="_images/so_remove.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The Remove button removes the Shader Overlay from the selected objects.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This button removes the Shader Overlay from all the materials of the selected objects,
+so if you have selected 10 objects and each of these has 3 materials, the Shader Overlay
+will be removed from all 30 materials.</p>
+</div>
+<hr class="docutils" />
+</section>
+<section id="shader-gradient">
+<span id="so-shader-gradient"></span><h3>Shader Gradient<a class="headerlink" href="#shader-gradient" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/so_shader_gradient.webp"><img alt="Shader Overlay Shader Gradient" class="align-center" src="_images/so_shader_gradient.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The Shader Gradient Mixer Node allows you to mix the material with a detachment effect with the underlying material/s.</p>
+<hr class="docutils" />
+<section id="reset-values">
+<h4>Reset Values<a class="headerlink" href="#reset-values" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_mg_reset_values.webp"><img alt="Shader Overlay Reset Values" class="align-center" src="_images/so_mg_reset_values.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button resets all the values of the Mixer Node to the Default state.</p>
+</section>
+<hr class="docutils" />
+<section id="tips">
+<h4>Tips<a class="headerlink" href="#tips" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_mg_tips.webp"><img alt="Shader Overlay Tips" class="align-center" src="_images/so_mg_tips.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button will show the Tips related to the properties of the Mixer Node, additional buttons will be shown that
+once clicked, will show a popup window with the description of the selected property.</p>
+<p>In order to hide, press the Tips button again.</p>
+</section>
+<hr class="docutils" />
+<section id="location">
+<h4>Location<a class="headerlink" href="#location" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_mg_location_flip_location.webp"><img alt="Shader Overlay Location" class="align-center" src="_images/so_mg_location_flip_location.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Location, allows you to adjust the position of the Shader Overlay material relative to the underlying material.</p>
+</section>
+<section id="flip-location">
+<h4>Flip Location<a class="headerlink" href="#flip-location" title="Permalink to this heading"></a></h4>
+<p>If you activate the Flip Location, the position of the Shader Overlay material is inverted with respect to the set position.</p>
+</section>
+<hr class="docutils" />
+<section id="rotation-x-y">
+<h4>Rotation X/Y<a class="headerlink" href="#rotation-x-y" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_mg_rotation_xy.webp"><img alt="Shader Overlay Rotation X/Y" class="align-center" src="_images/so_mg_rotation_xy.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These 2 sliders allow you to rotate the detachment of the Shader Overlay material with respect to the underlying material.
+This allows you to tilt the Shader Overlay material, so that you can create animations of coverage or
+discovery of the underlying material, with various animations.</p>
+</section>
+<hr class="docutils" />
+<section id="from-min-max">
+<h4>From Min/Max<a class="headerlink" href="#from-min-max" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_mg_from_min_max.webp"><img alt="Shader Overlay From Min/Max" class="align-center" src="_images/so_mg_from_min_max.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These 2 sliders allow you to adjust and therefore fade less the detachment of the Shader Overlay material with respect
+to the underlying material.</p>
+</section>
+<hr class="docutils" />
+<section id="strength">
+<h4>Strength<a class="headerlink" href="#strength" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_mg_strength.webp"><img alt="Shader Overlay Strength" class="align-center" src="_images/so_mg_strength.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Strength Slider property allows you to modify the strength of the Shader Overlay material above the underlying material,</p>
+<ul class="simple">
+<li><p>By default the value is 0.0, so it is a basic right blend.</p></li>
+<li><p>If you set -1.0 the Shader Overlay material will be completely disappeared.</p></li>
+<li><p>If you set 1.0 the Shader Overlay material will be completely visible on the entire underlying material
+(It will be completely covered excluding the Location value).</p></li>
+</ul>
+<hr class="docutils" />
+</section>
+</section>
+<section id="shader-gradient-glitch-v2">
+<span id="so-shader-gradient-glitch-v2"></span><h3>Shader Gradient Glitch V2<a class="headerlink" href="#shader-gradient-glitch-v2" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/so_shader_gradient_glitch_v2.webp"><img alt="Shader Overlay Shader Gradient Glitch V2" class="align-center" src="_images/so_shader_gradient_glitch_v2.webp" style="width: 600px;" /></a>
+</section>
+</section>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="displacement.html" class="btn btn-neutral float-left" title="Displacement" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="shader_maker.html" class="btn btn-neutral float-left" title="Shader Maker Category" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="save_editor.html" class="btn btn-neutral float-right" title="Save Editor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

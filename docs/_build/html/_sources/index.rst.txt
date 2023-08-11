@@ -48,6 +48,7 @@ Welcome to Extreme PBR's documentation!
    paint_tools
    color_lab
    displacement
+   shader_maker
    shader_overlay
    save_editor
    preferences

@@ -60,10 +60,6 @@
 	font-weight: normal
 }
 
-
-
-
-
 /* 'Video Tutorial' icon like youtube icon*/
 .admonition.youtube .admonition-title::before {
     content: "\f16a";
@@ -77,4 +73,19 @@
 /* Background color */
 .admonition.youtube {
    background-color: #FFD8D8;
+}
+
+
+
+.admonition.credits .admonition-title::before {
+    content: "\f1f9";
+}
+
+.admonition.credits .admonition-title {
+    background-color: #ee5b32;
+}
+.admonition.credits {
+   background-color: #EEBEB9;
+
+
 
