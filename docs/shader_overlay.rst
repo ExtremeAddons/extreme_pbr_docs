@@ -9,6 +9,11 @@ Shader Overlay
     Here you can find a video tutorial that shows you how to use Shader Overlay: :ref:`shader_overlay_video_tutorial`
 
 
+.. tip::
+        Any material can be applied as Shader Overlay, even materials already present in the scene and that are not
+        part of the Extreme PBR library.
+
+
 Shader overlay is a very useful tool to mix all selected objects (If they have any base material)
 with a material of your choice from the Extreme PBR library or even importing a material via Shader Maker, you can find
 the Shader Maker You can find the Shader Maker chapter here: :ref:`shader_maker`
@@ -200,6 +205,9 @@ Overlay group (Name)
 Once you have applied any Shader Overlay, a group will be created with the name of the chosen material and a suffix
 **"_Overlay"**, from this text box you can view the name, and also modify it, by clicking in the text field
 and writing the name you prefer.
+
+This group will be the group that will contain the Shader Overlay material, and the mixer node that will allow you to mix the material
+this group is the one that allows you to modify the Shader Overlay for all the materials to which it has been applied.
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -499,6 +507,44 @@ to multiple objects.
 .. tip::
         To apply the same Shader Overlay to multiple objects, select the objects of interest and press the button
         **Add** in the :ref:`so_add` section
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Material Layout
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: _static/_images/shader_overlay/so_material_layout_example.webp
+    :align: center
+    :width: 600
+    :alt: Shader Overlay Material Layout
+
+|
+
+In this area of the Shader Overlay interface, the materials that have been added as Shader Overlay are shown,
+and for each material the name, the type of Mixer Node used, and the buttons to modify the material are shown.
+
+
+
+.. important::
+        Any material can be applied as Shader Overlay, but only materials from the Extreme PBR libraries will be shown
+        in an orderly manner with the properties exposed as per example.
+        If the properties of the material are not present, it will still be possible to use it as Shader Overlay.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Replace
+*********
+
+.. image:: _static/_images/shader_overlay/so_replace.webp
+    :align: center
+    :width: 600
+    :alt: Shader Overlay Replace
+
+
+
+
 
 
 
