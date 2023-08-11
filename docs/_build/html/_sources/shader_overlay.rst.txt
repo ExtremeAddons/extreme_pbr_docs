@@ -191,6 +191,94 @@ The Remove button removes the Shader Overlay from the selected objects.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+
+Mat Settings Button
+********************
+
+Very useful in Eevee Render!
+
+.. image:: _static/_images/shader_overlay/so_mat_settings_button.webp
+    :align: center
+    :width: 800
+    :alt: So Mat Settings Button
+
+|
+
+.. note::
+        This button is visible only if you have already applied a Shader Overlay
+
+
+Mat Settings Button gives you access to the settings of the material you have applied as Shader Overlay, this is useful
+to change the parameters on all materials
+
+.. tip::
+        Important use case: If you have applied a Shader Overlay with transparencies and you are in Eevee mode,
+        through this panel it gives you the possibility to set the **Blend** and **Shadow**
+
+------------------------------------------------------------------------------------------------------------------------
+
+Material Settings Panel
+*************************
+
+The Material Settings Panel is visible once the button previously described is pressed.
+
+.. image:: _static/_images/shader_overlay/so_material_settings_panel.webp
+    :align: center
+    :width: 400
+    :alt: So Material Settings Panel
+
+|
+
+It allows you to set the material settings on all the materials to which the Shader Overlay has been applied, in
+so that all materials that contain the Shader Overlay will have the same settings.
+
+.. image:: _static/_images/shader_overlay/so_blender_mat_settings.webp
+    :align: center
+    :width: 400
+    :alt: So Blender Mat Settings
+
+.. note::
+        In the image above there is an example of what the settings in the Material Settings panel modify to the materials
+        that contain the Shader Overlay.
+        Once the Shader Overlay has been removed, the settings of the materials return to those you were working with.
+
+
+**Here is the explanation of the properties contained in the Material Settings Panel:**
+
+- **Restore Material Settings:** Restore the material settings.
+- **Backface Culling:** If active Hide the back faces of the mesh.
+- **Blend Mode:** Set the Blend Mode of the material. Blend methods described here :ref:`me_transparent_mode`
+- **Shadow Mode:** Set the Shadow Mode of the material. Shadow methods described here :ref:`me_transparent_mode`
+- **Clip Threshold:** A pixels is rendered only if its alpha value is above this threshold.
+- **Show Backface:** Show the back faces of the mesh.
+- **Screen Space Reflections:** Enable Screen Space Reflections.
+- **Refraction Depth:** Set the depth of the refraction.
+- **Subsurface Translucent:** Enable Subsurface Translucent.
+- **Pass Index:** Set the Pass Index of the material.
+
+
+.. important::
+        **Press OK button** in order to apply the changes to the materials
+
+------------------------------------------------------------------------------------------------------------------------
+
+Select Objects
+****************
+
+.. image:: _static/_images/shader_overlay/so_select_objects.webp
+    :align: center
+    :width: 400
+    :alt: So Select Objects
+
+|
+
+Select Objects allows you to select the objects in the scene that have the Shader Overlay applied,
+so if you have applied the Shader Overlay to 10 objects, by pressing this button you will select all 10 objects
+with that specific Shader Overlay.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 Overlay group (Name)
 ~~~~~~~~~~~~~~~~~~~~~~~~~~
 

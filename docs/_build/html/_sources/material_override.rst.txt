@@ -85,7 +85,7 @@ Add From (Library)
 
 
 In this situation, no Material Override has been applied. **Add From** is used to choose where you want to take the
-material to apply as a shader overlay.
+material to apply as a Material Override.
 
 Add From Library allows you to add the Material Override directly from the Extreme PBR library, just select
 the material you want to apply, from the Extreme PBR library then from the :ref:`mp_material_browser` , and press the button
@@ -121,7 +121,7 @@ Add Override
 |
 
 The Add button adds to the selected objects the Material Override that you have chosen from the **Add From** menu.
-If the Material Override is already present on the selected objects, the Add button replace the previous Shader Overlay
+If the Material Override is already present on the selected objects, the Add button replace the previous Material Override
 with the new one.
 
 .. important::
@@ -157,7 +157,7 @@ Very useful in Eevee Render!
 
 .. image:: _static/_images/material_override/mo_mat_settings_button.webp
     :align: center
-    :width: 600
+    :width: 800
     :alt: Mo Mat Settings Button
 
 |
@@ -168,6 +168,84 @@ Very useful in Eevee Render!
 
 Mat Settings Button gives you access to the settings of the material you have applied as Material Override, this is useful
 to change the parameters on all materials
+
+.. tip::
+        Important use case: If you have applied a Material Override with transparencies and you are in Eevee mode,
+        through this panel it gives you the possibility to set the **Blend** and **Shadow**
+
+------------------------------------------------------------------------------------------------------------------------
+
+Material Settings Panel
+*************************
+
+The Material Settings Panel is visible once the button previously described is pressed.
+
+.. image:: _static/_images/material_override/mo_mat_settings_panel.webp
+    :align: center
+    :width: 400
+    :alt: Mo Material Settings Panel
+
+|
+
+It allows you to set the material settings on all the materials to which the Material Override has been applied, in
+so that all materials that contain the Material Override will have the same settings.
+
+.. image:: _static/_images/material_override/mo_blender_mat_settings.webp
+    :align: center
+    :width: 400
+    :alt: Mo Blender Mat Settings
+
+|
+
+.. note::
+        In the image above there is an example of what the settings in the Material Settings panel modify to the materials
+        that contain the Material Override.
+        Once the Material Override has been removed, the settings of the materials return to those you were working with.
+
+
+**Here is the explanation of the properties contained in the Material Settings Panel:**
+
+- **Backface Culling:** If active Hide the back faces of the mesh.
+- **Blend Mode:** Set the Blend Mode of the material. Blend methods described here :ref:`me_transparent_mode`
+- **Shadow Mode:** Set the Shadow Mode of the material. Shadow methods described here :ref:`me_transparent_mode`
+- **Clip Threshold:** A pixels is rendered only if its alpha value is above this threshold.
+- **Show Backface:** Show the back faces of the mesh.
+- **Screen Space Reflections:** Enable Screen Space Reflections.
+- **Refraction Depth:** Set the depth of the refraction.
+- **Subsurface Translucent:** Enable Subsurface Translucent.
+- **Pass Index:** Set the Pass Index of the material.
+
+
+.. important::
+        **Press OK button** in order to apply the changes to the materials
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Select Objects
+****************
+
+.. image:: _static/_images/material_override/mo_select_objects.webp
+    :align: center
+    :width: 400
+    :alt: Mo Select Objects
+
+|
+
+Select Objects allows you to select the objects in the scene that have the Material Override applied,
+so if you have applied the Material Override to 10 objects, by pressing this button you will select all 10 objects
+with that specific Material Override.
+
+
+
+
+
+
+
+
+
+
 
 
 

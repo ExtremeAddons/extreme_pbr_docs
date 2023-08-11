@@ -358,6 +358,8 @@ the button next to the slider (Transparent Mode button) to choose how to handle 
 
 |
 
+.. _me_transparent_mode:
+
 Transparent Mode
 #################
 

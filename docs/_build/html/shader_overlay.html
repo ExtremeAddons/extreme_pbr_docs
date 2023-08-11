@@ -21,7 +21,7 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Save Editor" href="save_editor.html" />
+    <link rel="next" title="Material Override" href="material_override.html" />
     <link rel="prev" title="Shader Maker Category" href="shader_maker.html" /> 
 </head>
 
@@ -69,7 +69,12 @@
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#add">Add</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#remove">Remove</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove">Remove</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#mat-settings-button">Mat Settings Button</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#material-settings-panel">Material Settings Panel</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#select-objects">Select Objects</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#overlay-group-name">Overlay group (Name)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#shader-gradient">Shader Gradient</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#hide-show">Hide / Show</a></li>
@@ -103,6 +108,7 @@
 </li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="material_override.html">Material Override</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 </ul>
@@ -267,6 +273,72 @@ will be added to all 30 materials.</p>
 so if you have selected 10 objects and each of these has 3 materials, the Shader Overlay
 will be removed from all 30 materials.</p>
 </div>
+<hr class="docutils" />
+<section id="mat-settings-button">
+<h4>Mat Settings Button<a class="headerlink" href="#mat-settings-button" title="Permalink to this heading"></a></h4>
+<p>Very useful in Eevee Render!</p>
+<a class="reference internal image-reference" href="_images/so_mat_settings_button.webp"><img alt="So Mat Settings Button" class="align-center" src="_images/so_mat_settings_button.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This button is visible only if you have already applied a Shader Overlay</p>
+</div>
+<p>Mat Settings Button gives you access to the settings of the material you have applied as Shader Overlay, this is useful
+to change the parameters on all materials</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Important use case: If you have applied a Shader Overlay with transparencies and you are in Eevee mode,
+through this panel it gives you the possibility to set the <strong>Blend</strong> and <strong>Shadow</strong></p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="material-settings-panel">
+<h4>Material Settings Panel<a class="headerlink" href="#material-settings-panel" title="Permalink to this heading"></a></h4>
+<p>The Material Settings Panel is visible once the button previously described is pressed.</p>
+<a class="reference internal image-reference" href="_images/so_material_settings_panel.webp"><img alt="So Material Settings Panel" class="align-center" src="_images/so_material_settings_panel.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>It allows you to set the material settings on all the materials to which the Shader Overlay has been applied, in
+so that all materials that contain the Shader Overlay will have the same settings.</p>
+<a class="reference internal image-reference" href="_images/so_blender_mat_settings.webp"><img alt="So Blender Mat Settings" class="align-center" src="_images/so_blender_mat_settings.webp" style="width: 400px;" /></a>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In the image above there is an example of what the settings in the Material Settings panel modify to the materials
+that contain the Shader Overlay.
+Once the Shader Overlay has been removed, the settings of the materials return to those you were working with.</p>
+</div>
+<p><strong>Here is the explanation of the properties contained in the Material Settings Panel:</strong></p>
+<ul class="simple">
+<li><p><strong>Restore Material Settings:</strong> Restore the material settings.</p></li>
+<li><p><strong>Backface Culling:</strong> If active Hide the back faces of the mesh.</p></li>
+<li><p><strong>Blend Mode:</strong> Set the Blend Mode of the material. Blend methods described here <a class="reference internal" href="material_editor.html#me-transparent-mode"><span class="std std-ref">Transparent Mode</span></a></p></li>
+<li><p><strong>Shadow Mode:</strong> Set the Shadow Mode of the material. Shadow methods described here <a class="reference internal" href="material_editor.html#me-transparent-mode"><span class="std std-ref">Transparent Mode</span></a></p></li>
+<li><p><strong>Clip Threshold:</strong> A pixels is rendered only if its alpha value is above this threshold.</p></li>
+<li><p><strong>Show Backface:</strong> Show the back faces of the mesh.</p></li>
+<li><p><strong>Screen Space Reflections:</strong> Enable Screen Space Reflections.</p></li>
+<li><p><strong>Refraction Depth:</strong> Set the depth of the refraction.</p></li>
+<li><p><strong>Subsurface Translucent:</strong> Enable Subsurface Translucent.</p></li>
+<li><p><strong>Pass Index:</strong> Set the Pass Index of the material.</p></li>
+</ul>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p><strong>Press OK button</strong> in order to apply the changes to the materials</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="select-objects">
+<h4>Select Objects<a class="headerlink" href="#select-objects" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_select_objects.webp"><img alt="So Select Objects" class="align-center" src="_images/so_select_objects.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Select Objects allows you to select the objects in the scene that have the Shader Overlay applied,
+so if you have applied the Shader Overlay to 10 objects, by pressing this button you will select all 10 objects
+with that specific Shader Overlay.</p>
+</section>
 </section>
 <hr class="docutils" />
 <section id="overlay-group-name">
@@ -544,7 +616,7 @@ between different materials.</p>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
         <a href="shader_maker.html" class="btn btn-neutral float-left" title="Shader Maker Category" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="save_editor.html" class="btn btn-neutral float-right" title="Save Editor" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="material_override.html" class="btn btn-neutral float-right" title="Material Override" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
