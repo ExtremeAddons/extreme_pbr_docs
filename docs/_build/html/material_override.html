@@ -63,6 +63,14 @@
 <li class="toctree-l1"><a class="reference internal" href="shader_overlay.html">Shader Overlay</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Material Override</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#example-of-use">Example of use</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#material-override-tools">Material Override Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#add-from-library">Add From (Library)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-from-data-material">Add From (Data Material)</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-override">Add Override</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove-override">Remove Override</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mat-settings-button">Mat Settings Button</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
@@ -123,6 +131,7 @@ because it uses the <strong>Geometry Nodes</strong> system to replace the materi
 will find all the materials contained in it, and will replace them with the selected material.
 This is useful for you want to apply a single material even procedural to all selected objects.</p>
 </div>
+<hr class="docutils" />
 <section id="example-of-use">
 <h2>Example of use<a class="headerlink" href="#example-of-use" title="Permalink to this heading"></a></h2>
 <p>In the following images we see an example of a Material Override applied to all objects in the scene</p>
@@ -146,6 +155,83 @@ This is useful for you want to apply a single material even procedural to all se
 <p>Model: <strong>Apocalyptic City</strong> Author: <strong>ruslans3d</strong> from Sketchfab:
 <a class="reference external" href="https://sketchfab.com/3d-models/apocalyptic-city-a0c8f318ed6f4075a97c2e55b1272495">Link</a></p>
 </div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Any material in the Extreme PBR library or in the Project, or imported with <a class="reference internal" href="shader_maker.html#shader-maker"><span class="std std-ref">Shader Maker</span></a>, can be used as
+Material Override.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="material-override-tools">
+<h2>Material Override Tools<a class="headerlink" href="#material-override-tools" title="Permalink to this heading"></a></h2>
+<p>In this section we will see the main tools of the Material Override panel</p>
+<section id="add-from-library">
+<h3>Add From (Library)<a class="headerlink" href="#add-from-library" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/mo_add_from_library.webp"><img alt="Mo Add From Library" class="align-center" src="_images/mo_add_from_library.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In this situation, no Material Override has been applied. <strong>Add From</strong> is used to choose where you want to take the
+material to apply as a shader overlay.</p>
+<p>Add From Library allows you to add the Material Override directly from the Extreme PBR library, just select
+the material you want to apply, from the Extreme PBR library then from the <a class="reference internal" href="main_panel.html#mp-material-browser"><span class="std std-ref">Material Browser</span></a> , and press the button
+<strong>Add</strong>, explained later here: <a class="reference internal" href="#mo-add-override"><span class="std std-ref">Add Override</span></a></p>
+</section>
+<hr class="docutils" />
+<section id="add-from-data-material">
+<h3>Add From (Data Material)<a class="headerlink" href="#add-from-data-material" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/mo_add_from_data_material.webp"><img alt="Mo Add From Data Material" class="align-center" src="_images/mo_add_from_data_material.webp" style="width: 400px;" /></a>
+<p>By selecting <strong>Add From Data Material</strong> you will have the list of materials present in the current Blender project
+and you can choose the material you want to apply as Material Override from that list. Once you have selected the material
+you want to apply, press the <strong>Add</strong> button, explained later here: <a class="reference internal" href="#mo-add-override"><span class="std std-ref">Add Override</span></a></p>
+<hr class="docutils" />
+</section>
+<section id="add-override">
+<span id="mo-add-override"></span><h3>Add Override<a class="headerlink" href="#add-override" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/mo_add_override.webp"><img alt="Mo Add Override" class="align-center" src="_images/mo_add_override.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The Add button adds to the selected objects the Material Override that you have chosen from the <strong>Add From</strong> menu.
+If the Material Override is already present on the selected objects, the Add button replace the previous Shader Overlay
+with the new one.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This button adds to all the materials of the selected objects the material chosen as Material Override
+so if you have selected 10 objects and each of these has 3 materials, the material chosen as Material Override
+will be added to all 30 materials.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="remove-override">
+<h3>Remove Override<a class="headerlink" href="#remove-override" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/mo_remove_override.webp"><img alt="Mo Remove Override" class="align-center" src="_images/mo_remove_override.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The Remove button removes the Material Override from the selected objects.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>This button removes the Material Override from all the materials of the selected objects,
+so if you have selected 10 objects and each of these has 3 materials, the Material Override
+will be removed from all 30 materials.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="mat-settings-button">
+<h3>Mat Settings Button<a class="headerlink" href="#mat-settings-button" title="Permalink to this heading"></a></h3>
+<p>Very useful in Eevee Render!</p>
+<a class="reference internal image-reference" href="_images/mo_mat_settings_button.webp"><img alt="Mo Mat Settings Button" class="align-center" src="_images/mo_mat_settings_button.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This button is visible only if you have already applied a Material Override</p>
+</div>
+<p>Mat Settings Button gives you access to the settings of the material you have applied as Material Override, this is useful
+to change the parameters on all materials</p>
+</section>
 </section>
 </section>
 
