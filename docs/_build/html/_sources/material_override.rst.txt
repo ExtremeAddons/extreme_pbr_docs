@@ -1,8 +1,11 @@
+.. _material_override:
+
 Material Override
 ===================
 
 This tool is very similar to **Shader Overlay** described here: :ref:`shader_overlay` but it differs for its speed,
 because it uses the **Geometry Nodes** system to replace the materials of the selected objects.
+Material Override however unlike :ref:`shader_overlay` does not allow you to mix materials, but to replace them completely.
 
 Here an example of **Material Override** Panel in full functionality once activated:
 
@@ -12,6 +15,15 @@ Here an example of **Material Override** Panel in full functionality once activa
     :alt: Material Override Panel
 
 |
+
+.. note::
+        On all materials contained in the :ref:`material_list` to which you will apply the Material Override, a small
+        Green icon will be shown which indicates that the Material Override has been applied to that material.
+
+        .. image:: _static/_images/material_override/mo_blue_icon.webp
+            :align: center
+            :width: 400
+            :alt: Mo Blue Icon
 
 .. tip::
         You can select multiple objects at the same time, if these objects have more than one material, Material Override
@@ -237,32 +249,24 @@ Select Objects allows you to select the objects in the scene that have the Mater
 so if you have applied the Material Override to 10 objects, by pressing this button you will select all 10 objects
 with that specific Material Override.
 
+------------------------------------------------------------------------------------------------------------------------
 
+UV Mapping Type
+******************
 
+.. image:: _static/_images/material_override/mo_uv_mapping_type.webp
+    :align: center
+    :width: 400
+    :alt: Mo UV Mapping Type
 
+|
 
+By this selector you can select the type of projection to use for the Material Override.
 
+.. important::
+        Not all materials will support this feature. Texture-based materials fully support this feature
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.. seealso::
+    Refer here for an explanation of the UV Mapping Type: :ref:`me_uv_mapping_type`
 
 

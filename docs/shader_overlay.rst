@@ -3,6 +3,11 @@
 Shader Overlay
 ==================
 
+This tool is very similar to Material Override described here: :ref:`material_override` but with the difference that it
+allows you to decide how to mix the chosen material with the underlying material, it also allows you to animate the
+mixing of the chosen material with the underlying material.
+
+
 .. admonition:: Video Tutorial
     :class: youtube
 
@@ -12,6 +17,18 @@ Shader Overlay
 .. tip::
         Any material can be applied as Shader Overlay, even materials already present in the scene and that are not
         part of the Extreme PBR library.
+
+
+.. note::
+        On all materials contained in the :ref:`material_list` to which you will apply the Shader Overlay, a small
+        Green icon will be shown which indicates that the Shader Overlay has been applied to that material.
+
+        .. image:: _static/_images/shader_overlay/so_green_icon.webp
+            :align: center
+            :width: 400
+            :alt: Shader Overlay Green Icon
+
+
 
 
 Shader overlay is a very useful tool to mix all selected objects (If they have any base material)
@@ -690,30 +707,6 @@ By this selector you can select the type of projection to use for the shader ove
 
 .. seealso::
     Refer here for an explanation of the UV Mapping Type: :ref:`me_uv_mapping_type`
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

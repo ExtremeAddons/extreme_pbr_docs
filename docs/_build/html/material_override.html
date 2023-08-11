@@ -71,6 +71,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#mat-settings-button">Mat Settings Button</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#material-settings-panel">Material Settings Panel</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#select-objects">Select Objects</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#uv-mapping-type">UV Mapping Type</a></li>
 </ul>
 </li>
 </ul>
@@ -119,13 +120,20 @@
            <div itemprop="articleBody">
              
   <section id="material-override">
-<h1>Material Override<a class="headerlink" href="#material-override" title="Permalink to this heading"></a></h1>
+<span id="id1"></span><h1>Material Override<a class="headerlink" href="#material-override" title="Permalink to this heading"></a></h1>
 <p>This tool is very similar to <strong>Shader Overlay</strong> described here: <a class="reference internal" href="shader_overlay.html#shader-overlay"><span class="std std-ref">Shader Overlay</span></a> but it differs for its speed,
-because it uses the <strong>Geometry Nodes</strong> system to replace the materials of the selected objects.</p>
+because it uses the <strong>Geometry Nodes</strong> system to replace the materials of the selected objects.
+Material Override however unlike <a class="reference internal" href="shader_overlay.html#shader-overlay"><span class="std std-ref">Shader Overlay</span></a> does not allow you to mix materials, but to replace them completely.</p>
 <p>Here an example of <strong>Material Override</strong> Panel in full functionality once activated:</p>
 <a class="reference internal image-reference" href="_images/mo_material_override_panel.webp"><img alt="Material Override Panel" class="align-center" src="_images/mo_material_override_panel.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>On all materials contained in the <a class="reference internal" href="main_panel.html#material-list"><span class="std std-ref">Material List Section</span></a> to which you will apply the Material Override, a small
+Green icon will be shown which indicates that the Material Override has been applied to that material.</p>
+<a class="reference internal image-reference" href="_images/mo_blue_icon.webp"><img alt="Mo Blue Icon" class="align-center" src="_images/mo_blue_icon.webp" style="width: 400px;" /></a>
 </div>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
@@ -286,6 +294,23 @@ Once the Material Override has been removed, the settings of the materials retur
 <p>Select Objects allows you to select the objects in the scene that have the Material Override applied,
 so if you have applied the Material Override to 10 objects, by pressing this button you will select all 10 objects
 with that specific Material Override.</p>
+</section>
+<hr class="docutils" />
+<section id="uv-mapping-type">
+<h3>UV Mapping Type<a class="headerlink" href="#uv-mapping-type" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/mo_uv_mapping_type.webp"><img alt="Mo UV Mapping Type" class="align-center" src="_images/mo_uv_mapping_type.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By this selector you can select the type of projection to use for the Material Override.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Not all materials will support this feature. Texture-based materials fully support this feature</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Refer here for an explanation of the UV Mapping Type: <a class="reference internal" href="mapping_editor.html#me-uv-mapping-type"><span class="std std-ref">UV Mapping Type</span></a></p>
+</div>
 </section>
 </section>
 </section>
