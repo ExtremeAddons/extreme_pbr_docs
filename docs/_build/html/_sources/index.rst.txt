@@ -50,6 +50,7 @@ Welcome to Extreme PBR's documentation!
    displacement
    shader_maker
    shader_overlay
+   material_override
    save_editor
    preferences
 

@@ -92,7 +92,13 @@
 <li class="toctree-l4"><a class="reference internal" href="#glc-random-per-object">GLC Random Per Object</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#material-layout">Material Layout</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#material-layout">Material Layout</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#material-group-name">Material Group Name</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#replace">Replace</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#material-properties">Material Properties</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#uv-mapping-type">UV Mapping Type</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -187,7 +193,7 @@ material mentioned.</p>
 <hr class="docutils" />
 <section id="add-from-library">
 <h3>Add From Library<a class="headerlink" href="#add-from-library" title="Permalink to this heading"></a></h3>
-<a class="reference internal image-reference" href="_images/so_add_from.webp"><img alt="Shader Overlay Add From" class="align-center" src="_images/so_add_from.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_add_from.webp"><img alt="Shader Overlay Add From" class="align-center" src="_images/so_add_from.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -200,7 +206,7 @@ the material you want to apply, from the Extreme PBR library then from the <a cl
 <hr class="docutils" />
 <section id="add-from-data-material">
 <h3>Add from Data Material<a class="headerlink" href="#add-from-data-material" title="Permalink to this heading"></a></h3>
-<a class="reference internal image-reference" href="_images/so_add_from_data_material.webp"><img alt="Shader Overlay Add From Data Material" class="align-center" src="_images/so_add_from_data_material.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_add_from_data_material.webp"><img alt="Shader Overlay Add From Data Material" class="align-center" src="_images/so_add_from_data_material.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -211,7 +217,7 @@ you want to apply, press the <strong>Add</strong> button, explained later here: 
 <hr class="docutils" />
 <section id="mixer-node">
 <h3>Mixer Node<a class="headerlink" href="#mixer-node" title="Permalink to this heading"></a></h3>
-<a class="reference internal image-reference" href="_images/so_mixer_node.webp"><img alt="Shader Overlay Mixer Node" class="align-center" src="_images/so_mixer_node.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_mixer_node.webp"><img alt="Shader Overlay Mixer Node" class="align-center" src="_images/so_mixer_node.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -233,7 +239,7 @@ Replace Mixer:</p>
 </section>
 <section id="add">
 <span id="so-add"></span><h3>Add<a class="headerlink" href="#add" title="Permalink to this heading"></a></h3>
-<a class="reference internal image-reference" href="_images/so_add.webp"><img alt="Shader Overlay Add" class="align-center" src="_images/so_add.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_add.webp"><img alt="Shader Overlay Add" class="align-center" src="_images/so_add.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -250,7 +256,7 @@ will be added to all 30 materials.</p>
 </section>
 <section id="remove">
 <span id="so-remove"></span><h3>Remove<a class="headerlink" href="#remove" title="Permalink to this heading"></a></h3>
-<a class="reference internal image-reference" href="_images/so_remove.webp"><img alt="Shader Overlay Remove" class="align-center" src="_images/so_remove.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_remove.webp"><img alt="Shader Overlay Remove" class="align-center" src="_images/so_remove.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -265,18 +271,21 @@ will be removed from all 30 materials.</p>
 <hr class="docutils" />
 <section id="overlay-group-name">
 <h3>Overlay group (Name)<a class="headerlink" href="#overlay-group-name" title="Permalink to this heading"></a></h3>
-<a class="reference internal image-reference" href="_images/so_overlay_group_name.webp"><img alt="Shader Overlay Overlay group (Name)" class="align-center" src="_images/so_overlay_group_name.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_overlay_group_name.webp"><img alt="Shader Overlay Overlay group (Name)" class="align-center" src="_images/so_overlay_group_name.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Once you have applied any Shader Overlay, a group will be created with the name of the chosen material and a suffix
 <strong>“_Overlay”</strong>, from this text box you can view the name, and also modify it, by clicking in the text field
 and writing the name you prefer.</p>
+<p>This group will be the group that will contain the Shader Overlay material, and the mixer node that will allow you to mix the material
+this group is the one that allows you to modify the Shader Overlay for all the materials to which it has been applied.</p>
+<p>In short, the name will be composed of the name of the Material you have chosen as Shader Overlay, and the suffix <strong>“_Overlay”</strong>,</p>
 <hr class="docutils" />
 </section>
 <section id="shader-gradient">
 <span id="so-shader-gradient"></span><h3>Shader Gradient<a class="headerlink" href="#shader-gradient" title="Permalink to this heading"></a></h3>
-<a class="reference internal image-reference" href="_images/so_shader_gradient.webp"><img alt="Shader Overlay Shader Gradient" class="align-center" src="_images/so_shader_gradient.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_shader_gradient.webp"><img alt="Shader Overlay Shader Gradient" class="align-center" src="_images/so_shader_gradient.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -284,7 +293,7 @@ and writing the name you prefer.</p>
 <hr class="docutils" />
 <section id="hide-show">
 <span id="so-mg-hide-show"></span><h4>Hide / Show<a class="headerlink" href="#hide-show" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/so_mg_hide.webp"><img alt="Shader Overlay Hide / Show" class="align-center" src="_images/so_mg_hide.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_mg_hide.webp"><img alt="Shader Overlay Hide / Show" class="align-center" src="_images/so_mg_hide.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -293,7 +302,7 @@ and writing the name you prefer.</p>
 </section>
 <section id="reset-values">
 <span id="so-mg-reset-values"></span><h4>Reset Values<a class="headerlink" href="#reset-values" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/so_mg_reset_values.webp"><img alt="Shader Overlay Reset Values" class="align-center" src="_images/so_mg_reset_values.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_mg_reset_values.webp"><img alt="Shader Overlay Reset Values" class="align-center" src="_images/so_mg_reset_values.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -302,7 +311,7 @@ and writing the name you prefer.</p>
 </section>
 <section id="tips">
 <span id="so-mg-tips"></span><h4>Tips<a class="headerlink" href="#tips" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/so_mg_tips.webp"><img alt="Shader Overlay Tips" class="align-center" src="_images/so_mg_tips.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_mg_tips.webp"><img alt="Shader Overlay Tips" class="align-center" src="_images/so_mg_tips.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -313,7 +322,7 @@ once clicked, will show a popup window with the description of the selected prop
 </section>
 <section id="location">
 <span id="so-mg-location"></span><h4>Location<a class="headerlink" href="#location" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/so_mg_location_flip_location.webp"><img alt="Shader Overlay Location" class="align-center" src="_images/so_mg_location_flip_location.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_mg_location_flip_location.webp"><img alt="Shader Overlay Location" class="align-center" src="_images/so_mg_location_flip_location.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -326,7 +335,7 @@ once clicked, will show a popup window with the description of the selected prop
 </section>
 <section id="rotation-x-y">
 <span id="so-mg-rotation-x-y"></span><h4>Rotation X/Y<a class="headerlink" href="#rotation-x-y" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/so_mg_rotation_xy.webp"><img alt="Shader Overlay Rotation X/Y" class="align-center" src="_images/so_mg_rotation_xy.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_mg_rotation_xy.webp"><img alt="Shader Overlay Rotation X/Y" class="align-center" src="_images/so_mg_rotation_xy.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -337,7 +346,7 @@ discovery of the underlying material, with various animations.</p>
 </section>
 <section id="from-min-max">
 <span id="so-mg-from-min-max"></span><h4>From Min/Max<a class="headerlink" href="#from-min-max" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/so_mg_from_min_max.webp"><img alt="Shader Overlay From Min/Max" class="align-center" src="_images/so_mg_from_min_max.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_mg_from_min_max.webp"><img alt="Shader Overlay From Min/Max" class="align-center" src="_images/so_mg_from_min_max.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -347,7 +356,7 @@ to the underlying material.</p>
 </section>
 <section id="strength">
 <span id="so-mg-strength"></span><h4>Strength<a class="headerlink" href="#strength" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/so_mg_strength.webp"><img alt="Shader Overlay Strength" class="align-center" src="_images/so_mg_strength.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_mg_strength.webp"><img alt="Shader Overlay Strength" class="align-center" src="_images/so_mg_strength.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -362,7 +371,7 @@ to the underlying material.</p>
 </section>
 <section id="world-coordinate">
 <span id="so-mg-world-coordinate"></span><h4>World Coordinate<a class="headerlink" href="#world-coordinate" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/so_mg_world_coordinate.webp"><img alt="Shader Overlay World Coordinate" class="align-center" src="_images/so_mg_world_coordinate.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_mg_world_coordinate.webp"><img alt="Shader Overlay World Coordinate" class="align-center" src="_images/so_mg_world_coordinate.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -374,7 +383,7 @@ Shader Overlay is always at the same height on all objects to which it has been 
 </section>
 <section id="shader-gradient-glitch-v2">
 <span id="so-shader-gradient-glitch-v2"></span><h3>Shader Gradient Glitch V2<a class="headerlink" href="#shader-gradient-glitch-v2" title="Permalink to this heading"></a></h3>
-<a class="reference internal image-reference" href="_images/so_shader_gradient_glitch_v2.webp"><img alt="Shader Overlay Shader Gradient Glitch V2" class="align-center" src="_images/so_shader_gradient_glitch_v2.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_shader_gradient_glitch_v2.webp"><img alt="Shader Overlay Shader Gradient Glitch V2" class="align-center" src="_images/so_shader_gradient_glitch_v2.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -392,7 +401,7 @@ below are the references to the properties that are the same as the Shader Gradi
 <hr class="docutils" />
 <section id="glitch-on-off">
 <h4>Glitch On/Off<a class="headerlink" href="#glitch-on-off" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/so_sgg_glitch_on.webp"><img alt="Shader Overlay Glitch On/Off" class="align-center" src="_images/so_sgg_glitch_on.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_sgg_glitch_on.webp"><img alt="Shader Overlay Glitch On/Off" class="align-center" src="_images/so_sgg_glitch_on.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -402,7 +411,7 @@ Once activated, new properties will be shown to control the glitch effect.</p>
 <hr class="docutils" />
 <section id="glc-frequency">
 <h4>GLC Frequency<a class="headerlink" href="#glc-frequency" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/so_sgg_glc_frequency.webp"><img alt="Shader Overlay GLC Frequency" class="align-center" src="_images/so_sgg_glc_frequency.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_sgg_glc_frequency.webp"><img alt="Shader Overlay GLC Frequency" class="align-center" src="_images/so_sgg_glc_frequency.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -411,7 +420,7 @@ Once activated, new properties will be shown to control the glitch effect.</p>
 <hr class="docutils" />
 <section id="glc-speed">
 <h4>GLC Speed<a class="headerlink" href="#glc-speed" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/so_sgg_glc_speed.webp"><img alt="Shader Overlay GLC Speed" class="align-center" src="_images/so_sgg_glc_speed.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_sgg_glc_speed.webp"><img alt="Shader Overlay GLC Speed" class="align-center" src="_images/so_sgg_glc_speed.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -420,7 +429,7 @@ Once activated, new properties will be shown to control the glitch effect.</p>
 <hr class="docutils" />
 <section id="glc-scale-osc">
 <h4>GLC Scale Osc<a class="headerlink" href="#glc-scale-osc" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/so_sgg_glc_scale_osc.webp"><img alt="Shader Overlay GLC Scale Osc" class="align-center" src="_images/so_sgg_glc_scale_osc.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_sgg_glc_scale_osc.webp"><img alt="Shader Overlay GLC Scale Osc" class="align-center" src="_images/so_sgg_glc_scale_osc.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -430,7 +439,7 @@ the glitch animation.</p>
 <hr class="docutils" />
 <section id="glc-phase">
 <h4>GLC Phase<a class="headerlink" href="#glc-phase" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/so_sgg_glc_phase.webp"><img alt="Shader Overlay GLC Phase" class="align-center" src="_images/so_sgg_glc_phase.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_sgg_glc_phase.webp"><img alt="Shader Overlay GLC Phase" class="align-center" src="_images/so_sgg_glc_phase.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -446,7 +455,7 @@ the button <a class="reference internal" href="#glc-random-per-object"><span cla
 </section>
 <section id="glc-random-per-object">
 <span id="id2"></span><h4>GLC Random Per Object<a class="headerlink" href="#glc-random-per-object" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/so_sgg_glc_random_per_object.webp"><img alt="Shader Overlay GLC Random Per Object" class="align-center" src="_images/so_sgg_glc_random_per_object.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_sgg_glc_random_per_object.webp"><img alt="Shader Overlay GLC Random Per Object" class="align-center" src="_images/so_sgg_glc_random_per_object.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -463,7 +472,7 @@ to multiple objects.</p>
 <hr class="docutils" />
 <section id="material-layout">
 <h3>Material Layout<a class="headerlink" href="#material-layout" title="Permalink to this heading"></a></h3>
-<a class="reference internal image-reference" href="_images/so_material_layout_example.webp"><img alt="Shader Overlay Material Layout" class="align-center" src="_images/so_material_layout_example.webp" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/so_material_layout_example.webp"><img alt="Shader Overlay Material Layout" class="align-center" src="_images/so_material_layout_example.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -475,6 +484,57 @@ and for each material the name, the type of Mixer Node used, and the buttons to 
 in an orderly manner with the properties exposed as per example.
 If the properties of the material are not present, it will still be possible to use it as Shader Overlay.</p>
 </div>
+<hr class="docutils" />
+<section id="material-group-name">
+<h4>Material Group Name<a class="headerlink" href="#material-group-name" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_material_group_name.webp"><img alt="Shader Overlay Material Group Name" class="align-center" src="_images/so_material_group_name.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In this text box you will see the name of the material that has been added as Shader Overlay by default, you can modify it by clicking
+on the text field and writing the name you prefer.</p>
+</section>
+<hr class="docutils" />
+<section id="replace">
+<h4>Replace<a class="headerlink" href="#replace" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_replace_material.webp"><img alt="Shader Overlay Replace Material" class="align-center" src="_images/so_replace_material.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>From this Replace button you can replace the material that you have added as Shader Overlay, with another material of your choice.</p>
+</section>
+<hr class="docutils" />
+<section id="material-properties">
+<h4>Material Properties<a class="headerlink" href="#material-properties" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_material_properties.webp"><img alt="Shader Overlay Material Properties" class="align-center" src="_images/so_material_properties.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In this area the parameters of the material that has been added as Shader Overlay will be shown, in this case
+the material is the <strong>Blueprint 002</strong>, so the interface is designed according to the chosen material and differs
+between different materials.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Refer here for an explanation of the material interface properties: TODO link a una spegazione di interfaccia materiale</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="uv-mapping-type">
+<h4>UV Mapping Type<a class="headerlink" href="#uv-mapping-type" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_uv_mapping_type.webp"><img alt="Shader Overlay UV Mapping Type" class="align-center" src="_images/so_uv_mapping_type.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By this selector you can select the type of projection to use for the shader overlay.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Not all materials will support this feature. Texture-based materials fully support this feature</p>
+</div>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Refer here for an explanation of the UV Mapping Type: <a class="reference internal" href="mapping_editor.html#me-uv-mapping-type"><span class="std std-ref">UV Mapping Type</span></a></p>
+</div>
+</section>
 </section>
 </section>
 </section>

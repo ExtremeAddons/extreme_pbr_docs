@@ -80,7 +80,7 @@ Add From Library
 
 .. image:: _static/_images/shader_overlay/so_add_from.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Add From
 
 |
@@ -99,7 +99,7 @@ Add from Data Material
 
 .. image:: _static/_images/shader_overlay/so_add_from_data_material.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Add From Data Material
 
 |
@@ -116,7 +116,7 @@ Mixer Node
 
 .. image:: _static/_images/shader_overlay/so_mixer_node.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Mixer Node
 
 |
@@ -152,7 +152,7 @@ Add
 
 .. image:: _static/_images/shader_overlay/so_add.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Add
 
 |
@@ -176,7 +176,7 @@ Remove
 
 .. image:: _static/_images/shader_overlay/so_remove.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Remove
 
 |
@@ -196,7 +196,7 @@ Overlay group (Name)
 
 .. image:: _static/_images/shader_overlay/so_overlay_group_name.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Overlay group (Name)
 
 
@@ -209,6 +209,8 @@ and writing the name you prefer.
 This group will be the group that will contain the Shader Overlay material, and the mixer node that will allow you to mix the material
 this group is the one that allows you to modify the Shader Overlay for all the materials to which it has been applied.
 
+In short, the name will be composed of the name of the Material you have chosen as Shader Overlay, and the suffix **"_Overlay"**,
+
 ------------------------------------------------------------------------------------------------------------------------
 
 .. _so_shader_gradient:
@@ -218,7 +220,7 @@ Shader Gradient
 
 .. image:: _static/_images/shader_overlay/so_shader_gradient.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Shader Gradient
 
 |
@@ -234,7 +236,7 @@ Hide / Show
 
 .. image:: _static/_images/shader_overlay/so_mg_hide.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Hide / Show
 
 |
@@ -250,7 +252,7 @@ Reset Values
 
 .. image:: _static/_images/shader_overlay/so_mg_reset_values.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Reset Values
 
 |
@@ -266,7 +268,7 @@ Tips
 
 .. image:: _static/_images/shader_overlay/so_mg_tips.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Tips
 
 |
@@ -285,7 +287,7 @@ Location
 
 .. image:: _static/_images/shader_overlay/so_mg_location_flip_location.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Location
 
 |
@@ -308,7 +310,7 @@ Rotation X/Y
 
 .. image:: _static/_images/shader_overlay/so_mg_rotation_xy.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Rotation X/Y
 
 |
@@ -326,7 +328,7 @@ From Min/Max
 
 .. image:: _static/_images/shader_overlay/so_mg_from_min_max.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay From Min/Max
 
 |
@@ -343,7 +345,7 @@ Strength
 
 .. image:: _static/_images/shader_overlay/so_mg_strength.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Strength
 
 |
@@ -364,7 +366,7 @@ World Coordinate
 
 .. image:: _static/_images/shader_overlay/so_mg_world_coordinate.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay World Coordinate
 
 |
@@ -382,7 +384,7 @@ Shader Gradient Glitch V2
 
 .. image:: _static/_images/shader_overlay/so_shader_gradient_glitch_v2.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Shader Gradient Glitch V2
 
 |
@@ -410,7 +412,7 @@ Glitch On/Off
 
 .. image:: _static/_images/shader_overlay/so_sgg_glitch_on.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Glitch On/Off
 
 |
@@ -426,7 +428,7 @@ GLC Frequency
 
 .. image:: _static/_images/shader_overlay/so_sgg_glc_frequency.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay GLC Frequency
 
 |
@@ -440,7 +442,7 @@ GLC Speed
 
 .. image:: _static/_images/shader_overlay/so_sgg_glc_speed.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay GLC Speed
 
 |
@@ -454,7 +456,7 @@ GLC Scale Osc
 
 .. image:: _static/_images/shader_overlay/so_sgg_glc_scale_osc.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay GLC Scale Osc
 
 |
@@ -469,7 +471,7 @@ GLC Phase
 
 .. image:: _static/_images/shader_overlay/so_sgg_glc_phase.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay GLC Phase
 
 
@@ -494,7 +496,7 @@ GLC Random Per Object
 
 .. image:: _static/_images/shader_overlay/so_sgg_glc_random_per_object.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay GLC Random Per Object
 
 
@@ -517,7 +519,7 @@ Material Layout
 
 .. image:: _static/_images/shader_overlay/so_material_layout_example.webp
     :align: center
-    :width: 600
+    :width: 400
     :alt: Shader Overlay Material Layout
 
 |
@@ -534,13 +536,77 @@ and for each material the name, the type of Mixer Node used, and the buttons to 
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Material Group Name
+**********************
+
+.. image:: _static/_images/shader_overlay/so_material_group_name.webp
+    :align: center
+    :width: 400
+    :alt: Shader Overlay Material Group Name
+
+|
+
+In this text box you will see the name of the material that has been added as Shader Overlay by default, you can modify it by clicking
+on the text field and writing the name you prefer.
+
+------------------------------------------------------------------------------------------------------------------------
+
 Replace
 *********
 
-.. image:: _static/_images/shader_overlay/so_replace.webp
+.. image:: _static/_images/shader_overlay/so_replace_material.webp
     :align: center
-    :width: 600
-    :alt: Shader Overlay Replace
+    :width: 400
+    :alt: Shader Overlay Replace Material
+
+|
+
+From this Replace button you can replace the material that you have added as Shader Overlay, with another material of your choice.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Material Properties
+**********************
+
+.. image:: _static/_images/shader_overlay/so_material_properties.webp
+    :align: center
+    :width: 400
+    :alt: Shader Overlay Material Properties
+
+|
+
+In this area the parameters of the material that has been added as Shader Overlay will be shown, in this case
+the material is the **Blueprint 002**, so the interface is designed according to the chosen material and differs
+between different materials.
+
+
+.. seealso::
+    Refer here for an explanation of the material interface properties: TODO link a una spegazione di interfaccia materiale
+
+------------------------------------------------------------------------------------------------------------------------
+
+UV Mapping Type
+******************
+
+.. image:: _static/_images/shader_overlay/so_uv_mapping_type.webp
+    :align: center
+    :width: 400
+    :alt: Shader Overlay UV Mapping Type
+
+|
+
+By this selector you can select the type of projection to use for the shader overlay.
+
+.. important::
+        Not all materials will support this feature. Texture-based materials fully support this feature
+
+.. seealso::
+    Refer here for an explanation of the UV Mapping Type: :ref:`me_uv_mapping_type`
+
+
+
+
+
 
 
 

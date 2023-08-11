@@ -79,6 +79,7 @@ Using the Mapping Editor lets you use the :ref:`mapping_method_01`: **manipulati
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _me_uv_mapping_type:
 
 UV Mapping Type
 ----------------
