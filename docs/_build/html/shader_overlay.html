@@ -70,7 +70,9 @@
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#add">Add</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#remove">Remove</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#overlay-group-name">Overlay group (Name)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#shader-gradient">Shader Gradient</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#hide-show">Hide / Show</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#reset-values">Reset Values</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tips">Tips</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#location">Location</a></li>
@@ -78,9 +80,18 @@
 <li class="toctree-l4"><a class="reference internal" href="#rotation-x-y">Rotation X/Y</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#from-min-max">From Min/Max</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#strength">Strength</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#world-coordinate">World Coordinate</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#shader-gradient-glitch-v2">Shader Gradient Glitch V2</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#shader-gradient-glitch-v2">Shader Gradient Glitch V2</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#glitch-on-off">Glitch On/Off</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#glc-frequency">GLC Frequency</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#glc-speed">GLC Speed</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#glc-scale-osc">GLC Scale Osc</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#glc-phase">GLC Phase</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#glc-random-per-object">GLC Random Per Object</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -177,7 +188,7 @@ material mentioned.</p>
 <p>In this situation, no shader overlay has been applied. <strong>Add From</strong> is used to choose where you want to take the
 material to apply as a shader overlay.</p>
 <p>Add From Library allows you to add the shader overlay directly from the Extreme PBR library, just select
-the material you want to apply, from the Extreme PBR library then from the <span class="xref std std-ref">material_browser</span> , and press the button
+the material you want to apply, from the Extreme PBR library then from the <a class="reference internal" href="main_panel.html#mp-material-browser"><span class="std std-ref">Material Browser</span></a> , and press the button
 <strong>Add</strong>, explained later here: <a class="reference internal" href="#so-add"><span class="std std-ref">Add</span></a></p>
 </section>
 <hr class="docutils" />
@@ -244,6 +255,17 @@ will be added to all 30 materials.</p>
 so if you have selected 10 objects and each of these has 3 materials, the Shader Overlay
 will be removed from all 30 materials.</p>
 </div>
+</section>
+<hr class="docutils" />
+<section id="overlay-group-name">
+<h3>Overlay group (Name)<a class="headerlink" href="#overlay-group-name" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/so_overlay_group_name.webp"><img alt="Shader Overlay Overlay group (Name)" class="align-center" src="_images/so_overlay_group_name.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Once you have applied any Shader Overlay, a group will be created with the name of the chosen material and a suffix
+<strong>“_Overlay”</strong>, from this text box you can view the name, and also modify it, by clicking in the text field
+and writing the name you prefer.</p>
 <hr class="docutils" />
 </section>
 <section id="shader-gradient">
@@ -254,17 +276,26 @@ will be removed from all 30 materials.</p>
 </div>
 <p>The Shader Gradient Mixer Node allows you to mix the material with a detachment effect with the underlying material/s.</p>
 <hr class="docutils" />
+<section id="hide-show">
+<span id="so-mg-hide-show"></span><h4>Hide / Show<a class="headerlink" href="#hide-show" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_mg_hide.webp"><img alt="Shader Overlay Hide / Show" class="align-center" src="_images/so_mg_hide.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Hide/Show button allows you to hide or show the properties of the chosen mixer for the Shader Overlay.</p>
+<hr class="docutils" />
+</section>
 <section id="reset-values">
-<h4>Reset Values<a class="headerlink" href="#reset-values" title="Permalink to this heading"></a></h4>
+<span id="so-mg-reset-values"></span><h4>Reset Values<a class="headerlink" href="#reset-values" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/so_mg_reset_values.webp"><img alt="Shader Overlay Reset Values" class="align-center" src="_images/so_mg_reset_values.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>This button resets all the values of the Mixer Node to the Default state.</p>
-</section>
 <hr class="docutils" />
+</section>
 <section id="tips">
-<h4>Tips<a class="headerlink" href="#tips" title="Permalink to this heading"></a></h4>
+<span id="so-mg-tips"></span><h4>Tips<a class="headerlink" href="#tips" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/so_mg_tips.webp"><img alt="Shader Overlay Tips" class="align-center" src="_images/so_mg_tips.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -272,10 +303,10 @@ will be removed from all 30 materials.</p>
 <p>This button will show the Tips related to the properties of the Mixer Node, additional buttons will be shown that
 once clicked, will show a popup window with the description of the selected property.</p>
 <p>In order to hide, press the Tips button again.</p>
-</section>
 <hr class="docutils" />
+</section>
 <section id="location">
-<h4>Location<a class="headerlink" href="#location" title="Permalink to this heading"></a></h4>
+<span id="so-mg-location"></span><h4>Location<a class="headerlink" href="#location" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/so_mg_location_flip_location.webp"><img alt="Shader Overlay Location" class="align-center" src="_images/so_mg_location_flip_location.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -283,12 +314,12 @@ once clicked, will show a popup window with the description of the selected prop
 <p>Location, allows you to adjust the position of the Shader Overlay material relative to the underlying material.</p>
 </section>
 <section id="flip-location">
-<h4>Flip Location<a class="headerlink" href="#flip-location" title="Permalink to this heading"></a></h4>
+<span id="so-mg-flip-location"></span><h4>Flip Location<a class="headerlink" href="#flip-location" title="Permalink to this heading"></a></h4>
 <p>If you activate the Flip Location, the position of the Shader Overlay material is inverted with respect to the set position.</p>
-</section>
 <hr class="docutils" />
+</section>
 <section id="rotation-x-y">
-<h4>Rotation X/Y<a class="headerlink" href="#rotation-x-y" title="Permalink to this heading"></a></h4>
+<span id="so-mg-rotation-x-y"></span><h4>Rotation X/Y<a class="headerlink" href="#rotation-x-y" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/so_mg_rotation_xy.webp"><img alt="Shader Overlay Rotation X/Y" class="align-center" src="_images/so_mg_rotation_xy.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -296,20 +327,20 @@ once clicked, will show a popup window with the description of the selected prop
 <p>These 2 sliders allow you to rotate the detachment of the Shader Overlay material with respect to the underlying material.
 This allows you to tilt the Shader Overlay material, so that you can create animations of coverage or
 discovery of the underlying material, with various animations.</p>
-</section>
 <hr class="docutils" />
+</section>
 <section id="from-min-max">
-<h4>From Min/Max<a class="headerlink" href="#from-min-max" title="Permalink to this heading"></a></h4>
+<span id="so-mg-from-min-max"></span><h4>From Min/Max<a class="headerlink" href="#from-min-max" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/so_mg_from_min_max.webp"><img alt="Shader Overlay From Min/Max" class="align-center" src="_images/so_mg_from_min_max.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>These 2 sliders allow you to adjust and therefore fade less the detachment of the Shader Overlay material with respect
 to the underlying material.</p>
-</section>
 <hr class="docutils" />
+</section>
 <section id="strength">
-<h4>Strength<a class="headerlink" href="#strength" title="Permalink to this heading"></a></h4>
+<span id="so-mg-strength"></span><h4>Strength<a class="headerlink" href="#strength" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/so_mg_strength.webp"><img alt="Shader Overlay Strength" class="align-center" src="_images/so_mg_strength.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -323,10 +354,105 @@ to the underlying material.</p>
 </ul>
 <hr class="docutils" />
 </section>
+<section id="world-coordinate">
+<span id="so-mg-world-coordinate"></span><h4>World Coordinate<a class="headerlink" href="#world-coordinate" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_mg_world_coordinate.webp"><img alt="Shader Overlay World Coordinate" class="align-center" src="_images/so_mg_world_coordinate.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>If Active, the mixer will use the world coordinates for the positioning of the Shader Overlay material,
+this is very useful for leveling the Shader Overlay material on all selected objects, so that the material
+Shader Overlay is always at the same height on all objects to which it has been applied.</p>
+<hr class="docutils" />
+</section>
 </section>
 <section id="shader-gradient-glitch-v2">
 <span id="so-shader-gradient-glitch-v2"></span><h3>Shader Gradient Glitch V2<a class="headerlink" href="#shader-gradient-glitch-v2" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/so_shader_gradient_glitch_v2.webp"><img alt="Shader Overlay Shader Gradient Glitch V2" class="align-center" src="_images/so_shader_gradient_glitch_v2.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The Shader Gradient Glitch V2 mixer shares many of the properties of the Shader Gradient mixer,
+below are the references to the properties that are the same as the Shader Gradient Mixer:</p>
+<p><strong>Hide / Show</strong> <a class="reference internal" href="#so-mg-hide-show"><span class="std std-ref">Hide / Show</span></a>
+<strong>Reset Values</strong> <a class="reference internal" href="#so-mg-reset-values"><span class="std std-ref">Reset Values</span></a>
+<strong>Tips</strong> <a class="reference internal" href="#so-mg-tips"><span class="std std-ref">Tips</span></a>
+<strong>Location</strong> <a class="reference internal" href="#so-mg-location"><span class="std std-ref">Location</span></a>
+<strong>Flip Location</strong> <a class="reference internal" href="#so-mg-flip-location"><span class="std std-ref">Flip Location</span></a>
+<strong>Rotation X/Y</strong> <a class="reference internal" href="#so-mg-rotation-x-y"><span class="std std-ref">Rotation X/Y</span></a>
+<strong>From Min/Max</strong> <a class="reference internal" href="#so-mg-from-min-max"><span class="std std-ref">From Min/Max</span></a>
+<strong>Strength</strong> <a class="reference internal" href="#so-mg-strength"><span class="std std-ref">Strength</span></a>
+<strong>World Coordinate</strong> <a class="reference internal" href="#so-mg-world-coordinate"><span class="std std-ref">World Coordinate</span></a></p>
+<hr class="docutils" />
+<section id="glitch-on-off">
+<h4>Glitch On/Off<a class="headerlink" href="#glitch-on-off" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_sgg_glitch_on.webp"><img alt="Shader Overlay Glitch On/Off" class="align-center" src="_images/so_sgg_glitch_on.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Glitch On/Off gives you the possibility to activate and deactivate the glitch effect of the Shader Overlay material.
+Once activated, new properties will be shown to control the glitch effect.</p>
+</section>
+<hr class="docutils" />
+<section id="glc-frequency">
+<h4>GLC Frequency<a class="headerlink" href="#glc-frequency" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_sgg_glc_frequency.webp"><img alt="Shader Overlay GLC Frequency" class="align-center" src="_images/so_sgg_glc_frequency.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>GLC (Glitch) Frequency allows you to adjust the frequency of the glitch effect.</p>
+</section>
+<hr class="docutils" />
+<section id="glc-speed">
+<h4>GLC Speed<a class="headerlink" href="#glc-speed" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_sgg_glc_speed.webp"><img alt="Shader Overlay GLC Speed" class="align-center" src="_images/so_sgg_glc_speed.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>GLC (Glitch) Speed allows you to adjust the speed of the glitch effect, the higher the value, the faster the glitch effect.</p>
+</section>
+<hr class="docutils" />
+<section id="glc-scale-osc">
+<h4>GLC Scale Osc<a class="headerlink" href="#glc-scale-osc" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_sgg_glc_scale_osc.webp"><img alt="Shader Overlay GLC Scale Osc" class="align-center" src="_images/so_sgg_glc_scale_osc.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>GLC (Glich) Scale Osc allows you to adjust the scale Oscillator of the glitch effect. The oscillator is the one that generates
+the glitch animation.</p>
+</section>
+<hr class="docutils" />
+<section id="glc-phase">
+<h4>GLC Phase<a class="headerlink" href="#glc-phase" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_sgg_glc_phase.webp"><img alt="Shader Overlay GLC Phase" class="align-center" src="_images/so_sgg_glc_phase.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>GLC (Glitch) Phase allows you to adjust the phase of the glitch effect. This allows you to shift the glitch oscillator,
+in case you have applied more Shader Overlay <strong>DIFFERENT</strong> on objects, and you want to de-synchronize the glitch oscillator.</p>
+<p>This is useful to avoid an annoying glitch synchronization effect.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you have applied the same Shader Overlay on different objects, and you want to de-synchronize, just use
+the button <a class="reference internal" href="#glc-random-per-object"><span class="std std-ref">GLC Random Per Object</span></a></p>
+</div>
+<hr class="docutils" />
+</section>
+<section id="glc-random-per-object">
+<span id="id2"></span><h4>GLC Random Per Object<a class="headerlink" href="#glc-random-per-object" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/so_sgg_glc_random_per_object.webp"><img alt="Shader Overlay GLC Random Per Object" class="align-center" src="_images/so_sgg_glc_random_per_object.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button, if activated, makes the glitch effect on the objects to which it has been applied <strong>the same Shader Overlay</strong>
+randomly, this allows you to de-synchronize the glitch effect, if you want to apply the same Shader Overlay
+to multiple objects.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To apply the same Shader Overlay to multiple objects, select the objects of interest and press the button
+<strong>Add</strong> in the <a class="reference internal" href="#so-add"><span class="std std-ref">Add</span></a> section</p>
+</div>
+</section>
 </section>
 </section>
 </section>

@@ -84,7 +84,7 @@ In this situation, no shader overlay has been applied. **Add From** is used to c
 material to apply as a shader overlay.
 
 Add From Library allows you to add the shader overlay directly from the Extreme PBR library, just select
-the material you want to apply, from the Extreme PBR library then from the :ref:`material_browser` , and press the button
+the material you want to apply, from the Extreme PBR library then from the :ref:`mp_material_browser` , and press the button
 **Add**, explained later here: :ref:`so_add`
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -186,6 +186,23 @@ The Remove button removes the Shader Overlay from the selected objects.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Overlay group (Name)
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. image:: _static/_images/shader_overlay/so_overlay_group_name.webp
+    :align: center
+    :width: 600
+    :alt: Shader Overlay Overlay group (Name)
+
+
+|
+
+Once you have applied any Shader Overlay, a group will be created with the name of the chosen material and a suffix
+**"_Overlay"**, from this text box you can view the name, and also modify it, by clicking in the text field
+and writing the name you prefer.
+
+------------------------------------------------------------------------------------------------------------------------
+
 .. _so_shader_gradient:
 
 Shader Gradient
@@ -202,6 +219,24 @@ The Shader Gradient Mixer Node allows you to mix the material with a detachment 
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _so_mg_hide_show:
+
+Hide / Show
+**************
+
+.. image:: _static/_images/shader_overlay/so_mg_hide.webp
+    :align: center
+    :width: 600
+    :alt: Shader Overlay Hide / Show
+
+|
+
+Hide/Show button allows you to hide or show the properties of the chosen mixer for the Shader Overlay.
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _so_mg_reset_values:
+
 Reset Values
 ****************
 
@@ -215,6 +250,8 @@ Reset Values
 This button resets all the values of the Mixer Node to the Default state.
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _so_mg_tips:
 
 Tips
 ********
@@ -233,6 +270,8 @@ In order to hide, press the Tips button again.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _so_mg_location:
+
 Location
 ************
 
@@ -245,12 +284,16 @@ Location
 
 Location, allows you to adjust the position of the Shader Overlay material relative to the underlying material.
 
+.. _so_mg_flip_location:
+
 Flip Location
 ****************
 
 If you activate the Flip Location, the position of the Shader Overlay material is inverted with respect to the set position.
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _so_mg_rotation_x_y:
 
 Rotation X/Y
 **************
@@ -268,6 +311,8 @@ discovery of the underlying material, with various animations.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _so_mg_from_min_max:
+
 From Min/Max
 ****************
 
@@ -282,6 +327,8 @@ These 2 sliders allow you to adjust and therefore fade less the detachment of th
 to the underlying material.
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _so_mg_strength:
 
 Strength
 ************
@@ -302,6 +349,24 @@ Strength Slider property allows you to modify the strength of the Shader Overlay
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _so_mg_world_coordinate:
+
+World Coordinate
+******************
+
+.. image:: _static/_images/shader_overlay/so_mg_world_coordinate.webp
+    :align: center
+    :width: 600
+    :alt: Shader Overlay World Coordinate
+
+|
+
+If Active, the mixer will use the world coordinates for the positioning of the Shader Overlay material,
+this is very useful for leveling the Shader Overlay material on all selected objects, so that the material
+Shader Overlay is always at the same height on all objects to which it has been applied.
+
+------------------------------------------------------------------------------------------------------------------------
+
 .. _so_shader_gradient_glitch_v2:
 
 Shader Gradient Glitch V2
@@ -311,6 +376,138 @@ Shader Gradient Glitch V2
     :align: center
     :width: 600
     :alt: Shader Overlay Shader Gradient Glitch V2
+
+|
+
+
+The Shader Gradient Glitch V2 mixer shares many of the properties of the Shader Gradient mixer,
+below are the references to the properties that are the same as the Shader Gradient Mixer:
+
+**Hide / Show** :ref:`so_mg_hide_show`
+**Reset Values** :ref:`so_mg_reset_values`
+**Tips** :ref:`so_mg_tips`
+**Location** :ref:`so_mg_location`
+**Flip Location** :ref:`so_mg_flip_location`
+**Rotation X/Y** :ref:`so_mg_rotation_x_y`
+**From Min/Max** :ref:`so_mg_from_min_max`
+**Strength** :ref:`so_mg_strength`
+**World Coordinate** :ref:`so_mg_world_coordinate`
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Glitch On/Off
+***************
+
+
+.. image:: _static/_images/shader_overlay/so_sgg_glitch_on.webp
+    :align: center
+    :width: 600
+    :alt: Shader Overlay Glitch On/Off
+
+|
+
+Glitch On/Off gives you the possibility to activate and deactivate the glitch effect of the Shader Overlay material.
+Once activated, new properties will be shown to control the glitch effect.
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+GLC Frequency
+****************
+
+.. image:: _static/_images/shader_overlay/so_sgg_glc_frequency.webp
+    :align: center
+    :width: 600
+    :alt: Shader Overlay GLC Frequency
+
+|
+
+GLC (Glitch) Frequency allows you to adjust the frequency of the glitch effect.
+
+------------------------------------------------------------------------------------------------------------------------
+
+GLC Speed
+***********
+
+.. image:: _static/_images/shader_overlay/so_sgg_glc_speed.webp
+    :align: center
+    :width: 600
+    :alt: Shader Overlay GLC Speed
+
+|
+
+GLC (Glitch) Speed allows you to adjust the speed of the glitch effect, the higher the value, the faster the glitch effect.
+
+------------------------------------------------------------------------------------------------------------------------
+
+GLC Scale Osc
+***************
+
+.. image:: _static/_images/shader_overlay/so_sgg_glc_scale_osc.webp
+    :align: center
+    :width: 600
+    :alt: Shader Overlay GLC Scale Osc
+
+|
+
+GLC (Glich) Scale Osc allows you to adjust the scale Oscillator of the glitch effect. The oscillator is the one that generates
+the glitch animation.
+
+------------------------------------------------------------------------------------------------------------------------
+
+GLC Phase
+************
+
+.. image:: _static/_images/shader_overlay/so_sgg_glc_phase.webp
+    :align: center
+    :width: 600
+    :alt: Shader Overlay GLC Phase
+
+
+|
+
+GLC (Glitch) Phase allows you to adjust the phase of the glitch effect. This allows you to shift the glitch oscillator,
+in case you have applied more Shader Overlay **DIFFERENT** on objects, and you want to de-synchronize the glitch oscillator.
+
+This is useful to avoid an annoying glitch synchronization effect.
+
+
+.. note::
+        If you have applied the same Shader Overlay on different objects, and you want to de-synchronize, just use
+        the button :ref:`glc_random_per_object`
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _glc_random_per_object:
+
+GLC Random Per Object
+************************
+
+.. image:: _static/_images/shader_overlay/so_sgg_glc_random_per_object.webp
+    :align: center
+    :width: 600
+    :alt: Shader Overlay GLC Random Per Object
+
+
+|
+
+This button, if activated, makes the glitch effect on the objects to which it has been applied **the same Shader Overlay**
+randomly, this allows you to de-synchronize the glitch effect, if you want to apply the same Shader Overlay
+to multiple objects.
+
+.. tip::
+        To apply the same Shader Overlay to multiple objects, select the objects of interest and press the button
+        **Add** in the :ref:`so_add` section
+
+
+
+
+
+
+
+
+
 
 
 

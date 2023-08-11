@@ -111,14 +111,20 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapping_editor.html">Mapping Editor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="material_editor.html">Material Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material_editor.html">Material Editor (Nexus)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="texture_manager.html">Texture Manager Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="texture_paint.html">Texture Paint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paint_tools.html">Paint Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="color_lab.html">Color Lab</a></li>
 <li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shader_maker.html">Shader Maker Category</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shader_overlay.html">Shader Overlay</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="video_tutorials.html">Tutorials</a></li>
+<li class="toctree-l1"><a class="reference internal" href="video_tutorials.html">Video Tutorials</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">FAQs &amp; Troubleshooting: 💡</span></p>
 <ul>
@@ -165,7 +171,7 @@ this guide: TODO: Inserire link alla guida di aggiornamento</p>
 <tr class="row-odd"><td></td>
 <td><ol class="arabic simple">
 <li><p><a class="reference internal" href="#libraries-selector"><span class="std std-ref">Libraries selector</span></a></p></li>
-<li><p><a class="reference internal" href="#material-browser"><span class="std std-ref">Material Browser</span></a></p></li>
+<li><p><a class="reference internal" href="#mp-material-browser"><span class="std std-ref">Material Browser</span></a></p></li>
 <li><p><a class="reference internal" href="#tag-search-size-selector"><span class="std std-ref">Tag Search Size Selector</span></a></p></li>
 <li><p><a class="reference internal" href="#add-remove-buttons"><span class="std std-ref">Add Replace Remove Buttons</span></a></p></li>
 <li><p><a class="reference internal" href="#material-list"><span class="std std-ref">Material List Section</span></a></p></li>
@@ -235,7 +241,7 @@ and the “User” library, which is the library where you can add your saved ba
 </section>
 </section>
 <section id="material-browser">
-<span id="id3"></span><h2>Material Browser<a class="headerlink" href="#material-browser" title="Permalink to this heading"></a></h2>
+<span id="mp-material-browser"></span><h2>Material Browser<a class="headerlink" href="#material-browser" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="_images/material_browser_01.png"><img alt="Material Browser" class="align-center" src="_images/material_browser_01.png" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -291,7 +297,7 @@ in addition, it also reloads the interface icons</p>
 </section>
 </section>
 <section id="tag-search-size-selector">
-<span id="id4"></span><h2>Tag Search Size Selector<a class="headerlink" href="#tag-search-size-selector" title="Permalink to this heading"></a></h2>
+<span id="id3"></span><h2>Tag Search Size Selector<a class="headerlink" href="#tag-search-size-selector" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="_images/tag_search_size_selector_01.png"><img alt="Tag Search Size Selector" class="align-center" src="_images/tag_search_size_selector_01.png" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -507,7 +513,7 @@ There are also other buttons that we will see below.</p>
 <hr class="docutils" />
 </section>
 <section id="displace-on-off">
-<span id="id5"></span><h3>Displace On/Off<a class="headerlink" href="#displace-on-off" title="Permalink to this heading"></a></h3>
+<span id="id4"></span><h3>Displace On/Off<a class="headerlink" href="#displace-on-off" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/displace_on_off_button_01.png"><img alt="Displace On/Off 01" class="align-center" src="_images/displace_on_off_button_01.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -563,7 +569,7 @@ of materials present in the current project <strong>bpy.data.materials</strong> 
 <hr class="docutils" />
 </section>
 <section id="duplicate-material">
-<span id="id6"></span><h3>Duplicate Material<a class="headerlink" href="#duplicate-material" title="Permalink to this heading"></a></h3>
+<span id="id5"></span><h3>Duplicate Material<a class="headerlink" href="#duplicate-material" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/duplicate_material_01.png"><img alt="Duplicate Material 01" class="align-center" src="_images/duplicate_material_01.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -577,7 +583,7 @@ This function also duplicates the groups or images contained in the material nod
 </section>
 </section>
 <section id="box-utility">
-<span id="id7"></span><h2>Box Utility<a class="headerlink" href="#box-utility" title="Permalink to this heading"></a></h2>
+<span id="id6"></span><h2>Box Utility<a class="headerlink" href="#box-utility" title="Permalink to this heading"></a></h2>
 <p>This box contains some very useful functions of Extreme PBR, the buttons in this box may vary depending on the context you are in,
 for example, if you have selected an object or not.</p>
 <a class="reference internal image-reference" href="_images/box_utility_01.png"><img alt="Box Utility 01" class="align-center" src="_images/box_utility_01.png" style="width: 800px;" /></a>
@@ -689,7 +695,7 @@ is a little less sharp, so I added some edges to “Accompany” the displacemen
 <hr class="docutils" />
 </section>
 <section id="bake-editor-button">
-<span id="id8"></span><h3>Bake Editor Button<a class="headerlink" href="#bake-editor-button" title="Permalink to this heading"></a></h3>
+<span id="id7"></span><h3>Bake Editor Button<a class="headerlink" href="#bake-editor-button" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/bake_editor_button_01.png"><img alt="Bake Editor Button 01" class="align-center" src="_images/bake_editor_button_01.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -699,7 +705,7 @@ is a little less sharp, so I added some edges to “Accompany” the displacemen
 <hr class="docutils" />
 </section>
 <section id="mapping-editor-button">
-<span id="id9"></span><h3>Mapping Editor Button<a class="headerlink" href="#mapping-editor-button" title="Permalink to this heading"></a></h3>
+<span id="id8"></span><h3>Mapping Editor Button<a class="headerlink" href="#mapping-editor-button" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/mapping_editor_button_01.png"><img alt="Mapping Editor Button 01" class="align-center" src="_images/mapping_editor_button_01.png" style="width: 400px;" /></a>
 <p>This button allows you to access the Mapping Editor panel, which allows you to edit the UV mapping of the active object.
 You can find the section dedicated to the Mapping Editor here: <a class="reference internal" href="mapping_editor.html#mapping-editor-panel"><span class="std std-ref">Mapping Editor</span></a></p>

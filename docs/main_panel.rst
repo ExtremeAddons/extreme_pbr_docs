@@ -12,7 +12,7 @@ this guide: TODO: Inserire link alla guida di aggiornamento
 
 +--+-------------------------------------+-+
 |  |  1. :ref:`libraries_selector`       | |
-|  |  2. :ref:`material_browser`         | |
+|  |  2. :ref:`mp_material_browser`      | |
 |  |  3. :ref:`tag_search_size_selector` | |
 |  |  4. :ref:`add_remove_buttons`       | |
 |  |  5. :ref:`material_list`            | |
@@ -121,7 +121,7 @@ This allows you to select the category (Each library will have its own category)
 
 ------------------------------------------------------------------------------------------------------------------------
 
-.. _material_browser:
+.. _mp_material_browser:
 
 Material Browser
 -------------------
