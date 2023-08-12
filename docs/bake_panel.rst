@@ -3,6 +3,11 @@
 Bake Editor Panel
 ===================
 
+.. admonition:: Video Tutorial
+    :class: youtube
+
+    Here you can find a tutorial about the Bake: :ref:`how_to_bake_in_the_nexus_version`
+
 Introduction
 --------------
 
@@ -77,7 +82,7 @@ slightly different appearance in the **Lighting** section
 
 .. image:: _static/_images/bake_panel/bake_editor_modes_01.jpg
     :align: center
-    :width: 800
+    :width: 600
     :alt: Bake Editor Panel 01
 
 

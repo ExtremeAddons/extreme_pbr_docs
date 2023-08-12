@@ -1,8 +1,9 @@
 
 .. _material_editor:
 
-Material Editor (Nexus)
-=========================
+=================
+Material Editor
+=================
 
 .. seealso::
 
@@ -26,7 +27,7 @@ From this panel you can also access painting and many other features!
 ------------------------------------------------------------------------------------------------------------------------
 
 Material Nexus type
---------------------
+====================
 
 
 If you are in Nexus mode, or have applied materials that support nexus modules, The panel looks like this:
@@ -38,6 +39,16 @@ If you are in Nexus mode, or have applied materials that support nexus modules, 
     :width: 400
     :alt: Material Editor Before Add Module
 
+|
+
+Here an example of the Blender node tree with an Extreme PBR Nexus material containing 2 modules and 2 Fx Layers (related to the modules)
+
+.. image:: _static/_images/material_editor/nexus_nodes_system.webp
+    :align: center
+    :width: 800
+    :alt: Nexus Nodes System
+
+Don't worry, everything is managed through the Extreme PBR panel as shown in the previous photo to this one!
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -1669,6 +1680,40 @@ For all the properties that are highlighted, you already have a complete descrip
 **Module Material Panel** all the properties, in fact, are the same, so I will not repeat them, but I refer you to
 the paragraph **Module Material Panel** :ref:`module_material_panel`
 
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _me_simple_pbr_type:
+
+Material Editor (Simple PBR)
+=============================
+
+This is the Material Editor panel when you apply a material with the **Simple PBR** method, to choose to apply
+the material with the **Simple PBR** method you have to set the material application method to **Simple PBR** here
+described: TODO: put link to the paragraph on how to apply the material
+
+.. image:: _static/_images/material_editor/me_simple_pbr_type.webp
+    :align: center
+    :width: 400
+    :alt: Material Editor Simple PBR Type
+
+|
+
+This panel will be drawn on the **Simple PBR** node standard of Extreme PBR. The Simple PBR node tree is this:
+
+.. image:: _static/_images/material_editor/me_simple_pbr_node_tree_example.webp
+    :align: center
+    :width: 800
+    :alt: Material Editor Simple PBR Node Tree Example
+
+|
+
+.. important::
+        The Simple PBR version is a simplified version of the Nexus version, so it does not have all the properties
+        that the Nexus version has, but only the essentials to be able to create and manage the material.
+        This type of material (Simple PBR) is much faster to manage, and much faster to render. So
+        if you need speed, and you don't need all the properties that the Nexus version has, especially for
+        as regards painting, then I recommend using the Simple PBR version.
 
 
 

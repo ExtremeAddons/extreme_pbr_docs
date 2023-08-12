@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Material Editor (Nexus) &mdash; Extreme PBR 4.1.100 documentation</title>
+  <title>Material Editor &mdash; Extreme PBR 4.1.100 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
@@ -53,117 +53,63 @@
 <li class="toctree-l1"><a class="reference internal" href="main_panel.html">Main Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapping_editor.html">Mapping Editor</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Material Editor (Nexus)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#material-nexus-type">Material Nexus type</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#add-module">Add Module</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#module-material-panel">Module Material Panel</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#show-hide-group">Show / Hide Group</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#search-module">Search Module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#module-name-group-name">Module Name (Group Name)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#replace-module">Replace Module</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#clip-texture">Clip Texture</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#reset-values">Reset Values</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#info">Info</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#tips">Tips</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#texture-manager-button">Texture Manager Button</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#diffuse-color">Diffuse Color</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#color-lab-button">Color Lab Button</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#colorize-strength">Colorize Strength</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#colorize-sample">Colorize Sample</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#emission">Emission</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#transparent">Transparent</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#transparent-mode">Transparent Mode</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Material Editor</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#material-nexus-type">Material Nexus type</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#add-module">Add Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-material-panel">Module Material Panel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#show-hide-group">Show / Hide Group</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#search-module">Search Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#module-name-group-name">Module Name (Group Name)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#replace-module">Replace Module</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#clip-texture">Clip Texture</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reset-values">Reset Values</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#info">Info</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#tips">Tips</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#texture-manager-button">Texture Manager Button</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#diffuse-color">Diffuse Color</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#color-lab-button">Color Lab Button</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#colorize-strength">Colorize Strength</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#colorize-sample">Colorize Sample</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#emission">Emission</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#transparent">Transparent</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#subsurface-radius">Subsurface/Radius</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ambient-occlusion">Ambient Occlusion</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#metallic">Metallic</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#specular-tint">Specular/Tint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#roughness">Roughness</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#sheen-sheen-tint">Sheen / Sheen Tint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#clearcoat-roughness">Clearcoat / Roughness</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#transmission">Transmission</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#normal">Normal</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#bump-distance">Bump / Distance</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#locations-xyz">Locations XYZ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#rotation-xyz">Rotation XYZ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scale-xyz">Scale XYZ</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#scale-uniform">Scale Uniform</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#world-coordinate">World Coordinate</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#subsurface-radius">Subsurface/Radius</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#ambient-occlusion">Ambient Occlusion</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#metallic">Metallic</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#specular-tint">Specular/Tint</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#specular">Specular</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id10">Specular Tint</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-fx-layer">Add Fx Layer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#adjust-node-tree">Adjust Node Tree</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fx-layer">Fx Layer</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fx-layer-panel">Fx Layer Panel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#fx-layer-same-tools">Fx Layer same tools</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#remove-fx-layer">Remove Fx Layer</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dynamic-mask">Dynamic Mask</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dynamic-mask-noise">Dynamic Mask Noise</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dynamic-mask-worn-edges">Dynamic Mask Worn Edges</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#dynamic-mask-z-mix-v2">Dynamic Mask Z-Mix V2</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mask-map">Mask map</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#exclude-mask">Exclude Mask</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#invert-fx">Invert Fx</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#from-min-from-max">From Min From Max</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#show-diffuse">Show Diffuse</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#fx-layer-properties">Fx Layer Properties</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#roughness">Roughness</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#sheen-sheen-tint">Sheen / Sheen Tint</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#sheen">Sheen</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#sheen-tint">Sheen Tint</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#clearcoat-roughness">Clearcoat / Roughness</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#clearcoat">Clearcoat</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id11">Clearcoat Roughness</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#transmission">Transmission</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#ray-tracer-button">Ray Tracer Button</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#ior">IOR</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#transmission-roughness">Transmission Roughness</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#normal">Normal</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#bump-distance">Bump / Distance</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#bump">Bump</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id12">Bump Distance</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#locations-xyz">Locations XYZ</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#rotation-xyz">Rotation XYZ</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#scale-xyz">Scale XYZ</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#scale-uniform">Scale Uniform</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#world-coordinate">World Coordinate</a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#add-fx-layer">Add Fx Layer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#adjust-node-tree">Adjust Node Tree</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#fx-layer">Fx Layer</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#fx-layer-panel">Fx Layer Panel</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#fx-layer-same-tools">Fx Layer same tools</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#remove-fx-layer">Remove Fx Layer</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#dynamic-mask">Dynamic Mask</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#dynamic-mask-paint-mode">Dynamic Mask Paint Mode</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#paint-tools">Paint Tools</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#paint-un-paint">Paint Un-Paint</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#fill-un-fill">Fill Un-Fill</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#dynamic-mask-noise">Dynamic Mask Noise</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#detailed-deadlift">Detailed Deadlift</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#invert-mask">Invert Mask</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#id15">Roughness</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#detail">Detail</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#distortion">Distortion</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#scale">Scale</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#dynamic-mask-worn-edges">Dynamic Mask Worn Edges</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#make-worn-edges">Make Worn Edges</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#make-noise-worn-edges">Make Noise Worn Edges</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#worn-edge-reset-value">Worn Edge Reset Value</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#worn-edge-invert-mask">Worn Edge Invert Mask</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#worn-edge-expand-edges">Worn Edge Expand Edges</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#edges-strength">Edges Strength</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#dynamic-mask-z-mix-v2">Dynamic Mask Z-Mix V2</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-reset-value">Z-Mix V2 Reset Value</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-altitude-level">Z-Mix V2 Altitude Level</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-dead-line">Z-Mix V2 Dead Line</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-deadline-noise">Z-Mix V2 Deadline Noise</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-expand-noise">Z-Mix V2 Expand Noise</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-scale">Z-Mix V2 Scale</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-stretch-noise">Z-Mix V2 Stretch Noise</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#z-mix-v2-object-space">Z-Mix V2 Object Space</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#z-mix-invert-z">Z-Mix Invert Z</a></li>
-</ul>
-</li>
-<li class="toctree-l3"><a class="reference internal" href="#mask-map">Mask map</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#exclude-mask">Exclude Mask</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#invert-fx">Invert Fx</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#from-min-from-max">From Min From Max</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#show-diffuse">Show Diffuse</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#fx-layer-properties">Fx Layer Properties</a></li>
-</ul>
-</li>
+<li class="toctree-l2"><a class="reference internal" href="#material-editor-simple-pbr">Material Editor (Simple PBR)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="texture_manager.html">Texture Manager Panel</a></li>
@@ -207,7 +153,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">Material Editor (Nexus)</li>
+      <li class="breadcrumb-item active">Material Editor</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/material_editor.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -217,8 +163,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="material-editor-nexus">
-<span id="material-editor"></span><h1>Material Editor (Nexus)<a class="headerlink" href="#material-editor-nexus" title="Permalink to this heading"></a></h1>
+  <section id="material-editor">
+<span id="id1"></span><h1>Material Editor<a class="headerlink" href="#material-editor" title="Permalink to this heading"></a></h1>
 <div class="admonition seealso">
 <p class="admonition-title">See also</p>
 <p>Here you can find the section dedicated to video tutorials, it may be useful to you: <a class="reference internal" href="video_tutorials.html#vt-material-editor"><span class="std std-ref">Material Editor</span></a></p>
@@ -237,10 +183,15 @@
 <p>If you are in Nexus mode, or have applied materials that support nexus modules, The panel looks like this:</p>
 <p><strong>This is the classic Nexus panel of Texture-based materials</strong></p>
 <a class="reference internal image-reference" href="_images/material_editor_before_add_module.jpg"><img alt="Material Editor Before Add Module" class="align-center" src="_images/material_editor_before_add_module.jpg" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Here an example of the Blender node tree with an Extreme PBR Nexus material containing 2 modules and 2 Fx Layers (related to the modules)</p>
+<a class="reference internal image-reference" href="_images/nexus_nodes_system.webp"><img alt="Nexus Nodes System" class="align-center" src="_images/nexus_nodes_system.webp" style="width: 800px;" /></a>
+<p>Don’t worry, everything is managed through the Extreme PBR panel as shown in the previous photo to this one!</p>
 <hr class="docutils" />
-</section>
 <section id="add-module">
-<span id="id1"></span><h2>Add Module<a class="headerlink" href="#add-module" title="Permalink to this heading"></a></h2>
+<span id="id2"></span><h3>Add Module<a class="headerlink" href="#add-module" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/add_module_example_01.png"><img alt="Add Module Example 01" class="align-center" src="_images/add_module_example_01.png" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -256,16 +207,16 @@ or you can add via TODO: Link to shader maker for the materials you want to impo
 <hr class="docutils" />
 </section>
 <section id="module-material-panel">
-<span id="id2"></span><h2>Module Material Panel<a class="headerlink" href="#module-material-panel" title="Permalink to this heading"></a></h2>
+<span id="id3"></span><h3>Module Material Panel<a class="headerlink" href="#module-material-panel" title="Permalink to this heading"></a></h3>
 <section id="show-hide-group">
-<span id="id3"></span><h3>Show / Hide Group<a class="headerlink" href="#show-hide-group" title="Permalink to this heading"></a></h3>
+<span id="id4"></span><h4>Show / Hide Group<a class="headerlink" href="#show-hide-group" title="Permalink to this heading"></a></h4>
 <p>This button allows you to hide or show all the properties of a group (Nexus Module), it is useful if you are using the
 FX Module, it makes the workspace cleaner and allows you to focus only on what you are doing.</p>
 <a class="reference internal image-reference" href="_images/me_show_hide_group_01.png"><img alt="Material Editor Show Hide Group" class="align-center" src="_images/me_show_hide_group_01.png" style="width: 400px;" /></a>
 <hr class="docutils" />
 </section>
 <section id="search-module">
-<span id="id4"></span><h3>Search Module<a class="headerlink" href="#search-module" title="Permalink to this heading"></a></h3>
+<span id="id5"></span><h4>Search Module<a class="headerlink" href="#search-module" title="Permalink to this heading"></a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>Useful only if there are 2 or more modules present in the material.</p>
@@ -276,20 +227,20 @@ As soon as you select a module, the module from where you are starting will be r
 <hr class="docutils" />
 </section>
 <section id="module-name-group-name">
-<span id="module-name"></span><h3>Module Name (Group Name)<a class="headerlink" href="#module-name-group-name" title="Permalink to this heading"></a></h3>
+<span id="module-name"></span><h4>Module Name (Group Name)<a class="headerlink" href="#module-name-group-name" title="Permalink to this heading"></a></h4>
 <p>From here you can view and also change the name of the group (Nexus Module) you are using.</p>
 <a class="reference internal image-reference" href="_images/me_module_name.png"><img alt="Module Name" class="align-center" src="_images/me_module_name.png" style="width: 600px;" /></a>
 <hr class="docutils" />
 </section>
 <section id="replace-module">
-<span id="id5"></span><h3>Replace Module<a class="headerlink" href="#replace-module" title="Permalink to this heading"></a></h3>
+<span id="id6"></span><h4>Replace Module<a class="headerlink" href="#replace-module" title="Permalink to this heading"></a></h4>
 <p>The Replace Module button allows you to replace the module you are using by loading another module, in accordance with the preview
 of the <span class="xref std std-ref">material_browser</span> you have chosen.</p>
 <a class="reference internal image-reference" href="_images/me_replace_module.png"><img alt="Replace Module" class="align-center" src="_images/me_replace_module.png" style="width: 400px;" /></a>
 <hr class="docutils" />
 </section>
 <section id="clip-texture">
-<span id="module-clip-texture"></span><h3>Clip Texture<a class="headerlink" href="#clip-texture" title="Permalink to this heading"></a></h3>
+<span id="module-clip-texture"></span><h4>Clip Texture<a class="headerlink" href="#clip-texture" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_clip_texture_button.webp"><img alt="Clip Texture" class="align-center" src="_images/me_clip_texture_button.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -301,13 +252,13 @@ so, the object will have only one texture, without repetitions, no seamless.</p>
 <hr class="docutils" />
 </section>
 <section id="reset-values">
-<span id="module-reset-values"></span><h3>Reset Values<a class="headerlink" href="#reset-values" title="Permalink to this heading"></a></h3>
+<span id="module-reset-values"></span><h4>Reset Values<a class="headerlink" href="#reset-values" title="Permalink to this heading"></a></h4>
 <p>The Reset Values Button allows you to reset the properties of the module you are using to the default values.</p>
 <a class="reference internal image-reference" href="_images/me_reset_values.png"><img alt="Reset Values" class="align-center" src="_images/me_reset_values.png" style="width: 600px;" /></a>
 <hr class="docutils" />
 </section>
 <section id="info">
-<span id="module-info"></span><h3>Info<a class="headerlink" href="#info" title="Permalink to this heading"></a></h3>
+<span id="module-info"></span><h4>Info<a class="headerlink" href="#info" title="Permalink to this heading"></a></h4>
 <p>The Info button allows you to view the information of the module you are using, for example the name of the author etc.</p>
 <a class="reference internal image-reference" href="_images/me_info.png"><img alt="Info" class="align-center" src="_images/me_info.png" style="width: 600px;" /></a>
 <div class="line-block">
@@ -321,14 +272,14 @@ this information is in the <a class="reference internal" href="main_panel.html#i
 <hr class="docutils" />
 </section>
 <section id="tips">
-<span id="module-tips"></span><h3>Tips<a class="headerlink" href="#tips" title="Permalink to this heading"></a></h3>
+<span id="module-tips"></span><h4>Tips<a class="headerlink" href="#tips" title="Permalink to this heading"></a></h4>
 <p>This button allows you to view or hide the hint next to each slider of the module you are using.
 so by pressing the hint buttons, you will see a window appear with a description of the parameter you are using.</p>
 <a class="reference internal image-reference" href="_images/me_tips.png"><img alt="Tips" class="align-center" src="_images/me_tips.png" style="width: 600px;" /></a>
 <hr class="docutils" />
 </section>
 <section id="texture-manager-button">
-<span id="id6"></span><h3>Texture Manager Button<a class="headerlink" href="#texture-manager-button" title="Permalink to this heading"></a></h3>
+<span id="id7"></span><h4>Texture Manager Button<a class="headerlink" href="#texture-manager-button" title="Permalink to this heading"></a></h4>
 <p>The texture manager buttons allows you to access the <a class="reference internal" href="texture_manager.html#texture-manager-panel"><span class="std std-ref">Texture Manager Panel</span></a> and manage the textures you are using in your material.
 note well, texture manager is explained here: <a class="reference internal" href="texture_manager.html#texture-manager-panel"><span class="std std-ref">Texture Manager Panel</span></a></p>
 <p>When you find these buttons next to the sliders, it means that these sliders are linked to a texture, and therefore
@@ -344,7 +295,7 @@ you can manage the texture through the texture manager.</p>
 <hr class="docutils" />
 </section>
 <section id="diffuse-color">
-<span id="id7"></span><h3>Diffuse Color<a class="headerlink" href="#diffuse-color" title="Permalink to this heading"></a></h3>
+<span id="id8"></span><h4>Diffuse Color<a class="headerlink" href="#diffuse-color" title="Permalink to this heading"></a></h4>
 <p>This color box allows you to choose a color to apply to the diffuse texture, in case there is no texture, this takes the place of the texture as a solid color.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -354,14 +305,14 @@ you can manage the texture through the texture manager.</p>
 <hr class="docutils" />
 </section>
 <section id="color-lab-button">
-<span id="id8"></span><h3>Color Lab Button<a class="headerlink" href="#color-lab-button" title="Permalink to this heading"></a></h3>
+<span id="id9"></span><h4>Color Lab Button<a class="headerlink" href="#color-lab-button" title="Permalink to this heading"></a></h4>
 <p>Color Lab Button gives you access to the popup panel for color management, you can find a detailed explanation
 here: <a class="reference internal" href="color_lab.html#color-lab"><span class="std std-ref">Color Lab</span></a></p>
 <a class="reference internal image-reference" href="_images/color_lab_button.jpg"><img alt="Color Lab Button" class="align-center" src="_images/color_lab_button.jpg" style="width: 800px;" /></a>
 <hr class="docutils" />
 </section>
 <section id="colorize-strength">
-<span id="id9"></span><h3>Colorize Strength<a class="headerlink" href="#colorize-strength" title="Permalink to this heading"></a></h3>
+<span id="id10"></span><h4>Colorize Strength<a class="headerlink" href="#colorize-strength" title="Permalink to this heading"></a></h4>
 <p>This slider allows you to adjust the strength of the color you have chosen in the <a class="reference internal" href="#diffuse-color"><span class="std std-ref">Diffuse Color</span></a> box.</p>
 <a class="reference internal image-reference" href="_images/me_colorize_strength.webp"><img alt="Colorize Strength" class="align-center" src="_images/me_colorize_strength.webp" style="width: 400px;" /></a>
 <div class="line-block">
@@ -374,7 +325,7 @@ always keeping the other maps like the specular, the normal etc.</p>
 </section>
 <hr class="docutils" />
 <section id="colorize-sample">
-<h3>Colorize Sample<a class="headerlink" href="#colorize-sample" title="Permalink to this heading"></a></h3>
+<h4>Colorize Sample<a class="headerlink" href="#colorize-sample" title="Permalink to this heading"></a></h4>
 <p>By activating this button, 2 new sliders will appear, the first allows you to choose the color to be sampled, the second
 is the <strong>Tolerance</strong> which allows you to choose how much the sampled color must be similar to the original color to be
 replaced.</p>
@@ -383,7 +334,7 @@ replaced.</p>
 </section>
 <hr class="docutils" />
 <section id="emission">
-<h3>Emission<a class="headerlink" href="#emission" title="Permalink to this heading"></a></h3>
+<h4>Emission<a class="headerlink" href="#emission" title="Permalink to this heading"></a></h4>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In <strong>Cycles Render</strong> the Emission also acts as lighting, in <strong>Eevee</strong> no, in <strong>Eevee</strong> it is only a visual effect.</p>
@@ -399,7 +350,7 @@ this slider will work as general emissivity of the material, the whole material 
 </section>
 <hr class="docutils" />
 <section id="transparent">
-<h3>Transparent<a class="headerlink" href="#transparent" title="Permalink to this heading"></a></h3>
+<h4>Transparent<a class="headerlink" href="#transparent" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_transparent_and_ops.webp"><img alt="Transparent and Ops" class="align-center" src="_images/me_transparent_and_ops.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -415,7 +366,7 @@ the button next to the slider (Transparent Mode button) to choose how to handle 
 <div class="line"><br /></div>
 </div>
 <section id="transparent-mode">
-<span id="me-transparent-mode"></span><h4>Transparent Mode<a class="headerlink" href="#transparent-mode" title="Permalink to this heading"></a></h4>
+<span id="me-transparent-mode"></span><h5>Transparent Mode<a class="headerlink" href="#transparent-mode" title="Permalink to this heading"></a></h5>
 <p>This button actually manages the <strong>Blend Mode</strong> and <strong>Shadow Mode</strong> of the material</p>
 <a class="reference internal image-reference" href="_images/blend_mode_shadow_mode.webp"><img alt="Blend Mode Shadow Mode" class="align-center" src="_images/blend_mode_shadow_mode.webp" style="width: 400px;" /></a>
 <p>Settings only for Eevee Render:</p>
@@ -429,7 +380,7 @@ the button next to the slider (Transparent Mode button) to choose how to handle 
 </section>
 <hr class="docutils" />
 <section id="subsurface-radius">
-<h3>Subsurface/Radius<a class="headerlink" href="#subsurface-radius" title="Permalink to this heading"></a></h3>
+<h4>Subsurface/Radius<a class="headerlink" href="#subsurface-radius" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_subsurface_radius.webp"><img alt="Subsurface" class="align-center" src="_images/me_subsurface_radius.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -443,7 +394,7 @@ like skin, leaves, ears, rubber, plastic, etc.</p>
 </section>
 <hr class="docutils" />
 <section id="ambient-occlusion">
-<h3>Ambient Occlusion<a class="headerlink" href="#ambient-occlusion" title="Permalink to this heading"></a></h3>
+<h4>Ambient Occlusion<a class="headerlink" href="#ambient-occlusion" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_ambient_occlusion.webp"><img alt="Ambient Occlusion" class="align-center" src="_images/me_ambient_occlusion.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -455,7 +406,7 @@ the calculation of the ambient occlusion is quite approximate, this slider will 
 </section>
 <hr class="docutils" />
 <section id="metallic">
-<h3>Metallic<a class="headerlink" href="#metallic" title="Permalink to this heading"></a></h3>
+<h4>Metallic<a class="headerlink" href="#metallic" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_metallic.webp"><img alt="Metallic" class="align-center" src="_images/me_metallic.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -475,19 +426,19 @@ In short, everything except total black 😊</p>
 </section>
 <hr class="docutils" />
 <section id="specular-tint">
-<h3>Specular/Tint<a class="headerlink" href="#specular-tint" title="Permalink to this heading"></a></h3>
+<h4>Specular/Tint<a class="headerlink" href="#specular-tint" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_specular_tint.webp"><img alt="Specular Tint" class="align-center" src="_images/me_specular_tint.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>This 2 properties work in symbiosis:</p>
 <section id="specular">
-<h4>Specular<a class="headerlink" href="#specular" title="Permalink to this heading"></a></h4>
+<h5>Specular<a class="headerlink" href="#specular" title="Permalink to this heading"></a></h5>
 <p>This slider adjusts the specular of the material, if a specular map is present, then this slider will only adjust
 some areas of the material, while if it is not present, then it will adjust the general specular of the material.</p>
 </section>
-<section id="id10">
-<h4>Specular Tint<a class="headerlink" href="#id10" title="Permalink to this heading"></a></h4>
+<section id="id11">
+<h5>Specular Tint<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h5>
 <p>Mix between white and the base color in order to tint the specular highlights.</p>
 <p><strong>Example between Specular tint at 0.0 and 1.0, on the left 0.0, on the right 1.0</strong></p>
 <a class="reference internal image-reference" href="_images/specular_tint_example.webp"><img alt="Specular Tint Example" class="align-center" src="_images/specular_tint_example.webp" style="width: 800px;" /></a>
@@ -495,7 +446,7 @@ some areas of the material, while if it is not present, then it will adjust the 
 </section>
 <hr class="docutils" />
 <section id="roughness">
-<h3>Roughness<a class="headerlink" href="#roughness" title="Permalink to this heading"></a></h3>
+<h4>Roughness<a class="headerlink" href="#roughness" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_roughness.webp"><img alt="Roughness" class="align-center" src="_images/me_roughness.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -507,19 +458,19 @@ some areas of the material, while if it is not present, then it will adjust the 
 </section>
 <hr class="docutils" />
 <section id="sheen-sheen-tint">
-<h3>Sheen / Sheen Tint<a class="headerlink" href="#sheen-sheen-tint" title="Permalink to this heading"></a></h3>
+<h4>Sheen / Sheen Tint<a class="headerlink" href="#sheen-sheen-tint" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_sheen_and_tint.webp"><img alt="Sheen and Tint" class="align-center" src="_images/me_sheen_and_tint.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>These 2 properties work in symbiosis:</p>
 <section id="sheen">
-<h4>Sheen<a class="headerlink" href="#sheen" title="Permalink to this heading"></a></h4>
+<h5>Sheen<a class="headerlink" href="#sheen" title="Permalink to this heading"></a></h5>
 <p>The sheen is a soft velvet-like reflection that appears in the areas where the light is reflected, value 0.0 means no sheen,
 while value 1.0 means maximum sheen.</p>
 </section>
 <section id="sheen-tint">
-<h4>Sheen Tint<a class="headerlink" href="#sheen-tint" title="Permalink to this heading"></a></h4>
+<h5>Sheen Tint<a class="headerlink" href="#sheen-tint" title="Permalink to this heading"></a></h5>
 <p>Mix between white and the base color in order to tint the sheen. Value 0.0 means no tint, while value 1.0 means maximum tint.</p>
 <p><strong>Sheen Example:</strong>
 First image, <strong>Sheen 0.0</strong> <strong>Sheen Tint 0.0</strong>, Second image <strong>Sheen 1.0</strong> <strong>Sheen Tint 0.0</strong>, Third image <strong>Sheen 1.0</strong> <strong>Sheen Tint 1.0</strong></p>
@@ -528,18 +479,18 @@ First image, <strong>Sheen 0.0</strong> <strong>Sheen Tint 0.0</strong>, Second 
 </section>
 <hr class="docutils" />
 <section id="clearcoat-roughness">
-<h3>Clearcoat / Roughness<a class="headerlink" href="#clearcoat-roughness" title="Permalink to this heading"></a></h3>
+<h4>Clearcoat / Roughness<a class="headerlink" href="#clearcoat-roughness" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_clearcoat_and_roughness.webp"><img alt="Clearcoat and Roughness" class="align-center" src="_images/me_clearcoat_and_roughness.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <section id="clearcoat">
-<h4>Clearcoat<a class="headerlink" href="#clearcoat" title="Permalink to this heading"></a></h4>
+<h5>Clearcoat<a class="headerlink" href="#clearcoat" title="Permalink to this heading"></a></h5>
 <p>The clearcoat is a layer of varnish that is applied to the material, it is a layer that is applied on top of the material,
 this is similar to the clearcoat of a car.</p>
 </section>
-<section id="id11">
-<h4>Clearcoat Roughness<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h4>
+<section id="id12">
+<h5>Clearcoat Roughness<a class="headerlink" href="#id12" title="Permalink to this heading"></a></h5>
 <p>In accordance with the clearcoat, this slider allows you to adjust the roughness of the clearcoat.</p>
 <p><strong>Example, First Image Clearcoat 0.0, Second Image Clearcoat 1.0 and Roughness 0.0, Third Image Clearcoat 1.0 and Roughness 0.25</strong></p>
 <a class="reference internal image-reference" href="_images/me_clearcoat_example.webp"><img alt="Clearcoat Example" class="align-center" src="_images/me_clearcoat_example.webp" style="width: 800px;" /></a>
@@ -547,7 +498,7 @@ this is similar to the clearcoat of a car.</p>
 </section>
 <hr class="docutils" />
 <section id="transmission">
-<h3>Transmission<a class="headerlink" href="#transmission" title="Permalink to this heading"></a></h3>
+<h4>Transmission<a class="headerlink" href="#transmission" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_transmission_section.webp"><img alt="Transmission" class="align-center" src="_images/me_transmission_section.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -558,7 +509,7 @@ like glass, water etc.</p>
 <p>The value of the transmission is a value between 0.0 and 1.0, where 0.0 means no transmission, while 1.0
 means maximum transmission (To simulate a normal glass it will have 1.0 of transmission)</p>
 <section id="ray-tracer-button">
-<h4>Ray Tracer Button<a class="headerlink" href="#ray-tracer-button" title="Permalink to this heading"></a></h4>
+<h5>Ray Tracer Button<a class="headerlink" href="#ray-tracer-button" title="Permalink to this heading"></a></h5>
 <p>The button Raytracer, activate or deactivate, the Screen Space Refractions (For the Glass). Eevee only, in Cycles, this is not necessary,
 in Eevee Render it is really necessary to activate it if you want to get a realistic result even if not perfect.</p>
 <p>This button activates or deactivates the <strong>Screen Space Refractions</strong> in the material properties and deactivates the property
@@ -566,12 +517,12 @@ in Eevee Render it is really necessary to activate it if you want to get a reali
 Eevee rendering engine, it is not necessary in Cycles)</p>
 </section>
 <section id="ior">
-<h4>IOR<a class="headerlink" href="#ior" title="Permalink to this heading"></a></h4>
+<h5>IOR<a class="headerlink" href="#ior" title="Permalink to this heading"></a></h5>
 <p>The IOR is the index of refraction, it is a value that is used to calculate the refraction of the material.
 For example the IOR of the glass is 1.45, the IOR of the water is 1.33, the IOR of the diamond is 2.42 etc…</p>
 </section>
 <section id="transmission-roughness">
-<h4>Transmission Roughness<a class="headerlink" href="#transmission-roughness" title="Permalink to this heading"></a></h4>
+<h5>Transmission Roughness<a class="headerlink" href="#transmission-roughness" title="Permalink to this heading"></a></h5>
 <p>This slider allows you to adjust the roughness of the transmission. The transmission Roughness will make the material
 more or less transparent, the higher the value, the less transparent the material will be, the lower the value, the more transparent
 the material will be.</p>
@@ -579,7 +530,7 @@ the material will be.</p>
 </section>
 <hr class="docutils" />
 <section id="normal">
-<h3>Normal<a class="headerlink" href="#normal" title="Permalink to this heading"></a></h3>
+<h4>Normal<a class="headerlink" href="#normal" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_normal.webp"><img alt="Normal" class="align-center" src="_images/me_normal.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -591,7 +542,7 @@ like reliefs, scratches, etc … A value equal to 0.0 means no normal map.</p>
 </section>
 <hr class="docutils" />
 <section id="bump-distance">
-<h3>Bump / Distance<a class="headerlink" href="#bump-distance" title="Permalink to this heading"></a></h3>
+<h4>Bump / Distance<a class="headerlink" href="#bump-distance" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_bump_and_distance.webp"><img alt="Bump and Distance" class="align-center" src="_images/me_bump_and_distance.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -603,12 +554,12 @@ you will notice that the Bump map is a bit pixelated, this is a limitation of Bl
 </div>
 <p>These 2 properties work in symbiosis:</p>
 <section id="bump">
-<h4>Bump<a class="headerlink" href="#bump" title="Permalink to this heading"></a></h4>
+<h5>Bump<a class="headerlink" href="#bump" title="Permalink to this heading"></a></h5>
 <p>The bump map (Only if present) allows you to add details to the material this is very useful for simulating details
 like reliefs, scratches, etc … A value equal to 0.0 means no bump map.</p>
 </section>
-<section id="id12">
-<h4>Bump Distance<a class="headerlink" href="#id12" title="Permalink to this heading"></a></h4>
+<section id="id13">
+<h5>Bump Distance<a class="headerlink" href="#id13" title="Permalink to this heading"></a></h5>
 <p>This slider allows you to adjust the distance of the bump map, the higher the value, the more the bump map will be visible,
 the lower the value, the less the bump map will be visible.</p>
 <p>Here an example, on the left the value of the Bump is 0.0 (Consequently the distance has no effect, on the right the value of the Bump is 0.20 and the distance is 1.0</p>
@@ -625,7 +576,7 @@ of greater relief than the normal map.</p>
 </section>
 </section>
 <section id="locations-xyz">
-<span id="me-vector-location"></span><h3>Locations XYZ<a class="headerlink" href="#locations-xyz" title="Permalink to this heading"></a></h3>
+<span id="me-vector-location"></span><h4>Locations XYZ<a class="headerlink" href="#locations-xyz" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_locations_xyz.webp"><img alt="Locations XYZ" class="align-center" src="_images/me_locations_xyz.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -648,7 +599,7 @@ then these sliders will also work to move the displacement effect, but only in <
 <hr class="docutils" />
 </section>
 <section id="rotation-xyz">
-<span id="me-vector-rotation"></span><h3>Rotation XYZ<a class="headerlink" href="#rotation-xyz" title="Permalink to this heading"></a></h3>
+<span id="me-vector-rotation"></span><h4>Rotation XYZ<a class="headerlink" href="#rotation-xyz" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_rotation_xyz.webp"><img alt="Rotation XYZ" class="align-center" src="_images/me_rotation_xyz.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -671,7 +622,7 @@ then these sliders will also work to rotate the displacement effect, but only in
 <hr class="docutils" />
 </section>
 <section id="scale-xyz">
-<span id="me-vector-scale"></span><h3>Scale XYZ<a class="headerlink" href="#scale-xyz" title="Permalink to this heading"></a></h3>
+<span id="me-vector-scale"></span><h4>Scale XYZ<a class="headerlink" href="#scale-xyz" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_scale_xyz.webp"><img alt="Scale XYZ" class="align-center" src="_images/me_scale_xyz.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -694,7 +645,7 @@ then these sliders will also work to scale the displacement effect, but only in 
 <hr class="docutils" />
 </section>
 <section id="scale-uniform">
-<span id="me-vector-scale-uniform"></span><h3>Scale Uniform<a class="headerlink" href="#scale-uniform" title="Permalink to this heading"></a></h3>
+<span id="me-vector-scale-uniform"></span><h4>Scale Uniform<a class="headerlink" href="#scale-uniform" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_scale_uniform.webp"><img alt="Scale Uniform" class="align-center" src="_images/me_scale_uniform.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -711,7 +662,7 @@ then this slider will also work to scale the displacement effect, but only in <s
 </section>
 <hr class="docutils" />
 <section id="world-coordinate">
-<h3>World Coordinate<a class="headerlink" href="#world-coordinate" title="Permalink to this heading"></a></h3>
+<h4>World Coordinate<a class="headerlink" href="#world-coordinate" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/me_world_coordinate.webp"><img alt="World Coordinate" class="align-center" src="_images/me_world_coordinate.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -723,7 +674,7 @@ from its position.</p>
 </section>
 </section>
 <section id="add-fx-layer">
-<span id="id13"></span><h2>Add Fx Layer<a class="headerlink" href="#add-fx-layer" title="Permalink to this heading"></a></h2>
+<span id="id14"></span><h3>Add Fx Layer<a class="headerlink" href="#add-fx-layer" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/me_add_fx_layer.webp"><img alt="Add Fx Layer" class="align-center" src="_images/me_add_fx_layer.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -751,7 +702,7 @@ using the shades of these maps, we get an Fx Layer. You can also disable the mas
 </section>
 <hr class="docutils" />
 <section id="adjust-node-tree">
-<h2>Adjust Node Tree<a class="headerlink" href="#adjust-node-tree" title="Permalink to this heading"></a></h2>
+<h3>Adjust Node Tree<a class="headerlink" href="#adjust-node-tree" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/me_adjust_node_tree.webp"><img alt="Adjust Node Tree" class="align-center" src="_images/me_adjust_node_tree.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -769,7 +720,7 @@ allows you to reconnect all Nexus nodes, and realigns them so that they have a c
 </table>
 </section>
 <section id="fx-layer">
-<span id="id14"></span><h2>Fx Layer<a class="headerlink" href="#fx-layer" title="Permalink to this heading"></a></h2>
+<span id="id15"></span><h3>Fx Layer<a class="headerlink" href="#fx-layer" title="Permalink to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In order to add the Fx Layer you will have to use the <strong>Add Fx</strong> button described here: <a class="reference internal" href="#add-fx-layer"><span class="std std-ref">Add Fx Layer</span></a></p>
@@ -796,7 +747,7 @@ this will use the maps of the other wood in addition to the underlying material<
 </section>
 <hr class="docutils" />
 <section id="fx-layer-panel">
-<h2>Fx Layer Panel<a class="headerlink" href="#fx-layer-panel" title="Permalink to this heading"></a></h2>
+<h3>Fx Layer Panel<a class="headerlink" href="#fx-layer-panel" title="Permalink to this heading"></a></h3>
 <p>Here is how an Fx Layer panel looks inside the material editor, in fact, once added, it will be
 underneath the corresponding material panel (Nexus Module), you can also add 2 Fx Layers if you want, but
 it is not recommended to exaggerate with the Fx Layers, as they could slow down the rendering, in addition at the moment, Blender
@@ -805,7 +756,7 @@ the material unusable in Blender.</p>
 <a class="reference internal image-reference" href="_images/fx_layer_panel_01.webp"><img alt="Fx Layer Panel 01" class="align-center" src="_images/fx_layer_panel_01.webp" style="width: 400px;" /></a>
 <hr class="docutils" />
 <section id="fx-layer-same-tools">
-<h3>Fx Layer same tools<a class="headerlink" href="#fx-layer-same-tools" title="Permalink to this heading"></a></h3>
+<h4>Fx Layer same tools<a class="headerlink" href="#fx-layer-same-tools" title="Permalink to this heading"></a></h4>
 <p>Most references are the same as the material panel, so I won’t repeat them, but I leave the reference to the material panel
 because they have the same functions:</p>
 <p><strong>Left: Fx Layer, Right: Module</strong></p>
@@ -821,7 +772,7 @@ because they have the same functions:</p>
 </ul>
 </section>
 <section id="remove-fx-layer">
-<h3>Remove Fx Layer<a class="headerlink" href="#remove-fx-layer" title="Permalink to this heading"></a></h3>
+<h4>Remove Fx Layer<a class="headerlink" href="#remove-fx-layer" title="Permalink to this heading"></a></h4>
 <p>In addition to removing the Fx Layer, just press the <strong>Remove Fx Layer</strong> button here:</p>
 <a class="reference internal image-reference" href="_images/fr_layer_remove_button.webp"><img alt="Fx Layer Remove Button" class="align-center" src="_images/fr_layer_remove_button.webp" style="width: 400px;" /></a>
 <div class="line-block">
@@ -831,7 +782,7 @@ because they have the same functions:</p>
 <hr class="docutils" />
 </section>
 <section id="dynamic-mask">
-<span id="fx-dynamic-mask"></span><h3>Dynamic Mask<a class="headerlink" href="#dynamic-mask" title="Permalink to this heading"></a></h3>
+<span id="fx-dynamic-mask"></span><h4>Dynamic Mask<a class="headerlink" href="#dynamic-mask" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/fx_dynamic_mask_section.webp"><img alt="Dynamic Mask Section" class="align-center" src="_images/fx_dynamic_mask_section.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -841,7 +792,7 @@ because they have the same functions:</p>
 <a class="reference internal image-reference" href="_images/fx_choose_mask_selector.webp"><img alt="Fx Choose Mask Selector" class="align-center" src="_images/fx_choose_mask_selector.webp" style="width: 600px;" /></a>
 <hr class="docutils" />
 <section id="dynamic-mask-paint-mode">
-<h4>Dynamic Mask Paint Mode<a class="headerlink" href="#dynamic-mask-paint-mode" title="Permalink to this heading"></a></h4>
+<h5>Dynamic Mask Paint Mode<a class="headerlink" href="#dynamic-mask-paint-mode" title="Permalink to this heading"></a></h5>
 <p>This is the default setting once you apply an Fx Layer, in this mode you can paint
 where you want the Fx Layer to be visible on the material.</p>
 <div class="admonition important">
@@ -851,7 +802,7 @@ you will have to make the material unique, because the painting mask will not wo
 </div>
 </section>
 <section id="paint-tools">
-<h4>Paint Tools<a class="headerlink" href="#paint-tools" title="Permalink to this heading"></a></h4>
+<h5>Paint Tools<a class="headerlink" href="#paint-tools" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_paint_tools_button.webp"><img alt="Fx Paint Tools" class="align-center" src="_images/fx_paint_tools_button.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -860,7 +811,7 @@ you will have to make the material unique, because the painting mask will not wo
 </section>
 <hr class="docutils" />
 <section id="paint-un-paint">
-<h4>Paint Un-Paint<a class="headerlink" href="#paint-un-paint" title="Permalink to this heading"></a></h4>
+<h5>Paint Un-Paint<a class="headerlink" href="#paint-un-paint" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_paint_unpaint.webp"><img alt="Fx Paint Un-Paint" class="align-center" src="_images/fx_paint_unpaint.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -878,7 +829,7 @@ button that was pressed to enter <strong>Paint Mode</strong>, in fact it will be
 </section>
 <hr class="docutils" />
 <section id="fill-un-fill">
-<h4>Fill Un-Fill<a class="headerlink" href="#fill-un-fill" title="Permalink to this heading"></a></h4>
+<h5>Fill Un-Fill<a class="headerlink" href="#fill-un-fill" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_fill_unfill.webp"><img alt="Fx Fill Un-Fill" class="align-center" src="_images/fx_fill_unfill.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -890,7 +841,7 @@ underlying.</p>
 </section>
 <hr class="docutils" />
 <section id="dynamic-mask-noise">
-<h3>Dynamic Mask Noise<a class="headerlink" href="#dynamic-mask-noise" title="Permalink to this heading"></a></h3>
+<h4>Dynamic Mask Noise<a class="headerlink" href="#dynamic-mask-noise" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/fx_dynamic_mask_noise_panel.webp"><img alt="Fx Dynamic Mask Noise" class="align-center" src="_images/fx_dynamic_mask_noise_panel.webp" style="width: 400px;" /></a>
 <p>In this mode, the mask will be controlled by a Noise node. This setting is very useful for making the grass or terrain
 less uniform, as the Noise node generates a noise that can be used to mask the repetitions of the texture, so as to make
@@ -901,7 +852,7 @@ the material more natural.</p>
 show the Fx layer and where not, based on the mask generated by the Noise.</p>
 <hr class="docutils" />
 <section id="detailed-deadlift">
-<h4>Detailed Deadlift<a class="headerlink" href="#detailed-deadlift" title="Permalink to this heading"></a></h4>
+<h5>Detailed Deadlift<a class="headerlink" href="#detailed-deadlift" title="Permalink to this heading"></a></h5>
 <p>Detailed Deadlift manage how much the noise effect should be sharp or not, the higher the value, the sharper the noise effect will be,
 consequently the Fx Layer will be sharper, while the lower the value, the less sharp the noise effect will be, consequently
 the Fx Layer will be more blurred.</p>
@@ -910,15 +861,15 @@ the Fx Layer will be more blurred.</p>
 </section>
 <hr class="docutils" />
 <section id="invert-mask">
-<h4>Invert Mask<a class="headerlink" href="#invert-mask" title="Permalink to this heading"></a></h4>
+<h5>Invert Mask<a class="headerlink" href="#invert-mask" title="Permalink to this heading"></a></h5>
 <p>By pressing the Invert Mask button, you will invert the colors of the noise mask, so where there was black before, now there will be white and vice versa.
 consequently the noise effect will be inverted.</p>
 <p><strong>Here is the example of a Invert Mask:</strong></p>
 <a class="reference internal image-reference" href="_images/fx_invert_noide_mask_example.webp"><img alt="Fx Invert Mask Example" class="align-center" src="_images/fx_invert_noide_mask_example.webp" style="width: 800px;" /></a>
 </section>
 <hr class="docutils" />
-<section id="id15">
-<h4>Roughness<a class="headerlink" href="#id15" title="Permalink to this heading"></a></h4>
+<section id="id16">
+<h5>Roughness<a class="headerlink" href="#id16" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_dynamic_mask_noise_roughness.webp"><img alt="Fx Dynamic Mask Noise Roughness" class="align-center" src="_images/fx_dynamic_mask_noise_roughness.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -932,7 +883,7 @@ more rich in details the detachment between the base material and the Fx materia
 </section>
 <hr class="docutils" />
 <section id="detail">
-<h4>Detail<a class="headerlink" href="#detail" title="Permalink to this heading"></a></h4>
+<h5>Detail<a class="headerlink" href="#detail" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_dynamic_mask_noise_detail.webp"><img alt="Fx Dynamic Mask Noise Detail" class="align-center" src="_images/fx_dynamic_mask_noise_detail.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -946,7 +897,7 @@ more rich in details the detachment between the base material and the Fx materia
 </section>
 <hr class="docutils" />
 <section id="distortion">
-<h4>Distortion<a class="headerlink" href="#distortion" title="Permalink to this heading"></a></h4>
+<h5>Distortion<a class="headerlink" href="#distortion" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_dynamic_mask_noise_distortion.webp"><img alt="Fx Dynamic Mask Noise Distortion" class="align-center" src="_images/fx_dynamic_mask_noise_distortion.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -957,7 +908,7 @@ more rich in details the detachment between the base material and the Fx materia
 </section>
 <hr class="docutils" />
 <section id="scale">
-<h4>Scale<a class="headerlink" href="#scale" title="Permalink to this heading"></a></h4>
+<h5>Scale<a class="headerlink" href="#scale" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_dynamic_mask_noise_scale.webp"><img alt="Fx Dynamic Mask Noise Scale" class="align-center" src="_images/fx_dynamic_mask_noise_scale.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -967,7 +918,7 @@ more rich in details the detachment between the base material and the Fx materia
 </section>
 <hr class="docutils" />
 <section id="dynamic-mask-worn-edges">
-<h3>Dynamic Mask Worn Edges<a class="headerlink" href="#dynamic-mask-worn-edges" title="Permalink to this heading"></a></h3>
+<h4>Dynamic Mask Worn Edges<a class="headerlink" href="#dynamic-mask-worn-edges" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/fx_dynamic_mask_worn_edges_panel.webp"><img alt="Fx Dynamic Mask Worn Edges" class="align-center" src="_images/fx_dynamic_mask_worn_edges_panel.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -985,7 +936,7 @@ of edges, so this tool is very useful for Eevee, and it also works in Cycles.</p
 <p>The stressed edges are Pre-Bake, and work as a mask, so this mask will be cooked on the sharpest corners of the object.</p>
 <hr class="docutils" />
 <section id="make-worn-edges">
-<h4>Make Worn Edges<a class="headerlink" href="#make-worn-edges" title="Permalink to this heading"></a></h4>
+<h5>Make Worn Edges<a class="headerlink" href="#make-worn-edges" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_make_worn_edges_button.webp"><img alt="Fx Make Worn Edges Button" class="align-center" src="_images/fx_make_worn_edges_button.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -995,7 +946,7 @@ This type of Bake is with denoising, so it is much more homogeneous and without 
 </section>
 <hr class="docutils" />
 <section id="make-noise-worn-edges">
-<h4>Make Noise Worn Edges<a class="headerlink" href="#make-noise-worn-edges" title="Permalink to this heading"></a></h4>
+<h5>Make Noise Worn Edges<a class="headerlink" href="#make-noise-worn-edges" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_make_noise_worn_edges_button.webp"><img alt="Fx Make Noise Worn Edges Button" class="align-center" src="_images/fx_make_noise_worn_edges_button.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1005,7 +956,7 @@ This type of Bake is with noise, so it is much more noisy.</p>
 </section>
 <hr class="docutils" />
 <section id="worn-edge-reset-value">
-<h4>Worn Edge Reset Value<a class="headerlink" href="#worn-edge-reset-value" title="Permalink to this heading"></a></h4>
+<h5>Worn Edge Reset Value<a class="headerlink" href="#worn-edge-reset-value" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_worn_edge_reset_value.webp"><img alt="Fx Worn Edge Reset Value" class="align-center" src="_images/fx_worn_edge_reset_value.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1014,7 +965,7 @@ This type of Bake is with noise, so it is much more noisy.</p>
 </section>
 <hr class="docutils" />
 <section id="worn-edge-invert-mask">
-<h4>Worn Edge Invert Mask<a class="headerlink" href="#worn-edge-invert-mask" title="Permalink to this heading"></a></h4>
+<h5>Worn Edge Invert Mask<a class="headerlink" href="#worn-edge-invert-mask" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_worn_edge_invert_mask.webp"><img alt="Fx Worn Edge Invert Mask" class="align-center" src="_images/fx_worn_edge_invert_mask.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1023,7 +974,7 @@ This type of Bake is with noise, so it is much more noisy.</p>
 </section>
 <hr class="docutils" />
 <section id="worn-edge-expand-edges">
-<h4>Worn Edge Expand Edges<a class="headerlink" href="#worn-edge-expand-edges" title="Permalink to this heading"></a></h4>
+<h5>Worn Edge Expand Edges<a class="headerlink" href="#worn-edge-expand-edges" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_worn_edge_expand_edges.webp"><img alt="Fx Worn Edge Expand Edges" class="align-center" src="_images/fx_worn_edge_expand_edges.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1034,7 +985,7 @@ This type of Bake is with noise, so it is much more noisy.</p>
 </section>
 <hr class="docutils" />
 <section id="edges-strength">
-<h4>Edges Strength<a class="headerlink" href="#edges-strength" title="Permalink to this heading"></a></h4>
+<h5>Edges Strength<a class="headerlink" href="#edges-strength" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_worn_edge_edges_strength.webp"><img alt="Fx Worn Edge Edges Strength" class="align-center" src="_images/fx_worn_edge_edges_strength.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1047,7 +998,7 @@ So it can be said that a low value of the mask, will make the mask more blurred,
 </section>
 <hr class="docutils" />
 <section id="dynamic-mask-z-mix-v2">
-<h3>Dynamic Mask Z-Mix V2<a class="headerlink" href="#dynamic-mask-z-mix-v2" title="Permalink to this heading"></a></h3>
+<h4>Dynamic Mask Z-Mix V2<a class="headerlink" href="#dynamic-mask-z-mix-v2" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/fx_z_mix_panel.webp"><img alt="Fx Z-Mix Panel" class="align-center" src="_images/fx_z_mix_panel.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1060,7 +1011,7 @@ vertically, or to simulate grass or “Climbing” vegetation or moss.</p>
 <a class="reference internal image-reference" href="_images/fx_dynmask_zmix_v2_example_02.webp"><img alt="Fx Dynmask Z-Mix V2 Example 02" class="align-center" src="_images/fx_dynmask_zmix_v2_example_02.webp" style="width: 400px;" /></a>
 <hr class="docutils" />
 <section id="z-mix-v2-reset-value">
-<h4>Z-Mix V2 Reset Value<a class="headerlink" href="#z-mix-v2-reset-value" title="Permalink to this heading"></a></h4>
+<h5>Z-Mix V2 Reset Value<a class="headerlink" href="#z-mix-v2-reset-value" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_z_mix_reset_value.webp"><img alt="Fx Z-Mix V2 Reset Value" class="align-center" src="_images/fx_z_mix_reset_value.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1069,7 +1020,7 @@ vertically, or to simulate grass or “Climbing” vegetation or moss.</p>
 </section>
 <hr class="docutils" />
 <section id="z-mix-v2-altitude-level">
-<h4>Z-Mix V2 Altitude Level<a class="headerlink" href="#z-mix-v2-altitude-level" title="Permalink to this heading"></a></h4>
+<h5>Z-Mix V2 Altitude Level<a class="headerlink" href="#z-mix-v2-altitude-level" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_z_mix_altitude_level.webp"><img alt="Fx Z-Mix V2 Altitude Level" class="align-center" src="_images/fx_z_mix_altitude_level.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1080,7 +1031,7 @@ vertically, or to simulate grass or “Climbing” vegetation or moss.</p>
 </section>
 <hr class="docutils" />
 <section id="z-mix-v2-dead-line">
-<h4>Z-Mix V2 Dead Line<a class="headerlink" href="#z-mix-v2-dead-line" title="Permalink to this heading"></a></h4>
+<h5>Z-Mix V2 Dead Line<a class="headerlink" href="#z-mix-v2-dead-line" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_z_mix_dead_line.webp"><img alt="Fx Z-Mix V2 Dead Line" class="align-center" src="_images/fx_z_mix_dead_line.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1092,7 +1043,7 @@ A higher value will make the Dead Line sharper, while a lower value will make th
 </section>
 <hr class="docutils" />
 <section id="z-mix-v2-deadline-noise">
-<h4>Z-Mix V2 Deadline Noise<a class="headerlink" href="#z-mix-v2-deadline-noise" title="Permalink to this heading"></a></h4>
+<h5>Z-Mix V2 Deadline Noise<a class="headerlink" href="#z-mix-v2-deadline-noise" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_z_mix_dead_line_noise.webp"><img alt="Fx Z-Mix V2 Deadline Noise" class="align-center" src="_images/fx_z_mix_dead_line_noise.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1107,7 +1058,7 @@ A higher value will make the Dead Line sharper, while a lower value will make th
 </section>
 <hr class="docutils" />
 <section id="z-mix-v2-expand-noise">
-<h4>Z-Mix V2 Expand Noise<a class="headerlink" href="#z-mix-v2-expand-noise" title="Permalink to this heading"></a></h4>
+<h5>Z-Mix V2 Expand Noise<a class="headerlink" href="#z-mix-v2-expand-noise" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_z_mix_expand_noise.webp"><img alt="Fx Z-Mix V2 Expand Noise" class="align-center" src="_images/fx_z_mix_expand_noise.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1118,7 +1069,7 @@ A higher value will make the Dead Line sharper, while a lower value will make th
 </section>
 <hr class="docutils" />
 <section id="z-mix-v2-scale">
-<h4>Z-Mix V2 Scale<a class="headerlink" href="#z-mix-v2-scale" title="Permalink to this heading"></a></h4>
+<h5>Z-Mix V2 Scale<a class="headerlink" href="#z-mix-v2-scale" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_z_mix_scale.webp"><img alt="Fx Z-Mix V2 Scale" class="align-center" src="_images/fx_z_mix_scale.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1129,7 +1080,7 @@ A higher value will make the Dead Line sharper, while a lower value will make th
 </section>
 <hr class="docutils" />
 <section id="z-mix-v2-stretch-noise">
-<h4>Z-Mix V2 Stretch Noise<a class="headerlink" href="#z-mix-v2-stretch-noise" title="Permalink to this heading"></a></h4>
+<h5>Z-Mix V2 Stretch Noise<a class="headerlink" href="#z-mix-v2-stretch-noise" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_z_stretch_noise.webp"><img alt="Fx Z-Mix V2 Stretch Noise" class="align-center" src="_images/fx_z_stretch_noise.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1140,7 +1091,7 @@ A higher value will make the Dead Line sharper, while a lower value will make th
 </section>
 <hr class="docutils" />
 <section id="z-mix-v2-object-space">
-<h4>Z-Mix V2 Object Space<a class="headerlink" href="#z-mix-v2-object-space" title="Permalink to this heading"></a></h4>
+<h5>Z-Mix V2 Object Space<a class="headerlink" href="#z-mix-v2-object-space" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_z_mix_object_space.webp"><img alt="Fx Z-Mix V2 Object Space" class="align-center" src="_images/fx_z_mix_object_space.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1155,7 +1106,7 @@ always at the same height on all objects.</strong></p>
 </section>
 <hr class="docutils" />
 <section id="z-mix-invert-z">
-<h4>Z-Mix Invert Z<a class="headerlink" href="#z-mix-invert-z" title="Permalink to this heading"></a></h4>
+<h5>Z-Mix Invert Z<a class="headerlink" href="#z-mix-invert-z" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_z_mix_invert_z.webp"><img alt="Fx Z-Mix V2 Invert Z" class="align-center" src="_images/fx_z_mix_invert_z.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1168,7 +1119,7 @@ always at the same height on all objects.</strong></p>
 </section>
 <hr class="docutils" />
 <section id="mask-map">
-<h3>Mask map<a class="headerlink" href="#mask-map" title="Permalink to this heading"></a></h3>
+<h4>Mask map<a class="headerlink" href="#mask-map" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/fx_layer_mask_map_texture_manager.webp"><img alt="Fx Layer Mask Map Texture Manager" class="align-center" src="_images/fx_layer_mask_map_texture_manager.webp" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1177,7 +1128,7 @@ always at the same height on all objects.</strong></p>
 of the mask will be selected automatically from the material that is being applied as Fx Layer, as explained here</p>
 </section>
 <section id="exclude-mask">
-<h3>Exclude Mask<a class="headerlink" href="#exclude-mask" title="Permalink to this heading"></a></h3>
+<h4>Exclude Mask<a class="headerlink" href="#exclude-mask" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/fx_layer_exclude_mask.webp"><img alt="Fx Layer Exclude Mask" class="align-center" src="_images/fx_layer_exclude_mask.webp" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1187,7 +1138,7 @@ the material containing the Fx Layer is present.</p>
 </section>
 <hr class="docutils" />
 <section id="invert-fx">
-<h3>Invert Fx<a class="headerlink" href="#invert-fx" title="Permalink to this heading"></a></h3>
+<h4>Invert Fx<a class="headerlink" href="#invert-fx" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/fx_layer_invert_fx.webp"><img alt="Fx Layer Invert Fx" class="align-center" src="_images/fx_layer_invert_fx.webp" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1200,7 +1151,7 @@ the material containing the Fx Layer is present.</p>
 </section>
 <hr class="docutils" />
 <section id="from-min-from-max">
-<h3>From Min From Max<a class="headerlink" href="#from-min-from-max" title="Permalink to this heading"></a></h3>
+<h4>From Min From Max<a class="headerlink" href="#from-min-from-max" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/fx_layer_from_min_max.webp"><img alt="Fx Layer From Min From Max" class="align-center" src="_images/fx_layer_from_min_max.webp" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1209,7 +1160,7 @@ the material containing the Fx Layer is present.</p>
 </section>
 <hr class="docutils" />
 <section id="show-diffuse">
-<h3>Show Diffuse<a class="headerlink" href="#show-diffuse" title="Permalink to this heading"></a></h3>
+<h4>Show Diffuse<a class="headerlink" href="#show-diffuse" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/fx_layer_show_diffuse.webp"><img alt="Fx Layer Show Diffuse" class="align-center" src="_images/fx_layer_show_diffuse.webp" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1219,7 +1170,7 @@ Se non vuoi vederlo, impostalo su 0.0, quindi il colore sarà gestito dal Base c
 </section>
 <hr class="docutils" />
 <section id="fx-layer-properties">
-<h3>Fx Layer Properties<a class="headerlink" href="#fx-layer-properties" title="Permalink to this heading"></a></h3>
+<h4>Fx Layer Properties<a class="headerlink" href="#fx-layer-properties" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/fx_layer_properties.webp"><img alt="Fx Layer Properties" class="align-center" src="_images/fx_layer_properties.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1229,7 +1180,32 @@ tutte le proprietà, appunto sono le stesse, quindi non le ripeterò, ma ti rima
 <p>For all the properties that are highlighted, you already have a complete description of them in the paragraph
 <strong>Module Material Panel</strong> all the properties, in fact, are the same, so I will not repeat them, but I refer you to
 the paragraph <strong>Module Material Panel</strong> <a class="reference internal" href="#module-material-panel"><span class="std std-ref">Module Material Panel</span></a></p>
+<hr class="docutils" />
 </section>
+</section>
+</section>
+<section id="material-editor-simple-pbr">
+<span id="me-simple-pbr-type"></span><h2>Material Editor (Simple PBR)<a class="headerlink" href="#material-editor-simple-pbr" title="Permalink to this heading"></a></h2>
+<p>This is the Material Editor panel when you apply a material with the <strong>Simple PBR</strong> method, to choose to apply
+the material with the <strong>Simple PBR</strong> method you have to set the material application method to <strong>Simple PBR</strong> here
+described: TODO: put link to the paragraph on how to apply the material</p>
+<a class="reference internal image-reference" href="_images/me_simple_pbr_type.webp"><img alt="Material Editor Simple PBR Type" class="align-center" src="_images/me_simple_pbr_type.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This panel will be drawn on the <strong>Simple PBR</strong> node standard of Extreme PBR. The Simple PBR node tree is this:</p>
+<a class="reference internal image-reference" href="_images/me_simple_pbr_node_tree_example.webp"><img alt="Material Editor Simple PBR Node Tree Example" class="align-center" src="_images/me_simple_pbr_node_tree_example.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The Simple PBR version is a simplified version of the Nexus version, so it does not have all the properties
+that the Nexus version has, but only the essentials to be able to create and manage the material.
+This type of material (Simple PBR) is much faster to manage, and much faster to render. So
+if you need speed, and you don’t need all the properties that the Nexus version has, especially for
+as regards painting, then I recommend using the Simple PBR version.</p>
+</div>
 </section>
 </section>
 

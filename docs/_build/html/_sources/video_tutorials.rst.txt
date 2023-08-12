@@ -255,6 +255,7 @@ Basic use of the Painter Material
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _how_to_bake_in_the_nexus_version:
 
 How to bake in the Nexus Version
 -------------------------------------

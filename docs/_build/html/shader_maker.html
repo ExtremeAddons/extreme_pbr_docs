@@ -20,7 +20,9 @@
         <script src="_static/sphinx_highlight.js"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" /> 
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Shader Overlay" href="shader_overlay.html" />
+    <link rel="prev" title="Displacement" href="displacement.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -47,17 +49,30 @@
 <li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interface and functions: 📱</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="main_panel.html">Main Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapping_editor.html">Mapping Editor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="material_editor.html">Material Editor (Nexus)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material_editor.html">Material Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="texture_manager.html">Texture Manager Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="texture_paint.html">Texture Paint</a></li>
 <li class="toctree-l1"><a class="reference internal" href="paint_tools.html">Paint Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="color_lab.html">Color Lab</a></li>
 <li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Shader Maker Category</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#shader-maker">Shader Maker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#auto-pbr">Auto PBR</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#material-editor-nexus">Material Editor (Nexus)</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#material-editor-simple-pbr">Material Editor (Simple PBR)</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#shader-maker-video">Shader Maker Video</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="shader_overlay.html">Shader Overlay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material_override.html">Material Override</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 </ul>
@@ -103,17 +118,103 @@
              
   <section id="shader-maker-category">
 <span id="id1"></span><h1>Shader Maker Category<a class="headerlink" href="#shader-maker-category" title="Permalink to this heading"></a></h1>
-<p>Questa speciale categoria contiene alcuni strumenti utili per creare e importare shader.</p>
+<p>This special category contains some useful tools to create and import shaders.</p>
+<table class="docutils align-default">
+<tbody>
+<tr class="row-odd"><td colspan="3"><p><a class="reference internal" href="_images/shader_maker_icon.webp"><img alt="Shader Maker Icon" src="_images/shader_maker_icon.webp" style="width: 200px;" /></a> <a class="reference internal" href="_images/sm_painter_icon.webp"><img alt="Shader Maker Icon" src="_images/sm_painter_icon.webp" style="width: 200px;" /></a>   <a class="reference internal" href="_images/video_maker_icon.webp"><img alt="Shader Maker Icon" src="_images/video_maker_icon.webp" style="width: 200px;" /></a></p></td>
+</tr>
+</tbody>
+</table>
 <section id="shader-maker">
 <span id="id2"></span><h2>Shader Maker<a class="headerlink" href="#shader-maker" title="Permalink to this heading"></a></h2>
-<p>TODO</p>
+<p>This tool of Extreme PBR allows you to create a material on the fly if you have the textures on your computer
+this tool recognizes the names of the textures (Maps) based on the suffix or prefix if it exists, so it is able to place
+in the right way the maps, this tool is very useful to create materials quickly and easily.</p>
+<a class="reference internal image-reference" href="_images/shader_maker_icon.webp"><img alt="Shader Maker Icon" class="align-center" src="_images/shader_maker_icon.webp" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>List of map nomenclatures that this tool recognizes:</p>
+<ul class="simple">
+<li><p><strong>Diffuse</strong>: _diffuse_xtm, _albedo, _basecolor, _base_color, _diffuse, _color, _diff, _dif, _col, diffuse</p></li>
+<li><p><strong>Emission</strong>: _emission_xtm, _emission, _emissive, _emiss, _emis, _emi</p></li>
+<li><p><strong>Occlusion</strong>: _occlusion_xtm, _ambient_occlusion, _ambientocclusion, _occlusion, _ao,  ao</p></li>
+<li><p><strong>Subsurface</strong>: _sss_xtm, _subsurface, _sss, _scattering, _scatter</p></li>
+<li><p><strong>Subsurface Strength</strong>: _sss_strength_xtm</p></li>
+<li><p><strong>Metal</strong>: _metal_xtm, _metalness, _metal, _metallic,  metal ,  metallic</p></li>
+<li><p><strong>Specular</strong>: _specular, _reflection, _mirror, _reflective, _reflex, _spec,  specular</p></li>
+<li><p><strong>Roughness</strong>: _roughness_xtm, _roughness, _glossy, _rough, _gloss, _rgh,  roughness</p></li>
+<li><p><strong>Transmission</strong>: _transmission_xtm, _transmission, _glass</p></li>
+<li><p><strong>Mask</strong>: _mask_xtm</p></li>
+<li><p><strong>Alpha</strong>: _alpha_xtm, _transparent, _alpha</p></li>
+<li><p><strong>Normal</strong>: _normal_xtm, _normal_map, _normal, _norm, _nrm,  normal</p></li>
+<li><p><strong>Bump</strong>: _bump_xtm, _bump_map, _bumpmap, _bump,  bump ,  height</p></li>
+<li><p><strong>Displace</strong>: _displace_xtm, _displace, _height, _disp,  displace</p></li>
+</ul>
+<hr class="docutils" />
+<section id="auto-pbr">
+<h3>Auto PBR<a class="headerlink" href="#auto-pbr" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/sm_auto_pbr.webp"><img alt="Shader Maker Auto PBR" class="align-center" src="_images/sm_auto_pbr.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>To add a material with Auto PBR, you must select the Shader Maker category and the Shader Maker,
+Then you will have a situation like in the image above-</p>
+<p>When you are in this special category, the whole addon understands and behaves differently, now for example, the
+<strong>Add New</strong> button described here: <a class="reference internal" href="main_panel.html#mp-add-new"><span class="std std-ref">Add New</span></a>, becomes, <strong>Auto PBR</strong> and when you press it a window will open
+File Browser, where you can select the Files you want to use for the material, based on the convention described
+here is also supported the selection of multiple image files, so you can select all the maps you need for the
+material.</p>
+<p>You can also choose only 1 file (For example: diffuse) even if it does not have a convention, and then add the others
+maps via <strong>Texture Manager</strong> Also described here <a class="reference internal" href="texture_manager.html#texture-manager-panel"><span class="std std-ref">Texture Manager Panel</span></a></p>
+<hr class="docutils" />
+<section id="material-editor-nexus">
+<h4>Material Editor (Nexus)<a class="headerlink" href="#material-editor-nexus" title="Permalink to this heading"></a></h4>
+<p>Here is the Nexus Panel if you have chosen the <strong>Nexus</strong> setting from the Extreme PBR options menu TODO: Put link to Nexus Material options</p>
+<p>Having applied the material via Shader Maker (Auto PBR button) now you can edit the material via
+Material Editor panel, below you will find the description of the material editor <a class="reference internal" href="material_editor.html#module-material-panel"><span class="std std-ref">Module Material Panel</span></a></p>
+<a class="reference internal image-reference" href="_images/sm_material_editor.webp"><img alt="Shader Maker Material Editor" class="align-center" src="_images/sm_material_editor.webp" style="width: 300px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="material-editor-simple-pbr">
+<h4>Material Editor (Simple PBR)<a class="headerlink" href="#material-editor-simple-pbr" title="Permalink to this heading"></a></h4>
+<p>Here is the Simple PBR Panel if you have chosen the <strong>Simple PBR</strong> setting from the Extreme PBR options menu TODO: Put link to Simple PBR options</p>
+<p>Having applied the material via Shader Maker (Auto PBR button) now you can edit the material via
+Material Editor panel, below you will find the description of the material editor <a class="reference internal" href="material_editor.html#me-simple-pbr-type"><span class="std std-ref">Material Editor (Simple PBR)</span></a></p>
+<a class="reference internal image-reference" href="_images/sm_material_editor_simple_pbr.webp"><img alt="Shader Maker Material Editor" class="align-center" src="_images/sm_material_editor_simple_pbr.webp" style="width: 300px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+</section>
+</section>
+<hr class="docutils" />
+<section id="shader-maker-video">
+<h2>Shader Maker Video<a class="headerlink" href="#shader-maker-video" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/video_maker_icon.webp"><img alt="Shader Maker Video" class="align-center" src="_images/video_maker_icon.webp" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Shader Maker Video allows you to apply a video as a material and easily control it from the panel.</p>
+<a class="reference internal image-reference" href="_images/sm_shader_maker_video_panel_example.webp"><img alt="Shader Maker Video Panel Example" class="align-center" src="_images/sm_shader_maker_video_panel_example.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>To add this type of Material, just press <strong>Add New</strong> Ref: <a class="reference internal" href="main_panel.html#add-remove-buttons"><span class="std std-ref">Add Replace Remove Buttons</span></a> a material with a demo video will be added
+that you can replace with your video.</p>
+</div>
 </section>
 </section>
 
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="displacement.html" class="btn btn-neutral float-left" title="Displacement" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="shader_overlay.html" class="btn btn-neutral float-right" title="Shader Overlay" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
