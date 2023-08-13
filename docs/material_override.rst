@@ -77,6 +77,14 @@ In the following images we see an example of a Material Override applied to all 
         Any material in the Extreme PBR library or in the Project, or imported with :ref:`shader_maker`, can be used as
         Material Override.
 
+
+
+.. note::
+        You can hide this panel if you want, but make sure you don't do it while you've already applied materials
+        as Material Override, otherwise you won't be able to access the material settings from the panel.
+        :ref:`pr_hide_material_override_panel`
+
+
 ------------------------------------------------------------------------------------------------------------------------
 
 Material Override Tools

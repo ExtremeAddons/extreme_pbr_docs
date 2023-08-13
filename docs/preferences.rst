@@ -373,10 +373,13 @@ Example with **Icons Popup Size 2.0**
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _pr_hide_shader_overlay_panel:
+
+
 Hide Shader Overlay Panel
 ****************************
 
-This panel can be hidden if you want to have a less cluttered addon interface.
+This panel can be hidden if you want to have a less small addon interface.
 
 Reference: :ref:`shader_overlay`
 
@@ -384,6 +387,26 @@ Reference: :ref:`shader_overlay`
     :align: center
     :width: 600
     :alt: Preferences Hide Shader Overlay Panel
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _pr_hide_material_override_panel:
+
+Hide Material Override Panel
+****************************
+
+This panel can be hidden if you want to have a less small addon interface.
+
+Reference: :ref:`material_override`
+
+.. image:: _static/_images/preferences/pr_op_hide_material_override_panel.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Hide Material Override Panel
+
+------------------------------------------------------------------------------------------------------------------------
+
+
 
 
 

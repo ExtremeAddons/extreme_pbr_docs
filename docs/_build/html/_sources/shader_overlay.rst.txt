@@ -90,6 +90,13 @@ material mentioned.
     :width: 400
     :alt: Shader Overlay Panel
 
+|
+
+.. tip::
+        You can hide this panel if you want, but make sure you don't do it while you've already applied materials
+        as Shader Overlay, otherwise you won't be able to access the material settings from the panel.
+        :ref:`pr_hide_shader_overlay_panel`
+
 ------------------------------------------------------------------------------------------------------------------------
 
 Add From Library
