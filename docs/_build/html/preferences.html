@@ -82,8 +82,21 @@
 <li class="toctree-l4"><a class="reference internal" href="#hide-material-override-panel">Hide Material Override Panel</a></li>
 </ul>
 </li>
-<li class="toctree-l3"><a class="reference internal" href="#fix-options">Fix Options</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#experimental-options">Experimental Options</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#fix-options">Fix Options</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#anti-crash">Anti Crash</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#find-lost-images">Find Lost Images</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#purge-extremeaddons-cache">Purge ExtremeAddons Cache</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#reload-all-mixers">Reload All Mixers</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#adjust-all-material-node-tree">Adjust All Material Node Tree</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#regenerate-all-previews-and-icon">Regenerate All Previews And Icon</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#experimental-options">Experimental Options</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#i-have-an-account-on-extreme-addons">I Have an Account on Extreme Addons</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#show-creator-utility">Show creator utility</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#show-download-debug">Show Download Debug</a></li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
@@ -390,12 +403,186 @@ material Browser: <a class="reference internal" href="main_panel.html#mp-materia
 </section>
 <section id="fix-options">
 <span id="pr-fix-options"></span><h3>Fix Options<a class="headerlink" href="#fix-options" title="Permalink to this heading"></a></h3>
-<p>TODO</p>
+<p>In this section of the options, there are some tools dedicated to the Fix of some problems that may arise.</p>
+<a class="reference internal image-reference" href="_images/pr_op_fix_panel.webp"><img alt="Preferences Fix Options" class="align-center" src="_images/pr_op_fix_panel.webp" style="width: 600px;" /></a>
 <hr class="docutils" />
+<section id="anti-crash">
+<h4>Anti Crash<a class="headerlink" href="#anti-crash" title="Permalink to this heading"></a></h4>
+<p>Anti Crash options, by default is activated, and it is used to avoid some anomalous crashes during the application of the
+material that occur on some compute and on others not.</p>
+<a class="reference internal image-reference" href="_images/pr_op_anti_crash.webp"><img alt="Preferences Anti Crash" class="align-center" src="_images/pr_op_anti_crash.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>What it basically does is to set the rendering engine to Eevee if you are in Cycles preview mode.
+I realize it’s quite annoying, but it’s the only way I’ve found to avoid these crashes.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>I invite you to try to disable it and see if the problem persists, otherwise you can leave it disabled.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="find-lost-images">
+<h4>Find Lost Images<a class="headerlink" href="#find-lost-images" title="Permalink to this heading"></a></h4>
+<p>In the event that the image files to which the materials referred, have been moved (In the best case)
+This button opens a file browser where you can roughly indicate the folder that may contain subfolders
+with missing images inside. If the images are found, they are automatically reconnected to the materials.</p>
+<a class="reference internal image-reference" href="_images/pr_op_find_lost_images.webp"><img alt="Preferences Find Lost Images" class="align-center" src="_images/pr_op_find_lost_images.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>This operation could take a long time, depending on various factors: number of materials with lost images,
+number of folders to analyze and speed of the Hard Disk. Normally an SSD is much faster than an HDD and there
+will be much less time to complete the operation.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="purge-extremeaddons-cache">
+<h4>Purge ExtremeAddons Cache<a class="headerlink" href="#purge-extremeaddons-cache" title="Permalink to this heading"></a></h4>
+<p>Purge ExtremeAddons Cache allows you to delete the Json files contained in the ExtremeAddon folder where they are stored
+the access data for downloading materials and the paths of the libraries, in addition it deletes all the Json files that are
+have been downloaded in the addon, for example the json file with the keys that point to the documentation, or the json files
+that contain the data of the list of updates of the addon.
+This could be useful if those files are damaged in some cases.</p>
+<a class="reference internal image-reference" href="_images/pr_op_purge_extremeaddons_cache.webp"><img alt="Preferences Purge ExtremeAddons Cache" class="align-center" src="_images/pr_op_purge_extremeaddons_cache.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Avoid if not strictly necessary to use this function, as the addon will have to download the json files that have been deleted again,
+and this if you are not connected to the internet will prevent you from using some functions of the addon.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="reload-all-mixers">
+<h4>Reload All Mixers<a class="headerlink" href="#reload-all-mixers" title="Permalink to this heading"></a></h4>
+<p>This button allows you to reload all the mixers in case some involuntary modification has been made even just
+to one of the Extreme PBR mixers present in the materials.</p>
+<p>This analyzes all the materials and if it finds even just 1 mixer in the material, it replaces it with a default mixer, fixing
+some situations that may have been created unintentionally.</p>
+<a class="reference internal image-reference" href="_images/pr_op_reload_all_mixers.webp"><img alt="Preferences Reload All Mixers" class="align-center" src="_images/pr_op_reload_all_mixers.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This button analyzes and searches only the materials of type <strong>Nexus</strong> which are those where the mixer from 1
+to 4 channels is present, so all the materials that do not contain the mixer will be bypassed.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="adjust-all-material-node-tree">
+<h4>Adjust All Material Node Tree<a class="headerlink" href="#adjust-all-material-node-tree" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><p><strong>Useful in case there are strangely black materials or with colors that do not correspond to those they should have</strong></p></li>
+</ul>
+<p>This button is useful to check and if necessary adjust all the materials present in the scene (Only the materials created
+with Extreme PBR) Below is an example of what this button does:</p>
+<a class="reference internal image-reference" href="_images/pr_op_adjust_all_material_node_tree.webp"><img alt="Preferences Adjust All Material Node Tree" class="align-center" src="_images/pr_op_adjust_all_material_node_tree.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Analyze incompatible nodes</strong></dt><dd><p>It can happen that by switching from one version to another, some Blender nodes are incompatible with the previous version
+or vice versa, this button analyzes all the materials and tries to find the “Unknown” nodes and replaces them with a node
+compatible.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Reconnect the disconnected nodes</strong></dt><dd><p>It could happen that involuntarily (Or for some bug of abnormal stop during the creation of the material) some
+nodes have been disconnected or not connected, this button analyzes all the materials and tries to find the disconnected nodes
+and reconnects them. Especially useful with Nexus nodes that are very complex.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>In order to set Extreme PBR with Nexus type materials, refer here: <a class="reference internal" href="#pr-op-material-type"><span class="std std-ref">Material Type</span></a>
+To take a look at the difference between Nexus nodes and Simple PBR nodes, refer here: <a class="reference internal" href="material_editor.html#me-material-nexus-type"><span class="std std-ref">Material Nexus type</span></a></p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="regenerate-all-previews-and-icon">
+<h4>Regenerate All Previews And Icon<a class="headerlink" href="#regenerate-all-previews-and-icon" title="Permalink to this heading"></a></h4>
+<p><strong>Use Case:</strong>
+It happened that during an Alpha version of Blender, when the Icon Images were loaded into the addon, for some
+strange reason, it seemed that they were damaged, I am not yet very clear about the reason, in any case this has been inserted
+specifically to regenerate all the icons and previews of the materials, so as to have a correct and functioning preview.</p>
+<a class="reference internal image-reference" href="_images/pr_op_regenerate_all_previews_and_icon.webp"><img alt="Preferences Regenerate All Previews And Icons" class="align-center" src="_images/pr_op_regenerate_all_previews_and_icon.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you are experiencing problems only with a few icons contained in the Extreme PBR material preview, described here: <a class="reference internal" href="main_panel.html#mp-material-browser"><span class="std std-ref">Material Browser</span></a>
+it will be sufficient to use the <a class="reference internal" href="main_panel.html#mp-reload-preview-icons"><span class="std std-ref">Reload Preview Icons</span></a> button to reload only the icons contained in the
+selected category.</p>
+</div>
+<hr class="docutils" />
+</section>
 </section>
 <section id="experimental-options">
 <span id="pr-experimental-options"></span><h3>Experimental Options<a class="headerlink" href="#experimental-options" title="Permalink to this heading"></a></h3>
-<p>TODO</p>
+<p>In this section you will find some experimental options.</p>
+<a class="reference internal image-reference" href="_images/pr_op_experimental_options_panel.webp"><img alt="Preferences Experimental Options Panel" class="align-center" src="_images/pr_op_experimental_options_panel.webp" style="width: 600px;" /></a>
+<hr class="docutils" />
+<section id="i-have-an-account-on-extreme-addons">
+<h4>I Have an Account on Extreme Addons<a class="headerlink" href="#i-have-an-account-on-extreme-addons" title="Permalink to this heading"></a></h4>
+<p>By activating this checkbox, the addon will be set up so that it can download the materials directly from the site and have
+access to the <strong>Extreme Addons</strong> TAB described here: TODO: Put reference to the extreme addons tab</p>
+<a class="reference internal image-reference" href="_images/pr_op_i_have_an_account_on_extreme_addons.webp"><img alt="Preferences I Have an Account on Extreme Addons" class="align-center" src="_images/pr_op_i_have_an_account_on_extreme_addons.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>With the advent of <strong>file.exapack</strong> we have also made the library files available directly on the sites
+where you will purchase the addon. So a new installation system (Already tested on HDRi Maker, another of our addons)
+is available by default. If you want to change and go back to the classic one, activate this option.</p>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>For all users who have an account on Extreme-Addons.com it is recommended to activate this option.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="show-creator-utility">
+<h4>Show creator utility<a class="headerlink" href="#show-creator-utility" title="Permalink to this heading"></a></h4>
+<p>By activating this checkbox, you will activate an interface created specifically to create libraries for Extreme PBR.
+This is a very powerful tool, but it requires attention. TODO link to the documentation of the creator utility</p>
+<a class="reference internal image-reference" href="_images/pr_op_show_creator_utility.webp"><img alt="Preferences Show Creator Utility" class="align-center" src="_images/pr_op_show_creator_utility.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>If you are not sure what you are doing, I recommend that you leave this option disabled, as you could
+damage the <strong>Default Library</strong> library of Extreme PBR.
+If you have doubts, contact me. TODO: reference to my contacts</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="show-download-debug">
+<h4>Show Download Debug<a class="headerlink" href="#show-download-debug" title="Permalink to this heading"></a></h4>
+<p>This checkbox is the one I use to check that the library downloads work correctly, if activated
+it will show in the library download interface, some additional messages that can be useful to understand
+any problems.</p>
+<a class="reference internal image-reference" href="_images/pr_op_show_download_debug.webp"><img alt="Preferences Show Download Debug" class="align-center" src="_images/pr_op_show_download_debug.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>I suggest you leave the option disabled so as not to create confusion. If you really want to activate it, do it only
+if you are sure of what you are doing.</p>
+</div>
+</section>
 </section>
 </section>
 </section>

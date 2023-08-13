@@ -406,16 +406,168 @@ Reference: :ref:`material_override`
 
 ------------------------------------------------------------------------------------------------------------------------
 
-
-
-
-
 .. _pr_fix_options:
 
 Fix Options
 ----------------------
 
-TODO
+In this section of the options, there are some tools dedicated to the Fix of some problems that may arise.
+
+.. image:: _static/_images/preferences/pr_op_fix_panel.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Fix Options
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Anti Crash
+****************************
+
+Anti Crash options, by default is activated, and it is used to avoid some anomalous crashes during the application of the
+material that occur on some compute and on others not.
+
+.. image:: _static/_images/preferences/pr_op_anti_crash.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Anti Crash
+
+|
+
+What it basically does is to set the rendering engine to Eevee if you are in Cycles preview mode.
+I realize it's quite annoying, but it's the only way I've found to avoid these crashes.
+
+.. tip::
+        I invite you to try to disable it and see if the problem persists, otherwise you can leave it disabled.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Find Lost Images
+****************************
+
+In the event that the image files to which the materials referred, have been moved (In the best case)
+This button opens a file browser where you can roughly indicate the folder that may contain subfolders
+with missing images inside. If the images are found, they are automatically reconnected to the materials.
+
+
+.. image:: _static/_images/preferences/pr_op_find_lost_images.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Find Lost Images
+
+|
+
+.. attention::
+        This operation could take a long time, depending on various factors: number of materials with lost images,
+        number of folders to analyze and speed of the Hard Disk. Normally an SSD is much faster than an HDD and there
+        will be much less time to complete the operation.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Purge ExtremeAddons Cache
+****************************
+
+Purge ExtremeAddons Cache allows you to delete the Json files contained in the ExtremeAddon folder where they are stored
+the access data for downloading materials and the paths of the libraries, in addition it deletes all the Json files that are
+have been downloaded in the addon, for example the json file with the keys that point to the documentation, or the json files
+that contain the data of the list of updates of the addon.
+This could be useful if those files are damaged in some cases.
+
+
+.. image:: _static/_images/preferences/pr_op_purge_extremeaddons_cache.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Purge ExtremeAddons Cache
+
+|
+
+.. attention::
+        Avoid if not strictly necessary to use this function, as the addon will have to download the json files that have been deleted again,
+        and this if you are not connected to the internet will prevent you from using some functions of the addon.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Reload All Mixers
+****************************
+
+This button allows you to reload all the mixers in case some involuntary modification has been made even just
+to one of the Extreme PBR mixers present in the materials.
+
+This analyzes all the materials and if it finds even just 1 mixer in the material, it replaces it with a default mixer, fixing
+some situations that may have been created unintentionally.
+
+.. image:: _static/_images/preferences/pr_op_reload_all_mixers.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Reload All Mixers
+
+|
+
+.. note::
+        This button analyzes and searches only the materials of type **Nexus** which are those where the mixer from 1
+        to 4 channels is present, so all the materials that do not contain the mixer will be bypassed.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Adjust All Material Node Tree
+********************************
+
+
+- **Useful in case there are strangely black materials or with colors that do not correspond to those they should have**
+
+
+This button is useful to check and if necessary adjust all the materials present in the scene (Only the materials created
+with Extreme PBR) Below is an example of what this button does:
+
+
+.. image:: _static/_images/preferences/pr_op_adjust_all_material_node_tree.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Adjust All Material Node Tree
+
+|
+
+- **Analyze incompatible nodes**
+    It can happen that by switching from one version to another, some Blender nodes are incompatible with the previous version
+    or vice versa, this button analyzes all the materials and tries to find the "Unknown" nodes and replaces them with a node
+    compatible.
+
+- **Reconnect the disconnected nodes**
+    It could happen that involuntarily (Or for some bug of abnormal stop during the creation of the material) some
+    nodes have been disconnected or not connected, this button analyzes all the materials and tries to find the disconnected nodes
+    and reconnects them. Especially useful with Nexus nodes that are very complex.
+
+
+.. seealso::
+        In order to set Extreme PBR with Nexus type materials, refer here: :ref:`pr_op_material_type`
+        To take a look at the difference between Nexus nodes and Simple PBR nodes, refer here: :ref:`me_material_nexus_type`
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Regenerate All Previews And Icon
+************************************
+
+**Use Case:**
+It happened that during an Alpha version of Blender, when the Icon Images were loaded into the addon, for some
+strange reason, it seemed that they were damaged, I am not yet very clear about the reason, in any case this has been inserted
+specifically to regenerate all the icons and previews of the materials, so as to have a correct and functioning preview.
+
+.. image:: _static/_images/preferences/pr_op_regenerate_all_previews_and_icon.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Regenerate All Previews And Icons
+
+|
+
+
+.. important::
+    If you are experiencing problems only with a few icons contained in the Extreme PBR material preview, described here: :ref:`mp_material_browser`
+    it will be sufficient to use the :ref:`mp_reload_preview_icons` button to reload only the icons contained in the
+    selected category.
+
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -424,8 +576,79 @@ TODO
 Experimental Options
 ----------------------
 
-TODO
+In this section you will find some experimental options.
 
+.. image:: _static/_images/preferences/pr_op_experimental_options_panel.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Experimental Options Panel
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+I Have an Account on Extreme Addons
+************************************
+
+By activating this checkbox, the addon will be set up so that it can download the materials directly from the site and have
+access to the **Extreme Addons** TAB described here: TODO: Put reference to the extreme addons tab
+
+.. image:: _static/_images/preferences/pr_op_i_have_an_account_on_extreme_addons.webp
+    :align: center
+    :width: 600
+    :alt: Preferences I Have an Account on Extreme Addons
+
+|
+
+.. note::
+        With the advent of **file.exapack** we have also made the library files available directly on the sites
+        where you will purchase the addon. So a new installation system (Already tested on HDRi Maker, another of our addons)
+        is available by default. If you want to change and go back to the classic one, activate this option.
+
+.. important::
+        For all users who have an account on Extreme-Addons.com it is recommended to activate this option.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Show creator utility
+****************************
+
+By activating this checkbox, you will activate an interface created specifically to create libraries for Extreme PBR.
+This is a very powerful tool, but it requires attention. TODO link to the documentation of the creator utility
+
+
+.. image:: _static/_images/preferences/pr_op_show_creator_utility.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Show Creator Utility
+
+|
+
+.. attention::
+        If you are not sure what you are doing, I recommend that you leave this option disabled, as you could
+        damage the **Default Library** library of Extreme PBR.
+        If you have doubts, contact me. TODO: reference to my contacts
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Show Download Debug
+****************************
+
+This checkbox is the one I use to check that the library downloads work correctly, if activated
+it will show in the library download interface, some additional messages that can be useful to understand
+any problems.
+
+
+.. image:: _static/_images/preferences/pr_op_show_download_debug.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Show Download Debug
+
+|
+
+.. tip::
+        I suggest you leave the option disabled so as not to create confusion. If you really want to activate it, do it only
+        if you are sure of what you are doing.
 
 
 

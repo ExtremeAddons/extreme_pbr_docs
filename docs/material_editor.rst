@@ -26,6 +26,8 @@ From this panel you can also access painting and many other features!
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _me_material_nexus_type:
+
 Material Nexus type
 ====================
 

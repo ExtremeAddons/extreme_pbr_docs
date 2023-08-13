@@ -202,6 +202,8 @@ This button will open the Extreme PBR preferences exactly in the Options section
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _mp_reload_preview_icons:
+
 Reload Preview Icons
 *********************
 
