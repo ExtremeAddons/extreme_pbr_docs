@@ -1,266 +1,412 @@
+======================
 Preferences
-====================
+======================
 
-To go to the preferences, you can go in 2 ways:
-
-  * Easier directly from the addon (If installed and enabled)
-
-    .. image:: _static/_images/preferences/open_preferences_from_extreme_pbr.png
-        :align: center
-        :width: 200
-        :alt: Preferences dropdown
-
-  * From Blender:
-
-    .. image:: _static/_images/installation/preferences_dropdown_01.jpg
-        :align: center
-        :width: 400
-        :alt: Preferences dropdown
-
-    Search into Addon tab, the "Extreme PBR" addon:
-
-    .. image:: _static/_images/installation/installation_interface_step_01.png
-        :align: center
-        :width: 400
-        :alt: Installation interface step 01
+In order to access the preferences there are several ways:
 
 
+- **By Extreme PBR (If already installed and operational)**
 
-Library Management
-------------------
+From the Extreme PBR panel, click on the ``Options`` button, this will open the preferences in the **Options** tab.
 
-“Library Management”, allows you to link or change paths to Extreme PBR libraries.
-You can also add expansion libraries later. If you want to delight in creating libraries to sell, your customer will find the “Add Library” button useful, you can add many libraries, without limit.
+.. image:: _static/_images/preferences/pr_panel_button.webp
+    :align: center
+    :width: 800
+    :alt: Preferences Panel Button
 
-.. Note:: To work, Extreme PBR needs to have linked (Installed) the main library, and the user library (Even if empty)
+|
+
+- **By Blender Preferences**
+
+From Blender's main menu, select ``Edit`` and then ``Preferences``, this will open Blender's preferences window.
+Go to ``Add-ons`` and search for ``Extreme PBR`` and click on the checkbox to activate it (If it's not already active).
 
 
-.. image:: _static/_images/preferences/library_management_01.jpg
-        :align: center
-        :width: 800
-        :alt: Library Management 01
+.. image:: _static/_images/preferences/pr_edit_preferences.webp
+    :align: center
+    :width: 800
+    :alt: Blender Preferences Button
 
+
+------------------------------------------------------------------------------------------------------------------------
 
 Options
--------
+======================
 
-Click the Options tab to customize the Extreme PBR panel.
+Le Opzioni sono suddivise in diverse aree di interesse:
 
-.. image:: _static/_images/preferences/options_tab_preferences_01.jpg
-        :align: center
-        :width: 800
-        :alt: Options tab preferences 01
-
-
-
-Check For Updates
-*******************
-
-Sets how often the addon should check for new updates.
-
-.. image:: _static/_images/preferences/check_for_updates_every.jpg
-        :align: center
-        :width: 600
-        :alt: Check for updates every
+- **General Options:** Ref: :ref:`pr_general_options`
+- **Interface Options** Ref: :ref:`pr_interface_options`
+- **Fix Options** Ref: :ref:`pr_fix_options`
+- **Experimental Options** Ref: :ref:`pr_experimental_options`
 
 
-Show name label in preview button
-**********************************
+.. image:: _static/_images/preferences/pr_options_example.webp
+    :align: center
+    :width: 800
+    :alt: Preferences Options Example
 
-If enabled, the name of the material will be displayed in the preview popup
+------------------------------------------------------------------------------------------------------------------------
+
+.. _pr_general_options:
+
+General Options
+----------------------
+
+.. image:: _static/_images/preferences/pr_general_options.webp
+    :align: center
+    :width: 600
+    :alt: Preferences General Options
+
+|
+
+Bellow are explained the various properties
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _pr_op_material_type:
+
+Material Type
+**********************
+
+.. image:: _static/_images/preferences/pr_op_material_type.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Material Type
+
+|
+
+This selector allows you to choose which type of setting to use when creating a material:
+
+- **Nexus:**
+    - This type of setting allows you to create materials in Nexus mode, this means that you will have access to
+      the **Texture Paint**, described here: :ref:`texture_paint` and to the creation of **Fx Layers**, described here: :ref:`fx_layer` and to all
+      its **Dynamic Mask** described here: :ref:`fx_dynamic_mask`
+
+- **Simple PBR:**
+    - This type of material setting allows you to create simple materials, so that you have "Light" materials
+      for your project, the render will be much faster, but you will not have access to the functions of the **Nexus**
+      materials. **Simple PBR** example is here: :ref:`me_simple_pbr_type`
 
 
-.. image:: _static/_images/preferences/preview_popup_bool_01.jpg
-        :align: center
-        :width: 200
-        :alt: Show name label in preview button
+------------------------------------------------------------------------------------------------------------------------
 
+Check For updates Every
+****************************
 
-.. image:: _static/_images/preferences/preview_popup_with_labels_01.jpg
-        :align: center
-        :width: 800
-        :alt: Show name label in preview button
+.. image:: _static/_images/preferences/pr_op_check_for_updates_every.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Check For updates Every
 
+|
 
-Icon Preview Dimension
+This property allows you to choose how often Extreme PBR should check for updates.
+
+.. important::
+        I strongly advise you not to leave **Never** as a value, as Extreme PBR is constantly evolving and
+        there may be important updates to fix bugs or add new features, so
+        if you leave **Never** you will not see the new update alerts.
+        you can always refer to **Check For Updates** described here: TODO: Put reference to Check For Updates button
+
+------------------------------------------------------------------------------------------------------------------------
+
+Show Hidden Sockets
 ************************
 
-.. image:: _static/_images/preferences/icon_preview_dimension_01.jpg
-        :align: center
-        :width: 300
-        :alt: Icon Preview Dimension
 
-Choose the previews icons dimension.
-Tips: Correct size = 1
+Show Hidden Sockets allows you to show or hide the sockets of the Extreme PBR Nexus nodes, by default the unused sockets
+are hidden for a matter of node interface cleaning.
 
+.. image:: _static/_images/preferences/pt_op_show_hidden_sockets.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Show Hidden Sockets
 
-Icon Popup Size
-****************
+|
 
-Choose the popup icons dimension. Tips: Correct size = 1
+Here is an example of what happens to the nodes when you activate or deactivate this **Show Hidden Sockets**:
 
-.. image:: _static/_images/preferences/icon_popup_size_01.jpg
-        :align: center
-        :width: 300
-        :alt: Icon Popup Size
+.. image:: _static/_images/preferences/pr_op_show_hidden_sockets_example.webp
+    :align: center
+    :width: 800
+    :alt: Preferences Show Hidden Sockets Example
 
+------------------------------------------------------------------------------------------------------------------------
 
-Show hidden sockets
-*********************
+Show Group Options
+************************
 
-Show hidden sockets on Shader
+Show Group Options allows you to show or hide the options of the Extreme PBR Nexus nodes, by default the options are
+hidden for a matter of node interface cleaning.
 
-.. image:: _static/_images/preferences/show_hidden_sockets_01.jpg
-        :align: center
-        :width: 200
-        :alt: Show hidden sockets
+.. image:: _static/_images/preferences/pt_op_show_group_options.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Show Group Options
 
+|
 
-If enable: the unused sockets will be hidden
+Here is an example of what happens to the nodes when you activate or deactivate this **Show Group Options**:
 
-.. image:: _static/_images/preferences/hidden_sockets_01.png
-        :align: center
-        :width: 800
-        :alt: Show hidden sockets
+.. image:: _static/_images/preferences/pt_op_show_group_options_example.webp
+    :align: center
+    :width: 800
+    :alt: Preferences Show Group Options Example
 
-
-Show group options
-*******************
-
-.. image:: _static/_images/preferences/show_node_options_01.jpg
-        :align: center
-        :width: 200
-        :alt: Show node options
-
-
-If enabled, it will show the node groups options, as in this example:
-
-
-.. image:: _static/_images/preferences/show_node_options_02.png
-        :align: center
-        :width: 800
-        :alt: Show node options
-
-
-Auto Uv Map
-************
-
-.. image:: _static/_images/preferences/auto_uv_map.jpg
-        :align: center
-        :width: 200
-        :alt: Auto Uv Map
-
-If the object does not have a Uv Mapping once the material has been added, a default UV mapping will automatically be added.
-(it is advisable to leave this button active so as to avoid wasting time). Objects that have a UV mapping will not be automatically bypassed
-
-
-Safety Paint Uv Map
-*********************
-
-.. image:: _static/_images/preferences/safety_paint_uv_map.jpg
-        :align: center
-        :width: 200
-        :alt: Safety Paint Uv Map
-
-Prevents the uv layer of the texture paint from being selected if you are not in Texture Paint Mode
-
-
-Smart Texture Limiter
-***********************
-
-.. image:: _static/_images/preferences/smart_texture_limiter_01.jpg
-        :align: center
-        :width: 200
-        :alt: Smart Texture Limiter
-
-Due to the maximum texture limit of 24 for Eevee, this feature (Enable by default) attempts to limit the use of textures
-when a material has many Shaders and Fx layers. Cons: Some maps may be disabled, starting from the Fx Layers Modules, then moving on to the Modules
-
-
-Anti Crash
-************
-
-.. image:: _static/_images/preferences/anti_crash_01.jpg
-        :align: center
-        :width: 200
-        :alt: Anti Crash
-
-One some computers, there is an abnormal crash when adding a material. The bug has been reported to the Blender Foundation,
-until the cause is understood, keep this active if you encounter any abnormal crashes applying the materials.
-
-
+------------------------------------------------------------------------------------------------------------------------
 
 Default Mapping Type
-**********************
+************************
 
-.. image:: _static/_images/preferences/default_mapping_type_01.jpg
-        :align: center
-        :width: 200
-        :alt: Default Mapping Type
+Default Mapping Type allows you to choose the default mapping type for the textures, by default the mapping type is
+**UV**
 
-Choose the UV Map mode.
+.. image:: _static/_images/preferences/pt_op_default_mapping_type.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Default Mapping Type
 
+|
 
-Show Creator Utility
-**********************
-
-.. image:: _static/_images/preferences/show_creator_utility_01.jpg
-        :align: center
-        :width: 200
-        :alt: Show Creator Utility
+In order to see better what it is, refer to: :ref:`mapping_editor_panel`
 
 
-Show in the Shader Editor, a panel for material and library creators. If you are not a material creator, please do not use this as it may damage the main library.
+.. tip::
+        You can always modify each Texture Image material individually at a later time.
+        My suggestion if you have little experience is to leave UV as the default for now.
 
 
-Findo Lost Images
-*******************
+------------------------------------------------------------------------------------------------------------------------
 
-.. image:: _static/_images/preferences/find_lost_images_01.jpg
-        :align: center
-        :width: 200
-        :alt: Find Lost Images
+.. _pr_op_texture_color_space:
 
-
-This is used to search for any lost images, in case Blender appears with "Pink" materials, this means that the textures
-to which the material refers have not been found.
-The cause may be that the files have been moved or renamed.
-
-This button opens a popup where to enter a path where to perform the automatic search for lost images.
+Texture Color Space
+************************
 
 
-Update Library Register
-*************************
+Texture Color Space allows you to choose the default color space for the textures, by default the color space is **sRGB**
+but this also allows you to choose other color spaces if you are using different ACES configurations.
 
-.. image:: _static/_images/preferences/update_library_register_01.jpg
-        :align: center
-        :width: 200
-        :alt: Update Library Register
+Once you have chosen the color space, this will be applied to all the textures that will be created by Extreme PBR and also
+to those already applied.
 
-This is used to search and update the library register, in case of Extreme PBR update, or addition of new libraries.
+.. image:: _static/_images/preferences/pr_op_texture_colorspace_section.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Texture Color Space Section
 
-
-Update
----------
-
-.. Important:: To use the functions in this menu, you must be logged in with your profile in the “Extreme Addons” Tab menu
+|
 
 
-**In this Tab menu, you will be able to update the libraries and addon**
+.. hint::
+        if your **ACES** list is very long, you can search by name, and the list will narrow down so as not to be confused.
+        This tool was designed specifically for those who use ACES configurations other than the default one.
 
-- Update core:
-    - Update the addon directly, without having to do the classic Blender manual procedure.
 
-- Update Library:
-    - If you want to check if there are new materials to install, first press this button, your library will automatically update if there is any new material online.
+RGB
+^^^^
 
-- Essential/1k/2k/4k/8k/All:
-    - They are the same buttons present in Step 5 (Go a few pages up to see)
+Rgb Color Space allows you to change the color space of all textures to RGB (Type diffuse, emission, etc ...)
 
-.. image:: _static/_images/preferences/update_tab_01.jpg
-        :align: center
+.. image:: _static/_images/preferences/pt_op_texture_color_space_rgb.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Texture Color Space
+
+|
+
+.. important::
+        This function will change the color spaces only of the materials applied with Extreme PBR, no material coming
+        from other sources will be modified, nor those created manually.
+        In addition, only nodes of type **Image Texture** will be identified
+
+BW
+^^^^
+
+BW Color Space allows you to change the color space of all textures to BW (Type normal, roughness, etc ...)
+
+.. image:: _static/_images/preferences/pt_op_texture_color_space_bw.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Texture Color Space
+
+|
+
+.. important::
+        This function will change the color spaces only of the materials applied with Extreme PBR, no material coming
+        from other sources will be modified, nor those created manually.
+        In addition, only nodes of type **Image Texture** will be identified
+
+|
+
+
+Try to reset to default
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+.. image:: _static/_images/preferences/pt_op_texture_color_space_reset.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Texture Color Space
+
+|
+
+This button, if pressed, will try to reset the color spaces of all textures to the default ones, **sRGB** and **Non-Color**,
+and also in the buttons **RGB** and **BW** :ref:`pr_op_texture_color_space`
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _pr_interface_options:
+
+Interface Options
+----------------------
+
+From this section you can modify some settings of the Extreme PBR interface.
+
+.. image:: _static/_images/preferences/pr_op_interface_options_panel.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Interface Options
+
+|
+
+Show material popup label
+****************************
+
+This option allows you to show or hide the preview material labels in the material browser popup.
+Reference here to the material Browser: :ref:`mp_material_browser`
+
+
+.. image:: _static/_images/preferences/pr_op_show_material_popup_label.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Show Material Popup Label
+
+
+|
+
+
+**Show material popup label On**
+
+.. image:: _static/_images/preferences/pr_op_popup_label_example_on.webp
+    :align: center
+    :width: 800
+    :alt: Preferences Show Material Popup Label Example On
+
+|
+
+**Show material popup label Off**
+
+.. image:: _static/_images/preferences/pr_op_popup_label_example_off.webp
+    :align: center
+    :width: 800
+    :alt: Preferences Show Material Popup Label Example Off
+
+------------------------------------------------------------------------------------------------------------------------
+
+Icon Preview Dimension
+****************************
+
+This option allows you to change the size of the material preview icons in the Material Browser, reference here to the
+material Browser: :ref:`mp_material_browser`
+
+.. image:: _static/_images/preferences/pr_op_icon_preview_dimension.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Icon Preview Dimension
+
+|
+
+
+.. |1_0| image:: _static/_images/preferences/pr_op_icon_preview_dimension_1_0.webp
+        :align: top
         :width: 800
-        :alt: Update Library
+        :alt: Preferences Icon Preview Dimension 1.0
+
+
+.. |1_7| image:: _static/_images/preferences/pr_op_icon_preview_dimension_1_7.webp
+        :align: top
+        :width: 800
+        :alt: Preferences Icon Preview Dimension 1.7
+
+
+In this example the left panel can be much smaller.
+
++----------------------------------+----------------------------------+
+| **Icon Preview Dimension 1.0**   | **Icon Preview Dimension 1.7**   |
++==================================+==================================+
+| |1_0|                            | |1_7|                            |
++----------------------------------+----------------------------------+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Icons Popup Size
+****************************
+
+This option allows you to choose the size of the icons of the material preview popup, reference here to the
+material Browser: :ref:`mp_material_browser_popup`
+
+
+.. image:: _static/_images/preferences/pr_op_icons_popup_size.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Icons Popup Size
+
+|
+
+Example with **Icons Popup Size 1.0**
+
+.. image:: _static/_images/preferences/pr_op_preview_popup_size_1_0.webp
+    :align: center
+    :width: 800
+    :alt: Preferences Icons Popup Size 1.0
+
+|
+
+Example with **Icons Popup Size 2.0**
+
+.. image:: _static/_images/preferences/pr_op_preview_popup_size_2_0.webp
+    :align: center
+    :width: 800
+    :alt: Preferences Icons Popup Size 1.7
+
+------------------------------------------------------------------------------------------------------------------------
+
+Hide Shader Overlay Panel
+****************************
+
+This panel can be hidden if you want to have a less cluttered addon interface.
+
+Reference: :ref:`shader_overlay`
+
+.. image:: _static/_images/preferences/pr_op_hide_shader_overlay_panel.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Hide Shader Overlay Panel
+
+
+
+.. _pr_fix_options:
+
+Fix Options
+----------------------
+
+TODO
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _pr_experimental_options:
+
+Experimental Options
+----------------------
+
+TODO
+
+
+
+
+
 
 
 

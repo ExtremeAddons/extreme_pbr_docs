@@ -138,6 +138,8 @@ This section is dedicated to displaying the material previews.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _mp_material_browser_popup:
+
 Preview Popup
 *************
 
