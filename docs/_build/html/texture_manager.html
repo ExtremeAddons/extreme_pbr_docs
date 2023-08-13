@@ -22,7 +22,7 @@
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
     <link rel="next" title="Texture Paint" href="texture_paint.html" />
-    <link rel="prev" title="Material Editor (Nexus)" href="material_editor.html" /> 
+    <link rel="prev" title="Material Editor" href="material_editor.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -53,7 +53,7 @@
 <li class="toctree-l1"><a class="reference internal" href="main_panel.html">Main Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mapping_editor.html">Mapping Editor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="material_editor.html">Material Editor (Nexus)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material_editor.html">Material Editor</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Texture Manager Panel</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#texture-manager-rgb">Texture Manager RGB</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#material-browser">Material Browser</a></li>
@@ -90,12 +90,16 @@
 <li class="toctree-l3"><a class="reference internal" href="#gamma-correction">Gamma Correction</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#texture-manager-video">Texture Manager Video</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="texture_paint.html">Texture Paint</a></li>
-<li class="toctree-l1"><a class="reference internal" href="paint_tools.html">Paint Tools Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paint_tools.html">Paint Tools</a></li>
 <li class="toctree-l1"><a class="reference internal" href="color_lab.html">Color Lab</a></li>
 <li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shader_maker.html">Shader Maker Category</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shader_overlay.html">Shader Overlay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material_override.html">Material Override</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
 </ul>
@@ -457,8 +461,8 @@ which are in fact the colors of the map that decide where the effect is present 
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Questo pannello è pressoché identico ai precedenti Texture Manager, ma è utilizzato per le mappe Normali, quindi ha alcune proprietà in più
-oltre a queste:</p>
+<p>This panel is almost identical to the previous Texture Manager, but is used for Normal maps, so it has some more properties
+in addition to these:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="#tm-material-browser"><span class="std std-ref">Material Browser</span></a></p></li>
 <li><p><a class="reference internal" href="#tm-search-category"><span class="std std-ref">Search Category</span></a></p></li>
@@ -523,7 +527,32 @@ use these buttons, unless you import maps from other material packages where som
 </div>
 <p>Gamma Correction, allows you to adjust the Gamma value of the Normal map, this is useful if the Normal map is too strong or too weak,
 in this way you can adjust it as you prefer and make it the best.</p>
+<hr class="docutils" />
 </section>
+</section>
+<section id="texture-manager-video">
+<span id="id3"></span><h2>Texture Manager Video<a class="headerlink" href="#texture-manager-video" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/texture_manager_video.webp"><img alt="Texture Manager Video" class="align-center" src="_images/texture_manager_video.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This Texture Manager panel version is used for Video textures, so it has no particular functions because if you are using the Shader Maker Video,
+all the necessary properties are already present in the <strong>Material Editor</strong> panel described here: <a class="reference internal" href="shader_maker.html#shader-maker-video"><span class="std std-ref">Shader Maker Video</span></a></p>
+<ul class="simple">
+<li><p><a class="reference internal" href="#tm-material-browser"><span class="std std-ref">Material Browser</span></a></p></li>
+<li><p><a class="reference internal" href="#tm-search-category"><span class="std std-ref">Search Category</span></a></p></li>
+<li><p><a class="reference internal" href="#tm-search-material"><span class="std std-ref">Search Material</span></a></p></li>
+<li><p><a class="reference internal" href="#tm-texture-browser"><span class="std std-ref">Texture Browser</span></a></p></li>
+<li><p><a class="reference internal" href="#tm-add"><span class="std std-ref">Add</span></a></p></li>
+<li><p><a class="reference internal" href="#tm-recycle-if-exists"><span class="std std-ref">Recycle if Exists</span></a></p></li>
+<li><p><a class="reference internal" href="#tm-texture-resolution"><span class="std std-ref">Texture resolution</span></a></p></li>
+<li><p><a class="reference internal" href="#tm-search-data-images"><span class="std std-ref">Search Data Images</span></a></p></li>
+<li><p><a class="reference internal" href="#tm-texture-name"><span class="std std-ref">Texture Name</span></a></p></li>
+<li><p><a class="reference internal" href="#tm-import-image-texture"><span class="std std-ref">Import Image Texture</span></a></p></li>
+<li><p><a class="reference internal" href="#tm-remove-texture"><span class="std std-ref">Remove Texture</span></a></p></li>
+<li><p><a class="reference internal" href="#tm-mute-texture"><span class="std std-ref">Mute texture</span></a></p></li>
+<li><p><a class="reference internal" href="#tm-copy-paste-texture"><span class="std std-ref">Copy Paste Texture</span></a></p></li>
+</ul>
 </section>
 </section>
 
@@ -531,7 +560,7 @@ in this way you can adjust it as you prefer and make it the best.</p>
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="material_editor.html" class="btn btn-neutral float-left" title="Material Editor (Nexus)" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="material_editor.html" class="btn btn-neutral float-left" title="Material Editor" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
         <a href="texture_paint.html" class="btn btn-neutral float-right" title="Texture Paint" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 

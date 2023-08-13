@@ -68,7 +68,32 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#shader-maker-video">Shader Maker Video</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#shader-maker-video">Shader Maker Video</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#texture-manager-button">Texture Manager Button</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#smart-video-start">Smart Video Start</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#play-animation">Play Animation</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scene-start-stop">Scene Start/Stop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#jump-to-start-end">Jump to Start/End</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#timeline">Timeline</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#video-start-stop">Video Start/Stop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#video-loop">Video Loop</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#preview-animated">Preview Animated</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#cathode-fx">Cathode Fx</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scale-cathode-fx">Scale Cathode Fx</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#painter">Painter</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#painter-panel">Painter Panel</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#maps-size">Maps Size</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#stop-paint">Stop Paint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#mute-un-mute-map">Mute/Un-Mute Map</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#smp-texture-manager-button">Texture Manager Button</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#texture-manager-panel-rgb">Texture Manager Panel RGB</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#texture-manager-panel-bw">Texture Manager Panel BW</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="shader_overlay.html">Shader Overlay</a></li>
@@ -173,7 +198,7 @@ maps via <strong>Texture Manager</strong> Also described here <a class="referenc
 <p>Here is the Nexus Panel if you have chosen the <strong>Nexus</strong> setting from the Extreme PBR options menu TODO: Put link to Nexus Material options</p>
 <p>Having applied the material via Shader Maker (Auto PBR button) now you can edit the material via
 Material Editor panel, below you will find the description of the material editor <a class="reference internal" href="material_editor.html#module-material-panel"><span class="std std-ref">Module Material Panel</span></a></p>
-<a class="reference internal image-reference" href="_images/sm_material_editor.webp"><img alt="Shader Maker Material Editor" class="align-center" src="_images/sm_material_editor.webp" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/sm_material_editor.webp"><img alt="Shader Maker Material Editor" class="align-center" src="_images/sm_material_editor.webp" style="width: 400px;" /></a>
 </section>
 <hr class="docutils" />
 <section id="material-editor-simple-pbr">
@@ -181,16 +206,16 @@ Material Editor panel, below you will find the description of the material edito
 <p>Here is the Simple PBR Panel if you have chosen the <strong>Simple PBR</strong> setting from the Extreme PBR options menu TODO: Put link to Simple PBR options</p>
 <p>Having applied the material via Shader Maker (Auto PBR button) now you can edit the material via
 Material Editor panel, below you will find the description of the material editor <a class="reference internal" href="material_editor.html#me-simple-pbr-type"><span class="std std-ref">Material Editor (Simple PBR)</span></a></p>
-<a class="reference internal image-reference" href="_images/sm_material_editor_simple_pbr.webp"><img alt="Shader Maker Material Editor" class="align-center" src="_images/sm_material_editor_simple_pbr.webp" style="width: 300px;" /></a>
+<a class="reference internal image-reference" href="_images/sm_material_editor_simple_pbr.webp"><img alt="Shader Maker Material Editor" class="align-center" src="_images/sm_material_editor_simple_pbr.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-</section>
-</section>
-</section>
 <hr class="docutils" />
+</section>
+</section>
+</section>
 <section id="shader-maker-video">
-<h2>Shader Maker Video<a class="headerlink" href="#shader-maker-video" title="Permalink to this heading"></a></h2>
+<span id="id3"></span><h2>Shader Maker Video<a class="headerlink" href="#shader-maker-video" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="_images/video_maker_icon.webp"><img alt="Shader Maker Video" class="align-center" src="_images/video_maker_icon.webp" style="width: 200px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -205,6 +230,272 @@ Material Editor panel, below you will find the description of the material edito
 <p>To add this type of Material, just press <strong>Add New</strong> Ref: <a class="reference internal" href="main_panel.html#add-remove-buttons"><span class="std std-ref">Add Replace Remove Buttons</span></a> a material with a demo video will be added
 that you can replace with your video.</p>
 </div>
+<p>For the properties described below, refer here, they are common to most of the Extreme PBR materials:</p>
+<ul class="simple">
+<li><p><strong>Transparent:</strong> <a class="reference internal" href="material_editor.html#me-transparent"><span class="std std-ref">Transparent</span></a></p></li>
+<li><p><strong>Transparent Mode:</strong> <a class="reference internal" href="material_editor.html#me-transparent-mode"><span class="std std-ref">Transparent Mode</span></a></p></li>
+<li><p><strong>Specular:</strong> <a class="reference internal" href="material_editor.html#me-specular"><span class="std std-ref">Specular</span></a></p></li>
+<li><p><strong>Roughness:</strong> <a class="reference internal" href="material_editor.html#me-roughness"><span class="std std-ref">Roughness</span></a></p></li>
+<li><p><strong>Emission:</strong> <a class="reference internal" href="material_editor.html#me-emission"><span class="std std-ref">Emission</span></a></p></li>
+<li><p><strong>Exposure, Contrast, Saturation:</strong> <a class="reference internal" href="texture_manager.html#tm-adjust-color-properties"><span class="std std-ref">Adjust color properties</span></a></p></li>
+<li><p><strong>Location XYZ:</strong> <a class="reference internal" href="material_editor.html#me-vector-location"><span class="std std-ref">Locations XYZ</span></a></p></li>
+<li><p><strong>Rotation XYZ:</strong> <a class="reference internal" href="material_editor.html#me-vector-rotation"><span class="std std-ref">Rotation XYZ</span></a></p></li>
+<li><p><strong>Scale XYZ:</strong> <a class="reference internal" href="material_editor.html#me-vector-scale"><span class="std std-ref">Scale XYZ</span></a></p></li>
+<li><p><strong>Scale Uniform:</strong> <a class="reference internal" href="material_editor.html#me-vector-scale-uniform"><span class="std std-ref">Scale Uniform</span></a></p></li>
+</ul>
+<hr class="docutils" />
+<section id="texture-manager-button">
+<h3>Texture Manager Button<a class="headerlink" href="#texture-manager-button" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/sm_video_texture_manager_button.webp"><img alt="Shader Maker Video Texture Manager Button" class="align-center" src="_images/sm_video_texture_manager_button.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Reference here to analyze the Texture Manager panel <a class="reference internal" href="texture_manager.html#texture-manager-video"><span class="std std-ref">Texture Manager Video</span></a></p>
+<hr class="docutils" />
+</section>
+<section id="smart-video-start">
+<span id="sm-smart-video-start"></span><h3>Smart Video Start<a class="headerlink" href="#smart-video-start" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/sm_smart_video_start.webp"><img alt="Shader Maker Video Smart Video Start" class="align-center" src="_images/sm_smart_video_start.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Automatically sets the video to start at frame 0 of the sequencer, all the video will be played, in full loop</p>
+</section>
+<hr class="docutils" />
+<section id="play-animation">
+<h3>Play Animation<a class="headerlink" href="#play-animation" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/sm_play_animation.webp"><img alt="Shader Maker Video Play Animation" class="align-center" src="_images/sm_play_animation.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Play Animation button starts the Blender Timeline so that the video starts playing</p>
+<hr class="docutils" />
+</section>
+<section id="scene-start-stop">
+<span id="sm-scene-start-stop"></span><h3>Scene Start/Stop<a class="headerlink" href="#scene-start-stop" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/sm_scene_start_stop.webp"><img alt="Shader Maker Video Scene Start/Stop" class="align-center" src="_images/sm_scene_start_stop.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Scene Start, Scene Stop, allows you to set the start frame of the Timeline and the end frame of the Timeline on the fly,
+without having to open the Blender timeline.</p>
+</section>
+<hr class="docutils" />
+<section id="jump-to-start-end">
+<h3>Jump to Start/End<a class="headerlink" href="#jump-to-start-end" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/sm_jump_to_start_end.webp"><img alt="Shader Maker Video Jump to Start/End" class="align-center" src="_images/sm_jump_to_start_end.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>These 2 buttons allow you to jump to the initial or final frame of the video, in practice, these 2 buttons move
+the Blender timeline to the initial or final frame of the video (Those also set in the <a class="reference internal" href="#sm-scene-start-stop"><span class="std std-ref">Scene Start/Stop</span></a> section)</p>
+</section>
+<hr class="docutils" />
+<section id="timeline">
+<h3>Timeline<a class="headerlink" href="#timeline" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/sm_timeline.webp"><img alt="Shader Maker Video Timeline" class="align-center" src="_images/sm_timeline.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Timeline Slider, is the representation of where the Blender timeline reader is, in practice through this
+slider you can move the Blender Timeline without having to open the Blender Timeline.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If in Play it will be updated every time you pass the mouse over the panel</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="video-start-stop">
+<h3>Video Start/Stop<a class="headerlink" href="#video-start-stop" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/sm_video_start_stop.webp"><img alt="Shader Maker Video Video Start/Stop" class="align-center" src="_images/sm_video_start_stop.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>By these 2 buttons, you can set where the video should start and where it should end.
+You can start the video at any frame the important thing is that the Start frame is less than the End frame and vice versa.</p>
+</section>
+<hr class="docutils" />
+<section id="video-loop">
+<h3>Video Loop<a class="headerlink" href="#video-loop" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/sm_video_loop.webp"><img alt="Shader Maker Video Video Loop" class="align-center" src="_images/sm_video_loop.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button allows you to set the video to loop or not, if the video is set to loop, it will start again from the
+beginning when it reaches the end frame.</p>
+</section>
+<hr class="docutils" />
+<section id="preview-animated">
+<h3>Preview Animated<a class="headerlink" href="#preview-animated" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/sm_preview_animated.webp"><img alt="Shader Maker Video Preview Animated" class="align-center" src="_images/sm_preview_animated.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button allows you to preview the video in the viewport, usually this is activated when you press the button described here
+<a class="reference internal" href="#sm-smart-video-start"><span class="std std-ref">Smart Video Start</span></a></p>
+</section>
+<hr class="docutils" />
+<section id="cathode-fx">
+<h3>Cathode Fx<a class="headerlink" href="#cathode-fx" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/sm_cathode_fx.webp"><img alt="Shader Maker Video Cathode Fx" class="align-center" src="_images/sm_cathode_fx.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Cathode Fx allows you to adjust the Cathode effect, Here is an example with the effect at maximum:</p>
+<a class="reference internal image-reference" href="_images/sm_cathode_fx_example_01.webp"><img alt="Shader Maker Video Cathode Fx Example 01" class="align-center" src="_images/sm_cathode_fx_example_01.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="scale-cathode-fx">
+<h3>Scale Cathode Fx<a class="headerlink" href="#scale-cathode-fx" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/sm_scale_cathode_fx.webp"><img alt="Shader Maker Video Scale Cathode Fx" class="align-center" src="_images/sm_scale_cathode_fx.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Scale cathode fx allows you to adjust the size of the cathode effect, here is an example with a big scale:</p>
+<a class="reference internal image-reference" href="_images/sm_scale_cathode_fx_example_01.webp"><img alt="Shader Maker Video Scale Cathode Fx Example 01" class="align-center" src="_images/sm_scale_cathode_fx_example_01.webp" style="width: 800px;" /></a>
+</section>
+</section>
+<hr class="docutils" />
+<section id="painter">
+<h2>Painter<a class="headerlink" href="#painter" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/sm_painter_icon.webp"><img alt="Shader Maker Painter" class="align-center" src="_images/sm_painter_icon.webp" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Painter Tool, allows you to paint on images, it differs from the Texture paint described here <a class="reference internal" href="texture_paint.html#texture-paint"><span class="std std-ref">Texture Paint</span></a>
+because the <strong>Texture Paint</strong> paints on a mask, while the Painter, paints directly on an image.</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To access the Painter, you must be in the Default Library Of Extreme PBR, in the Shader Maker category,
+and select the <strong>Painter</strong> material from the <a class="reference internal" href="main_panel.html#mp-material-browser"><span class="std std-ref">Material Browser</span></a> and apply it to the object you want to paint.</p>
+</div>
+<hr class="docutils" />
+<section id="painter-panel">
+<h3>Painter Panel<a class="headerlink" href="#painter-panel" title="Permalink to this heading"></a></h3>
+<p>Once the material has been added, the <strong>Material Editor</strong> panel will look like this:</p>
+<a class="reference internal image-reference" href="_images/smp_material_editor.webp"><img alt="Shader Maker Painter Material Editor" class="align-center" src="_images/smp_material_editor.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Bellow the properties and operators shared with other Extreme PBR materials:</p>
+<ul class="simple">
+<li><p><strong>Show / Hide Group:</strong> <a class="reference internal" href="material_editor.html#show-hide-group"><span class="std std-ref">Show / Hide Group</span></a></p></li>
+<li><p><strong>Search Module/Fx:</strong> <a class="reference internal" href="material_editor.html#search-module"><span class="std std-ref">Search Module</span></a></p></li>
+<li><p><strong>Module/Fx Name:</strong> <a class="reference internal" href="material_editor.html#module-name"><span class="std std-ref">Module Name (Group Name)</span></a></p></li>
+<li><p><strong>Replace Module/Fx:</strong> <a class="reference internal" href="material_editor.html#replace-module"><span class="std std-ref">Replace Module</span></a></p></li>
+<li><p><strong>Reset Value:</strong> <a class="reference internal" href="material_editor.html#module-reset-values"><span class="std std-ref">Reset Values</span></a></p></li>
+<li><p><strong>Tips:</strong> <a class="reference internal" href="material_editor.html#module-tips"><span class="std std-ref">Tips</span></a></p></li>
+<li><p><strong>Paint Tools:</strong> <a class="reference internal" href="paint_tools.html#paint-tools-panel"><span class="std std-ref">Paint Tools</span></a></p></li>
+<li><p><strong>Re-Project:</strong>  (Only in Paint Mode) <span class="xref std std-ref">re_project</span></p></li>
+</ul>
+<hr class="docutils" />
+<section id="maps-size">
+<h4>Maps Size<a class="headerlink" href="#maps-size" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/smp_maps_size.webp"><img alt="Shader Maker Painter Maps Size" class="align-center" src="_images/smp_maps_size.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Maps Size property allows you to set different resolution sizes for maps, in practice if you set
+1024, all maps will be rendered at 1024x1024, if you set 2048, all maps will be rendered at 2048x2048 and so on.</p>
+</section>
+<hr class="docutils" />
+<section id="stop-paint">
+<h4>Stop Paint<a class="headerlink" href="#stop-paint" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/smp_stop_paint.webp"><img alt="Shader Maker Painter Stop Paint" class="align-center" src="_images/smp_stop_paint.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Stop Paint Button, simply stops painting mode.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This button will only appear if you are in Paint mode</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="mute-un-mute-map">
+<h4>Mute/Un-Mute Map<a class="headerlink" href="#mute-un-mute-map" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/smp_mute_unmute_map.webp"><img alt="Shader Maker Painter Mute/Un-Mute Map" class="align-center" src="_images/smp_mute_unmute_map.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In this Example, all maps are in mute, except the Diffuse map, This is the default situation when
+you apply the Painter material.</p>
+<p>So the Mute/Un-Mute Map buttons, allow you to disable or enable maps, in this way you can
+save system resources.</p>
+<hr class="docutils" />
+</section>
+<section id="smp-texture-manager-button">
+<span id="id4"></span><h4>Texture Manager Button<a class="headerlink" href="#smp-texture-manager-button" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/smp_texture_manager_button.webp"><img alt="Shader Maker Painter Texture Manager Button" class="align-center" src="_images/smp_texture_manager_button.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button gives you access to the Texture Manager panel, which in this type of material has the function of managing
+the color of the painting and the fill bucket.</p>
+<hr class="docutils" />
+</section>
+<section id="texture-manager-panel-rgb">
+<span id="smp-texture-manager-panel-rgb"></span><h4>Texture Manager Panel RGB<a class="headerlink" href="#texture-manager-panel-rgb" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/smp_texture_manager_panel.webp"><img alt="Shader Maker Painter Texture Manager Panel" class="align-center" src="_images/smp_texture_manager_panel.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Once you press the <a class="reference internal" href="#smp-texture-manager-button"><span class="std std-ref">Texture Manager Button</span></a> button, the Texture Manager panel will open.
+In the following paragraphs you will find the description of the panel properties.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to paint the maps in Black and White type Specular, Roughness, Metal, Etc … refer here: <a class="reference internal" href="#smp-texture-manager-panel-bw"><span class="std std-ref">Texture Manager Panel BW</span></a></p>
+</div>
+<hr class="docutils" />
+<section id="image-name">
+<h5>Image Name<a class="headerlink" href="#image-name" title="Permalink to this heading"></a></h5>
+<a class="reference internal image-reference" href="_images/smp_image_name.webp"><img alt="Shader Maker Painter Image Name" class="align-center" src="_images/smp_image_name.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This text box will show the name of the image you are editing, in addition you can edit the name
+of the image you are painting, so as to make the image with the name you like best, very useful in case
+you are painting some materials using the Painter, because by default the names of the maps will always be the same,
+but with increasing numerical order (.001, .002, .003, etc.)</p>
+<hr class="docutils" />
+</section>
+<section id="brush-color">
+<span id="smp-brush-color"></span><h5>Brush Color<a class="headerlink" href="#brush-color" title="Permalink to this heading"></a></h5>
+<a class="reference internal image-reference" href="_images/smp_brush_color.webp"><img alt="Shader Maker Painter Brush Color" class="align-center" src="_images/smp_brush_color.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This property allows you to change the color of the brush, in practice when you paint, the color that
+will appear on the texture will be the one you set here.</p>
+<p>This color can also be set from the <strong>Color Lab</strong> described here <a class="reference internal" href="color_lab.html#color-lab"><span class="std std-ref">Color Lab</span></a></p>
+</section>
+<hr class="docutils" />
+<section id="fill">
+<h5>Fill<a class="headerlink" href="#fill" title="Permalink to this heading"></a></h5>
+<a class="reference internal image-reference" href="_images/smp_fill_color.webp"><img alt="Shader Maker Painter Fill Color" class="align-center" src="_images/smp_fill_color.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This button allows you to fill the map with the color you have chosen in the <strong>Brush Color</strong> <a class="reference internal" href="#smp-brush-color"><span class="std std-ref">Brush Color</span></a></p>
+<hr class="docutils" />
+</section>
+</section>
+<section id="texture-manager-panel-bw">
+<span id="smp-texture-manager-panel-bw"></span><h4>Texture Manager Panel BW<a class="headerlink" href="#texture-manager-panel-bw" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/smp_texture_manager_panel_bw.webp"><img alt="Shader Maker Painter Texture Manager Panel BW" class="align-center" src="_images/smp_texture_manager_panel_bw.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This panel differs from the RGB Type in that the textures of type Specular, Roughness, Metal, Etc …
+are in Black and White, so here, you will not choose the color, but the shade of gray, everything will be managed by the
+Strength Slider, where 0.0 will be Black and 1.0 will be White, consequently, painting at 0.0 will work as if you were
+deleting.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to paint the maps in RGB type Diffuse, Emission, Etc … refer here: <a class="reference internal" href="#smp-texture-manager-panel-rgb"><span class="std std-ref">Texture Manager Panel RGB</span></a></p>
+</div>
+</section>
+</section>
 </section>
 </section>
 

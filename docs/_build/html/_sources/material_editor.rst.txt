@@ -322,6 +322,8 @@ So in accordance with these settings, now the colorization will only color the p
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _me_emission:
+
 Emission
 ********
 
@@ -341,6 +343,8 @@ material, you will have your emission on the areas where there is the emissivity
 this slider will work as general emissivity of the material, the whole material will be emitting.
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _me_transparent:
 
 Transparent
 ************
@@ -475,6 +479,9 @@ Specular/Tint
 
 This 2 properties work in symbiosis:
 
+
+.. _me_specular:
+
 Specular
 #########
 
@@ -495,6 +502,8 @@ Mix between white and the base color in order to tint the specular highlights.
     :alt: Specular Tint Example
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _me_roughness:
 
 Roughness
 **********
@@ -1159,7 +1168,7 @@ Roughness
 
 |
 
-Roughness Sliders is used to adjust the roughness of the noise, the higher the value, the rougher the noise will be, so it will be
+Roughness Sliders is used to adjust the roughness of the noise, the higher the value, the roughness the noise will be, so it will be
 more rich in details the detachment between the base material and the Fx material.
 
 .. note::
@@ -1205,6 +1214,7 @@ Distortion Sliders is used to adjust the distortion of the noise.
     :alt: Fx Noise Distortion Example 01
 
 ------------------------------------------------------------------------------------------------------------------------
+
 
 Scale
 #######

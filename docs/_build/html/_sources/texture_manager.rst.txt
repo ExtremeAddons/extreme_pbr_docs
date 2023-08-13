@@ -493,8 +493,10 @@ Texture Manager Normal
 
 |
 
-Questo pannello è pressoché identico ai precedenti Texture Manager, ma è utilizzato per le mappe Normali, quindi ha alcune proprietà in più
-oltre a queste:
+
+This panel is almost identical to the previous Texture Manager, but is used for Normal maps, so it has some more properties
+in addition to these:
+
 
 - :ref:`tm_material_browser`
 - :ref:`tm_search_category`
@@ -581,6 +583,41 @@ Gamma Correction
 
 Gamma Correction, allows you to adjust the Gamma value of the Normal map, this is useful if the Normal map is too strong or too weak,
 in this way you can adjust it as you prefer and make it the best.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _texture_manager_video:
+
+Texture Manager Video
+---------------------------------
+
+.. image:: _static/_images/texture_manager/texture_manager_video.webp
+    :align: center
+    :width: 400
+    :alt: Texture Manager Video
+
+|
+
+This Texture Manager panel version is used for Video textures, so it has no particular functions because if you are using the Shader Maker Video,
+all the necessary properties are already present in the **Material Editor** panel described here: :ref:`shader_maker_video`
+
+
+- :ref:`tm_material_browser`
+- :ref:`tm_search_category`
+- :ref:`tm_search_material`
+- :ref:`tm_texture_browser`
+- :ref:`tm_add`
+- :ref:`tm_recycle_if_exists`
+- :ref:`tm_texture_resolution`
+- :ref:`tm_search_data_images`
+- :ref:`tm_texture_name`
+- :ref:`tm_import_image_texture`
+- :ref:`tm_remove_texture`
+- :ref:`tm_mute_texture`
+- :ref:`tm_copy_paste_texture`
+
+
 
 
 
