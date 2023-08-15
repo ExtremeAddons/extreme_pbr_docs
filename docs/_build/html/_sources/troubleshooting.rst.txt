@@ -1,9 +1,11 @@
+.. _troubleshooting:
+
 Troubleshooting
 ===============
 
 In this section there are some tips to solve known problems.
 This section will be updated over time based on the major problems encountered by users.
-Problems related to HDRi Maker bugs are usually solved. Here are some of the most common problems.
+Problems related to Extreme PBR bugs are usually solved. Here are some of the most common problems.
 Question and answer
 
 
@@ -18,8 +20,8 @@ https://blendermarket.com/account/privacy-center/consents
 Find Options Menu
 ------------------
 
-To go to the HDRi Maker options, you have to go to the addon preferences. But to make this process easier there is
-a button directly in the HDRi Maker interface:
+To go to the Extreme PBR options, you have to go to the addon preferences. But to make this process easier there is
+a button directly in the Extreme PBR interface:
 
 .. image:: _static/_images/troubleshooting/options_button_01.png
     :align: center
@@ -40,14 +42,14 @@ to which the background refers is no longer linked to the project.
     :alt: Pink Background 01
 
 
-To solve the problem, go to the HDRi Maker options and click on the "Find Lost Images" button
+To solve the problem, go to the Extreme PBR options and click on the "Find Lost Images" button
 
 .. image:: _static/_images/troubleshooting/find_lost_images_01.png
     :align: center
     :width: 600
     :alt: Find Lost Images 01
 
-A file search window will open. Indicate the path where the HDRi Maker library is located or where you think
+A file search window will open. Indicate the path where the Extreme PBR library is located or where you think
 that the file you are looking for may be. Once the path is indicated, click on "Find Missing Files".
 
 The search will be performed in the indicated path and in all subfolders.
@@ -72,7 +74,7 @@ it is opened in a previous version of Blender.
 Sometimes Blender updates its nodes, so it may be that the nodes are no longer retro compatible with the previous version.
 To solve this I have provided a function that tries to replace the "Unknown" nodes
 
-You can find it in the HDRi Maker Options menu:
+You can find it in the Extreme PBR Options menu:
 
 .. image:: _static/_images/troubleshooting/fix_unknown_nodes_01.png
     :align: center
@@ -89,7 +91,7 @@ Moving libraries to another computer
 To move the libraries to another computer, just copy the "EXTREME_PBR_DEFAULT_LIB" and "EXTREME_PBR_USER_LIB" folders
 
 
-If once connected the libraries from the "Libraries" menu in HDRi Maker preferences the addon does not work,
+If once connected the libraries from the "Libraries" menu in Extreme PBR preferences the addon does not work,
 it could be that in the folders mentioned above, the "._data" folders are missing, so make sure they are inside each library.
 
 .. image:: _static/_images/troubleshooting/data_folder.png

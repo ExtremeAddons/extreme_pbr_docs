@@ -601,7 +601,7 @@ access to the **Extreme Addons** TAB described here: TODO: Put reference to the 
 
 .. note::
         With the advent of **file.exapack** we have also made the library files available directly on the sites
-        where you will purchase the addon. So a new installation system (Already tested on HDRi Maker, another of our addons)
+        where you will purchase the addon. So a new installation system (Already tested on Extreme PBR, another of our addons)
         is available by default. If you want to change and go back to the classic one, activate this option.
 
 .. important::
@@ -651,8 +651,212 @@ any problems.
         if you are sure of what you are doing.
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+Help
+======================
+
+From this **Help** section you can access some useful sections contained in the documentation.
+
+.. image:: _static/_images/preferences/pr_help_example.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Help Example
+
+|
+
+Help Buttons
+----------------------
+
+- **Documentation:** Open the documentation in the browser, at the home page :ref:`main_index`
+- **Tutorial Playlist:**  Open the tutorial playlist in the browser, at the Playlist page :ref:`video_tutorials`
+- **How to report a bug:** Open the documentation in the browser, at the page :ref:`guidelines_for_bugreport`
+- **Report a bug:** This button opens the default browser to Github where you can report a bug (Only if you have a Github account)
+- **System to Clipboard:** Copia le informazioni utili da inserire nel report del bug, semplicemente, una volta premuto, potrai
+    incollare le informazioni anche in una mail da inviarmi.
+- **System to Clipboard:** Copy the useful information to be included in the bug report, simply, once pressed, you can
+    paste the information into an email to send me. (CTRL + V to paste)
+- **FAQs:** Open the documentation in the browser, at the page :ref:`faqs`
+- **TroubleShooting:** Open the documentation in the browser, at the page :ref:`troubleshooting`
+
+------------------------------------------------------------------------------------------------------------------------
+
+Top Addons
+======================
+
+From this section you can access a list of Addons that I recommend you take a look at, if you are a 3D artist
+addon creator and would like to be included in this list, contact me. TODO: reference to my contacts
+
+.. image:: _static/_images/preferences/pr_top_addons_panel.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Top Addons Panel
+
+------------------------------------------------------------------------------------------------------------------------
+
+Library Management
+======================
+
+From this section you can indicate the paths of the libraries you want to use, and you can also add new ones.
+
+.. image:: _static/_images/preferences/pr_library_management_panel.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Library Management Panel
+
+|
+
+.. note::
+        If you are installing the addon for the first time, refer to this guide and do not dwell on this section
+        at the moment. TODO: reference to the installation guide
+
+------------------------------------------------------------------------------------------------------------------------
+
+Libraries Assignments
+----------------------
+
+In this section you have the possibility to Assign / Change / Remove the paths of the libraries, or add the expansions,
+type **Cyber Holograms** link `Here: <https://blendermarket.com/products/cyber-holograms-blender-materials>`_
+
+
+Choose Default Library
+****************************
+
+By this button you can assign the default library only if you have already installed it previously, you will have to indicate
+the path to the folder with the name of the library, normally it is: **EXTREME_PBR_DEFAULT_LIB** the button will open a file browser
+to search for the folder path.
+
+
+.. image:: _static/_images/preferences/pr_assign_default_library_button.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Assign Default Library Button
+
+|
+
+.. note::
+        If you have never installed or want to reinstall the libraries, refer to this guide: TODO: reference to the installation guide
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Unlink Library
+****************************
+
+By this button that will be visible only if a path is linked, it can be removed.
+
+.. image:: _static/_images/preferences/pr_unlink_library.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Unlink Library
+
+------------------------------------------------------------------------------------------------------------------------
+
+Choose User Library
+****************************
+
+By this button you can assign the user library only if you have already installed it previously, you will have to indicate
+the path to the folder with the name of the library, normally it is: **EXTREME_PBR_USER_LIB** the button will open a file browser
+to search for the folder path.
+
+.. note::
+        The user library is a library that is empty at the beginning, so it will be useful if you want to save your materials,
+        Here is the section on saving materials: TODO: reference to the save material section: :ref:`save_editor`
+
+.. image:: _static/_images/preferences/pr_assign_user_library_button.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Assign User Library Button
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _pr_make_user_library:
+
+Make User Library
+****************************
+
+If you don't have a User Library, and the Default Library is already linked, this button creates the folder **EXTREME_PBR_USER_LIB**
+in the same path that contains the Default Library, this to avoid having the libraries in different paths.
+
+Example of path:
+
+
+.. code-block::
+
+    Your Path
+    |
+    +--EXTREME_PBR_DEFAULT_LIB
+    +--EXTREME_PBR_USER_LIB <--- This folder will be created by the button
 
 
 
+.. image:: _static/_images/preferences/pr_make_user_library.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Make User Library
 
+|
+
+.. note::
+        This button will appear only if the **Default Library** is correctly linked
+
+------------------------------------------------------------------------------------------------------------------------
+
+Expansion Name
+****************************
+
+Once you have added a new expansion, through the button :ref:`pr_add_library_button` you can rename the name as you like
+believe the name, this will serve you to be able to identify the library in the list of libraries of the main panel
+of Extreme PBR. The library will be displayed in :ref:`mp_library_selector`
+
+.. image:: _static/_images/preferences/pr_expansion_name.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Expansion Name
+
+------------------------------------------------------------------------------------------------------------------------
+
+Expansion Path
+****************************
+
+Once you have added a new expansion, through the button :ref:`pr_add_library_button` you can indicate the path where the
+library is located, this will serve you to be able to identify the library in the list of libraries of the main panel
+of Extreme PBR. The library will be displayed in :ref:`mp_library_selector`
+
+.. image:: _static/_images/preferences/pr_expansion_path.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Expansion Path
+
+------------------------------------------------------------------------------------------------------------------------
+
+Remove Expansion
+****************************
+
+By this button you can remove the expansion on the same line.
+
+.. image:: _static/_images/preferences/pr_remove_expansion.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Remove Expansion
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _pr_add_library_button:
+
+Add Library (Expansion)
+****************************
+
+By this button, you will add a slot for a new library, it will default to the name **Expansion Name Here**
+this to suggest to change the name in the text field.
+
+.. image:: _static/_images/preferences/pr_add_library.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Add Library
+
+|
+
+.. note::
+        If you add an invalid or non-existent path, the library will not be shown in the :ref:`mp_library_selector`
 

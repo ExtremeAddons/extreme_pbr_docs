@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Make Asset Browser &mdash; Extreme PBR 4.1.100 documentation</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="_static/extreme_addons_red_32.ico"/>
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+        <script src="_static/doctools.js"></script>
+        <script src="_static/sphinx_highlight.js"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="Main Panel" href="main_panel.html" />
+    <link rel="prev" title="Installation v 4.1.100 and up" href="installation.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Extreme PBR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Get started: 🚀</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation v 4.1.100 and up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#installation-older-version">Installation (Older Version)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Make Asset Browser</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#create-asset-browser">Create Asset Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#steps">Steps</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#installation-time">Installation Time</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#missing-files-during-the-asset-browser-creation">Missing Files during the asset browser creation</a></li>
+</ul>
+</li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Interface and functions: 📱</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="main_panel.html">Main Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bake_panel.html">Bake Editor Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mapping_editor.html">Mapping Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material_editor.html">Material Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="texture_manager.html">Texture Manager Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="texture_paint.html">Texture Paint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="paint_tools.html">Paint Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="color_lab.html">Color Lab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shader_maker.html">Shader Maker Category</a></li>
+<li class="toctree-l1"><a class="reference internal" href="shader_overlay.html">Shader Overlay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="material_override.html">Material Override</a></li>
+<li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="video_tutorials.html">Video Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQs &amp; Troubleshooting: 💡</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Changelog: ⏲</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="updates_log.html">Updates Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="undocumented.html">Undocumented</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Extreme PBR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Make Asset Browser</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/make_asset_browser.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="make-asset-browser">
+<h1>Make Asset Browser<a class="headerlink" href="#make-asset-browser" title="Permalink to this heading"></a></h1>
+<p>Here below is indicated the procedure to create the asset browser</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<p>What convinced me to do this function is the mere fact of having the possibility to apply only the Materials
+on the fly directly from the Asset Browser. But at the moment I think that the use of Extreme PBR is more complete
+through its interface (Which already has its own Browser)
+I received many requests regarding the asset browser which led me to create this new feature.
+But at the moment Blender’s Asset Browser has some big limitations on the Python side, so many things still can’t be done.</p>
+<p>Surely in the future they are planned.</p>
+</section>
+<hr class="docutils" />
+<section id="create-asset-browser">
+<h2>Create Asset Browser<a class="headerlink" href="#create-asset-browser" title="Permalink to this heading"></a></h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to create Asset Browser, you must be in a new Blender project, not saved, this is essential,
+it is a matter of security not to risk damaging your projects
+In addition, make sure you have a version 4.1.100 or higher of Extreme PBR</p>
+</div>
+<a class="reference internal image-reference" href="_images/asset_browser_example.webp"><img alt="Asset browser example" class="align-center" src="_images/asset_browser_example.webp" style="width: 600px;" /></a>
+<p>To create the asset browser, you must have installed the Extreme PBR libraries.</p>
+<ul>
+<li><p><strong>Video Tutorial example into HDRi Maker (Is the same procedure👍)</strong></p>
+<blockquote>
+<div><iframe width="560" height="315" src="https://www.youtube.com/embed/3RwC5JV44XQ" title="YouTube video player"
+frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+web-share" allowfullscreen></iframe></div></blockquote>
+</li>
+</ul>
+</section>
+<section id="steps">
+<h2>Steps<a class="headerlink" href="#steps" title="Permalink to this heading"></a></h2>
+<p>Procedure:</p>
+<blockquote>
+<div><ol class="arabic">
+<li><p>Open a new Blender project and do not save it
+(This is essential, it is a matter of security not to risk damaging your projects)</p></li>
+<li><p>Make sure you have installed version 4.1.100 of Extreme PBR or higher</p></li>
+<li><p>Press the “Open Options” button</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/open_options_button_01.png"><img alt="Open Options" class="align-center" src="_images/open_options_button_01.png" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<blockquote>
+<div><ol class="arabic" start="4">
+<li><p>Go to the “Libraries” tab, If all the libraries have been installed correctly, you should see a situation like this, they will be</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/create_asset_browser_buttons_01.webp"><img alt="Create asset browser buttons 01" class="align-center" src="_images/create_asset_browser_buttons_01.webp" style="width: 600px;" /></a>
+</div></blockquote>
+</li>
+<li><p>Press the button in the list of buttons in the “Make Asset Browser” box to create the corresponding version also in the asset browser</p></li>
+<li><p>During the process of Creating the asset browser, it may be necessary to wait a few minutes, you can
+interrupt the process by pressing the “X” button next to the progress bar, this will stop the process,
+but will already make the conversions done up to that moment effective</p></li>
+<li><p>Restart Blender to make the changes effective</p></li>
+<li><p>Set the Asset Browser in the Blender screen area:</p>
+<blockquote>
+<div><a class="reference internal image-reference" href="_images/set_asset_browser_screen_01.webp"><img alt="Set asset browser screen 01" class="align-center" src="_images/set_asset_browser_screen_01.webp" style="width: 600px;" /></a>
+</div></blockquote>
+</li>
+</ol>
+</div></blockquote>
+<p>Now in the list of assets you should see the new assets, repeat this operation for all the Extreme PBR libraries</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p><strong>Current limitations in Asset Browser:</strong>
+Material applied via Asset Browser are of type <strong>Simple PBR</strong> described here: <a class="reference internal" href="material_editor.html#me-simple-pbr-type"><span class="std std-ref">Material Editor (Simple PBR)</span></a></p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="installation-time">
+<h2>Installation Time<a class="headerlink" href="#installation-time" title="Permalink to this heading"></a></h2>
+<p>During the installation, if everything went well, you should see a situation like this:</p>
+<a class="reference internal image-reference" href="_images/make_asset_browser_running.webp"><img alt="Make asset browser running" class="align-center" src="_images/make_asset_browser_running.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>During the installation a progress bar appears until the asset browser is created, this can take a few minutes,
+it depends a lot on the speed of the hard disk and the speed of the single core of the processor.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If you interrupt the process, by pressing the button (X) next to the progress bar, this will stop,
+but the conversions made up to that moment will already be effective.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>This process is also used to update the library in case there are innovations in the new versions
+of Extreme PBR, so the creation process will always be repeated to eventually replace the files with the
+new updated versions.</p>
+</div>
+</section>
+<hr class="docutils" />
+<section id="missing-files-during-the-asset-browser-creation">
+<h2>Missing Files during the asset browser creation<a class="headerlink" href="#missing-files-during-the-asset-browser-creation" title="Permalink to this heading"></a></h2>
+<p>It can happen that during the process of creating the Asset Browser through the buttons present in the options of Extreme PBR
+Example: (Only from Extreme PBR version 3.0.113 and higher)</p>
+<p><strong>That a message like this occurs:</strong></p>
+<a class="reference internal image-reference" href="_images/asset_browser_creation_mis_list_01.webp"><img alt="Asset browser creation mis list 01" class="align-center" src="_images/asset_browser_creation_mis_list_01.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>In this case the message is useful because during the process of creating the asset browser the Extreme PBR has detected
+some missing files from the library, the reasons can be various, among the most common I have been told that some files
+have been mistakenly deleted manually (It can happen), among the less common, the cause is still to be understood well.</p>
+<p><strong>What does this message mean?</strong></p>
+<p>There is a list of missing files in this message, in which it is indicated:</p>
+<ul class="simple">
+<li><p><strong>Material Name:</strong> This is the name of the missing Material</p></li>
+<li><p><strong>Version:</strong> This is the version of the material, for example it could be the 1k, 2k, 4k, 8k version or another name (It’s not very important)</p></li>
+<li><p><strong>From:</strong> This is important because it says from which Volume the missing file comes from, so the name of the <strong>volume.exapack</strong></p></li>
+</ul>
+<p>So in the end, this is very useful to understand which Volume exapack contains that file, so that if you have to
+reinstall or download that package again, you will know exactly which one to install.</p>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="installation.html" class="btn btn-neutral float-left" title="Installation v 4.1.100 and up" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="main_panel.html" class="btn btn-neutral float-right" title="Main Panel" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Andrea Donati.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>  
+
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: #222222;
+    }
+    /* Sidebar */
+    .wy-nav-side {
+      background: #222222;
+    }
+  </style>
+
+
+</body>
+</html>

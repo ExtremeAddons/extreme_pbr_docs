@@ -1,3 +1,5 @@
+.. _guidelines_for_bugreport:
+
 Guidelines for bugreport
 ========================
 

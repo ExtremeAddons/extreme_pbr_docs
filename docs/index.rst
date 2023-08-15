@@ -3,6 +3,9 @@
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
+
+.. _main_index:
+
 Welcome to Extreme PBR's documentation!
 =======================================
 
@@ -33,6 +36,7 @@ Welcome to Extreme PBR's documentation!
    :caption: Get started: 🚀
 
    installation
+   make_asset_browser
 
 
 .. toctree::
@@ -68,6 +72,7 @@ Welcome to Extreme PBR's documentation!
 
    faqs
    troubleshooting
+   material_list
    bugreport_info
 
 

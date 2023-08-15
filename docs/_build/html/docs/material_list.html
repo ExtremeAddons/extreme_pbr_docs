@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Material List &mdash; Extreme PBR 4.1.100 documentation</title>
+      <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/theme.css" type="text/css" />
+      <link rel="stylesheet" href="../_static/css/custom.css" type="text/css" />
+    <link rel="shortcut icon" href="../_static/extreme_addons_red_32.ico"/>
+  <!--[if lt IE 9]>
+    <script src="../_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="../_static/jquery.js"></script>
+        <script src="../_static/_sphinx_javascript_frameworks_compat.js"></script>
+        <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+        <script src="../_static/doctools.js"></script>
+        <script src="../_static/sphinx_highlight.js"></script>
+    <script src="../_static/js/theme.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="../index.html" class="icon icon-home">
+            Extreme PBR
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="../search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Get started: 🚀</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html">Installation v 4.1.100 and up</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../installation.html#installation-older-version">Installation (Older Version)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../make_asset_browser.html">Make Asset Browser</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Interface and functions: 📱</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../main_panel.html">Main Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bake_panel.html">Bake Editor Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../mapping_editor.html">Mapping Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material_editor.html">Material Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../texture_manager.html">Texture Manager Panel</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../texture_paint.html">Texture Paint</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../paint_tools.html">Paint Tools</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../color_lab.html">Color Lab</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../displacement.html">Displacement</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shader_maker.html">Shader Maker Category</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../shader_overlay.html">Shader Overlay</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../material_override.html">Material Override</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../save_editor.html">Save Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../preferences.html">Preferences</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../video_tutorials.html">Video Tutorials</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">FAQs &amp; Troubleshooting: 💡</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../faqs.html">FAQs</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../troubleshooting.html">Troubleshooting</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../bugreport_info.html">Guidelines for bugreport</a></li>
+</ul>
+<p class="caption" role="heading"><span class="caption-text">Changelog: ⏲</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="../updates_log.html">Updates Log</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../undocumented.html">Undocumented</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="../index.html">Extreme PBR</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="../index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Material List</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="../_sources/docs/material_list.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="material-list">
+<h1>Material List<a class="headerlink" href="#material-list" title="Permalink to this heading"></a></h1>
+<hr class="docutils" />
+<section id="acoustic-foam">
+<h2>Acoustic Foam<a class="headerlink" href="#acoustic-foam" title="Permalink to this heading"></a></h2>
+</section>
+<section id="asphalt-damaged">
+<h2>Asphalt - Damaged<a class="headerlink" href="#asphalt-damaged" title="Permalink to this heading"></a></h2>
+</section>
+<section id="asphalt-rough">
+<h2>Asphalt - Rough<a class="headerlink" href="#asphalt-rough" title="Permalink to this heading"></a></h2>
+</section>
+<section id="asphalt-smooth">
+<h2>Asphalt - Smooth<a class="headerlink" href="#asphalt-smooth" title="Permalink to this heading"></a></h2>
+</section>
+<section id="asphalt-street">
+<h2>Asphalt - Street<a class="headerlink" href="#asphalt-street" title="Permalink to this heading"></a></h2>
+</section>
+<section id="blueprint">
+<h2>Blueprint<a class="headerlink" href="#blueprint" title="Permalink to this heading"></a></h2>
+</section>
+<section id="bricks-classic">
+<h2>Bricks - Classic<a class="headerlink" href="#bricks-classic" title="Permalink to this heading"></a></h2>
+</section>
+<section id="bricks-hollow">
+<h2>Bricks - Hollow<a class="headerlink" href="#bricks-hollow" title="Permalink to this heading"></a></h2>
+</section>
+<section id="bricks-modern">
+<h2>Bricks - Modern<a class="headerlink" href="#bricks-modern" title="Permalink to this heading"></a></h2>
+</section>
+<section id="bricks-worn">
+<h2>Bricks - Worn<a class="headerlink" href="#bricks-worn" title="Permalink to this heading"></a></h2>
+</section>
+<section id="car">
+<h2>Car<a class="headerlink" href="#car" title="Permalink to this heading"></a></h2>
+</section>
+<section id="ceiling-office">
+<h2>Ceiling - Office<a class="headerlink" href="#ceiling-office" title="Permalink to this heading"></a></h2>
+</section>
+<section id="character-organic">
+<h2>Character - Organic<a class="headerlink" href="#character-organic" title="Permalink to this heading"></a></h2>
+</section>
+<section id="christmas-ornament">
+<h2>Christmas Ornament<a class="headerlink" href="#christmas-ornament" title="Permalink to this heading"></a></h2>
+</section>
+<section id="clay">
+<h2>Clay<a class="headerlink" href="#clay" title="Permalink to this heading"></a></h2>
+</section>
+<section id="concrete-blocks">
+<h2>Concrete - Blocks<a class="headerlink" href="#concrete-blocks" title="Permalink to this heading"></a></h2>
+</section>
+<section id="concrete-formed">
+<h2>Concrete - Formed<a class="headerlink" href="#concrete-formed" title="Permalink to this heading"></a></h2>
+</section>
+<section id="concrete-rough">
+<h2>Concrete - Rough<a class="headerlink" href="#concrete-rough" title="Permalink to this heading"></a></h2>
+</section>
+<section id="concrete-smooth">
+<h2>Concrete - Smooth<a class="headerlink" href="#concrete-smooth" title="Permalink to this heading"></a></h2>
+</section>
+<section id="corrugated-various">
+<h2>Corrugated - Various<a class="headerlink" href="#corrugated-various" title="Permalink to this heading"></a></h2>
+</section>
+<section id="decals-leaking">
+<h2>Decals - Leaking<a class="headerlink" href="#decals-leaking" title="Permalink to this heading"></a></h2>
+</section>
+<section id="decals-leaves">
+<h2>Decals - Leaves<a class="headerlink" href="#decals-leaves" title="Permalink to this heading"></a></h2>
+</section>
+<section id="decals-road">
+<h2>Decals - Road<a class="headerlink" href="#decals-road" title="Permalink to this heading"></a></h2>
+</section>
+<section id="decals-road-markings">
+<h2>Decals - Road Markings<a class="headerlink" href="#decals-road-markings" title="Permalink to this heading"></a></h2>
+</section>
+<section id="electronics-chip">
+<h2>Electronics - Chip<a class="headerlink" href="#electronics-chip" title="Permalink to this heading"></a></h2>
+</section>
+<section id="energy">
+<h2>Energy<a class="headerlink" href="#energy" title="Permalink to this heading"></a></h2>
+</section>
+<section id="fabric">
+<h2>Fabric<a class="headerlink" href="#fabric" title="Permalink to this heading"></a></h2>
+</section>
+<section id="fabric-carpet">
+<h2>Fabric - Carpet<a class="headerlink" href="#fabric-carpet" title="Permalink to this heading"></a></h2>
+</section>
+<section id="fabric-jeans">
+<h2>Fabric - Jeans<a class="headerlink" href="#fabric-jeans" title="Permalink to this heading"></a></h2>
+</section>
+<section id="fabric-knitting">
+<h2>Fabric - Knitting<a class="headerlink" href="#fabric-knitting" title="Permalink to this heading"></a></h2>
+</section>
+<section id="fabric-large">
+<h2>Fabric - Large<a class="headerlink" href="#fabric-large" title="Permalink to this heading"></a></h2>
+</section>
+<section id="fabric-pattern">
+<h2>Fabric - Pattern<a class="headerlink" href="#fabric-pattern" title="Permalink to this heading"></a></h2>
+</section>
+<section id="facade">
+<h2>Facade<a class="headerlink" href="#facade" title="Permalink to this heading"></a></h2>
+</section>
+<section id="fences">
+<h2>Fences<a class="headerlink" href="#fences" title="Permalink to this heading"></a></h2>
+</section>
+<section id="fluids">
+<h2>Fluids<a class="headerlink" href="#fluids" title="Permalink to this heading"></a></h2>
+</section>
+<section id="food">
+<h2>Food<a class="headerlink" href="#food" title="Permalink to this heading"></a></h2>
+</section>
+<section id="glass">
+<h2>Glass<a class="headerlink" href="#glass" title="Permalink to this heading"></a></h2>
+</section>
+<section id="gravel">
+<h2>Gravel<a class="headerlink" href="#gravel" title="Permalink to this heading"></a></h2>
+</section>
+<section id="ground-sandy">
+<h2>Ground - Sandy<a class="headerlink" href="#ground-sandy" title="Permalink to this heading"></a></h2>
+</section>
+<section id="ground-snow">
+<h2>Ground - Snow<a class="headerlink" href="#ground-snow" title="Permalink to this heading"></a></h2>
+</section>
+<section id="ground-soil">
+<h2>Ground - Soil<a class="headerlink" href="#ground-soil" title="Permalink to this heading"></a></h2>
+</section>
+<section id="ground-stony">
+<h2>Ground - Stony<a class="headerlink" href="#ground-stony" title="Permalink to this heading"></a></h2>
+</section>
+<section id="ground-undergrowth">
+<h2>Ground - Undergrowth<a class="headerlink" href="#ground-undergrowth" title="Permalink to this heading"></a></h2>
+</section>
+<section id="ground-vegetation">
+<h2>Ground - Vegetation<a class="headerlink" href="#ground-vegetation" title="Permalink to this heading"></a></h2>
+</section>
+<section id="ice">
+<h2>Ice<a class="headerlink" href="#ice" title="Permalink to this heading"></a></h2>
+</section>
+<section id="leather">
+<h2>Leather<a class="headerlink" href="#leather" title="Permalink to this heading"></a></h2>
+</section>
+<section id="leather-stitching">
+<h2>Leather - Stitching<a class="headerlink" href="#leather-stitching" title="Permalink to this heading"></a></h2>
+</section>
+<section id="leaves-new">
+<h2>Leaves - New<a class="headerlink" href="#leaves-new" title="Permalink to this heading"></a></h2>
+</section>
+<section id="leaves-old">
+<h2>Leaves - Old<a class="headerlink" href="#leaves-old" title="Permalink to this heading"></a></h2>
+</section>
+<section id="metal-grid">
+<h2>Metal - Grid<a class="headerlink" href="#metal-grid" title="Permalink to this heading"></a></h2>
+</section>
+<section id="metal-plates">
+<h2>Metal - Plates<a class="headerlink" href="#metal-plates" title="Permalink to this heading"></a></h2>
+</section>
+<section id="metal-raw">
+<h2>Metal - Raw<a class="headerlink" href="#metal-raw" title="Permalink to this heading"></a></h2>
+</section>
+<section id="metal-rusty">
+<h2>Metal - Rusty<a class="headerlink" href="#metal-rusty" title="Permalink to this heading"></a></h2>
+</section>
+<section id="metal-tiles">
+<h2>Metal - Tiles<a class="headerlink" href="#metal-tiles" title="Permalink to this heading"></a></h2>
+</section>
+<section id="metal-worn-paint">
+<h2>Metal - Worn Paint<a class="headerlink" href="#metal-worn-paint" title="Permalink to this heading"></a></h2>
+</section>
+<section id="paper-cardboard">
+<h2>Paper &amp; Cardboard<a class="headerlink" href="#paper-cardboard" title="Permalink to this heading"></a></h2>
+</section>
+<section id="parquet-basketweave">
+<h2>Parquet - BasketWeave<a class="headerlink" href="#parquet-basketweave" title="Permalink to this heading"></a></h2>
+</section>
+<section id="parquet-herringbone">
+<h2>Parquet - Herringbone<a class="headerlink" href="#parquet-herringbone" title="Permalink to this heading"></a></h2>
+</section>
+<section id="parquet-pattern-mix">
+<h2>Parquet - Pattern Mix<a class="headerlink" href="#parquet-pattern-mix" title="Permalink to this heading"></a></h2>
+</section>
+<section id="parquet-straight">
+<h2>Parquet - Straight<a class="headerlink" href="#parquet-straight" title="Permalink to this heading"></a></h2>
+</section>
+<section id="pavers-grid">
+<h2>Pavers - Grid<a class="headerlink" href="#pavers-grid" title="Permalink to this heading"></a></h2>
+</section>
+<section id="pavers-herringbone">
+<h2>Pavers - Herringbone<a class="headerlink" href="#pavers-herringbone" title="Permalink to this heading"></a></h2>
+</section>
+<section id="pavers-offset">
+<h2>Pavers - Offset<a class="headerlink" href="#pavers-offset" title="Permalink to this heading"></a></h2>
+</section>
+<section id="pavers-pattern-mix">
+<h2>Pavers - Pattern Mix<a class="headerlink" href="#pavers-pattern-mix" title="Permalink to this heading"></a></h2>
+</section>
+<section id="pavers-stone-cube">
+<h2>Pavers - Stone Cube<a class="headerlink" href="#pavers-stone-cube" title="Permalink to this heading"></a></h2>
+</section>
+<section id="pavers-stones">
+<h2>Pavers - Stones<a class="headerlink" href="#pavers-stones" title="Permalink to this heading"></a></h2>
+</section>
+<section id="pipe">
+<h2>Pipe<a class="headerlink" href="#pipe" title="Permalink to this heading"></a></h2>
+</section>
+<section id="plaster-wall">
+<h2>Plaster - Wall<a class="headerlink" href="#plaster-wall" title="Permalink to this heading"></a></h2>
+</section>
+<section id="plaster-worn">
+<h2>Plaster - Worn<a class="headerlink" href="#plaster-worn" title="Permalink to this heading"></a></h2>
+</section>
+<section id="plastic">
+<h2>Plastic<a class="headerlink" href="#plastic" title="Permalink to this heading"></a></h2>
+</section>
+<section id="procedural">
+<h2>Procedural<a class="headerlink" href="#procedural" title="Permalink to this heading"></a></h2>
+</section>
+<section id="rock-solid">
+<h2>Rock - Solid<a class="headerlink" href="#rock-solid" title="Permalink to this heading"></a></h2>
+</section>
+<section id="roof">
+<h2>Roof<a class="headerlink" href="#roof" title="Permalink to this heading"></a></h2>
+</section>
+<section id="ropes">
+<h2>Ropes<a class="headerlink" href="#ropes" title="Permalink to this heading"></a></h2>
+</section>
+<section id="sign">
+<h2>Sign<a class="headerlink" href="#sign" title="Permalink to this heading"></a></h2>
+</section>
+<section id="sponge">
+<h2>Sponge<a class="headerlink" href="#sponge" title="Permalink to this heading"></a></h2>
+</section>
+<section id="stone-granite">
+<h2>Stone - Granite<a class="headerlink" href="#stone-granite" title="Permalink to this heading"></a></h2>
+</section>
+<section id="stone-marble">
+<h2>Stone - Marble<a class="headerlink" href="#stone-marble" title="Permalink to this heading"></a></h2>
+</section>
+<section id="surface-imperfections">
+<h2>Surface Imperfections<a class="headerlink" href="#surface-imperfections" title="Permalink to this heading"></a></h2>
+</section>
+<section id="terrazzo">
+<h2>Terrazzo<a class="headerlink" href="#terrazzo" title="Permalink to this heading"></a></h2>
+</section>
+<section id="tiles-exterior">
+<h2>Tiles - Exterior<a class="headerlink" href="#tiles-exterior" title="Permalink to this heading"></a></h2>
+</section>
+<section id="tiles-grid">
+<h2>Tiles - Grid<a class="headerlink" href="#tiles-grid" title="Permalink to this heading"></a></h2>
+</section>
+<section id="tiles-herringbone">
+<h2>Tiles - Herringbone<a class="headerlink" href="#tiles-herringbone" title="Permalink to this heading"></a></h2>
+</section>
+<section id="tiles-hexagonal">
+<h2>Tiles - Hexagonal<a class="headerlink" href="#tiles-hexagonal" title="Permalink to this heading"></a></h2>
+</section>
+<section id="tiles-mix">
+<h2>Tiles - Mix<a class="headerlink" href="#tiles-mix" title="Permalink to this heading"></a></h2>
+</section>
+<section id="tiles-offset">
+<h2>Tiles - Offset<a class="headerlink" href="#tiles-offset" title="Permalink to this heading"></a></h2>
+</section>
+<section id="tiles-pattern-mix">
+<h2>Tiles - Pattern Mix<a class="headerlink" href="#tiles-pattern-mix" title="Permalink to this heading"></a></h2>
+</section>
+<section id="tiles-various">
+<h2>Tiles - Various<a class="headerlink" href="#tiles-various" title="Permalink to this heading"></a></h2>
+</section>
+<section id="tools">
+<h2>Tools<a class="headerlink" href="#tools" title="Permalink to this heading"></a></h2>
+</section>
+<section id="walls-stones">
+<h2>Walls - Stones<a class="headerlink" href="#walls-stones" title="Permalink to this heading"></a></h2>
+</section>
+<section id="wood-bark">
+<h2>Wood - Bark<a class="headerlink" href="#wood-bark" title="Permalink to this heading"></a></h2>
+</section>
+<section id="wood-derived">
+<h2>Wood - Derived<a class="headerlink" href="#wood-derived" title="Permalink to this heading"></a></h2>
+</section>
+<section id="wood-painted">
+<h2>Wood - Painted<a class="headerlink" href="#wood-painted" title="Permalink to this heading"></a></h2>
+</section>
+<section id="wood-plain">
+<h2>Wood - Plain<a class="headerlink" href="#wood-plain" title="Permalink to this heading"></a></h2>
+</section>
+<section id="wood-plain-dark">
+<h2>Wood - Plain Dark<a class="headerlink" href="#wood-plain-dark" title="Permalink to this heading"></a></h2>
+</section>
+<section id="wood-plain-light">
+<h2>Wood - Plain Light<a class="headerlink" href="#wood-plain-light" title="Permalink to this heading"></a></h2>
+</section>
+<section id="wood-planks">
+<h2>Wood - Planks<a class="headerlink" href="#wood-planks" title="Permalink to this heading"></a></h2>
+</section>
+<section id="wood-raw">
+<h2>Wood - Raw<a class="headerlink" href="#wood-raw" title="Permalink to this heading"></a></h2>
+</section>
+<section id="wood-timber">
+<h2>Wood - Timber<a class="headerlink" href="#wood-timber" title="Permalink to this heading"></a></h2>
+</section>
+<section id="wood-wall">
+<h2>Wood - Wall<a class="headerlink" href="#wood-wall" title="Permalink to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, Andrea Donati.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script>  
+
+  <style>
+    /* Sidebar header (and topbar for mobile) */
+    .wy-side-nav-search, .wy-nav-top {
+      background: #222222;
+    }
+    /* Sidebar */
+    .wy-nav-side {
+      background: #222222;
+    }
+  </style>
+
+
+</body>
+</html>
