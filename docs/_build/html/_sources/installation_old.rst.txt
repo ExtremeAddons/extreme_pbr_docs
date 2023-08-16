@@ -249,6 +249,8 @@ This process can take a few minutes.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _old_installation_step_5:
+
 Step 5 (Install Material)
 ***************************
 
@@ -540,4 +542,64 @@ Product bought on Gumroad
         :width: 800
         :alt: Extreme addons license page
 
+
+------------------------------------------------------------------------------------------------------------------------
+
+Updates Tab
+------------
+
+.. note::
+    In order to see this TAB, make sure to check the checkbox “I Have an Account on Extreme Addons” in the “Preferences” section of the addon
+    Reference here: :ref:`pr_op_i_have_an_account_on_extreme_addons`
+
+As mentioned in the note, this is the old menu to access the Extreme Addons compartment if you already have an account on Extreme-Addons.com
+
+.. image:: _static/_images/preferences/old_updates_tab_menu.webp
+        :align: center
+        :width: 600
+        :alt: Extreme PBR Menu Updates Tab
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Update Core
+*************
+
+This button is used to update the addon to the latest version available on the server.
+
+.. note::
+        Need the addon activation described here: :ref:`installation_step_1`
+
+
+.. image:: _static/_images/preferences/old_update_core.webp
+        :align: center
+        :width: 600
+        :alt: Old Update core
+
+|
+
+Please Restart Blender After Update!
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Update Library
+***************
+
+By this button, you can update the library on your computer, it will build the missing categories or materials
+(Only the structure) so that you can download only the materials you are interested in.
+
+
+.. image:: _static/_images/preferences/old_update_library.webp
+        :align: center
+        :width: 600
+        :alt: Old Update library
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Install materials
+********************
+
+This section is identical to the one described here: :ref:`old_installation_step_5`
 
