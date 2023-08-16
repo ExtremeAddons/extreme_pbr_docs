@@ -167,7 +167,7 @@ Step 1 (Addon Activation)
     - The email and password are those with which you registered on www.Extreme-Addons.com
 
 - License:
-    - To obtain the product license, check here how: https://docs.extreme-addons.com/manual/how-to-register-your-product-on-extreme-addons/
+    - To obtain the product license, check here how: :ref:`how_to_get_license`
     - If you already have a license, you just need to access extreme-addons website, in this page there is your license,
       remember that you must be logged in with your credentials to see it: Your license page:
       https://extreme-addons.com/my-account/ea-license/
@@ -433,6 +433,8 @@ Here is the section to activate the license on another computer: :ref:`move_lice
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _how_to_get_license:
+
 How to get License (Only for up to 4.0.207)
 --------------------------------------------
 
@@ -487,7 +489,7 @@ Product bought on Blendermarket
 ------------------------------------------------------------------------------------------------------------------------
 
 Product bought on Gumroad
---------------------------
+*************************************
 
 1. Go to Your Gumroad Library https://app.gumroad.com/library
 2. Choose the product you need to register from your Gumroad Library, for example “Extreme PBR”
