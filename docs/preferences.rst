@@ -446,7 +446,7 @@ Find Lost Images
 ****************************
 
 In the event that the image files to which the materials referred, have been moved (In the best case)
-This button opens a file browser where you can roughly indicate the folder that may contain subfolders
+This button opens a file browser where you can roughly indicate the folder that may contain sub folders
 with missing images inside. If the images are found, they are automatically reconnected to the materials.
 
 

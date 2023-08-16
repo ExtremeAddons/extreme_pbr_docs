@@ -51,7 +51,7 @@ Install (Only from version 4.0.200 and up)
 ------------------------------------------------------------------------------------------------------------------------
 
 
-Unistall the old version
+Uninstall the old version
 ==========================
 
 (Only If you have previously installed a version of Extreme PBR prior to the Nexus edition)
@@ -62,10 +62,10 @@ Unistall the old version
 3. Press Remove
 4. Restart Blender
 
-.. image:: _static/_images/installation/unistall_example_panel.png
+.. image:: _static/_images/installation/uninstall_example_panel.png
       :align: center
       :width: 800
-      :alt: Unistall example panel
+      :alt: Uninstall example panel
 
 |
 
@@ -500,10 +500,10 @@ Product bought on Gumroad
 1. Go to Your Gumroad Library https://app.gumroad.com/library
 2. Choose the product you need to register from your Gumroad Library, for example “Extreme PBR”
 
-.. image:: _static/_images/installation/gumroad_library_exaample.jpg
+.. image:: _static/_images/installation/gumroad_library_example.jpg
         :align: center
         :width: 800
-        :alt: Gumroad library exaample
+        :alt: Gumroad library example
 
 3. At the bottom of the Product Content, you will find a license key as in this photo, Keep in mind or copy this license
    Copy everything, even the dashes between one sequence and another.

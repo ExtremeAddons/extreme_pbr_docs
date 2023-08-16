@@ -17,7 +17,7 @@ New Installation (4.1.100 and up)
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Unistall the old version
+Uninstall the old version
 ==========================
 
 (Only If you have previously installed a version of Extreme PBR prior to the Nexus edition)
@@ -28,10 +28,10 @@ Unistall the old version
 3. Press Remove
 4. Restart Blender
 
-.. image:: _static/_images/installation/unistall_example_panel.png
+.. image:: _static/_images/installation/uninstall_example_panel.png
       :align: center
       :width: 800
-      :alt: Unistall example panel
+      :alt: Uninstall example panel
 
 |
 

@@ -93,10 +93,10 @@ This button allows you to minimize the main panel, to have more space in the 3D 
 Search Category
 ***************
 
-.. image:: _static/_images/main_panel/search_category_botton_01.png
+.. image:: _static/_images/main_panel/search_category_button_01.png
     :align: right
     :width: 600
-    :alt: Search Category
+    :alt: Search Category Button 01
 
 |
 
@@ -739,7 +739,7 @@ Smart Vertex Groups
 
 .. note::
         This button is useful only if you have 2 or more materials on the same object and you are using the corresponding displacement of each material.
-        the displacements must be of type **Modifier** because if the Displacment is of type **Microdisplacement** this will be useless.
+        the displacements must be of type **Modifier** because if the Displacement is of type **Microdisplacement** this will be useless.
         |
         **For more information on how to use displacement, see this section:** TODO: Refer to the displacement section
 

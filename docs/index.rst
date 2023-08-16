@@ -9,14 +9,6 @@
 Welcome to Extreme PBR's documentation!
 =======================================
 
-.. image:: _static/_images/arts/pastrokkio_baloon.png
-      :align: center
-      :width: 800
-      :alt: Unistall example panel
-
-
-------------------------------------------------------------------------------------------------------------------------
-
 
 .. tip::
      Most of the buttons and properties of Extreme PBR are documented with a Tooltip and a direct link to the documentation.
@@ -82,6 +74,16 @@ Welcome to Extreme PBR's documentation!
 
     updates_log
     undocumented
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. image:: _static/_images/arts/pastrokkio_balloon.png
+      :align: center
+      :width: 800
+      :alt: Pastrokkio Balloon
+
+
 
 
 

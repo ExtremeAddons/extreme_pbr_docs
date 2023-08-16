@@ -389,7 +389,7 @@ This button actually manages the **Blend Mode** and **Shadow Mode** of the mater
 
 |
 
-Is BLEND blends every pixel between material and transparency, Is HASHED perfoms the blend in a noisy fashion (faster),
+Is BLEND blends every pixel between material and transparency, Is HASHED performs the blend in a noisy fashion (faster),
 Is CLIP sets as transparent only pixels under a threshold value (useful for texture controlled transparency).
 
 Settings only for Eevee Render:
@@ -1172,7 +1172,7 @@ Detailed Deadlift manage how much the noise effect should be sharp or not, the h
 consequently the Fx Layer will be sharper, while the lower the value, the less sharp the noise effect will be, consequently
 the Fx Layer will be more blurred.
 
-**Here is the example of a Deadlift set to 0.883, so quite strengh:**
+**Here is the example of a Deadlift set to 0.883, so quite strength:**
 
 .. image:: _static/_images/fx_layer/fx_detailed_deadlift_example.webp
     :align: center
@@ -1190,7 +1190,7 @@ consequently the noise effect will be inverted.
 
 **Here is the example of a Invert Mask:**
 
-.. image:: _static/_images/fx_layer/fx_invert_noide_mask_example.webp
+.. image:: _static/_images/fx_layer/fx_invert_noise_mask_example.webp
     :align: center
     :width: 800
     :alt: Fx Invert Mask Example
@@ -1763,6 +1763,37 @@ This panel will be drawn on the **Simple PBR** node standard of Extreme PBR. The
         This type of material (Simple PBR) is much faster to manage, and much faster to render. So
         if you need speed, and you don't need all the properties that the Nexus version has, especially for
         as regards painting, then I recommend using the Simple PBR version.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Unrecognized Material
+======================
+
+In this case the material is pink, this means that probably the textures to which the material referred
+have been moved or deleted, so the situation, selecting the object with the active material, will be this:
+
+All missing textures will be marked in Red, this allows you to enter the **Texture Manager** panel and try
+to search for missing textures, using the **Find Lost Images** button that will in turn open a File Browser where you will have to
+enter the path of where you think the Images are (In the best case if you have not deleted such files)
+
+.. image:: _static/_images/material_editor/me_unrecognized_material.webp
+    :align: center
+    :width: 400
+    :alt: Unrecognized Material
+
+|
+
+
+.. important::
+    If you are working on a project and want to share your project with other people, or simply, you are thinking
+    once finished deleting your texture images on disk, stop and make sure to Pack everything in the project
+    otherwise this situation will arise once the texture images have been deleted from the disk.
+
+    Take a look here to understand how to do it: :ref:`troubleshooting_auto_pack_resources`
+
+
+
 
 
 
