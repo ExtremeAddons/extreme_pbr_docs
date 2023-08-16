@@ -67,6 +67,12 @@ Unistall the old version
       :width: 800
       :alt: Unistall example panel
 
+|
+
+.. important::
+        It may be necessary to restart as said in point 4 to be sure that the new modules do not conflict with those of
+        the previous version.
+
 
 ------------------------------------------------------------------------------------------------------------------------
 

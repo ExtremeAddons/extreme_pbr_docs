@@ -1,5 +1,5 @@
 ===================================
-New Installation v 4.1.100 and up
+New Installation (4.1.100 and up)
 ===================================
 
 .. tip::
@@ -14,6 +14,33 @@ New Installation v 4.1.100 and up
             :align: center
             :width: 600
             :alt: See version
+
+------------------------------------------------------------------------------------------------------------------------
+
+Unistall the old version
+==========================
+
+(Only If you have previously installed a version of Extreme PBR prior to the Nexus edition)
+
+
+1. Search your Old Extreme PBR from Blender addons
+2. Expand The Extreme PBR Preferences Menu
+3. Press Remove
+4. Restart Blender
+
+.. image:: _static/_images/installation/unistall_example_panel.png
+      :align: center
+      :width: 800
+      :alt: Unistall example panel
+
+|
+
+.. important::
+        It may be necessary to restart as said in point 4 to be sure that the new modules do not conflict with those of
+        the previous version.
+
+
+------------------------------------------------------------------------------------------------------------------------
 
 
 .. _install_addon_41100:
