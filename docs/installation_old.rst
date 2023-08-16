@@ -430,3 +430,106 @@ If you want to activate Extreme PBR on computer n2, you will need to move the li
 
 Here is the section to activate the license on another computer: :ref:`move_license_to_another_computer`
 
+
+------------------------------------------------------------------------------------------------------------------------
+
+How to get License (Only for up to 4.0.207)
+--------------------------------------------
+
+.. important::
+        The new version of Extreme PBR Nexus 4.1.100 no longer needs a license, so it is not necessary.
+
+
+Product bought on Blendermarket
+*************************************
+
+1. Go to Your Blendermarket Order Page: https://blendermarket.com/account/orders
+2. Now in the order list you will need to find the ID of your order. Keep that in mind.
+
+.. image:: _static/_images/installation/id_product_order_page_blendermarket.png
+        :align: center
+        :width: 600
+        :alt: Id product order page blendermarket
+
+|
+
+3. (Skip this step if the previous one made it possible for you to get your Order ID)
+    You can also find your ID in an alternative way By checking your mailbox, at the time of purchase you will have received an email with the receipt of your order (For a correct view of the email we suggest you avoid the Windows 10 mail service) Then search your email for “Your Receipt Blendermarket”
+    You will find in your email the Extreme PBR purchase receipt, where at the bottom is your ID
+    ( This is an example of a “Blendermarket Receipt”)
+
+.. image:: _static/_images/installation/blendermarket_receipt.png
+        :align: center
+        :width: 600
+        :alt: Blendermarket receipt
+
+4. Now go to “Register Product” Page: https://extreme-addons.com/register-product/
+    - Select “Blendermarket” (1)
+    - Select Select the product you need to register from the drop-down menu (2)
+    - Enter your order id in the box (3)
+    - Enter Enter the email with which you bought on Blendermarket. (Attention, the email may be different from the one you registered with on Extreme-Addons.comSo here you will have to enter in effect the email with which you have your account on Blendermarket (4)
+    - Press “Get License” (5)
+
+.. image:: _static/_images/installation/register_product_page.jpg
+        :align: center
+        :width: 800
+        :alt: Register product page
+
+|
+
+5. If the procedure has been completed successfully, your product should now be shown like this on the page https://extreme-addons.com/my-account/ea-license/
+
+.. image:: _static/_images/installation/extreme_addons_license_page.jpg
+        :align: center
+        :width: 800
+        :alt: Extreme addons license page
+
+------------------------------------------------------------------------------------------------------------------------
+
+Product bought on Gumroad
+--------------------------
+
+1. Go to Your Gumroad Library https://app.gumroad.com/library
+2. Choose the product you need to register from your Gumroad Library, for example “Extreme PBR”
+
+.. image:: _static/_images/installation/gumroad_library_exaample.jpg
+        :align: center
+        :width: 800
+        :alt: Gumroad library exaample
+
+3. At the bottom of the Product Content, you will find a license key as in this photo, Keep in mind or copy this license
+   Copy everything, even the dashes between one sequence and another.
+
+.. note::
+        You can also find the license code in the email you received at the time of purchase.
+
+.. image:: _static/_images/installation/license_key_gumroad_example.jpg
+        :align: center
+        :width: 800
+        :alt: License key gumroad example
+
+|
+
+4. Now go to “Register Product” Page: https://extreme-addons.com/register-product/
+    - Select “GumRoad” (1)
+    - Select Select the product you need to register from the drop-down menu (2)
+    - Enter your license key in the box (3)
+    - Enter Enter the email with which you bought on Gumroad. (Attention, the email may be different from the one you registered with on Extreme-Addons.com So here you will have to enter in effect the email with which you have your account on Gumroad (4)
+    - Press “Get License” (5)
+
+.. image:: _static/_images/installation/register_product_page.jpg
+        :align: center
+        :width: 800
+        :alt: Register product page
+
+|
+
+
+5. If the procedure has been completed successfully, your product should now be shown like this on the page https://extreme-addons.com/my-account/ea-license/:
+
+.. image:: _static/_images/installation/extreme_addons_license_page.jpg
+        :align: center
+        :width: 800
+        :alt: Extreme addons license page
+
+
