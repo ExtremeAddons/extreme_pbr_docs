@@ -2,11 +2,31 @@
 Installation v 4.1.100 and up
 ==============================
 
+.. tip::
+        To check which version of Extreme PBR you are using, and therefore be sure which guide to follow, you can check
+        the version of the addon in 2 ways:
+        - Via ``edit > preferences > addons`` and looking for the addon in the list by typing ``Extreme PBR`` in the search bar
+        - If you have already installed the addon, you can access the preferences, by clicking on the button :ref:`mp_open_options`
+
+        So the version is indicated in 2 places in the preferences window like this:
+
+        .. image:: _static/_images/installation/see_version.webp
+            :align: center
+            :width: 600
+            :alt: See version
+
+
+.. _install_addon_41100:
+
 Instal the addon
 ==================
 
 The first step is to install the addon in Blender. Below are instructions for installing the addon
 
+
+.. important::
+        If you have a version lower than ``4.1.100`` (For example ``4.0.2##``) you can update the addon to version ``4.1.100``
+        following these steps below.
 
 
 .. _mac_safari_zip:
@@ -114,23 +134,30 @@ Now, download the addon and install it in Blender, the procedure is as follows:
 ------------------------------------------------------------------------------------------------------------------------
 
 
-
-.. _how_to_install_libraries:
+.. _install_library_41100:
 
 Install The library
 =======================
 
 - If you have installed the addon correctly, now you can proceed with the installation of the library.
 
-.. Note::
-        If you are a user coming from a old version of **Extreme PBR Nexus*** puoi aggiornare l'elenco dei pacchetti
-        da questo menu, premendo il bottone
+
+.. note::
+        If you are a user coming from a old version of **Extreme PBR Nexus*** you can update the list of packages
+        from this menu, by pressing the **Try compile Exapack** button, this based on the materials you already had installed
+        will compile the list of files by comparing with the packages available online, and will allow you to download only
+        the packages you need. In fact, once compiled, you will have those online on the left, and those on the right
+
+        .. image:: _static/_images/installation/try_compile_exapack.webp
+            :align: center
+            :width: 400
+            :alt: Try compile Exapack 01
 
 
 Step 1
 --------
 
-Download the file HDRiMkr_1k_vol_1.exapack, this is the package containing the 1k resolution files,
+Download the file XTRPbr_1k_vol_1.exapack, this is the package containing the 1k resolution files,
 it is also the smallest package in terms of Size, so it is easy and fast. You can download the others at any time.
 **You can download all the .exapack files and run everything at once if you wish**
 
@@ -139,13 +166,13 @@ it is also the smallest package in terms of Size, so it is easy and fast. You ca
 Step 2
 --------
 
-When you have finished downloading the **exapack** files you want to install, go to the HDRi Maker Preferences window
+When you have finished downloading the **exapack** files you want to install, go to the Extreme PBR Preferences window
 and go to the **Install Libraries** (TAB) section and press the "Default Library" button you see in the following image
 in red.
 
-.. Tip:: If you do not see the HDRi Maker Welcome panel, you can open it by pressing the "N" key on the keyboard.
+.. Tip:: If you do not see the Extreme PBR Welcome panel, you can open it by pressing the "N" key on the keyboard.
 
-.. image:: _static/_images/installation/go_to_install_libraries_01.png
+.. image:: _static/_images/installation/go_to_install_libraries_01.webp
     :align: center
     :width: 600
     :alt: Go to install libraries 01
@@ -166,7 +193,7 @@ Step 3
 
 Now the situation should look like this, where the **"Choose Exapacks"** button appears.
 
-.. image:: _static/_images/installation/choose_exapacks_ready.png
+.. image:: _static/_images/installation/choose_exapacks_ready.webp
     :align: center
     :width: 800
     :alt: Choose Exapacks ready
@@ -179,7 +206,7 @@ Then press the button in the file browser window **Choose Exapacks** to confirm
 
 
 
-.. image:: _static/_images/installation/browse_exapack_to_install_01.png
+.. image:: _static/_images/installation/browse_exapack_to_install_01.webp
     :align: center
     :width: 800
     :alt: Browse exapack to install 01
@@ -197,7 +224,7 @@ Now you should have the list of exapack files selected, in list, ready to be ins
           if you want to keep them (Not Recommended) check the **"Keep Exapack After Install"** box and the files will be kept on the disk.
           But be careful, this means that you will have the weight of the library almost X2
 
-.. image:: _static/_images/installation/install_from_exapack_files.png
+.. image:: _static/_images/installation/install_from_exapack_files.webp
     :align: center
     :width: 800
     :alt: Install from exapack files
@@ -213,7 +240,7 @@ the installed packages will remain installed.
                because the addon recognizes the already installed files and skips them.
 
 
-.. image:: _static/_images/installation/exapack_installation_progress.png
+.. image:: _static/_images/installation/exapack_installation_progress.webp
     :align: center
     :width: 800
     :alt: Exapack installation progress
@@ -230,11 +257,9 @@ the installed packages will remain installed.
 Step 5
 ----------
 
-When you have completed the entire (or even just in part) installation, the addon will be ready to be used:
-In this image we see that this Background is present in 3 different resolutions, 1k, 2k and 4k, the 8k and 16k versions
-can be installed via exapack also at a later time (If needed)
+When you have completed the entire (or even just in part) installation, the addon will be ready to be used.
 
-.. Image:: _static/_images/installation/addon_ready_01.png
+.. Image:: _static/_images/installation/addon_ready_01.webp
     :align: center
     :width: 600
     :alt: Addon ready 01
@@ -247,17 +272,17 @@ can be installed via exapack also at a later time (If needed)
 
 At the end of this process, on your computer, in the indicated path, 2 folders will have been created (3 if you also installed the HDRMAPS expansion)
 
-- **HDRI_MAKER_DEFAULT_LIBRARY** (This folder contains all the files of the HDRi Maker libraries)
+- **HDRI_MAKER_DEFAULT_LIBRARY** (This folder contains all the files of the Extreme PBR libraries)
 - **HDRI_MAKER_USER_LIBRARY** (This folder is an empty folder, and will be used in case you want to save your personal HDRi)
 
 If you also installed the HDRMAPS expansion, then a third folder will also be created and will be named after the expansion.
 
-To manipulate the paths to the libraries, it is enough to go to the HDRi Maker settings and go to the **Libraries** (TAB) section
+To manipulate the paths to the libraries, it is enough to go to the Extreme PBR settings and go to the **Libraries** (TAB) section
 
-For more information on this section you can find the chapter :ref:`preferences_library_tab`
+For more information on this section you can find the chapter :ref:`pr_libraries`
 
 
-.. image:: _static/_images/installation/libraries_manipulation_01.png
+.. image:: _static/_images/installation/libraries_manipulation_01.webp
     :align: center
     :width: 600
     :alt: Libraries manipulation 01
@@ -274,11 +299,11 @@ All new packages will be in the form of numbered volumes Here is an example of n
 Default Library
 -----------------------
 
-- **HDRiMkr_1k_vol_1.exapack**: HDRiMkr 1k Volume 1: Contains files from 1k, previews, and data files
-- **HDRiMkr_2k_vol_1.exapack**: HDRiMkr 1k Volume 2: Contains files from 2k, previews, and data files
-- **HDRiMkr_4k_vol_1.exapack**: HDRiMkr 1k Volume 3: Contains files from 4k, previews, and data files
-- **HDRiMkr_8k_vol_1.exapack**: HDRiMkr 1k Volume 4: Contains files from 8k, previews, and data files
-- **HDRiMkr_16k_vol_1.exapack**: HDRiMkr 1k Volume 5: Contains files from 16k, previews, and data files
+- **XTRPbr_1k_vol_1.exapack**: Contains files from 1k, previews, and data files
+- **XTRPbr_2k_vol_1.exapack**: Contains files from 2k, previews, and data files
+- **XTRPbr_4k_vol_1.exapack**: Contains files from 4k, previews, and data files
+- **XTRPbr_8k_vol_1.exapack**: Contains files from 8k, previews, and data files
+- **XTRPbr_16k_vol_1.exapack**: Contains files from 16k, previews, and data files
 
 The packages are consecutive, Vol_1, Vol_2, Vol_3, I tried to limit as much as possible the size of the packages,
 so that their maximum is around 2GB (Some can reach 2.5GB).
@@ -287,21 +312,6 @@ encounter timeout problems.
 
 .. Note:: The large size packages like 8k and 16k will have more volumes, because they are much larger.
           The small size packages like 1k and 2k will have less volumes, because they are much smaller.
-
-------------------------------------------------------------------------------------------------------------------------
-
-Expansion Library
--------------------------
-
-As for the expansions that are always distributed in the form of .exapack, the nomenclature may vary.
-For example, the expansions of HDRMaps are distributed without the resolution variant, this because it is a much smaller library.
-
-   .. image:: _static/_images/installation/hdrmaps_exapack_example_01.png
-       :align: center
-       :width: 300
-       :alt: Expansion exapack nomenclature
-
-
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -329,16 +339,30 @@ Extreme PBR addon, it will manage your exapack packages and install them. (You w
 
 ------------------------------------------------------------------------------------------------------------------------
 
-
-
-
-
-
-
+.. _install_addon_402##:
 
 =============================
 Installation (Older Version)
 =============================
+
+.. tip::
+        To check which version of Extreme PBR you are using, and therefore be sure which guide to follow, you can check
+        the version of the addon in 2 ways:
+        - Via ``edit > preferences > addons`` and looking for the addon in the list by typing ``Extreme PBR`` in the search bar
+        - If you have already installed the addon, you can access the preferences, by clicking on the button :ref:`mp_open_options`
+
+        So the version is indicated in 2 places in the preferences window like this:
+
+        .. image:: _static/_images/installation/see_version.webp
+            :align: center
+            :width: 600
+            :alt: See version
+
+.. important::
+        The new version of Extreme PBR Nexus 4.1.100 has a new installation system described here :ref:`install_addon_41100`
+        and here the installation of the libraries :ref:`install_library_41100` If you need to connect to our
+        server to download the materials you can still do it, but you will have to activate the checkbox
+        **I Have an Account on Extreme Addons** from the **Preferences** menu described here: :ref:`pr_op_i_have_an_account_on_extreme_addons`
 
 
 How to install video tutorials
@@ -359,19 +383,6 @@ Install (Only from version 4.0.200 and up)
 
 ------------------------------------------------------------------------------------------------------------------------
 
-
-Only from version 4.0.100 up to version 4.0.131 (Old versions)
-----------------------------------------------------------------
-
-
-.. raw:: html
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/3UCpnJ9i8qk" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-        web-share" allowfullscreen></iframe>
-
-
-------------------------------------------------------------------------------------------------------------------------
 
 
 .. Note:: If you have previously installed a version of Extreme PBR prior to the Nexus edition (Extreme PBR / Extreme PBR Combo / Extreme PBR Evo)
@@ -397,6 +408,8 @@ Unistall the old version
       :width: 800
       :alt: Unistall example panel
 
+
+------------------------------------------------------------------------------------------------------------------------
 
 Install the addon
 ==================
@@ -455,6 +468,8 @@ To activate, click on the checkbox to the left of the addon name
       :width: 600
       :alt: Activate addon
 
+------------------------------------------------------------------------------------------------------------------------
+
 Configuration
 -------------
 
@@ -465,6 +480,8 @@ make sure you have installed version 4.0.200 or higher
       :align: center
       :width: 600
       :alt: Installation interface step 01
+
+------------------------------------------------------------------------------------------------------------------------
 
 .. _installation_step_1:
 
@@ -514,7 +531,7 @@ You will have to press the “Activate on this computer” button, this also all
 In case you want to move the license to another computer, you will have to press this button.
 This takes you to your extreme-addons page to reset the license on your profile: https://extreme-addons.com/my-account/ea-license/
 
-
+------------------------------------------------------------------------------------------------------------------------
 
 Step 2 (Choose Path)
 **********************
@@ -534,6 +551,9 @@ In this step, if (ONLY IF) you already had an Extreme PBR “User Library” / �
         :alt: Installation interface step 02
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+
 Step 3 (Get Material List)
 ***************************
 
@@ -545,6 +565,8 @@ This step is for obtaining the online material list. This gets a log of all file
         :width: 800
         :alt: Installation interface step 03
 
+
+------------------------------------------------------------------------------------------------------------------------
 
 Step 4 (Create Library Structure)
 ***********************************
@@ -560,6 +582,7 @@ This process can take a few minutes.
         :width: 800
         :alt: Installation interface step 04
 
+------------------------------------------------------------------------------------------------------------------------
 
 Step 5 (Install Material)
 ***************************
@@ -595,7 +618,7 @@ Remember that many gigs are downloaded at the beginning. And that you can always
                 - Download and Install all the complete library –> (Essential/1k/2k/4k/8k)
 
 
-
+------------------------------------------------------------------------------------------------------------------------
 
 Installation Time Issues:
 **************************
@@ -611,7 +634,7 @@ keep in mind that the download time is not a speed test, it would be wrong to th
 We did this in order to cancel the installation process, and pick up where you left off. So all downloaded materials will remain as such,
 the installation process can be resumed at a later time.
 
-
+------------------------------------------------------------------------------------------------------------------------
 
 Download single Material
 -------------------------
@@ -648,6 +671,7 @@ So if you are interested in installing the material, press “Install Single Mat
     - Open the “Install Material” menu (If you want to do the complete installation of the entire library, and not the single material.)
 
 
+------------------------------------------------------------------------------------------------------------------------
 
 Progress Bar(s)
 ---------------
@@ -662,7 +686,7 @@ the material packs already downloaded are installed, so they will remain install
         :width: 800
         :alt: Installation progress 01
 
-
+------------------------------------------------------------------------------------------------------------------------
 
 Installation Time Issues:
 **************************
@@ -676,6 +700,11 @@ It vary according to the internet speed and that of the computer in use, so duri
 keep in mind that the download time is not a speed test, it would be wrong to think this, as during this process, +
 they are also installed materials. We did this in order to cancel the installation process, and pick up where you left off.
 So all downloaded materials will remain as such, the installation process can be resumed at a later time.
+
+
+.. hint::
+        If you encounter these problems, we have provided an alternative download system from version ``4.1.100`` via
+        file.exapack. Here is the reference for installation via .exapack file :ref:`install_library_41100`
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -713,7 +742,7 @@ and press “Activate on this computer”. If everything is right, the key icon 
         :width: 800
         :alt: Extreme PBR Menu Activate License
 
-
+------------------------------------------------------------------------------------------------------------------------
 
 Migrate On Other Computer/Blender Version
 -----------------------------------------
@@ -732,6 +761,8 @@ At this point you will only have to indicate the path in Library Manager:
         :alt: Extreme PBR Menu Library Manager
 
 
+------------------------------------------------------------------------------------------------------------------------
+
 Activate on another computer
 ----------------------------
 
@@ -739,19 +770,4 @@ If you want to activate Extreme PBR on computer n2, you will need to move the li
 
 
 Here is the section to activate the license on another computer: :ref:`move_license_to_another_computer`
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 

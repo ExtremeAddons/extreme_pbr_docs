@@ -62,7 +62,6 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#about-exapack">About Exapack</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#default-library">Default Library</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#expansion-library">Expansion Library</a></li>
 </ul>
 </li>
 </ul>
@@ -70,7 +69,6 @@
 <li class="toctree-l1"><a class="reference internal" href="#installation-older-version">Installation (Older Version)</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#how-to-install-video-tutorials">How to install video tutorials</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#install-only-from-version-4-0-200-and-up">Install (Only from version 4.0.200 and up)</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#only-from-version-4-0-100-up-to-version-4-0-131-old-versions">Only from version 4.0.100 up to version 4.0.131 (Old versions)</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#unistall-the-old-version">Unistall the old version</a></li>
@@ -123,7 +121,6 @@
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="faqs.html">FAQs</a></li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
-<li class="toctree-l1"><a class="reference internal" href="material_list.html">Material List</a></li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Changelog: ⏲</span></p>
@@ -158,9 +155,23 @@
              
   <section id="installation-v-4-1-100-and-up">
 <h1>Installation v 4.1.100 and up<a class="headerlink" href="#installation-v-4-1-100-and-up" title="Permalink to this heading"></a></h1>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To check which version of Extreme PBR you are using, and therefore be sure which guide to follow, you can check
+the version of the addon in 2 ways:
+- Via <code class="docutils literal notranslate"><span class="pre">edit</span> <span class="pre">&gt;</span> <span class="pre">preferences</span> <span class="pre">&gt;</span> <span class="pre">addons</span></code> and looking for the addon in the list by typing <code class="docutils literal notranslate"><span class="pre">Extreme</span> <span class="pre">PBR</span></code> in the search bar
+- If you have already installed the addon, you can access the preferences, by clicking on the button <a class="reference internal" href="main_panel.html#mp-open-options"><span class="std std-ref">Open Options</span></a></p>
+<p>So the version is indicated in 2 places in the preferences window like this:</p>
+<a class="reference internal image-reference" href="_images/see_version.webp"><img alt="See version" class="align-center" src="_images/see_version.webp" style="width: 600px;" /></a>
+</div>
 <section id="instal-the-addon">
-<h2>Instal the addon<a class="headerlink" href="#instal-the-addon" title="Permalink to this heading"></a></h2>
+<span id="install-addon-41100"></span><h2>Instal the addon<a class="headerlink" href="#instal-the-addon" title="Permalink to this heading"></a></h2>
 <p>The first step is to install the addon in Blender. Below are instructions for installing the addon</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>If you have a version lower than <code class="docutils literal notranslate"><span class="pre">4.1.100</span></code> (For example <code class="docutils literal notranslate"><span class="pre">4.0.2##</span></code>) you can update the addon to version <code class="docutils literal notranslate"><span class="pre">4.1.100</span></code>
+following these steps below.</p>
+</div>
 <section id="download-the-files">
 <span id="mac-safari-zip"></span><h3>Download the files<a class="headerlink" href="#download-the-files" title="Permalink to this heading"></a></h3>
 <div class="admonition tip">
@@ -256,32 +267,35 @@ Mark the checkbox to activate it.</p></li>
 </section>
 </section>
 <section id="install-the-library">
-<span id="how-to-install-libraries"></span><h2>Install The library<a class="headerlink" href="#install-the-library" title="Permalink to this heading"></a></h2>
+<span id="install-library-41100"></span><h2>Install The library<a class="headerlink" href="#install-the-library" title="Permalink to this heading"></a></h2>
 <ul class="simple">
 <li><p>If you have installed the addon correctly, now you can proceed with the installation of the library.</p></li>
 </ul>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>If you are a user coming from a old version of <strong>Extreme PBR Nexus*</strong> puoi aggiornare l’elenco dei pacchetti
-da questo menu, premendo il bottone</p>
+<p>If you are a user coming from a old version of <strong>Extreme PBR Nexus*</strong> you can update the list of packages
+from this menu, by pressing the <strong>Try compile Exapack</strong> button, this based on the materials you already had installed
+will compile the list of files by comparing with the packages available online, and will allow you to download only
+the packages you need. In fact, once compiled, you will have those online on the left, and those on the right</p>
+<a class="reference internal image-reference" href="_images/try_compile_exapack.webp"><img alt="Try compile Exapack 01" class="align-center" src="_images/try_compile_exapack.webp" style="width: 400px;" /></a>
 </div>
 <section id="step-1">
 <h3>Step 1<a class="headerlink" href="#step-1" title="Permalink to this heading"></a></h3>
-<p>Download the file HDRiMkr_1k_vol_1.exapack, this is the package containing the 1k resolution files,
+<p>Download the file XTRPbr_1k_vol_1.exapack, this is the package containing the 1k resolution files,
 it is also the smallest package in terms of Size, so it is easy and fast. You can download the others at any time.
 <strong>You can download all the .exapack files and run everything at once if you wish</strong></p>
 </section>
 <hr class="docutils" />
 <section id="step-2">
 <h3>Step 2<a class="headerlink" href="#step-2" title="Permalink to this heading"></a></h3>
-<p>When you have finished downloading the <strong>exapack</strong> files you want to install, go to the HDRi Maker Preferences window
+<p>When you have finished downloading the <strong>exapack</strong> files you want to install, go to the Extreme PBR Preferences window
 and go to the <strong>Install Libraries</strong> (TAB) section and press the “Default Library” button you see in the following image
 in red.</p>
 <div class="admonition tip">
 <p class="admonition-title">Tip</p>
-<p>If you do not see the HDRi Maker Welcome panel, you can open it by pressing the “N” key on the keyboard.</p>
+<p>If you do not see the Extreme PBR Welcome panel, you can open it by pressing the “N” key on the keyboard.</p>
 </div>
-<a class="reference internal image-reference" href="_static/_images/installation/go_to_install_libraries_01.png"><img alt="Go to install libraries 01" class="align-center" src="_static/_images/installation/go_to_install_libraries_01.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/go_to_install_libraries_01.webp"><img alt="Go to install libraries 01" class="align-center" src="_images/go_to_install_libraries_01.webp" style="width: 600px;" /></a>
 <p>When you press this button, a file browser will open, you will have to choose a location on your computer where the
 root folder of the entire <strong>Default Library</strong> will be created</p>
 <div class="admonition warning">
@@ -298,14 +312,14 @@ root folder of the entire <strong>Default Library</strong> will be created</p>
 <section id="step-3">
 <h3>Step 3<a class="headerlink" href="#step-3" title="Permalink to this heading"></a></h3>
 <p>Now the situation should look like this, where the <strong>“Choose Exapacks”</strong> button appears.</p>
-<a class="reference internal image-reference" href="_static/_images/installation/choose_exapacks_ready.png"><img alt="Choose Exapacks ready" class="align-center" src="_static/_images/installation/choose_exapacks_ready.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/choose_exapacks_ready.webp"><img alt="Choose Exapacks ready" class="align-center" src="_images/choose_exapacks_ready.webp" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>Press the <strong>“Choose Exapacks”</strong> button and select the <strong>.exapack</strong> files you just downloaded. You can choose them all,
 just make sure to select them within the File Browser. <strong>(The files not selected will be ignored)</strong>
 Then press the button in the file browser window <strong>Choose Exapacks</strong> to confirm</p>
-<a class="reference internal image-reference" href="_static/_images/installation/browse_exapack_to_install_01.png"><img alt="Browse exapack to install 01" class="align-center" src="_static/_images/installation/browse_exapack_to_install_01.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/browse_exapack_to_install_01.webp"><img alt="Browse exapack to install 01" class="align-center" src="_images/browse_exapack_to_install_01.webp" style="width: 800px;" /></a>
 </section>
 <hr class="docutils" />
 <section id="step-4">
@@ -318,7 +332,7 @@ Then press the button in the file browser window <strong>Choose Exapacks</strong
 if you want to keep them (Not Recommended) check the <strong>“Keep Exapack After Install”</strong> box and the files will be kept on the disk.
 But be careful, this means that you will have the weight of the library almost X2</p>
 </div>
-<a class="reference internal image-reference" href="_static/_images/installation/install_from_exapack_files.png"><img alt="Install from exapack files" class="align-center" src="_static/_images/installation/install_from_exapack_files.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/install_from_exapack_files.webp"><img alt="Install from exapack files" class="align-center" src="_images/install_from_exapack_files.webp" style="width: 800px;" /></a>
 <p>During the installation process of the .exapack packages, the interface will show the progress of the installed packages
 You can also stop the process whenever you want (Just press the button (X) next to the big status bar) in this case,
 the installed packages will remain installed.</p>
@@ -328,7 +342,7 @@ the installed packages will remain installed.</p>
 If the installation is resumed, the installation process will resume from where it was interrupted,
 because the addon recognizes the already installed files and skips them.</p>
 </div>
-<a class="reference internal image-reference" href="_static/_images/installation/exapack_installation_progress.png"><img alt="Exapack installation progress" class="align-center" src="_static/_images/installation/exapack_installation_progress.png" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/exapack_installation_progress.webp"><img alt="Exapack installation progress" class="align-center" src="_images/exapack_installation_progress.webp" style="width: 800px;" /></a>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The installation speed depends a lot on the type of disk in use, I have done various tests, and the installation on
@@ -340,10 +354,8 @@ you can decide to use it.</p>
 <hr class="docutils" />
 <section id="step-5">
 <h3>Step 5<a class="headerlink" href="#step-5" title="Permalink to this heading"></a></h3>
-<p>When you have completed the entire (or even just in part) installation, the addon will be ready to be used:
-In this image we see that this Background is present in 3 different resolutions, 1k, 2k and 4k, the 8k and 16k versions
-can be installed via exapack also at a later time (If needed)</p>
-<a class="reference internal image-reference" href="_static/_images/installation/addon_ready_01.png"><img alt="Addon ready 01" class="align-center" src="_static/_images/installation/addon_ready_01.png" style="width: 600px;" /></a>
+<p>When you have completed the entire (or even just in part) installation, the addon will be ready to be used.</p>
+<a class="reference internal image-reference" href="_images/addon_ready_01.webp"><img alt="Addon ready 01" class="align-center" src="_images/addon_ready_01.webp" style="width: 600px;" /></a>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>The 1k, 2k, 4k, 8k, 16k versions are present in the complete edition. Some versions may not contain all the resolution versions.
@@ -352,13 +364,13 @@ If you want to upgrade to the full version, you only pay the difference</p>
 <hr class="docutils" />
 <p>At the end of this process, on your computer, in the indicated path, 2 folders will have been created (3 if you also installed the HDRMAPS expansion)</p>
 <ul class="simple">
-<li><p><strong>HDRI_MAKER_DEFAULT_LIBRARY</strong> (This folder contains all the files of the HDRi Maker libraries)</p></li>
+<li><p><strong>HDRI_MAKER_DEFAULT_LIBRARY</strong> (This folder contains all the files of the Extreme PBR libraries)</p></li>
 <li><p><strong>HDRI_MAKER_USER_LIBRARY</strong> (This folder is an empty folder, and will be used in case you want to save your personal HDRi)</p></li>
 </ul>
 <p>If you also installed the HDRMAPS expansion, then a third folder will also be created and will be named after the expansion.</p>
-<p>To manipulate the paths to the libraries, it is enough to go to the HDRi Maker settings and go to the <strong>Libraries</strong> (TAB) section</p>
-<p>For more information on this section you can find the chapter <span class="xref std std-ref">preferences_library_tab</span></p>
-<a class="reference internal image-reference" href="_static/_images/installation/libraries_manipulation_01.png"><img alt="Libraries manipulation 01" class="align-center" src="_static/_images/installation/libraries_manipulation_01.png" style="width: 600px;" /></a>
+<p>To manipulate the paths to the libraries, it is enough to go to the Extreme PBR settings and go to the <strong>Libraries</strong> (TAB) section</p>
+<p>For more information on this section you can find the chapter <a class="reference internal" href="preferences.html#pr-libraries"><span class="std std-ref">Libraries</span></a></p>
+<a class="reference internal image-reference" href="_images/libraries_manipulation_01.webp"><img alt="Libraries manipulation 01" class="align-center" src="_images/libraries_manipulation_01.webp" style="width: 600px;" /></a>
 </section>
 </section>
 <hr class="docutils" />
@@ -369,11 +381,11 @@ All new packages will be in the form of numbered volumes Here is an example of n
 <section id="default-library">
 <h3>Default Library<a class="headerlink" href="#default-library" title="Permalink to this heading"></a></h3>
 <ul class="simple">
-<li><p><strong>HDRiMkr_1k_vol_1.exapack</strong>: HDRiMkr 1k Volume 1: Contains files from 1k, previews, and data files</p></li>
-<li><p><strong>HDRiMkr_2k_vol_1.exapack</strong>: HDRiMkr 1k Volume 2: Contains files from 2k, previews, and data files</p></li>
-<li><p><strong>HDRiMkr_4k_vol_1.exapack</strong>: HDRiMkr 1k Volume 3: Contains files from 4k, previews, and data files</p></li>
-<li><p><strong>HDRiMkr_8k_vol_1.exapack</strong>: HDRiMkr 1k Volume 4: Contains files from 8k, previews, and data files</p></li>
-<li><p><strong>HDRiMkr_16k_vol_1.exapack</strong>: HDRiMkr 1k Volume 5: Contains files from 16k, previews, and data files</p></li>
+<li><p><strong>XTRPbr_1k_vol_1.exapack</strong>: Contains files from 1k, previews, and data files</p></li>
+<li><p><strong>XTRPbr_2k_vol_1.exapack</strong>: Contains files from 2k, previews, and data files</p></li>
+<li><p><strong>XTRPbr_4k_vol_1.exapack</strong>: Contains files from 4k, previews, and data files</p></li>
+<li><p><strong>XTRPbr_8k_vol_1.exapack</strong>: Contains files from 8k, previews, and data files</p></li>
+<li><p><strong>XTRPbr_16k_vol_1.exapack</strong>: Contains files from 16k, previews, and data files</p></li>
 </ul>
 <p>The packages are consecutive, Vol_1, Vol_2, Vol_3, I tried to limit as much as possible the size of the packages,
 so that their maximum is around 2GB (Some can reach 2.5GB).
@@ -384,15 +396,6 @@ encounter timeout problems.</p>
 <p>The large size packages like 8k and 16k will have more volumes, because they are much larger.
 The small size packages like 1k and 2k will have less volumes, because they are much smaller.</p>
 </div>
-</section>
-<hr class="docutils" />
-<section id="expansion-library">
-<h3>Expansion Library<a class="headerlink" href="#expansion-library" title="Permalink to this heading"></a></h3>
-<p>As for the expansions that are always distributed in the form of .exapack, the nomenclature may vary.
-For example, the expansions of HDRMaps are distributed without the resolution variant, this because it is a much smaller library.</p>
-<blockquote>
-<div><a class="reference internal image-reference" href="_static/_images/installation/hdrmaps_exapack_example_01.png"><img alt="Expansion exapack nomenclature" class="align-center" src="_static/_images/installation/hdrmaps_exapack_example_01.png" style="width: 300px;" /></a>
-</div></blockquote>
 <hr class="docutils" />
 <p>The <strong>.exapack</strong> files are installed by the addon, they do not need to be installed manually! After installing the
 Extreme PBR addon, it will manage your exapack packages and install them. (You will see in the following steps)</p>
@@ -404,24 +407,34 @@ otherwise the .zip file will no longer be a .zip file and you will not be able t
 “Open safe files after download” in the “General” window. Done, if in the future you download zipped files with safari,
 they will no longer be unzipped.</p>
 </div>
-</section>
-</section>
-</section>
 <hr class="docutils" />
+</section>
+</section>
+</section>
 <section id="installation-older-version">
-<h1>Installation (Older Version)<a class="headerlink" href="#installation-older-version" title="Permalink to this heading"></a></h1>
+<span id="install-addon-402"></span><h1>Installation (Older Version)<a class="headerlink" href="#installation-older-version" title="Permalink to this heading"></a></h1>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>To check which version of Extreme PBR you are using, and therefore be sure which guide to follow, you can check
+the version of the addon in 2 ways:
+- Via <code class="docutils literal notranslate"><span class="pre">edit</span> <span class="pre">&gt;</span> <span class="pre">preferences</span> <span class="pre">&gt;</span> <span class="pre">addons</span></code> and looking for the addon in the list by typing <code class="docutils literal notranslate"><span class="pre">Extreme</span> <span class="pre">PBR</span></code> in the search bar
+- If you have already installed the addon, you can access the preferences, by clicking on the button <a class="reference internal" href="main_panel.html#mp-open-options"><span class="std std-ref">Open Options</span></a></p>
+<p>So the version is indicated in 2 places in the preferences window like this:</p>
+<a class="reference internal image-reference" href="_images/see_version.webp"><img alt="See version" class="align-center" src="_images/see_version.webp" style="width: 600px;" /></a>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The new version of Extreme PBR Nexus 4.1.100 has a new installation system described here <a class="reference internal" href="#install-addon-41100"><span class="std std-ref">Instal the addon</span></a>
+and here the installation of the libraries <a class="reference internal" href="#install-library-41100"><span class="std std-ref">Install The library</span></a> If you need to connect to our
+server to download the materials you can still do it, but you will have to activate the checkbox
+<strong>I Have an Account on Extreme Addons</strong> from the <strong>Preferences</strong> menu described here: <a class="reference internal" href="preferences.html#pr-op-i-have-an-account-on-extreme-addons"><span class="std std-ref">I Have an Account on Extreme Addons</span></a></p>
+</div>
 <section id="how-to-install-video-tutorials">
 <h2>How to install video tutorials<a class="headerlink" href="#how-to-install-video-tutorials" title="Permalink to this heading"></a></h2>
 <p>To make it easier here is the video tutorial for the installation of Extreme PBR Nexus</p>
 <section id="install-only-from-version-4-0-200-and-up">
 <h3>Install (Only from version 4.0.200 and up)<a class="headerlink" href="#install-only-from-version-4-0-200-and-up" title="Permalink to this heading"></a></h3>
 <iframe width="560" height="315" src="https://www.youtube.com/embed/YtqJbMsp2XU" title="YouTube video player"
-frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-web-share" allowfullscreen></iframe></section>
-<hr class="docutils" />
-<section id="only-from-version-4-0-100-up-to-version-4-0-131-old-versions">
-<h3>Only from version 4.0.100 up to version 4.0.131 (Old versions)<a class="headerlink" href="#only-from-version-4-0-100-up-to-version-4-0-131-old-versions" title="Permalink to this heading"></a></h3>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/3UCpnJ9i8qk" title="YouTube video player"
 frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
 web-share" allowfullscreen></iframe><hr class="docutils" />
 <div class="admonition note">
@@ -443,6 +456,7 @@ You have to uninstall, if you have projects that reference those material librar
 </ol>
 <a class="reference internal image-reference" href="_images/unistall_example_panel.png"><img alt="Unistall example panel" class="align-center" src="_images/unistall_example_panel.png" style="width: 800px;" /></a>
 </section>
+<hr class="docutils" />
 <section id="install-the-addon">
 <h2>Install the addon<a class="headerlink" href="#install-the-addon" title="Permalink to this heading"></a></h2>
 <p>Once you have purchased Extreme PBR from Gumroad or Blendermarket download the addon (From orderpage) “extreme_pbr.zip” don’t unzip it!</p>
@@ -470,11 +484,13 @@ Select the previously downloaded “extreme_pbr.zip” (Don’t unzip the file!)
 <a class="reference internal image-reference" href="_images/extreme_pbr_into_addon_list_01.jpg"><img alt="Addon list" class="align-center" src="_images/extreme_pbr_into_addon_list_01.jpg" style="width: 600px;" /></a>
 <p>To activate, click on the checkbox to the left of the addon name</p>
 <a class="reference internal image-reference" href="_images/activate_addon_01.jpg"><img alt="Activate addon" class="align-center" src="_images/activate_addon_01.jpg" style="width: 600px;" /></a>
+<hr class="docutils" />
 <section id="configuration">
 <h3>Configuration<a class="headerlink" href="#configuration" title="Permalink to this heading"></a></h3>
 <p>This panel has been updated from Extreme PBR Nexus version 4.0.200, and is slightly different from previous versions,
 make sure you have installed version 4.0.200 or higher</p>
 <a class="reference internal image-reference" href="_images/installation_interface_step_01.png"><img alt="Installation interface step 01" class="align-center" src="_images/installation_interface_step_01.png" style="width: 600px;" /></a>
+<hr class="docutils" />
 <section id="step-1-addon-activation">
 <span id="installation-step-1"></span><h4>Step 1 (Addon Activation)<a class="headerlink" href="#step-1-addon-activation" title="Permalink to this heading"></a></h4>
 <div class="admonition attention">
@@ -518,6 +534,7 @@ You will have to press the “Activate on this computer” button, this also all
 In case you want to move the license to another computer, you will have to press this button.
 This takes you to your extreme-addons page to reset the license on your profile: <a class="reference external" href="https://extreme-addons.com/my-account/ea-license/">https://extreme-addons.com/my-account/ea-license/</a></p>
 </section>
+<hr class="docutils" />
 <section id="step-2-choose-path">
 <h4>Step 2 (Choose Path)<a class="headerlink" href="#step-2-choose-path" title="Permalink to this heading"></a></h4>
 <p>Now click on the Choose the path button and select the folder where we want to install the Extreme PBR Library.</p>
@@ -530,11 +547,13 @@ of free space on the HardDisk you indicated. It is recommended that you install 
 </div>
 <a class="reference internal image-reference" href="_images/installation_interface_step_02.png"><img alt="Installation interface step 02" class="align-center" src="_images/installation_interface_step_02.png" style="width: 800px;" /></a>
 </section>
+<hr class="docutils" />
 <section id="step-3-get-material-list">
 <h4>Step 3 (Get Material List)<a class="headerlink" href="#step-3-get-material-list" title="Permalink to this heading"></a></h4>
 <p>This step is for obtaining the online material list. This gets a log of all files that can be downloaded.</p>
 <a class="reference internal image-reference" href="_images/installation_interface_step_03.png"><img alt="Installation interface step 03" class="align-center" src="_images/installation_interface_step_03.png" style="width: 800px;" /></a>
 </section>
+<hr class="docutils" />
 <section id="step-4-create-library-structure">
 <h4>Step 4 (Create Library Structure)<a class="headerlink" href="#step-4-create-library-structure" title="Permalink to this heading"></a></h4>
 <p>We press the Create Library structure button to create all the information that the addon needs to run on your Hard Disk. This may take some time.</p>
@@ -542,6 +561,7 @@ of free space on the HardDisk you indicated. It is recommended that you install 
 This process can take a few minutes.</p>
 <a class="reference internal image-reference" href="_images/installation_interface_step_04.png"><img alt="Installation interface step 04" class="align-center" src="_images/installation_interface_step_04.png" style="width: 800px;" /></a>
 </section>
+<hr class="docutils" />
 <section id="step-5-install-material">
 <h4>Step 5 (Install Material)<a class="headerlink" href="#step-5-install-material" title="Permalink to this heading"></a></h4>
 <p><strong>In this Step, you can decide WHAT &amp; IF you want to install</strong></p>
@@ -597,6 +617,7 @@ Remember that many gigs are downloaded at the beginning. And that you can always
 </ul>
 </div>
 </section>
+<hr class="docutils" />
 <section id="installation-time-issues">
 <h4>Installation Time Issues:<a class="headerlink" href="#installation-time-issues" title="Permalink to this heading"></a></h4>
 <p><strong>Problems with VPN / Proxy:</strong>
@@ -608,6 +629,7 @@ We did this in order to cancel the installation process, and pick up where you l
 the installation process can be resumed at a later time.</p>
 </section>
 </section>
+<hr class="docutils" />
 <section id="download-single-material">
 <h3>Download single Material<a class="headerlink" href="#download-single-material" title="Permalink to this heading"></a></h3>
 <p>This button is used to proceed with the installation of the single materials.
@@ -641,12 +663,14 @@ So if you are interested in installing the material, press “Install Single Mat
 </li>
 </ul>
 </section>
+<hr class="docutils" />
 <section id="progress-bar-s">
 <h3>Progress Bar(s)<a class="headerlink" href="#progress-bar-s" title="Permalink to this heading"></a></h3>
 <p>Progress bars will be shown during the installation process.
 You will be able to stop the installation when you want,
 the material packs already downloaded are installed, so they will remain installed even when you cancel this process.</p>
 <a class="reference internal image-reference" href="_images/installation_progress_01.jpg"><img alt="Installation progress 01" class="align-center" src="_images/installation_progress_01.jpg" style="width: 800px;" /></a>
+<hr class="docutils" />
 <section id="id1">
 <h4>Installation Time Issues:<a class="headerlink" href="#id1" title="Permalink to this heading"></a></h4>
 <p><strong>Problems with VPN / Proxy:</strong>
@@ -656,6 +680,11 @@ If you are using a VPN or Proxy and the download is slow, please Exclude extreme
 keep in mind that the download time is not a speed test, it would be wrong to think this, as during this process, +
 they are also installed materials. We did this in order to cancel the installation process, and pick up where you left off.
 So all downloaded materials will remain as such, the installation process can be resumed at a later time.</p>
+<div class="admonition hint">
+<p class="admonition-title">Hint</p>
+<p>If you encounter these problems, we have provided an alternative download system from version <code class="docutils literal notranslate"><span class="pre">4.1.100</span></code> via
+file.exapack. Here is the reference for installation via .exapack file <a class="reference internal" href="#install-library-41100"><span class="std std-ref">Install The library</span></a></p>
+</div>
 <hr class="docutils" />
 </section>
 </section>
@@ -676,6 +705,7 @@ and enter the license of your addon that you will always find on the License pag
 and press “Activate on this computer”. If everything is right, the key icon on that button turns green.</p>
 <a class="reference internal image-reference" href="_images/extreme_pbr_menu_activate_license.jpg"><img alt="Extreme PBR Menu Activate License" class="align-center" src="_images/extreme_pbr_menu_activate_license.jpg" style="width: 800px;" /></a>
 </section>
+<hr class="docutils" />
 <section id="migrate-on-other-computer-blender-version">
 <h3>Migrate On Other Computer/Blender Version<a class="headerlink" href="#migrate-on-other-computer-blender-version" title="Permalink to this heading"></a></h3>
 <p>To migrate to another computer:
@@ -684,6 +714,7 @@ Install Extreme PBR on the other computer, Follow this guide from <a class="refe
 <p>At this point you will only have to indicate the path in Library Manager:</p>
 <a class="reference internal image-reference" href="_images/extreme_pbr_menu_library_manager_01.jpg"><img alt="Extreme PBR Menu Library Manager" class="align-center" src="_images/extreme_pbr_menu_library_manager_01.jpg" style="width: 800px;" /></a>
 </section>
+<hr class="docutils" />
 <section id="activate-on-another-computer">
 <h3>Activate on another computer<a class="headerlink" href="#activate-on-another-computer" title="Permalink to this heading"></a></h3>
 <p>If you want to activate Extreme PBR on computer n2, you will need to move the license to computer n2</p>

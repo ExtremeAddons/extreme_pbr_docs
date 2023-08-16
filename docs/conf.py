@@ -23,11 +23,9 @@ sys.path.append(os.path.relpath(os.path.dirname(__file__)))
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#general-configuration
 
 from convert_json_updates_to_rst import update_changelog
-from create_material_list import make_material_list
 
 update_changelog()
-make_material_list()
-# compile_al_materials_previews()
+
 
 extensions = ['sphinx_rtd_theme']
 

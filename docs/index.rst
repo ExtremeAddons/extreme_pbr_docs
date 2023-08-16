@@ -72,7 +72,6 @@ Welcome to Extreme PBR's documentation!
 
    faqs
    troubleshooting
-   material_list
    bugreport_info
 
 

@@ -188,6 +188,8 @@ These two buttons allow you to switch to the previous or next material in the cu
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _mp_open_options:
+
 Open Options
 **************
 

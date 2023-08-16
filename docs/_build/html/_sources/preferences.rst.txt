@@ -586,6 +586,8 @@ In this section you will find some experimental options.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _pr_op_i_have_an_account_on_extreme_addons:
+
 I Have an Account on Extreme Addons
 ************************************
 
@@ -694,7 +696,9 @@ addon creator and would like to be included in this list, contact me. TODO: refe
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Library Management
+.. _pr_libraries:
+
+Libraries
 ======================
 
 From this section you can indicate the paths of the libraries you want to use, and you can also add new ones.
@@ -702,7 +706,7 @@ From this section you can indicate the paths of the libraries you want to use, a
 .. image:: _static/_images/preferences/pr_library_management_panel.webp
     :align: center
     :width: 600
-    :alt: Preferences Library Management Panel
+    :alt: Preferences Libraries Panel
 
 |
 
