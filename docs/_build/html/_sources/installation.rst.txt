@@ -1,6 +1,6 @@
-==============================
-Installation v 4.1.100 and up
-==============================
+===================================
+New Installation v 4.1.100 and up
+===================================
 
 .. tip::
         To check which version of Extreme PBR you are using, and therefore be sure which guide to follow, you can check
