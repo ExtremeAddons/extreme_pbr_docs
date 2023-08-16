@@ -122,6 +122,7 @@ it could be that in the folders mentioned above, the "._data" folders are missin
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _troubleshooting_auto_pack_resources:
 
 Why if I export the project to another computer I can no longer see the materials?
 ****************************************************************************************

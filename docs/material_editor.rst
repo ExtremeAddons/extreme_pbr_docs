@@ -1779,7 +1779,7 @@ enter the path of where you think the Images are (In the best case if you have n
 
 .. image:: _static/_images/material_editor/me_unrecognized_material.webp
     :align: center
-    :width: 400
+    :width: 800
     :alt: Unrecognized Material
 
 |
