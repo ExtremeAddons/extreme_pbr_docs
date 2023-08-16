@@ -387,12 +387,49 @@ This button actually manages the **Blend Mode** and **Shadow Mode** of the mater
     :width: 400
     :alt: Blend Mode Shadow Mode
 
+|
+
+Is BLEND blends every pixel between material and transparency, Is HASHED perfoms the blend in a noisy fashion (faster),
+Is CLIP sets as transparent only pixels under a threshold value (useful for texture controlled transparency).
+
 Settings only for Eevee Render:
 
 - **Is Opaque:** Blend Mode: Opaque, Shadow Mode: Opaque
+
+.. image:: _static/_images/material_editor/mp_is_opaque.jpg
+    :align: center
+    :width: 800
+    :alt: Is Opaque
+
+|
+
 - **Is Blend:** Blend Mode: Alpha Blend, Shadow Mode: Alpha Ashed
+
+.. image:: _static/_images/material_editor/mp_is_blend.jpg
+    :align: center
+    :width: 800
+    :alt: Is Blend
+
+|
+
 - **Is Hashed** Blend Mode: Alpha Hashed, Shadow Mode: Alpha Hashed (The best, but requires more rendering samples to get a good result)
+
+.. image:: _static/_images/material_editor/mp_is_hashed.jpg
+    :align: center
+    :width: 800
+    :alt: Is Hashed
+
+|
+
 - **Is Clip** Blend Mode: Alpha Clip, Shadow Mode: Alpha Clip
+
+.. image:: _static/_images/material_editor/mp_is_clip.jpg
+    :align: center
+    :width: 800
+    :alt: Is Clip
+
+
+
 
 ------------------------------------------------------------------------------------------------------------------------
 

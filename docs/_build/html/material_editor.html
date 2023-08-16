@@ -46,7 +46,9 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Get started: 🚀</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">New Installation (4.1.100 and up)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation_old.html">Old Installation (up to 4.0.207 only)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="make_asset_browser.html">Make Asset Browser</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interface and functions: 📱</span></p>
 <ul class="current">
@@ -369,13 +371,37 @@ the button next to the slider (Transparent Mode button) to choose how to handle 
 <span id="me-transparent-mode"></span><h5>Transparent Mode<a class="headerlink" href="#transparent-mode" title="Permalink to this heading"></a></h5>
 <p>This button actually manages the <strong>Blend Mode</strong> and <strong>Shadow Mode</strong> of the material</p>
 <a class="reference internal image-reference" href="_images/blend_mode_shadow_mode.webp"><img alt="Blend Mode Shadow Mode" class="align-center" src="_images/blend_mode_shadow_mode.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Is BLEND blends every pixel between material and transparency, Is HASHED perfoms the blend in a noisy fashion (faster),
+Is CLIP sets as transparent only pixels under a threshold value (useful for texture controlled transparency).</p>
 <p>Settings only for Eevee Render:</p>
 <ul class="simple">
 <li><p><strong>Is Opaque:</strong> Blend Mode: Opaque, Shadow Mode: Opaque</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/mp_is_opaque.jpg"><img alt="Is Opaque" class="align-center" src="_images/mp_is_opaque.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
 <li><p><strong>Is Blend:</strong> Blend Mode: Alpha Blend, Shadow Mode: Alpha Ashed</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/mp_is_blend.jpg"><img alt="Is Blend" class="align-center" src="_images/mp_is_blend.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
 <li><p><strong>Is Hashed</strong> Blend Mode: Alpha Hashed, Shadow Mode: Alpha Hashed (The best, but requires more rendering samples to get a good result)</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/mp_is_hashed.jpg"><img alt="Is Hashed" class="align-center" src="_images/mp_is_hashed.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
 <li><p><strong>Is Clip</strong> Blend Mode: Alpha Clip, Shadow Mode: Alpha Clip</p></li>
 </ul>
+<a class="reference internal image-reference" href="_images/mp_is_clip.jpg"><img alt="Is Clip" class="align-center" src="_images/mp_is_clip.jpg" style="width: 800px;" /></a>
 </section>
 </section>
 <hr class="docutils" />
