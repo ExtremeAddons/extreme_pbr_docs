@@ -716,6 +716,22 @@ By this selector you can select the type of projection to use for the shader ove
     Refer here for an explanation of the UV Mapping Type: :ref:`me_uv_mapping_type`
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+
+.. _ng_shader_module:
+
+
+Shader Module Group
+----------------------
+
+This is the group node that has been created specifically for the Shader Overlay or the material Override, so
+if the material is standard, refer here: :ref:`module_material_panel`
+
+
+
+
+
 
 
 
