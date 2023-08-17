@@ -91,6 +91,8 @@ This selector allows you to choose which type of setting to use when creating a 
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _pr_op_check_for_updates_every:
+
 Check For updates Every
 ****************************
 
@@ -107,7 +109,7 @@ This property allows you to choose how often Extreme PBR should check for update
         I strongly advise you not to leave **Never** as a value, as Extreme PBR is constantly evolving and
         there may be important updates to fix bugs or add new features, so
         if you leave **Never** you will not see the new update alerts.
-        you can always refer to **Check For Updates** described here: TODO: Put reference to Check For Updates button
+        you can always refer to **Check For Updates** described here: :ref:`pr_op_check_addon_updates`
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -683,6 +685,163 @@ Help Buttons
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Updates
+======================
+
+This section allows you to check for updates to the addon, both for the addon itself (Extreme PBR)
+both for the libraries, so check if there is news for the libraries.
+
+The addon in accordance with the settings you have chosen, checks if there are updates, and if there are, it warns you with a
+message, but from here in any case you can check for yourself whenever you want.
+
+.. image:: _static/_images/preferences/pr_updates.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Updates
+
+------------------------------------------------------------------------------------------------------------------------
+
+Show Addon Updates
+----------------------------
+
+By Show Addon Updates button you can expand the section dedicated to addon updates.
+
+
+.. image:: _static/_images/preferences/pr_show_addon_updates.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Show Addon Updates
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _pr_op_check_addon_updates:
+
+Check Addon updates
+****************************
+
+By this button, you can instantly check if there are updates without having to wait for the timer
+automatically to check for updates (Described here: :ref:`pr_op_check_for_updates_every`)
+
+.. image:: _static/_images/preferences/pr_check_addon_updates.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Check Addon Updates
+
+------------------------------------------------------------------------------------------------------------------------
+
+Market Places Buttons (Openbrowser)
+**************************************
+
+This 2 buttons will allow you to quickly reach the pages of the Market Places from where you purchased the addon.
+It will open the default browser of your operating system.
+
+.. image:: _static/_images/preferences/pr_market_places_buttons.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Market Places Buttons
+
+------------------------------------------------------------------------------------------------------------------------
+
+Updates List Version
+****************************
+
+Here you can find the list of updates of the addon, with version, release date and changes made.
+
+.. image:: _static/_images/preferences/pr_addon_update_list.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Updates List Version
+
+
+|
+
+Here will be indicated:
+
+- With an arrow, it will be shown where you are exactly with your current version.
+- By pressing the arrow-shaped button, you can show the detailed description of each update.
+
+------------------------------------------------------------------------------------------------------------------------
+
+Show Library Updates
+----------------------------
+
+This button expands the section dedicated to library updates.
+
+This section allows you to keep track of the installed libraries, and to check if there are updates for them.
+All packages with the green check mark are installed in the addon library. Remember that you must have the libraries
+connected to the addon to use this menu. So make sure you have connected the libraries you want to check to the addon.
+
+
+.. image:: _static/_images/preferences/pr_show_library_updates.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Show Library Updates
+
+|
+
+
+.. important::
+    - In the left column, the **Online Packs** will be shown which are the packages that are available.
+
+    - In the right column, the **Installed Packs** will be shown which are the packages that are installed in the
+      your library.
+
+    **If you don't see the left or right column, press the buttons above the columns respectively. explained below**
+
+------------------------------------------------------------------------------------------------------------------------
+
+Check Library Updates
+****************************
+
+This button allows you to check if there are updates on the libraries.
+
+.. image:: _static/_images/preferences/pr_check_library_updates.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Check Library Updates
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Try compile Exapack
+****************************
+
+This button is used, Especially if you come from a version of Extreme PBR prior to 4.1.100 to compile the list
+of volumes, this button analyzes all the files you had already installed from the library, and checks the Exapacks volumes
+online, if all the files are contained in an Exapack at least, it will be compiled, and then inserted in the list on the right
+so that you can actually check what you have installed and what not, even if you come from a version of Extreme PBR
+prior to this system.
+
+.. image:: _static/_images/preferences/pr_try_compile_exapack.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Try Compile Exapack
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+Remove Volume
+****************************
+
+This button allows you to remove the volume and all its files from the library.
+
+.. image:: _static/_images/preferences/pr_remove_volume.webp
+    :align: center
+    :width: 600
+    :alt: Preferences Remove Volume
+
+
+|
+
+.. warning::
+        This action is irreversible, if you delete the volume, the backgrounds of the library that were contained
+        in this volume, will be deleted!
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 Top Addons
 ======================
 
@@ -765,7 +924,7 @@ to search for the folder path.
 
 .. note::
         The user library is a library that is empty at the beginning, so it will be useful if you want to save your materials,
-        Here is the section on saving materials: TODO: reference to the save material section: :ref:`save_editor`
+        Here is the section on saving materials, here the reference: :ref:`save_editor`
 
 .. image:: _static/_images/preferences/pr_assign_user_library_button.webp
     :align: center

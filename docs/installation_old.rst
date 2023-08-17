@@ -23,6 +23,13 @@ Old Installation (up to 4.0.207 only)
         server to download the materials you can still do it, but you will have to activate the checkbox
         **I Have an Account on Extreme Addons** from the **Preferences** menu described here: :ref:`pr_op_i_have_an_account_on_extreme_addons`
 
+        .. image:: _static/_images/installation/i_have_an_account_on_extreme_addons_focus.webp
+            :align: center
+            :width: 800
+            :alt: I have an account on extreme addons focus
+
+------------------------------------------------------------------------------------------------------------------------
+
 
 How to install video tutorials
 ================================
@@ -183,6 +190,7 @@ Step 1 (Addon Activation)
         :width: 800
         :alt: Login / License extreme pbr
 
+|
 
 .. Tip:: In case of problems, make sure you have not copied and pasted the license with “Whitespace” sometimes it happens that copy paste also copies whitespace.
 

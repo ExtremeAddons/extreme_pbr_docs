@@ -156,7 +156,7 @@ Save Module
 ------------
 
 .. note::
-      Salva il modulo Nexus, questo bottone appare solo se il materiale è stato creato in modalità Nexus: TODO: Mettere link alle preferenze al nexus options
+      Save Module Nexus, this button appears only if the material has been created in Nexus mode: :ref:`pr_op_material_type`
 
 .. image:: _static/_images/save_editor/se_save_module_button.jpg
     :align: center
