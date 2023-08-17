@@ -67,7 +67,8 @@
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creator_utility.html">Creator Utility</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Materials</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#blueprint-002">Blueprint 002</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#blueprint-001-node-group">Blueprint 001 (Node Group)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#blueprint-002-node-group">Blueprint 002 (Node Group)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
@@ -116,9 +117,327 @@
 <span id="id1"></span><h1>Materials<a class="headerlink" href="#materials" title="Permalink to this heading"></a></h1>
 <p>In this section are described the non standard materials present in Extreme PBR, that is the materials with an interface
 built specifically for such material.</p>
-<section id="blueprint-002">
-<span id="mat-blueprint-002"></span><h2>Blueprint 002<a class="headerlink" href="#blueprint-002" title="Permalink to this heading"></a></h2>
-<p>TODO: UNDERCONSTRUCTION</p>
+<section id="blueprint-001-node-group">
+<h2>Blueprint 001 (Node Group)<a class="headerlink" href="#blueprint-001-node-group" title="Permalink to this heading"></a></h2>
+<p>Inputs:</p>
+<ol class="arabic simple">
+<li><p><strong>Emission  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Base color emissivity</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Base Color  (Rgba)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Base Color</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>Line Color  (Rgba)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Color of the lines</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p><strong>Emission  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Lines color emissivity</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p><strong>Small Square Line  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Line size of the smallest squares.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p><strong>Big Square Line  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Line size of the largest squares.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p><strong>Metallic  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Metallic material intensity, attention, if the diffused color is completely black (RGB 0,0,0) no metallic effect can be displayed, move the color towards dark gray to obtain the desired effect.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li><p><strong>Specular  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Amount of dielectric specular reflection. Specifies facing (along normal) reflectivity in the most common 0 - 8% range.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="9">
+<li><p><strong>Roughness  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Specifies microfacet roughness of the surface for diffuse and specular reflection.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="10">
+<li><p><strong>Bump   (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Strength of the bump mapping effect, interpolating between no bump mapping and full bump mapping.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="11">
+<li><p><strong>Distance  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Multiplier for the height value to control the overall distance for bump mapping.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="12">
+<li><p><strong>Invert  (Button)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Invert the map to the negative</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="13">
+<li><p><strong>Transparent  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Set the transparency. Attention, in Eevee or in preview mode,transparency needs to be activated via the button on the right, otherwise the transparency will not work.</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="14">
+<li><p><strong>Transparent Invert  (Button)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Invert Transparent, From Base color to Line color</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="15">
+<li><p><strong>Rotation  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>The amount of rotation along Z axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="16">
+<li><p><strong>lx  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Move the texture to the X axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="17">
+<li><p><strong>ly  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Move the texture to the Y axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="18">
+<li><p><strong>Scale  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Scale the texture to the X-Y-Z axes</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="19">
+<li><p><strong>World Coordinate  (Button)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>If active Projects the texture on world coordinates</p></li>
+</ul>
+</div></blockquote>
+<hr class="docutils" />
+</section>
+<section id="blueprint-002-node-group">
+<span id="mat-blueprint-002"></span><h2>Blueprint 002 (Node Group)<a class="headerlink" href="#blueprint-002-node-group" title="Permalink to this heading"></a></h2>
+<p>This material is useful for making project presentations. You can adjust the properties to modify the grid and create a customizable grid</p>
+<p>Inputs:</p>
+<ol class="arabic simple">
+<li><p><strong>Main Color  (Rgba)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the main color</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="2">
+<li><p><strong>Grid Color  (Rgba)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the grid color</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="3">
+<li><p><strong>Specular  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Amount of dielectric specular reflection. Specifies facing (along normal) reflectivity in the most common 0 - 8% range</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="4">
+<li><p><strong>Roughness  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Specifies microfacet roughness of the surface for diffuse and specular reflection</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="5">
+<li><p><strong>Crosses Thickness  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the Thickness of the large grid</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="6">
+<li><p><strong>Crosses Span  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the Span of the large grid</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="7">
+<li><p><strong>S. Crosses Span  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the Span of the large grid</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="8">
+<li><p><strong>S. Crosses Thickness  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the Thickness of the large grid</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="9">
+<li><p><strong>S. Crosses Scale  (Int)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjusts the scale of the small grid</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="10">
+<li><p><strong>Shape Size  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjusts the size of the shape at the intersection of the large grid</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="11">
+<li><p><strong>Subtract  (Button)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>If active, Subtract the Shape from the grid (If not active, it will be added to the grid)</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="12">
+<li><p><strong>Circle Shape  (Button)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>If activated, the shape will be a circle, otherwise it will be a quadrate</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="13">
+<li><p><strong>Loc X  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjusts the position of the entire grid on the X axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="14">
+<li><p><strong>Loc Y  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjusts the position of the entire grid on the Y axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="15">
+<li><p><strong>Rotation  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the Rotation of the entire grid</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="16">
+<li><p><strong>Scale X  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the Scale of the whole grid on the X axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="17">
+<li><p><strong>Scale Y  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Adjust the Scale of the whole grid on the Y axis</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="18">
+<li><p><strong>Scale Uniform  (Value)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="19">
+<li><p><strong>UV Coordinate  (Button)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>Projects the texture onto the object’s UV mapping</p></li>
+</ul>
+</div></blockquote>
+<ol class="arabic simple" start="20">
+<li><p><strong>World Coordinate  (Button)</strong></p></li>
+</ol>
+<blockquote>
+<div><ul class="simple">
+<li><p>If active Projects the texture on world coordinates</p></li>
+</ul>
+</div></blockquote>
 </section>
 </section>
 

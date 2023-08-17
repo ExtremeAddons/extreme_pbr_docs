@@ -313,6 +313,28 @@ Delete Material
 
 Delete definitively the active material in the :ref:`material_browser`, the action is not reversible.
 
+------------------------------------------------------------------------------------------------------------------------
+
+.. _se_remove_save_scene:
+
+Something went wrong, press this button
+----------------------------------------
+
+
+In this case, you are in the scene where the material was saved, press the button to remove the scene that
+was created to save the material to resolve the situation.
+
+.. image:: _static/_images/save_editor/remove_save_scene.webp
+    :align: center
+    :width: 600
+    :alt: Se Something Wrong
+
+|
+
+The button will delete the scene and take you back to the scene you were working on.
+This situation may rarely occur, but in case it occurs, this button will allow you to
+resolve the situation.
+
 
 
 
