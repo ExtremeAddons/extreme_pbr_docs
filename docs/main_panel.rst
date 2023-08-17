@@ -266,7 +266,7 @@ In this way, the categories and the previews will be filtered according to the t
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Search Materials by entering text
+Search Material by entering text
 **********************************
 
 This allows you to search for a material by typing the name of the material (It work with the tag Restrictions if you need)
