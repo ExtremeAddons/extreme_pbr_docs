@@ -58,10 +58,10 @@ on how to use the addon
 Library Selector (Drop-down menu)
 *********************************
 
-This allows you to select the background library you want to use. All libraries added via
+This allows you to select the material library you want to use. All libraries added via
 "Libraries" in the addon preferences menu will be displayed in this drop-down menu.
 By default this Drop-down menu, contains the "Default" library, which is the library that comes with the addon.
-and the "User" library, which is the library where you can add your saved backgrounds.
+and the "User" library, which is the library where you can add your saved materials.
 
 
 .. image:: _static/_images/main_panel/libraries_selector_popup_01.png
@@ -152,8 +152,8 @@ Preview Popup
 
 |
 
-This allows you to select the background (Each library will have its own background), a pop-up window will appear
-with the list of preview backgrounds
+This allows you to select the material (Each library will have its own material), a pop-up window will appear
+with the list of preview materials
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -240,7 +240,7 @@ Tag Search Size Selector
 |
 
 This small menu in the box, allows you to Select the size / version of the material (If there is an alternative)
-Contains The search for tag / background name and information on the background currently in the preview.
+Contains The search for tag / material name and information on the material currently in the preview.
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -255,7 +255,7 @@ Search for tag
 
 |
 
-This allows you to search for a background by typing the name of the tag
+This allows you to search for a material by typing the name of the tag
 - In the upper field, you can enter the name of the tag you want to include in the search
 - In the lower field, you can enter the name of the tag you want to exclude from the search
 
@@ -266,10 +266,10 @@ In this way, the categories and the previews will be filtered according to the t
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Search Background by entering text
+Search Materials by entering text
 **********************************
 
-This allows you to search for a background by typing the name of the background (It work with the tag Restrictions if you need)
+This allows you to search for a material by typing the name of the material (It work with the tag Restrictions if you need)
 
 .. note::
     This function will search for all the materials in the selected library, it will exclude the non-selected libraries, so make sure
@@ -280,7 +280,7 @@ This allows you to search for a background by typing the name of the background 
 .. image:: _static/_images/main_panel/search_background_dropdown_01.png
     :align: center
     :width: 600
-    :alt: Search Background by entering text
+    :alt: Search material by entering text
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -290,7 +290,7 @@ This allows you to search for a background by typing the name of the background 
 Info & Tag
 **********
 
-This button will open a dialog window with information about the background currently in preview.
+This button will open a dialog window with information about the material currently in preview.
 inside there will be information about the author, the license.
 There will also be the tags that have been assigned to the material, they can also be modified from here.
 
@@ -318,7 +318,7 @@ on the material in preview (If existing)
 Edit Tags
 #########
 
-In the info & Tag panel you can edit the tags assigned to the background.
+In the info & Tag panel you can edit the tags assigned to the material.
 To do this, just click on the **Edit Tags** button and enter the desired tags.
 You can also delete existing tags, just press on them, and a dialog box will be displayed
 that will ask you if you want to delete the tag.
