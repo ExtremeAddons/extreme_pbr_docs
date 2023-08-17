@@ -9,7 +9,7 @@ Texture Manager Panel
 
 
 The texture manager panel is used to access the texture management features of the current material,
-please note, the material must be created with Nexus setting TODO: link to nexus material preferences
+please note, the material must be created with Nexus setting :ref:`pr_op_material_type`
 
 Here's how the texture manager looks, in an example from the diffuse property:
 

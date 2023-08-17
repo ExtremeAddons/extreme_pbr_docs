@@ -12,6 +12,8 @@ Andrew_D
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _contact_assistance:
+
 How can I contact you for assistance?
 ***************************************
 
@@ -19,6 +21,7 @@ If you have purchased the addon on BlenderMarket, go directly to the addon page 
 usually I answer within 24 hours
 
 If you have purchased the addon on Gumroad, you can contact me via the chat at the bottom right on https://extreme-addons.com/
+in alternative, you can send me a mail to: **info@extreme-addons.com**
 
 
 ------------------------------------------------------------------------------------------------------------------------

@@ -2,7 +2,7 @@ Main Panel
 ===========================
 
 The main panel of Extreme PBR Nexus from version 4.1.100, if you have an older version, you can update it by following
-this guide: TODO: Inserire link alla guida di aggiornamento
+this guide: :ref:`new_installation`
 
 .. |main_panel| image:: _static/_images/main_panel/main_panel_01.png
                     :width: 400
@@ -539,7 +539,7 @@ This button activates or deactivates the displacement.
 If the displacement is active, the button will be blue, if it is inactive, the button will be gray.
 
 Once activated, a further interface dedicated to displacement will appear which we can see in this section:
-TODO: Mettere collegamento a displacement
+:ref:`displacement`
 
 
 .. image:: _static/_images/main_panel/displace_on_off_3d_example_01.png
@@ -741,7 +741,7 @@ Smart Vertex Groups
         This button is useful only if you have 2 or more materials on the same object and you are using the corresponding displacement of each material.
         the displacements must be of type **Modifier** because if the Displacement is of type **Microdisplacement** this will be useless.
         |
-        **For more information on how to use displacement, see this section:** TODO: Refer to the displacement section
+        **For more information on how to use displacement, see this section:** :ref:`displacement`
 
 |
 

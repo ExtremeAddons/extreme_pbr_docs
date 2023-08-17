@@ -94,7 +94,7 @@ maps via **Texture Manager** Also described here :ref:`texture_manager_panel`
 Material Editor (Nexus)
 **************************
 
-Here is the Nexus Panel if you have chosen the **Nexus** setting from the Extreme PBR options menu TODO: Put link to Nexus Material options
+Here is the Nexus Panel if you have chosen the **Nexus** setting from the Extreme PBR options menu :ref:`pr_op_material_type`
 
 Having applied the material via Shader Maker (Auto PBR button) now you can edit the material via
 Material Editor panel, below you will find the description of the material editor :ref:`module_material_panel`
@@ -109,7 +109,7 @@ Material Editor panel, below you will find the description of the material edito
 Material Editor (Simple PBR)
 *******************************
 
-Here is the Simple PBR Panel if you have chosen the **Simple PBR** setting from the Extreme PBR options menu TODO: Put link to Simple PBR options
+Here is the Simple PBR Panel if you have chosen the **Simple PBR** setting from the Extreme PBR options menu :ref:`pr_op_material_type`
 
 Having applied the material via Shader Maker (Auto PBR button) now you can edit the material via
 Material Editor panel, below you will find the description of the material editor :ref:`me_simple_pbr_type`

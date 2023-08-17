@@ -49,6 +49,8 @@ Welcome to Extreme PBR's documentation!
    shader_overlay
    material_override
    save_editor
+   creator_utility
+   materials
    preferences
 
 

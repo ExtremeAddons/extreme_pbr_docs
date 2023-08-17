@@ -1,3 +1,6 @@
+
+.. _displacement:
+
 Displacement
 ==================
 
@@ -415,7 +418,8 @@ Nexus Mode
 ####################
 
 
-In the Nexus mode (TODO: Inserire link alle preferenze per impostare Nexus mode), accessing the Material Editor panel (TODO: Link al pannello Material Editor in modalità Nexus)
+
+In the Nexus mode :ref:`pr_op_material_type`, accessing the Material Editor panel :ref:`me_material_nexus_type`
 you can adjust the intensity of the Microdisplacement through the **Bump** and **Bump Distance** parameters present in the panel.
 Make sure you have selected the material that has the active Microdisplacement from the :ref:`material_list` otherwise you will not
 see the corresponding Material Editor panel for the selected material.
@@ -433,8 +437,9 @@ Simple PBR Mode
 ####################
 
 
-In Simple PBR mode, (TODO: Insert link to preferences to set Simple PBR mode), accessing the Material Editor panel
-(TODO: Link to Material Editor panel in Simple PBR mode) you can adjust the intensity of the Microdisplacement using
+
+In Simple PBR mode, :ref:`me_material_nexus_type`, accessing the Material Editor panel
+:ref:`me_simple_pbr_type` you can adjust the intensity of the Microdisplacement using
 the **Displacement MidLevel** and **Displacement Scale** parameters present in the panel.
 Make sure you have selected the material that has the active Microdisplacement from the :ref:`material_list`
 otherwise you will not

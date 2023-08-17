@@ -10,7 +10,7 @@ Material Editor
         Here you can find the section dedicated to video tutorials, it may be useful to you: :ref:`vt_material_editor`
 
 The material editor is a very important panel, and it takes many different forms depending on the type of material applied
-**Nexus** / **Simple PBR** (Explained here: TODO: Link to the options of the preferences)
+**Nexus** / **Simple PBR** Explained here: :ref:`me_material_nexus_type`
 
 
 Example Material Editor Nexus with 4 Modules for painting:
@@ -71,7 +71,7 @@ the object you are working on.
 
 .. note::
     In order to add a module, rely on the :ref:`material_browser` in fact you will add exactly what you have in the preview,
-    or you can add via TODO: Link to shader maker for the materials you want to import.
+    or you can add via :ref:`shader_maker`
 
     Add Module will not work with Non Nexus type materials!
 
@@ -1739,7 +1739,7 @@ Material Editor (Simple PBR)
 
 This is the Material Editor panel when you apply a material with the **Simple PBR** method, to choose to apply
 the material with the **Simple PBR** method you have to set the material application method to **Simple PBR** here
-described: TODO: put link to the paragraph on how to apply the material
+described: :ref:`pr_op_material_type`
 
 .. image:: _static/_images/material_editor/me_simple_pbr_type.webp
     :align: center

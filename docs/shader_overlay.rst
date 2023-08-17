@@ -693,7 +693,7 @@ between different materials.
 
 
 .. seealso::
-    Refer here for an explanation of the material interface properties: TODO link a una spegazione di interfaccia materiale
+    Refer here for an explanation of the material interface properties: :ref:`mat_blueprint_002`
 
 ------------------------------------------------------------------------------------------------------------------------
 

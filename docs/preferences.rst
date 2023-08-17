@@ -594,7 +594,7 @@ I Have an Account on Extreme Addons
 ************************************
 
 By activating this checkbox, the addon will be set up so that it can download the materials directly from the site and have
-access to the **Extreme Addons** TAB described here: TODO: Put reference to the extreme addons tab
+access to the **Extreme Addons** TAB described here: :ref:`installation_step_1`
 
 .. image:: _static/_images/preferences/pr_op_i_have_an_account_on_extreme_addons.webp
     :align: center
@@ -617,7 +617,7 @@ Show creator utility
 ****************************
 
 By activating this checkbox, you will activate an interface created specifically to create libraries for Extreme PBR.
-This is a very powerful tool, but it requires attention. TODO link to the documentation of the creator utility
+This is a very powerful tool, but it requires attention. :ref:`creator_utility`
 
 
 .. image:: _static/_images/preferences/pr_op_show_creator_utility.webp
@@ -630,7 +630,7 @@ This is a very powerful tool, but it requires attention. TODO link to the docume
 .. attention::
         If you are not sure what you are doing, I recommend that you leave this option disabled, as you could
         damage the **Default Library** library of Extreme PBR.
-        If you have doubts, contact me. TODO: reference to my contacts
+        If you have doubts, contact me here: :ref:`contact_assistance`
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -846,7 +846,7 @@ Top Addons
 ======================
 
 From this section you can access a list of Addons that I recommend you take a look at, if you are a 3D artist
-addon creator and would like to be included in this list, contact me. TODO: reference to my contacts
+addon creator and would like to be included in this list, contact me. :ref:`contact_assistance`
 
 .. image:: _static/_images/preferences/pr_top_addons_panel.webp
     :align: center
@@ -871,7 +871,7 @@ From this section you can indicate the paths of the libraries you want to use, a
 
 .. note::
         If you are installing the addon for the first time, refer to this guide and do not dwell on this section
-        at the moment. TODO: reference to the installation guide
+        at the moment. :ref:`new_installation`
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -898,7 +898,7 @@ to search for the folder path.
 |
 
 .. note::
-        If you have never installed or want to reinstall the libraries, refer to this guide: TODO: reference to the installation guide
+        If you have never installed or want to reinstall the libraries, refer to this guide: :ref:`new_installation`
 
 
 ------------------------------------------------------------------------------------------------------------------------

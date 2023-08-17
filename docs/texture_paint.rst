@@ -6,7 +6,7 @@ Texture Paint
 
 
 .. note::
-        In order to access the painting you will have to be in Nexus mode TODO: put link to nexus mode preferences
+        In order to access the painting you will have to be in Nexus mode :ref:`pr_op_material_type`
         and you will have to have added a material with the :ref:`add_module` button
 
 
@@ -59,7 +59,7 @@ Add material to paint
 *******************************
 
 In order to add a material to paint, it is necessary that the material on which you want to paint has been applied with
-Extreme PBR in Nexus mode, to do this check the preferences: TODO: put link to nexus mode preferences.
+Extreme PBR in Nexus mode, to do this check the preferences: :ref:`pr_op_material_type`
 
 To add a material to paint, refer to this button :ref:`add_module`
 

@@ -28,7 +28,7 @@ of architecture.
 .. important::
         This tool has nothing to do with **Scale** **Rotate** or **Location** of the material, this tool is
         able to translate the UV coordinates present on the object. This is necessary especially if you are using the displacement
-        in **Modifier** mode to also move the displacement coordinates. The displacement section can be found here: TODO: Put link to the displacement section
+        in **Modifier** mode to also move the displacement coordinates. The displacement section can be found here: :ref:`displacement`
 
 ------------------------------------------------------------------------------------------------------------------------
 

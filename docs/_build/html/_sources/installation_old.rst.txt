@@ -185,6 +185,8 @@ Step 1 (Addon Activation)
       remember that you must be logged in with your credentials to see it: Your license page:
       https://extreme-addons.com/my-account/ea-license/
 
+
+
 .. image:: _static/_images/installation/login_license_extreme_pbr.png
         :align: center
         :width: 800
