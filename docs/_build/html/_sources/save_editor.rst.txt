@@ -149,6 +149,9 @@ The data entered here will be visible in the :ref:`info_and_tag` panel already d
 - **License**: The license of the material
 - **License Link**: The Url of the license of the material
 
+.. note::
+    You can reset the fields, by pressing the (x) button next to the text boxes.
+
 
 ------------------------------------------------------------------------------------------------------------------------
 
