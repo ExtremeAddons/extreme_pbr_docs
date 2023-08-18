@@ -865,6 +865,13 @@ the reference via the button. A popup will open with the link to the documentati
         This button is repeated in the interface on several panels, this is because the user can access the documentation
         in a faster way, the button can take various forms and variants depending on the context in which you are.
 
+.. image:: _static/_images/undocumented/online_manual.png
+      :align: center
+      :width: 600
+      :alt: online manual
+
+|
+
 
 
 
