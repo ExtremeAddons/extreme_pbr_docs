@@ -1734,7 +1734,6 @@ Fx Layer Properties
 
 |
 
-
 For all the properties that are highlighted, you already have a complete description of them in the paragraph
 **Module Material Panel** all the properties, in fact, are the same, so I will not repeat them, but I refer you to
 the paragraph **Module Material Panel** :ref:`module_material_panel`

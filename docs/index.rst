@@ -9,19 +9,12 @@
 Welcome to Extreme PBR's documentation!
 =======================================
 
-
-.. tip::
-     Most of the buttons and properties of Extreme PBR are documented with a Tooltip and a direct link to the documentation.
-     Just press the right mouse button on a button or property to display the link to the documentation:
-
-
-    .. image:: _static/_images/undocumented/online_manual.png
-          :align: center
-          :width: 600
-          :alt: online manual
+.. image:: _static/_images/arts/index_pastrokkio.webp
+      :align: center
+      :width: 600
+      :alt: Index Pastrokkio
 
 ------------------------------------------------------------------------------------------------------------------------
-
 
 .. toctree::
    :maxdepth: 1
@@ -81,10 +74,32 @@ Welcome to Extreme PBR's documentation!
 
 ------------------------------------------------------------------------------------------------------------------------
 
-.. image:: _static/_images/arts/pastrokkio_balloon.png
+
+
+Most of the buttons and properties of Extreme PBR are documented with a Tooltip and a direct link to the documentation.
+Just press the right mouse button on a button or property to display the link to the documentation:
+
+
+.. image:: _static/_images/undocumented/online_manual.png
+    :align: center
+    :width: 400
+    :alt: online manual
+
+|
+
+Some buttons cannot be documented yet, but we are working on it. For now if you don't find the documentation
+related to a particular button, make sure to look for the question mark (?) button present in all the panels
+of Extreme PBR, this will take you to the section with the buttons and their explanations.
+
+.. image:: _static/_images/undocumented/docs_helper_buttons.webp
       :align: center
-      :width: 800
-      :alt: Pastrokkio Balloon
+      :width: 400
+      :alt: Docs Helper Buttons
+
+|
+
+
+
 
 
 
