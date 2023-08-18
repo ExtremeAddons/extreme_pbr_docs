@@ -7,182 +7,181 @@ Materials
 In this section are described the non standard materials present in Extreme PBR, that is the materials with an interface
 built specifically for such material.
 
+------------------------------------------------------------------------------------------------------------------------
 
 
-Blueprint 001 (Node Group)
---------------------------
+
+Glass (Node Group)
+------------------
+
+.. image:: _static/_images/materials/glass.png
+    :align: center
+    :width: 200
+    :alt: Glass
+
+|
 
 
+.. image:: _static/_images/materials/ng_glass.webp
+    :align: center
+    :width: 400
+    :alt: Ng Glass
+
+|
 
 Inputs:
 
-1. **Emission  (Value)**
+1. **Glass Color  (Rgba)**
+***************************
 
- - Base color emissivity
+ - Change the color of the glass (All white for a neutral glass)
 
-2. **Base Color  (Rgba)**
+2. **IOR  (Value)**
+********************
 
- - Base Color
+ - Change the index of IOR, which is the refractive index. Consult the refractive indices of various materials online.
 
-3. **Line Color  (Rgba)**
+3. **Mirror Fx  (Value)**
+**************************
 
- - Color of the lines
+ - Adds a further Reflection effect to the Glass, taking advantage of the metallic map. This is a trick, for best results it should be used with caution.
 
-4. **Emission  (Value)**
+4. **Dirty Roughness  (Value)**
+********************************
 
- - Lines color emissivity
+ - Increases the dirty effect to the glass according to the texture that has been assigned. See the Texture Manager section to change image textures
 
-5. **Small Square Line  (Value)**
+5. **Scale Uniform  (Value)**
+******************************
 
- - Line size of the smallest squares.
-
-6. **Big Square Line  (Value)**
-
- - Line size of the largest squares.
-
-7. **Metallic  (Value)**
-
- - Metallic material intensity, attention, if the diffused color is completely black (RGB 0,0,0) no metallic effect can be displayed, move the color towards dark gray to obtain the desired effect.
-
-8. **Specular  (Value)**
-
- - Amount of dielectric specular reflection. Specifies facing (along normal) reflectivity in the most common 0 - 8% range.
-
-9. **Roughness  (Value)**
-
- - Specifies microfacet roughness of the surface for diffuse and specular reflection.
-
-10. **Bump   (Value)**
-
- - Strength of the bump mapping effect, interpolating between no bump mapping and full bump mapping.
-
-11. **Distance  (Value)**
-
- - Multiplier for the height value to control the overall distance for bump mapping.
-
-12. **Invert  (Button)**
-
- - Invert the map to the negative
-
-13. **Transparent  (Value)**
-
- - Set the transparency. Attention, in Eevee or in preview mode,transparency needs to be activated via the button on the right, otherwise the transparency will not work.
-
-14. **Transparent Invert  (Button)**
-
- - Invert Transparent, From Base color to Line color
-
-15. **Rotation  (Value)**
-
- - The amount of rotation along Z axis
-
-16. **lx  (Value)**
-
- - Move the texture to the X axis
-
-17. **ly  (Value)**
-
- - Move the texture to the Y axis
-
-18. **Scale  (Value)**
-
- - Scale the texture to the X-Y-Z axes
-
-19. **World Coordinate  (Button)**
-
- - If active Projects the texture on world coordinates
+ - Scale the size of the Dirty Roughness map. The scaling effect is seen only if a value other than 0 has been set in the Dirty Roughness property
 
 
 ------------------------------------------------------------------------------------------------------------------------
 
-.. _mat_blueprint_002:
 
-Blueprint 002 (Node Group)
---------------------------
+Basic water (Node Group)
+------------------------
+
+.. image:: _static/_images/materials/basic_water.png
+    :align: center
+    :width: 200
+    :alt: Basic Water
+
+|
+
+.. image:: _static/_images/materials/ng_basic_water.webp
+    :align: center
+    :width: 400
+    :alt: Ng Basic Water
+
+|
 
 
-This material is useful for making project presentations. You can adjust the properties to modify the grid and create a customizable grid
+This material allows you to simulate the effect of animated water, it works once you start the Blender timeline
+
+
 
 Inputs:
 
-1. **Main Color  (Rgba)**
+1. **RGB  (Rgba)**
+*******************
 
- - Adjust the main color
+ - Water Color
 
-2. **Grid Color  (Rgba)**
+2. **Water / Fluid  (Button)**
+*******************************
 
- - Adjust the grid color
+ - Water to fluid switch
 
-3. **Specular  (Value)**
+3. **Water Speed  (Value)**
+****************************
 
- - Amount of dielectric specular reflection. Specifies facing (along normal) reflectivity in the most common 0 - 8% range
+ - Set the speed of the waves
 
-4. **Roughness  (Value)**
+4. **Wave Strength  (Value)**
+******************************
 
- - Specifies microfacet roughness of the surface for diffuse and specular reflection
+ - General height of all waves (Simulated with a bump)
 
-5. **Crosses Thickness  (Value)**
+5. **Scale  (Value)**
+**********************
 
- - Adjust the Thickness of the large grid
+ - Change the size of the waves
 
-6. **Crosses Span  (Value)**
+6. **Roughness  (Value)**
+**************************
 
- - Adjust the Span of the large grid
+ - Roughness, it might come in handy, if you use the Metallic Fluid parameter or Fluid Button
 
-7. **S. Crosses Span  (Value)**
+7. **Metallic Fluid  (Value)**
+*******************************
 
- - Adjust the Span of the large grid
+ - It makes water look like a metallic fluid, such as mercury
 
-8. **S. Crosses Thickness  (Value)**
+8. **Flowing water  (Value)**
+******************************
 
- - Adjust the Thickness of the large grid
+ - Simulates a moving watercourse, to choose the direction of the watercourse use the "Rotation" parameter
 
-9. **S. Crosses Scale  (Int)**
+9. **Reverse  (Button)**
+*************************
 
- - Adjusts the scale of the small grid
+ - Reverse the water flow
 
-10. **Shape Size  (Value)**
+10. **Flow Direction  (Value)**
+********************************
 
- - Adjusts the size of the shape at the intersection of the large grid
+ - Adjusts the overall rotation of the waves. Useful when the water is animated in one direction
 
-11. **Subtract  (Button)**
 
- - If active, Subtract the Shape from the grid (If not active, it will be added to the grid)
+------------------------------------------------------------------------------------------------------------------------
 
-12. **Circle Shape  (Button)**
+Rubber tires (Node Group)
+-------------------------
 
- - If activated, the shape will be a circle, otherwise it will be a quadrate
+.. image:: _static/_images/materials/rubber_tires_basic_001.png
+    :align: center
+    :width: 200
+    :alt: Rubber Tires Basic 001
 
-13. **Loc X  (Value)**
+|
 
- - Adjusts the position of the entire grid on the X axis
+.. image:: _static/_images/materials/ng_rubber_tires.webp
+    :align: center
+    :width: 400
+    :alt: Ng Rubber Tires
 
-14. **Loc Y  (Value)**
+|
 
- - Adjusts the position of the entire grid on the Y axis
 
-15. **Rotation  (Value)**
 
- - Adjust the Rotation of the entire grid
 
-16. **Scale X  (Value)**
 
- - Adjust the Scale of the whole grid on the X axis
+Inputs:
 
-17. **Scale Y  (Value)**
+1. **Color  (Rgba)**
+*********************
 
- - Adjust the Scale of the whole grid on the Y axis
+ - Change the color of the tire rubber
 
-18. **Scale Uniform  (Value)**
+2. **Scale Uniform  (Value)**
+******************************
 
- -
+ - Scale the Roughness (Only if it is different from the value 0)
 
-19. **UV Coordinate  (Button)**
+3. **Roughness  (Value)**
+**************************
 
- - Projects the texture onto the object's UV mapping
+ - Adjusts the intensity of the roughness, which is the one that simulates the difference between smooth and slightly rough areas on the tire rubber
 
-20. **World Coordinate  (Button)**
+4. **Specular  (Value)**
+*************************
 
- - If active Projects the texture on world coordinates
+ - Adjust the reflection on the tire rubber
+
+
+
+
 
 

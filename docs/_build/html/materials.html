@@ -67,11 +67,38 @@
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
 <li class="toctree-l1"><a class="reference internal" href="creator_utility.html">Creator Utility</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Materials</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#blueprint-001-node-group">Blueprint 001 (Node Group)</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#blueprint-002-node-group">Blueprint 002 (Node Group)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#glass-node-group">Glass (Node Group)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#glass-color-rgba">1. <strong>Glass Color  (Rgba)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#ior-value">2. <strong>IOR  (Value)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#mirror-fx-value">3. <strong>Mirror Fx  (Value)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#dirty-roughness-value">4. <strong>Dirty Roughness  (Value)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scale-uniform-value">5. <strong>Scale Uniform  (Value)</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#basic-water-node-group">Basic water (Node Group)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#rgb-rgba">1. <strong>RGB  (Rgba)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#water-fluid-button">2. <strong>Water / Fluid  (Button)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#water-speed-value">3. <strong>Water Speed  (Value)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#wave-strength-value">4. <strong>Wave Strength  (Value)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#scale-value">5. <strong>Scale  (Value)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#roughness-value">6. <strong>Roughness  (Value)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#metallic-fluid-value">7. <strong>Metallic Fluid  (Value)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flowing-water-value">8. <strong>Flowing water  (Value)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#reverse-button">9. <strong>Reverse  (Button)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#flow-direction-value">10. <strong>Flow Direction  (Value)</strong></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#rubber-tires-node-group">Rubber tires (Node Group)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#color-rgba">1. <strong>Color  (Rgba)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id2">2. <strong>Scale Uniform  (Value)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#id3">3. <strong>Roughness  (Value)</strong></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#specular-value">4. <strong>Specular  (Value)</strong></a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic_functions.html">Generic Functions</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
 <ul>
@@ -117,327 +144,197 @@
 <span id="id1"></span><h1>Materials<a class="headerlink" href="#materials" title="Permalink to this heading"></a></h1>
 <p>In this section are described the non standard materials present in Extreme PBR, that is the materials with an interface
 built specifically for such material.</p>
-<section id="blueprint-001-node-group">
-<h2>Blueprint 001 (Node Group)<a class="headerlink" href="#blueprint-001-node-group" title="Permalink to this heading"></a></h2>
-<p>Inputs:</p>
-<ol class="arabic simple">
-<li><p><strong>Emission  (Value)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Base color emissivity</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="2">
-<li><p><strong>Base Color  (Rgba)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Base Color</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="3">
-<li><p><strong>Line Color  (Rgba)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Color of the lines</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="4">
-<li><p><strong>Emission  (Value)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Lines color emissivity</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="5">
-<li><p><strong>Small Square Line  (Value)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Line size of the smallest squares.</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="6">
-<li><p><strong>Big Square Line  (Value)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Line size of the largest squares.</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="7">
-<li><p><strong>Metallic  (Value)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Metallic material intensity, attention, if the diffused color is completely black (RGB 0,0,0) no metallic effect can be displayed, move the color towards dark gray to obtain the desired effect.</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="8">
-<li><p><strong>Specular  (Value)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Amount of dielectric specular reflection. Specifies facing (along normal) reflectivity in the most common 0 - 8% range.</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="9">
-<li><p><strong>Roughness  (Value)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Specifies microfacet roughness of the surface for diffuse and specular reflection.</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="10">
-<li><p><strong>Bump   (Value)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Strength of the bump mapping effect, interpolating between no bump mapping and full bump mapping.</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="11">
-<li><p><strong>Distance  (Value)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Multiplier for the height value to control the overall distance for bump mapping.</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="12">
-<li><p><strong>Invert  (Button)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Invert the map to the negative</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="13">
-<li><p><strong>Transparent  (Value)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Set the transparency. Attention, in Eevee or in preview mode,transparency needs to be activated via the button on the right, otherwise the transparency will not work.</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="14">
-<li><p><strong>Transparent Invert  (Button)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Invert Transparent, From Base color to Line color</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="15">
-<li><p><strong>Rotation  (Value)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>The amount of rotation along Z axis</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="16">
-<li><p><strong>lx  (Value)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Move the texture to the X axis</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="17">
-<li><p><strong>ly  (Value)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Move the texture to the Y axis</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="18">
-<li><p><strong>Scale  (Value)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>Scale the texture to the X-Y-Z axes</p></li>
-</ul>
-</div></blockquote>
-<ol class="arabic simple" start="19">
-<li><p><strong>World Coordinate  (Button)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>If active Projects the texture on world coordinates</p></li>
-</ul>
-</div></blockquote>
 <hr class="docutils" />
-</section>
-<section id="blueprint-002-node-group">
-<span id="mat-blueprint-002"></span><h2>Blueprint 002 (Node Group)<a class="headerlink" href="#blueprint-002-node-group" title="Permalink to this heading"></a></h2>
-<p>This material is useful for making project presentations. You can adjust the properties to modify the grid and create a customizable grid</p>
+<section id="glass-node-group">
+<h2>Glass (Node Group)<a class="headerlink" href="#glass-node-group" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/glass.png"><img alt="Glass" class="align-center" src="_images/glass.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="_images/ng_glass.webp"><img alt="Ng Glass" class="align-center" src="_images/ng_glass.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <p>Inputs:</p>
-<ol class="arabic simple">
-<li><p><strong>Main Color  (Rgba)</strong></p></li>
-</ol>
+<section id="glass-color-rgba">
+<h3>1. <strong>Glass Color  (Rgba)</strong><a class="headerlink" href="#glass-color-rgba" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Adjust the main color</p></li>
+<li><p>Change the color of the glass (All white for a neutral glass)</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="2">
-<li><p><strong>Grid Color  (Rgba)</strong></p></li>
-</ol>
+</section>
+<section id="ior-value">
+<h3>2. <strong>IOR  (Value)</strong><a class="headerlink" href="#ior-value" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Adjust the grid color</p></li>
+<li><p>Change the index of IOR, which is the refractive index. Consult the refractive indices of various materials online.</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="3">
-<li><p><strong>Specular  (Value)</strong></p></li>
-</ol>
+</section>
+<section id="mirror-fx-value">
+<h3>3. <strong>Mirror Fx  (Value)</strong><a class="headerlink" href="#mirror-fx-value" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Amount of dielectric specular reflection. Specifies facing (along normal) reflectivity in the most common 0 - 8% range</p></li>
+<li><p>Adds a further Reflection effect to the Glass, taking advantage of the metallic map. This is a trick, for best results it should be used with caution.</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="4">
-<li><p><strong>Roughness  (Value)</strong></p></li>
-</ol>
+</section>
+<section id="dirty-roughness-value">
+<h3>4. <strong>Dirty Roughness  (Value)</strong><a class="headerlink" href="#dirty-roughness-value" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Specifies microfacet roughness of the surface for diffuse and specular reflection</p></li>
+<li><p>Increases the dirty effect to the glass according to the texture that has been assigned. See the Texture Manager section to change image textures</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="5">
-<li><p><strong>Crosses Thickness  (Value)</strong></p></li>
-</ol>
+</section>
+<section id="scale-uniform-value">
+<h3>5. <strong>Scale Uniform  (Value)</strong><a class="headerlink" href="#scale-uniform-value" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Adjust the Thickness of the large grid</p></li>
+<li><p>Scale the size of the Dirty Roughness map. The scaling effect is seen only if a value other than 0 has been set in the Dirty Roughness property</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="6">
-<li><p><strong>Crosses Span  (Value)</strong></p></li>
-</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="basic-water-node-group">
+<h2>Basic water (Node Group)<a class="headerlink" href="#basic-water-node-group" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/basic_water.png"><img alt="Basic Water" class="align-center" src="_images/basic_water.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="_images/ng_basic_water.webp"><img alt="Ng Basic Water" class="align-center" src="_images/ng_basic_water.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This material allows you to simulate the effect of animated water, it works once you start the Blender timeline</p>
+<p>Inputs:</p>
+<section id="rgb-rgba">
+<h3>1. <strong>RGB  (Rgba)</strong><a class="headerlink" href="#rgb-rgba" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Adjust the Span of the large grid</p></li>
+<li><p>Water Color</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="7">
-<li><p><strong>S. Crosses Span  (Value)</strong></p></li>
-</ol>
+</section>
+<section id="water-fluid-button">
+<h3>2. <strong>Water / Fluid  (Button)</strong><a class="headerlink" href="#water-fluid-button" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Adjust the Span of the large grid</p></li>
+<li><p>Water to fluid switch</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="8">
-<li><p><strong>S. Crosses Thickness  (Value)</strong></p></li>
-</ol>
+</section>
+<section id="water-speed-value">
+<h3>3. <strong>Water Speed  (Value)</strong><a class="headerlink" href="#water-speed-value" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Adjust the Thickness of the large grid</p></li>
+<li><p>Set the speed of the waves</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="9">
-<li><p><strong>S. Crosses Scale  (Int)</strong></p></li>
-</ol>
+</section>
+<section id="wave-strength-value">
+<h3>4. <strong>Wave Strength  (Value)</strong><a class="headerlink" href="#wave-strength-value" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Adjusts the scale of the small grid</p></li>
+<li><p>General height of all waves (Simulated with a bump)</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="10">
-<li><p><strong>Shape Size  (Value)</strong></p></li>
-</ol>
+</section>
+<section id="scale-value">
+<h3>5. <strong>Scale  (Value)</strong><a class="headerlink" href="#scale-value" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Adjusts the size of the shape at the intersection of the large grid</p></li>
+<li><p>Change the size of the waves</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="11">
-<li><p><strong>Subtract  (Button)</strong></p></li>
-</ol>
+</section>
+<section id="roughness-value">
+<h3>6. <strong>Roughness  (Value)</strong><a class="headerlink" href="#roughness-value" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>If active, Subtract the Shape from the grid (If not active, it will be added to the grid)</p></li>
+<li><p>Roughness, it might come in handy, if you use the Metallic Fluid parameter or Fluid Button</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="12">
-<li><p><strong>Circle Shape  (Button)</strong></p></li>
-</ol>
+</section>
+<section id="metallic-fluid-value">
+<h3>7. <strong>Metallic Fluid  (Value)</strong><a class="headerlink" href="#metallic-fluid-value" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>If activated, the shape will be a circle, otherwise it will be a quadrate</p></li>
+<li><p>It makes water look like a metallic fluid, such as mercury</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="13">
-<li><p><strong>Loc X  (Value)</strong></p></li>
-</ol>
+</section>
+<section id="flowing-water-value">
+<h3>8. <strong>Flowing water  (Value)</strong><a class="headerlink" href="#flowing-water-value" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Adjusts the position of the entire grid on the X axis</p></li>
+<li><p>Simulates a moving watercourse, to choose the direction of the watercourse use the “Rotation” parameter</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="14">
-<li><p><strong>Loc Y  (Value)</strong></p></li>
-</ol>
+</section>
+<section id="reverse-button">
+<h3>9. <strong>Reverse  (Button)</strong><a class="headerlink" href="#reverse-button" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Adjusts the position of the entire grid on the Y axis</p></li>
+<li><p>Reverse the water flow</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="15">
-<li><p><strong>Rotation  (Value)</strong></p></li>
-</ol>
+</section>
+<section id="flow-direction-value">
+<h3>10. <strong>Flow Direction  (Value)</strong><a class="headerlink" href="#flow-direction-value" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Adjust the Rotation of the entire grid</p></li>
+<li><p>Adjusts the overall rotation of the waves. Useful when the water is animated in one direction</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="16">
-<li><p><strong>Scale X  (Value)</strong></p></li>
-</ol>
+</section>
+</section>
+<hr class="docutils" />
+<section id="rubber-tires-node-group">
+<h2>Rubber tires (Node Group)<a class="headerlink" href="#rubber-tires-node-group" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/rubber_tires_basic_001.png"><img alt="Rubber Tires Basic 001" class="align-center" src="_images/rubber_tires_basic_001.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<a class="reference internal image-reference" href="_images/ng_rubber_tires.webp"><img alt="Ng Rubber Tires" class="align-center" src="_images/ng_rubber_tires.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Inputs:</p>
+<section id="color-rgba">
+<h3>1. <strong>Color  (Rgba)</strong><a class="headerlink" href="#color-rgba" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Adjust the Scale of the whole grid on the X axis</p></li>
+<li><p>Change the color of the tire rubber</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="17">
-<li><p><strong>Scale Y  (Value)</strong></p></li>
-</ol>
+</section>
+<section id="id2">
+<h3>2. <strong>Scale Uniform  (Value)</strong><a class="headerlink" href="#id2" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Adjust the Scale of the whole grid on the Y axis</p></li>
+<li><p>Scale the Roughness (Only if it is different from the value 0)</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="18">
-<li><p><strong>Scale Uniform  (Value)</strong></p></li>
-</ol>
+</section>
+<section id="id3">
+<h3>3. <strong>Roughness  (Value)</strong><a class="headerlink" href="#id3" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li></li>
+<li><p>Adjusts the intensity of the roughness, which is the one that simulates the difference between smooth and slightly rough areas on the tire rubber</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="19">
-<li><p><strong>UV Coordinate  (Button)</strong></p></li>
-</ol>
+</section>
+<section id="specular-value">
+<h3>4. <strong>Specular  (Value)</strong><a class="headerlink" href="#specular-value" title="Permalink to this heading"></a></h3>
 <blockquote>
 <div><ul class="simple">
-<li><p>Projects the texture onto the object’s UV mapping</p></li>
+<li><p>Adjust the reflection on the tire rubber</p></li>
 </ul>
 </div></blockquote>
-<ol class="arabic simple" start="20">
-<li><p><strong>World Coordinate  (Button)</strong></p></li>
-</ol>
-<blockquote>
-<div><ul class="simple">
-<li><p>If active Projects the texture on world coordinates</p></li>
-</ul>
-</div></blockquote>
+</section>
 </section>
 </section>
 
