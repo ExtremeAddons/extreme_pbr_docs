@@ -19,3 +19,6 @@ Docs Helper
 The docs Helper button is the one that allows you to access the documentation menu. It can show various items, depending
 on the amount of keys and urls present in the json documentation file.
 
+
+
+
