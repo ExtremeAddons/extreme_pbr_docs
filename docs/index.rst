@@ -17,7 +17,7 @@ Welcome to Extreme PBR's documentation!
 
     .. image:: _static/_images/undocumented/online_manual.png
           :align: center
-          :width: 300
+          :width: 600
           :alt: online manual
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -52,6 +52,7 @@ Welcome to Extreme PBR's documentation!
    creator_utility
    materials
    preferences
+   generic_functions
 
 
 .. toctree::
