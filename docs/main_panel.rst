@@ -853,6 +853,19 @@ This button is the equivalent of the "Purge" button present in Blender in Orphan
     :alt: Purge Orphan Data Standard
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+Docs Helper
+------------
+
+The Docs Helper button allows you to access the Extreme PBR documentation, in this way you can find
+the reference via the button. A popup will open with the link to the documentation.
+
+.. note::
+        This button is repeated in the interface on several panels, this is because the user can access the documentation
+        in a faster way, the button can take various forms and variants depending on the context in which you are.
+
+
 
 
 
