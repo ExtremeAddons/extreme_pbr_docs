@@ -157,7 +157,7 @@ This button appears only if there are 2 or more Nexus Modules, so it will allow 
 
 .. image:: _static/_images/material_editor/me_remove_module.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Remove Module
 
 
