@@ -147,6 +147,20 @@ of the :ref:`material_browser` you have chosen.
     :width: 400
     :alt: Replace Module
 
+
+------------------------------------------------------------------------------------------------------------------------
+
+Remove Module
+**************
+
+This button appears only if there are 2 or more Nexus Modules, so it will allow you to remove the underlying module.
+
+.. image:: _static/_images/material_editor/me_remove_module.webp
+    :align: center
+    :width: 400
+    :alt: Remove Module
+
+
 ------------------------------------------------------------------------------------------------------------------------
 
 .. _module_clip_texture:
