@@ -185,7 +185,7 @@ Install The library
 Step 1
 --------
 
-Download the file XTRPbr_1k_vol_1.exapack, this is the package containing the 1k resolution files,
+Download the file XTRPbr_05k_vol_1.exapack, this is the package containing the ½k resolution files,
 it is also the smallest package in terms of Size, so it is easy and fast. You can download the others at any time.
 **You can download all the .exapack files and run everything at once if you wish**
 
@@ -292,7 +292,7 @@ When you have completed the entire (or even just in part) installation, the addo
     :width: 600
     :alt: Addon ready 01
 
-.. Note:: The 1k, 2k, 4k, 8k, 16k versions are present in the complete edition. Some versions may not contain all the resolution versions.
+.. Note:: The  ½k, 1k, 2k, 4k, 8k versions are present in the complete edition. Some versions may not contain all the resolution versions.
           If you want to upgrade to the full version, you only pay the difference
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -343,19 +343,22 @@ All new packages will be in the form of numbered volumes Here is an example of n
 Default Library
 -----------------------
 
+- **XTRPbr_05k_vol_1.exapack**: Contains files from ½k, previews, and data files
 - **XTRPbr_1k_vol_1.exapack**: Contains files from 1k, previews, and data files
 - **XTRPbr_2k_vol_1.exapack**: Contains files from 2k, previews, and data files
 - **XTRPbr_4k_vol_1.exapack**: Contains files from 4k, previews, and data files
 - **XTRPbr_8k_vol_1.exapack**: Contains files from 8k, previews, and data files
-- **XTRPbr_16k_vol_1.exapack**: Contains files from 16k, previews, and data files
+- **XTRPbr_Procedural_Vol_1.exapack**: Contains procedural files, previews, and data files
+
 
 The packages are consecutive, Vol_1, Vol_2, Vol_3, I tried to limit as much as possible the size of the packages,
-so that their maximum is around 2GB (Some can reach 2.5GB).
+so that their maximum is around 4GB (Some can reach 4.3GB).
 This limit to avoid download and installation problems, since those who have a slower connection, could
 encounter timeout problems.
 
-.. Note:: The large size packages like 8k and 16k will have more volumes, because they are much larger.
-          The small size packages like 1k and 2k will have less volumes, because they are much smaller.
+.. Note::
+        The large size packages like 4k, 8k will have more volumes, because they are much larger.
+        The small size packages like ½k, 1k, 2k  will have fewer volumes, because they are much smaller.
 
 ------------------------------------------------------------------------------------------------------------------------
 
