@@ -562,6 +562,22 @@ Once activated, a further interface dedicated to displacement will appear which 
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Hide Displace
+**************
+
+.. image:: _static/_images/main_panel/hide_displace_off.webp
+    :align: center
+    :width: 600
+    :alt: Hide Displace Off
+
+|
+
+If you activate this button with an eye icon, the displacement will be hidden but not deleted, this allows you to see
+the object without displacement while keeping the displacement settings unchanged.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 
 Search and Replace
 ******************
