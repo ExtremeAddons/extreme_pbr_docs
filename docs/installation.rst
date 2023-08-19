@@ -318,6 +318,22 @@ For more information on this section you can find the chapter :ref:`pr_libraries
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Remove Exapack From Installer
+------------------------------
+
+These buttons allow you to remove the .exapack files so that you do not have to install them in case you have
+added a file by mistake or do not want to install a particular file.
+
+.. image:: _static/_images/installation/remove_exapack_from_installer_01.webp
+    :align: center
+    :width: 600
+    :alt: Remove exapack from installer 01
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
 About Exapack
 ================
 
