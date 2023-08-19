@@ -257,6 +257,21 @@ Now you should have the list of exapack files selected, in list, ready to be ins
     :width: 800
     :alt: Install from exapack files
 
+|
+
+
+.. attention::
+        For some reason, it could happen that the .exapack file is corrupted. The addon recognizes corrupted files and
+        reports them in red. Download the file again, in the meantime you can remove it from the list and proceed anyway
+        to the installation, you can also install it later using this same procedure.
+
+        .. image:: _static/_images/installation/broken_exapack_file.webp
+            :align: center
+            :width: 800
+            :alt: Broken exapack file 02
+
+
+
 
 During the installation process of the .exapack packages, the interface will show the progress of the installed packages
 You can also stop the process whenever you want (Just press the button (X) next to the big status bar) in this case,
@@ -274,10 +289,11 @@ the installed packages will remain installed.
     :alt: Exapack installation progress
 
 
-.. Note:: The installation speed depends a lot on the type of disk in use, I have done various tests, and the installation on
+.. note:: The installation speed depends a lot on the type of disk in use, I have done various tests, and the installation on
           SSD is very fast. I do not recommend the use of an external Mechanical Hard Disk connected via USB only for time issues,
           I noticed that these disks are very slow for this process. But if you do not have time problems and you have patience,
           you can decide to use it.
+
 
 
 ------------------------------------------------------------------------------------------------------------------------
