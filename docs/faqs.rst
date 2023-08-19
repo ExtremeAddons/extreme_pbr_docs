@@ -92,7 +92,8 @@ Of course! You can contact me on https://blendermarket.com/ or on http://extreme
 Does it work with Blender Asset Browser?
 *******************************************
 
-Yes, from version 4.1.100 of Extreme PBR it is possible!
+Yes, from version 4.1.100 of Extreme PBR it is possible! you can create the asset browser library from the addon, check
+the documentation for more information under the voice "Asset Browser"
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -101,8 +102,8 @@ Are there any video tutorials?
 ********************************
 
 Yes, on my channel you will find some useful videos, I suggest you subscribe to the channel and activate the bell to
-receive notifications: https://www.youtube.com/watch?v=3UCpnJ9i8qk&list=PL7TaxhAdM_6lNOftiPMJes0rLTDB51I2v&index=2
-
+receive notifications: `Youtube Link <https://www.youtube.com/watch?v=3UCpnJ9i8qk&list=PL7TaxhAdM_6lNOftiPMJes0rLTDB51I2v&index=2>`_
+or on the documentation page here: :ref:`video_tutorials`
 
 ------------------------------------------------------------------------------------------------------------------------
 

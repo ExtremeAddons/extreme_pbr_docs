@@ -65,9 +65,27 @@
 <li class="toctree-l1"><a class="reference internal" href="shader_overlay.html">Shader Overlay</a></li>
 <li class="toctree-l1"><a class="reference internal" href="material_override.html">Material Override</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">Creator Utility</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Creator Utility</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#introduction">Introduction</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#module-manager-panel">Module Manager Panel</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#add-empty-module">ADD Empty Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#add-empty-fx">Add Empty FX</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#remove">Remove</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#texture-browser">Texture Browser</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#node-utility">Node Utility</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#node-tag-type">Node Tag Type</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#library-creator-utility">Library Creator Utility</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#panel-builder-helper">Panel Builder Helper</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#color-creator-utility">Color Creator Utility</a></li>
+</ul>
+</li>
 <li class="toctree-l1"><a class="reference internal" href="materials.html">Materials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic_functions.html">Generic Functions</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
 <ul>
@@ -111,7 +129,126 @@
              
   <section id="creator-utility">
 <span id="id1"></span><h1>Creator Utility<a class="headerlink" href="#creator-utility" title="Permalink to this heading"></a></h1>
-<p>TODO, This Section is Under-construction 🚀</p>
+<section id="introduction">
+<h2>Introduction<a class="headerlink" href="#introduction" title="Permalink to this heading"></a></h2>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<p>Attention, you should use this section only if you are interested in creating Materials to sell, or to create your
+own personal library. It is not recommended for use by end users, as it may damage the Extreme PBR Base library
+In order to display the creator utility, activate the option described here: <a class="reference internal" href="preferences.html#pr-show-creator-utility"><span class="std std-ref">Show creator utility</span></a> from
+the preferences panel of Extreme PBR in the options tab: <a class="reference internal" href="preferences.html#pr-options-tab"><span class="std std-ref">Options</span></a>
+The creator utility will be shown in the Blender node interface once activated</p>
+</div>
+<p>This section is to facilitate the creation of a custom library of Extreme PBR, you can also sell this package as an additional library for Extreme PBR.</p>
+<p>This section is dedicated to the <strong>Creator Utility</strong> the creator utility is a tool with which the libraries were created
+of Extreme PBR, so it is a delicate tool that could damage the main libraries of Extreme PBR.</p>
+<p>Make sure you only use it if you want to create specific libraries for Extreme PBR.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In order to access the creator utility, activate the option described here: <a class="reference internal" href="preferences.html#pr-show-creator-utility"><span class="std std-ref">Show creator utility</span></a> from
+the preferences panel of Extreme PBR in the options tab: <a class="reference internal" href="preferences.html#pr-options-tab"><span class="std std-ref">Options</span></a>
+The creator utility will be shown in the Blender node interface once activated</p>
+</div>
+<a class="reference internal image-reference" href="_images/creator_utility_example_interface.webp"><img alt="Creator Utility Example Interface" class="align-center" src="_images/creator_utility_example_interface.webp" style="width: 100%;" /></a>
+</section>
+<hr class="docutils" />
+<section id="module-manager-panel">
+<h2>Module Manager Panel<a class="headerlink" href="#module-manager-panel" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/cu_module_manager_example.webp"><img alt="Creator Utility Module Manager Example" class="align-center" src="_images/cu_module_manager_example.webp" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="add-empty-module">
+<h3>ADD Empty Module<a class="headerlink" href="#add-empty-module" title="Permalink to this heading"></a></h3>
+<p>This Operator creates a material with a Basic module of Extreme PBR inside from which you can start working on your material.
+This is done to facilitate the work of creating your library to be published.</p>
+<p>Once you have added an “Empty Module”, in the Shader Editor, you will have a standard Extreme PBR module available to work on.</p>
+<a class="reference internal image-reference" href="_images/cu_create_empty_module.webp"><img alt="Creator Utility Create Empty Module" class="align-center" src="_images/cu_create_empty_module.webp" style="width: 100%;" /></a>
+</section>
+<hr class="docutils" />
+<section id="add-empty-fx">
+<h3>Add Empty FX<a class="headerlink" href="#add-empty-fx" title="Permalink to this heading"></a></h3>
+<p>This Operator creates a material with a Basic FX Module of Extreme PBR inside from which you can start working on your
+material. This is done to facilitate the work of creating your library to be published.</p>
+<p>Once you have added an “Empty Fx”, in the Shader Editor, you will have a standard Extreme PBR module available to work on.</p>
+<a class="reference internal image-reference" href="_images/cu_create_empty_fx.webp"><img alt="Creator Utility Create Empty FX" class="align-center" src="_images/cu_create_empty_fx.webp" style="width: 100%;" /></a>
+</section>
+<hr class="docutils" />
+<section id="remove">
+<h3>Remove<a class="headerlink" href="#remove" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/cu_remove.webp"><img alt="Creator Utility Remove" class="align-center" src="_images/cu_remove.webp" style="width: 50%;" /></a>
+<p>This button, is the equivalent of the one present in the main interface of Extreme PBR, is used to remove the active
+material, that is the one currently selected in the material list.</p>
+</section>
+</section>
+<hr class="docutils" />
+<section id="texture-browser">
+<h2>Texture Browser<a class="headerlink" href="#texture-browser" title="Permalink to this heading"></a></h2>
+<p>TODO</p>
+</section>
+<hr class="docutils" />
+<section id="node-utility">
+<h2>Node Utility<a class="headerlink" href="#node-utility" title="Permalink to this heading"></a></h2>
+<p>A quick look at the open “Node Utility” menu panel.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This panel will only be shown if a material is active or selected.</p>
+</div>
+<a class="reference internal image-reference" href="_images/cu_node_utility_panel.webp"><img alt="Creator Utility Node Utility Panel" class="align-center" src="_images/cu_node_utility_panel.webp" style="width: 400px;" /></a>
+<hr class="docutils" />
+<section id="node-tag-type">
+<h3>Node Tag Type<a class="headerlink" href="#node-tag-type" title="Permalink to this heading"></a></h3>
+<a class="reference internal image-reference" href="_images/cu_node_tag_type.webp"><img alt="Creator Utility Node Tag Type" class="align-center" src="_images/cu_node_tag_type.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Once this button is pressed, a popup will appear:</p>
+<a class="reference internal image-reference" href="_images/cu_node_tag_type_popup.webp"><img alt="Creator Utility Node Tag Type Popup" class="align-center" src="_images/cu_node_tag_type_popup.webp" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition attention">
+<p class="admonition-title">Attention</p>
+<dl class="simple">
+<dt>This button works ONLY in this case:</dt><dd><ul class="simple">
+<li><p>Being inside an active material created with Extreme PBR.</p></li>
+<li><p>Be inside an Extreme PBR Module, or FX Module.</p></li>
+<li><p>Have a node selected and active.</p></li>
+<li><p>Once this button is pressed, a popup will appear</p></li>
+</ul>
+</dd>
+</dl>
+</div>
+<p>From the Popup Panel it is possible to assign the TAG to the selected Texture Type node (Choose the tag and press OK).</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>It is not necessary to use TAGs to create new Material Modules, but it is useful if you want to keep the operation
+of Essential Functions of the standard Extreme PBR Texture-based materials.</p>
+</div>
+<p>This Nodes example is a classic Texture Based Material from Extreme PBR with related TAGs:</p>
+<a class="reference internal image-reference" href="_images/nexus_nodes_schema.webp"><img alt="Creator Utility Nexus Nodes Schema" class="align-center" src="_images/nexus_nodes_schema.webp" style="width: 100%;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>To Remove the TAG, press the empty button from the popup panel and Press Ok:</p>
+<a class="reference internal image-reference" href="_images/cu_node_tag_type_popup_empty_tag.webp"><img alt="Creator Utility Node Tag Type Popup Empty Tag" class="align-center" src="_images/cu_node_tag_type_popup_empty_tag.webp" style="width: 100%;" /></a>
+</section>
+</section>
+<hr class="docutils" />
+<section id="library-creator-utility">
+<h2>Library Creator Utility<a class="headerlink" href="#library-creator-utility" title="Permalink to this heading"></a></h2>
+<p>TODO</p>
+</section>
+<hr class="docutils" />
+<section id="panel-builder-helper">
+<h2>Panel Builder Helper<a class="headerlink" href="#panel-builder-helper" title="Permalink to this heading"></a></h2>
+<p>TODO</p>
+</section>
+<hr class="docutils" />
+<section id="color-creator-utility">
+<h2>Color Creator Utility<a class="headerlink" href="#color-creator-utility" title="Permalink to this heading"></a></h2>
+<p>TODO</p>
+</section>
 </section>
 
 

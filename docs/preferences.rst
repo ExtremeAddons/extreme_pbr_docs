@@ -30,10 +30,12 @@ Go to ``Add-ons`` and search for ``Extreme PBR`` and click on the checkbox to ac
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _pr_options_tab:
+
 Options
 ======================
 
-Le Opzioni sono suddivise in diverse aree di interesse:
+The options are divided into several areas of interest:
 
 - **General Options:** Ref: :ref:`pr_general_options`
 - **Interface Options** Ref: :ref:`pr_interface_options`
@@ -444,6 +446,8 @@ I realize it's quite annoying, but it's the only way I've found to avoid these c
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _pr_op_fix_materials:
+
 Find Lost Images
 ****************************
 
@@ -512,6 +516,8 @@ some situations that may have been created unintentionally.
         to 4 channels is present, so all the materials that do not contain the mixer will be bypassed.
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _pr_op_adjust_all_material_node_tree:
 
 Adjust All Material Node Tree
 ********************************
@@ -612,6 +618,8 @@ access to the **Extreme Addons** TAB described here: :ref:`installation_step_1`
         For all users who have an account on Extreme-Addons.com it is recommended to activate this option.
 
 ------------------------------------------------------------------------------------------------------------------------
+
+.. _pr_show_creator_utility:
 
 Show creator utility
 ****************************

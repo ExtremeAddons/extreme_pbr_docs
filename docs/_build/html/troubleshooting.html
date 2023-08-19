@@ -65,7 +65,10 @@
 <li class="toctree-l1"><a class="reference internal" href="shader_overlay.html">Shader Overlay</a></li>
 <li class="toctree-l1"><a class="reference internal" href="material_override.html">Material Override</a></li>
 <li class="toctree-l1"><a class="reference internal" href="save_editor.html">Save Editor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="creator_utility.html">Creator Utility</a></li>
+<li class="toctree-l1"><a class="reference internal" href="materials.html">Materials</a></li>
 <li class="toctree-l1"><a class="reference internal" href="preferences.html">Preferences</a></li>
+<li class="toctree-l1"><a class="reference internal" href="generic_functions.html">Generic Functions</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Tutorials: 📺</span></p>
 <ul>
@@ -77,10 +80,11 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#i-do-not-receive-mail-from-blendermarket">I do not receive mail from BlenderMarket</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#find-options-menu">Find Options Menu</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#pink-background">Pink Background</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#black-background">Black Background</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#pink-materials">Pink Materials</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#black-materials">Black Materials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#moving-libraries-to-another-computer">Moving libraries to another computer</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#why-if-i-export-the-project-to-another-computer-i-can-no-longer-see-the-materials">Why if I export the project to another computer I can no longer see the materials?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-have-bought-a-version-in-which-the-libraries-were-downloaded-now-i-can-no-longer-find-this-function">I have bought a version in which the libraries were downloaded, now I can no longer find this function.</a></li>
 </ul>
 </li>
 </ul>
@@ -133,31 +137,23 @@ Question and answer</p>
 <h2>Find Options Menu<a class="headerlink" href="#find-options-menu" title="Permalink to this heading"></a></h2>
 <p>To go to the Extreme PBR options, you have to go to the addon preferences. But to make this process easier there is
 a button directly in the Extreme PBR interface:</p>
-<a class="reference internal image-reference" href="_images/options_button_01.png"><img alt="Options Button 01" class="align-center" src="_images/options_button_01.png" style="width: 200px;" /></a>
+<a class="reference internal image-reference" href="_images/options_button_01.webp"><img alt="Options Button 01" class="align-center" src="_images/options_button_01.webp" style="width: 600px;" /></a>
 </section>
 <hr class="docutils" />
-<section id="pink-background">
-<h2>Pink Background<a class="headerlink" href="#pink-background" title="Permalink to this heading"></a></h2>
-<p>If you find yourself in a situation of background or Dome with Pink color, this means in 99% of cases that the image
-to which the background refers is no longer linked to the project.</p>
-<a class="reference internal image-reference" href="_images/pink_background_01.png"><img alt="Pink Background 01" class="align-center" src="_images/pink_background_01.png" style="width: 600px;" /></a>
-<p>To solve the problem, go to the Extreme PBR options and click on the “Find Lost Images” button</p>
-<a class="reference internal image-reference" href="_images/find_lost_images_01.png"><img alt="Find Lost Images 01" class="align-center" src="_images/find_lost_images_01.png" style="width: 600px;" /></a>
-<p>A file search window will open. Indicate the path where the Extreme PBR library is located or where you think
-that the file you are looking for may be. Once the path is indicated, click on “Find Missing Files”.</p>
-<p>The search will be performed in the indicated path and in all subfolders.</p>
-<p><strong>Note</strong>: The process may take a while, depending on the number of files in the library.</p>
-<a class="reference internal image-reference" href="_images/find_missing_files_01.png"><img alt="Find Missing Files 01" class="align-center" src="_images/find_missing_files_01.png" style="width: 600px;" /></a>
+<section id="pink-materials">
+<h2>Pink Materials<a class="headerlink" href="#pink-materials" title="Permalink to this heading"></a></h2>
+<p>It may happen that there are files that referred to the material that have been moved, so the material
+no longer has a reference image.</p>
+<p>Here’s how to do it: <a class="reference internal" href="material_editor.html#unrecognized-material"><span class="std std-ref">Unrecognized Material</span></a> and <a class="reference internal" href="preferences.html#pr-op-fix-materials"><span class="std std-ref">Find Lost Images</span></a></p>
 </section>
 <hr class="docutils" />
-<section id="black-background">
-<h2>Black Background<a class="headerlink" href="#black-background" title="Permalink to this heading"></a></h2>
+<section id="black-materials">
+<h2>Black Materials<a class="headerlink" href="#black-materials" title="Permalink to this heading"></a></h2>
 <p>In this case there may be a problem when creating a file in a newer version of Blender, and then after saving the project
 it is opened in a previous version of Blender.</p>
 <p>Sometimes Blender updates its nodes, so it may be that the nodes are no longer retro compatible with the previous version.
 To solve this I have provided a function that tries to replace the “Unknown” nodes</p>
-<p>You can find it in the Extreme PBR Options menu:</p>
-<a class="reference internal image-reference" href="_images/fix_unknown_nodes_01.png"><img alt="Fix Unknown Nodes 01" class="align-center" src="_images/fix_unknown_nodes_01.png" style="width: 600px;" /></a>
+<p>You can find it in the Extreme PBR Options menu in this paragraph: <a class="reference internal" href="preferences.html#pr-op-adjust-all-material-node-tree"><span class="std std-ref">Adjust All Material Node Tree</span></a></p>
 </section>
 <hr class="docutils" />
 <section id="moving-libraries-to-another-computer">
@@ -165,7 +161,10 @@ To solve this I have provided a function that tries to replace the “Unknown”
 <p>To move the libraries to another computer, just copy the “EXTREME_PBR_DEFAULT_LIB” and “EXTREME_PBR_USER_LIB” folders</p>
 <p>If once connected the libraries from the “Libraries” menu in Extreme PBR preferences the addon does not work,
 it could be that in the folders mentioned above, the “._data” folders are missing, so make sure they are inside each library.</p>
-<a class="reference internal image-reference" href="_images/data_folder.png"><img alt="Data Folder" class="align-center" src="_images/data_folder.png" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/data_folder.webp"><img alt="Data Folder" class="align-center" src="_images/data_folder.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <ul>
 <li><p><strong>To Show the hidden folders in Windows:</strong></p>
 <blockquote>
@@ -207,6 +206,18 @@ it could be that in the folders mentioned above, the “._data” folders are mi
 <p>Pay attention to this, because your .blend files after these operations will contain all the image files present
 in your project is present an image of 100MB (For example) your .blend file will become 100MB more.</p>
 <a class="reference internal image-reference" href="_images/auto_pack_resources_01.png"><img alt="Auto Pack Resources 01" class="align-center" src="_images/auto_pack_resources_01.png" style="width: 600px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="i-have-bought-a-version-in-which-the-libraries-were-downloaded-now-i-can-no-longer-find-this-function">
+<h3>I have bought a version in which the libraries were downloaded, now I can no longer find this function.<a class="headerlink" href="#i-have-bought-a-version-in-which-the-libraries-were-downloaded-now-i-can-no-longer-find-this-function" title="Permalink to this heading"></a></h3>
+<p>Don’t worry, now you still have the function, you just have to go to the addon options and click on <strong>I have an Extreme Addon account</strong>
+here is how to do it: <a class="reference internal" href="preferences.html#pr-op-i-have-an-account-on-extreme-addons"><span class="std std-ref">I Have an Account on Extreme Addons</span></a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>From the version of Extreme PBR Nexus 4.1.100 we decided to insert the possibility to download the libraries
+directly from the MarketPlace from which you purchased the product. The files are in exapack format and the addon has an
+installer that allows you to install the libraries in a simple way described here: <a class="reference internal" href="installation.html#install-library-41100"><span class="std std-ref">Install The library</span></a></p>
+</div>
 </section>
 </section>
 </section>

@@ -23,49 +23,25 @@ Find Options Menu
 To go to the Extreme PBR options, you have to go to the addon preferences. But to make this process easier there is
 a button directly in the Extreme PBR interface:
 
-.. image:: _static/_images/troubleshooting/options_button_01.png
+.. image:: _static/_images/troubleshooting/options_button_01.webp
     :align: center
-    :width: 200
+    :width: 600
     :alt: Options Button 01
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Pink Background
----------------
+Pink Materials
+-----------------
 
-If you find yourself in a situation of background or Dome with Pink color, this means in 99% of cases that the image
-to which the background refers is no longer linked to the project.
+It may happen that there are files that referred to the material that have been moved, so the material
+no longer has a reference image.
 
-.. image:: _static/_images/troubleshooting/pink_background_01.png
-    :align: center
-    :width: 600
-    :alt: Pink Background 01
-
-
-To solve the problem, go to the Extreme PBR options and click on the "Find Lost Images" button
-
-.. image:: _static/_images/troubleshooting/find_lost_images_01.png
-    :align: center
-    :width: 600
-    :alt: Find Lost Images 01
-
-A file search window will open. Indicate the path where the Extreme PBR library is located or where you think
-that the file you are looking for may be. Once the path is indicated, click on "Find Missing Files".
-
-The search will be performed in the indicated path and in all subfolders.
-
-**Note**: The process may take a while, depending on the number of files in the library.
-
-
-.. image:: _static/_images/troubleshooting/find_missing_files_01.png
-    :align: center
-    :width: 600
-    :alt: Find Missing Files 01
+Here's how to do it: :ref:`unrecognized_material` and :ref:`pr_op_fix_materials`
 
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Black Background
+Black Materials
 ----------------
 
 In this case there may be a problem when creating a file in a newer version of Blender, and then after saving the project
@@ -74,12 +50,7 @@ it is opened in a previous version of Blender.
 Sometimes Blender updates its nodes, so it may be that the nodes are no longer retro compatible with the previous version.
 To solve this I have provided a function that tries to replace the "Unknown" nodes
 
-You can find it in the Extreme PBR Options menu:
-
-.. image:: _static/_images/troubleshooting/fix_unknown_nodes_01.png
-    :align: center
-    :width: 600
-    :alt: Fix Unknown Nodes 01
+You can find it in the Extreme PBR Options menu in this paragraph: :ref:`pr_op_adjust_all_material_node_tree`
 
 
 
@@ -94,10 +65,12 @@ To move the libraries to another computer, just copy the "EXTREME_PBR_DEFAULT_LI
 If once connected the libraries from the "Libraries" menu in Extreme PBR preferences the addon does not work,
 it could be that in the folders mentioned above, the "._data" folders are missing, so make sure they are inside each library.
 
-.. image:: _static/_images/troubleshooting/data_folder.png
+.. image:: _static/_images/troubleshooting/data_folder.webp
     :align: center
     :width: 600
     :alt: Data Folder
+
+|
 
 - **To Show the hidden folders in Windows:**
 
@@ -141,6 +114,22 @@ in your project is present an image of 100MB (For example) your .blend file will
     :align: center
     :width: 600
     :alt: Auto Pack Resources 01
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+I have bought a version in which the libraries were downloaded, now I can no longer find this function.
+**************************************************************************************************************
+
+
+Don't worry, now you still have the function, you just have to go to the addon options and click on **I have an Extreme Addon account**
+here is how to do it: :ref:`pr_op_i_have_an_account_on_extreme_addons`
+
+.. note::
+    From the version of Extreme PBR Nexus 4.1.100 we decided to insert the possibility to download the libraries
+    directly from the MarketPlace from which you purchased the product. The files are in exapack format and the addon has an
+    installer that allows you to install the libraries in a simple way described here: :ref:`install_library_41100`
 
 
 

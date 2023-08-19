@@ -1776,6 +1776,8 @@ This panel will be drawn on the **Simple PBR** node standard of Extreme PBR. The
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _unrecognized_material:
+
 Unrecognized Material
 ======================
 
