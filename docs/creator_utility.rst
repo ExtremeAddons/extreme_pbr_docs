@@ -95,7 +95,7 @@ material, that is the one currently selected in the material list.
 Texture Browser
 ===========================
 
-TODO
+TODO: The section is under construction 🚀
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -111,6 +111,48 @@ A quick look at the open “Node Utility” menu panel.
     :align: center
     :width: 400
     :alt: Creator Utility Node Utility Panel
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Copy Node Info To Clipboard
+-------------------------------
+
+.. image:: _static/_images/creator_utility/cu_copy_node_info_to_clipboard.webp
+    :align: center
+    :width: 400
+    :alt: Creator Utility Copy Node Info To Clipboard
+
+|
+
+.. note::
+        You must be inside the group node on which you want to copy the information.
+
+
+This button allows you to copy the information of the group node you are working on, it will copy the name of the node
+and the various descriptions of the sockets, and in the clipboard it will create the documentation of the node, provided
+that a description has been assigned to the sockets of interest. To see how to assign a description to the sockets, go
+to the section here: TODO socket description reference The section is under construction 🚀
+
+------------------------------------------------------------------------------------------------------------------------
+
+Store node attributes
+-------------------------------
+
+.. image:: _static/_images/creator_utility/cu_store_node_attributes.webp
+    :align: center
+    :width: 400
+    :alt: Creator Utility Store Node Attributes
+
+|
+
+This button stores the information of all types of nodes in all the child nodes of the active node tree, this is used
+to store and if in the future there are changes in the Extreme PBR nodes, to be able to restore the "Unknown" nodes
+with the correct nodes, as in the future, the nodes could be no longer recognized, or vice versa, if you go from a
+version of Blender with new nodes, and you go back to an old version of Blender where such nodes did not exist, through
+the button described here :ref:`pr_op_adjust_all_material_node_tree` you can adjust the materials that contain such
+unrecognized nodes.
+
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -168,7 +210,7 @@ To Remove the TAG, press the empty button from the popup panel and Press Ok:
 Library Creator Utility
 ===========================
 
-TODO
+TODO The section is under construction 🚀
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -176,13 +218,13 @@ Panel Builder Helper
 ===========================
 
 
-TODO
+TODO The section is under construction 🚀
 
 ------------------------------------------------------------------------------------------------------------------------
 
 Color Creator Utility
 ===========================
 
-TODO
+TODO The section is under construction 🚀
 
 

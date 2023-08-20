@@ -20,24 +20,6 @@ on new tutorials and news.
          This is the link to my official channel on Youtube: https://www.youtube.com/channel/UCe5vB8ehr9hrQrYvfCb8j9w
 
 
-
-.. _installation_tutorial_01:
-
-Installation
------------------
-
-
-Here's how to install the version of Extreme PBR before version 4.1.100
-
-
-.. raw:: html
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/YtqJbMsp2XU" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-        web-share" allowfullscreen></iframe>
-
-
-
 ------------------------------------------------------------------------------------------------------------------------
 
 

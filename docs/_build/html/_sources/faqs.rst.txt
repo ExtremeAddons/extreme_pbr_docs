@@ -105,9 +105,6 @@ Yes, on my channel you will find some useful videos, I suggest you subscribe to 
 receive notifications: `Youtube Link <https://www.youtube.com/watch?v=3UCpnJ9i8qk&list=PL7TaxhAdM_6lNOftiPMJes0rLTDB51I2v&index=2>`_
 or on the documentation page here: :ref:`video_tutorials`
 
-
-
-
 ------------------------------------------------------------------------------------------------------------------------
 
 Why are the materials black sometimes?
