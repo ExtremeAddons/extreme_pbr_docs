@@ -4,6 +4,11 @@
 New Installation (4.1.100 and up)
 ===================================
 
+.. admonition:: Video Tutorial
+    :class: youtube
+
+        Here you can find the video tutorial for the first installation :ref:`first_installation`
+
 .. tip::
         To check which version of Extreme PBR you are using, and therefore be sure which guide to follow, you can check
         the version of the addon in 2 ways:
