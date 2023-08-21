@@ -1,6 +1,14 @@
 Make Asset Browser
 =========================
 
+
+.. admonition:: Video Tutorial
+    :class: youtube
+
+        Here the video tutorial to create the asset browser: :ref:`make_asset_browser_video_tutorial`
+
+
+
 Here below is indicated the procedure to create the asset browser
 
 Introduction
