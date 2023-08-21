@@ -5,7 +5,11 @@ Make Asset Browser
 .. admonition:: Video Tutorial
     :class: youtube
 
-        Here the video tutorial to create the asset browser: :ref:`make_asset_browser_video_tutorial`
+        .. raw:: html
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/G33Ebylg-UE" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+            web-share" allowfullscreen></iframe>
 
 
 
