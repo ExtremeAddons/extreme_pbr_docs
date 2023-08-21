@@ -1,6 +1,71 @@
 Updates Log
 ===========
 
+4.1.100
+-------
+
+**Release date: 20-08-2023 (D/M/Y)**
+
+- **Added - Space Colors Management**
+
+    Many users have rightly reported that Extreme PBR materials only worked in the sRGB and Non-Color color space, now from the options menu it is possible to change the default color spaces of the project
+
+- **Changes - BW Map Colorspace for Nexus materials**
+
+    The color space in the Modules and Fx of the Nexus materials, before was managed in sRGB even the BW maps, then they were converted into a color space 'Non-Color' Through a Gamma node. Now given the change and the support of more colors, the Gamma node would no longer convert correctly, if not using sRGB, so it was chosen to change the color space directly in the texture node, the 'Non-Color' button in texture manager now it will no longer be present in new projects.
+
+- **Bug Fix - Download Materials Stuck**
+
+    Added a condition on os.remove('exa_files.json') this generated an error that blocked the download of materials, in some cases.
+
+- **Added - Displacement Menu**
+
+    A separate menu for displacement has been added and replaced the previous one, it is displayed only when an object is selected, and contains a displacement activated by Extreme PBR, this was done because some people had trouble finding the displacement menu under the properties of the material editor menu.
+
+- **Added - Toggle Wireframe**
+
+    Added a button in the Displacement menu, so that you can quickly view the wireframe of the selected object
+
+- **Added - Library Path Management**
+
+    The library management system now also stores that of the expansions, if an expansion is added it is also stored inside a .json file, so that if you change the version of Blender and if you install Extreme PBR again at the first start it will recognize the library paths and set them automatically. This was done so as not to have to indicate the paths every time you reinstall Extreme PBR (The json file will be saved inside the folder above that of the addons and is named ExtremeAddons)
+
+- **Improved - Regeneration of Preview Icons**
+
+    The button to regenerate the preview of the material icons (Under the preview material), now also regenerates the icons damaged by the Beta-Alpha versions of Blender, so they are regenerated simply by copying and deleting the damaged icons and reloading the material preview.
+
+- **Improved - Total regeneration of all icons**
+
+    Always for the reason in the previous point (Damaged Previews) The *Patch previews* button now becomes *Regenerate Previews and Icons* so it will regenerate all the material icons and also those of the interface. The Beta and Alpha versions of Blender 3.6 had also damaged the icons. This allows you to regenerate and reload them
+
+- **Improved - New interface**
+
+    The interface has been divided into several UI panels so that they can be reordered and closed at will
+
+- **Added - Right Click Online Documentation Button**
+
+    On every Extreme PBR button or property, by right clicking, you can choose to open the online documentation, so you can read the explanation of each function. Note: At the moment the properties of the material sliders do not work, because they refer to the official Blender documentation
+
+- **Bugfix - Bake Dynamic Mask GPU**
+
+    It often happened that during the Make Dynamic Mask, the Bake lasted too long, this is because the Bake was sometimes set to CPU, now it is set to GPU by default, so it should work correctly and be faster
+
+- **Bugfix - Add Fx Layer, wrong map**
+
+    When adding an Fx layer, for an error, in most cases a diffuse texture was chosen, now the function that chooses the correct texture has been reversed, and it should choose the correct texture because the necessary mask should be in black and white, and only if it does not exist, in extreme cases choose the diffuse
+
+- **Improved - New Docs right click button**
+
+    In almost all the buttons and properties of Extreme PBR, a function has been added where by right clicking with the mouse, a button will be shown (Extreme PBR Online Manual) which will lead to the explanation of that button or property
+
+- **Improved - New Documentation**
+
+    The new documentation is much more complete than the previous one, in addition it is much faster, now we use a new site for the documentation which is much faster, in addition we use a Readthedocs theme just like that of Blender
+
+- **Dismissing - Support for Blender less than 3.2**
+
+    Due to the new Blender nodes, we cannot continue to offer support for versions less than Blender 3.2, the nodes present in Extreme PBR, may no longer work correctly on versions less than Blender 3.2, so now you will have to have at least a version of Blender 3.2 or higher (Better if higher)
+
 4.0.207
 -------
 

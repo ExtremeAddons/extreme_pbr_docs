@@ -7,7 +7,11 @@ New Installation (4.1.100 and up)
 .. admonition:: Video Tutorial
     :class: youtube
 
-        Here you can find the video tutorial for the first installation :ref:`first_installation`
+        .. raw:: html
+
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/C-QZ7f0DS5k" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+            web-share" allowfullscreen></iframe>
 
 .. tip::
         To check which version of Extreme PBR you are using, and therefore be sure which guide to follow, you can check
