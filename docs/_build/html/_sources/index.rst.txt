@@ -9,10 +9,10 @@
 Welcome to Extreme PBR's documentation!
 =======================================
 
-.. image:: _static/_images/arts/index_pastrokkio.webp
+.. image:: _static/_images/arts/bm_cover.webp
       :align: center
-      :width: 600
-      :alt: Index Pastrokkio
+      :width: 800
+      :alt: Blender Market Cover
 
 ------------------------------------------------------------------------------------------------------------------------
 
