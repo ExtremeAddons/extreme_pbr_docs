@@ -36,7 +36,14 @@ Pink Materials
 It may happen that there are files that referred to the material that have been moved, so the material
 no longer has a reference image.
 
-Here's how to do it: :ref:`unrecognized_material` and :ref:`pr_op_fix_materials`
+Here's how to do it: :ref:`pr_op_fix_materials`
+
+.. image:: _static/_images/troubleshooting/pink_materials.webp
+    :align: center
+    :width: 600
+    :alt: Pink Materials
+
+
 
 
 ------------------------------------------------------------------------------------------------------------------------

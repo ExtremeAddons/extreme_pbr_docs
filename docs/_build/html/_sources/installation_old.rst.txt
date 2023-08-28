@@ -1,8 +1,8 @@
 .. _install_addon_402##:
 
-======================================
-Old Installation (up to 4.0.207 only)
-======================================
+========================================
+Old Installation/Extreme Addons Account
+========================================
 
 .. tip::
         To check which version of Extreme PBR you are using, and therefore be sure which guide to follow, you can check
