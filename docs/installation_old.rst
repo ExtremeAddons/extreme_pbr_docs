@@ -19,7 +19,7 @@ Old Installation/Extreme Addons Account
             :alt: See version
 
 .. important::
-        The new version of Extreme PBR Nexus 4.1.100 has a new installation system described here :ref:`install_addon_41100`
+        The new version of Extreme PBR Nexus 4.1.X series has a new installation system described here :ref:`install_addon_41100`
         and here the installation of the libraries :ref:`install_library_41100` If you need to connect to our
         server to download the materials you can still do it, but you will have to activate the checkbox
         **I Have an Account on Extreme Addons** from the **Preferences** menu described here: :ref:`pr_op_i_have_an_account_on_extreme_addons`

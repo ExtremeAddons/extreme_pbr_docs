@@ -880,6 +880,35 @@ The World Coordinate button, if active, allows you to use the coordinates of the
 if you move the object once the button is activated, you will see that the texture will move together with the object when you move the object.
 from its position.
 
+------------------------------------------------------------------------------------------------------------------------
+
+Random Location
+****************
+
+.. image:: _static/_images/material_editor/me_random_location.webp
+    :align: center
+    :width: 400
+    :alt: Random Location
+
+|
+
+The random location allows you to move the texture randomly, provided that the objects to which this is applied
+material in which the Random is activated, are separate objects, otherwise it will not work.
+
+Here is an example of a scene with a fence with random location active, followed by an example with random location disabled:
+
+.. image:: _static/_images/material_editor/random_location_example_on.webp
+    :align: center
+    :width: 800
+    :alt: Random Location Example On
+
+
+.. image:: _static/_images/material_editor/random_location_example_off.webp
+    :align: center
+    :width: 800
+    :alt: Random Location Example Off
+
+
 
 ------------------------------------------------------------------------------------------------------------------------
 
