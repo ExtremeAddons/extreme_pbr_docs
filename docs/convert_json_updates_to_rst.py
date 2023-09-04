@@ -19,6 +19,10 @@ def update_changelog():
 
 
     with open(updates_rst, "w") as f:
+
+        # add the anchor:
+        f.write(".. _updates_log:\n")
+        f.write("\n")
         # Go ahead after the first line
         f.write("Updates Log\n")
         f.write("===========\n")

@@ -30,6 +30,30 @@ a button directly in the Extreme PBR interface:
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Relink Libraries
+-----------------
+
+If for some reason, for example:
+
+- You moved the Extreme PBR libraries to another folder
+- You copied the Extreme PBR libraries to another computer
+
+You have to indicate the paths of the Extreme PBR libraries which are usually 2 folders called respectively:
+
+- **EXTREME_PBR_DEFAULT_LIB** (Extreme PBR default library)
+- **EXTREME_PBR_USER_LIB** (Extreme PBR User Library, which could also be empty, since it is the one where you can
+  save your personal libraries)
+
+So go to ``edit--> Preferences--> Addons--> Extreme PBR --> Libraries``
+
+Now indicate the paths to the folders mentioned above.
+
+
+.. seealso::
+    Here is the link to the page that refers to the libraries section: :ref:`pr_libraries`
+
+------------------------------------------------------------------------------------------------------------------------
+
 Pink Materials
 -----------------
 
@@ -42,8 +66,6 @@ Here's how to do it: :ref:`pr_op_fix_materials`
     :align: center
     :width: 600
     :alt: Pink Materials
-
-
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -125,18 +147,52 @@ in your project is present an image of 100MB (For example) your .blend file will
 
 ------------------------------------------------------------------------------------------------------------------------
 
+What has changed from 4.0.X series to 4.1.X series?
+-----------------------------------------------------
 
-I have bought a version in which the libraries were downloaded, now I can no longer find this function.
-**************************************************************************************************************
+The new features and changes described here: :ref:`updates_log`
+
+The important change that occurs in the new Extreme PBR 4.1.x series is the fact that now the libraries are in .exapack
+format, this is a format for distributing the files of the library (Just like in HDRi Maker) that allows you to install
+the libraries in a simple and fast way.
 
 
-Don't worry, now you still have the function, you just have to go to the addon options and click on **I have an Extreme Addon account**
-here is how to do it: :ref:`pr_op_i_have_an_account_on_extreme_addons`
 
-.. note::
-    From the version of Extreme PBR Nexus 4.1.100 we decided to insert the possibility to download the libraries
-    directly from the MarketPlace from which you purchased the product. The files are in exapack format and the addon has an
-    installer that allows you to install the libraries in a simple way described here: :ref:`install_library_41100`
+.. important::
+
+        The change of course towards the distribution of libraries in .exapack format took place for 2 substantial reasons:
+
+        - Some users found that having to register for free on Extreme-Addons.com to be able to download the libraries
+          was a nuisance (And I understand it)
+
+        - In some parts of the world, the server speed for downloading libraries was slow (In any case
+          on request I have already provided the libraries several times via an alternative download. This was the most annoying
+          of the problems and I understand how annoying it was to contact me for this.
+
+        So for this reason I decided to keep the download service active for those who wanted to continue using it
+        but substantially I'm trying to move towards the .exapack format.
+
+        **My consideration:**
+
+            I apologize for the server speed inconvenience, but I really did my best to solve the problem
+            with those who are managing the site for me at the moment.
+
+        **With this distribution system you will no longer need to download the libraries from Extreme-Addons.com and
+        consequently there is no need to register on it**
+
+
+
+
+If you want to continue using the extreme-addons service
+
+- you just have to go to the addon options and click on **I have an Extreme Addon account** from the addon oprions
+  here is how to do it: :ref:`pr_op_i_have_an_account_on_extreme_addons`
+
+
+
+
+
+
 
 
 

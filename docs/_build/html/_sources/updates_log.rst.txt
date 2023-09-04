@@ -1,5 +1,44 @@
+.. _updates_log:
+
 Updates Log
 ===========
+
+4.1.101
+-------
+
+**Release date: 04-09-2023 (D/M/Y)**
+
+- **Improve - Paint Mask Between 4 Nexus Materials**
+
+    The painting mask for Nexus modules, is now much more precise, the RGB channels have been replaced by painting with the values R: (1, 0, 0) G: (1, 2, 0) B: (1,0,1) this eliminates that annoying halo of material n 4 if you are painting between 4 different material modules. Now the painting mask is much more precise. I thank the user who reported the problem, it was really useful and was solved 24 hours after the report
+
+- **Fix - Paint mode problem when you press Fill**
+
+    Pressing the FILL button when you are in Texture Paint, resuming the painting could cause the brush not to work. Now for safety, when you press FILL, the Texture Paint stops
+
+- **Fix - Search-Replace-Add Data material**
+
+    When using one of these two buttons to add or replace the data material to the object, to the added or replaced material the nodes sockets were hidden, this happened to all materials not created with Extreme PBR and was annoying, now this happens only to the Nexus type nodes, and only in the node_tree of the material not to that of the group nodes
+
+- **Improve - Make user lib Data folder**
+
+    The user library identification system has been improved from the previous version, now the USER library is automatically added to the ._data folder, while in version 4.1.100 it had to be done manually
+
+- **Added - Color Ramp Widget in the interface**
+
+    If a Color Ramp node is present in the Nexus material useful for editing the material, it can now be shown in the material editor and in general in all areas of the interface that are drawn by the appropriate function
+
+- **Added - Material Random Location**
+
+    Added a button to randomly change the location of the material in the material editor, useful especially on fences or objects that need a variation in the position of the material as they are very close together, Available in all Nexus type materials
+
+- **Improved - Paint Preview Material slot disable Render**
+
+    During the paint Mode if the Extreme PBR material slot was displayed, with each brush stroke, the material slot was updated, this slowed down the paint mode because of the render that had to be done on the material preview. Now during the paint Mode the material preview is replaced by a MATERIAL icon so that the paint is much less slow. This was done to speed up the paint mode. Pay attention to the Blender Material Slot, if opened the problem will persist, it is advisable to close any interface that shows the material slot, this will slow things down a lot if you are using the paint mode.
+
+- **Bug Fix - Microdisplacement with multiple modules**
+
+    When a Microdisplacement was added to the material, and then a module was added for the texture paint, the Displacement node was disconnected. It was fixed by updating the function that connects the sockets from the mixer to the other nodes
 
 4.1.100
 -------

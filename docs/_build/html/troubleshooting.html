@@ -80,13 +80,14 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Troubleshooting</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#i-do-not-receive-mail-from-blendermarket">I do not receive mail from BlenderMarket</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#find-options-menu">Find Options Menu</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#relink-libraries">Relink Libraries</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#pink-materials">Pink Materials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#black-materials">Black Materials</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#moving-libraries-to-another-computer">Moving libraries to another computer</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#why-if-i-export-the-project-to-another-computer-i-can-no-longer-see-the-materials">Why if I export the project to another computer I can no longer see the materials?</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#i-have-bought-a-version-in-which-the-libraries-were-downloaded-now-i-can-no-longer-find-this-function">I have bought a version in which the libraries were downloaded, now I can no longer find this function.</a></li>
 </ul>
 </li>
+<li class="toctree-l2"><a class="reference internal" href="#what-has-changed-from-4-0-x-series-to-4-1-x-series">What has changed from 4.0.X series to 4.1.X series?</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
@@ -138,6 +139,27 @@ Question and answer</p>
 <p>To go to the Extreme PBR options, you have to go to the addon preferences. But to make this process easier there is
 a button directly in the Extreme PBR interface:</p>
 <a class="reference internal image-reference" href="_images/options_button_01.webp"><img alt="Options Button 01" class="align-center" src="_images/options_button_01.webp" style="width: 600px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="relink-libraries">
+<h2>Relink Libraries<a class="headerlink" href="#relink-libraries" title="Permalink to this heading"></a></h2>
+<p>If for some reason, for example:</p>
+<ul class="simple">
+<li><p>You moved the Extreme PBR libraries to another folder</p></li>
+<li><p>You copied the Extreme PBR libraries to another computer</p></li>
+</ul>
+<p>You have to indicate the paths of the Extreme PBR libraries which are usually 2 folders called respectively:</p>
+<ul class="simple">
+<li><p><strong>EXTREME_PBR_DEFAULT_LIB</strong> (Extreme PBR default library)</p></li>
+<li><p><strong>EXTREME_PBR_USER_LIB</strong> (Extreme PBR User Library, which could also be empty, since it is the one where you can
+save your personal libraries)</p></li>
+</ul>
+<p>So go to <code class="docutils literal notranslate"><span class="pre">edit--&gt;</span> <span class="pre">Preferences--&gt;</span> <span class="pre">Addons--&gt;</span> <span class="pre">Extreme</span> <span class="pre">PBR</span> <span class="pre">--&gt;</span> <span class="pre">Libraries</span></code></p>
+<p>Now indicate the paths to the folders mentioned above.</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Here is the link to the page that refers to the libraries section: <a class="reference internal" href="preferences.html#pr-libraries"><span class="std std-ref">Libraries</span></a></p>
+</div>
 </section>
 <hr class="docutils" />
 <section id="pink-materials">
@@ -208,18 +230,39 @@ it could be that in the folders mentioned above, the “._data” folders are mi
 in your project is present an image of 100MB (For example) your .blend file will become 100MB more.</p>
 <a class="reference internal image-reference" href="_images/auto_pack_resources_01.png"><img alt="Auto Pack Resources 01" class="align-center" src="_images/auto_pack_resources_01.png" style="width: 600px;" /></a>
 </section>
-<hr class="docutils" />
-<section id="i-have-bought-a-version-in-which-the-libraries-were-downloaded-now-i-can-no-longer-find-this-function">
-<h3>I have bought a version in which the libraries were downloaded, now I can no longer find this function.<a class="headerlink" href="#i-have-bought-a-version-in-which-the-libraries-were-downloaded-now-i-can-no-longer-find-this-function" title="Permalink to this heading"></a></h3>
-<p>Don’t worry, now you still have the function, you just have to go to the addon options and click on <strong>I have an Extreme Addon account</strong>
-here is how to do it: <a class="reference internal" href="preferences.html#pr-op-i-have-an-account-on-extreme-addons"><span class="std std-ref">I Have an Account on Extreme Addons</span></a></p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>From the version of Extreme PBR Nexus 4.1.100 we decided to insert the possibility to download the libraries
-directly from the MarketPlace from which you purchased the product. The files are in exapack format and the addon has an
-installer that allows you to install the libraries in a simple way described here: <a class="reference internal" href="installation.html#install-library-41100"><span class="std std-ref">Install The library</span></a></p>
-</div>
 </section>
+<hr class="docutils" />
+<section id="what-has-changed-from-4-0-x-series-to-4-1-x-series">
+<h2>What has changed from 4.0.X series to 4.1.X series?<a class="headerlink" href="#what-has-changed-from-4-0-x-series-to-4-1-x-series" title="Permalink to this heading"></a></h2>
+<p>The new features and changes described here: <a class="reference internal" href="updates_log.html#updates-log"><span class="std std-ref">Updates Log</span></a></p>
+<p>The important change that occurs in the new Extreme PBR 4.1.x series is the fact that now the libraries are in .exapack
+format, this is a format for distributing the files of the library (Just like in HDRi Maker) that allows you to install
+the libraries in a simple and fast way.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>The change of course towards the distribution of libraries in .exapack format took place for 2 substantial reasons:</p>
+<ul class="simple">
+<li><p>Some users found that having to register for free on Extreme-Addons.com to be able to download the libraries
+was a nuisance (And I understand it)</p></li>
+<li><p>In some parts of the world, the server speed for downloading libraries was slow (In any case
+on request I have already provided the libraries several times via an alternative download. This was the most annoying
+of the problems and I understand how annoying it was to contact me for this.</p></li>
+</ul>
+<p>So for this reason I decided to keep the download service active for those who wanted to continue using it
+but substantially I’m trying to move towards the .exapack format.</p>
+<p><strong>My consideration:</strong></p>
+<blockquote>
+<div><p>I apologize for the server speed inconvenience, but I really did my best to solve the problem
+with those who are managing the site for me at the moment.</p>
+</div></blockquote>
+<p><strong>With this distribution system you will no longer need to download the libraries from Extreme-Addons.com and
+consequently there is no need to register on it</strong></p>
+</div>
+<p>If you want to continue using the extreme-addons service</p>
+<ul class="simple">
+<li><p>you just have to go to the addon options and click on <strong>I have an Extreme Addon account</strong> from the addon oprions
+here is how to do it: <a class="reference internal" href="preferences.html#pr-op-i-have-an-account-on-extreme-addons"><span class="std std-ref">I Have an Account on Extreme Addons</span></a></p></li>
+</ul>
 </section>
 </section>
 
