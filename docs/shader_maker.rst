@@ -34,6 +34,12 @@ This special category contains some useful tools to create and import shaders.
 Shader Maker
 ========================
 
+.. admonition:: Video Tutorial
+    :class: youtube
+
+        You can find the video tutorial about Shader Maker here :ref:`tutorial_shader_maker`
+
+
 
 This tool of Extreme PBR allows you to create a material on the fly if you have the textures on your computer
 this tool recognizes the names of the textures (Maps) based on the suffix or prefix if it exists, so it is able to place
