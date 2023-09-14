@@ -4,6 +4,12 @@
 New Installation (4.1.100 and up)
 ===================================
 
+.. important::
+        If you are coming from a version prior to 4.1.100 of Extreme PBR and want to update the addon, you do not need to
+        download the libraries again just update the addon to the latest version and reconnect the libraries! You can
+        synchronize your libraries with the exapack packages without having to download them👍  In order to synchronize
+        your libraries with the exapack packages check this chapter :ref:`try_compile_exapack`
+
 .. admonition:: Video Tutorial
     :class: youtube
 

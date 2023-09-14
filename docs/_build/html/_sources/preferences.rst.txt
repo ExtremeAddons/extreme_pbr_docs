@@ -813,6 +813,8 @@ This button allows you to check if there are updates on the libraries.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _try_compile_exapack:
+
 Try compile Exapack
 ****************************
 
