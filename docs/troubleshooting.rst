@@ -189,6 +189,55 @@ If you want to continue using the extreme-addons service
   here is how to do it: :ref:`pr_op_i_have_an_account_on_extreme_addons`
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+
+Fix Materials of Extreme PBR created with the version of Blender 3.x.x in Blender 4.x.x or vice versa
+------------------------------------------------------------------------------------------------------------------------
+
+
+.. image:: _static/_images/troubleshooting/wrong_nexus_system_example_01.webp
+    :align: center
+    :width: 600
+    :alt: Wrong Nexus System Example 01
+
+|
+
+Between versions 3.x.x and 4.x.x of Blender the Principled BSDF node of Blender has changed, there are 2 ways to solve
+this problem, Extreme PBR will automatically recognize the version in use and will convert the materials in order to
+make them compatible with the version of Blender you are using.
+
+- **Solution 1:**
+
+    - Select the object that contains the material, if the nodes present are not compatible select the material and press
+      the **Convert Module System** button this button will convert all the materials present in the project to the system
+      of nodes necessary to work correctly in the version you are using of Blender.
+
+    .. image:: _static/_images/troubleshooting/convert_module_system_button_01.webp
+        :align: center
+        :width: 400
+        :alt: Convert Module System Button 01
+
+
+
+- **Solution 2:**
+
+    - Go to the Extreme PBR Options menu and press the **Adjust all material node tree** button this button will convert
+      all the materials present in the project to the node system necessary to work correctly in the version you are using
+      of Blender. Here is the reference to the indicated button :ref:`pr_op_adjust_all_material_node_tree`
+
+    .. image:: _static/_images/troubleshooting/open_options_02.webp
+        :align: center
+        :width: 400
+        :alt: Open Options 02
+
+
+
+
+
+
+
+
 
 
 

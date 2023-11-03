@@ -886,25 +886,6 @@ the reference via the button. A popup will open with the link to the documentati
       :width: 600
       :alt: online manual
 
-|
-
-
-Here are the hot features that include Extreme PBR Nexus:
-
-- Library: with 1845 Materials
-- Displacement: Feature che funziona su tutti i materiali basati su Texture di Extreme PBR
-- Bake: Bake di tutti i materiali presenti nell'oggetto selezionato
-- Shader Maker: Importa texture e crea il materiale in automatico
-- Shader Overlay: Aggiungi qualsiasi materiale sopra gli oggetti nella scena (Anche tutti se vuoi) e mixa il materiale, questa funzione salva un sacco di tempo.
-- Material Override: Sostituisci al volo tutti i materiali della scena con un materiale a tua scelta per una rapida sostituzione non distruttiva e temporanea. Questa feature
-                     sfrutta i Geometry nodes
-- Material Editor Panel: Questo pannello è stato disegnato appositamente e funziona in base ai nodi di Extreme PBR del materiale. Il materiali sfruttano il design per
-                         essere più intuitivi e facili da usare.
-- Ci sono molte altre funzioni per risparmiare tempo, non le elencherò tutte qui, ma se vuoi puoi dare una occhiata alla documentazione, li trovi tutto in un linguaggio piu tecnico.
-
-
-Translate:
-
 
 
 

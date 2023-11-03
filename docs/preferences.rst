@@ -542,6 +542,11 @@ with Extreme PBR) Below is an example of what this button does:
     or vice versa, this button analyzes all the materials and tries to find the "Unknown" nodes and replaces them with a node
     compatible.
 
+- **Convert Nexus Module System**
+    It can happen that by switching from one version of Blender 3.x Series to 4.x Series, some nodes are different, this button
+    analyzes all the materials and tries to find the "Nexus Module System" nodes and replaces them with the new nodes, or
+    vice versa, if you switch from 4.x Series to 3.x Series.
+
 - **Reconnect the disconnected nodes**
     It could happen that involuntarily (Or for some bug of abnormal stop during the creation of the material) some
     nodes have been disconnected or not connected, this button analyzes all the materials and tries to find the disconnected nodes

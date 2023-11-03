@@ -88,6 +88,7 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#what-has-changed-from-4-0-x-series-to-4-1-x-series">What has changed from 4.0.X series to 4.1.X series?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fix-materials-of-extreme-pbr-created-with-the-version-of-blender-3-x-x-in-blender-4-x-x-or-vice-versa">Fix Materials of Extreme PBR created with the version of Blender 3.x.x in Blender 4.x.x or vice versa</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
@@ -262,6 +263,39 @@ consequently there is no need to register on it</strong></p>
 <ul class="simple">
 <li><p>you just have to go to the addon options and click on <strong>I have an Extreme Addon account</strong> from the addon oprions
 here is how to do it: <a class="reference internal" href="preferences.html#pr-op-i-have-an-account-on-extreme-addons"><span class="std std-ref">I Have an Account on Extreme Addons</span></a></p></li>
+</ul>
+</section>
+<hr class="docutils" />
+<section id="fix-materials-of-extreme-pbr-created-with-the-version-of-blender-3-x-x-in-blender-4-x-x-or-vice-versa">
+<h2>Fix Materials of Extreme PBR created with the version of Blender 3.x.x in Blender 4.x.x or vice versa<a class="headerlink" href="#fix-materials-of-extreme-pbr-created-with-the-version-of-blender-3-x-x-in-blender-4-x-x-or-vice-versa" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/wrong_nexus_system_example_01.webp"><img alt="Wrong Nexus System Example 01" class="align-center" src="_images/wrong_nexus_system_example_01.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Between versions 3.x.x and 4.x.x of Blender the Principled BSDF node of Blender has changed, there are 2 ways to solve
+this problem, Extreme PBR will automatically recognize the version in use and will convert the materials in order to
+make them compatible with the version of Blender you are using.</p>
+<ul>
+<li><p><strong>Solution 1:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Select the object that contains the material, if the nodes present are not compatible select the material and press
+the <strong>Convert Module System</strong> button this button will convert all the materials present in the project to the system
+of nodes necessary to work correctly in the version you are using of Blender.</p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/convert_module_system_button_01.webp"><img alt="Convert Module System Button 01" class="align-center" src="_images/convert_module_system_button_01.webp" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
+<li><p><strong>Solution 2:</strong></p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Go to the Extreme PBR Options menu and press the <strong>Adjust all material node tree</strong> button this button will convert
+all the materials present in the project to the node system necessary to work correctly in the version you are using
+of Blender. Here is the reference to the indicated button <a class="reference internal" href="preferences.html#pr-op-adjust-all-material-node-tree"><span class="std std-ref">Adjust All Material Node Tree</span></a></p></li>
+</ul>
+<a class="reference internal image-reference" href="_images/open_options_02.webp"><img alt="Open Options 02" class="align-center" src="_images/open_options_02.webp" style="width: 400px;" /></a>
+</div></blockquote>
+</li>
 </ul>
 </section>
 </section>
