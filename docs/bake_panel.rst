@@ -460,7 +460,6 @@ So for each map selected for the Bake, Extreme PBR will set the options and perf
 Bake Maps Combined mode
 ------------------------
 
-
 .. important::
         This mode necessarily needs to have activated at least one of the 2 options **Direct Light** or **Indirect Light**,
         otherwise the Bake will not even start.

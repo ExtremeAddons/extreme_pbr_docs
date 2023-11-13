@@ -834,7 +834,7 @@ You can find the section dedicated to the Mapping Editor here: :ref:`mapping_edi
 Box Utility Dropdown Menu
 *************************
 
-.. image:: _static/_images/main_panel/box_utility_dropdown_menu_button.jpg
+.. image:: _static/_images/main_panel/box_utility_dropdown_menu_button.webp
     :align: center
     :width: 400
     :alt: Box Utility Dropdown Menu
@@ -843,13 +843,6 @@ Box Utility Dropdown Menu
 
 From this button, you can access the drop-down menu, which contains other useful functions.
 
-
-.. image:: _static/_images/main_panel/box_utility_dropdown_menu.jpg
-    :align: center
-    :width: 400
-    :alt: Box Utility Dropdown Menu
-
-|
 
 Remove unused slots
 ##########################
@@ -867,6 +860,21 @@ This button is the equivalent of the "Purge" button present in Blender in Orphan
     :align: center
     :width: 400
     :alt: Purge Orphan Data Standard
+
+|
+
+Show Material Preview
+##########################
+
+If active, it shows the material previews in the material slots, it is disabled by default to save resources, since
+the material previews are updated as soon as they are modified, so if you are working from the Material Editor on the properties
+of the material these will be updated often, slightly slowing down the interface, leave it disabled to save resources.
+
+.. image:: _static/_images/main_panel/show_preview_material_example_01.webp
+    :align: center
+    :width: 800
+    :alt: Show Preview Material Example 01
+
 
 
 ------------------------------------------------------------------------------------------------------------------------

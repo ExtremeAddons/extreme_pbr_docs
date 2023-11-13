@@ -4,6 +4,26 @@
 Mapping Editor
 ================
 
+.. image:: _static/_images/mapping_editor/mapping_editor_panel.webp
+    :align: center
+    :width: 400
+    :alt: Mapping Editor Panel
+
+|
+
+Through this panel you can edit the UV mapping, you can also manipulate the UV mapping if the material does not come
+from Extreme PBR, but make sure that the material is UV Mapped Based.
+
+If you have applied the material with Extreme PBR, make sure you are in UV mode from the Material editor panel (All
+materials in the Extreme PBR library based on Textures, have a preset UV mapping)
+
+.. image:: _static/_images/mapping_editor/coordinate_type_uv_01.webp
+    :align: center
+    :width: 500
+    :alt: Coordinate Type UV 01
+
+|
+
 .. note::
     In order to access the **Mapping Editor** panel you must be in the **Main Panel** and press the button with the symbol
     of the Texture. Here the **Main Panel** section: :ref:`mapping_editor_button`
@@ -18,12 +38,6 @@ This tool was built to **Scale**, **Move** and **Rotate** UV maps on the fly wit
 in the UV editor. Clearly it is not a substitute for the UV editor, but it contains the most used functions, especially in the field
 of architecture.
 
-.. image:: _static/_images/mapping_editor/mapping_editor_panel.jpg
-    :align: center
-    :width: 800
-    :alt: Mapping Editor Panel
-
-|
 
 .. important::
         This tool has nothing to do with **Scale** **Rotate** or **Location** of the material, this tool is
@@ -79,30 +93,6 @@ Using the Mapping Editor lets you use the :ref:`mapping_method_01`: **manipulati
 
 ------------------------------------------------------------------------------------------------------------------------
 
-.. _me_uv_mapping_type:
-
-UV Mapping Type
-----------------
-
-.. image:: _static/_images/mapping_editor/uv_mapping_type.jpg
-    :align: center
-    :width: 400
-    :alt: UV Mapping Type
-
-|
-
-This selector allows you to choose the type of Mapping you want to use on the selected active object.
-
-Bellow the corresponding example of a **UV**, **Box**, **Sphere** and **Tube** (Cylinder) mapping.
-
-.. image:: _static/_images/mapping_editor/mapping_types_example_01.jpg
-    :align: center
-    :width: 800
-    :alt: UV Mapping Type
-
-
-------------------------------------------------------------------------------------------------------------------------
-
 Reset All Parameter
 ---------------------
 
@@ -121,7 +111,7 @@ on the object.
 Select Face
 ------------
 
-.. image:: _static/_images/mapping_editor/select_face_01.jpg
+.. image:: _static/_images/mapping_editor/select_face_01.webp
     :align: center
     :width: 400
     :alt: Select Face 01
@@ -136,7 +126,7 @@ material list: :ref:`material_list`
 Lock X/Y
 ----------
 
-.. image:: _static/_images/mapping_editor/lock_x_y_01.jpg
+.. image:: _static/_images/mapping_editor/lock_x_y_01.webp
     :align: center
     :width: 400
     :alt: Lock x y 01
@@ -152,7 +142,7 @@ scale only along the other axis during the UVS Size operation described below
 UVS Size
 ----------
 
-.. image:: _static/_images/mapping_editor/uv_size_01.jpg
+.. image:: _static/_images/mapping_editor/uv_size_01.webp
     :align: center
     :width: 400
     :alt: UV Size 01
@@ -166,7 +156,7 @@ This resizes the UV map, if you increase the value, the UV map enlarges, if you 
 UVs Pos X/Y
 ------------
 
-.. image:: _static/_images/mapping_editor/uvs_pos_x_y_01.jpg
+.. image:: _static/_images/mapping_editor/uvs_pos_x_y_01.webp
     :align: center
     :width: 400
     :alt: UVs Pos X Y 01
@@ -180,7 +170,7 @@ These two sliders are used to translate the UV map on its X and Y axes depending
 UVs Rot
 --------
 
-.. image:: _static/_images/mapping_editor/uvs_rot.jpg
+.. image:: _static/_images/mapping_editor/uvs_rot.webp
     :align: center
     :width: 400
     :alt: UV Rot
@@ -195,7 +185,7 @@ This slider is used to rotate the UV map.
 Cube Projection
 ----------------
 
-.. image:: _static/_images/mapping_editor/cube_projection.jpg
+.. image:: _static/_images/mapping_editor/cube_projection.webp
     :align: center
     :width: 400
     :alt: Cube Projection
@@ -210,7 +200,7 @@ of the object.
 Smart Projection
 -----------------
 
-.. image:: _static/_images/mapping_editor/smart_projection.jpg
+.. image:: _static/_images/mapping_editor/smart_projection.webp
     :align: center
     :width: 400
     :alt: Smart Projection
@@ -218,29 +208,3 @@ Smart Projection
 |
 
 This button allows you to make a smart mapping on the fly. Useful to re-project a UV mapping when you modify the geometry
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-Mapping Box Type
------------------
-
-.. image:: _static/_images/mapping_editor/mapping_box_type.jpg
-    :align: center
-    :width: 400
-    :alt: Mapping Box Type
-
-|
-
-
-In this mode, the addon sets the nodes with image textures (if present) in **Box** mode. In addition, the **Blend** slider
-allows you to control the corresponding Blend values of the image texture nodes.
-
-
-Here the Material nodes in Box Mode:
-
-.. image:: _static/_images/mapping_editor/box_blend_example.jpg
-    :align: center
-    :width: 800
-    :alt: Box Blend Example
-

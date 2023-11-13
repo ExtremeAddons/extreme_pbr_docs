@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Material Editor &mdash; Extreme PBR 4.1.101 documentation</title>
+  <title>Material Editor &mdash; Extreme PBR 4.1.110 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
@@ -68,6 +68,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#reset-values">Reset Values</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#info">Info</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#tips">Tips</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#node-group-popover">Node Group Popover</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#texture-manager-button">Texture Manager Button</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#diffuse-color">Diffuse Color</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#color-lab-button">Color Lab Button</a></li>
@@ -75,7 +76,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#colorize-sample">Colorize Sample</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#emission">Emission</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#transparent">Transparent</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#subsurface-radius">Subsurface/Radius</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#subsurface">Subsurface</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#ambient-occlusion">Ambient Occlusion</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#metallic">Metallic</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#specular-tint">Specular/Tint</a></li>
@@ -83,6 +84,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#sheen-sheen-tint">Sheen / Sheen Tint</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#clearcoat-roughness">Clearcoat / Roughness</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#transmission">Transmission</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ior">IOR</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#normal">Normal</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#bump-distance">Bump / Distance</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#locations-xyz">Locations XYZ</a></li>
@@ -93,6 +95,14 @@
 <li class="toctree-l4"><a class="reference internal" href="#random-location">Random Location</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#projection-settings">Projection Settings</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#coordinate">Coordinate</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#projection">Projection</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#box-blend">Box Blend</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#normal-map-space">Normal Map Space</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#convert-module-system">Convert Module System</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#add-fx-layer">Add Fx Layer</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#adjust-node-tree">Adjust Node Tree</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#fx-layer">Fx Layer</a></li>
@@ -190,7 +200,7 @@
 <span id="me-material-nexus-type"></span><h2>Material Nexus type<a class="headerlink" href="#material-nexus-type" title="Permalink to this heading"></a></h2>
 <p>If you are in Nexus mode, or have applied materials that support nexus modules, The panel looks like this:</p>
 <p><strong>This is the classic Nexus panel of Texture-based materials</strong></p>
-<a class="reference internal image-reference" href="_images/material_editor_before_add_module.jpg"><img alt="Material Editor Before Add Module" class="align-center" src="_images/material_editor_before_add_module.jpg" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/material_editor_before_add_module.webp"><img alt="Material Editor Before Add Module" class="align-center" src="_images/material_editor_before_add_module.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -292,8 +302,52 @@ so by pressing the hint buttons, you will see a window appear with a description
 <a class="reference internal image-reference" href="_images/me_tips.png"><img alt="Tips" class="align-center" src="_images/me_tips.png" style="width: 600px;" /></a>
 <hr class="docutils" />
 </section>
+<section id="node-group-popover">
+<span id="id7"></span><h4>Node Group Popover<a class="headerlink" href="#node-group-popover" title="Permalink to this heading"></a></h4>
+<a class="reference internal image-reference" href="_images/ng_popover_01.webp"><img alt="Node Group Popover" class="align-center" src="_images/ng_popover_01.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="use-sockets">
+<h5>Use Sockets<a class="headerlink" href="#use-sockets" title="Permalink to this heading"></a></h5>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Not all Nexus Modules will have these options available, all modules created as textures based materials
+will have these options available, procedural ones will not necessarily have them</p>
+</div>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Form this section you can activate and deactivate the sockets to save resources and space in the interface.</p>
+<p><strong>SUBSURFACE</strong>, <strong>TRANSMISSION</strong>, <strong>COAT</strong>, <strong>SHEEN</strong>, <strong>EMISSION</strong></p>
+<p>When you add a Texture type material in Nexus mode, these values are managed intelligently, based on which textures
+are in the material and some input values of the group node, so you won’t have to worry too much about this.</p>
+<ul>
+<li><p><strong>Example 1</strong></p>
+<blockquote>
+<div><p>All values are disabled, the links connected to the BSDF are limited to the basic ones necessary, the interface in
+<strong>Material Editor</strong> panel remains more compact as it will not show the inputs that refer to those values.</p>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="_images/use_sockets_all_off_01.webp"><img alt="Use Sockets All Off 01" class="align-center" src="_images/use_sockets_all_off_01.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul>
+<li><p><strong>Example 2</strong></p>
+<blockquote>
+<div><p>All values are enabled, all links that refer to the sockets are connected to the BSDF, the interface in
+<strong>Material Editor</strong> panel will be larger as it will show all the inputs that refer to those values.</p>
+</div></blockquote>
+</li>
+</ul>
+<a class="reference internal image-reference" href="_images/use_sockets_all_on_01.webp"><img alt="Use Sockets All On 01" class="align-center" src="_images/use_sockets_all_on_01.webp" style="width: 800px;" /></a>
+<hr class="docutils" />
+</section>
+</section>
 <section id="texture-manager-button">
-<span id="id7"></span><h4>Texture Manager Button<a class="headerlink" href="#texture-manager-button" title="Permalink to this heading"></a></h4>
+<span id="id8"></span><h4>Texture Manager Button<a class="headerlink" href="#texture-manager-button" title="Permalink to this heading"></a></h4>
 <p>The texture manager buttons allows you to access the <a class="reference internal" href="texture_manager.html#texture-manager-panel"><span class="std std-ref">Texture Manager Panel</span></a> and manage the textures you are using in your material.
 note well, texture manager is explained here: <a class="reference internal" href="texture_manager.html#texture-manager-panel"><span class="std std-ref">Texture Manager Panel</span></a></p>
 <p>When you find these buttons next to the sliders, it means that these sliders are linked to a texture, and therefore
@@ -309,7 +363,7 @@ you can manage the texture through the texture manager.</p>
 <hr class="docutils" />
 </section>
 <section id="diffuse-color">
-<span id="id8"></span><h4>Diffuse Color<a class="headerlink" href="#diffuse-color" title="Permalink to this heading"></a></h4>
+<span id="id9"></span><h4>Diffuse Color<a class="headerlink" href="#diffuse-color" title="Permalink to this heading"></a></h4>
 <p>This color box allows you to choose a color to apply to the diffuse texture, in case there is no texture, this takes the place of the texture as a solid color.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
@@ -319,14 +373,14 @@ you can manage the texture through the texture manager.</p>
 <hr class="docutils" />
 </section>
 <section id="color-lab-button">
-<span id="id9"></span><h4>Color Lab Button<a class="headerlink" href="#color-lab-button" title="Permalink to this heading"></a></h4>
+<span id="id10"></span><h4>Color Lab Button<a class="headerlink" href="#color-lab-button" title="Permalink to this heading"></a></h4>
 <p>Color Lab Button gives you access to the popup panel for color management, you can find a detailed explanation
 here: <a class="reference internal" href="color_lab.html#color-lab"><span class="std std-ref">Color Lab</span></a></p>
 <a class="reference internal image-reference" href="_images/color_lab_button.jpg"><img alt="Color Lab Button" class="align-center" src="_images/color_lab_button.jpg" style="width: 800px;" /></a>
 <hr class="docutils" />
 </section>
 <section id="colorize-strength">
-<span id="id10"></span><h4>Colorize Strength<a class="headerlink" href="#colorize-strength" title="Permalink to this heading"></a></h4>
+<span id="id11"></span><h4>Colorize Strength<a class="headerlink" href="#colorize-strength" title="Permalink to this heading"></a></h4>
 <p>This slider allows you to adjust the strength of the color you have chosen in the <a class="reference internal" href="#diffuse-color"><span class="std std-ref">Diffuse Color</span></a> box.</p>
 <a class="reference internal image-reference" href="_images/me_colorize_strength.webp"><img alt="Colorize Strength" class="align-center" src="_images/me_colorize_strength.webp" style="width: 400px;" /></a>
 <div class="line-block">
@@ -352,6 +406,11 @@ replaced.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In <strong>Cycles Render</strong> the Emission also acts as lighting, in <strong>Eevee</strong> no, in <strong>Eevee</strong> it is only a visual effect.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In order to activate the emission of a material that is not emissive by Default, make sure to activate the <strong>Emission</strong> button from the
+<a class="reference internal" href="#node-group-popover"><span class="std std-ref">Node Group Popover</span></a> menu and check “Emission”</p>
 </div>
 <a class="reference internal image-reference" href="_images/me_emission.webp"><img alt="Emission" class="align-center" src="_images/me_emission.webp" style="width: 400px;" /></a>
 <div class="line-block">
@@ -417,9 +476,14 @@ Is CLIP sets as transparent only pixels under a threshold value (useful for text
 </section>
 </section>
 <hr class="docutils" />
-<section id="subsurface-radius">
-<h4>Subsurface/Radius<a class="headerlink" href="#subsurface-radius" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_subsurface_radius.webp"><img alt="Subsurface" class="align-center" src="_images/me_subsurface_radius.webp" style="width: 400px;" /></a>
+<section id="subsurface">
+<h4>Subsurface<a class="headerlink" href="#subsurface" title="Permalink to this heading"></a></h4>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In order to activate the Subsurface of a material that is not Subsurface by Default, make sure to activate the <strong>Subsurface</strong> button from the
+<a class="reference internal" href="#node-group-popover"><span class="std std-ref">Node Group Popover</span></a> menu and check “Subsurface”</p>
+</div>
+<a class="reference internal image-reference" href="_images/me_subsurface_01.webp"><img alt="Subsurface" class="align-center" src="_images/me_subsurface_01.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -427,13 +491,73 @@ Is CLIP sets as transparent only pixels under a threshold value (useful for text
 Subsurface Scattering is the ability of a material to let light pass through it, but not transparently,
 but in a diffuse way, as if the light were diffused inside the material, this is very useful for materials
 like skin, leaves, ears, rubber, plastic, etc.</p>
-<p><strong>Example of Subsurface Scattering:</strong></p>
-<a class="reference internal image-reference" href="_images/subsurface_suzanne.jpg"><img alt="Subsurface Example" class="align-center" src="_images/subsurface_suzanne.jpg" style="width: 400px;" /></a>
+<p><strong>Subsurface Method:</strong></p>
+<p>Rendering method to simulate subsurface scattering.</p>
+<a class="reference internal image-reference" href="_images/me_subsurface_method.webp"><img alt="Subsurface Method" class="align-center" src="_images/me_subsurface_method.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>EEVEE does not support the Random Walk methods.</p>
+</div>
+<ul>
+<li><p><strong>Christensen-Burley</strong></p>
+<blockquote>
+<div><p>An approximation to physically-based volume scattering. This method is less accurate than Random Walk however,
+in some situations this method will resolve noise faster.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Random Walk (Fixed Radius)</strong></p>
+<blockquote>
+<div><p>Provides accurate results for thin and curved objects. Random Walk uses true volumetric scattering inside the
+mesh, which means that it works best for closed meshes. Overlapping faces and holes in the mesh can cause problems.</p>
+</div></blockquote>
+</li>
+<li><p><strong>Random Walk</strong></p>
+<blockquote>
+<div><p>Behaves similarly to Random Walk (Fixed Radius) but modulates the Radius based on the Color, Anisotropy, and IOR.
+This method thereby attempts to retain greater surface detail and color than Random Walk (Fixed Radius).</p>
+</div></blockquote>
+</li>
+</ul>
+<p><strong>Subsurface Radius:</strong></p>
+<a class="reference internal image-reference" href="_images/me_subsurface_radius.webp"><img alt="Subsurface Radius" class="align-center" src="_images/me_subsurface_radius.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>In order to work into Eevee Engine, you need to Activate the <strong>Translucency</strong> button on the right of the <strong>Subsurface</strong> button</p>
+<a class="reference internal image-reference" href="_images/me_translucency.webp"><img alt="Translucency" class="align-center" src="_images/me_translucency.webp" style="width: 600px;" /></a>
+</div>
+<p><strong>Subsurface Strength:</strong></p>
+<p>The strength of the subsurface scattering effect, questo valore da Blender 4.0 Controlla anche il valore “Scale” del nuovo
+Principle BSDF, qualsiasi valore Superiore a 0 Attiva il Subsurface Weight e i valori vanno da 0-10 Espressi in unità di
+misura del progetto.</p>
+<a class="reference internal image-reference" href="_images/me_subsurface_strength.webp"><img alt="Subsurface Strength" class="align-center" src="_images/me_subsurface_strength.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Sss IOR: (Cycles Only)</strong></p>
+<p>Index of refraction for Subsurface Scattering. (Available only in Random Walk (Skin) mode)</p>
+<a class="reference internal image-reference" href="_images/me_subsurface_ior.webp"><img alt="Subsurface IOR" class="align-center" src="_images/me_subsurface_ior.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Sss Anisotropy: (Cycles Only)</strong></p>
+<p>Controls the directionality of subsurface scattering. (Available only in Random Walk modes)</p>
+<a class="reference internal image-reference" href="_images/me_subsurface_anisotropy.webp"><img alt="Subsurface Anisotropy" class="align-center" src="_images/me_subsurface_anisotropy.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Example of Subsurface Scattering with a light behind the object:</strong></p>
+<a class="reference internal image-reference" href="_images/subsurface_suzanne.jpg"><img alt="Subsurface Example" class="align-center" src="_images/subsurface_suzanne.jpg" style="width: 600px;" /></a>
 </section>
 <hr class="docutils" />
 <section id="ambient-occlusion">
 <h4>Ambient Occlusion<a class="headerlink" href="#ambient-occlusion" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_ambient_occlusion.webp"><img alt="Ambient Occlusion" class="align-center" src="_images/me_ambient_occlusion.webp" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/me_ambient_occlusion.webp"><img alt="Ambient Occlusion" class="align-center" src="_images/me_ambient_occlusion.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -445,7 +569,7 @@ the calculation of the ambient occlusion is quite approximate, this slider will 
 <hr class="docutils" />
 <section id="metallic">
 <h4>Metallic<a class="headerlink" href="#metallic" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_metallic.webp"><img alt="Metallic" class="align-center" src="_images/me_metallic.webp" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/me_metallic.webp"><img alt="Metallic" class="align-center" src="_images/me_metallic.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -465,7 +589,7 @@ In short, everything except total black 😊</p>
 <hr class="docutils" />
 <section id="specular-tint">
 <h4>Specular/Tint<a class="headerlink" href="#specular-tint" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_specular_tint.webp"><img alt="Specular Tint" class="align-center" src="_images/me_specular_tint.webp" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/me_specular_tint.webp"><img alt="Specular Tint" class="align-center" src="_images/me_specular_tint.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -475,8 +599,8 @@ In short, everything except total black 😊</p>
 <p>This slider adjusts the specular of the material, if a specular map is present, then this slider will only adjust
 some areas of the material, while if it is not present, then it will adjust the general specular of the material.</p>
 </section>
-<section id="id11">
-<h5>Specular Tint<a class="headerlink" href="#id11" title="Permalink to this heading"></a></h5>
+<section id="me-specular-tint">
+<span id="id12"></span><h5>Specular Tint<a class="headerlink" href="#me-specular-tint" title="Permalink to this heading"></a></h5>
 <p>Mix between white and the base color in order to tint the specular highlights.</p>
 <p><strong>Example between Specular tint at 0.0 and 1.0, on the left 0.0, on the right 1.0</strong></p>
 <a class="reference internal image-reference" href="_images/specular_tint_example.webp"><img alt="Specular Tint Example" class="align-center" src="_images/specular_tint_example.webp" style="width: 800px;" /></a>
@@ -485,7 +609,7 @@ some areas of the material, while if it is not present, then it will adjust the 
 </section>
 <section id="roughness">
 <span id="me-roughness"></span><h4>Roughness<a class="headerlink" href="#roughness" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_roughness.webp"><img alt="Roughness" class="align-center" src="_images/me_roughness.webp" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/me_roughness.webp"><img alt="Roughness" class="align-center" src="_images/me_roughness.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -497,7 +621,12 @@ some areas of the material, while if it is not present, then it will adjust the 
 <hr class="docutils" />
 <section id="sheen-sheen-tint">
 <h4>Sheen / Sheen Tint<a class="headerlink" href="#sheen-sheen-tint" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_sheen_and_tint.webp"><img alt="Sheen and Tint" class="align-center" src="_images/me_sheen_and_tint.webp" style="width: 400px;" /></a>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>In order to activate the Sheen of a material that is not Sheen by Default, make sure to activate the <strong>Sheen</strong> button from the
+<a class="reference internal" href="#node-group-popover"><span class="std std-ref">Node Group Popover</span></a> menu and check “Sheen”</p>
+</div>
+<a class="reference internal image-reference" href="_images/me_sheen_and_tint.webp"><img alt="Sheen and Tint" class="align-center" src="_images/me_sheen_and_tint.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -514,30 +643,52 @@ while value 1.0 means maximum sheen.</p>
 First image, <strong>Sheen 0.0</strong> <strong>Sheen Tint 0.0</strong>, Second image <strong>Sheen 1.0</strong> <strong>Sheen Tint 0.0</strong>, Third image <strong>Sheen 1.0</strong> <strong>Sheen Tint 1.0</strong></p>
 <a class="reference internal image-reference" href="_images/me_sheen_tint_example.webp"><img alt="Sheen Example" class="align-center" src="_images/me_sheen_tint_example.webp" style="width: 800px;" /></a>
 </section>
+<section id="sheen-roughness">
+<h5>Sheen Roughness<a class="headerlink" href="#sheen-roughness" title="Permalink to this heading"></a></h5>
+<p>This slider allows you to adjust the roughness of the sheen, the higher the value, the less the sheen will be visible,
+the lower the value, the more the sheen will be visible.</p>
+<a class="reference internal image-reference" href="_images/me_sheen_roughness.webp"><img alt="Sheen Roughness" class="align-center" src="_images/me_sheen_roughness.webp" style="width: 600px;" /></a>
+</section>
 </section>
 <hr class="docutils" />
 <section id="clearcoat-roughness">
 <h4>Clearcoat / Roughness<a class="headerlink" href="#clearcoat-roughness" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_clearcoat_and_roughness.webp"><img alt="Clearcoat and Roughness" class="align-center" src="_images/me_clearcoat_and_roughness.webp" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/me_clearcoat.webp"><img alt="Clearcoat and Roughness" class="align-center" src="_images/me_clearcoat.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<section id="clearcoat">
-<h5>Clearcoat<a class="headerlink" href="#clearcoat" title="Permalink to this heading"></a></h5>
+<section id="coat">
+<h5>Coat<a class="headerlink" href="#coat" title="Permalink to this heading"></a></h5>
 <p>The clearcoat is a layer of varnish that is applied to the material, it is a layer that is applied on top of the material,
 this is similar to the clearcoat of a car.</p>
 </section>
-<section id="id12">
-<h5>Clearcoat Roughness<a class="headerlink" href="#id12" title="Permalink to this heading"></a></h5>
+<section id="coat-roughness">
+<h5>Coat Roughness<a class="headerlink" href="#coat-roughness" title="Permalink to this heading"></a></h5>
 <p>In accordance with the clearcoat, this slider allows you to adjust the roughness of the clearcoat.</p>
+</section>
+<section id="coat-tint">
+<h5>Coat Tint<a class="headerlink" href="#coat-tint" title="Permalink to this heading"></a></h5>
+<p>This is similar to Specular Tint, but it is applied to the coat <a class="reference internal" href="#me-specular-tint"><span class="std std-ref">Specular Tint</span></a>
+Is used to use the tint of the diffuse color on the coat.</p>
 <p><strong>Example, First Image Clearcoat 0.0, Second Image Clearcoat 1.0 and Roughness 0.0, Third Image Clearcoat 1.0 and Roughness 0.25</strong></p>
 <a class="reference internal image-reference" href="_images/me_clearcoat_example.webp"><img alt="Clearcoat Example" class="align-center" src="_images/me_clearcoat_example.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="coat-ior">
+<h5>Coat IOR<a class="headerlink" href="#coat-ior" title="Permalink to this heading"></a></h5>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Only Available from Blender 4.0</p>
+</div>
+<a class="reference internal image-reference" href="_images/me_coat_ior.webp"><img alt="Coat IOR" class="align-center" src="_images/me_coat_ior.webp" style="width: 600px;" /></a>
 </section>
 </section>
 <hr class="docutils" />
 <section id="transmission">
 <h4>Transmission<a class="headerlink" href="#transmission" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_transmission_section.webp"><img alt="Transmission" class="align-center" src="_images/me_transmission_section.webp" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/me_transmission_section.webp"><img alt="Transmission" class="align-center" src="_images/me_transmission_section.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -548,19 +699,31 @@ like glass, water etc.</p>
 means maximum transmission (To simulate a normal glass it will have 1.0 of transmission)</p>
 <section id="ray-tracer-button">
 <h5>Ray Tracer Button<a class="headerlink" href="#ray-tracer-button" title="Permalink to this heading"></a></h5>
+<a class="reference internal image-reference" href="_images/me_raytracer_button.webp"><img alt="Raytracer Button" class="align-center" src="_images/me_raytracer_button.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <p>The button Raytracer, activate or deactivate, the Screen Space Refractions (For the Glass). Eevee only, in Cycles, this is not necessary,
 in Eevee Render it is really necessary to activate it if you want to get a realistic result even if not perfect.</p>
 <p>This button activates or deactivates the <strong>Screen Space Refractions</strong> in the material properties and deactivates the property
 <strong>Subsurface Translucent</strong> if it is active, otherwise they will go into contrast (This is only necessary for the
 Eevee rendering engine, it is not necessary in Cycles)</p>
 </section>
+</section>
 <section id="ior">
-<h5>IOR<a class="headerlink" href="#ior" title="Permalink to this heading"></a></h5>
+<h4>IOR<a class="headerlink" href="#ior" title="Permalink to this heading"></a></h4>
 <p>The IOR is the index of refraction, it is a value that is used to calculate the refraction of the material.
 For example the IOR of the glass is 1.45, the IOR of the water is 1.33, the IOR of the diamond is 2.42 etc…</p>
-</section>
-<section id="transmission-roughness">
-<h5>Transmission Roughness<a class="headerlink" href="#transmission-roughness" title="Permalink to this heading"></a></h5>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Form Blender 4.0 the IOR also regulates the specular ior so the reflections will adapt to the value set here.</p>
+</div>
+<a class="reference internal image-reference" href="_images/me_ior.webp"><img alt="IOR" class="align-center" src="_images/me_ior.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="transmission-roughness-deprecated-into-blender-4-0">
+<h5>Transmission Roughness (Deprecated into Blender 4.0)<a class="headerlink" href="#transmission-roughness-deprecated-into-blender-4-0" title="Permalink to this heading"></a></h5>
 <p>This slider allows you to adjust the roughness of the transmission. The transmission Roughness will make the material
 more or less transparent, the higher the value, the less transparent the material will be, the lower the value, the more transparent
 the material will be.</p>
@@ -569,7 +732,7 @@ the material will be.</p>
 <hr class="docutils" />
 <section id="normal">
 <h4>Normal<a class="headerlink" href="#normal" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_normal.webp"><img alt="Normal" class="align-center" src="_images/me_normal.webp" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/me_normal.webp"><img alt="Normal" class="align-center" src="_images/me_normal.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -581,7 +744,11 @@ like reliefs, scratches, etc … A value equal to 0.0 means no normal map.</p>
 <hr class="docutils" />
 <section id="bump-distance">
 <h4>Bump / Distance<a class="headerlink" href="#bump-distance" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_bump_and_distance.webp"><img alt="Bump and Distance" class="align-center" src="_images/me_bump_and_distance.webp" style="width: 400px;" /></a>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Bump / Distance adjust the Microdisplacement in Cycles render in Microdisplacement Mode: <a class="reference internal" href="displacement.html#microdisplacement"><span class="std std-ref">Displacement Microdisplacement</span></a></p>
+</div>
+<a class="reference internal image-reference" href="_images/me_bump_and_distance.webp"><img alt="Bump and Distance" class="align-center" src="_images/me_bump_and_distance.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -615,7 +782,7 @@ of greater relief than the normal map.</p>
 </section>
 <section id="locations-xyz">
 <span id="me-vector-location"></span><h4>Locations XYZ<a class="headerlink" href="#locations-xyz" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_locations_xyz.webp"><img alt="Locations XYZ" class="align-center" src="_images/me_locations_xyz.webp" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/me_locations_xyz.webp"><img alt="Locations XYZ" class="align-center" src="_images/me_locations_xyz.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -638,7 +805,7 @@ then these sliders will also work to move the displacement effect, but only in <
 </section>
 <section id="rotation-xyz">
 <span id="me-vector-rotation"></span><h4>Rotation XYZ<a class="headerlink" href="#rotation-xyz" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_rotation_xyz.webp"><img alt="Rotation XYZ" class="align-center" src="_images/me_rotation_xyz.webp" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/me_rotation_xyz.webp"><img alt="Rotation XYZ" class="align-center" src="_images/me_rotation_xyz.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -661,7 +828,7 @@ then these sliders will also work to rotate the displacement effect, but only in
 </section>
 <section id="scale-xyz">
 <span id="me-vector-scale"></span><h4>Scale XYZ<a class="headerlink" href="#scale-xyz" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_scale_xyz.webp"><img alt="Scale XYZ" class="align-center" src="_images/me_scale_xyz.webp" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/me_scale_xyz.webp"><img alt="Scale XYZ" class="align-center" src="_images/me_scale_xyz.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -684,7 +851,7 @@ then these sliders will also work to scale the displacement effect, but only in 
 </section>
 <section id="scale-uniform">
 <span id="me-vector-scale-uniform"></span><h4>Scale Uniform<a class="headerlink" href="#scale-uniform" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_scale_uniform.webp"><img alt="Scale Uniform" class="align-center" src="_images/me_scale_uniform.webp" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/me_scale_uniform.webp"><img alt="Scale Uniform" class="align-center" src="_images/me_scale_uniform.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -701,7 +868,7 @@ then this slider will also work to scale the displacement effect, but only in <s
 <hr class="docutils" />
 <section id="world-coordinate">
 <h4>World Coordinate<a class="headerlink" href="#world-coordinate" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_world_coordinate.webp"><img alt="World Coordinate" class="align-center" src="_images/me_world_coordinate.webp" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/me_world_coordinate.webp"><img alt="World Coordinate" class="align-center" src="_images/me_world_coordinate.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -712,7 +879,7 @@ from its position.</p>
 <hr class="docutils" />
 <section id="random-location">
 <h4>Random Location<a class="headerlink" href="#random-location" title="Permalink to this heading"></a></h4>
-<a class="reference internal image-reference" href="_images/me_random_location.webp"><img alt="Random Location" class="align-center" src="_images/me_random_location.webp" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/me_random_location.webp"><img alt="Random Location" class="align-center" src="_images/me_random_location.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -723,6 +890,89 @@ material in which the Random is activated, are separate objects, otherwise it wi
 <a class="reference internal image-reference" href="_images/random_location_example_off.webp"><img alt="Random Location Example Off" class="align-center" src="_images/random_location_example_off.webp" style="width: 800px;" /></a>
 <hr class="docutils" />
 </section>
+</section>
+<section id="projection-settings">
+<span id="me-projection-settings"></span><h3>Projection Settings<a class="headerlink" href="#projection-settings" title="Permalink to this heading"></a></h3>
+<p>This Menu is present in all Nexus and Non Nexus Type materials, and is used to set the <strong>Coordinates</strong>, <strong>Projection</strong> and <strong>Normal Space Map</strong></p>
+<a class="reference internal image-reference" href="_images/me_projection_settings.webp"><img alt="Projection Settings" class="align-center" src="_images/me_projection_settings.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="coordinate">
+<h4>Coordinate<a class="headerlink" href="#coordinate" title="Permalink to this heading"></a></h4>
+<p>The coordinates (If present in the menu) refer to the Coordinate node preset in the modules or materials of Extreme PBR,
+even materials created with the Shader Maker have this menu.</p>
+<a class="reference internal image-reference" href="_images/ps_coordinate.webp"><img alt="Coordinate" class="align-center" src="_images/ps_coordinate.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The <strong>Coordinate</strong> property is based on the outputs sockets present on the node tagged as COORDINATE in the Extreme PBR system
+this allows based on the sockets present in the output node to show in the list all the possible sockets to link to the
+next node, here is the example of the Coordinate node:</p>
+<a class="reference internal image-reference" href="_images/ps_coordinate_sockets_example.webp"><img alt="Coordinate Node Sockets Example" class="align-center" src="_images/ps_coordinate_sockets_example.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="projection">
+<h4>Projection<a class="headerlink" href="#projection" title="Permalink to this heading"></a></h4>
+<p>The <strong>Projection</strong> property (If present) allows you to set on all Texture Image nodes present in the material
+and to change their Projection property in one go</p>
+<a class="reference internal image-reference" href="_images/ps_projection_type.webp"><img alt="Projection Type" class="align-center" src="_images/ps_projection_type.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>As explained above, this property sets the projection type on all nodes (Only those tagged by Extreme PBR) so if you are mixing
+more modules, each module will have its own type of projection. Here is the example in the node:</p>
+<a class="reference internal image-reference" href="_images/ps_tex_image_node_projection_example.webp"><img alt="Tex Image Node Projection Example" class="align-center" src="_images/ps_tex_image_node_projection_example.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Bellow the corresponding example of a <strong>Flat</strong>, <strong>Box</strong>, <strong>Sphere</strong> and <strong>Tube</strong> (Cylinder) mapping.</p>
+<p>(Into image UV as Flat)</p>
+<a class="reference internal image-reference" href="_images/mapping_types_example_01.jpg"><img alt="UV Mapping Type" class="align-center" src="_images/mapping_types_example_01.jpg" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="box-blend">
+<h4>Box Blend<a class="headerlink" href="#box-blend" title="Permalink to this heading"></a></h4>
+<p>In this mode, the addon sets the nodes with image textures (if present) in Box mode. In addition, the Blend slider
+allows you to control the corresponding Blend values of the image texture nodes.</p>
+<p>Here the Material nodes in Box Mode:</p>
+<a class="reference internal image-reference" href="_images/box_blend_example.webp"><img alt="Box Blend Example" class="align-center" src="_images/box_blend_example.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="normal-map-space">
+<h4>Normal Map Space<a class="headerlink" href="#normal-map-space" title="Permalink to this heading"></a></h4>
+<p>Tangent, Object and World space. Tangent space normal maps are the most common, as they support object transformation
+and mesh deformations. Object space normal maps keep sticking to the surface under object transformations, while World
+normal maps do not.</p>
+<p>This property is exactly the one exposed in the Blender Normal Map node, this makes it accessible directly
+from the Extreme PBR panel, without having to open the material node tree:</p>
+<a class="reference internal image-reference" href="_images/ps_normal_map_node_example.webp"><img alt="Normal Map Node Example" class="align-center" src="_images/ps_normal_map_node_example.webp" style="width: 600px;" /></a>
+</section>
+</section>
+<hr class="docutils" />
+<section id="convert-module-system">
+<h3>Convert Module System<a class="headerlink" href="#convert-module-system" title="Permalink to this heading"></a></h3>
+<p>Convert the modular system of Extreme PBR between Blender versions to maintain system compatibility.</p>
+<p>(From Extreme PBR version 4.1.110 Only)</p>
+<p>This button will be displayed if the Extreme PBR material was created inside a version of Blender prior to 4.0 or vice versa,
+if it was created in a version 4.0 and you are opening in Blender 3.6.</p>
+<a class="reference internal image-reference" href="_images/me_convert_module_system_button.webp"><img alt="Convert Module System" class="align-center" src="_images/me_convert_module_system_button.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>This appears because the Principled BSDF nodes of Blender, sometimes they are Modernized and improved as in the case of the passage
+from Blender 3.6 to Blender 4.0 where the Principled BSDF node has different inputs, with different names and slightly different functions.</p>
+<p>In addition in Blender 4.0 with Extreme PBR 4.1.110 or higher, the Module node is connected directly to the Principled BSDF node
+without going through the Extreme PBR Mixer, this to improve performance and compatibility with Blender 4.0</p>
+<p>Here is an example on the left of a Material created in blender 3.6 and on the right the material converted in Blender 4.0</p>
+<a class="reference internal image-reference" href="_images/nexus_module_conversion_nodes_example.webp"><img alt="Nexus Module Conversion Nodes Example" class="align-center" src="_images/nexus_module_conversion_nodes_example.webp" style="width: 800px;" /></a>
+<hr class="docutils" />
 </section>
 <section id="add-fx-layer">
 <span id="id14"></span><h3>Add Fx Layer<a class="headerlink" href="#add-fx-layer" title="Permalink to this heading"></a></h3>

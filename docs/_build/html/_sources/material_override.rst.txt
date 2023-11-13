@@ -259,22 +259,20 @@ with that specific Material Override.
 
 ------------------------------------------------------------------------------------------------------------------------
 
-UV Mapping Type
-******************
+Projection Settings
+**********************
 
-.. image:: _static/_images/material_override/mo_uv_mapping_type.webp
+.. image:: _static/_images/shader_overlay/so_projection_settings.webp
     :align: center
     :width: 400
-    :alt: Mo UV Mapping Type
+    :alt: Shader Overlay Projection Settings
 
 |
 
-By this selector you can select the type of projection to use for the Material Override.
 
 .. important::
         Not all materials will support this feature. Texture-based materials fully support this feature
 
 .. seealso::
-    Refer here for an explanation of the UV Mapping Type: :ref:`me_uv_mapping_type`
-
+        Refer here for an explanation of the Projection Settings: :ref:`me_projection_settings`
 

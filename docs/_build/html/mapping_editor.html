@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mapping Editor &mdash; Extreme PBR 4.1.101 documentation</title>
+  <title>Mapping Editor &mdash; Extreme PBR 4.1.110 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
@@ -60,7 +60,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#method-02">Method 02</a></li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#uv-mapping-type">UV Mapping Type</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#reset-all-parameter">Reset All Parameter</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#select-face">Select Face</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#lock-x-y">Lock X/Y</a></li>
@@ -69,7 +68,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#uvs-rot">UVs Rot</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#cube-projection">Cube Projection</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#smart-projection">Smart Projection</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#mapping-box-type">Mapping Box Type</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="material_editor.html">Material Editor</a></li>
@@ -129,6 +127,18 @@
              
   <section id="mapping-editor">
 <span id="mapping-editor-panel"></span><h1>Mapping Editor<a class="headerlink" href="#mapping-editor" title="Permalink to this heading"></a></h1>
+<a class="reference internal image-reference" href="_images/mapping_editor_panel.webp"><img alt="Mapping Editor Panel" class="align-center" src="_images/mapping_editor_panel.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Through this panel you can edit the UV mapping, you can also manipulate the UV mapping if the material does not come
+from Extreme PBR, but make sure that the material is UV Mapped Based.</p>
+<p>If you have applied the material with Extreme PBR, make sure you are in UV mode from the Material editor panel (All
+materials in the Extreme PBR library based on Textures, have a preset UV mapping)</p>
+<a class="reference internal image-reference" href="_images/coordinate_type_uv_01.webp"><img alt="Coordinate Type UV 01" class="align-center" src="_images/coordinate_type_uv_01.webp" style="width: 500px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In order to access the <strong>Mapping Editor</strong> panel you must be in the <strong>Main Panel</strong> and press the button with the symbol
@@ -139,10 +149,6 @@ of the Texture. Here the <strong>Main Panel</strong> section: <a class="referenc
 This tool was built to <strong>Scale</strong>, <strong>Move</strong> and <strong>Rotate</strong> UV maps on the fly without having to enter
 in the UV editor. Clearly it is not a substitute for the UV editor, but it contains the most used functions, especially in the field
 of architecture.</p>
-<a class="reference internal image-reference" href="_images/mapping_editor_panel.jpg"><img alt="Mapping Editor Panel" class="align-center" src="_images/mapping_editor_panel.jpg" style="width: 800px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <p>This tool has nothing to do with <strong>Scale</strong> <strong>Rotate</strong> or <strong>Location</strong> of the material, this tool is
@@ -175,18 +181,7 @@ and a correspondence is set between faces of the object and colors of the textur
 <div class="line"><br /></div>
 </div>
 <p>Using the Mapping Editor lets you use the <a class="reference internal" href="#mapping-method-01"><span class="std std-ref">Method 01</span></a>: <strong>manipulating the correspondence between Texture space and Map</strong></p>
-<hr class="docutils" />
 </section>
-</section>
-<section id="uv-mapping-type">
-<span id="me-uv-mapping-type"></span><h2>UV Mapping Type<a class="headerlink" href="#uv-mapping-type" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/uv_mapping_type.jpg"><img alt="UV Mapping Type" class="align-center" src="_images/uv_mapping_type.jpg" style="width: 400px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p>This selector allows you to choose the type of Mapping you want to use on the selected active object.</p>
-<p>Bellow the corresponding example of a <strong>UV</strong>, <strong>Box</strong>, <strong>Sphere</strong> and <strong>Tube</strong> (Cylinder) mapping.</p>
-<a class="reference internal image-reference" href="_images/mapping_types_example_01.jpg"><img alt="UV Mapping Type" class="align-center" src="_images/mapping_types_example_01.jpg" style="width: 800px;" /></a>
 </section>
 <hr class="docutils" />
 <section id="reset-all-parameter">
@@ -201,7 +196,7 @@ on the object.</p>
 <hr class="docutils" />
 <section id="select-face">
 <h2>Select Face<a class="headerlink" href="#select-face" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/select_face_01.jpg"><img alt="Select Face 01" class="align-center" src="_images/select_face_01.jpg" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/select_face_01.webp"><img alt="Select Face 01" class="align-center" src="_images/select_face_01.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -211,7 +206,7 @@ material list: <a class="reference internal" href="main_panel.html#material-list
 <hr class="docutils" />
 <section id="lock-x-y">
 <h2>Lock X/Y<a class="headerlink" href="#lock-x-y" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/lock_x_y_01.jpg"><img alt="Lock x y 01" class="align-center" src="_images/lock_x_y_01.jpg" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/lock_x_y_01.webp"><img alt="Lock x y 01" class="align-center" src="_images/lock_x_y_01.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -221,7 +216,7 @@ scale only along the other axis during the UVS Size operation described below</p
 <hr class="docutils" />
 <section id="uvs-size">
 <h2>UVS Size<a class="headerlink" href="#uvs-size" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/uv_size_01.jpg"><img alt="UV Size 01" class="align-center" src="_images/uv_size_01.jpg" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/uv_size_01.webp"><img alt="UV Size 01" class="align-center" src="_images/uv_size_01.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -230,7 +225,7 @@ scale only along the other axis during the UVS Size operation described below</p
 <hr class="docutils" />
 <section id="uvs-pos-x-y">
 <h2>UVs Pos X/Y<a class="headerlink" href="#uvs-pos-x-y" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/uvs_pos_x_y_01.jpg"><img alt="UVs Pos X Y 01" class="align-center" src="_images/uvs_pos_x_y_01.jpg" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/uvs_pos_x_y_01.webp"><img alt="UVs Pos X Y 01" class="align-center" src="_images/uvs_pos_x_y_01.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -239,7 +234,7 @@ scale only along the other axis during the UVS Size operation described below</p
 <hr class="docutils" />
 <section id="uvs-rot">
 <h2>UVs Rot<a class="headerlink" href="#uvs-rot" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/uvs_rot.jpg"><img alt="UV Rot" class="align-center" src="_images/uvs_rot.jpg" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/uvs_rot.webp"><img alt="UV Rot" class="align-center" src="_images/uvs_rot.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -248,7 +243,7 @@ scale only along the other axis during the UVS Size operation described below</p
 <hr class="docutils" />
 <section id="cube-projection">
 <h2>Cube Projection<a class="headerlink" href="#cube-projection" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/cube_projection.jpg"><img alt="Cube Projection" class="align-center" src="_images/cube_projection.jpg" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/cube_projection.webp"><img alt="Cube Projection" class="align-center" src="_images/cube_projection.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -258,23 +253,11 @@ of the object.</p>
 <hr class="docutils" />
 <section id="smart-projection">
 <h2>Smart Projection<a class="headerlink" href="#smart-projection" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/smart_projection.jpg"><img alt="Smart Projection" class="align-center" src="_images/smart_projection.jpg" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/smart_projection.webp"><img alt="Smart Projection" class="align-center" src="_images/smart_projection.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
 <p>This button allows you to make a smart mapping on the fly. Useful to re-project a UV mapping when you modify the geometry</p>
-</section>
-<hr class="docutils" />
-<section id="mapping-box-type">
-<h2>Mapping Box Type<a class="headerlink" href="#mapping-box-type" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/mapping_box_type.jpg"><img alt="Mapping Box Type" class="align-center" src="_images/mapping_box_type.jpg" style="width: 400px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p>In this mode, the addon sets the nodes with image textures (if present) in <strong>Box</strong> mode. In addition, the <strong>Blend</strong> slider
-allows you to control the corresponding Blend values of the image texture nodes.</p>
-<p>Here the Material nodes in Box Mode:</p>
-<a class="reference internal image-reference" href="_images/box_blend_example.jpg"><img alt="Box Blend Example" class="align-center" src="_images/box_blend_example.jpg" style="width: 800px;" /></a>
 </section>
 </section>
 

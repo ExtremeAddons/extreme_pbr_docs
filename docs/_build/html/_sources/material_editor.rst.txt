@@ -36,7 +36,7 @@ If you are in Nexus mode, or have applied materials that support nexus modules, 
 
 **This is the classic Nexus panel of Texture-based materials**
 
-.. image:: _static/_images/material_editor/material_editor_before_add_module.jpg
+.. image:: _static/_images/material_editor/material_editor_before_add_module.webp
     :align: center
     :width: 400
     :alt: Material Editor Before Add Module
@@ -237,6 +237,62 @@ so by pressing the hint buttons, you will see a window appear with a description
     :width: 600
     :alt: Tips
 
+------------------------------------------------------------------------------------------------------------------------
+
+.. _node_group_popover:
+
+Node Group Popover
+*******************
+
+.. image:: _static/_images/material_editor/ng_popover_01.webp
+    :align: center
+    :width: 600
+    :alt: Node Group Popover
+
+|
+
+
+Use Sockets
+############
+
+.. note::
+        Not all Nexus Modules will have these options available, all modules created as textures based materials
+        will have these options available, procedural ones will not necessarily have them
+
+|
+
+
+Form this section you can activate and deactivate the sockets to save resources and space in the interface.
+
+**SUBSURFACE**, **TRANSMISSION**, **COAT**, **SHEEN**, **EMISSION**
+
+When you add a Texture type material in Nexus mode, these values are managed intelligently, based on which textures
+are in the material and some input values of the group node, so you won't have to worry too much about this.
+
+
+- **Example 1**
+
+    All values are disabled, the links connected to the BSDF are limited to the basic ones necessary, the interface in
+    **Material Editor** panel remains more compact as it will not show the inputs that refer to those values.
+
+.. image:: _static/_images/material_editor/use_sockets_all_off_01.webp
+    :align: center
+    :width: 800
+    :alt: Use Sockets All Off 01
+
+|
+
+- **Example 2**
+
+    All values are enabled, all links that refer to the sockets are connected to the BSDF, the interface in
+    **Material Editor** panel will be larger as it will show all the inputs that refer to those values.
+
+.. image:: _static/_images/material_editor/use_sockets_all_on_01.webp
+    :align: center
+    :width: 800
+    :alt: Use Sockets All On 01
+
+
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -346,6 +402,12 @@ Emission
 .. note::
         In **Cycles Render** the Emission also acts as lighting, in **Eevee** no, in **Eevee** it is only a visual effect.
 
+
+
+.. tip::
+        In order to activate the emission of a material that is not emissive by Default, make sure to activate the **Emission** button from the
+        :ref:`node_group_popover` menu and check "Emission"
+
 .. image:: _static/_images/material_editor/me_emission.webp
     :align: center
     :width: 400
@@ -447,12 +509,16 @@ Settings only for Eevee Render:
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Subsurface/Radius
-******************
+Subsurface
+************
 
-.. image:: _static/_images/material_editor/me_subsurface_radius.webp
+.. tip::
+        In order to activate the Subsurface of a material that is not Subsurface by Default, make sure to activate the **Subsurface** button from the
+        :ref:`node_group_popover` menu and check "Subsurface"
+
+.. image:: _static/_images/material_editor/me_subsurface_01.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Subsurface
 
 |
@@ -462,11 +528,99 @@ Subsurface Scattering is the ability of a material to let light pass through it,
 but in a diffuse way, as if the light were diffused inside the material, this is very useful for materials
 like skin, leaves, ears, rubber, plastic, etc.
 
-**Example of Subsurface Scattering:**
+**Subsurface Method:**
+
+Rendering method to simulate subsurface scattering.
+
+.. image:: _static/_images/material_editor/me_subsurface_method.webp
+    :align: center
+    :width: 600
+    :alt: Subsurface Method
+
+|
+
+.. note::
+        EEVEE does not support the Random Walk methods.
+
+- **Christensen-Burley**
+
+    An approximation to physically-based volume scattering. This method is less accurate than Random Walk however,
+    in some situations this method will resolve noise faster.
+
+
+- **Random Walk (Fixed Radius)**
+
+    Provides accurate results for thin and curved objects. Random Walk uses true volumetric scattering inside the
+    mesh, which means that it works best for closed meshes. Overlapping faces and holes in the mesh can cause problems.
+
+
+- **Random Walk**
+
+    Behaves similarly to Random Walk (Fixed Radius) but modulates the Radius based on the Color, Anisotropy, and IOR.
+    This method thereby attempts to retain greater surface detail and color than Random Walk (Fixed Radius).
+
+
+**Subsurface Radius:**
+
+.. image:: _static/_images/material_editor/me_subsurface_radius.webp
+    :align: center
+    :width: 600
+    :alt: Subsurface Radius
+
+|
+
+.. important::
+
+    In order to work into Eevee Engine, you need to Activate the **Translucency** button on the right of the **Subsurface** button
+
+    .. image:: _static/_images/material_editor/me_translucency.webp
+        :align: center
+        :width: 600
+        :alt: Translucency
+
+
+**Subsurface Strength:**
+
+The strength of the subsurface scattering effect, questo valore da Blender 4.0 Controlla anche il valore "Scale" del nuovo
+Principle BSDF, qualsiasi valore Superiore a 0 Attiva il Subsurface Weight e i valori vanno da 0-10 Espressi in unità di
+misura del progetto.
+
+.. image:: _static/_images/material_editor/me_subsurface_strength.webp
+    :align: center
+    :width: 600
+    :alt: Subsurface Strength
+
+|
+
+**Sss IOR: (Cycles Only)**
+
+Index of refraction for Subsurface Scattering. (Available only in Random Walk (Skin) mode)
+
+.. image:: _static/_images/material_editor/me_subsurface_ior.webp
+    :align: center
+    :width: 600
+    :alt: Subsurface IOR
+
+|
+
+**Sss Anisotropy: (Cycles Only)**
+
+Controls the directionality of subsurface scattering. (Available only in Random Walk modes)
+
+.. image:: _static/_images/material_editor/me_subsurface_anisotropy.webp
+    :align: center
+    :width: 600
+    :alt: Subsurface Anisotropy
+
+
+|
+
+
+**Example of Subsurface Scattering with a light behind the object:**
 
 .. image:: _static/_images/material_editor/subsurface_suzanne.jpg
     :align: center
-    :width: 400
+    :width: 600
     :alt: Subsurface Example
 
 
@@ -477,7 +631,7 @@ Ambient Occlusion
 
 .. image:: _static/_images/material_editor/me_ambient_occlusion.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Ambient Occlusion
 
 |
@@ -496,7 +650,7 @@ Metallic
 
 .. image:: _static/_images/material_editor/me_metallic.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Metallic
 
 |
@@ -525,7 +679,7 @@ Specular/Tint
 
 .. image:: _static/_images/material_editor/me_specular_tint.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Specular Tint
 
 |
@@ -541,6 +695,8 @@ Specular
 This slider adjusts the specular of the material, if a specular map is present, then this slider will only adjust
 some areas of the material, while if it is not present, then it will adjust the general specular of the material.
 
+
+.. _me_specular_tint:
 
 Specular Tint
 ##############
@@ -563,7 +719,7 @@ Roughness
 
 .. image:: _static/_images/material_editor/me_roughness.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Roughness
 
 |
@@ -584,9 +740,13 @@ some areas of the material, while if it is not present, then it will adjust the 
 Sheen / Sheen Tint
 *******************
 
+.. tip::
+        In order to activate the Sheen of a material that is not Sheen by Default, make sure to activate the **Sheen** button from the
+        :ref:`node_group_popover` menu and check "Sheen"
+
 .. image:: _static/_images/material_editor/me_sheen_and_tint.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Sheen and Tint
 
 |
@@ -612,28 +772,46 @@ First image, **Sheen 0.0** **Sheen Tint 0.0**, Second image **Sheen 1.0** **Shee
     :width: 800
     :alt: Sheen Example
 
+Sheen Roughness
+################
+
+This slider allows you to adjust the roughness of the sheen, the higher the value, the less the sheen will be visible,
+the lower the value, the more the sheen will be visible.
+
+.. image:: _static/_images/material_editor/me_sheen_roughness.webp
+    :align: center
+    :width: 600
+    :alt: Sheen Roughness
+
 ------------------------------------------------------------------------------------------------------------------------
 
 Clearcoat / Roughness
 **********************
 
-.. image:: _static/_images/material_editor/me_clearcoat_and_roughness.webp
+.. image:: _static/_images/material_editor/me_clearcoat.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Clearcoat and Roughness
 
 |
 
-Clearcoat
+Coat
 ##########
 
 The clearcoat is a layer of varnish that is applied to the material, it is a layer that is applied on top of the material,
 this is similar to the clearcoat of a car.
 
-Clearcoat Roughness
+Coat Roughness
 ###################
 
 In accordance with the clearcoat, this slider allows you to adjust the roughness of the clearcoat.
+
+
+Coat Tint
+############
+
+This is similar to Specular Tint, but it is applied to the coat :ref:`me_specular_tint`
+Is used to use the tint of the diffuse color on the coat.
 
 **Example, First Image Clearcoat 0.0, Second Image Clearcoat 1.0 and Roughness 0.0, Third Image Clearcoat 1.0 and Roughness 0.25**
 
@@ -641,6 +819,21 @@ In accordance with the clearcoat, this slider allows you to adjust the roughness
     :align: center
     :width: 800
     :alt: Clearcoat Example
+
+|
+
+Coat IOR
+##########
+
+.. note::
+        Only Available from Blender 4.0
+
+.. image:: _static/_images/material_editor/me_coat_ior.webp
+    :align: center
+    :width: 600
+    :alt: Coat IOR
+
+
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -650,7 +843,7 @@ Transmission
 
 .. image:: _static/_images/material_editor/me_transmission_section.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Transmission
 
 |
@@ -666,6 +859,13 @@ means maximum transmission (To simulate a normal glass it will have 1.0 of trans
 Ray Tracer Button
 ##################
 
+.. image:: _static/_images/material_editor/me_raytracer_button.webp
+    :align: center
+    :width: 600
+    :alt: Raytracer Button
+
+|
+
 The button Raytracer, activate or deactivate, the Screen Space Refractions (For the Glass). Eevee only, in Cycles, this is not necessary,
 in Eevee Render it is really necessary to activate it if you want to get a realistic result even if not perfect.
 
@@ -673,14 +873,25 @@ This button activates or deactivates the **Screen Space Refractions** in the mat
 **Subsurface Translucent** if it is active, otherwise they will go into contrast (This is only necessary for the
 Eevee rendering engine, it is not necessary in Cycles)
 
+
 IOR
-#####
+*****
 
 The IOR is the index of refraction, it is a value that is used to calculate the refraction of the material.
 For example the IOR of the glass is 1.45, the IOR of the water is 1.33, the IOR of the diamond is 2.42 etc...
 
-Transmission Roughness
-########################
+.. note::
+        Form Blender 4.0 the IOR also regulates the specular ior so the reflections will adapt to the value set here.
+
+.. image:: _static/_images/material_editor/me_ior.webp
+    :align: center
+    :width: 600
+    :alt: IOR
+
+|
+
+Transmission Roughness (Deprecated into Blender 4.0)
+#####################################################
 
 This slider allows you to adjust the roughness of the transmission. The transmission Roughness will make the material
 more or less transparent, the higher the value, the less transparent the material will be, the lower the value, the more transparent
@@ -693,7 +904,7 @@ Normal
 
 .. image:: _static/_images/material_editor/me_normal.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Normal
 
 |
@@ -713,9 +924,12 @@ Here is an example, on the left the value is 0.0, on the right the value is 1.0
 Bump / Distance
 ****************
 
+.. important::
+        Bump / Distance adjust the Microdisplacement in Cycles render in Microdisplacement Mode: :ref:`microdisplacement`
+
 .. image:: _static/_images/material_editor/me_bump_and_distance.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Bump and Distance
 
 |
@@ -762,7 +976,7 @@ Locations XYZ
 
 .. image:: _static/_images/material_editor/me_locations_xyz.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Locations XYZ
 
 |
@@ -792,7 +1006,7 @@ Rotation XYZ
 
 .. image:: _static/_images/material_editor/me_rotation_xyz.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Rotation XYZ
 
 |
@@ -821,7 +1035,7 @@ Scale XYZ
 
 .. image:: _static/_images/material_editor/me_scale_xyz.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Scale XYZ
 
 |
@@ -849,7 +1063,7 @@ Scale Uniform
 
 .. image:: _static/_images/material_editor/me_scale_uniform.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Scale Uniform
 
 |
@@ -871,7 +1085,7 @@ World Coordinate
 
 .. image:: _static/_images/material_editor/me_world_coordinate.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: World Coordinate
 
 |
@@ -887,7 +1101,7 @@ Random Location
 
 .. image:: _static/_images/material_editor/me_random_location.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Random Location
 
 |
@@ -908,6 +1122,152 @@ Here is an example of a scene with a fence with random location active, followed
     :width: 800
     :alt: Random Location Example Off
 
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _me_projection_settings:
+
+Projection Settings
+--------------------
+
+This Menu is present in all Nexus and Non Nexus Type materials, and is used to set the **Coordinates**, **Projection** and **Normal Space Map**
+
+.. image:: _static/_images/material_editor/me_projection_settings.webp
+    :align: center
+    :width: 600
+    :alt: Projection Settings
+
+|
+
+Coordinate
+**********
+
+The coordinates (If present in the menu) refer to the Coordinate node preset in the modules or materials of Extreme PBR,
+even materials created with the Shader Maker have this menu.
+
+.. image:: _static/_images/material_editor/ps_coordinate.webp
+    :align: center
+    :width: 600
+    :alt: Coordinate
+
+|
+
+
+The **Coordinate** property is based on the outputs sockets present on the node tagged as COORDINATE in the Extreme PBR system
+this allows based on the sockets present in the output node to show in the list all the possible sockets to link to the
+next node, here is the example of the Coordinate node:
+
+
+.. image:: _static/_images/material_editor/ps_coordinate_sockets_example.webp
+    :align: center
+    :width: 400
+    :alt: Coordinate Node Sockets Example
+
+|
+
+Projection
+*************
+
+
+The **Projection** property (If present) allows you to set on all Texture Image nodes present in the material
+and to change their Projection property in one go
+
+.. image:: _static/_images/material_editor/ps_projection_type.webp
+    :align: center
+    :width: 600
+    :alt: Projection Type
+
+|
+
+As explained above, this property sets the projection type on all nodes (Only those tagged by Extreme PBR) so if you are mixing
+more modules, each module will have its own type of projection. Here is the example in the node:
+
+.. image:: _static/_images/material_editor/ps_tex_image_node_projection_example.webp
+    :align: center
+    :width: 600
+    :alt: Tex Image Node Projection Example
+
+|
+
+Bellow the corresponding example of a **Flat**, **Box**, **Sphere** and **Tube** (Cylinder) mapping.
+
+(Into image UV as Flat)
+
+.. image:: _static/_images/mapping_editor/mapping_types_example_01.jpg
+    :align: center
+    :width: 800
+    :alt: UV Mapping Type
+
+
+|
+
+Box Blend
+***********
+
+In this mode, the addon sets the nodes with image textures (if present) in Box mode. In addition, the Blend slider
+allows you to control the corresponding Blend values of the image texture nodes.
+
+Here the Material nodes in Box Mode:
+
+.. image:: _static/_images/material_editor/box_blend_example.webp
+    :align: center
+    :width: 800
+    :alt: Box Blend Example
+
+
+|
+
+
+Normal Map Space
+******************
+
+Tangent, Object and World space. Tangent space normal maps are the most common, as they support object transformation
+and mesh deformations. Object space normal maps keep sticking to the surface under object transformations, while World
+normal maps do not.
+
+This property is exactly the one exposed in the Blender Normal Map node, this makes it accessible directly
+from the Extreme PBR panel, without having to open the material node tree:
+
+.. image:: _static/_images/material_editor/ps_normal_map_node_example.webp
+    :align: center
+    :width: 600
+    :alt: Normal Map Node Example
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+Convert Module System
+----------------------
+
+Convert the modular system of Extreme PBR between Blender versions to maintain system compatibility.
+
+(From Extreme PBR version 4.1.110 Only)
+
+This button will be displayed if the Extreme PBR material was created inside a version of Blender prior to 4.0 or vice versa,
+if it was created in a version 4.0 and you are opening in Blender 3.6.
+
+
+
+.. image:: _static/_images/material_editor/me_convert_module_system_button.webp
+    :align: center
+    :width: 600
+    :alt: Convert Module System
+
+|
+
+This appears because the Principled BSDF nodes of Blender, sometimes they are Modernized and improved as in the case of the passage
+from Blender 3.6 to Blender 4.0 where the Principled BSDF node has different inputs, with different names and slightly different functions.
+
+In addition in Blender 4.0 with Extreme PBR 4.1.110 or higher, the Module node is connected directly to the Principled BSDF node
+without going through the Extreme PBR Mixer, this to improve performance and compatibility with Blender 4.0
+
+Here is an example on the left of a Material created in blender 3.6 and on the right the material converted in Blender 4.0
+
+
+.. image:: _static/_images/material_editor/nexus_module_conversion_nodes_example.webp
+    :align: center
+    :width: 800
+    :alt: Nexus Module Conversion Nodes Example
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -1036,7 +1396,7 @@ the material unusable in Blender.
 
 
 
-.. image:: _static/_images/fx_layer/fx_layer_panel_01.webp
+.. image:: _static/_images/material_editor/fx_layer_panel_01.webp
     :align: center
     :width: 400
     :alt: Fx Layer Panel 01

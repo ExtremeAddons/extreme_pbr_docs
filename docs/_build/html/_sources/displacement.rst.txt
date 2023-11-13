@@ -24,6 +24,21 @@ see the displacement panel.
         This is intended, as these materials do not need displacement. The button will be visible, only if in the
         material there is a Bump or Displacement map.
 
+|
+
+**Once the displacement is activated, the button will appear to access the Popover panel (Make sure you update
+Extreme PBR to the latest version to have this feature)**
+
+
+.. image:: _static/_images/displacement/displace_popover_panel_01.webp
+    :align: center
+    :width: 800
+    :alt: Displace Popover Panel 01
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
 Displace Type
 ------------------
 
@@ -31,10 +46,11 @@ This selector allows you to switch from one type of displacement to another, in 
 The displacement can be used in two ways :ref:`displace_modifier`: or :ref:`microdisplacement`
 
 
-.. image:: _static/_images/displacement/displace_type_selector.jpg
+.. image:: _static/_images/displacement/displace_type_selector.webp
     :align: center
-    :width: 400
+    :width: 800
     :alt: Displace Type Selector
+
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -67,7 +83,7 @@ As you can see, the displacement button, has activated 3 Modifiers:
    and will always be at the end of the modifier list.
 
 
-.. image:: _static/_images/displacement/displace_modifier_corresponding_modifiers_01.jpg
+.. image:: _static/_images/displacement/displace_modifier_corresponding_modifiers_01.webp
     :align: center
     :width: 800
     :alt: Displace Modifier Corresponding Modifiers
@@ -77,7 +93,7 @@ As you can see, the displacement button, has activated 3 Modifiers:
 
 The displacement button also activates a texture slot, where the image texture that will be used for displacement will be placed.
 
-.. image:: _static/_images/displacement/brightness_contrast_texture_slot.jpg
+.. image:: _static/_images/displacement/brightness_contrast_texture_slot.webp
     :align: center
     :width: 800
     :alt: Brightness Contrast Texture Slot
@@ -93,7 +109,7 @@ Displacement (Modifier)
 Here is how the displacement panel looks like once you activate the **Displacement** button.
 By default it will be set to **Modifiers**
 
-.. image:: _static/_images/displacement/displacement_panel_modifier_01.jpg
+.. image:: _static/_images/displacement/displacement_panel_modifier_01.webp
     :align: center
     :width: 400
     :alt: Displacement Panel Modifier 01
@@ -103,10 +119,16 @@ By default it will be set to **Modifiers**
 Toggle Wireframe
 *******************
 
+.. image:: _static/_images/displacement/toggle_wireframe_button.webp
+    :align: center
+    :width: 800
+    :alt: Toggle Wireframe
+
+
 This button allows you to control the mesh of the selected model, it also allows you to see all the subdivisions
 that have been applied to the model by the modifier
 
-.. image:: _static/_images/displacement/toggle_wireframe.png
+.. image:: _static/_images/displacement/toggle_wireframe.webp
     :align: center
     :width: 800
     :alt: Toggle Wireframe
@@ -117,9 +139,9 @@ that have been applied to the model by the modifier
 Subdivision Type
 *******************
 
-.. image:: _static/_images/displacement/subdivision_type_selector.jpg
+.. image:: _static/_images/displacement/subdivision_type_selector.webp
     :align: center
-    :width: 400
+    :width: 800
     :alt: Subdivision Type Selector
 
 |
