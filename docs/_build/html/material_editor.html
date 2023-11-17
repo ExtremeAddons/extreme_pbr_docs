@@ -95,6 +95,7 @@
 <li class="toctree-l4"><a class="reference internal" href="#random-location">Random Location</a></li>
 </ul>
 </li>
+<li class="toctree-l3"><a class="reference internal" href="#use-anti-tile">Use Anti Tile</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#projection-settings">Projection Settings</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#coordinate">Coordinate</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#projection">Projection</a></li>
@@ -891,6 +892,111 @@ material in which the Random is activated, are separate objects, otherwise it wi
 <hr class="docutils" />
 </section>
 </section>
+<section id="use-anti-tile">
+<span id="id14"></span><h3>Use Anti Tile<a class="headerlink" href="#use-anti-tile" title="Permalink to this heading"></a></h3>
+<p>This checkbox will activate the anti-tile, the anti tile is useful on Materials such as Terrain and Vegetation, to avoid
+that the repetition of the texture is noticed.</p>
+<div class="youtube admonition">
+<p class="admonition-title">Video Tutorial</p>
+<blockquote>
+<div><p>Here you can find a video tutorial on how to use the Anti Tile: <a class="reference internal" href="video_tutorials.html#vt-anti-tile"><span class="std std-ref">Anti Tile</span></a></p>
+</div></blockquote>
+</div>
+<a class="reference internal image-reference" href="_images/anti_tile_checkbox_01.webp"><img alt="Anti Tile Checkbox 01" class="align-center" src="_images/anti_tile_checkbox_01.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The anti tile will only have effect on materials based on Texture Images, it will not have effect on procedural materials
+as the latter do not need anti tile.</p>
+</div>
+<a class="reference internal image-reference" href="_images/anti_tile_cover.webp"><img alt="Anti Tile Cover" class="align-center" src="_images/anti_tile_cover.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The access to the anti-tile panel is possible only if the <strong>Use Anti Tile</strong> checkbox is active, otherwise the panel
+will not be visible.</p>
+<a class="reference internal image-reference" href="_images/organic_anti_tile_v1.webp"><img alt="Organic Anti Tile V1" class="align-center" src="_images/organic_anti_tile_v1.webp" style="width: 400px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Blend Scale</strong></dt><dd><p>Adjusts the scale of the blend between tiles, the higher the value the finer the noise will be, the lower the value the larger the noise will be.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Edge Wobble</strong></dt><dd><p>Adjusts the amount of wobble on the edges, the higher the value the more wobble will be present, the lower the value the more wobble will be absent.
+This makes it possible to make the edge between the tiles less linear.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Edge Blend</strong></dt><dd><p>Adjusts the amount of blend on the edges, the higher the value the more blend will be present, the lower the value the more blend will be absent.
+This makes it possible to make the edge between the tiles less linear.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Seed</strong></dt><dd><p>By changing the value, the seed will be changed, so you will change the randomness of the pattern.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Expand Seam</strong></dt><dd><p>This value is used to expand (enlarge) the randomly generated tiles, useful for further adjusting the pattern, in case
+that the texture is not seamless.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Hue Min</strong></dt><dd><p>This minimum value to which the color can be moved, if the value is 0.5, the color will not change.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Hue Max</strong></dt><dd><p>This maximum value to which the color can be moved, if the value is 0.5, the color will not change.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Exposure Min</strong></dt><dd><p>This minimum value to which the exposure can be moved, if the value is 0.0 the exposure is neutral.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Exposure Max</strong></dt><dd><p>This maximum value to which the exposure can be moved, if the value is 0.0 the exposure is neutral.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Color Var Scale</strong></dt><dd><p>This adjusts the size of the size of the patches based on the HUE and EXPOSURE adjustment. A high value
+corresponds to a larger size. If 0 The value coincides with the random tiling generated
+by the anti-tile.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Is Voronoi - Is Noise</strong></dt><dd><p>This button allows you to change the algorithm that controls only HUE and EXPOSURE.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Random Rotation</strong></dt><dd><p>This button (Which is always active by default) allows you to randomly rotate the tiles if active, if instead
+is disabled, the original texture will not be randomly rotated.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Hide Anti Tile</strong></dt><dd><p>If active, it hides the anti-tile effect without deactivating it, this is useful for seeing the original texture
+without anti-tile effect vs the texture with anti-tile effect.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<hr class="docutils" />
+</section>
 <section id="projection-settings">
 <span id="me-projection-settings"></span><h3>Projection Settings<a class="headerlink" href="#projection-settings" title="Permalink to this heading"></a></h3>
 <p>This Menu is present in all Nexus and Non Nexus Type materials, and is used to set the <strong>Coordinates</strong>, <strong>Projection</strong> and <strong>Normal Space Map</strong></p>
@@ -975,7 +1081,7 @@ without going through the Extreme PBR Mixer, this to improve performance and com
 <hr class="docutils" />
 </section>
 <section id="add-fx-layer">
-<span id="id14"></span><h3>Add Fx Layer<a class="headerlink" href="#add-fx-layer" title="Permalink to this heading"></a></h3>
+<span id="id15"></span><h3>Add Fx Layer<a class="headerlink" href="#add-fx-layer" title="Permalink to this heading"></a></h3>
 <a class="reference internal image-reference" href="_images/me_add_fx_layer.webp"><img alt="Add Fx Layer" class="align-center" src="_images/me_add_fx_layer.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1021,7 +1127,7 @@ allows you to reconnect all Nexus nodes, and realigns them so that they have a c
 </table>
 </section>
 <section id="fx-layer">
-<span id="id15"></span><h3>Fx Layer<a class="headerlink" href="#fx-layer" title="Permalink to this heading"></a></h3>
+<span id="id16"></span><h3>Fx Layer<a class="headerlink" href="#fx-layer" title="Permalink to this heading"></a></h3>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p>In order to add the Fx Layer you will have to use the <strong>Add Fx</strong> button described here: <a class="reference internal" href="#add-fx-layer"><span class="std std-ref">Add Fx Layer</span></a></p>
@@ -1169,8 +1275,8 @@ consequently the noise effect will be inverted.</p>
 <a class="reference internal image-reference" href="_images/fx_invert_noise_mask_example.webp"><img alt="Fx Invert Mask Example" class="align-center" src="_images/fx_invert_noise_mask_example.webp" style="width: 800px;" /></a>
 </section>
 <hr class="docutils" />
-<section id="id16">
-<h5>Roughness<a class="headerlink" href="#id16" title="Permalink to this heading"></a></h5>
+<section id="id17">
+<h5>Roughness<a class="headerlink" href="#id17" title="Permalink to this heading"></a></h5>
 <a class="reference internal image-reference" href="_images/fx_dynamic_mask_noise_roughness.webp"><img alt="Fx Dynamic Mask Noise Roughness" class="align-center" src="_images/fx_dynamic_mask_noise_roughness.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1508,7 +1614,7 @@ as regards painting, then I recommend using the Simple PBR version.</p>
 <hr class="docutils" />
 </section>
 <section id="unrecognized-material">
-<span id="id17"></span><h2>Unrecognized Material<a class="headerlink" href="#unrecognized-material" title="Permalink to this heading"></a></h2>
+<span id="id18"></span><h2>Unrecognized Material<a class="headerlink" href="#unrecognized-material" title="Permalink to this heading"></a></h2>
 <p>In this case the material is pink, this means that probably the textures to which the material referred
 have been moved or deleted, so the situation, selecting the object with the active material, will be this:</p>
 <p>All missing textures will be marked in Red, this allows you to enter the <strong>Texture Manager</strong> panel and try

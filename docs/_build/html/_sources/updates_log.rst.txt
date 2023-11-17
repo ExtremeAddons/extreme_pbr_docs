@@ -3,6 +3,31 @@
 Updates Log
 ===========
 
+4.1.111
+-------
+
+**Release date: 17-11-2023 (D/M/Y)**
+
+- **Added - Anti Tile**
+
+    A new anti-tile function has been added for all materials based on textures, even for those imported with Shader Maker
+
+- **Bug Fix - Asset Browser Creation**
+
+    An error occurred randomly, we think we fixed it by fixing the function that copied the context with bpy.context.copy(), now the context is no longer copied
+
+- **Fixed - Asset Browser Creation Time (For Blender 4.x)**
+
+    Speeded up the process of creating the asset browser in Blender 4, in this version of Blender, it was very slow, this has been fixed
+
+- **Fixed - Time to create the material**
+
+    The time to create the material via the Add-New button has been speeded up by about x4 times, as the reloading of the textures was unnecessarily attempted in the function of assigning the textures in the image nodes, now an exception has been put that prevents the reloading as it was useless
+
+- **Bug Fix - Auto Re-Link Libraries Button**
+
+    The Auto Re-Link button introduced in the previous version, if pressed without any .json files with the logs, this produced an error message, now instead a Popup message will be displayed that will warn that there are no libraries to be linked
+
 4.1.110
 -------
 

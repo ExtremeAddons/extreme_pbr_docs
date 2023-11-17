@@ -77,6 +77,23 @@ Material Editor
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _vt_anti_tile:
+
+Anti Tile
+-----------------
+
+.. note::
+        This feature was introduced in Extreme PBR Nexus V 4.1.111, make sure you have this version or higher.
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iUmIaC6ynwo?si=nzZQJoJf9qGJ6bRz" title="YouTube
+         video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+         web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 .. _texture_paint_video_tutorial:
 
 Texture Paint

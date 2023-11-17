@@ -1125,6 +1125,112 @@ Here is an example of a scene with a fence with random location active, followed
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _use_anti_tile:
+
+Use Anti Tile
+--------------
+
+This checkbox will activate the anti-tile, the anti tile is useful on Materials such as Terrain and Vegetation, to avoid
+that the repetition of the texture is noticed.
+
+..
+
+.. admonition:: Video Tutorial
+    :class: youtube
+
+        Here you can find a video tutorial on how to use the Anti Tile: :ref:`vt_anti_tile`
+
+
+
+.. image:: _static/_images/anti_tile/anti_tile_checkbox_01.webp
+    :align: center
+    :width: 600
+    :alt: Anti Tile Checkbox 01
+
+|
+
+.. note::
+        The anti tile will only have effect on materials based on Texture Images, it will not have effect on procedural materials
+        as the latter do not need anti tile.
+
+
+
+.. image:: _static/_images/anti_tile/anti_tile_cover.webp
+    :align: center
+    :width: 600
+    :alt: Anti Tile Cover
+
+|
+
+Organic Anti tile Panel
+###########################
+
+The access to the anti-tile panel is possible only if the **Use Anti Tile** checkbox is active, otherwise the panel
+will not be visible.
+
+.. image:: _static/_images/anti_tile/organic_anti_tile_v1.webp
+    :align: center
+    :width: 400
+    :alt: Organic Anti Tile V1
+
+|
+
+- **Blend Scale**
+        Adjusts the scale of the blend between tiles, the higher the value the finer the noise will be, the lower the value the larger the noise will be.
+
+- **Edge Wobble**
+        Adjusts the amount of wobble on the edges, the higher the value the more wobble will be present, the lower the value the more wobble will be absent.
+        This makes it possible to make the edge between the tiles less linear.
+
+- **Edge Blend**
+        Adjusts the amount of blend on the edges, the higher the value the more blend will be present, the lower the value the more blend will be absent.
+        This makes it possible to make the edge between the tiles less linear.
+
+- **Seed**
+        By changing the value, the seed will be changed, so you will change the randomness of the pattern.
+
+- **Expand Seam**
+        This value is used to expand (enlarge) the randomly generated tiles, useful for further adjusting the pattern, in case
+        that the texture is not seamless.
+
+- **Hue Min**
+        This minimum value to which the color can be moved, if the value is 0.5, the color will not change.
+
+- **Hue Max**
+        This maximum value to which the color can be moved, if the value is 0.5, the color will not change.
+
+- **Exposure Min**
+        This minimum value to which the exposure can be moved, if the value is 0.0 the exposure is neutral.
+
+- **Exposure Max**
+        This maximum value to which the exposure can be moved, if the value is 0.0 the exposure is neutral.
+
+- **Color Var Scale**
+        This adjusts the size of the size of the patches based on the HUE and EXPOSURE adjustment. A high value
+        corresponds to a larger size. If 0 The value coincides with the random tiling generated
+        by the anti-tile.
+
+- **Is Voronoi - Is Noise**
+        This button allows you to change the algorithm that controls only HUE and EXPOSURE.
+
+- **Random Rotation**
+        This button (Which is always active by default) allows you to randomly rotate the tiles if active, if instead
+        is disabled, the original texture will not be randomly rotated.
+
+- **Hide Anti Tile**
+        If active, it hides the anti-tile effect without deactivating it, this is useful for seeing the original texture
+        without anti-tile effect vs the texture with anti-tile effect.
+
+
+
+
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 .. _me_projection_settings:
 
 Projection Settings
