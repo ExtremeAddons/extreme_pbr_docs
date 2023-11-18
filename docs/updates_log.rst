@@ -28,6 +28,10 @@ Updates Log
 
     The Auto Re-Link button introduced in the previous version, if pressed without any .json files with the logs, this produced an error message, now instead a Popup message will be displayed that will warn that there are no libraries to be linked
 
+- **Added - Asset Browser Size Choice**
+
+    Added a property to select which size to choose for the creation of the asset browser, now you can choose whether to create only assets from 1/2k, 1k, 2k, 4k, 8k or All, that is all the available versions of the material (If installed) Procedural materials are always created, as they do not have a size expressed in pixels
+
 4.1.110
 -------
 
