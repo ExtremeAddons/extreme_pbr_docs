@@ -407,6 +407,138 @@ Extreme PBR addon, it will manage your exapack packages and install them. (You w
         "Open safe files after download" in the "General" window. Done, if in the future you download zipped files with safari,
         they will no longer be unzipped.
 
+------------------------------------------------------------------------------------------------------------------------
+
+========================
+Update Only The addon
+========================
+
+.. important::
+
+        In order to update the addon, it is **not necessary to download the libraries again!** If you had already downloaded
+        and installed them previously as explained here :ref:`install_library_41100` simply follow these steps below to
+        update the addon to the latest version.
+
+**Unistall the old version**
+
+    (Only If you have previously installed a version of Extreme PBR prior to the Nexus edition)
+
+
+    1. Search your Old Extreme PBR from Blender addons
+    2. Expand The Extreme PBR Preferences Menu
+    3. Press Remove
+    4. Restart Blender (Recommended!)
+
+    .. image:: _static/_images/installation/uninstall_example_panel.png
+          :align: center
+          :width: 800
+          :alt: Uninstall example panel
+
+    |
+
+    .. important::
+            It may be necessary to restart as said in point 4 to be sure that the new modules do not conflict with those of
+            the previous version.
+
+
+**Download the addon file**
+
+    In your product page, you can find various files, the main ones for the installation are the following:
+
+    - ``extreme_pbr_v4####.zip`` is the addon for blender, this is the first element to download and install
+
+      .. image:: _static/_images/installation/addon_zipped_01.webp
+          :align: center
+          :width: 400
+          :alt: Addon zipped 01
+
+    |
+
+
+    .. Note:: **For Mac users:** it often happens that Safari Browser is set to decompress .zip files, make sure this does not happen,
+              otherwise the .zip file will no longer be a .zip file and you will not be able to install the addon as follows.
+
+              Just go to the Safari menu bar at the top left and click on Safari>Preferences, then remove the check mark from
+              "Open safe files after download" in the "General" window. Done, if in the future you download zipped files with safari,
+              they will no longer be unzipped.
+
+
+
+    Now, download the addon and install it in Blender, the procedure is as follows:
+
+
+    1) Download the addon (Remember that you must be logged in to the site where you purchased the addon):
+
+        - If you purchased on Blendermarket you can find the addon here:
+
+           - https://blendermarket.com/account/orders
+
+
+        - If you purchased on Gumroad you can find the addon here:
+
+           - https://app.gumroad.com/library
+
+        - Addon name Example: **extreme_pbr_v41100** (The number can be different, it depends on the version you are downloading)
+
+
+    .. Important:: The addon file must remain in zip format! Do not unzip the file, otherwise you will not be able to install it correctly.
+                  This note is especially for Mac users. If you do not know how to prevent Safari from decompressing zip files, take a look here :ref:`mac_safari_zip`
+
+    2) Once the addon is downloaded, open Blender and go to:
+
+       ``Edit > Preferences > Add-ons > Install``
+
+    .. image:: _static/_images/installation/install_addon_in_blender_01.webp
+        :align: center
+        :width: 800
+        :alt: Install addon in Blender
+
+    |
+
+    3) Select the downloaded file (**extreme_pbr_v41100.zip** <-- !This name is only an example!) and click on "Install Addon" (The name of the file can be different from version to version)
+
+    .. image:: _static/_images/installation/install_addon_zip_blender_01.webp
+        :align: center
+        :width: 800
+        :alt: Install addon zip in Blender
+
+    |
+
+    4) If everything went well, the addon is in the list of installed addons, you can also search for it by typing "Extreme PBR"
+       Mark the checkbox to activate it.
+
+    .. image:: _static/_images/installation/install_addon_zip_blender_02.webp
+        :align: center
+        :width: 800
+        :alt: Install addon zip in Blender 2
+
+    |
+
+    5) Try to Relink Libraries in automatic with the button **Try to re-link all paths automatically** available from version
+       4.1.110 onwards, this if the addon has already been installed correctly previously, should automatically relink
+       the paths to the Extreme PBR libraries (Including any expansions) If this does not work, go to the next step.
+
+    .. image:: _static/_images/installation/auto_relink_libraries.webp
+        :align: center
+        :width: 800
+        :alt: Auto relink libraries
+
+    |
+
+
+    6) If the previous step failed, go to the **Libraries** tab and refer to this section that explains how
+       the connection to the library paths works :ref:`pr_libraries`
+
+    .. image:: _static/_images/preferences/pr_library_management_panel.webp
+        :align: center
+        :width: 600
+        :alt: Pr library management panel
+
+
+
+
+
+
 
 
 
