@@ -51,7 +51,11 @@ in the right way the maps, this tool is very useful to create materials quickly 
     :width: 200
     :alt: Shader Maker Icon
 
-|
+
+.. _texture_nomenclature:
+
+Texture Nomenclature
+------------------------
 
 List of map nomenclatures that this tool recognizes:
 
@@ -66,9 +70,17 @@ List of map nomenclatures that this tool recognizes:
 - **Transmission**: _transmission_xtm, _transmission, _glass
 - **Mask**: _mask_xtm
 - **Alpha**: _alpha_xtm, _transparent, _alpha
-- **Normal**: _normal_xtm, _normal_map, _normal, _norm, _nrm,  normal
+- **Normal**: _normal_xtm, _normal_map, _normal, _norm, _nrm,  normal, _nor
 - **Bump**: _bump_xtm, _bump_map, _bumpmap, _bump,  bump ,  height
 - **Displace**: _displace_xtm, _displace, _height, _disp,  displace
+
+.. note::
+        Limitation: Some textures/images if coming from a library other than the one distributed with Extreme PBR
+        could contain parts of those nomenclatures and therefore could be recognized as a type of Map even
+        if it is not.
+        The function of Extreme PBR goes by exclusion starting from the most used, therefore the risk of error is reduced to a minimum,
+        but as said before, it could happen that the textures are confused if they do not adopt a nomenclature standard
+        as indicated above.
 
 ------------------------------------------------------------------------------------------------------------------------
 

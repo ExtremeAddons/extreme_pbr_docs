@@ -47,6 +47,7 @@
               <p class="caption" role="heading"><span class="caption-text">Get started: 🚀</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">New Installation (4.1.100 and up)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#update-only-the-addon">Update Only The addon</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation_old.html">Old Installation/Extreme Addons Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="make_asset_browser.html">Make Asset Browser</a></li>
 </ul>
@@ -63,6 +64,7 @@
 <li class="toctree-l1"><a class="reference internal" href="displacement.html">Displacement</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Shader Maker Category</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#shader-maker">Shader Maker</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#texture-nomenclature">Texture Nomenclature</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#auto-pbr">Auto PBR</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#material-editor-nexus">Material Editor (Nexus)</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#material-editor-simple-pbr">Material Editor (Simple PBR)</a></li>
@@ -167,9 +169,8 @@
 this tool recognizes the names of the textures (Maps) based on the suffix or prefix if it exists, so it is able to place
 in the right way the maps, this tool is very useful to create materials quickly and easily.</p>
 <a class="reference internal image-reference" href="_images/shader_maker_icon.webp"><img alt="Shader Maker Icon" class="align-center" src="_images/shader_maker_icon.webp" style="width: 200px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
+<section id="texture-nomenclature">
+<span id="id3"></span><h3>Texture Nomenclature<a class="headerlink" href="#texture-nomenclature" title="Permalink to this heading"></a></h3>
 <p>List of map nomenclatures that this tool recognizes:</p>
 <ul class="simple">
 <li><p><strong>Diffuse</strong>: _diffuse_xtm, _albedo, _basecolor, _base_color, _diffuse, _color, _diff, _dif, _col, diffuse</p></li>
@@ -183,10 +184,20 @@ in the right way the maps, this tool is very useful to create materials quickly 
 <li><p><strong>Transmission</strong>: _transmission_xtm, _transmission, _glass</p></li>
 <li><p><strong>Mask</strong>: _mask_xtm</p></li>
 <li><p><strong>Alpha</strong>: _alpha_xtm, _transparent, _alpha</p></li>
-<li><p><strong>Normal</strong>: _normal_xtm, _normal_map, _normal, _norm, _nrm,  normal</p></li>
+<li><p><strong>Normal</strong>: _normal_xtm, _normal_map, _normal, _norm, _nrm,  normal, _nor</p></li>
 <li><p><strong>Bump</strong>: _bump_xtm, _bump_map, _bumpmap, _bump,  bump ,  height</p></li>
 <li><p><strong>Displace</strong>: _displace_xtm, _displace, _height, _disp,  displace</p></li>
 </ul>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Limitation: Some textures/images if coming from a library other than the one distributed with Extreme PBR
+could contain parts of those nomenclatures and therefore could be recognized as a type of Map even
+if it is not.
+The function of Extreme PBR goes by exclusion starting from the most used, therefore the risk of error is reduced to a minimum,
+but as said before, it could happen that the textures are confused if they do not adopt a nomenclature standard
+as indicated above.</p>
+</div>
+</section>
 <hr class="docutils" />
 <section id="auto-pbr">
 <h3>Auto PBR<a class="headerlink" href="#auto-pbr" title="Permalink to this heading"></a></h3>
@@ -226,7 +237,7 @@ Material Editor panel, below you will find the description of the material edito
 </section>
 </section>
 <section id="shader-maker-video">
-<span id="id3"></span><h2>Shader Maker Video<a class="headerlink" href="#shader-maker-video" title="Permalink to this heading"></a></h2>
+<span id="id4"></span><h2>Shader Maker Video<a class="headerlink" href="#shader-maker-video" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="_images/video_maker_icon.webp"><img alt="Shader Maker Video" class="align-center" src="_images/video_maker_icon.webp" style="width: 200px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -436,7 +447,7 @@ save system resources.</p>
 <hr class="docutils" />
 </section>
 <section id="smp-texture-manager-button">
-<span id="id4"></span><h4>Texture Manager Button<a class="headerlink" href="#smp-texture-manager-button" title="Permalink to this heading"></a></h4>
+<span id="id5"></span><h4>Texture Manager Button<a class="headerlink" href="#smp-texture-manager-button" title="Permalink to this heading"></a></h4>
 <a class="reference internal image-reference" href="_images/smp_texture_manager_button.webp"><img alt="Shader Maker Painter Texture Manager Button" class="align-center" src="_images/smp_texture_manager_button.webp" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>

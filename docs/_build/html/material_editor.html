@@ -47,6 +47,7 @@
               <p class="caption" role="heading"><span class="caption-text">Get started: 🚀</span></p>
 <ul>
 <li class="toctree-l1"><a class="reference internal" href="installation.html">New Installation (4.1.100 and up)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html#update-only-the-addon">Update Only The addon</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation_old.html">Old Installation/Extreme Addons Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="make_asset_browser.html">Make Asset Browser</a></li>
 </ul>
@@ -124,7 +125,10 @@
 </li>
 </ul>
 </li>
-<li class="toctree-l2"><a class="reference internal" href="#material-editor-simple-pbr">Material Editor (Simple PBR)</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#material-editor-simple-pbr">Material Editor (Simple PBR)</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#convert-to-nexus">Convert to Nexus</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#unrecognized-material">Unrecognized Material</a></li>
 </ul>
 </li>
@@ -1594,6 +1598,13 @@ the paragraph <strong>Module Material Panel</strong> <a class="reference interna
 <p>This is the Material Editor panel when you apply a material with the <strong>Simple PBR</strong> method, to choose to apply
 the material with the <strong>Simple PBR</strong> method you have to set the material application method to <strong>Simple PBR</strong> here
 described: <a class="reference internal" href="preferences.html#pr-op-material-type"><span class="std std-ref">Material Type</span></a></p>
+<p>This panel will be the same even for materials not coming from Extreme PBR, the same interface has been chosen
+that adopts blender.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>As for the microdisplacement it will be manageable from this panel in this mode the interface will appear
+of the Displace node, if in fact a displacement of type “Microdisplacement” has been applied.</p>
+</div>
 <a class="reference internal image-reference" href="_images/me_simple_pbr_type.webp"><img alt="Material Editor Simple PBR Type" class="align-center" src="_images/me_simple_pbr_type.webp" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -1611,7 +1622,19 @@ This type of material (Simple PBR) is much faster to manage, and much faster to 
 if you need speed, and you don’t need all the properties that the Nexus version has, especially for
 as regards painting, then I recommend using the Simple PBR version.</p>
 </div>
+<section id="convert-to-nexus">
+<h3>Convert to Nexus<a class="headerlink" href="#convert-to-nexus" title="Permalink to this heading"></a></h3>
+<p>This button when present, allows you to try to convert the material into a Nexus type material, this is useful if you
+want to paint or add an Extreme PBR material on top of this material, since the Nexus type materials have been studied
+on purpose.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This converter only works if the contextual material is of type <strong>Simple PBR</strong> or any material as long as it contains
+the textures with standard nomenclature, see here the standard nomenclature: <a class="reference internal" href="shader_maker.html#texture-nomenclature"><span class="std std-ref">Texture Nomenclature</span></a></p>
+</div>
+<a class="reference internal image-reference" href="_images/me_convert_to_nexus_button.webp"><img alt="Material Editor Convert To Nexus Button" class="align-center" src="_images/me_convert_to_nexus_button.webp" style="width: 400px;" /></a>
 <hr class="docutils" />
+</section>
 </section>
 <section id="unrecognized-material">
 <span id="id18"></span><h2>Unrecognized Material<a class="headerlink" href="#unrecognized-material" title="Permalink to this heading"></a></h2>

@@ -2245,6 +2245,14 @@ This is the Material Editor panel when you apply a material with the **Simple PB
 the material with the **Simple PBR** method you have to set the material application method to **Simple PBR** here
 described: :ref:`pr_op_material_type`
 
+
+This panel will be the same even for materials not coming from Extreme PBR, the same interface has been chosen
+that adopts blender.
+
+.. note::
+        As for the microdisplacement it will be manageable from this panel in this mode the interface will appear
+        of the Displace node, if in fact a displacement of type "Microdisplacement" has been applied.
+
 .. image:: _static/_images/material_editor/me_simple_pbr_type.webp
     :align: center
     :width: 400
@@ -2267,6 +2275,28 @@ This panel will be drawn on the **Simple PBR** node standard of Extreme PBR. The
         This type of material (Simple PBR) is much faster to manage, and much faster to render. So
         if you need speed, and you don't need all the properties that the Nexus version has, especially for
         as regards painting, then I recommend using the Simple PBR version.
+
+
+Convert to Nexus
+-----------------
+
+
+This button when present, allows you to try to convert the material into a Nexus type material, this is useful if you
+want to paint or add an Extreme PBR material on top of this material, since the Nexus type materials have been studied
+on purpose.
+
+.. note::
+        This converter only works if the contextual material is of type **Simple PBR** or any material as long as it contains
+        the textures with standard nomenclature, see here the standard nomenclature: :ref:`texture_nomenclature`
+
+
+
+.. image:: _static/_images/material_editor/me_convert_to_nexus_button.webp
+    :align: center
+    :width: 400
+    :alt: Material Editor Convert To Nexus Button
+
+
 
 
 ------------------------------------------------------------------------------------------------------------------------

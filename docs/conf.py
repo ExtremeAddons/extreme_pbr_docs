@@ -49,3 +49,8 @@ html_favicon = "extreme_addons_red_32.ico"
 html_css_files = [
     'css/custom.css',
                   ]
+
+
+html_theme_options = {
+    "display_version": True
+}
