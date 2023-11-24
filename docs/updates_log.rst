@@ -3,6 +3,27 @@
 Updates Log
 ===========
 
+4.1.113
+-------
+
+**Release date: 24-11-2023 (D/M/Y)**
+
+- **Fix - Metal Maps**
+
+    Due to an error in the code, some Metallic maps were not recognized
+
+- **Improved - Convert to Nexus Material Button**
+
+    Now this operator also searches in the groups and subgroups of the group nodes present in the material, so as to be able to convert even the materials that have group nodes with standard nomenclature textures inside them
+
+- **Improved - Texture Nomenclature**
+
+    The search for Nomenclature in the name of the textures, now takes place by comparing the name of the texture in lowercase and the nomenclature standard in lowercase, this allows a greater possibility of match, since the outside is not yet well known a standard, and many people adopt Uppercase or Lowercase. So this makes the addon more compatible with textures that have a different nomenclature from the standard one
+
+- **Bug Fix - Convert to Nexus Material Button**
+
+    In some cases it could happen to encounter an error during the conversion, the message reported that the TextureNomenclature class did not have node_tag as an attribute, this has been fixed
+
 4.1.112
 -------
 
