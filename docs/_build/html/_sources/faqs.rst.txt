@@ -105,18 +105,4 @@ Yes, on my channel you will find some useful videos, I suggest you subscribe to 
 receive notifications: `Youtube Link <https://www.youtube.com/watch?v=3UCpnJ9i8qk&list=PL7TaxhAdM_6lNOftiPMJes0rLTDB51I2v&index=2>`_
 or on the documentation page here: :ref:`video_tutorials`
 
-------------------------------------------------------------------------------------------------------------------------
 
-Why are the materials black sometimes?
-****************************************
-
-This could depend on which version of Blender you are using, in particular if for example you used a
-New version of Blender or in Alpha or Beta version.
-
-In the first case, if you created a project in Blender (For example in blender 3.5) and you opened the project in an older version of blender
-(For example Blender 3.0) it could happen that the materials are black. This depends on the fact that
-in Blender 3.5 there are new nodes that did not exist in blender 3.0, so it may have damaged the project.
-
-This can be solved: Make sure you have a version of Extreme PBR 4.0.205 or higher and by going to "Options"
-from the Extreme PBR preferences menu and from there press the button
-"Adjust all material node tree" this should fix the nodes no longer recognized.

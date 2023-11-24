@@ -89,7 +89,10 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#what-has-changed-from-4-0-x-series-to-4-1-x-series">What has changed from 4.0.X series to 4.1.X series?</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#fix-materials-of-extreme-pbr-created-with-the-version-of-blender-3-x-x-in-blender-4-x-x-or-vice-versa">Fix Materials of Extreme PBR created with the version of Blender 3.x.x in Blender 4.x.x or vice versa</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#fix-materials-of-extreme-pbr-created-with-the-version-of-blender-3-x-x-in-blender-4-x-x-or-vice-versa">Fix Materials of Extreme PBR created with the version of Blender 3.x.x in Blender 4.x.x or vice versa</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#why-are-the-materials-black-sometimes">Why are the materials black sometimes?</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
@@ -298,6 +301,18 @@ of Blender. Here is the reference to the indicated button <a class="reference in
 </div></blockquote>
 </li>
 </ul>
+<hr class="docutils" />
+<section id="why-are-the-materials-black-sometimes">
+<h3>Why are the materials black sometimes?<a class="headerlink" href="#why-are-the-materials-black-sometimes" title="Permalink to this heading"></a></h3>
+<p>This could depend on which version of Blender you are using, in particular if for example you used a
+New version of Blender or in Alpha or Beta version.</p>
+<p>In the first case, if you created a project in Blender (For example in blender 3.5) and you opened the project in an older version of blender
+(For example Blender 3.0) it could happen that the materials are black. This depends on the fact that
+in Blender 3.5 there are new nodes that did not exist in blender 3.0, so it may have damaged the project.</p>
+<p>This can be solved: Make sure you have a version of Extreme PBR 4.0.205 or higher and by going to “Options”
+from the Extreme PBR preferences menu and from there press the button
+“Adjust all material node tree” this should fix the nodes no longer recognized.</p>
+</section>
 </section>
 </section>
 
