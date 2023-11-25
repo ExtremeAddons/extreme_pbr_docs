@@ -94,6 +94,18 @@ Anti Tile
 
 ------------------------------------------------------------------------------------------------------------------------
 
+How to change textures color
+--------------------------------
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/iuj9X_KNTTs?si=W4Cz88SI4yUbevyC"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 .. _texture_paint_video_tutorial:
 
 Texture Paint
