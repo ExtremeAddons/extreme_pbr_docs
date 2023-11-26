@@ -257,15 +257,26 @@ from the Extreme PBR preferences menu and from there press the button
 I have the library on One Drive, I can't hook Extreme PBR to that library
 **************************************************************************
 
+First of all make sure that the synchronization is complete, as the files may not have been downloaded yet
+on your computer via One Drive.
 
+
+And Pay attention to this:
 
 One Drive shares files on the cloud, so they may not be physically on that path, so Extreme PBR will not be able to
 communicate with the files that are on the cloud, since it does not have access to the One Drive APIs. This is a known
 problem, but it doesn't really depend on Extreme PBR or Blender. This should be handled so that the libraries are physically
 on your Hard Disk.
 
-A solution for 2 or more computers is to use a shared HardDisk or Nas with the computers, or use an External HardDisk
-to pass a library from a Computer A to Computer B.
+
+
+.. important::
+
+        In the 100% of the cases that have been reported to me, this problem is always related to the synchronization with One Drive
+        so make sure you manage your files with your One Drive as best you can, because Extreme PBR only works if the files are really
+        synchronized and present on your Hard Disk.
+        Take a moment to check your One Drive situation carefully
+
 
 
 ------------------------------------------------------------------------------------------------------------------------
