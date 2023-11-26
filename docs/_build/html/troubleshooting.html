@@ -91,6 +91,8 @@
 <li class="toctree-l2"><a class="reference internal" href="#what-has-changed-from-4-0-x-series-to-4-1-x-series">What has changed from 4.0.X series to 4.1.X series?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#fix-materials-of-extreme-pbr-created-with-the-version-of-blender-3-x-x-in-blender-4-x-x-or-vice-versa">Fix Materials of Extreme PBR created with the version of Blender 3.x.x in Blender 4.x.x or vice versa</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#why-are-the-materials-black-sometimes">Why are the materials black sometimes?</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-have-the-library-on-one-drive-i-can-t-hook-extreme-pbr-to-that-library">I have the library on One Drive, I can’t hook Extreme PBR to that library</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#i-can-t-find-the-paths-of-the-libraries-on-my-nas">I can’t find the paths of the libraries on my Nas</a></li>
 </ul>
 </li>
 </ul>
@@ -312,6 +314,23 @@ in Blender 3.5 there are new nodes that did not exist in blender 3.0, so it may 
 <p>This can be solved: Make sure you have a version of Extreme PBR 4.0.205 or higher and by going to “Options”
 from the Extreme PBR preferences menu and from there press the button
 “Adjust all material node tree” this should fix the nodes no longer recognized.</p>
+</section>
+<hr class="docutils" />
+<section id="i-have-the-library-on-one-drive-i-can-t-hook-extreme-pbr-to-that-library">
+<h3>I have the library on One Drive, I can’t hook Extreme PBR to that library<a class="headerlink" href="#i-have-the-library-on-one-drive-i-can-t-hook-extreme-pbr-to-that-library" title="Permalink to this heading"></a></h3>
+<p>One Drive shares files on the cloud, so they may not be physically on that path, so Extreme PBR will not be able to
+communicate with the files that are on the cloud, since it does not have access to the One Drive APIs. This is a known
+problem, but it doesn’t really depend on Extreme PBR or Blender. This should be handled so that the libraries are physically
+on your Hard Disk.</p>
+<p>A solution for 2 or more computers is to use a shared HardDisk or Nas with the computers, or use an External HardDisk
+to pass a library from a Computer A to Computer B.</p>
+</section>
+<hr class="docutils" />
+<section id="i-can-t-find-the-paths-of-the-libraries-on-my-nas">
+<h3>I can’t find the paths of the libraries on my Nas<a class="headerlink" href="#i-can-t-find-the-paths-of-the-libraries-on-my-nas" title="Permalink to this heading"></a></h3>
+<p>This is solvable simply by copying and pasting the paths into the address bar of your operating system’s file manager
+and then pasting them into the Extreme PBR library path text field.</p>
+<a class="reference internal image-reference" href="_images/copy_path_nas_01.webp"><img alt="Copy Path Nas 01" class="align-center" src="_images/copy_path_nas_01.webp" style="width: 600px;" /></a>
 </section>
 </section>
 </section>

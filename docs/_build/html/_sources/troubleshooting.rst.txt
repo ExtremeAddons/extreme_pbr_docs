@@ -251,6 +251,40 @@ from the Extreme PBR preferences menu and from there press the button
 "Adjust all material node tree" this should fix the nodes no longer recognized.
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+
+I have the library on One Drive, I can't hook Extreme PBR to that library
+**************************************************************************
+
+
+
+One Drive shares files on the cloud, so they may not be physically on that path, so Extreme PBR will not be able to
+communicate with the files that are on the cloud, since it does not have access to the One Drive APIs. This is a known
+problem, but it doesn't really depend on Extreme PBR or Blender. This should be handled so that the libraries are physically
+on your Hard Disk.
+
+A solution for 2 or more computers is to use a shared HardDisk or Nas with the computers, or use an External HardDisk
+to pass a library from a Computer A to Computer B.
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+I can't find the paths of the libraries on my Nas
+**************************************************
+
+
+This is solvable simply by copying and pasting the paths into the address bar of your operating system's file manager
+and then pasting them into the Extreme PBR library path text field.
+
+
+.. image:: _static/_images/troubleshooting/copy_path_nas_01.webp
+    :align: center
+    :width: 600
+    :alt: Copy Path Nas 01
+
+
 
 
 
