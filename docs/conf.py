@@ -10,7 +10,7 @@
 project = 'Extreme PBR'
 copyright = '2023, Andrea Donati'
 author = 'Andrea Donati'
-release = '4.1.110'
+release = '4.1.112'
 
 import os, sys
 
