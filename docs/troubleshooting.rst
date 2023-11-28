@@ -237,7 +237,7 @@ make them compatible with the version of Blender you are using.
 
 
 Why are the materials black sometimes?
-****************************************
+---------------------------------------
 
 This could depend on which version of Blender you are using, in particular if for example you used a
 New version of Blender or in Alpha or Beta version.
@@ -255,7 +255,7 @@ from the Extreme PBR preferences menu and from there press the button
 
 
 I have the library on One Drive, I can't hook Extreme PBR to that library
-**************************************************************************
+---------------------------------------------------------------------------
 
 First of all make sure that the synchronization is complete, as the files may not have been downloaded yet
 on your computer via One Drive.
@@ -294,6 +294,27 @@ and then pasting them into the Extreme PBR library path text field.
     :align: center
     :width: 600
     :alt: Copy Path Nas 01
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+Material icons not visible
+---------------------------
+
+
+A problem is quite well known with the Blender Template Preview Icons, which in some situations may not be
+loaded correctly by the addon, to solve this problem a Button has been inserted which once pressed, reloads
+the Icons, making it possible to view them correctly. Here you will find the paragraph that indicates the button::ref:`mp_reload_preview_icons`
+
+
+.. image:: _static/_images/troubleshooting/preview_icons_not_load_01.webp
+    :align: center
+    :width: 600
+    :alt: Preview Icons Not Load 01
+
+
+
+
 
 
 
