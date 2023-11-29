@@ -127,7 +127,7 @@ it could be that in the folders mentioned above, the "._data" folders are missin
 .. _troubleshooting_auto_pack_resources:
 
 Why if I export the project to another computer I can no longer see the materials?
-****************************************************************************************
+------------------------------------------------------------------------------------
 
 This is quite normal, by default blender does not package images in .blend files, to do this you have to go to
 
@@ -283,7 +283,7 @@ on your Hard Disk.
 
 
 I can't find the paths of the libraries on my Nas
-**************************************************
+---------------------------------------------------
 
 
 This is solvable simply by copying and pasting the paths into the address bar of your operating system's file manager
