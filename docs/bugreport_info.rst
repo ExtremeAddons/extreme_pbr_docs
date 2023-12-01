@@ -39,7 +39,7 @@ in this page: https://blendermarket.com/products/extreme-pbr-addon-for-blender-2
 
 
 
-**If you bought on Gumroad** You can contact me on the https://extreme-addons.com Chat (In the bottom right corner of the page)
+**If you bought on Gumroad** You can contact me with mail: **tredistudio@hotmail.com** or **info@extreme-addons.com**
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -70,14 +70,14 @@ Use the "System To Clipboard" button to copy the system information, and paste i
 paste the system information and think of contacting me on BlenderMarket (If you are a Blendermarket user) https://blendermarket.com/products/extreme-pbr
 
 
-Or you can contact me in the Extreme-Addons chat, you can find it at the bottom right on the website https://extreme-addons.com
+Or you can contact me with mail: **tredistudio@hotmail.com** or **info@extreme-addons.com**
 
 .. Note:: For practical reasons, it is better to report bugs via github, this allows you to keep track of all the bugs
           reported by our users, this also allows us to make the solution of bugs public, so that everyone can benefit
           from the reports and check that the bug has been fixed.
 
 
--
+
 
 
 

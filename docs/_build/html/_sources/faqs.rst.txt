@@ -20,8 +20,7 @@ How can I contact you for assistance?
 If you have purchased the addon on BlenderMarket, go directly to the addon page and click on "Ask a question"
 usually I answer within 24 hours
 
-If you have purchased the addon on Gumroad, you can contact me via the chat at the bottom right on https://extreme-addons.com/
-in alternative, you can send me a mail to: **info@extreme-addons.com**
+If you have purchased the addon on Gumroad, you can send me a mail to: **tredistudio@hotmail.com** or **info@extreme-addons.com**
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -83,8 +82,7 @@ Cycles and Eevee are the rendering engines supported by Extreme PBR, support for
 Is there support?
 *****************
 
-Of course! You can contact me on https://blendermarket.com/ or on http://extreme-addons.com/
-(On extreme-addons.com you can find a chat button in the bottom right corner)
+Of course! You can contact me on https://blendermarket.com/ or on my mails: **tredistudio@hotmail.com** or **info@extreme-addons.com**
 
 ------------------------------------------------------------------------------------------------------------------------
 
