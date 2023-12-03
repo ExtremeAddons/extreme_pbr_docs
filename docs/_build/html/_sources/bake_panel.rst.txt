@@ -21,13 +21,13 @@ Panel :ref:`bake_editor_button`
 
 |
 
-.. warning::
-        In Blender 3.6.0 there is an Blender Crash during the Bake, please update Blender to 3.6.1 or higher!
-        I tried to do a bugfix, but it doesn't depend on me in that version 3.6.0 there is a Bug
+..
+    Questo è un commento
+    .. warning::
+            In Blender 3.6.0 there is an Blender Crash during the Bake, please update Blender to 3.6.1 or higher!
+            I tried to do a bugfix, but it doesn't depend on me in that version 3.6.0 there is a Bug
 
 .. important::
-        - The Bake Editor Panel remains in Beta phase as it is still under development, there are still some cases in which
-          the Bake will not work correctly, although they are very few.
         - The bake is a fairly slow and heavy process, this tool has been designed to facilitate the Bake process,
           which normally in Blender is a much more complex and long process and requires a lot of experience and time.
 
@@ -80,7 +80,7 @@ Bake Modes
 The bake editor panel has 3 different **Bake Mode**, depending on which mode you choose, the panel will take on a
 slightly different appearance in the **Lighting** section
 
-.. image:: _static/_images/bake_panel/bake_editor_modes_01.jpg
+.. image:: _static/_images/bake_panel/bake_editor_modes_01.webp
     :align: center
     :width: 600
     :alt: Bake Editor Panel 01
@@ -91,14 +91,14 @@ slightly different appearance in the **Lighting** section
 Output Format
 --------------
 
-.. image:: _static/_images/bake_panel/bake_editor_output_format.jpg
+.. image:: _static/_images/bake_panel/bake_editor_output_format.webp
     :align: center
     :width: 600
     :alt: Bake Editor Output Format
 
 |
 
-Qui puoi scegliere il formato di output della texture, puoi scegliere tra:
+Here you can choose the output format of the texture, you can choose between:
 
 **(PNG, JPEG, EXR, TIFF, TGA)**
 
@@ -108,7 +108,7 @@ Qui puoi scegliere il formato di output della texture, puoi scegliere tra:
 Bake Device
 ------------
 
-.. image:: _static/_images/bake_panel/bake_editor_device.jpg
+.. image:: _static/_images/bake_panel/bake_editor_device.webp
     :align: center
     :width: 600
     :alt: Bake Editor Device 01
@@ -140,7 +140,7 @@ cards that go much faster than a CPU, but there may be some cases where this rul
 Bake Samples
 -------------
 
-.. image:: _static/_images/bake_panel/bake_editor_samples.jpg
+.. image:: _static/_images/bake_panel/bake_editor_samples.webp
     :align: center
     :width: 600
     :alt: Bake Editor Samples
@@ -156,7 +156,7 @@ Bake will be precise, but also slower. This rule is almost the same as that of a
 Bake Size
 ----------
 
-.. image:: _static/_images/bake_panel/bake_size.jpg
+.. image:: _static/_images/bake_panel/bake_size.webp
     :align: center
     :width: 600
     :alt: Bake Size
@@ -170,6 +170,12 @@ texture will be, but be careful, the higher the resolution, the slower and heavi
 
 Create new UV Map
 ------------------
+
+.. admonition:: Deprecated
+    :class: deprecated
+
+    This function is deprecated from Extreme PBR 4.1.114 as it has been integrated directly into the operator
+
 
 .. image:: _static/_images/bake_panel/bake_create_new_uv_map.jpg
     :align: center
@@ -186,6 +192,11 @@ I recommend you leave this box active.
 Island Margin
 --------------
 
+.. admonition:: Deprecated
+    :class: deprecated
+
+    This function is deprecated from Extreme PBR 4.1.114 as it is no longer necessary
+
 .. image:: _static/_images/bake_panel/bake_island_margin.jpg
     :align: center
     :width: 600
@@ -200,10 +211,44 @@ so there is a small space between the islands, and this space is filled with the
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Margin
+--------
+
+By default a margin is generated around UV “islands”. This is important to avoid discontinuities at UV seams,
+due to texture filtering and mip-mapping.
+
+
+
+.. image:: _static/_images/bake_panel/bake_margin.webp
+    :align: center
+    :width: 600
+    :alt: Bake Editor Margin
+
+|
+
+Margin Type
+*************
+
+Method to generate the margin.
+
+. **Extend:**
+    Extend border pixels outwards.
+
+. **Adjacent Faces:**
+    Fill margin using pixels from adjacent faces across UV seams.
+
+
+.. image:: _static/_images/bake_panel/bake_margin_type.webp
+    :align: center
+    :width: 600
+    :alt: Bake Editor Margin Type
+
+
+
 Move Bake object in a new scene
 --------------------------------
 
-.. image:: _static/_images/bake_panel/move_bake_objs_in_new_scene.jpg
+.. image:: _static/_images/bake_panel/move_bake_objs_in_new_scene.webp
     :align: center
     :width: 600
     :alt: Move Bake Objs In New Scene
@@ -246,7 +291,7 @@ In the Blend file a new scene is created, containing a copy of the model with a 
 Export FBX object
 ------------------
 
-.. image:: _static/_images/bake_panel/export_fbx_object.jpg
+.. image:: _static/_images/bake_panel/export_fbx_object.webp
     :align: center
     :width: 600
     :alt: Export FBX Object
@@ -276,7 +321,7 @@ Lighting
 --------------
 
 
-.. image:: _static/_images/bake_panel/direct_light_indirect_light.jpg
+.. image:: _static/_images/bake_panel/direct_light_indirect_light.webp
     :align: center
     :width: 600
     :alt: Direct Light Indirect Light
@@ -318,7 +363,7 @@ to activate or not the direct and indirect light.
 Bake maps BSDF mode
 ---------------------
 
-.. image:: _static/_images/bake_panel/bake_maps_bsdf.jpg
+.. image:: _static/_images/bake_panel/bake_maps_bsdf.webp
     :align: center
     :width: 800
     :alt: Bake Maps BSDF
@@ -399,7 +444,7 @@ Bake maps BSDF mode
 Bake maps Cycles Standard mode
 -------------------------------
 
-.. image:: _static/_images/bake_panel/bake_maps_cycles_standard.jpg
+.. image:: _static/_images/bake_panel/bake_maps_cycles_standard.webp
     :align: center
     :width: 800
     :alt: Bake Maps Cycles Standard
@@ -466,7 +511,7 @@ Bake Maps Combined mode
 
 |
 
-.. image:: _static/_images/bake_panel/bake_maps_combined.jpg
+.. image:: _static/_images/bake_panel/bake_maps_combined.webp
     :align: center
     :width: 800
     :alt: Bake Maps Combined
@@ -519,7 +564,7 @@ the Bake will start and create a **Combined** texture.
 Choose Bake Destination
 ------------------------
 
-.. image:: _static/_images/bake_panel/choose_bake_destination.jpg
+.. image:: _static/_images/bake_panel/choose_bake_destination.webp
     :align: center
     :width: 600
     :alt: Choose Bake Destination

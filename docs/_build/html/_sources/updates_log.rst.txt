@@ -3,6 +3,59 @@
 Updates Log
 ===========
 
+4.1.114
+-------
+
+**Release date: 03-12-2023 (D/M/Y)**
+
+- **Fix - Bake Black Edges**
+
+    The Bake produced black edges in the resulting image, this has been fixed
+
+- **Added - Bake Margin-Margin Type**
+
+    Added the 2 parameters that are normally set from the scene, 'Margin' and 'Margin Type', now it is possible to set them directly from the Bake panel
+
+- **Removed - Bake Island Margin**
+
+    This parameter has been removed from the Bake panel as it is no longer necessary in the Bake process
+
+- **Improved - Bake Scene properties**
+
+    The Bake process modified some properties of the scene in use, this was not really the best practice, now before starting the Bake, the properties of the user scene (cycles, bake, eevee) are saved in a dictionary, at the end of the bake these properties will be restored so as to keep the user scene unchanged
+
+- **Added - Texture Manager Texture Icon**
+
+    The texture manager button will now show the icon of the texture in use above the button, previously a generic IMAGE icon of Blender was shown.
+
+- **Optimized - Update Menu**
+
+    The Update menu, in the addon preferences, was very slow, as it examined files on the hard disk many times unnecessarily, now everything is stored in some variables that keep the json files in memory, this has speeded up the menu by about 400x times, which now it is much more fluid than before
+
+- **Bug Fix - Remove Volume Installed**
+
+    There was a bug in the operator to remove the installed exapack volumes that did not allow to display the Popup message before starting the operation, in addition this operator did not remove from the registry of the installed exapack, the volume just deleted, these errors have been corrected
+
+- **Bug Fix - Convert to Nexus Material Button**
+
+    When even a single texture found in the material to be converted had the name without the extension, an error was raised. This was corrected by assigning the extension to the name of the texture, in case it was not assigned previously, the recognition takes place thanks to the native method of blender image.file_format
+
+- **Bug Fix - User Library Material**
+
+    Due to an error in a function, if the materials of the User Library were those saved in a version prior to Extreme PBR Nexus, an error was raised that warned that the path did not exist, an exception was put that avoids this error and allows to reload the materials of the User Library correctly
+
+- **Bug Fix - Shader Overlay Material**
+
+    Due to a function that did not copy the enum properties of the nodes to be copied into the destination node (Shader overlay) the Mix nodes and other nodes could not be set correctly on their enum property (data_type, blend_type) now the materials are created correctly and copied correctly
+
+- **Bug Fix - User Library Multiple Module**
+
+    If the saved materials contained 2 or more Nexus modules created with Extreme PBR in Blender version prior to 4.0, the addon converted the modules but did not reconnect them to the mixer, this made the materials unusable unless the 'Adjust Node Tree' button was pressed now this no longer happens, the modules are correctly connected to the mixer
+
+- **Bug Fix - Shader Maker**
+
+    Applying a material via the shader maker in Nexus mode, if only one image was selected, this was also set in the nodes of the 'Normal Generator' but then the color space of this image was changed, this made the diffuse image with a wrong color space. Now it has been corrected and the image maintains the original color space
+
 4.1.113
 -------
 

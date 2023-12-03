@@ -64,6 +64,10 @@
 <li class="toctree-l2"><a class="reference internal" href="#bake-size">Bake Size</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#create-new-uv-map">Create new UV Map</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#island-margin">Island Margin</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#margin">Margin</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#margin-type">Margin Type</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="#move-bake-object-in-a-new-scene">Move Bake object in a new scene</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#export-fbx-object">Export FBX object</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#flip-x-axis">Flip X Axis</a></li>
@@ -150,16 +154,9 @@ Panel <a class="reference internal" href="main_panel.html#bake-editor-button"><s
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<div class="admonition warning">
-<p class="admonition-title">Warning</p>
-<p>In Blender 3.6.0 there is an Blender Crash during the Bake, please update Blender to 3.6.1 or higher!
-I tried to do a bugfix, but it doesn’t depend on me in that version 3.6.0 there is a Bug</p>
-</div>
 <div class="admonition important">
 <p class="admonition-title">Important</p>
 <ul class="simple">
-<li><p>The Bake Editor Panel remains in Beta phase as it is still under development, there are still some cases in which
-the Bake will not work correctly, although they are very few.</p></li>
 <li><p>The bake is a fairly slow and heavy process, this tool has been designed to facilitate the Bake process,
 which normally in Blender is a much more complex and long process and requires a lot of experience and time.</p></li>
 </ul>
@@ -196,22 +193,22 @@ another software</p>
 <h2>Bake Modes<a class="headerlink" href="#bake-modes" title="Permalink to this heading"></a></h2>
 <p>The bake editor panel has 3 different <strong>Bake Mode</strong>, depending on which mode you choose, the panel will take on a
 slightly different appearance in the <strong>Lighting</strong> section</p>
-<a class="reference internal image-reference" href="_images/bake_editor_modes_01.jpg"><img alt="Bake Editor Panel 01" class="align-center" src="_images/bake_editor_modes_01.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/bake_editor_modes_01.webp"><img alt="Bake Editor Panel 01" class="align-center" src="_images/bake_editor_modes_01.webp" style="width: 600px;" /></a>
 </section>
 <hr class="docutils" />
 <section id="output-format">
 <h2>Output Format<a class="headerlink" href="#output-format" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/bake_editor_output_format.jpg"><img alt="Bake Editor Output Format" class="align-center" src="_images/bake_editor_output_format.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/bake_editor_output_format.webp"><img alt="Bake Editor Output Format" class="align-center" src="_images/bake_editor_output_format.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<p>Qui puoi scegliere il formato di output della texture, puoi scegliere tra:</p>
+<p>Here you can choose the output format of the texture, you can choose between:</p>
 <p><strong>(PNG, JPEG, EXR, TIFF, TGA)</strong></p>
 </section>
 <hr class="docutils" />
 <section id="bake-device">
 <h2>Bake Device<a class="headerlink" href="#bake-device" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/bake_editor_device.jpg"><img alt="Bake Editor Device 01" class="align-center" src="_images/bake_editor_device.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/bake_editor_device.webp"><img alt="Bake Editor Device 01" class="align-center" src="_images/bake_editor_device.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -234,7 +231,7 @@ cards that go much faster than a CPU, but there may be some cases where this rul
 <hr class="docutils" />
 <section id="bake-samples">
 <h2>Bake Samples<a class="headerlink" href="#bake-samples" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/bake_editor_samples.jpg"><img alt="Bake Editor Samples" class="align-center" src="_images/bake_editor_samples.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/bake_editor_samples.webp"><img alt="Bake Editor Samples" class="align-center" src="_images/bake_editor_samples.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -244,7 +241,7 @@ Bake will be precise, but also slower. This rule is almost the same as that of a
 <hr class="docutils" />
 <section id="bake-size">
 <h2>Bake Size<a class="headerlink" href="#bake-size" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/bake_size.jpg"><img alt="Bake Size" class="align-center" src="_images/bake_size.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/bake_size.webp"><img alt="Bake Size" class="align-center" src="_images/bake_size.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -254,6 +251,10 @@ texture will be, but be careful, the higher the resolution, the slower and heavi
 <hr class="docutils" />
 <section id="create-new-uv-map">
 <h2>Create new UV Map<a class="headerlink" href="#create-new-uv-map" title="Permalink to this heading"></a></h2>
+<div class="deprecated admonition">
+<p class="admonition-title">Deprecated</p>
+<p>This function is deprecated from Extreme PBR 4.1.114 as it has been integrated directly into the operator</p>
+</div>
 <a class="reference internal image-reference" href="_images/bake_create_new_uv_map.jpg"><img alt="Bake Editor Create New UV Map" class="align-center" src="_images/bake_create_new_uv_map.jpg" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -264,6 +265,10 @@ I recommend you leave this box active.</p>
 <hr class="docutils" />
 <section id="island-margin">
 <h2>Island Margin<a class="headerlink" href="#island-margin" title="Permalink to this heading"></a></h2>
+<div class="deprecated admonition">
+<p class="admonition-title">Deprecated</p>
+<p>This function is deprecated from Extreme PBR 4.1.114 as it is no longer necessary</p>
+</div>
 <a class="reference internal image-reference" href="_images/bake_island_margin.jpg"><img alt="Bake Editor Island Margin" class="align-center" src="_images/bake_island_margin.jpg" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -273,9 +278,29 @@ which is a problem that occurs when the Bake is done, and the texture is not per
 so there is a small space between the islands, and this space is filled with the color of the adjacent island.</p>
 </section>
 <hr class="docutils" />
+<section id="margin">
+<h2>Margin<a class="headerlink" href="#margin" title="Permalink to this heading"></a></h2>
+<p>By default a margin is generated around UV “islands”. This is important to avoid discontinuities at UV seams,
+due to texture filtering and mip-mapping.</p>
+<a class="reference internal image-reference" href="_images/bake_margin.webp"><img alt="Bake Editor Margin" class="align-center" src="_images/bake_margin.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="margin-type">
+<h3>Margin Type<a class="headerlink" href="#margin-type" title="Permalink to this heading"></a></h3>
+<p>Method to generate the margin.</p>
+<dl class="simple">
+<dt>. <strong>Extend:</strong></dt><dd><p>Extend border pixels outwards.</p>
+</dd>
+<dt>. <strong>Adjacent Faces:</strong></dt><dd><p>Fill margin using pixels from adjacent faces across UV seams.</p>
+</dd>
+</dl>
+<a class="reference internal image-reference" href="_images/bake_margin_type.webp"><img alt="Bake Editor Margin Type" class="align-center" src="_images/bake_margin_type.webp" style="width: 600px;" /></a>
+</section>
+</section>
 <section id="move-bake-object-in-a-new-scene">
 <h2>Move Bake object in a new scene<a class="headerlink" href="#move-bake-object-in-a-new-scene" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/move_bake_objs_in_new_scene.jpg"><img alt="Move Bake Objs In New Scene" class="align-center" src="_images/move_bake_objs_in_new_scene.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/move_bake_objs_in_new_scene.webp"><img alt="Move Bake Objs In New Scene" class="align-center" src="_images/move_bake_objs_in_new_scene.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -306,7 +331,7 @@ original scene and delete the Bake scene.</p>
 <hr class="docutils" />
 <section id="export-fbx-object">
 <h2>Export FBX object<a class="headerlink" href="#export-fbx-object" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/export_fbx_object.jpg"><img alt="Export FBX Object" class="align-center" src="_images/export_fbx_object.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/export_fbx_object.webp"><img alt="Export FBX Object" class="align-center" src="_images/export_fbx_object.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -328,7 +353,7 @@ Pay attention when you use this function, and always check the final result if i
 <hr class="docutils" />
 <section id="lighting">
 <h2>Lighting<a class="headerlink" href="#lighting" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/direct_light_indirect_light.jpg"><img alt="Direct Light Indirect Light" class="align-center" src="_images/direct_light_indirect_light.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/direct_light_indirect_light.webp"><img alt="Direct Light Indirect Light" class="align-center" src="_images/direct_light_indirect_light.webp" style="width: 600px;" /></a>
 <section id="direct-light">
 <h3>Direct Light<a class="headerlink" href="#direct-light" title="Permalink to this heading"></a></h3>
 <p>If active, it adds direct light to the Bake, so if you have a light source in your scene, this will be added to the Bake.
@@ -357,7 +382,7 @@ to activate or not the direct and indirect light.</p>
 <hr class="docutils" />
 <section id="bake-maps-bsdf-mode">
 <h2>Bake maps BSDF mode<a class="headerlink" href="#bake-maps-bsdf-mode" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/bake_maps_bsdf.jpg"><img alt="Bake Maps BSDF" class="align-center" src="_images/bake_maps_bsdf.jpg" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/bake_maps_bsdf.webp"><img alt="Bake Maps BSDF" class="align-center" src="_images/bake_maps_bsdf.webp" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -453,7 +478,7 @@ will be connect in the <strong>Base Color</strong> socket and then baked into an
 <hr class="docutils" />
 <section id="bake-maps-cycles-standard-mode">
 <h2>Bake maps Cycles Standard mode<a class="headerlink" href="#bake-maps-cycles-standard-mode" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/bake_maps_cycles_standard.jpg"><img alt="Bake Maps Cycles Standard" class="align-center" src="_images/bake_maps_cycles_standard.jpg" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/bake_maps_cycles_standard.webp"><img alt="Bake Maps Cycles Standard" class="align-center" src="_images/bake_maps_cycles_standard.webp" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -536,7 +561,7 @@ otherwise the Bake will not even start.</p>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
-<a class="reference internal image-reference" href="_images/bake_maps_combined.jpg"><img alt="Bake Maps Combined" class="align-center" src="_images/bake_maps_combined.jpg" style="width: 800px;" /></a>
+<a class="reference internal image-reference" href="_images/bake_maps_combined.webp"><img alt="Bake Maps Combined" class="align-center" src="_images/bake_maps_combined.webp" style="width: 800px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>
@@ -585,7 +610,7 @@ will be included in the Diffuse texture in the Alpha channel.</p></li>
 <hr class="docutils" />
 <section id="choose-bake-destination">
 <h2>Choose Bake Destination<a class="headerlink" href="#choose-bake-destination" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/choose_bake_destination.jpg"><img alt="Choose Bake Destination" class="align-center" src="_images/choose_bake_destination.jpg" style="width: 600px;" /></a>
+<a class="reference internal image-reference" href="_images/choose_bake_destination.webp"><img alt="Choose Bake Destination" class="align-center" src="_images/choose_bake_destination.webp" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>

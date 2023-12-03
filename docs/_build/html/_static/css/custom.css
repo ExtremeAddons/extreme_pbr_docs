@@ -76,6 +76,26 @@
 }
 
 
+/* -------------------------------------------------------------------------------------------------------------------*/
+
+/* 'Deprecated advise' icon like warning icon*/
+.admonition.deprecated .admonition-title::before {
+    content: "\f071";
+}
+
+/* Title color */
+.admonition.deprecated .admonition-title {
+    background-color: #F44336;
+}
+
+/* Background color */
+.admonition.deprecated {
+   background-color: #FFCDD2;
+}
+
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+
 
 .admonition.credits .admonition-title::before {
     content: "\f1f9";
