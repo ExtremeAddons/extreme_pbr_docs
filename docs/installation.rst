@@ -409,6 +409,8 @@ Extreme PBR addon, it will manage your exapack packages and install them. (You w
 
 ------------------------------------------------------------------------------------------------------------------------
 
+.. _update_only_the_addon:
+
 ========================
 Update Only The addon
 ========================

@@ -93,6 +93,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#i-can-t-find-the-paths-of-the-libraries-on-my-nas">I can’t find the paths of the libraries on my Nas</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#material-icons-not-visible">Material icons not visible</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#how-do-i-check-the-version-of-the-addon">How do I check the version of the addon?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#i-get-an-error-when-activating-the-addon">I get an error when activating the addon</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
@@ -359,6 +360,44 @@ where the version is also shown:</p>
 <p>If the addon is not active, you can check the version of the addon by going to: <code class="docutils literal notranslate"><span class="pre">Edit--&gt;</span> <span class="pre">Preferences--&gt;</span> <span class="pre">Addons</span></code>
 and looking for the addon <code class="docutils literal notranslate"><span class="pre">Extreme</span> <span class="pre">PBR</span></code></p>
 <a class="reference internal image-reference" href="_images/check_addon_version_02.webp"><img alt="Check Addon Version 02" class="align-center" src="_images/check_addon_version_02.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="i-get-an-error-when-activating-the-addon">
+<h2>I get an error when activating the addon<a class="headerlink" href="#i-get-an-error-when-activating-the-addon" title="Permalink to this heading"></a></h2>
+<p>Sometimes when installing a new version of Extreme PBR if we already had one installed previously, some modules
+Python could create conflicts, so it will not be possible to activate the addon.</p>
+<p>If this is your case (That is, you were updating to a newer version of the addon, follow these steps indicated
+below the image:</p>
+<a class="reference internal image-reference" href="_images/error_at_activation.webp"><img alt="Error At Activation" class="align-center" src="_images/error_at_activation.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<ul>
+<li><dl>
+<dt><strong>Step 1:</strong></dt><dd><p>Unistall the addon by pressing Remove Button:</p>
+<a class="reference internal image-reference" href="_images/uninstall_example_panel.png"><img alt="Uninstall Example Panel" class="align-center" src="_images/uninstall_example_panel.png" style="width: 600px;" /></a>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><strong>Step 2:</strong></dt><dd><p>Save the preferences by pressing the button: <code class="docutils literal notranslate"><span class="pre">Save</span> <span class="pre">Preferences</span></code></p>
+<a class="reference internal image-reference" href="_images/save_blender_preferences.webp"><img alt="Save Blender Preferences" class="align-center" src="_images/save_blender_preferences.webp" style="width: 600px;" /></a>
+</dd>
+</dl>
+</li>
+<li><p><strong>Step 3:</strong></p>
+<blockquote>
+<div><p>Close all Blender windows and reopen Blender</p>
+</div></blockquote>
+</li>
+<li><p><strong>Step 4:</strong></p>
+<blockquote>
+<div><p>Reinstall the addon by following the update instructions: <a class="reference internal" href="installation.html#update-only-the-addon"><span class="std std-ref">Update Only The addon</span></a></p>
+</div></blockquote>
+</li>
+</ul>
+<p>If this does not solve the problem, I invite you to contact me and report the error you receive,
+it could be a Bug <a class="reference internal" href="faqs.html#contact-assistance"><span class="std std-ref">How can I contact you for assistance?</span></a></p>
 </section>
 </section>
 

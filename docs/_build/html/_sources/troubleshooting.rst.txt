@@ -337,6 +337,59 @@ and looking for the addon ``Extreme PBR``
     :alt: Check Addon Version 02
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+
+I get an error when activating the addon
+------------------------------------------
+
+
+Sometimes when installing a new version of Extreme PBR if we already had one installed previously, some modules
+Python could create conflicts, so it will not be possible to activate the addon.
+
+If this is your case (That is, you were updating to a newer version of the addon, follow these steps indicated
+below the image:
+
+
+.. image:: _static/_images/troubleshooting/error_at_activation.webp
+    :align: center
+    :width: 600
+    :alt: Error At Activation
+
+|
+
+
+- **Step 1:**
+    Unistall the addon by pressing Remove Button:
+
+    .. image:: _static/_images/installation/uninstall_example_panel.png
+        :align: center
+        :width: 600
+        :alt: Uninstall Example Panel
+
+- **Step 2:**
+    Save the preferences by pressing the button: ``Save Preferences``
+
+    .. image:: _static/_images/troubleshooting/save_blender_preferences.webp
+        :align: center
+        :width: 600
+        :alt: Save Blender Preferences
+
+- **Step 3:**
+
+    Close all Blender windows and reopen Blender
+
+- **Step 4:**
+
+    Reinstall the addon by following the update instructions: :ref:`update_only_the_addon`
+
+
+If this does not solve the problem, I invite you to contact me and report the error you receive,
+it could be a Bug :ref:`contact_assistance`
+
+
+
+
 
 
 
