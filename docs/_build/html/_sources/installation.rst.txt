@@ -40,7 +40,8 @@ Uninstall the old version
 1. Search your Old Extreme PBR from Blender addons
 2. Expand The Extreme PBR Preferences Menu
 3. Press Remove
-4. Restart Blender (Recommended!)
+4. Save Blender Preferences
+4. Restart Blender
 
 .. image:: _static/_images/installation/uninstall_example_panel.png
       :align: center
