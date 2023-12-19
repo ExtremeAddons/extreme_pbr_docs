@@ -37,13 +37,10 @@ New Installation (4.1.100 and up)
 Uninstall the old version
 ==========================
 
-(Only If you have previously installed a version of Extreme PBR prior to the Nexus edition)
-
-
 1. Search your Old Extreme PBR from Blender addons
 2. Expand The Extreme PBR Preferences Menu
 3. Press Remove
-4. Restart Blender
+4. Restart Blender (Recommended!)
 
 .. image:: _static/_images/installation/uninstall_example_panel.png
       :align: center
