@@ -408,3 +408,9 @@ This can be solved in this way:
       you will only have to write ``sudo`` before the command to open Blender, so you will have to write something like this:
       ``sudo blender``
 
+
+
+------------------------------------------------------------------------------------------------------------------------
+
+
+

@@ -227,19 +227,6 @@ Car Paint Material
         web-share" allowfullscreen></iframe>
 
 
-------------------------------------------------------------------------------------------------------------------------
-
-
-How to self update the addon Core (Only for version prior to 4.1.100)
------------------------------------------------------------------------
-
-.. raw:: html
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/6j3OEDXp21A" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-        web-share" allowfullscreen></iframe>
-
-
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -379,14 +366,12 @@ Video Maker
 
 ------------------------------------------------------------------------------------------------------------------------
 
-
-Mapping methods
----------------------
-
+How to edit UV Mapping
+-------------------------
 
 .. raw:: html
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/vonZ0QI9RWA" title="YouTube video player"
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/p078IZcRkPM?si=TkL64fTATClMj3v7" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
         web-share" allowfullscreen></iframe>
 
