@@ -378,22 +378,10 @@ How to edit UV Mapping
 
 ------------------------------------------------------------------------------------------------------------------------
 
-
-Download single Material
----------------------------
-
-.. raw:: html
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/jMX0uZjG7Uc" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-        web-share" allowfullscreen></iframe>
-
-
-
-------------------------------------------------------------------------------------------------------------------------
-
 How to Move License
 ---------------------------
+
+** Supported only for those who had registered the addon (Now is not required to register the addon)**
 
 .. raw:: html
 
