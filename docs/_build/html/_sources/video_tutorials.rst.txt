@@ -392,10 +392,8 @@ Download single Material
 
 ------------------------------------------------------------------------------------------------------------------------
 
-
 How to Move License
 ---------------------------
-
 
 .. raw:: html
 
@@ -403,10 +401,7 @@ How to Move License
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
         web-share" allowfullscreen></iframe>
 
-
-
 ------------------------------------------------------------------------------------------------------------------------
-
 
 Ral and Web Colors
 ---------------------------

@@ -3,6 +3,19 @@
 Updates Log
 ===========
 
+4.1.115
+-------
+
+**Release date: 16-01-2024 (D/M/Y)**
+
+- **BugFix - Reset Offset Button (Alert button)**
+
+    When using the displacement (Modifier) and modifying the following properties (Location, Rotation, Scale) The reset offset button button that rightly appeared as a warning and button, produced an error once pressed. The error was a simple typo in the Python code of a variable, it was fixed.
+
+- **BugFix - Shader Maker Video**
+
+    When adding a video via Shader Maker video, the following values (Hue, Exposure, Saturation) were not set correctly, so the video assumed artifact colors that did not respect the original video, so it was corrected by setting the default values correctly
+
 4.1.114
 -------
 
