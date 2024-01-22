@@ -58,6 +58,22 @@ How to change textures color
         gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
+
+------------------------------------------------------------------------------------------------------------------------
+
+.. _tutorial_shader_maker:
+
+Create your PBR Material
+--------------------------
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DJIKaGzZZ5U?si=m6Mqa3NvhrIgTjxf"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
 ------------------------------------------------------------------------------------------------------------------------
 
 
@@ -171,20 +187,6 @@ Multiple Displacement Modifier
 .. raw:: html
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/U_ZwEf8uo3w" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-        web-share" allowfullscreen></iframe>
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-.. _tutorial_shader_maker:
-
-Create your PBR Material
---------------------------
-
-.. raw:: html
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/mCeNkTVWh3w" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
         web-share" allowfullscreen></iframe>
 
