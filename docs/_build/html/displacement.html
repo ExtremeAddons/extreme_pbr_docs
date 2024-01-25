@@ -91,6 +91,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#multiple-displacement-modifier">Multiple Displacement Modifier</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#multiple-microdisplacement">Multiple Microdisplacement</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#displace-offset-warning-button">Displace Offset (Warning Button)</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="shader_maker.html">Shader Maker Category</a></li>
@@ -489,6 +490,21 @@ will no longer be updated.</p>
 <p>The multiple microdisplacement is managed by the Material Editor panel, you will not have to use any buttons to separate the vertex groups,
 but remember that the microdisplocement only works in Cycles mode, so make sure you are in Cycles mode and Render Preview.
 The displacement effects are managed by the Material Editor panel <a class="reference internal" href="#how-to-adjust-microdisplacement"><span class="std std-ref">How to adjust the Microdisplacement</span></a></p>
+</section>
+<hr class="docutils" />
+<section id="displace-offset-warning-button">
+<h2>Displace Offset (Warning Button)<a class="headerlink" href="#displace-offset-warning-button" title="Permalink to this heading"></a></h2>
+<p>This button will be shown if you are working in displacement mode with modifiers in case one of the properties
+of the procedural mapping of the texture will be manipulated deviating from its default values. This warns us
+that the material mapping is not in line with the mapping of the modifier as it has deviated from the values
+of the uv map, so to avoid display problems, in fact, this button will come to the rescue, which once
+pressed, will bring the texture mapping in line with the uv mapping, returning the default values.</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>You can scale your texture together with the displacement modifier, through the <strong>Texture Manager</strong> panel explained
+in this section: <a class="reference internal" href="texture_manager.html#texture-manager-panel"><span class="std std-ref">Texture Manager Panel</span></a></p>
+</div>
+<a class="reference internal image-reference" href="_images/reset_offset_example_01.webp"><img alt="Displace Offset Warning Button" class="align-center" src="_images/reset_offset_example_01.webp" style="width: 800px;" /></a>
 </section>
 </section>
 
