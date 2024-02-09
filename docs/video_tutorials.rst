@@ -145,9 +145,9 @@ Fx Layers
 
 ..  raw:: html
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/FtNYGoMtgjg" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-        web-share" allowfullscreen></iframe>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/l-BSC-kZnmA?si=NYVUTSS_oSo_CW0z"
+         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write;
+         encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -167,20 +167,6 @@ Add Remove Replace Materials
 ------------------------------------------------------------------------------------------------------------------------
 
 
-
-Fx Dynamic Mask Types
---------------------------
-
-.. raw:: html
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/9NLzTwFU3B0" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-        web-share" allowfullscreen></iframe>
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-
 Multiple Displacement Modifier
 --------------------------------
 
@@ -193,19 +179,6 @@ Multiple Displacement Modifier
 
 ------------------------------------------------------------------------------------------------------------------------
 
-
-Fx Layer Masks
---------------------------
-
-
-.. raw:: html
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/J6wYJPAIZrQ" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-        web-share" allowfullscreen></iframe>
-
-
-------------------------------------------------------------------------------------------------------------------------
 
 Materials Tag & Search System
 --------------------------------
