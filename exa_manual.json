@@ -1,0 +1,1094 @@
+{
+	"update_time": 0,
+	"update_interval": 3600,
+	"info": "The addon connects to this json, and shows an additional button if there is more than one key in the dictionary, the button opens a popup with buttons as many as the keys and if there are urls in the keys",
+	"manual_version": 2,
+	"undocumented_button": "https://extreme-pbr-docs.readthedocs.io/en/latest/undocumented.html",
+	"doc_homepage": "https://extreme-pbr-docs.readthedocs.io/en/latest/",
+	"manual_urls": {
+		"ADDON_ACTIVATION": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation_old.html#configuration"
+		},
+		"ADD_REMOVE_REPLACE": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#add-replace-remove-buttons"
+		},
+		"ANTI_TILE_PANEL": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#use-anti-tile"
+		},
+		"BAKE_MENU": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html"
+		},
+		"COLOR_LAB": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/color_lab.html"
+		},
+		"CREATOR_GROUP_INPUTS_JSON": {
+			"todo": "https://docs.extreme-addons.com/manual/cu-library-creator-utility/#cu-7-0-group-inputs-json"
+		},
+		"CREATOR_INTERFACE_TOP": {
+			"todo": "https://docs.extreme-addons.com/manual/creator-interface-top-operators"
+		},
+		"CREATOR_JSON_OPS": {
+			"todo": "https://docs.extreme-addons.com/manual/cu-creator-json-ops/"
+		},
+		"CREATOR_MAT_INFO_JSON": {
+			"todo": "https://docs.extreme-addons.com/manual/material-info-json-fields/"
+		},
+		"CREATOR_MAT_SETTINGS_JSON": {
+			"todo": "https://docs.extreme-addons.com/manual/cu-material-settings/"
+		},
+		"CREATOR_UTIL_OPS": {
+			"todo": "https://docs.extreme-addons.com/manual/cu-library-creator-utility/"
+		},
+		"DISPLACE_MENU": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/displacement.html"
+		},
+		"DOCS": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/"
+		},
+		"EXPERIMENTAL_OPTIONS_MENU": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#experimental-options"
+		},
+		"INTERFACE_OPTIONS_MENU": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#options"
+		},
+		"FAQS": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/faqs.html"
+		},
+		"FIX_OPTIONS_MENU": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#fix-options"
+		},
+		"HOW_TO_GET_LICENSE": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation_old.html#how-to-get-license-only-for-up-to-4-0-207"
+		},
+		"HOW_TO_REPORT_A_BUG": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/bugreport_info.html"
+		},
+		"TEXTURE_MANAGER_IMAGE_PREVIEW": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#mute-texture"
+		},
+		"INSTALL_STEP_1": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation_old.html#step-1-addon-activation"
+		},
+		"INSTALL_STEP_2": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation_old.html#step-2-choose-path"
+		},
+		"INSTALL_STEP_3": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation_old.html#step-2-choose-path"
+		},
+		"INSTALL_STEP_4": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation_old.html#step-4-create-library-structure"
+		},
+		"INSTALL_STEP_5": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation_old.html#step-5-install-material"
+		},
+		"INSTALLATION_PROGRESS": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation_old.html#progress-bar-s"
+		},
+		"INSTALL_MATERIALS_MENU": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation_old.html#step-5-install-material"
+		},
+		"LIBRARY_MANAGEMENT": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#libraries"
+		},
+		"LICENSE_PAGE": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation_old.html#move-license-to-another-computer"
+		},
+		"MAKE_ASSET_BROWSER": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/make_asset_browser.html"
+		},
+		"MAPPING_EDITOR": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/mapping_editor.html"
+		},
+		"MATERIAL_INFO_TAG": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#info-tag"
+		},
+		"MATERIAL_OVERRIDE": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_override.html"
+		},
+		"MICRODISPLACE_MENU": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/displacement.html#displacement-microdisplacement"
+		},
+		"MISSING_FILES_ASSET_BROWSER_CREATION": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/make_asset_browser.html#missing-files-during-the-asset-browser-creation"
+		},
+		"MATERIAL_SETTINGS_OVERLAY": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#material-settings-panel"
+		},
+		"NG_FX_NEXUS_LAYER" : {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#fx-layer"
+		},
+		"SHADER_OVERLAY_MODULE": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#material-layout"
+		},
+		"INSTALL_LIBRARIES": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation.html#install-the-library"
+		},
+		"NEXUS_MODULE_CONVERSION": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#convert-module-system"
+		},
+		"SMART_SHADE_SMOOTH": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#smart-shade-smooth"
+		},
+
+		"NG_FX_NEXUS_LAYER_Exclude_Mask": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#exclude-mask",
+		"NG_FX_NEXUS_LAYER_Invert_Fx": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#exclude-mask",
+		"NG_FX_NEXUS_LAYER_From_Min": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#from-min-from-max",
+		"NG_FX_NEXUS_LAYER_From_Max": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#from-min-from-max",
+		"NG_FX_NEXUS_LAYER_Diffuse": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#diffuse-color",
+		"NG_FX_NEXUS_LAYER_Show_Diffuse": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#show-diffuse",
+		"NG_FX_NEXUS_LAYER_Colorize_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#colorize-strength",
+		"NG_FX_NEXUS_LAYER_Use_sample": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#colorize-sample",
+		"NG_FX_NEXUS_LAYER_Sample": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#colorize-sample",
+		"NG_FX_NEXUS_LAYER_Tolerance": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#colorize-sample",
+		"NG_FX_NEXUS_LAYER_Emission": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#emission",
+		"NG_FX_NEXUS_LAYER_Transparent": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#transparent",
+		"NG_FX_NEXUS_LAYER_Subsurface_Radius": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#subsurface-radius",
+		"NG_FX_NEXUS_LAYER_Radius_Scale": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#subsurface-radius",
+		"NG_FX_NEXUS_LAYER_Subsurface_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#subsurface-radius",
+		"NG_FX_NEXUS_LAYER_Sss_IOR": "",
+		"NG_FX_NEXUS_LAYER_Sss_Anisotropy": "",
+		"NG_FX_NEXUS_LAYER_Ambient_Occlusion": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#ambient-occlusion",
+		"NG_FX_NEXUS_LAYER_Metallic": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#metallic",
+		"NG_FX_NEXUS_LAYER_Specular": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#specular-tint",
+		"NG_FX_NEXUS_LAYER_Sp_Tint": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#specular-tint",
+		"NG_FX_NEXUS_LAYER_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#roughness",
+		"NG_FX_NEXUS_LAYER_Sheen": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#sheen-sheen-tint",
+		"NG_FX_NEXUS_LAYER_Sh_Tint": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#sheen-sheen-tint",
+		"NG_FX_NEXUS_LAYER_Clearcoat": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#clearcoat-roughness",
+		"NG_FX_NEXUS_LAYER_Clearcoat_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#clearcoat-roughness",
+		"NG_FX_NEXUS_LAYER_Transmission": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#transmission",
+		"NG_FX_NEXUS_LAYER_IOR": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#transmission",
+		"NG_FX_NEXUS_LAYER_Tr_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#transmission",
+		"NG_FX_NEXUS_LAYER_Normal": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#normal",
+		"NG_FX_NEXUS_LAYER_Bump": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#bump-distance",
+		"NG_FX_NEXUS_LAYER_Bump_Distance": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#bump-distance",
+		"NG_FX_NEXUS_LAYER_lx": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#locations-xyz",
+		"NG_FX_NEXUS_LAYER_ly": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#locations-xyz",
+		"NG_FX_NEXUS_LAYER_lz": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#locations-xyz",
+		"NG_FX_NEXUS_LAYER_rx": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#rotation-xyz",
+		"NG_FX_NEXUS_LAYER_ry": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#rotation-xyz",
+		"NG_FX_NEXUS_LAYER_rz": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#rotation-xyz",
+		"NG_FX_NEXUS_LAYER_sx": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-xyz",
+		"NG_FX_NEXUS_LAYER_sy": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-xyz",
+		"NG_FX_NEXUS_LAYER_sz": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-xyz",
+		"NG_FX_NEXUS_LAYER_Scale_Uniform": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-uniform",
+
+		"NG_NEXUS_SHADER_MAKER_VIDEO": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#shader-maker-video"
+		},
+		"NG_NEXUS_SHADER_MAKER_VIDEO_Transparent": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#shader-maker-video",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_Specular": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#shader-maker-video",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#shader-maker-video",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_Emission_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#shader-maker-video",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_Exposure": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#shader-maker-video",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_Contrast": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#shader-maker-video",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_Saturation": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#shader-maker-video",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_Cathode_Fx": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#cathode-fx",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_Scale_Cathode_Fx": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#scale-cathode-fx",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_lx": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#locations-xyz",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_ly": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#locations-xyz",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_lz": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#locations-xyz",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_rx": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#rotation-xyz",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_ry": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#rotation-xyz",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_rz": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#rotation-xyz",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_sx": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-xyz",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_sy": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-xyz",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_sz": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-xyz",
+		"NG_NEXUS_SHADER_MAKER_VIDEO_Scale_Uniform": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-uniform",
+
+		"NG_NEXUS_MODULE": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#material-nexus-type"
+		},
+		"NG_NEXUS_MODULE_Diffuse": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#diffuse-color",
+		"NG_NEXUS_MODULE_Colorize_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#colorize-strength",
+		"NG_NEXUS_MODULE_Use_Sample": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#colorize-sample",
+		"NG_NEXUS_MODULE_Sample": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#colorize-sample",
+		"NG_NEXUS_MODULE_Tolerance": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#colorize-sample",
+		"NG_NEXUS_MODULE_Emission": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#emission",
+		"NG_NEXUS_MODULE_Transparent": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#transparent",
+		"NG_NEXUS_MODULE_Subsurface_Radius": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#subsurface-radius",
+		"NG_NEXUS_MODULE_Radius_Scale": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#subsurface-radius",
+		"NG_NEXUS_MODULE_Subsurface_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#subsurface-radius",
+		"NG_NEXUS_MODULE_Sss_IOR": "",
+		"NG_NEXUS_MODULE_Sss_Anisotropy": "",
+		"NG_NEXUS_MODULE_Ambient_Occlusion": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#ambient-occlusion",
+		"NG_NEXUS_MODULE_Metallic": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#metallic",
+		"NG_NEXUS_MODULE_Specular": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#specular-tint",
+		"NG_NEXUS_MODULE_Sp_Tint": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#specular-tint",
+		"NG_NEXUS_MODULE_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#roughness",
+		"NG_NEXUS_MODULE_Sheen": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#sheen-sheen-tint",
+		"NG_NEXUS_MODULE_Sh_Tint": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#sheen-sheen-tint",
+		"NG_NEXUS_MODULE_Clearcoat": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#clearcoat-roughness",
+		"NG_NEXUS_MODULE_Clearcoat_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#clearcoat-roughness",
+		"NG_NEXUS_MODULE_Transmission": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#transmission",
+		"NG_NEXUS_MODULE_IOR": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#transmission",
+		"NG_NEXUS_MODULE_Tr_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#transmission",
+		"NG_NEXUS_MODULE_Normal": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#normal",
+		"NG_NEXUS_MODULE_Bump": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#bump-distance",
+		"NG_NEXUS_MODULE_Bump_Distance": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#bump-distance",
+		"NG_NEXUS_MODULE_lx": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#locations-xyz",
+		"NG_NEXUS_MODULE_ly": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#locations-xyz",
+		"NG_NEXUS_MODULE_lz": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#locations-xyz",
+		"NG_NEXUS_MODULE_rx": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#rotation-xyz",
+		"NG_NEXUS_MODULE_ry": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#rotation-xyz",
+		"NG_NEXUS_MODULE_rz": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#rotation-xyz",
+		"NG_NEXUS_MODULE_sx": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-xyz",
+		"NG_NEXUS_MODULE_sy": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-xyz",
+		"NG_NEXUS_MODULE_sz": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-xyz",
+		"NG_NEXUS_MODULE_Scale_Uniform": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-uniform",
+		"NG_NEXUS_MODULE_World_Coordinate": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#world-coordinate",
+		"NG_NEXUS_MODULE_Random_Location": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#random-location",
+
+
+		"NG_NEXUS_PAINTER": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#painter"
+		},
+		"NG_NEXUS_PAINTER_Diffuse": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#brush-color",
+		"NG_NEXUS_PAINTER_Emission_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#painter",
+		"NG_NEXUS_PAINTER_Subsurface_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#painter",
+		"NG_NEXUS_PAINTER_Metal_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#texture-manager-panel-bwr",
+		"NG_NEXUS_PAINTER_Specular_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#texture-manager-panel-bw",
+		"NG_NEXUS_PAINTER_Roughness_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#texture-manager-panel-bw",
+		"NG_NEXUS_PAINTER_Alpha_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#texture-manager-panel-bw",
+		"NG_NEXUS_PAINTER_Bump_Strenght": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#texture-manager-panel-bw",
+		"NG_NEXUS_PAINTER_Bump_Distance": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#texture-manager-panel-bw",
+
+		"NG_SHADER_MODULE": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#shader-module-group"
+		},
+		"NG_SHADER_MODULE_Diffuse": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#diffuse-color",
+		"NG_SHADER_MODULE_Colorize_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#colorize-strength",
+		"NG_SHADER_MODULE_Use_Sample": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#colorize-sample",
+		"NG_SHADER_MODULE_Sample": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#colorize-sample",
+		"NG_SHADER_MODULE_Tolerance": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#colorize-sample",
+		"NG_SHADER_MODULE_Emission": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#emission",
+		"NG_SHADER_MODULE_Transparent": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#transparent",
+		"NG_SHADER_MODULE_Subsurface_Radius": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#subsurface-radius",
+		"NG_SHADER_MODULE_Radius_Scale": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#subsurface-radius",
+		"NG_SHADER_MODULE_Subsurface_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#subsurface-radius",
+		"NG_SHADER_MODULE_Ambient_Occlusion": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#ambient-occlusion",
+		"NG_SHADER_MODULE_Metallic": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#metallic",
+		"NG_SHADER_MODULE_Specular": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#specular-tint",
+		"NG_SHADER_MODULE_Sp_Tint": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#specular-tint",
+		"NG_SHADER_MODULE_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#roughness",
+		"NG_SHADER_MODULE_Sheen": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#sheen-sheen-tint",
+		"NG_SHADER_MODULE_Sh_Tint": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#sheen-sheen-tint",
+		"NG_SHADER_MODULE_Clearcoat": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#clearcoat-roughness",
+		"NG_SHADER_MODULE_Clearcoat_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#clearcoat-roughness",
+		"NG_SHADER_MODULE_Transmission": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#transmission",
+		"NG_SHADER_MODULE_IOR": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#transmission",
+		"NG_SHADER_MODULE_Tr_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#transmission",
+		"NG_SHADER_MODULE_Normal": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#normal",
+		"NG_SHADER_MODULE_Bump": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#bump-distance",
+		"NG_SHADER_MODULE_Bump_Distance": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#bump-distance",
+		"NG_SHADER_MODULE_lx": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#locations-xyz",
+		"NG_SHADER_MODULE_ly": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#locations-xyz",
+		"NG_SHADER_MODULE_lz": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#locations-xyz",
+		"NG_SHADER_MODULE_rx": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#rotation-xyz",
+		"NG_SHADER_MODULE_ry": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#rotation-xyz",
+		"NG_SHADER_MODULE_rz": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#rotation-xyz",
+		"NG_SHADER_MODULE_sx": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-xyz",
+		"NG_SHADER_MODULE_sy": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-xyz",
+		"NG_SHADER_MODULE_sz": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-xyz",
+		"NG_SHADER_MODULE_Scale_Uniform": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale-uniform",
+		"NG_SHADER_MODULE_World_Coordinate": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#world-coordinate",
+		"NG_SHADER_MODULE_Random_Location": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#random-location",
+
+		"NG_DYNMASK_PAINT": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#dynamic-mask",
+			"video tutorial": "https://extreme-pbr-docs.readthedocs.io/en/latest/video_tutorials.html#fx-dynamic-mask-types"
+		},
+		"NG_DYNMASK_NOISE": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#dynamic-mask-noise",
+			"video tutorial": "https://extreme-pbr-docs.readthedocs.io/en/latest/video_tutorials.html#fx-dynamic-mask-types"
+		},
+		"NG_DYNMASK_NOISE_Detailed_deadlift": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#detailed-deadlift",
+		"NG_DYNMASK_NOISE_Invert_Mask": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#invert-mask",
+		"NG_DYNMASK_NOISE_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#id16",
+		"NG_DYNMASK_NOISE_Detail": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#detail",
+		"NG_DYNMASK_NOISE_Distortion": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#distortion",
+		"NG_DYNMASK_NOISE_Scale": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#scale",
+		"NG_DYNMASK_WORN_EDGES": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#dynamic-mask-worn-edges",
+			"video tutorial": "https://extreme-pbr-docs.readthedocs.io/en/latest/video_tutorials.html#fx-dynamic-mask-types"
+		},
+		"NG_DYNMASK_WORN_EDGES_Invert_Mask": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#worn-edge-invert-mask",
+		"NG_DYNMASK_WORN_EDGES_Expand_edges": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#worn-edge-expand-edges",
+		"NG_DYNMASK_WORN_EDGES_Edges_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#edges-strength",
+		"NG_DYNMASK_Z_MIX_V2": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#dynamic-mask-z-mix-v2",
+			"video tutorial": "https://extreme-pbr-docs.readthedocs.io/en/latest/video_tutorials.html#fx-dynamic-mask-types"
+		},
+		"NG_DYNMASK_Z_MIX_V2_Altitude_level": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#z-mix-v2-altitude-level",
+		"NG_DYNMASK_Z_MIX_V2_Dead_Line": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#z-mix-v2-dead-line",
+		"NG_DYNMASK_Z_MIX_V2_DeadLine_Noise": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#z-mix-v2-deadline-noise",
+		"NG_DYNMASK_Z_MIX_V2_Expand_Noise": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#z-mix-v2-expand-noise",
+		"NG_DYNMASK_Z_MIX_V2_Scale": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#z-mix-v2-scale",
+		"NG_DYNMASK_Z_MIX_V2_Stretch_Noise": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#z-mix-v2-stretch-noise",
+		"NG_DYNMASK_Z_MIX_V2_Object_World_Space": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#z-mix-v2-object-space",
+		"NG_DYNMASK_Z_MIX_V2_Invert_Z": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#z-mix-invert-z",
+
+		"NG_GLASS": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#glass-node-group"
+		},
+		"NG_GLASS_Glass_Color": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#glass-color-rgba",
+		"NG_GLASS_IOR": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#glass-color-rgba",
+		"NG_GLASS_Mirror_Fx": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#mirror-fx-value",
+		"NG_GLASS_Dirty_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#dirty-roughness-value",
+		"NG_GLASS_Scale_Uniform": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#scale-uniform-value",
+
+		"NG_BASIC_WATER": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#basic-water-node-group"
+		},
+		"NG_BASIC_WATER_RGB": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#rgb-rgba",
+		"NG_BASIC_WATER_Water_Fluid": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#water-fluid-button",
+		"NG_BASIC_WATER_Water_Speed": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#water-speed-value",
+		"NG_BASIC_WATER_Wave_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#wave-strength-value",
+		"NG_BASIC_WATER_Scale": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#scale-value",
+		"NG_BASIC_WATER_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#roughness-value",
+		"NG_BASIC_WATER_Metallic_Fluid": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#metallic-fluid-value",
+		"NG_BASIC_WATER_Flowing_water": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#flowing-water-value",
+		"NG_BASIC_WATER_Reverse": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#reverse-button",
+		"NG_BASIC_WATER_Flow_Direction": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#flow-direction-value",
+
+		"NG_RUBBER_TIRES": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#rubber-tires-node-group"
+		},
+		"NG_RUBBER_TIRES_Color": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#color-rgba",
+		"NG_RUBBER_TIRES_Scale_Uniform": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id2",
+		"NG_RUBBER_TIRES_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id3",
+		"NG_RUBBER_TIRES_Specular": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#specular-value",
+
+		"NG_CAR_PAINT_001": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#car-paint-001-node-group"
+		},
+		"NG_CAR_PAINT_001_Facing_Color": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#facing-color-rgba",
+		"NG_CAR_PAINT_001_Grazing_Color": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#grazing-color-rgba",
+		"NG_CAR_PAINT_001_Facing_Blend": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#facing-blend-value",
+		"NG_CAR_PAINT_001_Metallized": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#metallized-value",
+		"NG_CAR_PAINT_001_Flakes_Size": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#flakes-size-value",
+		"NG_CAR_PAINT_001_Flakes_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#flakes-strength-value",
+		"NG_CAR_PAINT_001_Specular": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id4",
+		"NG_CAR_PAINT_001_Specular_Tint": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#specular-tint-value",
+		"NG_CAR_PAINT_001_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id5",
+		"NG_CAR_PAINT_001_Clearcoat": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#clearcoat-value",
+		"NG_CAR_PAINT_001_Clearcoat_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#clearcoat-roughness-value",
+		"NG_CAR_PAINT_001_Orange_Peal": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#orange-peal-value",
+		"NG_CAR_PAINT_001_Orange_Size": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#orange-size-value",
+
+		"NG_BLUEPRINT_001": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#blueprint-001-node-group"
+		},
+		"NG_BLUEPRINT_001_Emission_A": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#emission-a-value",
+		"NG_BLUEPRINT_001_Base_Color": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#base-color-rgba",
+		"NG_BLUEPRINT_001_Line_Color": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#line-color-rgba",
+		"NG_BLUEPRINT_001_Emission_B": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#emission-b-value",
+		"NG_BLUEPRINT_001_Small_Square_Line": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#small-square-line-value",
+		"NG_BLUEPRINT_001_Big_Square_Line": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#big-square-line-value",
+		"NG_BLUEPRINT_001_Metallic": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#metallic-value",
+		"NG_BLUEPRINT_001_Specular": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id6",
+		"NG_BLUEPRINT_001_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id7",
+		"NG_BLUEPRINT_001_Bump": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#bump-value",
+		"NG_BLUEPRINT_001_Distance": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#distance-value",
+		"NG_BLUEPRINT_001_Invert": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#invert-button",
+		"NG_BLUEPRINT_001_Transparent": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#transparent-value",
+		"NG_BLUEPRINT_001_Transparent_Invert": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#transparent-invert-button",
+		"NG_BLUEPRINT_001_Rotation": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#rotation-value",
+		"NG_BLUEPRINT_001_lx": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#lx-value",
+		"NG_BLUEPRINT_001_ly": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#ly-value",
+		"NG_BLUEPRINT_001_Scale": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id8",
+		"NG_BLUEPRINT_001_World_Coordinate": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#world-coordinate-button",
+
+		"NG_BLUEPRINT_002": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#blueprint-002-node-group"
+		},
+		"NG_BLUEPRINT_002_Main_Color": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#main-color-rgba",
+		"NG_BLUEPRINT_002_Grid_Color": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#grid-color-rgba",
+		"NG_BLUEPRINT_002_Specular": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id9",
+		"NG_BLUEPRINT_002_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id10",
+		"NG_BLUEPRINT_002_Crosses_Thickness": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#crosses-thickness-value",
+		"NG_BLUEPRINT_002_Crosses_Span": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#crosses-span-value",
+		"NG_BLUEPRINT_002_S_Crosses_Span": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#s-crosses-span-value",
+		"NG_BLUEPRINT_002_S_Crosses_Thickness": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#s-crosses-thickness-value",
+		"NG_BLUEPRINT_002_S_Crosses_Scale": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#s-crosses-scale-int",
+		"NG_BLUEPRINT_002_Shape_Size": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#shape-size-value",
+		"NG_BLUEPRINT_002_Subtract": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#subtract-button",
+		"NG_BLUEPRINT_002_Circle_Shape": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#circle-shape-button",
+		"NG_BLUEPRINT_002_Loc_X": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#loc-x-value",
+		"NG_BLUEPRINT_002_Loc_Y": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#loc-y-value",
+		"NG_BLUEPRINT_002_Rotation": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id11",
+		"NG_BLUEPRINT_002_Scale_X": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#scale-x-value",
+		"NG_BLUEPRINT_002_Scale_Y": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#scale-y-value",
+		"NG_BLUEPRINT_002_Scale_Uniform": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id12",
+		"NG_BLUEPRINT_002_UV_Coordinate": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#uv-coordinate-button",
+		"NG_BLUEPRINT_002_World_Coordinate": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id13",
+
+		"NG_TRANSPARENT": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#transparent-node-group"
+		},
+		"NG_TRANSPARENT_Transparent_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#transparent-strength-value",
+
+		"NG_WIREFRAME_001": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#wireframe-node-group"
+		},
+		"NG_WIREFRAME_001_Base_Color": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id14",
+		"NG_WIREFRAME_001_Emission_A": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id15",
+		"NG_WIREFRAME_001_Transparent_A": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#transparent-a-value",
+		"NG_WIREFRAME_001_Edge_Color": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#edge-color-rgba",
+		"NG_WIREFRAME_001_Emission_B": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id16",
+		"NG_WIREFRAME_001_Transparent_B": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#transparent-b-value",
+		"NG_WIREFRAME_001_Wireframe_Size": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#wireframe-size-value",
+		"NG_WIREFRAME_001_Metallic": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id17",
+		"NG_WIREFRAME_001_Specular": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id18",
+		"NG_WIREFRAME_001_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id19",
+
+		"NG_PLASMA": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#plasma-node-group"
+		},
+
+		"NG_PLASMA_Color": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id20",
+		"NG_PLASMA_From_Min": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#from-min-value",
+		"NG_PLASMA_From_Max": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#from-max-value",
+		"NG_PLASMA_Transparent": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id21",
+		"NG_PLASMA_Emission_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#emission-strength-value",
+		"NG_PLASMA_Animation_Speed": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#animation-speed-value",
+		"NG_PLASMA_Reverse": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id22",
+		"NG_PLASMA_Detail": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#detail-value",
+		"NG_PLASMA_Detail_Scale": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#detail-scale-value",
+		"NG_PLASMA_Detail_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#detail-roughness-value",
+		"NG_PLASMA_Distortion": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#distortion-value",
+		"NG_PLASMA_rx": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#rx-value",
+		"NG_PLASMA_ry": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#ry-value",
+		"NG_PLASMA_rz": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#rz-value",
+		"NG_PLASMA_Scale": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id23",
+
+
+
+		"NG_CHESS": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#chess-node-group"
+		},
+
+		"NG_CHESS_Randomness": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#randomness-value",
+		"NG_CHESS_Shrink_Squares": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#shrink-squares-value",
+		"NG_CHESS_Color_A": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#color-a-rgba",
+		"NG_CHESS_Color_B": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#color-b-rgba",
+		"NG_CHESS_Emission_A": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id24",
+		"NG_CHESS_Emission_B": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id25",
+		"NG_CHESS_Transp_1": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#transp-1-value",
+		"NG_CHESS_Transp_2": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#transp-2-value",
+		"NG_CHESS_Metallic": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id26",
+		"NG_CHESS_Specular": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id27",
+		"NG_CHESS_Roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id28",
+		"NG_CHESS_Rotation": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id29",
+		"NG_CHESS_LocX": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#locx-value",
+		"NG_CHESS_LocY": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#locy-value",
+		"NG_CHESS_ScaleX": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#scalex-value",
+		"NG_CHESS_ScaleY": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#scaley-value",
+		"NG_CHESS_Scale_Uniform": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id30",
+
+
+
+		"NG_BLEND": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#blend-node-group"
+		},
+
+		"NG_BLEND_Color_A_B": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#color-a-b-rgba",
+		"NG_BLEND_Color_B": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id31",
+		"NG_BLEND_Emission_A": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id32",
+		"NG_BLEND_Emission_B": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id33",
+		"NG_BLEND_Transparent_A": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id34",
+		"NG_BLEND_Transparent_B": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id35",
+		"NG_BLEND_Metallic_A": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#metallic-a-value",
+		"NG_BLEND_Metallic_B": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#metallic-b-value",
+		"NG_BLEND_Specular_A": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#specular-a-value",
+		"NG_BLEND_Specular_B": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#specular-b-value",
+		"NG_BLEND_Roughness_A": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#roughness-a-value",
+		"NG_BLEND_Roughness_B": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#roughness-b-value",
+		"NG_BLEND_Glass_A": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#glass-a-value",
+		"NG_BLEND_Glass_B": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#glass-b-value",
+		"NG_BLEND_IOR": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id36",
+		"NG_BLEND_Blend": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#blend-value",
+		"NG_BLEND_Sharp": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#sharp-value",
+		"NG_BLEND_Noise": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#noise-value",
+		"NG_BLEND_Scale": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id37",
+		"NG_BLEND_Distortion": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#id38",
+		"NG_BLEND_Animation": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#animation-value",
+		"NG_BLEND_Backface_Transparent": "https://extreme-pbr-docs.readthedocs.io/en/latest/materials.html#backface-transparent-button",
+
+	    "X_PBR_UTILITY_RGB": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#adjust-color-properties"
+		},
+		"X_PBR_UTILITY_RGB_Input_Map": "",
+		"X_PBR_UTILITY_RGB_Sample": "",
+		"X_PBR_UTILITY_RGB_Use_sample": "",
+		"X_PBR_UTILITY_RGB_Tolerance": "",
+		"X_PBR_UTILITY_RGB_Map_Exist": "",
+		"X_PBR_UTILITY_RGB_Diffuse_Color": "",
+		"X_PBR_UTILITY_RGB_Colorize_Strength": "",
+		"X_PBR_UTILITY_RGB_Exposure": "",
+		"X_PBR_UTILITY_RGB_Contrast": "",
+		"X_PBR_UTILITY_RGB_Hue": "",
+		"X_PBR_UTILITY_RGB_Saturation": "",
+		"X_PBR_UTILITY_RGB_Invert_Map": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#adjust-color-properties",
+
+		"X_PBR_UTILITY_MAP_CTRL": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#texture-manager-non-color"
+		},
+		"X_PBR_UTILITY_MAP_CTRL_Input_Map": "",
+		"X_PBR_UTILITY_MAP_CTRL_Strength": "",
+		"X_PBR_UTILITY_MAP_CTRL_Map_Exist": "",
+		"X_PBR_UTILITY_MAP_CTRL_Invert_Map": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#invert-map",
+		"X_PBR_UTILITY_MAP_CTRL_From_Min": "",
+		"X_PBR_UTILITY_MAP_CTRL_From_Max": "",
+
+		"X_PBR_UTILITY_BUMP": {
+			"documentation": ""
+		},
+		"X_PBR_UTILITY_BUMP_Input_Map": "",
+		"X_PBR_UTILITY_BUMP_Bump_Strength": "",
+		"X_PBR_UTILITY_BUMP_Bump_Distance": "",
+		"X_PBR_UTILITY_BUMP_Bump_Invert": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#invert-map",
+		"X_PBR_UTILITY_BUMP_Map_Exist": "",
+		"X_PBR_UTILITY_BUMP_From_Min": "",
+		"X_PBR_UTILITY_BUMP_From_Max": "",
+
+		"X_PBR_UTILITY_NORMAL": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#texture-manager-normal"
+		},
+		"X_PBR_UTILITY_NORMAL_Input_Map": "",
+		"X_PBR_UTILITY_NORMAL_Normal_Strength": "",
+		"X_PBR_UTILITY_NORMAL_Normal_Invert_X": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#normal-invert-x-y",
+		"X_PBR_UTILITY_NORMAL_Normal_Invert_Y": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#normal-invert-x-y",
+		"X_PBR_UTILITY_NORMAL_Map_Exist": "",
+		"X_PBR_UTILITY_NORMAL_Gamma_Correction": "",
+
+		"NG_SHADER_GRADIENT_GLITCH_V1": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#shader-gradient-glitch-v2"
+		},
+		"NG_SHADER_GRADIENT_GLITCH_V1_Location": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#location",
+		"NG_SHADER_GRADIENT_GLITCH_V1_Flip_Location": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#flip-location",
+		"NG_SHADER_GRADIENT_GLITCH_V1_Rotation_X": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#rotation-x-y",
+		"NG_SHADER_GRADIENT_GLITCH_V1_Rotation_Y": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#rotation-x-y",
+		"NG_SHADER_GRADIENT_GLITCH_V1_From_Min": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#from-min-max",
+		"NG_SHADER_GRADIENT_GLITCH_V1_From_Max": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#from-min-max",
+		"NG_SHADER_GRADIENT_GLITCH_V1_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#strength",
+		"NG_SHADER_GRADIENT_GLITCH_V1_World_Coordinate": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#world-coordinate",
+		"NG_SHADER_GRADIENT_GLITCH_V1_Glitch_On_Glc": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#glitch-on-off",
+		"NG_SHADER_GRADIENT_GLITCH_V1_Glc_Frequency": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#glc-frequency",
+		"NG_SHADER_GRADIENT_GLITCH_V1_Glc_Speed": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#glc-speed",
+		"NG_SHADER_GRADIENT_GLITCH_V1_Glc_Scale_OSC": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#glc-scale-osc",
+		"NG_SHADER_GRADIENT_GLITCH_V1_Glc_Phase": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#glc-phase",
+		"NG_SHADER_GRADIENT_GLITCH_V1_Glc_Random_Per_Object": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#glc-random-per-object",
+
+
+		"NG_SHADER_GRADIENT": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#shader-gradient"
+		},
+		"NG_SHADER_GRADIENT_Location": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#location",
+		"NG_SHADER_GRADIENT_Flip_Location": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#flip-location",
+		"NG_SHADER_GRADIENT_Rotation_X": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#rotation-x-y",
+		"NG_SHADER_GRADIENT_Rotation_Y": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#rotation-x-y",
+		"NG_SHADER_GRADIENT_From_Min": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#from-min-max",
+		"NG_SHADER_GRADIENT_From_Max": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#from-min-max",
+		"NG_SHADER_GRADIENT_Strength": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#strength",
+		"NG_SHADER_GRADIENT_World_Coordinate": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#world-coordinate",
+
+
+		"NODE_UTILITY_MENU": {
+			"todo": ""
+		},
+		"OPTIONS_MENU": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#options"
+		},
+		"PAINT_TOOLS": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/paint_tools.html"
+		},
+		"PANEL_BUILDER_HELPER": {
+			"todo": ""
+		},
+		"REGISTER_PRODUCT": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation_old.html#step-1-addon-activation"
+		},
+		"SAVE_EDITOR_UI": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html"
+		},
+		"SAVE_MATERIAL_MENU": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#save-material"
+		},
+		"SHADER_MAKER_VIDEO_CTRL": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#smart-video-start"
+		},
+		"SHADER_MAKER_PAINT" : {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#painter"
+		},
+		"SHADER_OVERLAY": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#shader-overlay"
+		},
+		"SIMPLE_PBR_PANEL": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#material-editor-simple-pbr"
+		},
+		"SING_UP": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation_old.html#step-1-addon-activation"
+		},
+		"SINGLE_INSTALLER": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation_old.html#download-single-material"
+		},
+		"SOCKET_OPTIONS": {
+			"documentation": ""
+		},
+		"TEXTURE_BROWSER_BOX": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#search-data-images"
+		},
+		"TEXTURE_COLOR_SPACES": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#texture-color-space"
+		},
+		"TEXTURE_MANAGER_COMPACT_MATERIAL_MANAGER": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#material-browser"
+		},
+		"TEXTURE_MANAGER_COLOR_CTRL": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#adjust-color-properties"
+		},
+		"TEXTURE_MANAGER_INDIVIDUAL_VECTORS": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#enable-individual-vector"
+		},
+		"TEXTURE_PAINT_MIX_MODULE": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_paint.html#texture-paint-editor"
+		},
+		"TUTORIAL_PLAYLIST": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/video_tutorials.html"
+		},
+		"UNRECOGNIZED_MATERIAL": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#unrecognized-material"
+		},
+		"UPDATE_CORE": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation_old.html#update-core"
+		},
+		"TROUBLESHOOTING": {
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/troubleshooting.html"
+		}
+	},
+	"manual_key_maps": {
+		"operators": {
+			"search_categories": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#search-category",
+			"auto_shade_smooth": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#smart-shade-smooth",
+			"reload_current_preview_icons": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#reload-preview-icons",
+			"search_materials": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#search-material-by-entering-text",
+			"tag_manager_panel": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#edit-tags",
+			"search_tags": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#edit-tags",
+			"duplicate_material": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#duplicate-material",
+			"popup_utility_panel": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#box-utility-dropdown-menu",
+			"copy_material": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#copy-material-smart",
+			"assign_vertex_group": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#smart-vertex-groups",
+			"modal_bake": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#bake-editor-button",
+			"mapping_editor_panel": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#mapping-editor-button",
+			"reset_uv": "https://extreme-pbr-docs.readthedocs.io/en/latest/mapping_editor.html#reset-all-parameter",
+			"search_data_groups": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#search-module",
+			"extend_image": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#replace-module",
+			"search_fxs": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#fx-layer-same-tools",
+			"docs_helper": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#docs-helper",
+			"show_tips": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#tips",
+			"search_data_images": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#search-data-images",
+			"remove_image": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#remove-texture",
+			"toggle_wireframe": "https://extreme-pbr-docs.readthedocs.io/en/latest/displacement.html#toggle-wireframe",
+			"bake_displacement": "https://extreme-pbr-docs.readthedocs.io/en/latest/displacement.html#bake-displacement",
+			"make_asset_browser": "https://extreme-pbr-docs.readthedocs.io/en/latest/make_asset_browser.html#make-asset-browser",
+			"make_user_library": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#make-user-library",
+			"reset_default_color_space": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#try-to-reset-to-default",
+			"reload_addon_nodes": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#reload-all-mixers",
+			"restore_all_icons_patch": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#regenerate-all-previews-and-icon",
+			"check_for_updates": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#check-addon-updates",
+   			"get_library_updates": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#check-library-updates",
+			"try_compile_exapack": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#try-compile-exapack",
+			"remove_volume": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#remove-volume",
+			"restore_node_value": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#reset-values",
+
+
+			"open_web_browser": "GET_KEY",
+			"boolean_socket": "GET_KEY",
+
+
+			"smart_shade_smooth": {
+				"options": {
+					"APPLY_SMOOTH_BY_ANGLE_MOD": "",
+					"SET_BY_DEFAULT": "" ,
+					"REMOVE_DEFAULT": ""
+				}
+
+			},
+			"reset_offset": {
+				"options": {
+					"ALIGN_FOR_DISPLACE": "https://extreme-pbr-docs.readthedocs.io/en/latest/displacement.html#displace-offset-warning-button"
+				}
+			},
+			"convert_material": {
+				"options": {
+					"CONVERT_TO_NEXUS": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#convert-to-nexus"
+				}
+			},
+
+			"os_remove": {
+				"options": {
+					"REMOVE_FIRST_MESSAGE": "",
+					"RESET_MEX": "",
+					"PURGE_EXA_CACHE": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#purge-extremeaddons-cache"
+				}
+			},
+
+			"toggle_material_settings": {
+				"options": {
+					"TOGGLE_TRANSLUCENCY" : "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#subsurface",
+					"TOGGLE_SCREEN_REFRACTION": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#ray-tracer-button",
+					"TOGGLE_TRANSPARENT_MODE": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#transparent"
+				}
+			},
+
+
+			"search_color_space": {
+				"options": {
+					"RGB": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#rgb",
+					"BW": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#bw"
+				}
+			},
+
+			"choose_exapacks": {
+				"options": {
+					"OPEN_BROWSER": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation.html#step-3",
+					"REMOVE": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation.html#remove-exapack-from-installer"
+				}
+			},
+
+			"expansion_pack_manager": {
+				"options": {
+					"ADD": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#add-library-expansion",
+					"REMOVE": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#remove-expansion"
+				}
+			},
+
+
+			"reset_libraries_path": {
+				"options": {
+					"RESET_DEFAULT_LIB_PATH": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#unlink-library",
+					"RESET_USER_LIB_PATH": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#unlink-library",
+					"RESET_TEMP_PATHS": ""
+				}
+			},
+
+
+			"remove_cat_and_files": {
+				"options": {
+					"REMOVE_CATEGORY": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#delete-category",
+					"REMOVE_MATERIAL": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#delete-material"
+				}
+			},
+
+			"add_category": {
+				"options": {
+					"ADD_NEW_CATEGORY": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#add-cat",
+					"RENAME_CATEGORY": ""
+				}
+			},
+			"save_material": {
+				"options":{
+					"SAVE_MATERIAL": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#save-material",
+					"SAVE_FX": "",
+					"SAVE_MODULE": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#save-module"
+				}
+			},
+			"shader_overlay_utils": {
+				"options": {
+					"SELECT_SAME_CONTEXT_OVERLAY_OBJECTS": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#select-objects",
+					"SELECT_SAME_CONTEXT_OVERRIDE_OBJECTS": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_override.html#select-objects"
+					}
+			},
+
+			"material_settings_overlay": {
+				"options": {
+					"SHADER_OVERLAY": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#mat-settings-button",
+					"MATERIAL_OVERRIDE": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#mat-settings-button"
+				}
+			},
+
+			"master_shader_overlay": {
+				"options": {
+					"ADD": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#add",
+					"REMOVE": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#remove",
+					"REPLACE_SHADER_OVERLAY": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#replace",
+					"REPLACE_MIXER": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#replace-mixer-node",
+					"REMOVE_FROM_DATA_MATERIAL": "",
+					"ADD_OVERRIDE": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_override.html#add-override",
+					"REMOVE_OVERRIDE": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_override.html#remove-override"
+				}
+			},
+
+
+			"copy_paste_image": {
+				"options": {
+					"COPY_IMAGE": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#copy-paste-texture",
+					"PASTE_IMAGE": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#copy-paste-texture"
+				}
+			},
+			"import_media": {
+				"options": {
+					"LOAD_IMAGE": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#import-image-texture",
+					"ADD_MODULE": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html",
+					"DEFAULT": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#auto-pbr",
+					"REPLACE_MATERIAL": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html",
+					"REPLACE_MODULE": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html",
+					"ADD_FX": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html",
+					"REPLACE_FX": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html"
+				}
+			},
+
+
+			"add_fx_module": {
+				"options": {
+					"ADD_FX": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#add-fx-layer",
+					"REPLACE_FX": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#fx-layer-same-tools",
+					"EMPTY_FX": ""
+				}
+			},
+
+
+			"color_lab": {
+				"options": {
+					"ASSIGN_TO_SOCKET": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#color-lab-button",
+					"ASSIGN_TO_PAINT": ""
+				}
+			},
+
+
+			"texture_manager": {
+				"options": {
+					"TEXTURE_MANAGER": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#texture-manager-button",
+					"SHADER_MAKER_PAINT": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_maker.html#smp-texture-manager-button"
+				}
+			},
+
+			"choose_path": {
+				"options": {
+					"MAKE_DIRS_PATHS": "",
+					"USER_LIB_EXIST": "",
+					"CREATE_USER_LIB": "",
+					"LINK_DEFAULT_LIB": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#choose-default-library",
+					"LINK_USER_LIB": "",
+					"RESET_DEFAULT_LIB_PATH": "",
+					"RESET_USER_LIB_PATH": "",
+					"ADD_EXPANSION_PATH": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#expansion-path",
+					"BAKE_PATH": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#choose-bake-destination"
+
+				}
+			},
+			"search_data_materials": {
+				"options": {
+					"REPLACE": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#search-and-replace",
+					"ADD": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#search-and-add"
+				}
+			},
+			"select_obj_tool": {
+				"options": {
+					"SELECT_CUBE_PROJECTION": "https://extreme-pbr-docs.readthedocs.io/en/latest/mapping_editor.html#cube-projection",
+					"SELECT_SMART_PROJECTION": "https://extreme-pbr-docs.readthedocs.io/en/latest/mapping_editor.html#smart-projection",
+					"SELECT_ONLY_MAIN_PANEL": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#select-by-material",
+					"SELECT_ONLY_MAPPING_EDITOR": "https://extreme-pbr-docs.readthedocs.io/en/latest/mapping_editor.html#select-face"
+				}
+        	},
+			"add_material" : {
+				"options" : {
+					"ADD_MODULE" : "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#add-module",
+					"REPLACE_MATERIAL" : "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#replace",
+					"DEFAULT" : "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#add-new",
+					"REPLACE_MODULE" : "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#replace-module",
+					"IMPORT_EMPTY_MODULE" : ""
+				}
+			},
+			"remove_material": {
+				"options": {
+					"REMOVE_FX": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#remove-fx-layer",
+					"REMOVE_MATERIAL": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#remove",
+					"REMOVE_ALL_MATERIAL": "",
+					"REMOVE_MODULE": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#remove-module"
+				}
+			},
+			"scroll_previews": {
+				"options": {
+					"UP": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#up-down-arrow",
+					"DOWN": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#up-down-arrow",
+					"LEFT": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#left-right-arrow",
+					"RIGHT": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#left-right-arrow"
+				}
+			},
+			"search_lost_files": {
+				"options": {
+					"FIND_LOST_IMAGE_SINGLE": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#unrecognized-material",
+					"FIND_LOST_DATA_IMAGES": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#find-lost-images"
+				}
+			},
+			"open_preferences": {
+				"options": {
+					"HELPS": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#helps-button" ,
+					"UPDATES": "",
+					"OPTIONS": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#open-options"
+				}
+
+			},
+			"material_utils": {
+				"options": {
+					"REMOVE_UNUSED_SLOTS": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#box-utility-dropdown-menu" ,
+					"ADJUST_NODE_TREE": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#adjust-node-tree" ,
+					"ADJUST_ALL_NODE_TREE": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#adjust-all-material-node-tree" ,
+					"PURGE_DATA": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#box-utility-dropdown-menu" ,
+					"RESET_AUTHOR": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#save-material" ,
+					"SILENCE_NODE": "" ,
+					"ASSIGN_WINMAN_MAP": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#add" ,
+					"ADJUST_SCENE": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#something-went-wrong-press-this-button"
+				}
+
+			},
+			"info_tag_panel": {
+				"options": {
+					"SHOW_JSON_MAT_INFO": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#info-tag",
+					"SHOW_MAT_INFO": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#info"
+				}
+			}
+
+		},
+
+		"PointerProperty": {
+			"ExtremePbrSceneProp": {
+				"libraries_selector": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#library-selector-drop-down-menu",
+				"up_category": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#category-selector-drop-down-menu",
+				"k_size": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#material-version-selector",
+				"tag_search": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#search-for-tag",
+				"tag_exclude": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#search-for-tag",
+				"edit_tag": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#info-tag",
+                "temp_tag": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#info-tag",
+				"replace_all": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#replace",
+				"bake_mode": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-modes",
+				"bake_format": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#output-format",
+				"bake_samples": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-samples",
+				"bake_device": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-device",
+				"bake_size": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-size",
+				"bake_smart_projection": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#create-new-uv-map",
+				"bake_uv_margin": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#island-margin",
+				"baked_object_on_new_scene": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#move-bake-object-in-a-new-scene",
+				"bake_on_fbx": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#export-fbx-object",
+				"flip_x_axis": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#export-fbx-object",
+		        "use_pass_direct": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#direct-light",
+				"use_pass_indirect": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#indirect-light",
+				"b_bake_diffuse": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-bsdf-mode",
+				"b_bake_specular": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-bsdf-mode",
+				"b_bake_transmission": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-bsdf-mode",
+				"b_bake_emission": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-bsdf-mode",
+				"b_bake_roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-bsdf-mode",
+				"b_bake_normal": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-bsdf-mode",
+				"b_bake_ao": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-bsdf-mode",
+				"b_bake_metallic": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-bsdf-mode",
+				"b_bake_alpha": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-bsdf-mode",
+				"b_bake_subsurface": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-bsdf-mode",
+				"bake_separate_alpha": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-bsdf-mode",
+				"bake_y_direction": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-bsdf-mode",
+				"c_bake_ao": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-cycles-standard-mode",
+				"c_bake_normal": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-cycles-standard-mode",
+				"c_bake_roughness": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-cycles-standard-mode",
+				"c_bake_emit": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-cycles-standard-mode",
+				"c_bake_diffuse": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-cycles-standard-mode",
+				"c_bake_glossy": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-cycles-standard-mode",
+				"c_bake_transmission": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-cycles-standard-mode",
+				"bake_alpha_from_combined": "https://extreme-pbr-docs.readthedocs.io/en/latest/bake_panel.html#bake-maps-cycles-standard-mode",
+				"uv_lock_x": "https://extreme-pbr-docs.readthedocs.io/en/latest/mapping_editor.html#lock-x-y",
+				"uv_lock_y": "https://extreme-pbr-docs.readthedocs.io/en/latest/mapping_editor.html#lock-x-y",
+				"menu_tag_search": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#search-for-tag",
+				"use_existing_images": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#recycle-if-exists",
+				"normal_generator_from_nodes": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#generated-from",
+				"mso_material_from": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#add-from-library",
+				"enum_mixer_overlay": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#mixer-node",
+				"data_materials": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#add-from-data-material",
+				"render_engine": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#render-engine",
+				"device_compute": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#device",
+				"render_samples": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#render-quality",
+				"website_name": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#author-info",
+				"author": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#author-info",
+				"website_url": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#author-info",
+				"license": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#author-info",
+				"license_link": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#author-info",
+				"cat_name_save": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#add-cat",
+				"render_object": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#icon-type",
+				"render_stage": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#background",
+				"render_rotation": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#uv-rotation",
+				"render_scale": "https://extreme-pbr-docs.readthedocs.io/en/latest/save_editor.html#uv-scale",
+				"displace_type": "https://extreme-pbr-docs.readthedocs.io/en/latest/displacement.html#displace-type",
+				"shade_smooth": "",
+				"use_auto_smooth": "",
+				"auto_smooth_angle": "",
+				"ignore_sharpness": ""
+			},
+
+			"ExtremePbrObjectProp": {
+				"smooth_step": "",
+				"displace_type": "https://extreme-pbr-docs.readthedocs.io/en/latest/displacement.html#displace-type"
+			},
+
+			"ExtremePbrMaterialProp": {
+				"displace_on_off": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#displace-on-off",
+				"uv_mapping_type": "https://extreme-pbr-docs.readthedocs.io/en/latest/mapping_editor.html#uv-mapping-type",
+				"uvs_scale": "https://extreme-pbr-docs.readthedocs.io/en/latest/mapping_editor.html#uvs-size",
+				"uvs_position_x": "https://extreme-pbr-docs.readthedocs.io/en/latest/mapping_editor.html#uvs-pos-x-y",
+				"uvs_position_y": "https://extreme-pbr-docs.readthedocs.io/en/latest/mapping_editor.html#uvs-pos-x-y",
+				"uvs_rotation": "https://extreme-pbr-docs.readthedocs.io/en/latest/mapping_editor.html#uvs-rot",
+				"hide_displace": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#hide-displace",
+				"use_anti_tile": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#use-anti-tile"
+
+			},
+
+			"ExtremePbrNodeGProperties": {
+				"show_group_props": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#show-hide-group",
+				"ng_show_tips": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#tips",
+				"use_alpha_from_diffuse": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#use-alpha-channel",
+				"use_normal_generator": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#use-normal-generated",
+				"uv_mapping_type": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#uv-mapping-type",
+				"use_subsurface": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#use-sockets",
+				"use_anisotropic": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#use-sockets",
+				"use_coat": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#use-sockets",
+				"use_sheen": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#use-sockets",
+				"use_emission": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#use-sockets",
+				"use_transmission": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#use-sockets",
+				"use_alpha": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#use-sockets",
+				"show_projection_settings": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#projection-settings",
+				"use_anti_tile": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#use-anti-tile"
+			},
+
+			"ExaSocketProperties": {
+				"brush_paint_type": ""
+			},
+
+			"ExtremePbrNodeProperty": {
+				"restore_inputs_default_values": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#reset-values",
+				"mute_node": "https://extreme-pbr-docs.readthedocs.io/en/latest/texture_manager.html#mute-texture",
+				"projection": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#projection-settings",
+				"coordinate_type": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#projection-settings"
+			},
+
+			"ExtremePbrPreferences": {
+				"minimize_main_panel": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#minimize-button",
+				"preferences_tabs": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#preferences",
+				"material_type": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#material-type",
+				"check_update_frequency_control": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#check-for-updates-every",
+				"show_sockets": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#show-hidden-sockets",
+                "show_node_group_options": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#show-group-options",
+				"default_uv_mapping_type": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#default-mapping-type",
+				"show_labels": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#show-material-popup-label",
+				"icons_preview_size": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#icon-preview-dimension",
+				"icons_popup_size": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#icons-popup-size",
+				"hide_shader_overlay": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#hide-shader-overlay-panel",
+				"hide_material_override": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#hide-material-override-panel",
+				"preserve_bug_crash": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#anti-crash",
+				"i_have_account_on_extreme_addons": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#i-have-an-account-on-extreme-addons",
+				"show_creator_utility": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#show-creator-utility",
+				"show_installer_debug": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#show-download-debug",
+				"show_addon_updates": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#show-addon-updates",
+				"show_library_updates": "https://extreme-pbr-docs.readthedocs.io/en/latest/preferences.html#show-library-updates",
+				"show_material_preview": "https://extreme-pbr-docs.readthedocs.io/en/latest/main_panel.html#show-material-preview"
+			}
+		}
+	}
+}
