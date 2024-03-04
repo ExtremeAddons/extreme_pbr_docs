@@ -390,6 +390,15 @@ Add Replace Remove Buttons
 Add New
 ********
 
+.. tip::
+        **Only from Extreme PBR Nexus version 4.1.120**
+
+        - Press **ALT** before clicking the button to add a Basic material (Principled BSDF + Node Output)
+        - Press **Shift** before clicking the button in order to use it exactly as Shader Maker described here: :ref:`shader_maker`
+
+        - If you have many objects selected in addition to the active object, the material will be added to all the selected objects
+          provided that the selected objects do not have any material on them.
+
 .. image:: _static/_images/main_panel/add_new.png
     :align: center
     :width: 400
@@ -412,6 +421,22 @@ Add New
 Replace
 **********
 
+.. tip::
+        **Only from Extreme PBR Nexus version 4.1.120**
+
+        - If you are replacing for example the Asphalt 001 1k Material with Asphalt 001 2k, Extreme PBR recognizes that the material is the same
+          and only replaces the textures inside it, keeping the values of the Material Editor settings unchanged.
+
+        - If you want to replace the same material that is present on multiple objects, you will simply have to select all the objects
+          Extreme PBR checks if the active material on the active object is present on these objects, if it is present it will replace every time it encounters the material.
+          This replaces the **Replace All** button that was present in previous versions.
+
+        - Press **ALT** before clicking the button to add a Basic material (Principled BSDF + Node Output)
+        - Press **Shift** before clicking the button in order to use it exactly as Shader Maker described here: :ref:`shader_maker`
+
+
+
+
 .. image:: _static/_images/main_panel/replace.png
     :align: center
     :width: 400
@@ -432,14 +457,17 @@ Replace
 - **If there is some displacement active in this material, it will be removed before applying the new material**
 
 
-.. important::
-      If the material you want to replace is present on more objects in the scene, you can replace the material on all objects
-      by activating the **Replace All** option, the button will take on a different color to indicate that this option is active.
+.. admonition:: Deprecated
+    :class: deprecated
 
-      .. image:: _static/_images/main_panel/replace_all_01.png
-          :align: center
-          :width: 400
-          :alt: Replace All 01
+
+    The **Replace All** button has been removed, as it is now possible to replace the same material on multiple
+    selected objects, by selecting all the objects or only the objects to which you want to replace the material in question.
+
+    .. image:: _static/_images/main_panel/replace_all_01.png
+        :align: center
+        :width: 400
+        :alt: Replace All 01
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -455,6 +483,10 @@ Remove
 
 - This button removes the selected material from the material list.
 - **If there is some displacement active in this material, it will be removed before applying the new material**
+
+
+.. tip::
+    - **By pressing Shift + Remove button** you will remove all the materials from the selected objects (If you do it by mistake, press CTRL + Z to undo the operation)
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -520,6 +552,27 @@ Active Material
 This is the active material, you can select it directly with the mouse cursor, just click on it.
 
 With double click of the mouse you can also rename the active material
+
+------------------------------------------------------------------------------------------------------------------------
+
+Set Preview from material
+****************************
+
+.. note::
+        This button will work only for materials applied with Extreme PBR Nexus version 4.1.120 or higher,
+        because in previous versions there was no value stored in the material.
+
+**Only from Extreme PBR Nexus version 4.1.120**
+
+By clicking on the icon of the desired material, (Provided you read the note above) the material will be set
+in the Extreme PBR preview panel, the Library Selector, the Category Selector, the Material Browser
+and also the version of the material used will be automatically set.
+
+.. image:: _static/_images/main_panel/set_preview_from_material_01.webp
+    :align: center
+    :width: 600
+    :alt: Set Preview from material 01
+
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -661,53 +714,225 @@ for example, if you have selected an object or not.
 Smart Shade Smooth
 ******************
 
-.. image:: _static/_images/main_panel/smart_shade_smooth_button.jpg
+.. note::
+        Please Update to Extreme PBR Nexus version 4.1.120 or higher to use this feature with popover panel
+
+.. image:: _static/_images/main_panel/smart_shade_smooth_button.webp
     :align: center
-    :width: 400
+    :width: 600
     :alt: Smart Shade Smooth Button
 
 |
 
-Works only on an active object of type **Mesh**
+The functions present in this panel, allow you to modify more objects at the same time!
 
-This button is used to adjust the **Shade Smooth** and **Auto Smooth** in 3 steps, here are the steps:
+- Type of Objects valid for Smart Shade Smooth:
+    **(MESH, CURVE, SURFACE, FONT)**
 
-**Step 0:**
-  - **Shade Smooth** deactivated / **Auto Smooth** deactivated, the object has a sharp appearance
+If the selected objects are mixed and some are not of these (Type Camera, Empty, etc ...) they will be ignored.
 
 
-.. image:: _static/_images/main_panel/smooth_step_000.jpg
+Shade Smooth
+#############
+
+- **Until Blender 4.0**
+    **If activated** the selected objects will be put in Shade Smooth mode, so they will have a smoother appearance.
+    Up to this version of Blender 4.0 if there are marked Sharp Edges they will be ignored.
+- **From Blender 4.1 onwards**
+    **If activated** the selected objects will be put in Shade Smooth mode, so they will have a smoother appearance.
+    From this version of Blender 4.1 onwards if there are marked Sharp Edges they will be respected.
+
+
+**Example with Shade Smooth Off:**
+
+The object is not smooth, the edges are sharp
+
+.. image:: _static/_images/main_panel/shade_smooth_off_example_01.webp
     :align: center
     :width: 800
-    :alt: Smooth Step 000
+    :alt: Shade Smooth Off Example 01
 
 |
 
-**Step 1:**
-  - **Shade Smooth** activated / **Auto Smooth** activated, the object appears to be more rounded, angles equal
-    to or greater than 45 ° will not be rounded
+**Example with Shade Smooth On:**
 
-.. image:: _static/_images/main_panel/smooth_step_001.jpg
+The object is smooth, the edges are smooth (If there are no marked Sharp Edges)
+
+.. image:: _static/_images/main_panel/shade_smooth_on_example_01.webp
     :align: center
     :width: 800
-    :alt: Smooth Step 001
+    :alt: Shade Smooth On Example 01
 
 |
 
-**Step 2:**
-  - **Shade Smooth** activated / **Auto Smooth** deactivated, the object appears to be completely rounded,
-    all angles are rounded
 
-.. image:: _static/_images/main_panel/smooth_step_002.jpg
-    :align: center
-    :width: 800
-    :alt: Smooth Step 002
-
-|
+Auto Smooth
+#############
 
 .. note::
-      There are some cases where the object may already have the Shade Smooth while the indicator marks for example step 0,
-      as soon as the button is pressed, this will resynchronize the steps again in accordance with the state of the object.
+        From Blender 4.1 onwards, the auto smooth will make use of the "Smooth by Angle" modifier (Geometry Node) and no longer of the native Auto Smooth of Blender
+        since it has been deprecated.
+
+- **Until Blender 4.0**
+    **If activated**, the selected objects will have Auto Smooth activated, so the marked Sharp edges will be respected,
+    plus you can adjust the Auto Smooth angle between 0 and 180 degrees, by default it is 30 degrees.
+    This function will automatically activate the native Auto Smooth of Blender on all selected objects (Only up to Blender 4.0)
+
+    **If deactivated**, the Auto Smooth will be deactivated on the selected objects.
+
+- **From Blender 4.1 onwards**
+    **If activated**, the new "Smooth by Angle" modifier (Geometry Node) will be activated on the selected objects
+    with which you can then decide whether to respect the marked Sharp edges or not, plus you can adjust the Auto
+    Smooth angle between 0 and 180 degrees, by default it is 30 degrees. (If a "Smooth by Angle" modifier is already present, it will be ignored)
+
+    **If deactivated**, all "Smooth by Angle" modifiers present on the selected objects will be removed.
+
+
+
+**Example with Auto Smooth Off:**
+
+All the edges are smooth (If there are no marked Sharp Edges)
+
+.. image:: _static/_images/main_panel/auto_smooth_modifier_off_example_01.webp
+    :align: center
+    :width: 800
+    :alt: Auto Smooth Modifier Off Example 01
+
+|
+
+**Example with Auto Smooth On:**
+
+Maximum face angle for smooth edges in this example is 30 degrees, so all the edges with an angle greater than 30 degrees will be sharp,
+You can adjust the angle from the panel that will appear after activating the Auto Smooth.
+
+.. image:: _static/_images/main_panel/auto_smooth_modifier_on_example_01.webp
+    :align: center
+    :width: 800
+    :alt: Auto Smooth Modifier On Example 01
+
+|
+
+Auto smooth Angle
+##################
+
+This button allows you to adjust the Auto Smooth angle, the angle can be adjusted between 0 and 180 degrees, by default it is 30 degrees.
+This button will be visible only if the Auto Smooth is activated.
+
+**In this example the angle is set to 90 degrees, so all the edges with an angle greater than 90 degrees will be sharp,
+the others will be smooth**
+
+.. image:: _static/_images/main_panel/auto_smooth_angle_90.webp
+    :align: center
+    :width: 800
+    :alt: Auto Smooth Angle 90
+
+
+|
+
+Ignore Sharpness
+##################
+
+.. note::
+        This button is only available from Blender 4.1 onwards (Extreme PBR automatically detects the Blender version)
+
+If your object has marked sharp edges and you want to ignore them, you can activate this button, in this way the marked
+sharp edges will be ignored and the object will be smooth.
+
+**Example of mark sharp edges:**
+
+As you can see in the follow image, the edges are marked as sharp (Blue edges)
+
+.. image:: _static/_images/main_panel/mark_sharp_example_01.webp
+    :align: center
+    :width: 800
+    :alt: Mark Sharp Example 01
+
+|
+
+**Example with Ignore Sharpness off: The angle is 180 in order to see the effect better:**
+
+.. image:: _static/_images/main_panel/mark_sharp_example_02.webp
+    :align: center
+    :width: 800
+    :alt: Mark Sharp Example 02
+
+|
+
+**Example with Ignore Sharpness on: The angle is 180 in order to see the effect better:**
+
+.. image:: _static/_images/main_panel/mark_sharp_example_03.webp
+    :align: center
+    :width: 800
+    :alt: Mark Sharp Example 03
+
+|
+
+Apply Modifier
+################
+
+.. note::
+        This button is only available from Blender 4.1 onwards (Extreme PBR automatically detects the Blender version)
+
+.. warning::
+        If you apply this modifier with the "Ignore Sharpness" option off, the edges that are not smooth will be set as sharp,
+        If you already have edges marked as sharp, these will be respected, but you may have additional edges marked as sharp after applying the modifier.
+        It is recommended to perform this operation only if strictly necessary (For example to export the object to another software)
+
+
+This button allows you to apply the "Smooth by Angle" modifier (Geometry Node) to the selected objects
+
+
+.. image:: _static/_images/main_panel/apply_smooth_by_angle_modifier_01.webp
+    :align: center
+    :width: 800
+    :alt: Apply Smooth By Angle Modifier 01
+
+|
+
+
+.. tip::
+        You can use this button to apply the modifier to all selected objects, a function will be executed that will
+        recognize if there is a "Smooth by Angle" modifier and will apply it, otherwise the object will be ignored.
+
+
+Set By Default
+################
+
+By pressing this button, the settings will be set as default, every time you apply a material with Extreme PBR to your
+object, these settings will be applied. (This features not work for the Asset Browser drag and drop)
+
+As you can see, if the "Set By Default" button is activated, below it you will see the settings that will be used when
+applying a material with Extreme PBR to your object.
+
+
+.. image:: _static/_images/main_panel/set_by_default_smart_smooth.webp
+    :align: center
+    :width: 300
+    :alt: Set By Default Smart Smooth
+
+|
+
+
+Remove Default
+################
+
+By pressing this button, the settings will be removed as default, no default settings will be applied when applying a
+material with Extreme PBR to your objects.
+
+.. image:: _static/_images/main_panel/remove_default_smart_smooth.webp
+    :align: center
+    :width: 300
+    :alt: Remove Default Smart Smooth
+
+
+
+
+
+
+
+
+
+
 
 
 ------------------------------------------------------------------------------------------------------------------------

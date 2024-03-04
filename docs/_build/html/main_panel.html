@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Main Panel &mdash; Extreme PBR 4.1.115 documentation</title>
+  <title>Main Panel &mdash; Extreme PBR 4.1.120 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
@@ -46,9 +46,8 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Get started: 🚀</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">New Installation (4.1.100 and up)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation (Extreme PBR 4.1.100 and up)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html#update-only-the-addon">Update Only The addon</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation_old.html">Old Installation/Extreme Addons Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="make_asset_browser.html">Make Asset Browser</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interface and functions: 📱</span></p>
@@ -91,6 +90,7 @@
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#material-list-section">Material List Section</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#active-material">Active Material</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#set-preview-from-material">Set Preview from material</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#displace-on-off">Displace On/Off</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#hide-displace">Hide Displace</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#search-and-replace">Search and Replace</a></li>
@@ -99,7 +99,16 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#box-utility">Box Utility</a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#smart-shade-smooth">Smart Shade Smooth</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#smart-shade-smooth">Smart Shade Smooth</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#shade-smooth">Shade Smooth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#auto-smooth">Auto Smooth</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#auto-smooth-angle">Auto smooth Angle</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#ignore-sharpness">Ignore Sharpness</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#apply-modifier">Apply Modifier</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#set-by-default">Set By Default</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#remove-default">Remove Default</a></li>
+</ul>
+</li>
 <li class="toctree-l3"><a class="reference internal" href="#copy-material-smart">Copy Material (Smart)</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#smart-vertex-groups">Smart Vertex Groups</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#bake-editor-button">Bake Editor Button</a></li>
@@ -175,7 +184,7 @@
   <section id="main-panel">
 <h1>Main Panel<a class="headerlink" href="#main-panel" title="Permalink to this heading"></a></h1>
 <p>The main panel of Extreme PBR Nexus from version 4.1.100, if you have an older version, you can update it by following
-this guide: <a class="reference internal" href="installation.html#new-installation"><span class="std std-ref">New Installation (4.1.100 and up)</span></a></p>
+this guide: <a class="reference internal" href="installation.html#new-installation"><span class="std std-ref">Installation (Extreme PBR 4.1.100 and up)</span></a></p>
 <table class="docutils align-default">
 <tbody>
 <tr class="row-odd"><td></td>
@@ -413,6 +422,16 @@ because it would not make sense to select a version if there is only one.</p></l
 <hr class="docutils" />
 <section id="add-new">
 <span id="mp-add-new"></span><h3>Add New<a class="headerlink" href="#add-new" title="Permalink to this heading"></a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Only from Extreme PBR Nexus version 4.1.120</strong></p>
+<ul class="simple">
+<li><p>Press <strong>ALT</strong> before clicking the button to add a Basic material (Principled BSDF + Node Output)</p></li>
+<li><p>Press <strong>Shift</strong> before clicking the button in order to use it exactly as Shader Maker described here: <a class="reference internal" href="shader_maker.html#shader-maker"><span class="std std-ref">Shader Maker</span></a></p></li>
+<li><p>If you have many objects selected in addition to the active object, the material will be added to all the selected objects
+provided that the selected objects do not have any material on them.</p></li>
+</ul>
+</div>
 <a class="reference internal image-reference" href="_images/add_new.png"><img alt="Add New" class="align-center" src="_images/add_new.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -442,6 +461,19 @@ the active material, use the <strong>Replace</strong> button described below</p>
 <hr class="docutils" />
 <section id="replace">
 <h3>Replace<a class="headerlink" href="#replace" title="Permalink to this heading"></a></h3>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p><strong>Only from Extreme PBR Nexus version 4.1.120</strong></p>
+<ul class="simple">
+<li><p>If you are replacing for example the Asphalt 001 1k Material with Asphalt 001 2k, Extreme PBR recognizes that the material is the same
+and only replaces the textures inside it, keeping the values of the Material Editor settings unchanged.</p></li>
+<li><p>If you want to replace the same material that is present on multiple objects, you will simply have to select all the objects
+Extreme PBR checks if the active material on the active object is present on these objects, if it is present it will replace every time it encounters the material.
+This replaces the <strong>Replace All</strong> button that was present in previous versions.</p></li>
+<li><p>Press <strong>ALT</strong> before clicking the button to add a Basic material (Principled BSDF + Node Output)</p></li>
+<li><p>Press <strong>Shift</strong> before clicking the button in order to use it exactly as Shader Maker described here: <a class="reference internal" href="shader_maker.html#shader-maker"><span class="std std-ref">Shader Maker</span></a></p></li>
+</ul>
+</div>
 <a class="reference internal image-reference" href="_images/replace.png"><img alt="Replace" class="align-center" src="_images/replace.png" style="width: 400px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
@@ -469,10 +501,10 @@ replaces the active material (From the material list: <a class="reference intern
 <ul class="simple">
 <li><p><strong>If there is some displacement active in this material, it will be removed before applying the new material</strong></p></li>
 </ul>
-<div class="admonition important">
-<p class="admonition-title">Important</p>
-<p>If the material you want to replace is present on more objects in the scene, you can replace the material on all objects
-by activating the <strong>Replace All</strong> option, the button will take on a different color to indicate that this option is active.</p>
+<div class="deprecated admonition">
+<p class="admonition-title">Deprecated</p>
+<p>The <strong>Replace All</strong> button has been removed, as it is now possible to replace the same material on multiple
+selected objects, by selecting all the objects or only the objects to which you want to replace the material in question.</p>
 <a class="reference internal image-reference" href="_images/replace_all_01.png"><img alt="Replace All 01" class="align-center" src="_images/replace_all_01.png" style="width: 400px;" /></a>
 </div>
 </section>
@@ -487,6 +519,12 @@ by activating the <strong>Replace All</strong> option, the button will take on a
 <li><p>This button removes the selected material from the material list.</p></li>
 <li><p><strong>If there is some displacement active in this material, it will be removed before applying the new material</strong></p></li>
 </ul>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p><strong>By pressing Shift + Remove button</strong> you will remove all the materials from the selected objects (If you do it by mistake, press CTRL + Z to undo the operation)</p></li>
+</ul>
+</div>
 </section>
 <hr class="docutils" />
 <section id="assign-mat">
@@ -520,6 +558,20 @@ There are also other buttons that we will see below.</p>
 </div>
 <p>This is the active material, you can select it directly with the mouse cursor, just click on it.</p>
 <p>With double click of the mouse you can also rename the active material</p>
+</section>
+<hr class="docutils" />
+<section id="set-preview-from-material">
+<h3>Set Preview from material<a class="headerlink" href="#set-preview-from-material" title="Permalink to this heading"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This button will work only for materials applied with Extreme PBR Nexus version 4.1.120 or higher,
+because in previous versions there was no value stored in the material.</p>
+</div>
+<p><strong>Only from Extreme PBR Nexus version 4.1.120</strong></p>
+<p>By clicking on the icon of the desired material, (Provided you read the note above) the material will be set
+in the Extreme PBR preview panel, the Library Selector, the Category Selector, the Material Browser
+and also the version of the material used will be automatically set.</p>
+<a class="reference internal image-reference" href="_images/set_preview_from_material_01.webp"><img alt="Set Preview from material 01" class="align-center" src="_images/set_preview_from_material_01.webp" style="width: 600px;" /></a>
 <hr class="docutils" />
 </section>
 <section id="displace-on-off">
@@ -617,49 +669,167 @@ for example, if you have selected an object or not.</p>
 <hr class="docutils" />
 <section id="smart-shade-smooth">
 <h3>Smart Shade Smooth<a class="headerlink" href="#smart-shade-smooth" title="Permalink to this heading"></a></h3>
-<a class="reference internal image-reference" href="_images/smart_shade_smooth_button.jpg"><img alt="Smart Shade Smooth Button" class="align-center" src="_images/smart_shade_smooth_button.jpg" style="width: 400px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p>Works only on an active object of type <strong>Mesh</strong></p>
-<p>This button is used to adjust the <strong>Shade Smooth</strong> and <strong>Auto Smooth</strong> in 3 steps, here are the steps:</p>
-<dl class="simple">
-<dt><strong>Step 0:</strong></dt><dd><ul class="simple">
-<li><p><strong>Shade Smooth</strong> deactivated / <strong>Auto Smooth</strong> deactivated, the object has a sharp appearance</p></li>
-</ul>
-</dd>
-</dl>
-<a class="reference internal image-reference" href="_images/smooth_step_000.jpg"><img alt="Smooth Step 000" class="align-center" src="_images/smooth_step_000.jpg" style="width: 800px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<dl class="simple">
-<dt><strong>Step 1:</strong></dt><dd><ul class="simple">
-<li><p><strong>Shade Smooth</strong> activated / <strong>Auto Smooth</strong> activated, the object appears to be more rounded, angles equal
-to or greater than 45 ° will not be rounded</p></li>
-</ul>
-</dd>
-</dl>
-<a class="reference internal image-reference" href="_images/smooth_step_001.jpg"><img alt="Smooth Step 001" class="align-center" src="_images/smooth_step_001.jpg" style="width: 800px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<dl class="simple">
-<dt><strong>Step 2:</strong></dt><dd><ul class="simple">
-<li><p><strong>Shade Smooth</strong> activated / <strong>Auto Smooth</strong> deactivated, the object appears to be completely rounded,
-all angles are rounded</p></li>
-</ul>
-</dd>
-</dl>
-<a class="reference internal image-reference" href="_images/smooth_step_002.jpg"><img alt="Smooth Step 002" class="align-center" src="_images/smooth_step_002.jpg" style="width: 800px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
-<p>There are some cases where the object may already have the Shade Smooth while the indicator marks for example step 0,
-as soon as the button is pressed, this will resynchronize the steps again in accordance with the state of the object.</p>
+<p>Please Update to Extreme PBR Nexus version 4.1.120 or higher to use this feature with popover panel</p>
 </div>
+<a class="reference internal image-reference" href="_images/smart_shade_smooth_button.webp"><img alt="Smart Shade Smooth Button" class="align-center" src="_images/smart_shade_smooth_button.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The functions present in this panel, allow you to modify more objects at the same time!</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt>Type of Objects valid for Smart Shade Smooth:</dt><dd><p><strong>(MESH, CURVE, SURFACE, FONT)</strong></p>
+</dd>
+</dl>
+</li>
+</ul>
+<p>If the selected objects are mixed and some are not of these (Type Camera, Empty, etc …) they will be ignored.</p>
+<section id="shade-smooth">
+<h4>Shade Smooth<a class="headerlink" href="#shade-smooth" title="Permalink to this heading"></a></h4>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Until Blender 4.0</strong></dt><dd><p><strong>If activated</strong> the selected objects will be put in Shade Smooth mode, so they will have a smoother appearance.
+Up to this version of Blender 4.0 if there are marked Sharp Edges they will be ignored.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>From Blender 4.1 onwards</strong></dt><dd><p><strong>If activated</strong> the selected objects will be put in Shade Smooth mode, so they will have a smoother appearance.
+From this version of Blender 4.1 onwards if there are marked Sharp Edges they will be respected.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p><strong>Example with Shade Smooth Off:</strong></p>
+<p>The object is not smooth, the edges are sharp</p>
+<a class="reference internal image-reference" href="_images/shade_smooth_off_example_01.webp"><img alt="Shade Smooth Off Example 01" class="align-center" src="_images/shade_smooth_off_example_01.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Example with Shade Smooth On:</strong></p>
+<p>The object is smooth, the edges are smooth (If there are no marked Sharp Edges)</p>
+<a class="reference internal image-reference" href="_images/shade_smooth_on_example_01.webp"><img alt="Shade Smooth On Example 01" class="align-center" src="_images/shade_smooth_on_example_01.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="auto-smooth">
+<h4>Auto Smooth<a class="headerlink" href="#auto-smooth" title="Permalink to this heading"></a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>From Blender 4.1 onwards, the auto smooth will make use of the “Smooth by Angle” modifier (Geometry Node) and no longer of the native Auto Smooth of Blender
+since it has been deprecated.</p>
+</div>
+<ul>
+<li><dl>
+<dt><strong>Until Blender 4.0</strong></dt><dd><p><strong>If activated</strong>, the selected objects will have Auto Smooth activated, so the marked Sharp edges will be respected,
+plus you can adjust the Auto Smooth angle between 0 and 180 degrees, by default it is 30 degrees.
+This function will automatically activate the native Auto Smooth of Blender on all selected objects (Only up to Blender 4.0)</p>
+<p><strong>If deactivated</strong>, the Auto Smooth will be deactivated on the selected objects.</p>
+</dd>
+</dl>
+</li>
+<li><dl>
+<dt><strong>From Blender 4.1 onwards</strong></dt><dd><p><strong>If activated</strong>, the new “Smooth by Angle” modifier (Geometry Node) will be activated on the selected objects
+with which you can then decide whether to respect the marked Sharp edges or not, plus you can adjust the Auto
+Smooth angle between 0 and 180 degrees, by default it is 30 degrees. (If a “Smooth by Angle” modifier is already present, it will be ignored)</p>
+<p><strong>If deactivated</strong>, all “Smooth by Angle” modifiers present on the selected objects will be removed.</p>
+</dd>
+</dl>
+</li>
+</ul>
+<p><strong>Example with Auto Smooth Off:</strong></p>
+<p>All the edges are smooth (If there are no marked Sharp Edges)</p>
+<a class="reference internal image-reference" href="_images/auto_smooth_modifier_off_example_01.webp"><img alt="Auto Smooth Modifier Off Example 01" class="align-center" src="_images/auto_smooth_modifier_off_example_01.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Example with Auto Smooth On:</strong></p>
+<p>Maximum face angle for smooth edges in this example is 30 degrees, so all the edges with an angle greater than 30 degrees will be sharp,
+You can adjust the angle from the panel that will appear after activating the Auto Smooth.</p>
+<a class="reference internal image-reference" href="_images/auto_smooth_modifier_on_example_01.webp"><img alt="Auto Smooth Modifier On Example 01" class="align-center" src="_images/auto_smooth_modifier_on_example_01.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="auto-smooth-angle">
+<h4>Auto smooth Angle<a class="headerlink" href="#auto-smooth-angle" title="Permalink to this heading"></a></h4>
+<p>This button allows you to adjust the Auto Smooth angle, the angle can be adjusted between 0 and 180 degrees, by default it is 30 degrees.
+This button will be visible only if the Auto Smooth is activated.</p>
+<p><strong>In this example the angle is set to 90 degrees, so all the edges with an angle greater than 90 degrees will be sharp,
+the others will be smooth</strong></p>
+<a class="reference internal image-reference" href="_images/auto_smooth_angle_90.webp"><img alt="Auto Smooth Angle 90" class="align-center" src="_images/auto_smooth_angle_90.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="ignore-sharpness">
+<h4>Ignore Sharpness<a class="headerlink" href="#ignore-sharpness" title="Permalink to this heading"></a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This button is only available from Blender 4.1 onwards (Extreme PBR automatically detects the Blender version)</p>
+</div>
+<p>If your object has marked sharp edges and you want to ignore them, you can activate this button, in this way the marked
+sharp edges will be ignored and the object will be smooth.</p>
+<p><strong>Example of mark sharp edges:</strong></p>
+<p>As you can see in the follow image, the edges are marked as sharp (Blue edges)</p>
+<a class="reference internal image-reference" href="_images/mark_sharp_example_01.webp"><img alt="Mark Sharp Example 01" class="align-center" src="_images/mark_sharp_example_01.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Example with Ignore Sharpness off: The angle is 180 in order to see the effect better:</strong></p>
+<a class="reference internal image-reference" href="_images/mark_sharp_example_02.webp"><img alt="Mark Sharp Example 02" class="align-center" src="_images/mark_sharp_example_02.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Example with Ignore Sharpness on: The angle is 180 in order to see the effect better:</strong></p>
+<a class="reference internal image-reference" href="_images/mark_sharp_example_03.webp"><img alt="Mark Sharp Example 03" class="align-center" src="_images/mark_sharp_example_03.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="apply-modifier">
+<h4>Apply Modifier<a class="headerlink" href="#apply-modifier" title="Permalink to this heading"></a></h4>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This button is only available from Blender 4.1 onwards (Extreme PBR automatically detects the Blender version)</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>If you apply this modifier with the “Ignore Sharpness” option off, the edges that are not smooth will be set as sharp,
+If you already have edges marked as sharp, these will be respected, but you may have additional edges marked as sharp after applying the modifier.
+It is recommended to perform this operation only if strictly necessary (For example to export the object to another software)</p>
+</div>
+<p>This button allows you to apply the “Smooth by Angle” modifier (Geometry Node) to the selected objects</p>
+<a class="reference internal image-reference" href="_images/apply_smooth_by_angle_modifier_01.webp"><img alt="Apply Smooth By Angle Modifier 01" class="align-center" src="_images/apply_smooth_by_angle_modifier_01.webp" style="width: 800px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>You can use this button to apply the modifier to all selected objects, a function will be executed that will
+recognize if there is a “Smooth by Angle” modifier and will apply it, otherwise the object will be ignored.</p>
+</div>
+</section>
+<section id="set-by-default">
+<h4>Set By Default<a class="headerlink" href="#set-by-default" title="Permalink to this heading"></a></h4>
+<p>By pressing this button, the settings will be set as default, every time you apply a material with Extreme PBR to your
+object, these settings will be applied. (This features not work for the Asset Browser drag and drop)</p>
+<p>As you can see, if the “Set By Default” button is activated, below it you will see the settings that will be used when
+applying a material with Extreme PBR to your object.</p>
+<a class="reference internal image-reference" href="_images/set_by_default_smart_smooth.webp"><img alt="Set By Default Smart Smooth" class="align-center" src="_images/set_by_default_smart_smooth.webp" style="width: 300px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="remove-default">
+<h4>Remove Default<a class="headerlink" href="#remove-default" title="Permalink to this heading"></a></h4>
+<p>By pressing this button, the settings will be removed as default, no default settings will be applied when applying a
+material with Extreme PBR to your objects.</p>
+<a class="reference internal image-reference" href="_images/remove_default_smart_smooth.webp"><img alt="Remove Default Smart Smooth" class="align-center" src="_images/remove_default_smart_smooth.webp" style="width: 300px;" /></a>
+</section>
 </section>
 <hr class="docutils" />
 <section id="copy-material-smart">
@@ -785,7 +955,7 @@ in a faster way, the button can take various forms and variants depending on the
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Andrea Donati.</p>
+    <p>&#169; Copyright 2024, Andrea Donati.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

@@ -21,7 +21,6 @@ Welcome to Extreme PBR's documentation!
    :caption: Get started: 🚀
 
    installation
-   installation_old
    make_asset_browser
 
 

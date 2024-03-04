@@ -21,11 +21,7 @@ Panel :ref:`bake_editor_button`
 
 |
 
-..
-    Questo è un commento
-    .. warning::
-            In Blender 3.6.0 there is an Blender Crash during the Bake, please update Blender to 3.6.1 or higher!
-            I tried to do a bugfix, but it doesn't depend on me in that version 3.6.0 there is a Bug
+
 
 .. important::
         - The bake is a fairly slow and heavy process, this tool has been designed to facilitate the Bake process,
@@ -168,49 +164,6 @@ texture will be, but be careful, the higher the resolution, the slower and heavi
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Create new UV Map
-------------------
-
-.. admonition:: Deprecated
-    :class: deprecated
-
-    This function is deprecated from Extreme PBR 4.1.114 as it has been integrated directly into the operator
-
-
-.. image:: _static/_images/bake_panel/bake_create_new_uv_map.jpg
-    :align: center
-    :width: 600
-    :alt: Bake Editor Create New UV Map
-
-|
-
-If active, the addon will create a Smart projection on a new UV Map, this UV Map will be used for the Bake, so
-I recommend you leave this box active.
-
-------------------------------------------------------------------------------------------------------------------------
-
-Island Margin
---------------
-
-.. admonition:: Deprecated
-    :class: deprecated
-
-    This function is deprecated from Extreme PBR 4.1.114 as it is no longer necessary
-
-.. image:: _static/_images/bake_panel/bake_island_margin.jpg
-    :align: center
-    :width: 600
-    :alt: Bake Editor Island Margin
-
-|
-
-This value is used to create a margin between the islands, this margin is used to avoid the problem of bleeding,
-which is a problem that occurs when the Bake is done, and the texture is not perfectly aligned with the UV Map,
-so there is a small space between the islands, and this space is filled with the color of the adjacent island.
-
-
-------------------------------------------------------------------------------------------------------------------------
-
 Margin
 --------
 
@@ -317,6 +270,63 @@ if you encounter any problems, please uncheck this box.
 
 ------------------------------------------------------------------------------------------------------------------------
 
+UV Map Source
+--------------
+This property allows you to select which UV mapping to use for the bake.
+
+- **Use Active**:
+    Use the active UV mapping, if there is no active UV mapping, if there is no active UV mapping, when the Bake is launched,
+    an error message will be shown that warns you that there is no active UV mapping.
+    Pay close attention, Extreme PBR allows batch baking of selected objects, if even 1 of the selected objects does not
+    have an active UV mapping, the Bake will not start and an error message will be shown.
+
+- **Create New**:
+    Create a new UV mapping, this UV mapping will be used for the Bake. It could happen that your active UV mapping is
+    not suitable for the Bake, in this case, you can opt for the **Use Active**
+
+
+.. image:: _static/_images/bake_panel/uv_map_source.webp
+    :align: center
+    :width: 600
+    :alt: UV Map Source
+
+|
+
+UV Margin
+************
+
+.. note::
+        This property is only displayed if you have set **Create New** in the **UV Map Source** property explained above.
+
+
+This property allows you to change the margin between UV islands, this margin is used to avoid the problem of bleeding, that is
+when the texture is displayed, you can see a bit of color of the adjacent UV island, a higher value means a larger margin.
+so a larger margin means less bleeding, but also a not too optimal bake. The default value is 0.001, this value
+usually it is sufficient to avoid bleeding, but if you have a bleeding problem, you can try to increase this value a little.
+
+
+.. image:: _static/_images/bake_panel/uv_margin.webp
+    :align: center
+    :width: 600
+    :alt: UV Margin
+
+
+|
+
+Make Smart Projection
+**********************
+
+If active, this creates a native blender Smart Projection, in this way you can solve any UV Mapping problems,
+in substance it does an automatic projection of the UV.
+
+.. image:: _static/_images/bake_panel/make_smart_projection.webp
+    :align: center
+    :width: 600
+    :alt: Make Smart Projection
+
+
+------------------------------------------------------------------------------------------------------------------------
+
 Lighting
 --------------
 
@@ -389,7 +399,6 @@ Bake maps BSDF mode
      will be baked into a Diffuse texture.
 
 
-
 **Specular**
     - If active, the Bake will create a Specular texture, ie everything that is inserted in the BSDF node in the **Specular** input
       will be connect in the **Base Color** socket and then baked into a Specular texture.
@@ -404,25 +413,31 @@ Bake maps BSDF mode
     - If active, the Bake will create a Metallic texture, ie everything that is inserted in the BSDF node in the **Metallic** input
       will be connect in the **Base Color** socket and then baked into a Metallic texture.
 
+
 **Transmission**
     - If active, the Bake will create a Transmission texture, ie everything that is inserted in the BSDF node in the **Transmission** input
       will be baked connect in the **Base Color** socket and then baked into a Transmission texture.
+
 
 **Emission**
     - If active, the Bake will create an Emission texture, ie everything that is inserted in the BSDF node in the **Emision** input
       will be connect in the **Base Color** socket and then baked into an Emission texture.
 
+
 **Normal**
     - If active, the Bake will create a Normal texture, ie everything that is inserted in the BSDF node in the **Normal** input
       will be connect in the **Base Color** socket and then baked into a Normal texture.
+
 
 **Alpha**
     - If active, the Bake will create an Alpha texture, ie everything that is inserted in the BSDF node in the **Alpha** input
       will be baked connect in the **Base Color** socket and then baked into an Alpha texture.
 
+
 **Subsurface**
     - If active, the Bake will create a Subsurface texture, ie everything that is inserted in the BSDF node in the **Subsurface** input
       will be connect in the **Base Color** socket and then baked into a Subsurface texture.
+
 
 **Alpha in separate texture**
     - If active:
@@ -430,6 +445,7 @@ Bake maps BSDF mode
         will be connect in the **Base Color** socket and then baked into an Alpha texture.
     - If inactive:
         The Bake will create an Alpha texture and if the **Diffuse** item is active, a texture with the Alpha channel included in the Diffuse map will be created.
+
 
 **Normal type**
     (Works in accordance with the **Normal** item if active)

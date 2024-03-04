@@ -59,6 +59,12 @@ Don't worry, everything is managed through the Extreme PBR panel as shown in the
 Add Module
 ----------
 
+.. tip::
+        **Only from Extreme PBR Nexus version 4.1.120**
+
+        - Press **Shift** before clicking the button in order to use it exactly as Shader Maker described here: :ref:`shader_maker`
+          in order to import your own textures and create your own material.
+
 .. image:: _static/_images/material_editor/add_module_example_01.png
     :align: center
     :width: 800
@@ -90,6 +96,16 @@ Show / Hide Group
 
 This button allows you to hide or show all the properties of a group (Nexus Module), it is useful if you are using the
 FX Module, it makes the workspace cleaner and allows you to focus only on what you are doing.
+
+
+.. tip::
+        From Extreme PBR Nexus version 4.1.120, you can use the following shortcuts:
+
+        - Hold **Shift** while pressing this button, and all the modules on this row will be hidden or shown
+          together with this module.
+        - Hold **Ctrl** while pressing this button, and all the modules and Fxs will be hidden or shown
+          together with this module.
+
 
 .. image:: _static/_images/material_editor/me_show_hide_group_01.png
     :align: center
@@ -137,6 +153,15 @@ From here you can view and also change the name of the group (Nexus Module) you 
 
 Replace Module
 ***************
+
+.. tip::
+        **Only from Extreme PBR Nexus version 4.1.120**
+
+        - If you are replacing for example the Asphalt 001 1k Material with Asphalt 001 2k, Extreme PBR recognizes that the material is the same
+          and only replaces the textures inside it, keeping the values of the Material Editor settings unchanged.
+
+        - Press **Shift** before clicking the button in order to use it exactly as Shader Maker described here: :ref:`shader_maker`
+          in order to import your own textures and create your own material.
 
 
 The Replace Module button allows you to replace the module you are using by loading another module, in accordance with the preview
@@ -1389,6 +1414,12 @@ Add Fx Layer
     :alt: Add Fx Layer
 
 |
+
+.. tip::
+        **Only from Extreme PBR Nexus version 4.1.120**
+
+        - Press **Shift** before clicking the button in order to use it exactly as Shader Maker described here: :ref:`shader_maker`
+          in order to import your own textures and create your own material.
 
 This Button, in accordance with the material preview present in the :ref:`material_browser` allows you to add an effect
 to the material. This is explained well in this chapter: :ref:`fx_layer`

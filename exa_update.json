@@ -15,8 +15,9 @@
 			"date": "xx-02-2024",
 			"name": "Extreme PBR",
 			"edition": "Nexus",
-			"url": false,
+			"url": "https://www.youtube.com/watch?v=83ZLK41mu40&t",
 			"urgency": true,
+			"video_embed_code": "<iframe width=\"560\" height=\"315\" src=\"https://www.youtube.com/embed/83ZLK41mu40?si=s0iZ0hEFN5gs3hUF\" title=\"YouTube video player\" frameborder=\"0\" allow=\"accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share\" allowfullscreen></iframe>",
 			"lock_operators": [
 				""
 			],
@@ -136,6 +137,10 @@
 				"29": {
 					"title": "BugFix - Remove Empty Slot remove Displacement",
 					"description": "The Remove Material button, if an empty material slot was removed, also removed the displacement on the object, now a condition has been put for which if the slot is empty, it does not remove the displacement (Only if there is a material in the ob.data.materials with an active displacement)"
+				},
+				"30": {
+					"title": "Removed - I Have an acount on Extreme-Addons",
+					"description": "Due to a problem with those who manage our website, this function has been temporarily removed"
 				}
 			}
 		},

@@ -34,6 +34,12 @@ This special category contains some useful tools to create and import shaders.
 Shader Maker
 ========================
 
+.. tip::
+        From Extreme PBR Nexus 4.1.120 you can use Shader Maker, simply by pressing **Shift** and the **Add New**,
+        **Replace Material**, **Replace Module**, **Add FX**, **Replace FX** buttons without necessarily being in this
+        category and Preview
+
+
 .. admonition:: Video Tutorial
     :class: youtube
 

@@ -28,7 +28,7 @@ If you have purchased the addon on Gumroad, you can send me a mail to: **tredist
 Which version of Blender is compatible?
 ***************************************
 
-The addon is compatible with all versions from 3.0 (Included) onwards.
+The addon is compatible with all versions from 3.3 (Included) onwards.
 
 
 ------------------------------------------------------------------------------------------------------------------------

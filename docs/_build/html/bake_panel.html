@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bake Editor Panel &mdash; Extreme PBR 4.1.115 documentation</title>
+  <title>Bake Editor Panel &mdash; Extreme PBR 4.1.120 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
@@ -46,9 +46,8 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Get started: 🚀</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">New Installation (4.1.100 and up)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation (Extreme PBR 4.1.100 and up)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html#update-only-the-addon">Update Only The addon</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation_old.html">Old Installation/Extreme Addons Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="make_asset_browser.html">Make Asset Browser</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interface and functions: 📱</span></p>
@@ -62,8 +61,6 @@
 <li class="toctree-l2"><a class="reference internal" href="#bake-device">Bake Device</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bake-samples">Bake Samples</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#bake-size">Bake Size</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#create-new-uv-map">Create new UV Map</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#island-margin">Island Margin</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#margin">Margin</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#margin-type">Margin Type</a></li>
 </ul>
@@ -71,6 +68,11 @@
 <li class="toctree-l2"><a class="reference internal" href="#move-bake-object-in-a-new-scene">Move Bake object in a new scene</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#export-fbx-object">Export FBX object</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#flip-x-axis">Flip X Axis</a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="#uv-map-source">UV Map Source</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#uv-margin">UV Margin</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#make-smart-projection">Make Smart Projection</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="#lighting">Lighting</a><ul>
@@ -249,35 +251,6 @@ Bake will be precise, but also slower. This rule is almost the same as that of a
 texture will be, but be careful, the higher the resolution, the slower and heavier the Bake will be, in addition it will</p>
 </section>
 <hr class="docutils" />
-<section id="create-new-uv-map">
-<h2>Create new UV Map<a class="headerlink" href="#create-new-uv-map" title="Permalink to this heading"></a></h2>
-<div class="deprecated admonition">
-<p class="admonition-title">Deprecated</p>
-<p>This function is deprecated from Extreme PBR 4.1.114 as it has been integrated directly into the operator</p>
-</div>
-<a class="reference internal image-reference" href="_images/bake_create_new_uv_map.jpg"><img alt="Bake Editor Create New UV Map" class="align-center" src="_images/bake_create_new_uv_map.jpg" style="width: 600px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p>If active, the addon will create a Smart projection on a new UV Map, this UV Map will be used for the Bake, so
-I recommend you leave this box active.</p>
-</section>
-<hr class="docutils" />
-<section id="island-margin">
-<h2>Island Margin<a class="headerlink" href="#island-margin" title="Permalink to this heading"></a></h2>
-<div class="deprecated admonition">
-<p class="admonition-title">Deprecated</p>
-<p>This function is deprecated from Extreme PBR 4.1.114 as it is no longer necessary</p>
-</div>
-<a class="reference internal image-reference" href="_images/bake_island_margin.jpg"><img alt="Bake Editor Island Margin" class="align-center" src="_images/bake_island_margin.jpg" style="width: 600px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p>This value is used to create a margin between the islands, this margin is used to avoid the problem of bleeding,
-which is a problem that occurs when the Bake is done, and the texture is not perfectly aligned with the UV Map,
-so there is a small space between the islands, and this space is filled with the color of the adjacent island.</p>
-</section>
-<hr class="docutils" />
 <section id="margin">
 <h2>Margin<a class="headerlink" href="#margin" title="Permalink to this heading"></a></h2>
 <p>By default a margin is generated around UV “islands”. This is important to avoid discontinuities at UV seams,
@@ -348,6 +321,52 @@ if you encounter any problems, please uncheck this box.</p>
 <p>This function is a bit experimental, there may be cases where the result is not what you expected.
 Pay attention when you use this function, and always check the final result if it is what you expect.</p>
 </div>
+</section>
+</section>
+<hr class="docutils" />
+<section id="uv-map-source">
+<h2>UV Map Source<a class="headerlink" href="#uv-map-source" title="Permalink to this heading"></a></h2>
+<p>This property allows you to select which UV mapping to use for the bake.</p>
+<ul class="simple">
+<li><dl class="simple">
+<dt><strong>Use Active</strong>:</dt><dd><p>Use the active UV mapping, if there is no active UV mapping, if there is no active UV mapping, when the Bake is launched,
+an error message will be shown that warns you that there is no active UV mapping.
+Pay close attention, Extreme PBR allows batch baking of selected objects, if even 1 of the selected objects does not
+have an active UV mapping, the Bake will not start and an error message will be shown.</p>
+</dd>
+</dl>
+</li>
+<li><dl class="simple">
+<dt><strong>Create New</strong>:</dt><dd><p>Create a new UV mapping, this UV mapping will be used for the Bake. It could happen that your active UV mapping is
+not suitable for the Bake, in this case, you can opt for the <strong>Use Active</strong></p>
+</dd>
+</dl>
+</li>
+</ul>
+<a class="reference internal image-reference" href="_images/uv_map_source.webp"><img alt="UV Map Source" class="align-center" src="_images/uv_map_source.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<section id="uv-margin">
+<h3>UV Margin<a class="headerlink" href="#uv-margin" title="Permalink to this heading"></a></h3>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>This property is only displayed if you have set <strong>Create New</strong> in the <strong>UV Map Source</strong> property explained above.</p>
+</div>
+<p>This property allows you to change the margin between UV islands, this margin is used to avoid the problem of bleeding, that is
+when the texture is displayed, you can see a bit of color of the adjacent UV island, a higher value means a larger margin.
+so a larger margin means less bleeding, but also a not too optimal bake. The default value is 0.001, this value
+usually it is sufficient to avoid bleeding, but if you have a bleeding problem, you can try to increase this value a little.</p>
+<a class="reference internal image-reference" href="_images/uv_margin.webp"><img alt="UV Margin" class="align-center" src="_images/uv_margin.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="make-smart-projection">
+<h3>Make Smart Projection<a class="headerlink" href="#make-smart-projection" title="Permalink to this heading"></a></h3>
+<p>If active, this creates a native blender Smart Projection, in this way you can solve any UV Mapping problems,
+in substance it does an automatic projection of the UV.</p>
+<a class="reference internal image-reference" href="_images/make_smart_projection.webp"><img alt="Make Smart Projection" class="align-center" src="_images/make_smart_projection.webp" style="width: 600px;" /></a>
 </section>
 </section>
 <hr class="docutils" />
@@ -636,7 +655,7 @@ chosen to export an FBX, also the FBX.
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Andrea Donati.</p>
+    <p>&#169; Copyright 2024, Andrea Donati.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

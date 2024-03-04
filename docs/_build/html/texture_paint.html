@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Texture Paint &mdash; Extreme PBR 4.1.115 documentation</title>
+  <title>Texture Paint &mdash; Extreme PBR 4.1.120 documentation</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/custom.css" type="text/css" />
@@ -46,9 +46,8 @@
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Get started: 🚀</span></p>
 <ul>
-<li class="toctree-l1"><a class="reference internal" href="installation.html">New Installation (4.1.100 and up)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="installation.html">Installation (Extreme PBR 4.1.100 and up)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="installation.html#update-only-the-addon">Update Only The addon</a></li>
-<li class="toctree-l1"><a class="reference internal" href="installation_old.html">Old Installation/Extreme Addons Account</a></li>
 <li class="toctree-l1"><a class="reference internal" href="make_asset_browser.html">Make Asset Browser</a></li>
 </ul>
 <p class="caption" role="heading"><span class="caption-text">Interface and functions: 📱</span></p>
@@ -69,6 +68,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#re-project">Re-Project</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#paint-module-button">Paint Module Button</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#fill-module">Fill Module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#brush-blend-mode">Brush Blend Mode</a></li>
 </ul>
 </li>
 </ul>
@@ -232,6 +232,42 @@ the button in painting mode, will now take on the task <strong>Stop Paint</stron
 <p>These Buttons allow you to fill the material with the reference module. So if for example you have painted the model,
 with this button you will return to having a single material, based on which button of which module you have decided to do a Fill.</p>
 </section>
+<hr class="docutils" />
+<section id="brush-blend-mode">
+<h3>Brush Blend Mode<a class="headerlink" href="#brush-blend-mode" title="Permalink to this heading"></a></h3>
+<p><strong>Only from the version of Extreme PBR Nexus 4.1.120 and later</strong></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The brush blend mode will be visible and necessary only if you are painting at least 3 modules, if you are painting
+between 2 modules it is not necessary, so it will not be shown.</p>
+</div>
+<a class="reference internal image-reference" href="_images/brush_blend_mode.webp"><img alt="Texture Paint Brush Blend Mode" class="align-center" src="_images/brush_blend_mode.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>Brush Blend Mode, is used to set the brush Blend Mode, to correct the smudging problems that occur when painting between
+3 or 4 modules (This problem never occurs if you only paint between 2 modules)</p>
+<p>By using the <strong>Darken</strong> button, but especially the <strong>Lighten</strong> button, you can correct the smudging problems.</p>
+<p><strong>Example of smudging problem, where by painting module 2, you can see the red of the color of module 4:</strong></p>
+<a class="reference internal image-reference" href="_images/paint_smudging_problem_example.webp"><img alt="Texture Paint Smudging Problem Example" class="align-center" src="_images/paint_smudging_problem_example.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>The 3 buttons will set the Brush Blend Type in this way:</p>
+<a class="reference internal image-reference" href="_images/blend_type_example.webp"><img alt="Texture Paint Blend Type Example" class="align-center" src="_images/blend_type_example.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p><strong>Here is an example fixed with the Blend Mode Lighten:</strong></p>
+<a class="reference internal image-reference" href="_images/blend_type_example_fixed.webp"><img alt="Texture Paint Blend Type Example Fixed" class="align-center" src="_images/blend_type_example_fixed.webp" style="width: 600px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Once you press any Paint Module button, the value will return to <strong>Mix</strong> automatically.</p>
+</div>
+</section>
 </section>
 </section>
 
@@ -246,7 +282,7 @@ with this button you will return to having a single material, based on which but
   <hr/>
 
   <div role="contentinfo">
-    <p>&#169; Copyright 2023, Andrea Donati.</p>
+    <p>&#169; Copyright 2024, Andrea Donati.</p>
   </div>
 
   Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a

@@ -167,6 +167,64 @@ These Buttons allow you to fill the material with the reference module. So if fo
 with this button you will return to having a single material, based on which button of which module you have decided to do a Fill.
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+Brush Blend Mode
+*******************************
+
+**Only from the version of Extreme PBR Nexus 4.1.120 and later**
+
+.. note::
+        The brush blend mode will be visible and necessary only if you are painting at least 3 modules, if you are painting
+        between 2 modules it is not necessary, so it will not be shown.
+
+
+.. image:: _static/_images/texture_paint/brush_blend_mode.webp
+    :width: 600
+    :align: center
+    :alt: Texture Paint Brush Blend Mode
+
+|
+
+
+Brush Blend Mode, is used to set the brush Blend Mode, to correct the smudging problems that occur when painting between
+3 or 4 modules (This problem never occurs if you only paint between 2 modules)
+
+By using the **Darken** button, but especially the **Lighten** button, you can correct the smudging problems.
+
+
+**Example of smudging problem, where by painting module 2, you can see the red of the color of module 4:**
+
+.. image:: _static/_images/texture_paint/paint_smudging_problem_example.webp
+    :width: 600
+    :align: center
+    :alt: Texture Paint Smudging Problem Example
+
+|
+
+The 3 buttons will set the Brush Blend Type in this way:
+
+.. image:: _static/_images/texture_paint/blend_type_example.webp
+    :width: 600
+    :align: center
+    :alt: Texture Paint Blend Type Example
+
+
+|
+
+**Here is an example fixed with the Blend Mode Lighten:**
+
+.. image:: _static/_images/texture_paint/blend_type_example_fixed.webp
+    :width: 600
+    :align: center
+    :alt: Texture Paint Blend Type Example Fixed
+
+|
+
+.. note::
+        Once you press any Paint Module button, the value will return to **Mix** automatically.
+
+
 
 
 

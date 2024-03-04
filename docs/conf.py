@@ -8,9 +8,9 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Extreme PBR'
-copyright = '2023, Andrea Donati'
+copyright = '2024, Andrea Donati'
 author = 'Andrea Donati'
-release = '4.1.115'
+release = '4.1.120'
 
 import os, sys
 
