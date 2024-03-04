@@ -3,10 +3,19 @@
 Updates Log
 ===========
 
+4.1.121
+-------
+
+**Release date: 04-03-2024 (D/M/Y)**
+
+- **Patch - Extreme Addons Tab**
+
+    The Extreme Addons menu was still displayed, this menu has been removed at the moment because the addon no longer needs to be registered on the Extreme-Addons website, this created confusion. It happened in case the (Now removed) setting 'I have an account on Extreme-Addons could result in True
+
 4.1.120
 -------
 
-**Release date: xx-02-2024 (D/M/Y)**
+**Release date: 04-03-2024 (D/M/Y)**
 
 .. raw:: html
 
