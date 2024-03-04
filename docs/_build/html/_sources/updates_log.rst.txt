@@ -12,7 +12,7 @@ Updates Log
 
     The Extreme Addons menu was still displayed, this menu has been removed at the moment because the addon no longer needs to be registered on the Extreme-Addons website, this created confusion. It happened in case the (Now removed) setting 'I have an account on Extreme-Addons could result in True
 
-- **BugFix - Auto Re-Link Libraries**
+- **BugFix - Import Media Texture Manager**
 
     The Import Media button inside the Texture Manager, produced an error caused by an update of this operator, it was corrected as this operator now no longer uses the ImportHelper APIs of Blender and the variable of the single file setting had not been updated
 
