@@ -150,13 +150,13 @@ in your project is present an image of 100MB (For example) your .blend file will
 What has changed from 4.0.X series to 4.1.X series?
 -----------------------------------------------------
 
+**From 20-08-2023**
+
 The new features and changes described here: :ref:`updates_log`
 
 The important change that occurs in the new Extreme PBR 4.1.x series is the fact that now the libraries are in .exapack
 format, this is a format for distributing the files of the library (Just like in HDRi Maker) that allows you to install
 the libraries in a simple and fast way.
-
-
 
 .. important::
 
