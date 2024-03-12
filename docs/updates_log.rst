@@ -16,6 +16,10 @@ Updates Log
 
     The Import Media button inside the Texture Manager, produced an error caused by an update of this operator, it was corrected as this operator now no longer uses the ImportHelper APIs of Blender and the variable of the single file setting had not been updated
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.120
 -------
 
@@ -147,6 +151,10 @@ Updates Log
 
     Due to a problem with those who manage our website, this function has been temporarily removed
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.115
 -------
 
@@ -159,6 +167,10 @@ Updates Log
 - **BugFix - Shader Maker Video**
 
     When adding a video via Shader Maker video, the following values (Hue, Exposure, Saturation) were not set correctly, so the video assumed artifact colors that did not respect the original video, so it was corrected by setting the default values correctly
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.1.114
 -------
@@ -213,6 +225,10 @@ Updates Log
 
     Applying a material via the shader maker in Nexus mode, if only one image was selected, this was also set in the nodes of the 'Normal Generator' but then the color space of this image was changed, this made the diffuse image with a wrong color space. Now it has been corrected and the image maintains the original color space
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.113
 -------
 
@@ -233,6 +249,10 @@ Updates Log
 - **Bug Fix - Convert to Nexus Material Button**
 
     In some cases it could happen to encounter an error during the conversion, the message reported that the TextureNomenclature class did not have node_tag as an attribute, this has been fixed
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.1.112
 -------
@@ -275,6 +295,10 @@ Updates Log
 
     Although optimizations had already been made in the previous update, an unnecessary check was still performed on images when loading materials from the Extreme PBR Default library, this wasted too many milliseconds and unnecessarily delayed the creation of materials. Now this is optimized and the time to create the material is reduced
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.111
 -------
 
@@ -303,6 +327,10 @@ Updates Log
 - **Added - Asset Browser Size Choice**
 
     Added a property to select which size to choose for the creation of the asset browser, now you can choose whether to create only assets from 1/2k, 1k, 2k, 4k, 8k or All, that is all the available versions of the material (If installed) Procedural materials are always created, as they do not have a size expressed in pixels
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.1.110
 -------
@@ -453,6 +481,10 @@ Updates Log
 
     In order not to have to restart Blender once the addon has been updated, if Extreme PBR 4.x.x was already in use previously, a button appears in the context of the library menus, this once pressed will try to reconnect the addon to the previous paths to the libraries, this to avoid the annoyance of having to restart Blender because the function was and is still executed when Blender is started or a new project is loaded
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.101
 -------
 
@@ -489,6 +521,10 @@ Updates Log
 - **Bug Fix: Microdisplacement with multiple modules**
 
     When a Microdisplacement was added to the material, and then a module was added for the texture paint, the Displacement node was disconnected. It was fixed by updating the function that connects the sockets from the mixer to the other nodes
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.1.100
 -------
@@ -555,6 +591,10 @@ Updates Log
 
     Due to the new Blender nodes, we cannot continue to offer support for versions less than Blender 3.3, the nodes present in Extreme PBR, may no longer work correctly on versions less than Blender 3.2, so now you will have to have at least a version of Blender 3.3 or higher (Better if higher)
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.0.207
 -------
 
@@ -563,6 +603,10 @@ Updates Log
 - **Patch: Stuck during the material download phase**
 
     During the download phase an error was raised during the execution of os.remove() of the file 'exa_files.json' this blocked the dowload. Now an exception in case 'exa_files.json' does not exist, no longer raises errors as it is checked with os.path.isfile ()
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.0.206
 -------
@@ -573,6 +617,10 @@ Updates Log
 
     Using Blender 3.6 Alpha, for some reason it damages the preview images of the materials, once damaged, not even using another version of Blender will be displayed correctly. I added a button in Options (Patch Preview) that should solve the problem by regenerating the previews that are no longer displayed
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.0.205
 -------
 
@@ -581,6 +629,10 @@ Updates Log
 - **Bug Fix: They don't show the properties**
 
     With the advent of Blender 3.4 the RGB Mix node has changed, so also some functions that referred to it, no longer worked. I added a check that understands if the node is MixRGB or Mix, as the number of inputs in the Mix node has increased, and this made it unrecognizable.
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.0.204
 -------
@@ -599,6 +651,10 @@ Updates Log
 
     Added a button (Into Options) to reload the Mixers nodes, in case of problems with the Mixers nodes, or if you want to reload the Mixers nodes, without in only one click.
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.0.203
 -------
 
@@ -612,6 +668,10 @@ Updates Log
 
     Opening old projects in Blender 3_3 version the Separate RGB and Combine RGB node were not recognized. So a small feature was created that arranges the black materials. The button will be located in Extreme PBRs Options, and is called Adjust All material Node Tree. It was already present in previous versions, but a new function has been added in addition to the other previous ones.
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.0.202
 -------
 
@@ -620,6 +680,10 @@ Updates Log
 - **BuxFix: Mirco-displacement Not Work**
 
     An oversight was left behind. The function to update the displacement (On Off) of the microdisplacement, had not been replaced with the new one. I proceeded to insert the new function, as the system of nodes (Normal, Bump, Displacement) has changed slightly in this version.
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.0.201
 -------
@@ -637,6 +701,10 @@ Updates Log
 - **BugFix: Save Material**
 
     On some occasions, during the Save Material, an error could occur, this error was in case the material contained a Packed image from another file, then the unpack method (method = USE_ORIGINAL) function, did not work. I put an exception with the unpack method (method = USE_LOCAL) This solved the problem
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.0.200
 -------
@@ -691,6 +759,10 @@ Updates Log
 
     Material Override, overrides for a view on the fly, all the materials of the selected objects. It makes use of the Geometry Nodes System. It is very quick to change material, unlike Shader Overlay. The phase is still experimental, they await feedback from users
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.0.131
 -------
 
@@ -715,6 +787,10 @@ Updates Log
 - **Improved: Bake Flip X Axis**
 
     Improvement for bake with Export FBX, especially for Unreal Engine, as the Unreal Engine's Global axes are different from those of Blender, If you check the Flip X Axis checkbox before doing the Bake (Activating Export FBX Object) , it will be possible to try to flip the X axes, in order to have the object as it is in Unreal. This setting is currently experimental, so it needs user feedback. If you are having trouble, uncheck this box
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.0.130
 -------
@@ -781,6 +857,10 @@ Updates Log
 
     An error occurs when the material is applied, this did not compromise the correct functioning, but it was very annoying. Fixed
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.0.129
 -------
 
@@ -789,6 +869,10 @@ Updates Log
 - **BuxFix: Expansion Libraries**
 
     We have fixed some errors in the management of Expansion Libraries.
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.0.128
 -------
@@ -819,6 +903,10 @@ Updates Log
 
     We have raised the timeout threshold to improve the download while the user is not at the computer. Translated, there is less risk of the download stopping while it is downloading by itself. We are still trying to improve the speed service.
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.0.127
 -------
 
@@ -844,6 +932,10 @@ Updates Log
 
     This annoying problem has been solved. The problem was on computers with multiple network cards or with WiFi and Lan connections. It can now store up to 3 different computer configurations. You will need to perform a Device Reset to take effect!
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.0.126
 -------
 
@@ -856,6 +948,10 @@ Updates Log
 - **Improved: Helps Text**
 
     Added some more help messages for beginners.
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.0.125
 -------
@@ -882,6 +978,10 @@ Updates Log
 
     Officially, Blender 3.0.0 has an API bug. So it is no longer possible to check if the texture is still connected on the disk. We have made a temporary system that checks that the textures are still linked to the file. Only if the textures are not Packed
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.0.124
 -------
 
@@ -890,6 +990,10 @@ Updates Log
 - **SSL Certificate Problem Blender 3.0**
 
     On Blender 3.0 we encountered problems with connection certificates to our server. This made it impossible to connect again to download the libraries. We have now fixed this. If you are unable to update with Update core. You will need to download the addon from the MarketPlace you purchased it from and replace it.
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.0.123
 -------
@@ -912,6 +1016,10 @@ Updates Log
 
     Added choice for Bake (Cpu-Gpu)
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.0.122
 -------
 
@@ -929,6 +1037,10 @@ Updates Log
 
     A new button to show more statistics during installation has been added in the Options menu.
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.0.121
 -------
 
@@ -937,6 +1049,10 @@ Updates Log
 - **Fixed: Bug on Search Module/Fx Button**
 
     When trying to search for a Module or a Layer Fx, using the small buttons (m) and (fx), an error appeared and made it impossible to replace. Resolved
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.0.120
 -------
@@ -951,6 +1067,10 @@ Updates Log
 
     We have added a button (Adjust All Material node Tree) in the Options menu. This fixes all possible broken Materials, or possibly for a passage of a project created with Blender 2.83 to Blender 2.93+ due to the fact that the nodes are slightly different due to the missing Emission Strength socket. This operator fixes everything in one go.
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.0.119
 -------
 
@@ -963,6 +1083,10 @@ Updates Log
 - **Emission Bug On lower versions of Blender 2.91**
 
     On versions prior to 2.91 some materials looked White, actually it was the emissivity set to white by default on the Principled BSDF, now it is set to Black, so no emissivity effect that gave the White effect will happen again.
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.0.118
 -------
@@ -977,6 +1101,10 @@ Updates Log
 
     We fixed a communication error with our server that happened when this operator was pressed.
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.0.117
 -------
 
@@ -985,6 +1113,10 @@ Updates Log
 - **Bugfix: Password Bug**
 
     Users reported that if they used some special characters in the password (such as quotation marks) it was not possible to activate the addon. We have now solved the problem. We thank some customers for reporting.
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.0.116
 -------
@@ -999,6 +1131,10 @@ Updates Log
 
     We noticed that some users were having trouble figuring out if the Mail/Password/License was right. We have put Show / Hide buttons next to each field in the license activation menu
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.0.115
 -------
 
@@ -1012,6 +1148,10 @@ Updates Log
 
     During installation, the Extreme PBR interface has been made hidden so as not to create a situation of being able to use Extreme PBR during installation as it could be a risk of installation breakdown. Fixed
 
+
+
+--------------------------------------------------------------------------------------------
+
 4.0.113
 -------
 
@@ -1020,6 +1160,10 @@ Updates Log
 - **BugFix: Material Boolean Button**
 
     On some occasions, the boolean button in the material properties showed an error. We fixed it
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.0.112
 -------
@@ -1033,6 +1177,10 @@ Updates Log
 - **BugFix: Options Button**
 
     It happened that by pressing the 'Options' button a CONTEXT error was shown. Resolved
+
+
+
+--------------------------------------------------------------------------------------------
 
 4.0.111
 -------
