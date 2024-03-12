@@ -181,14 +181,6 @@ the libraries in a simple and fast way.
         consequently there is no need to register on it**
 
 
-
-
-If you want to continue using the extreme-addons service
-
-- you just have to go to the addon options and click on **I have an Extreme Addon account** from the addon oprions
-  here is how to do it: :ref:`pr_op_i_have_an_account_on_extreme_addons`
-
-
 ------------------------------------------------------------------------------------------------------------------------
 
 

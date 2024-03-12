@@ -604,6 +604,14 @@ In this section you will find some experimental options.
 I Have an Account on Extreme Addons
 ************************************
 
+.. admonition:: Deprecated
+    :class: deprecated
+
+        From the version of Extreme PBR Nexus 4.1.120 this solution has been removed, please if you want to continue downloading the
+        materials to switch to a previous version, the online system will remain active for a few more weeks
+
+
+
 By activating this checkbox, the addon will be set up so that it can download the materials directly from the site and have
 access to the **Extreme Addons** TAB described here: :ref:`installation_step_1`
 
