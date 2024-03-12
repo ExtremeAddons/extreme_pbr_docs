@@ -5,8 +5,7 @@
 	},
 	"workinprogressblock": {
 		"lock_operators": [
-			"EXTREMEPBR_OT_update_core_v2",
-			"EXTREMEPBR_OT_modal_installer_v2"
+			"EXTREMEPBR_OT_update_core_v2"
 		],
 		"description": "This feature is temporarily disabled. To update the addon and/or the libraries, download the Extreme PBR addon directly from the Marketplace where you purchased it (BlenderMarket or Gumroad)"
 	},
