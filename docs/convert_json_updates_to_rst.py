@@ -33,6 +33,7 @@ def update_changelog():
     updates = json_data["updates"]
 
     with open(updates_rst, "w") as f:
+
         # add the anchor:
         f.write(".. _updates_log:\n")
         f.write("\n")
@@ -45,6 +46,10 @@ def update_changelog():
         for version, value in updates.items():
             version_index += 1
             date = value.get("date")
+            # Check if "xx" are present into "date" value, if yes, skip the writing of the update because it still not released
+            if "xx" in date:
+                continue
+
             video_embed_code = value.get("video_embed_code")
 
             # Scriviamo la versione

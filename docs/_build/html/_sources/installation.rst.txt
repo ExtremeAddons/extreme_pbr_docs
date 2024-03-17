@@ -41,7 +41,7 @@ Uninstall the old version
 2. Expand The Extreme PBR Preferences Menu
 3. Press Remove
 4. Save Blender Preferences
-4. Restart Blender
+5. Restart Blender
 
 .. image:: _static/_images/installation/uninstall_example_panel.png
       :align: center
@@ -419,12 +419,13 @@ Update Only The addon
         and installed them previously as explained here :ref:`install_library_41100` simply follow these steps below to
         update the addon to the latest version.
 
-**Unistall the old version**
+**Uninstall the old version**
 
     1. Search your Old Extreme PBR from Blender addons
     2. Expand The Extreme PBR Preferences Menu
     3. Press Remove
-    4. Restart Blender (Recommended!)
+    4. Save Blender Preferences if it is not done automatically
+    5. Restart Blender (Recommended!)
 
     .. image:: _static/_images/installation/uninstall_example_panel.png
           :align: center

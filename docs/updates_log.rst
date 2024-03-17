@@ -147,7 +147,7 @@ Updates Log
 
     The Remove Material button, if an empty material slot was removed, also removed the displacement on the object, now a condition has been put for which if the slot is empty, it does not remove the displacement (Only if there is a material in the ob.data.materials with an active displacement)
 
-- **Removed - I Have an acount on Extreme-Addons**
+- **Removed - I Have an account on Extreme-Addons**
 
     Due to a problem with those who manage our website, this function has been temporarily removed
 
@@ -199,7 +199,7 @@ Updates Log
 
 - **Optimized - Update Menu**
 
-    The Update menu, in the addon preferences, was very slow, as it examined files on the hard disk many times unnecessarily, now everything is stored in some variables that keep the json files in memory, this has speeded up the menu by about 400x times, which now it is much more fluid than before
+    The Update menu, in the addon preferences, was very slow, as it examined files on the hard disk many times unnecessarily, now everything is stored in some variables that keep the json files in memory, this has speeder up the menu by about 400x times, which now it is much more fluid than before
 
 - **Bug Fix - Remove Volume Installed**
 
@@ -314,11 +314,11 @@ Updates Log
 
 - **Fixed - Asset Browser Creation Time (For Blender 4.x)**
 
-    Speeded up the process of creating the asset browser in Blender 4, in this version of Blender, it was very slow, this has been fixed
+    Speeder up the process of creating the asset browser in Blender 4, in this version of Blender, it was very slow, this has been fixed
 
 - **Fixed - Time to create the material**
 
-    The time to create the material via the Add-New button has been speeded up by about x4 times, as the reloading of the textures was unnecessarily attempted in the function of assigning the textures in the image nodes, now an exception has been put that prevents the reloading as it was useless
+    The time to create the material via the Add-New button has been speeder up by about x4 times, as the reloading of the textures was unnecessarily attempted in the function of assigning the textures in the image nodes, now an exception has been put that prevents the reloading as it was useless
 
 - **Bug Fix - Auto Re-Link Libraries Button**
 
@@ -471,7 +471,7 @@ Updates Log
 
 - **Fix: Re-Project Problem**
 
-    When you add a Module for painting, an UV layer is automatically created, but it was not projected with the smart projection, the painting worked correctly but when you pressed 'Re-Prokect' the UV map was projected for the first time damaging the mapping of the current painting even if right, now this is solved by an initial projection equal to that which is carried out using the 'Re-Project' button so as not to confuse. Note: The 'Re-Project' button was created to re-project the UV mapping in case you modify the object in use, this does a correct projection, but breaks the painting (Expected behavior) use with caution!
+    When you add a Module for painting, an UV layer is automatically created, but it was not projected with the smart projection, the painting worked correctly but when you pressed 'Re-Project' the UV map was projected for the first time damaging the mapping of the current painting even if right, now this is solved by an initial projection equal to that which is carried out using the 'Re-Project' button so as not to confuse. Note: The 'Re-Project' button was created to re-project the UV mapping in case you modify the object in use, this does a correct projection, but breaks the painting (Expected behavior) use with caution!
 
 - **Anti: Crash improved**
 
@@ -602,7 +602,7 @@ Updates Log
 
 - **Patch: Stuck during the material download phase**
 
-    During the download phase an error was raised during the execution of os.remove() of the file 'exa_files.json' this blocked the dowload. Now an exception in case 'exa_files.json' does not exist, no longer raises errors as it is checked with os.path.isfile ()
+    During the download phase an error was raised during the execution of os.remove() of the file 'exa_files.json' this blocked the download. Now an exception in case 'exa_files.json' does not exist, no longer raises errors as it is checked with os.path.isfile ()
 
 
 
