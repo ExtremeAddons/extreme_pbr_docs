@@ -3,6 +3,43 @@
 Updates Log
 ===========
 
+4.1.123
+-------
+
+**Release date: 22-03-2024 (D/M/Y)**
+
+- **BugFix - Error case with apply material**
+
+    In some cases an error appeared when trying to apply a material or replace it, the error was minimal, as it could happen quite casually, this was because in some cases the k_size name selector, the one used to set the type of material, did not have any option selected, so it was null, this happened especially when a material without k_size variations was applied, so no button could be pressed, the material preview had to be changed and returned to it. Now this will not happen anymore as a function has been inserted in the operators that apply the material, which will check that the k_size is selected, otherwise it will be selected through this function
+
+- **BugFix - Material not applied correctly in Blender 3.3**
+
+    The material was applied with the Mix RGB node coming from the Blender 3.6 version, so it was an unknown node in Blender 3.3, the function that was responsible for replacing this node, was not working in the correct way, so it was fixed
+
+- **BugFix - Asset Browser creation in Blender 3.3**
+
+    As above, the function that was supposed to eventually convert the Mix RGB nodes into those for Blender 3.3 was not working, so even the Asset Browser was potentially created incorrectly (Only in Blender 3.3)
+
+- **BugFix - Load Texture with Shift Key**
+
+    In case you were on a USER library, or an Expansion library (With the libraries selector) by pressing the 'SHIFT' key and the ADD NEW button, the file search browser was opened, but when selecting the image files to import as textures, no material was created, this has been fixed
+
+- **Improved - Save Editor**
+
+    It was chosen not to show the 'Save Editor' panel when the selected object had no material, or when no object was selected, this made things complicated if you just wanted to interact with the user libraries, so now the Save Editor panel will also be shown when those 2 cases occur
+
+- **BugFix - Displacement button not show for materials saved as Nexus Modules**
+
+    The displacement button was no longer present if a Nexus module had been saved with the appropriate 'SAVE MODULE' button in the 'SAVE EDITOR' panel, this because the saved material was not recognized as a Nexus material, so to solve the problem the function that shows the displacement button (Obviously if the Bump or Displacement texture is present) will search for Nexus modules, regardless of the type of Material.
+
+- **Added - Activate Material Nodes**
+
+    If some material on the selected object does not have the nodes active (That is mat.use_nodes) a button Activate Material Nodes will be shown in the Material List of Extreme PBR so as to set the mat.use_nodes property to True so that the material can be displayed correctly (If the material has nodes)
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.122
 -------
 
