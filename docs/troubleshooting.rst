@@ -404,7 +404,20 @@ This can be solved in this way:
 
 ------------------------------------------------------------------------------------------------------------------------
 
-When I reopen Blender, my painting is gone
--------------------------------------------
+I can't get it to link correctly to the user library or other
+-----------------------------------------------------------------
+
+The addon sometimes automatically links to an old path of the user libraries, this can happen rarely,
+If this is happening, it could be that for some reason the old path is not overwritten by the new one in the storage system
+in the .json file created by Extreme PBR. To solve this problem, go to the Extreme PBR settings and press the "Purge Extreme Addons Cache" button
+
+Then link the library path that was not remembered, and save the Blender preferences.
+
+
+.. image:: _static/_images/troubleshooting/purge_extreme_addons_cache.webp
+    :align: center
+    :width: 800
+    :alt: Purge Extreme Addons Cache
+
 
 

@@ -94,7 +94,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#how-do-i-check-the-version-of-the-addon">How do I check the version of the addon?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#i-get-an-error-when-activating-the-addon">I get an error when activating the addon</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#permission-error">Permission Error</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#when-i-reopen-blender-my-painting-is-gone">When I reopen Blender, my painting is gone</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#i-can-t-get-it-to-link-correctly-to-the-user-library-or-other">I can’t get it to link correctly to the user library or other</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
@@ -423,8 +423,13 @@ you will only have to write <code class="docutils literal notranslate"><span cla
 </ul>
 </section>
 <hr class="docutils" />
-<section id="when-i-reopen-blender-my-painting-is-gone">
-<h2>When I reopen Blender, my painting is gone<a class="headerlink" href="#when-i-reopen-blender-my-painting-is-gone" title="Permalink to this heading"></a></h2>
+<section id="i-can-t-get-it-to-link-correctly-to-the-user-library-or-other">
+<h2>I can’t get it to link correctly to the user library or other<a class="headerlink" href="#i-can-t-get-it-to-link-correctly-to-the-user-library-or-other" title="Permalink to this heading"></a></h2>
+<p>The addon sometimes automatically links to an old path of the user libraries, this can happen rarely,
+If this is happening, it could be that for some reason the old path is not overwritten by the new one in the storage system
+in the .json file created by Extreme PBR. To solve this problem, go to the Extreme PBR settings and press the “Purge Extreme Addons Cache” button</p>
+<p>Then link the library path that was not remembered, and save the Blender preferences.</p>
+<a class="reference internal image-reference" href="_images/purge_extreme_addons_cache.webp"><img alt="Purge Extreme Addons Cache" class="align-center" src="_images/purge_extreme_addons_cache.webp" style="width: 800px;" /></a>
 </section>
 </section>
 
