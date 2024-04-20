@@ -301,6 +301,20 @@ There will also be the tags that have been assigned to the material, they can al
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Library info
+##################
+
+
+By this section you can see the information about the selected library. (This function has been added with
+Extreme PBR Nexus version 4.1.124)
+
+.. image:: _static/_images/main_panel/library_info_tag_panel.webp
+    :align: center
+    :width: 600
+    :alt: Library Info Tag Panel
+
+
+------------------------------------------------------------------------------------------------------------------------
 
 Show info
 #############
@@ -435,8 +449,6 @@ Replace
         - Press **Shift** before clicking the button in order to use it exactly as Shader Maker described here: :ref:`shader_maker`
 
 
-
-
 .. image:: _static/_images/main_panel/replace.png
     :align: center
     :width: 400
@@ -453,9 +465,7 @@ Replace
 
 |
 
-
 - **If there is some displacement active in this material, it will be removed before applying the new material**
-
 
 .. admonition:: Deprecated
     :class: deprecated

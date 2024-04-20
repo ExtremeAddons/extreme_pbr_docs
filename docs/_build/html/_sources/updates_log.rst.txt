@@ -3,6 +3,39 @@
 Updates Log
 ===========
 
+4.1.124
+-------
+
+**Release date: 20-04-2024 (D/M/Y)**
+
+- **Improved - Autosave Paint Image**
+
+    After various reports from users who complained about the loss of painting done on materials if Blender was closed without saving or due to an anomalous crash, and after ascertaining that it is a known problem of Blender also reported here at this link: https://projects.blender.org/blender/blender/issues/45636 I decided to implement a system of semi-autosave of painting images, now when you enter painting mode with Extreme PBR or press STOP PAINT or use FILL button, all images of type PAINT present in the active material will be analyzed, if even just 1 of these images is_dirty == True this means that the image needs to be saved, so the function will save all the modified images with the operator bpy.ops.image.save_all_modified() This **greatly** reduces potential job losses due to an anomalous crash or an unwanted closure of Blender, in addition it keeps the interface fluid. I could have integrated it during painting, but I preferred to keep the painting as fluid as possible, so I decided to implement it in this way
+
+- **Fix - Bake System**
+
+    The Bake of Extreme PBR allows you to export the model in FBX format, to do this you use one of the addons distributed with Blender whose module is called **io_scene_fbx**, natively this module is active, but it could happen that the module was deactivated by the user. Now if the module is deactivated, during the process of the Bake of Extreme PBR it will be checked if the **io_scene_fbx** module is active, in case it is deactivated, it will be activated avoiding an error during the bake and the consequent block of the process
+
+- **Fix - Material Editor Expansion Nexus Materials**
+
+    Improvement of the reading of Nexus materials in the Material Editor Panel regarding the simplified Nexus modules, that is, those group nodes with a Shader output, for the moment such nodes will be read if Tagged (For example those of Cyber Holograms expansion) At the moment as it is not possible to add an FX Module to them, the FX button will not be shown, and as the simplified Modules do not have the possibility for the moment to be Painted with other standard Nexus modules, the 'Add ... to new Module' button will not be shown
+
+- **Added - Library Info**
+
+    In the 'Info' panel of the material, it is now possible to view information about the current library, so as to understand which version of the library you are using. This was added as an update to our Cyber Holograms expansion library, so as to understand if you are using the old or the new expansion
+
+- **Fix - Microdisplacement not work in Blender 4.1**
+
+    Microdisplacement did not work in Blender 4.1, this is because the new APIs of Blender 4.1 have changed from material.cycles.displacement_method to material.displacement_method, a condition has also been put that makes it backward compatible with previous versions of Blender
+
+- **Fix - data_materials Enum none**
+
+    When a material was removed with Extreme PBR the data_materials enum of Extreme PBR shows None, now when a material is removed with Extreme PBR this property is always set to the first available
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.123
 -------
 
