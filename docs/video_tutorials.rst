@@ -63,8 +63,8 @@ How to change textures color
 
 .. _tutorial_shader_maker:
 
-Create your PBR Material
---------------------------
+Create your PBR Material (Import your textures)
+---------------------------------------------------
 
 .. raw:: html
 

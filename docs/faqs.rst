@@ -63,6 +63,14 @@ Yes, you can do it, you will just have to buy the PRO version and you will only 
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Can I import my Textures into Extreme PBR?
+***********************************************
+
+Yes! but provided you import them on the fly, you can also save them in a "User Library" category and save the materials within it.
+To do this, simply use the Shader Maker tool, you can find here: :ref:`auto_pbr` and here the video tutorial: :ref:`tutorial_shader_maker`
+
+------------------------------------------------------------------------------------------------------------------------
+
 
 Do I need a powerful graphics card?
 *****************************************
