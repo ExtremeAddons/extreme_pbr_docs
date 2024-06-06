@@ -112,3 +112,15 @@ receive notifications: `Youtube Link <https://www.youtube.com/watch?v=3UCpnJ9i8q
 or on the documentation page here: :ref:`video_tutorials`
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+
+
+What is the User Library for?
+********************************
+
+The User Library is a library that by default will be empty, it will be a real folder on your computer, and will be
+managed directly by the addon, it is used to save the materials you have created or modified,
+to save a material in the user Library take a look at this section: :ref:`save_editor`
+
+
