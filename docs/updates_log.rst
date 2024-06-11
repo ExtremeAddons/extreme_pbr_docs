@@ -8,7 +8,7 @@ Updates Log
 
 **Release date: 09-06-2024 (D/M/Y)**
 
-- **Important Bugfix 1**
+- **Important Bugfix**
 
     When trying to do a Worn edges in Blender 4.1 an error appeared that made it impossible to complete the procedure 'copy_ob.data.use_autosmooth' was headed as an error, in fact this is a piece of code that due to an oversight has not been modified as this API in Blender 4.1 is no longer present. This is now fixed
 
