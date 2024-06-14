@@ -169,13 +169,6 @@ the libraries in a simple and fast way.
           on request I have already provided the libraries several times via an alternative download. This was the most annoying
           of the problems and I understand how annoying it was to contact me for this.
 
-        So for this reason I decided to keep the download service active for those who wanted to continue using it
-        but substantially I'm trying to move towards the .exapack format.
-
-        **My consideration:**
-
-            I apologize for the server speed inconvenience, but I really did my best to solve the problem
-            with those who are managing the site for me at the moment.
 
         **With this distribution system you will no longer need to download the libraries from Extreme-Addons.com and
         consequently there is no need to register on it**
