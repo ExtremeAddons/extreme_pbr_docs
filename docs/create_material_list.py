@@ -146,13 +146,9 @@ def make_material_list():
                 f.write("**This material is contained in the following Exapacks:**\n")
                 f.write("\n")
                 for exa_idx, exapack in enumerate(exapacks_found):
-                    if exa_idx != 0:
-                        f.write("\n")
                     f.write("    - " + exapack + "\n")
 
-                    if len(exapacks_found) != exa_idx + 1:
-                        f.write("\n")
-
+                f.write("\n")
                 # Qui bisogna disegnare un separatore, solo se il materiale non è l'ultimo materiale di tutti
 
                 if total_mat_idx != writing_mat_index:
