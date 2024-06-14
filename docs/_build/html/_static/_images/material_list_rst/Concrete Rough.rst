@@ -1,3 +1,0 @@
-Concrete - Rough (Category)
----------------------------
-

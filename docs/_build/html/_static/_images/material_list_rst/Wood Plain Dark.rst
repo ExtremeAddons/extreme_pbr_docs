@@ -1,3 +1,0 @@
-Wood - Plain Dark (Category)
-----------------------------
-

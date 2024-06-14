@@ -1,3 +1,0 @@
-Pavers - Herringbone (Category)
--------------------------------
-

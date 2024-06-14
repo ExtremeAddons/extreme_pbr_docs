@@ -1,3 +1,0 @@
-Asphalt - Street (Category)
----------------------------
-

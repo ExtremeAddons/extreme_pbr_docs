@@ -1,3 +1,0 @@
-Asphalt - Rough (Category)
---------------------------
-

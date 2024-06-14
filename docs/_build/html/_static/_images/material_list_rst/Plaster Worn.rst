@@ -1,3 +1,0 @@
-Plaster - Worn (Category)
--------------------------
-

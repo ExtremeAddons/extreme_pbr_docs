@@ -1,3 +1,0 @@
-Stone - Granite (Category)
---------------------------
-

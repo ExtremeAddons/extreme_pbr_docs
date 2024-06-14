@@ -1,3 +1,0 @@
-Wood - Plain Light (Category)
------------------------------
-

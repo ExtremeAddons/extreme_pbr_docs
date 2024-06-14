@@ -1,3 +1,0 @@
-Ground - Vegetation (Category)
-------------------------------
-

@@ -1,3 +1,0 @@
-Pavers - Stone Cube (Category)
-------------------------------
-

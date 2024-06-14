@@ -1,3 +1,0 @@
-Wood - Derived (Category)
--------------------------
-

@@ -1,3 +1,0 @@
-Metal - Worn Paint (Category)
------------------------------
-

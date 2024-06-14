@@ -1,3 +1,0 @@
-Walls - Stones (Category)
--------------------------
-

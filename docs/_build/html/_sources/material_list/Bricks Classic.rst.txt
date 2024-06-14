@@ -1,3 +1,0 @@
-Bricks - Classic (Category)
----------------------------
-

@@ -1,3 +1,0 @@
-Leather - Stitching (Category)
-------------------------------
-

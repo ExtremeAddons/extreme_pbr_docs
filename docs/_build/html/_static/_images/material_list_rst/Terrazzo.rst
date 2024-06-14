@@ -1,3 +1,0 @@
-Terrazzo (Category)
--------------------
-

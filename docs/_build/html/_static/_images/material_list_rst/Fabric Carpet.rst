@@ -1,3 +1,0 @@
-Fabric - Carpet (Category)
---------------------------
-

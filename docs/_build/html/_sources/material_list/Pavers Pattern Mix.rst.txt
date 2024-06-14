@@ -1,3 +1,0 @@
-Pavers - Pattern Mix (Category)
--------------------------------
-
