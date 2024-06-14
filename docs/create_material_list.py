@@ -76,6 +76,7 @@ def make_material_list():
 
             preview_png = next((os.path.join(default_folder, fn) for fn in os.listdir(default_folder) if
                                 fn.endswith(".png") or fn.endswith(".jpg") or fn.endswith(".webp")), None)
+
             if not preview_png:
                 continue
 
@@ -83,11 +84,11 @@ def make_material_list():
             # convert preview_png to webp
             from PIL import Image
             new_preview_webp = mat_fn + ".webp"
-            if not os.path.isfile(os.path.join(material_folder, new_preview_webp)):
-                print("Sto convertendo l'immagine:", preview_png)
-                new_preview_webp_path = os.path.join(material_folder, new_preview_webp)
-                im = Image.open(preview_png)
-                im.save(new_preview_webp_path, "webp", quality=50)
+            # if not os.path.isfile(os.path.join(material_folder, new_preview_webp)):
+            print("Sto convertendo l'immagine:", preview_png)
+            new_preview_webp_path = os.path.join(material_folder, new_preview_webp)
+            im = Image.open(preview_png)
+            im.save(new_preview_webp_path, "webp", quality=10)
 
             exapacks_found = get_material_exapacks(mat, exapacks)
 
