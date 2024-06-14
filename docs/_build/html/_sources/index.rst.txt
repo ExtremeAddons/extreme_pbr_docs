@@ -45,6 +45,7 @@ Welcome to Extreme PBR's documentation!
    materials
    preferences
    generic_functions
+   material_list
 
 
 .. toctree::
