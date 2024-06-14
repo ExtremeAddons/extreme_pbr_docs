@@ -13,7 +13,7 @@ def clean_name(name):
 
 
 def make_material_list():
-    # Dichiariamo i percorisi
+    return
 
     # Questa cartella è quella di Extreme PBR, occhio che potrebbe essere su un altra posizione.
     extreme_pbr_lib_folder = "C:\\Users\\dnadj\\Desktop\\Extreme PBR Test\\EXTREME_PBR_DEFAULT_LIB"
