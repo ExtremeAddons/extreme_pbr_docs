@@ -10,35 +10,6 @@
 		"description": "This feature is temporarily disabled. To update the addon and/or the libraries, download the Extreme PBR addon directly from the Marketplace where you purchased it (BlenderMarket or Gumroad)"
 	},
 	"updates": {
-				"4.1.200": {
-			"date": "xx-xx-2024",
-			"name": "Extreme PBR",
-			"edition": "Nexus",
-			"url": "",
-			"urgency": false,
-			"video_embed_code": "",
-			"lock_operators": [
-				""
-			],
-			"descriptions": {
-				"1": {
-					"title": "Added - Open Library Folder buttons",
-					"description": "In the Extreme PBR preferences menu under the 'Libraries' menu TAB on the left side a button with a 'magnifying glass' icon has been added that allows you to open the folder containing the library of that row, this to facilitate the identification of the library folder, also a button with a 'folder' icon has been added that allows you to open the libraries folder, this to facilitate the identification of the library"
-				},
-				"2": {
-					"title": "Fix - Message FXB when abort Bake",
-					"description": "A message about the impossibility of finding io_scene_fbx appeared if the Bake operator was not executed, this was because the variable was assigned in the execute function of the bake operator, instead of being assigned in the invoke function, this will no longer appear. It did not cause any anomalies, except that that message could create confusion"
-				},
-				"3": {
-					"title": "Improve - Paint on Backface",
-					"description": "Before this update 'use_backface_culling' was set, this prevented painting on the backface, but given some reports from users who found this setting inconvenient, now by default it will be set to False so as not to have to set manually from the Blender menu"
-				},
-				"4": {
-					"title": "Improve - Shortcut ALT+Auto PBR",
-					"description": "The ALT + Add/Replace Material button shortcut did not work on the Shader Maker Auto PBR category, now it works correctly and adds a material with Blender's standard nodes. This only happened on this category and Shader Maker Auto PBR material"
-				}
-			}
-		},
 		"4.1.125": {
 			"date": "09-06-2024",
 			"name": "Extreme PBR",
