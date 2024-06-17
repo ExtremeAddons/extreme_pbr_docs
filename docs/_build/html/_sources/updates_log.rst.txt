@@ -3,6 +3,23 @@
 Updates Log
 ===========
 
+4.1.126
+-------
+
+**Release date: 17-06-2024 (D/M/Y)**
+
+- **Compatibility with Blender 4.2**
+
+    The new extensions/addons system uses a new blender_manifest.toml, which replaces the old bl_info, an update has been made to make Extreme PBR compatible with Blender 4.2 while maintaining retro-compatibility with previous Blender versions
+
+- **Important Note:**
+
+    It is not recommended to save Materials in Blender 4.2 and use them in previous versions, as the new APIs of Blender especially those of Raytracing are not present in versions prior to 4.1, the use cases in which the properties of such material could be lost, are in Eevee, which: (Transparencies, Transmission, Subsurface Translucency) these 3 properties cannot be saved together with the material, as in Blender 4.2 they are not strictly necessary, unlike previous versions. As for all materials saved in previous versions, including the Default Library, code has been added to recognize these properties and convert them into properties compatible with Blender 4.2, so as not to lose the properties of materials saved in previous versions.
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.125
 -------
 
