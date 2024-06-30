@@ -3,6 +3,19 @@
 Updates Log
 ===========
 
+4.1.127
+-------
+
+**Release date: 27-06-2024 (D/M/Y)**
+
+- **Conflict with material preview in Blender 4.2**
+
+    On Blender 4.2 Extreme PBR could conflict with HDRi Maker or other addons due to the new APIs of Blender 4.2 and the new names of the addon modules, this problem has been solved.
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.126
 -------
 

@@ -413,4 +413,47 @@ Then link the library path that was not remembered, and save the Blender prefere
     :alt: Purge Extreme Addons Cache
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+The preview icons show a question mark, how to solve?
+--------------------------------------------------------
+
+.. image:: _static/_images/troubleshooting/material_demo.png
+    :align: center
+    :width: 200
+    :alt: Material Demo
+
+|
+
+To solve this problem, make sure to update Extreme PBR to the latest available version, you can find it here: :ref:`updates_log`
+
+Once the addon is updated, download the following exapack packages:
+
+- **XTRPbr_05k_Vol_001.exapack**
+- **XTRPbr_Procedural_Vol_001.exapack**
+
+These 2 packages contain all the preview icon images of the materials, they will overwrite those with the question mark.
+
+To install the exapack packages go to the addon options
+
+.. image:: _static/_images/main_panel/open_options_button_01.png
+    :align: center
+    :width: 400
+    :alt: Options Button 01
+
+
+And press the "Install Exapack" button and select the exapack packages that have been indicated above.
+
+.. image:: _static/_images/troubleshooting/install_exapack.webp
+    :align: center
+    :width: 800
+    :alt: Install Exapack
+
+This could be a bug from an old version of the addon that connected to our server to download the materials,
+and in this way indicated above it should definitively solve the problem.
+
+
+
+
+
 

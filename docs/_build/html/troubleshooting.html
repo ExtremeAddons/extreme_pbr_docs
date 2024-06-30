@@ -96,6 +96,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#i-get-an-error-when-activating-the-addon">I get an error when activating the addon</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#permission-error">Permission Error</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#i-can-t-get-it-to-link-correctly-to-the-user-library-or-other">I can’t get it to link correctly to the user library or other</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#the-preview-icons-show-a-question-mark-how-to-solve">The preview icons show a question mark, how to solve?</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="bugreport_info.html">Guidelines for bugreport</a></li>
@@ -424,6 +425,27 @@ If this is happening, it could be that for some reason the old path is not overw
 in the .json file created by Extreme PBR. To solve this problem, go to the Extreme PBR settings and press the “Purge Extreme Addons Cache” button</p>
 <p>Then link the library path that was not remembered, and save the Blender preferences.</p>
 <a class="reference internal image-reference" href="_images/purge_extreme_addons_cache.webp"><img alt="Purge Extreme Addons Cache" class="align-center" src="_images/purge_extreme_addons_cache.webp" style="width: 800px;" /></a>
+</section>
+<hr class="docutils" />
+<section id="the-preview-icons-show-a-question-mark-how-to-solve">
+<h2>The preview icons show a question mark, how to solve?<a class="headerlink" href="#the-preview-icons-show-a-question-mark-how-to-solve" title="Permalink to this heading"></a></h2>
+<a class="reference internal image-reference" href="_images/material_demo.png"><img alt="Material Demo" class="align-center" src="_images/material_demo.png" style="width: 200px;" /></a>
+<div class="line-block">
+<div class="line"><br /></div>
+</div>
+<p>To solve this problem, make sure to update Extreme PBR to the latest available version, you can find it here: <a class="reference internal" href="updates_log.html#updates-log"><span class="std std-ref">Updates Log</span></a></p>
+<p>Once the addon is updated, download the following exapack packages:</p>
+<ul class="simple">
+<li><p><strong>XTRPbr_05k_Vol_001.exapack</strong></p></li>
+<li><p><strong>XTRPbr_Procedural_Vol_001.exapack</strong></p></li>
+</ul>
+<p>These 2 packages contain all the preview icon images of the materials, they will overwrite those with the question mark.</p>
+<p>To install the exapack packages go to the addon options</p>
+<a class="reference internal image-reference" href="_images/open_options_button_01.png"><img alt="Options Button 01" class="align-center" src="_images/open_options_button_01.png" style="width: 400px;" /></a>
+<p>And press the “Install Exapack” button and select the exapack packages that have been indicated above.</p>
+<a class="reference internal image-reference" href="_images/install_exapack.webp"><img alt="Install Exapack" class="align-center" src="_images/install_exapack.webp" style="width: 800px;" /></a>
+<p>This could be a bug from an old version of the addon that connected to our server to download the materials,
+and in this way indicated above it should definitively solve the problem.</p>
 </section>
 </section>
 
