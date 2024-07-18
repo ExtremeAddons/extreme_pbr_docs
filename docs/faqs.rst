@@ -10,7 +10,6 @@ Happy reading!
 Andrew_D
 
 
-
 Does the addon work with Blender 4.2?
 ***************************************
 
