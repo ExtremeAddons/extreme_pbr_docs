@@ -3,6 +3,35 @@
 Updates Log
 ===========
 
+4.1.128
+-------
+
+**Release date: 10-10-2024 (D/M/Y)**
+
+- **Bug Fix For Blender 4.3 - Show Material Preview Options**
+
+    Show Material Preview opzione è stata rimossa, in quanto poco utile, in oltre in Blender 4.3 se 'Show Material Preview' era disattivato, l'icona che doveva essere mostrata creava un errore, in quanto l'icona di nome 'BRUSH_TEXFILL' non è piu presente nelle icone native di Blender.
+
+- **Changed - Security check before creating asset browser**
+
+    When starting the creation of the asset browser, a security check checks if the current project is saved, and how many materials, objects or worlds are in the project, this to avoid compromising the project. This limit goes from 5 objects-5 materials-5 worlds to 10 of each type. As some users have set default scenes with more than 5 objects, materials or worlds, always maintaining a safety margin. This is necessary at the moment because the operator that creates the asset browser uses the current project to create the asset and needs to delete the objects in the scene.
+
+- **Error message in Blender 4.2 onwards**
+
+    From Blender 4.2 onwards, it could happen that in the console you could receive an error when applying a material or creating the asset browser that reported 'Unable to set the property' this is now bypassed as these properties were type: 'Blend Mode', 'Shadow mode' etc... All properties that with the integration of Raytracing from Blender 4.2 are no longer present as they are no longer needed.
+
+- **Bug Fix - Error when Removing 'Shader Overlay' Material**
+
+    It could happen that by removing the shader Overlay, an error was reported. This is consistent with the error described above, as the addon was trying to set the old parameters prior to Blender 4.2, a try-except has been inserted to prevent the error from occurring.
+
+- **Bug Fix - Message when Bake is aborted**
+
+    From Blender 4.3 if you open the Bake Panel and do not bake, an error message said that you could not export the FBX because there is no module (Addon) to do it, This is not true. The problem has been solved by moving the check into the Invoke function of that operator, while before it was in the execute function.
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.127
 -------
 
