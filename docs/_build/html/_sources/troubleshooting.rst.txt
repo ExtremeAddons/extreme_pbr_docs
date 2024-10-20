@@ -453,6 +453,32 @@ This could be a bug from an old version of the addon that connected to our serve
 and in this way indicated above it should definitively solve the problem.
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+
+How to send the file.blend to receive support correctly
+----------------------------------------------------------
+
+You can send me the .blend file through free services that do not require registration such as https://wetransfer.com/ or https://www.file.io/
+
+**Here are the steps to correctly send me the .blend file:**
+
+1. Prepare your file.blend so that it is ready to be analyzed by the support team.
+2. Pack the project, so that it includes all the textures and external files needed.
+
+.. image:: _static/_images/troubleshooting/auto_pack_resources_01.png
+    :align: center
+    :width: 600
+    :alt: Auto Pack Resources 01
+
+|
+
+3. Upload the .blend file to a file sharing service such as https://wetransfer.com/ or https://www.file.io/
+4. Paste the generated link to the support team.
+5. Add a description of the steps to reproduce the problem.
+
+
+
 
 
 
