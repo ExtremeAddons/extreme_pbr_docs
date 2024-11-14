@@ -3,6 +3,31 @@
 Updates Log
 ===========
 
+4.1.129
+-------
+
+**Release date: 14-11-2024 (D/M/Y)**
+
+- **Blender 4.3 Support - Material Preview**
+
+    Material Preview in Blender 4.3 still had a Bug, there was still a condition in the code that could cause an error in Blender 4.3 as the icon used for the Material, no longer exists in Blender 4.3
+
+- **Blender 4.3 Support - No Module Named toml**
+
+    The Python module 'toml' is no longer included in Blender 4.3, it has been replaced by the tomllib module, this module is used to read the blender_manifest.toml file.
+
+- **Blender 4.3 Support - 'bpy_prop_collection[key]: key shadow_method not found**
+
+    This error is displayed because the new EEVEE_NEXT engine no longer has that property, so a condition has been inserted that checks the version of Blender and if it is greater than 4.2, the shadow_method property is no longer set, as it is no longer necessary. All the code if it encounters the shadow_method property now ignores it if the version of Blender is greater than 4.2
+
+- **Blender 4.3 Support - Some APIs have changed**
+
+    Some Blender APIs such as 'shadow_method', 'use_gtao_bent_normals', 'use_ssr_refraction' etc, related to the EEVEE render engine, have been removed in Blender 4.3 (Rightly) Extreme PBR uses these APIs in previous versions to configure the scene to the best, now they are no longer used so they caused errors. Some conditions check the version of Blender and if this is greater than 4.2, the old APIs are no longer used.
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.128
 -------
 
@@ -10,7 +35,7 @@ Updates Log
 
 - **Bug Fix For Blender 4.3 - Show Material Preview Options**
 
-    Show Material Preview opzione è stata rimossa, in quanto poco utile, in oltre in Blender 4.3 se 'Show Material Preview' era disattivato, l'icona che doveva essere mostrata creava un errore, in quanto l'icona di nome 'BRUSH_TEXFILL' non è piu presente nelle icone native di Blender.
+    Show Material Preview option has been removed, as it was not very useful, in addition in Blender 4.3 if 'Show Material Preview' was disabled, the icon that was supposed to be shown created an error, as the icon named 'BRUSH_TEXFILL' is no longer present in the native icons of Blender.
 
 - **Changed - Security check before creating asset browser**
 
