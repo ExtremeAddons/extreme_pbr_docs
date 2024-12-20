@@ -3,6 +3,51 @@
 Updates Log
 ===========
 
+4.1.130
+-------
+
+**Release date: 20-12-2024 (D/M/Y)**
+
+- **Blender 4.3 Bugfix - Texture Paint**
+
+    In some cases (Still to be clarified well which) the painting of Extreme PBR did not work well, this was due to the impossibility of changing the color of the brush in use. This has been solved by creating the Extreme PBR brush and inserting it into the resources of the new brush asset browser making it selected in the asset browser. This problem probably occurs due to a known problem in Blender, that is when you receive this error: **'Warning: Tool 'builtin_brush.Draw' not found for space 'VIEW_3D''** This Blender bug made it impossible to change the color of the brush. It has been solved.
+
+- **Blender 4.3 improvement - Paint Brush**
+
+    As described above, now the Extreme PBR brush once the texture paint is started, will be created and inserted into the 'LOCAL' asset browser, the brush in question will report the Extreme PBR logo to make it recognizable, but it will be managed autonomously by Extreme PBR
+
+- **Important Improved - Bake System (BSDF Mode)**
+
+    Thanks to some reports I took into consideration to review the Bake system (Only Under the hood for now), Now the resulting Bake maps will be much more accurate than before, as the old system tended not to produce a correct range on the RGB channels of the resulting texture. Especially on Black and white maps, such as: Alpha/Roughness/Metal/Etc. This has been solved by Baking these maps on a Blender Emission node. The whole system uses separate nodes, while previously the Principled BSDF of the material itself was used
+
+- **Improved - Bake Alpha**
+
+    The alpha bake could make the object slightly transparent in points where it should not be. With the new Bake system this has been solved
+
+- **Improved - Bake Options**
+
+    Some users reported to me the difficulty in understanding how to set the Bake, the default bake had the 'Uv Map Source' setting set to 'Use active', this could create confusion especially on less experienced users, making the Bake incorrect. Now the default setting is 'Create New', this makes the Bake much simpler and more intuitive
+
+- **BugFix- Bake Emission Transmission**
+
+    If on the object there were 2 or more materials, of which 1 did not have emission or transmission, the Bake of the emission/transmission was not carried out in the most recent versions of Blender, this has been solved
+
+- **Fix - Bake Emission with paint material**
+
+    If you painted between 2 or more materials, and one of these had the emission and the other did not, the emission map was not correct. This has been corrected by inserting a multiplier with 'Clamp' to keep the range between 0-1 that multiplies the emission strength for the emission map
+
+- **Improved - Bake**
+
+    For security reasons the Bake is performed on a 'Copy' material, this copy material was not named in any way, now a suffix '_TEMP_COPY_BAKE' is added and a property that makes it recognizable by Extreme PBR such copy material. The material is also deleted at the end of the Bake cycle. This makes things less confusing and cleaner.
+
+- **Improved - Bake Error**
+
+    If you abort the Bake with 'ESC' or if an error occurs during the Bake (Without crashing Blender) the objects will be re-selected as they were at the start of the Bake
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.129
 -------
 
