@@ -10,6 +10,23 @@
 		"description": "This feature is temporarily disabled. To update the addon and/or the libraries, download the Extreme PBR addon directly from the Marketplace where you purchased it (BlenderMarket or Gumroad)"
 	},
 	"updates": {
+				"4.1.131": {
+			"date": "16-02-2024",
+			"name": "Extreme PBR",
+			"edition": "Nexus",
+			"url": "",
+			"urgency": false,
+			"video_embed_code": "",
+			"lock_operators": [
+				""
+			],
+			"descriptions": {
+				"1": {
+					"title": "Bugfix for Linux and Max - Paint Error in Blender 4.3",
+					"description": "Pressing the button for painting, an error was displayed, and the painting did not start, this happened only on Linux and Mac with Blender 4.3 and not on Windows, this is because the new Extreme PBR creates a custom Brush in the Browser and there was an error in the selection path of such a brush, now it has been corrected. If you are using Blender 4.3 on Linux or Mac and you have encountered this problem, make sure you are using this version or higher"
+				}
+			}
+		},
 		"4.1.130": {
 			"date": "20-12-2024",
 			"name": "Extreme PBR",
