@@ -8,7 +8,7 @@ Updates Log
 
 **Release date: 16-02-2024 (D/M/Y)**
 
-- **Bugfix for Linux and Max - Paint Error in Blender 4.3**
+- **Bugfix for Linux and Mac - Paint Error in Blender 4.3**
 
     Pressing the button for painting, an error was displayed, and the painting did not start, this happened only on Linux and Mac with Blender 4.3 and not on Windows, this is because the new Extreme PBR creates a custom Brush in the Browser and there was an error in the selection path of such a brush, now it has been corrected. If you are using Blender 4.3 on Linux or Mac and you have encountered this problem, make sure you are using this version or higher
 
