@@ -3,10 +3,23 @@
 Updates Log
 ===========
 
+4.1.132
+-------
+
+**Release date: 17-03-2025 (D/M/Y)**
+
+- **Compatibility with Blender 4.4**
+
+    The APIs of Blender 4.4 to change the Brush have been changed, so this update was necessary to maintain compatibility. Make sure you are using this version of Extreme PBR to avoid errors during painting.
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.131
 -------
 
-**Release date: 16-02-2024 (D/M/Y)**
+**Release date: 16-02-2025 (D/M/Y)**
 
 - **Bugfix for Linux and Mac - Paint Error in Blender 4.3**
 

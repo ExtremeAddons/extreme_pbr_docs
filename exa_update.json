@@ -10,8 +10,25 @@
 		"description": "This feature is temporarily disabled. To update the addon and/or the libraries, download the Extreme PBR addon directly from the Marketplace where you purchased it (BlenderMarket or Gumroad)"
 	},
 	"updates": {
-				"4.1.131": {
-			"date": "16-02-2024",
+		"4.1.132": {
+			"date": "17-03-2025" ,
+			"name": "Extreme PBR" ,
+			"edition": "Nexus" ,
+			"url": "" ,
+			"urgency": false ,
+			"video_embed_code": "" ,
+			"lock_operators": [
+				""
+			] ,
+			"descriptions": {
+				"1": {
+					"title": "Compatibility with Blender 4.4" ,
+					"description": "The APIs of Blender 4.4 to change the Brush have been changed, so this update was necessary to maintain compatibility. Make sure you are using this version of Extreme PBR to avoid errors during painting."
+				}
+			}
+		},
+		"4.1.131": {
+			"date": "16-02-2025",
 			"name": "Extreme PBR",
 			"edition": "Nexus",
 			"url": "",
