@@ -57,6 +57,48 @@ Uninstall the old version
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Bundle Installation
+===========================
+
+This step is only necessary if you purchased the **Bundle Version** of Extreme PBR on BlenderMarket.
+
+.. image::
+    _static/_images/installation/bundle_april_2025.webp
+    :align: center
+    :width: 600
+    :alt: Bundle installation
+
+|
+
+
+- Download the 3 zip files named **XPBR_Part_1.zip, XPBR_Part_2.zip and XPBR_Part_3.zip**
+- Extract all 3 zip files into a folder of your choice
+- Proceed with the classic installation of the addon as explained below
+
+.. image::
+    _static/_images/installation/bundle_files_01.webp
+    :align: center
+    :width: 600
+    :alt: Bundle installation
+
+
+|
+
+
+Once unzipped you should have these files as you see in the image:
+
+.. image::
+    _static/_images/installation/bundle_files_02.webp
+    :align: center
+    :width: 400
+    :alt: Bundle installation
+
+|
+
+You can now proceed with the installation of the addon as explained in the next chapter
+
+------------------------------------------------------------------------------------------------------------------------
+
 .. _install_addon_41100:
 
 Instal the addon
