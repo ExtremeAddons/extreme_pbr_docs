@@ -3,6 +3,19 @@
 Updates Log
 ===========
 
+4.1.133
+-------
+
+**Release date: 13-06-2025 (D/M/Y)**
+
+- **Texture paint brushes disappearing in Blender 4.3 and above**
+
+    In Blender 4.3 and above, texture paint brushes were disappearing from the asset browser when Extreme PBR's interface was present. This was due to a Poll function that caused a redraw, leading to a conflict that made the brushes disappear. This version of Extreme PBR resolves this issue completely.
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.132
 -------
 

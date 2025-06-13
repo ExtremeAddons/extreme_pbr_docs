@@ -10,6 +10,23 @@
 		"description": "This feature is temporarily disabled. To update the addon and/or the libraries, download the Extreme PBR addon directly from the Marketplace where you purchased it (BlenderMarket or Gumroad)"
 	},
 	"updates": {
+		"4.1.133": {
+			"date": "13-06-2025" ,
+			"name": "Extreme PBR" ,
+			"edition": "Nexus" ,
+			"url": "" ,
+			"urgency": false ,
+			"video_embed_code": "" ,
+			"lock_operators": [
+				""
+			] ,
+			"descriptions": {
+				"1": {
+					"title": "Texture paint brushes disappearing in Blender 4.3 and above" ,
+					"description": "In Blender 4.3 and above, texture paint brushes were disappearing from the asset browser when Extreme PBR's interface was present. This was due to a Poll function that caused a redraw, leading to a conflict that made the brushes disappear. This version of Extreme PBR resolves this issue completely."
+				}
+			}
+		},
 		"4.1.132": {
 			"date": "17-03-2025" ,
 			"name": "Extreme PBR" ,
