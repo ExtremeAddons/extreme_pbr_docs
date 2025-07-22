@@ -3,6 +3,27 @@
 Updates Log
 ===========
 
+4.1.134
+-------
+
+**Release date: 22-07-2025 (D/M/Y)**
+
+- **Bugfix - Crash when applying procedural materials**
+
+    Crash in Blender when applying procedural materials, this happened especially on Linux and Mac.
+
+- **Bugfix - SuperHive Button**
+
+    Pressing the 'SuperHive' button (Ex 'BlenderMarket'), the browser opened the Extreme PBR documentation page, now it opens to the right page
+
+- **Update - SuperHive Labels and Text**
+
+    Updated the labels and texts where 'BlenderMarket' was present, now it has been replaced with the new name which is 'SuperHive'
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.133
 -------
 

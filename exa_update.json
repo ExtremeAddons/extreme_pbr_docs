@@ -10,6 +10,32 @@
 		"description": "This feature is temporarily disabled. To update the addon and/or the libraries, download the Extreme PBR addon directly from the Marketplace where you purchased it (BlenderMarket or Gumroad)"
 	},
 	"updates": {
+		"4.1.134": {
+			"date": "22-07-2025" ,
+			"name": "Extreme PBR" ,
+			"edition": "Nexus" ,
+			"url": "" ,
+			"urgency": false ,
+			"video_embed_code": "" ,
+			"lock_operators": [
+				""
+			] ,
+			"descriptions": {
+				"1": {
+					"title": "Bugfix - Crash when applying procedural materials" ,
+					"description": "Crash in Blender when applying procedural materials, this happened especially on Linux and Mac."
+				},
+				"2": {
+					"title": "Bugfix - SuperHive Button",
+					"description": "Pressing the 'SuperHive' button (Ex 'BlenderMarket'), the browser opened the Extreme PBR documentation page, now it opens to the right page"
+
+				},
+				"3": {
+					"title": "Update - SuperHive Labels and Text",
+					"description": "Updated the labels and texts where 'BlenderMarket' was present, now it has been replaced with the new name which is 'SuperHive'"
+				}
+			}
+		},
 		"4.1.133": {
 			"date": "13-06-2025" ,
 			"name": "Extreme PBR" ,
