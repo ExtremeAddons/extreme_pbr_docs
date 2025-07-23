@@ -9,11 +9,11 @@ Problems related to Extreme PBR bugs are usually solved. Here are some of the mo
 Question and answer
 
 
-I do not receive mail from BlenderMarket
+I do not receive mail from SuperHive (Ex BlenderMarket)
 -----------------------------------------
 
-Make sure you consented to receive emails from creators in your Blender Market account preferences:
-https://blendermarket.com/account/privacy-center/consents
+Make sure you consented to receive emails from creators in your SuperHive account preferences:
+https://superhivemarket.com/account/privacy-center/consents
 
 ------------------------------------------------------------------------------------------------------------------------
 
