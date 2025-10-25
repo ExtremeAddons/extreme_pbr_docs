@@ -1,3 +1,0 @@
-Parquet - Herringbone (Category)
---------------------------------
-

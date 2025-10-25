@@ -1,3 +1,0 @@
-Concrete - Blocks (Category)
-----------------------------
-

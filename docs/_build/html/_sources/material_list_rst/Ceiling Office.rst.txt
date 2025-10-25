@@ -1,3 +1,0 @@
-Ceiling - Office (Category)
----------------------------
-

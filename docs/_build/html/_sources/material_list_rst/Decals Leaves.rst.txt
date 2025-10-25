@@ -1,3 +1,0 @@
-Decals - Leaves (Category)
---------------------------
-

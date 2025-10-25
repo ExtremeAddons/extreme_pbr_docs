@@ -1,3 +1,0 @@
-Fabric - Large (Category)
--------------------------
-

@@ -1,3 +1,0 @@
-Tiles - Hexagonal (Category)
-----------------------------
-

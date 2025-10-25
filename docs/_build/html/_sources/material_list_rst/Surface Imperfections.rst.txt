@@ -1,3 +1,0 @@
-Surface Imperfections (Category)
---------------------------------
-

@@ -1,3 +1,0 @@
-Decals - Road Markings (Category)
----------------------------------
-

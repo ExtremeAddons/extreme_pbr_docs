@@ -1,3 +1,0 @@
-Pavers - Stones (Category)
---------------------------
-

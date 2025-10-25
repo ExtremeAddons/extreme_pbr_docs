@@ -3,6 +3,27 @@
 Updates Log
 ===========
 
+4.1.140
+-------
+
+**Release date: 25-10-2025 (D/M/Y)**
+
+- **Compatibility with Blender 5.0**
+
+    Some Blender 5.0 APIs and some nodes have changed, this update maintains backward compatibility from Blender 3.6 onwards
+
+- **BugFix - Remove Material Button**
+
+    If no object was active the remove material button gave an error
+
+- **BugFix - Worn Edges problem**
+
+    If a material with a Layer mixed with Worn Edges was saved, adding that material the baked map of the edges disappeared and a new attempt by pressing the 'Make Worn edges' button produced an error. This has been solved
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.134
 -------
 

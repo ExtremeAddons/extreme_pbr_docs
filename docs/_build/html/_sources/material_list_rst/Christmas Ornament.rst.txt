@@ -1,3 +1,0 @@
-Christmas Ornament (Category)
------------------------------
-

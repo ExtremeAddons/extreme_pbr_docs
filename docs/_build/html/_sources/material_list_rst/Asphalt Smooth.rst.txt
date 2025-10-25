@@ -1,3 +1,0 @@
-Asphalt - Smooth (Category)
----------------------------
-

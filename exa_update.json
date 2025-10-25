@@ -7,28 +7,52 @@
 		"lock_operators": [
 			"EXTREMEPBR_OT_update_core_v2"
 		],
-		"description": "This feature is temporarily disabled. To update the addon and/or the libraries, download the Extreme PBR addon directly from the Marketplace where you purchased it (BlenderMarket or Gumroad)"
+		"description": "This feature is deprecated, please download the latest version of Extreme PBR from your marketplace account."
 	},
 	"updates": {
-		"4.1.134": {
-			"date": "22-07-2025" ,
-			"name": "Extreme PBR" ,
-			"edition": "Nexus" ,
-			"url": "" ,
-			"urgency": false ,
-			"video_embed_code": "" ,
+		"4.1.140": {
+			"date": "25-10-2025",
+			"name": "Extreme PBR",
+			"edition": "Nexus",
+			"url": "",
+			"urgency": false,
+			"video_embed_code": "",
 			"lock_operators": [
 				""
-			] ,
+			],
 			"descriptions": {
 				"1": {
-					"title": "Bugfix - Crash when applying procedural materials" ,
+					"title": "Compatibility with Blender 5.0",
+					"description": "Some Blender 5.0 APIs and some nodes have changed, this update maintains backward compatibility from Blender 3.6 onwards"
+				},
+				"2": {
+					"title": "BugFix - Remove Material Button",
+					"description": "If no object was active the remove material button gave an error"
+				},
+				"3": {
+					"title": "BugFix - Worn Edges problem",
+					"description": "If a material with a Layer mixed with Worn Edges was saved, adding that material the baked map of the edges disappeared and a new attempt by pressing the 'Make Worn edges' button produced an error. This has been solved"
+				}
+			}
+		},
+		"4.1.134": {
+			"date": "22-07-2025",
+			"name": "Extreme PBR",
+			"edition": "Nexus",
+			"url": "",
+			"urgency": false,
+			"video_embed_code": "",
+			"lock_operators": [
+				""
+			],
+			"descriptions": {
+				"1": {
+					"title": "Bugfix - Crash when applying procedural materials",
 					"description": "Crash in Blender when applying procedural materials, this happened especially on Linux and Mac."
 				},
 				"2": {
 					"title": "Bugfix - SuperHive Button",
 					"description": "Pressing the 'SuperHive' button (Ex 'BlenderMarket'), the browser opened the Extreme PBR documentation page, now it opens to the right page"
-
 				},
 				"3": {
 					"title": "Update - SuperHive Labels and Text",
@@ -37,35 +61,35 @@
 			}
 		},
 		"4.1.133": {
-			"date": "13-06-2025" ,
-			"name": "Extreme PBR" ,
-			"edition": "Nexus" ,
-			"url": "" ,
-			"urgency": false ,
-			"video_embed_code": "" ,
+			"date": "13-06-2025",
+			"name": "Extreme PBR",
+			"edition": "Nexus",
+			"url": "",
+			"urgency": false,
+			"video_embed_code": "",
 			"lock_operators": [
 				""
-			] ,
+			],
 			"descriptions": {
 				"1": {
-					"title": "Texture paint brushes disappearing in Blender 4.3 and above" ,
+					"title": "Texture paint brushes disappearing in Blender 4.3 and above",
 					"description": "In Blender 4.3 and above, texture paint brushes were disappearing from the asset browser when Extreme PBR's interface was present. This was due to a Poll function that caused a redraw, leading to a conflict that made the brushes disappear. This version of Extreme PBR resolves this issue completely."
 				}
 			}
 		},
 		"4.1.132": {
-			"date": "17-03-2025" ,
-			"name": "Extreme PBR" ,
-			"edition": "Nexus" ,
-			"url": "" ,
-			"urgency": false ,
-			"video_embed_code": "" ,
+			"date": "17-03-2025",
+			"name": "Extreme PBR",
+			"edition": "Nexus",
+			"url": "",
+			"urgency": false,
+			"video_embed_code": "",
 			"lock_operators": [
 				""
-			] ,
+			],
 			"descriptions": {
 				"1": {
-					"title": "Compatibility with Blender 4.4" ,
+					"title": "Compatibility with Blender 4.4",
 					"description": "The APIs of Blender 4.4 to change the Brush have been changed, so this update was necessary to maintain compatibility. Make sure you are using this version of Extreme PBR to avoid errors during painting."
 				}
 			}
