@@ -3,6 +3,19 @@
 Updates Log
 ===========
 
+4.1.141
+-------
+
+**Release date: 03-11-2025 (D/M/Y)**
+
+- **BugFix For Blender 4.5**
+
+    An error appeared only in Blender 4.5 when saving the material, this prevented saving the material, now it has been solved
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.1.140
 -------
 
