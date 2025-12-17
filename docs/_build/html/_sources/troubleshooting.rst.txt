@@ -10,10 +10,12 @@ Question and answer
 
 
 I do not receive mail from SuperHive (Ex BlenderMarket)
------------------------------------------
+---------------------------------------------------------------
 
 Make sure you consented to receive emails from creators in your SuperHive account preferences:
 https://superhivemarket.com/account/privacy-center/consents
+
+
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -478,7 +480,18 @@ You can send me the .blend file through free services that do not require regist
 5. Add a description of the steps to reproduce the problem.
 
 
+Transparent materials show strange black artifacts
+--------------------------------------------------------------------------
 
+In some cases, transparent materials may show strange black artifacts, this usually happens
+because you need to set the maximum transparency levels.
+
+Transparency levels correspond to how many transparent surfaces the light can pass through.
+
+.. image:: _static/_images/troubleshooting/transparent_artifacts_problem.webp
+    :align: center
+    :width: 400
+    :alt: Transparent Material Artifacts 01
 
 
 
