@@ -65,8 +65,6 @@
 <li class="toctree-l1"><a class="reference internal" href="shader_overlay.html">Shader Overlay</a></li>
 <li class="toctree-l1"><a class="reference internal" href="material_override.html">Material Override</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">Save Editor</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#render-engine">Render Engine</a></li>
-<li class="toctree-l2"><a class="reference internal" href="#device">Device</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#render-quality">Render Quality</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#save-material">Save Material</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#preview-with-displace">Preview with Displace</a></li>
@@ -75,7 +73,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#preview-with-bloom">Preview with Bloom</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#use-asset-props">Use asset props</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#bloom-strength">Bloom Strength</a></li>
-<li class="toctree-l3"><a class="reference internal" href="#bloom-size">Bloom Size</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#material-name">Material Name</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#author-info">Author info</a></li>
 </ul>
@@ -156,32 +153,6 @@ directly from the Extreme PBR interface.</p>
 <div class="line"><br /></div>
 </div>
 <hr class="docutils" />
-<section id="render-engine">
-<h2>Render Engine<a class="headerlink" href="#render-engine" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/se_render_engine.jpg"><img alt="Render Engine" class="align-center" src="_images/se_render_engine.jpg" style="width: 400px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p>In this menu you can choose which Engine must render the material to transform it into a preview icon you can choose
-between <strong>Cycle</strong> and <strong>Eevee</strong>. Cycles will have a better result in 99% of cases, but it is much slower than Eevee.</p>
-</section>
-<hr class="docutils" />
-<section id="device">
-<h2>Device<a class="headerlink" href="#device" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/se_device.jpg"><img alt="Device" class="align-center" src="_images/se_device.jpg" style="width: 400px;" /></a>
-<div class="line-block">
-<div class="line"><br /></div>
-</div>
-<p>In this menu you can choose which device must render the material to transform it into a preview icon you can choose
-between <strong>CPU</strong> and <strong>GPU</strong>. GPU è molto piu veloce di CPU, ma ci sono alcuni casi che con certi computer con poca memoria
-ram della scheda video potrebbero avere problemi, quindi potrai scegliere CPU.</p>
-<div class="admonition note">
-<p class="admonition-title">Note</p>
-<p>This option if set to GPU, at the time of saving the material, if the computer encounters an error during rendering
-will try again in CPU mode silently</p>
-</div>
-</section>
-<hr class="docutils" />
 <section id="render-quality">
 <h2>Render Quality<a class="headerlink" href="#render-quality" title="Permalink to this heading"></a></h2>
 <a class="reference internal image-reference" href="_images/se_render_quality.jpg"><img alt="Render Quality" class="align-center" src="_images/se_render_quality.jpg" style="width: 400px;" /></a>
@@ -225,10 +196,6 @@ quality the rendering will be, but also slower. The default value is 64.</p>
 <section id="bloom-strength">
 <h3>Bloom Strength<a class="headerlink" href="#bloom-strength" title="Permalink to this heading"></a></h3>
 <p>If the Bloom is active, here you can decide the strength of the Bloom, the higher the value, the more intense the Bloom will be.</p>
-</section>
-<section id="bloom-size">
-<h3>Bloom Size<a class="headerlink" href="#bloom-size" title="Permalink to this heading"></a></h3>
-<p>If the Bloom is active, here you can decide the size of the Bloom, the higher the value, the more large the Bloom will be.</p>
 </section>
 <section id="material-name">
 <h3>Material Name<a class="headerlink" href="#material-name" title="Permalink to this heading"></a></h3>
@@ -274,7 +241,7 @@ following the instructions just below.</p>
 <hr class="docutils" />
 <section id="add-cat">
 <h2>Add Cat<a class="headerlink" href="#add-cat" title="Permalink to this heading"></a></h2>
-<a class="reference internal image-reference" href="_images/se_add_cat_01.jpg"><img alt="Add Cat" class="align-center" src="_images/se_add_cat_01.jpg" style="width: 400px;" /></a>
+<a class="reference internal image-reference" href="_images/se_add_cat_01.jpg"><img alt="Add Cat" class="align-center" src="_images/se_add_cat_01.jpg" style="width: 600px;" /></a>
 <div class="line-block">
 <div class="line"><br /></div>
 </div>

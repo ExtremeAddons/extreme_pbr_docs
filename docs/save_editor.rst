@@ -25,44 +25,6 @@ This process will also save the material preview, so you can see it in the libra
 
 ------------------------------------------------------------------------------------------------------------------------
 
-Render Engine
--------------
-
-
-.. image:: _static/_images/save_editor/se_render_engine.jpg
-    :align: center
-    :width: 400
-    :alt: Render Engine
-
-|
-
-In this menu you can choose which Engine must render the material to transform it into a preview icon you can choose
-between **Cycle** and **Eevee**. Cycles will have a better result in 99% of cases, but it is much slower than Eevee.
-
-
-------------------------------------------------------------------------------------------------------------------------
-
-Device
--------
-
-.. image:: _static/_images/save_editor/se_device.jpg
-    :align: center
-    :width: 400
-    :alt: Device
-
-|
-
-In this menu you can choose which device must render the material to transform it into a preview icon you can choose
-between **CPU** and **GPU**. GPU è molto piu veloce di CPU, ma ci sono alcuni casi che con certi computer con poca memoria
-ram della scheda video potrebbero avere problemi, quindi potrai scegliere CPU.
-
-
-.. note::
-     This option if set to GPU, at the time of saving the material, if the computer encounters an error during rendering
-     will try again in CPU mode silently
-
-------------------------------------------------------------------------------------------------------------------------
-
 Render Quality
 ---------------
 
@@ -125,11 +87,6 @@ Bloom Strength
 
 If the Bloom is active, here you can decide the strength of the Bloom, the higher the value, the more intense the Bloom will be.
 
-
-Bloom Size
-************
-
-If the Bloom is active, here you can decide the size of the Bloom, the higher the value, the more large the Bloom will be.
 
 Material Name
 **************
@@ -194,7 +151,7 @@ Add Cat
 
 .. image:: _static/_images/save_editor/se_add_cat_01.jpg
     :align: center
-    :width: 400
+    :width: 600
     :alt: Add Cat
 
 |

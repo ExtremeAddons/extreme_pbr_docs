@@ -10,6 +10,51 @@
 		"description": "This feature is deprecated, please download the latest version of Extreme PBR from your marketplace account."
 	},
 	"updates": {
+		"4.2.100": {
+			"date": "10-03-2026",
+			"name": "Extreme PBR",
+			"edition": "Nexus",
+			"url": "",
+			"urgency": false,
+			"video_embed_code": "",
+			"lock_operators": [
+				""
+			],
+			"descriptions": {
+				"1": {
+					"title": "Removed compatibility with versions prior to Blender 4.0",
+					"description": "From this version onwards, in accordance with the BlenderFoundation (LTS) policy for practical and structural reasons of the code of this addon, Extreme PBR will no longer be compatible with Blender versions prior to 4.0, check on blender.org for more information regarding LTS versions of Blender: 'https://www.blender.org/download/lts/'"
+				},
+				"2": {
+					"title": "Improve Save Material speed in Blender 5.1",
+					"description": "In Blender 5.1 the saving of the material was incredibly slow. This is due to the system that checks the rotation of the uv mapping on the preview object. We have switched to iterating on the loops of the mesh directly in the UV, this increases the speed even on versions prior to Blender 5.1"
+				},
+				"3": {
+					"title": "Bugfix Save Material",
+					"description": "If 'Preview with Bloom' was activated during saving from Blender 5.0 onwards an error was encountered, this has been corrected by using a Retro-compatible compositor group node system up to blender 4.0"
+				},
+				"4": {
+					"title": "BugFix For Blender 5.0 - Paint",
+					"description": "The following error appeared when starting painting: builtin.brushTool 'builtin.brush' not found for space 'VIEW_3D', this was due to the logic of the painting operator, as it tried to set a brush before actually being in texture paint mode"
+				},
+				"5": {
+					"title": "BugFix about exa_email",
+					"description": "Some unused properties were still in the addon preferences, these were registered at the startup of Blender/Extreme PBR, on some computers a series of errors appeared in the console, to circumvent this we have permanently deleted such properties so as not to interfere anymore removing potential further errors"
+				},
+				"6": {
+					"title": "Bugfix Bake error",
+					"description": "During the Bake operator there was an error that was displayed in Blender 5.1 (UnicodeDecodeError: 'utf-8' codec can't decode byte) Before Blender 5.1 that error did not occur. Having now understood the reason we have solved it"
+				},
+				"7": {
+					"title": "Removed Bloom Size (Save Material)",
+					"description": "The 'Bloom Size' property has been removed from the popup panel of the Save Material operator, this is to maintain compatibility between the old Blender Bloom node and the new one, as there would not have been consistency. Now the bloom size is always at maximum and you can intervene on the strength that regulates the intensity in a soft way"
+				},
+				"8": {
+					"title": "Removed Eevee properties in Save Material",
+					"description": "The possibility of choosing Eevee as the rendering engine for generating preview icons has been removed, by default it will always be set to Cycles in order to always have the best graphical rendering and remove superfluous settings"
+				}
+			}
+		},
 		"4.1.141": {
 			"date": "03-11-2025",
 			"name": "Extreme PBR",
