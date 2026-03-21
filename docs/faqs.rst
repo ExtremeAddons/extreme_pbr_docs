@@ -68,17 +68,6 @@ In any case I have inserted in each Material the type of license of use. This ca
 
 ------------------------------------------------------------------------------------------------------------------------
 
-
-Are updates free?
-***********************
-
-Extreme PBR was born in 2019 and since then all users who have purchased the addon have received all updates for free.
-This means that if you buy the addon today, you will have access to all future updates.
-
-So, Yes!
-
-------------------------------------------------------------------------------------------------------------------------
-
 If I bought a version that is not PRO, can I upgrade to PRO in the future?
 ******************************************************************************
 
