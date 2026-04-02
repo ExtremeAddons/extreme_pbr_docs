@@ -3,6 +3,19 @@
 Updates Log
 ===========
 
+4.2.101
+-------
+
+**Release date: 02-04-2026 (D/M/Y)**
+
+- **Bugfix Blender 5.x Series Add Fx Crash**
+
+    When trying to add an Fx Layer in Blender 5.x Blender crashed, this is because there was a reference to an invalid uv_layer, Blender 5.x series is much more rigid than the 4.x series so this error caused a crash, now it has been solved
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.2.100
 -------
 
