@@ -3,6 +3,23 @@
 Updates Log
 ===========
 
+4.2.103
+-------
+
+**Release date: 02-06-2026 (D/M/Y)**
+
+- **Bugfix Poll Error**
+
+    Se una versione vecchia dell'addon era installata tra gli addon, poteva succedere che venisse mostrato un errore e non venisse mostrata l'interfaccia, questo per via di una funzione che restituisce il nome dell'addon nelle nuove versioni di Blender da 4.2 in poi. Ora è stato risolto
+
+- **Bugfix Syntax Warnings**
+
+    Fixed syntax warnings related to internal text escape sequences (""). This ensures full stability and forward-compatibility with newer Python versions in Blender 5.1 and above.
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.2.101
 -------
 
@@ -1175,7 +1192,7 @@ Updates Log
 
 - **Fixed: ShaderMaker Paint Error**
 
-    Error when trying to add a Shadermaker Paint to a Curve object
+    Error when trying to add a Shader Maker Paint to a Curve object
 
 - **Added-Fixed: Create New UV Map added into Bake editor**
 
