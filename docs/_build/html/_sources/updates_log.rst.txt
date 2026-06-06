@@ -3,6 +3,19 @@
 Updates Log
 ===========
 
+4.2.104
+-------
+
+**Release date: 06-06-2026 (D/M/Y)**
+
+- **Bugfix Paint Emission**
+
+    When using the Painter node, if you tried to paint 'Emission' the emissive color was not the one chosen. This is due to a configuration of an internal node that altered the 'Hue' value thus making the color different. This has been fixed by setting the value correctly to 0.5
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.2.103
 -------
 

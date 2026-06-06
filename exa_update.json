@@ -10,6 +10,23 @@
 		"description": "This feature is deprecated, please download the latest version of Extreme PBR from your marketplace account."
 	},
 	"updates": {
+		"4.2.104": {
+			"date": "06-06-2026",
+			"name": "Extreme PBR",
+			"edition": "Nexus",
+			"url": "",
+			"urgency": false,
+			"video_embed_code": "",
+			"lock_operators": [
+				""
+			],
+			"descriptions": {
+				"1": {
+					"title": "Bugfix Paint Emission",
+					"description": "When using the Painter node, if you tried to paint 'Emission' the emissive color was not the one chosen. This is due to a configuration of an internal node that altered the 'Hue' value thus making the color different. This has been fixed by setting the value correctly to 0.5"
+				}
+			}
+		},
 		"4.2.103": {
 			"date": "02-06-2026",
 			"name": "Extreme PBR",
