@@ -2,7 +2,7 @@ Main Panel
 ===========================
 
 The main panel of Extreme PBR Nexus from version 4.1.100, if you have an older version, you can update it by following
-this guide: :ref:`new_installation`
+this guide: :ref:`installation`
 
 .. |main_panel| image:: _static/_images/main_panel/main_panel_01.png
                     :width: 400

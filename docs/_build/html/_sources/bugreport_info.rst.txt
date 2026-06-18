@@ -26,7 +26,7 @@ How to report the bug
 Method 1:
 *********
 
-**If you bought on SuperHive (Ex BlenderMarket)** You can contact me through the messaging system of SuperHive, this is really good
+**If you bought on SuperHive (Formerly BlenderMarket)** You can contact me through the messaging system of SuperHive, this is really good
 because I can also see if you are really a user. So you will have the assistance worthy of a customer.
 
 Log into your account, then messages can be sent by clicking under the lifebelt icon in Extreme PBR page Ask a Question
@@ -67,7 +67,7 @@ Method 3:
 *********
 
 Use the "System To Clipboard" button to copy the system information, and paste it into the bug report, now you can
-paste the system information and think of contacting me on SuperHive (Ex BlenderMarket) (If you are a SuperHive user) https://superhivemarket.com/products/extreme-pbr
+paste the system information and think of contacting me on SuperHive (Formerly BlenderMarket) (If you are a SuperHive user) https://superhivemarket.com/products/extreme-pbr
 
 
 Or you can contact me with mail: **tredistudio@hotmail.com** or **info@extreme-addons.com**

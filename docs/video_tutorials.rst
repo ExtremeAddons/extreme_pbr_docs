@@ -22,16 +22,33 @@ on new tutorials and news.
 
 ------------------------------------------------------------------------------------------------------------------------
 
-.. _first_installation:
+.. _installation:
 
 Installation
 -----------------
 
-.. raw:: html
+.. admonition:: Installation From SuperHive
+    :class: youtube
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/C-QZ7f0DS5k" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-        web-share" allowfullscreen></iframe>
+        .. raw:: html
+
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=jn2-4e-p1aI" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+            web-share" allowfullscreen></iframe>
+
+|
+
+
+.. admonition:: Installation From Gumroad or other sources
+    :class: youtube
+
+        .. raw:: html
+
+            <iframe width="560" height="315" src="https://www.youtube.com/watch?v=66qbIOgbvO0" title="YouTube video player"
+            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+            web-share" allowfullscreen></iframe>
+
+|
 
 ------------------------------------------------------------------------------------------------------------------------
 

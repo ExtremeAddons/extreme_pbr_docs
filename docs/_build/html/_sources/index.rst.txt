@@ -21,6 +21,7 @@ Welcome to Extreme PBR's documentation!
    :caption: Get started: 🚀
 
    installation
+   update_the_addon
    make_asset_browser
 
 

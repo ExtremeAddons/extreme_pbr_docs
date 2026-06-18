@@ -109,4 +109,20 @@
 }
 
 
+/* ------------------------------------------------------------------------------------------------------------------ */
+
+/* Solo angoli arrotondati e un leggero bordo opzionale */
+.rounded-img {
+    border-radius: 12px !important;
+    overflow: hidden !important;
+    display: inline-block;
+}
+
+/* Forza l'arrotondamento direttamente sul file immagine */
+.rounded-img img {
+    border-radius: 12px !important;
+    display: block;
+}
+
+
 

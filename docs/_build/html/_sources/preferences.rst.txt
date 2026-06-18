@@ -896,7 +896,7 @@ From this section you can indicate the paths of the libraries you want to use, a
 
 .. note::
         If you are installing the addon for the first time, refer to this guide and do not dwell on this section
-        at the moment. :ref:`new_installation`
+        at the moment. :ref:`installation`
 
 ------------------------------------------------------------------------------------------------------------------------
 
@@ -923,7 +923,7 @@ to search for the folder path.
 |
 
 .. note::
-        If you have never installed or want to reinstall the libraries, refer to this guide: :ref:`new_installation`
+        If you have never installed or want to reinstall the libraries, refer to this guide: :ref:`installation`
 
 
 ------------------------------------------------------------------------------------------------------------------------

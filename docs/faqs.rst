@@ -40,7 +40,7 @@ So make sure to:
 How can I contact you for assistance?
 ***************************************
 
-If you have purchased the addon on SuperHive (Ex BlenderMarket), go directly to the addon page and click on "Ask a question"
+If you have purchased the addon on SuperHive (Formerly BlenderMarket), go directly to the addon page and click on "Ask a question"
 usually I answer within 24 hours
 
 If you have purchased the addon on Gumroad, you can send me a mail to: **tredistudio@hotmail.com** or **info@extreme-addons.com**
