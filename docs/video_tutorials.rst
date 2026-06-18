@@ -34,7 +34,7 @@ Installation
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/jn2-4e-p1aI?si=D9AE4T7K5dCZbz_2"
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 |
 
@@ -46,7 +46,7 @@ Installation
 
             <iframe width="560" height="315" src="https://www.youtube.com/embed/66qbIOgbvO0?si=gZPFzaKlEndyfBg8"
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
-            gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 |
