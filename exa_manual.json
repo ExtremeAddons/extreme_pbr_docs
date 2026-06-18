@@ -121,7 +121,7 @@
 			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/shader_overlay.html#material-layout"
 		},
 		"INSTALL_LIBRARIES": {
-			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation.html#install-the-library"
+			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/installation.html#install-the-addon-library"
 		},
 		"NEXUS_MODULE_CONVERSION": {
 			"documentation": "https://extreme-pbr-docs.readthedocs.io/en/latest/material_editor.html#convert-module-system"
