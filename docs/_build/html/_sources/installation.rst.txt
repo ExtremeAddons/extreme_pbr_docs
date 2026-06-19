@@ -44,7 +44,7 @@ This method is for users who purchased on SuperHive and use Blender 4.2 or later
 
         .. raw:: html
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/jn2-4e-p1aI?si=D9AE4T7K5dCZbz_2"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/x-_mmtndipg?si=R-1lohepj3QpvNi5"
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
             gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
@@ -113,17 +113,19 @@ Method B: Manual Zip (Gumroad or others)
 This method is dedicated to those who purchased on Gumroad or prefer a manual installation.
 
 
+
 .. admonition:: Installation From Gumroad or other sources
     :class: youtube
 
         .. raw:: html
 
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/66qbIOgbvO0?si=gZPFzaKlEndyfBg8"
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/g_S4doQscuA?si=zL7uT5KhO1nsVNDO"
             title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
             gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
 
 |
+
 
 
 
