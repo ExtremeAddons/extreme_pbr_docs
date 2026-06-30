@@ -6,7 +6,7 @@ Installation
 
 **We highly recommend using Blender 4.2 or higher!**
 
-This chapter is dedicated to the first installation of the addon. If you have already installed the addon and want to
+This chapter is dedicated to the installation of the addon. If you have already installed the addon and want to
 update it, you can go to the chapter :ref:`update_only_the_addon`
 
 
