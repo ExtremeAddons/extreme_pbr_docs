@@ -3,6 +3,23 @@
 Updates Log
 ===========
 
+4.2.105
+-------
+
+**Release date: 29-07-2026 (D/M/Y)**
+
+- **Bugfix Remove Material**
+
+    An error occurred when trying to use the 'REMOVE' button if no material existed on the active object
+
+- **Bugfix Smooth By Angle (linux and MacOs)**
+
+    Using this tool, a silent error occurred and the smooth by angle was not applied, in fact when removing it the modifier was not removed, accumulating each time in the list of modifiers. This happened because the name of the file.blend in which the group node in question is located had a case-sensitive error, now it has been corrected and the smooth by angle works correctly
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.2.104
 -------
 

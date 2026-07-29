@@ -10,6 +10,27 @@
 		"description": "This feature is deprecated, please download the latest version of Extreme PBR from your marketplace account."
 	},
 	"updates": {
+		"4.2.105": {
+			"date": "29-07-2026",
+			"name": "Extreme PBR",
+			"edition": "Nexus",
+			"url": "",
+			"urgency": false,
+			"video_embed_code": "",
+			"lock_operators": [
+				""
+			],
+			"descriptions": {
+				"1": {
+					"title": "Bugfix Remove Material",
+					"description": "An error occurred when trying to use the 'REMOVE' button if no material existed on the active object"
+				},
+				"2": {
+					"title": "Bugfix Smooth By Angle (linux and MacOs)",
+					"description": "Using this tool, a silent error occurred and the smooth by angle was not applied, in fact when removing it the modifier was not removed, accumulating each time in the list of modifiers. This happened because the name of the file.blend in which the group node in question is located had a case-sensitive error, now it has been corrected and the smooth by angle works correctly"
+				}
+			}
+		},
 		"4.2.104": {
 			"date": "06-06-2026",
 			"name": "Extreme PBR",
