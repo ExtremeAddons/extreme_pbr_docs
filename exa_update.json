@@ -10,6 +10,31 @@
 		"description": "This feature is deprecated, please download the latest version of Extreme PBR from your marketplace account."
 	},
 	"updates": {
+		"4.2.106": {
+			"date": "07-08-2026",
+			"name": "Extreme PBR",
+			"edition": "Nexus",
+			"url": "",
+			"urgency": false,
+			"video_embed_code": "",
+			"lock_operators": [
+				""
+			],
+			"descriptions": {
+				"1": {
+					"title": "Bugfix Bake Worn Edges",
+					"description": "Due to a typo in the code, when pressing the 'Bake Worn Edges' button at the end of the process an error was displayed. This has been resolved"
+				},
+				"2": {
+					"title": "Blender 5.2 Auto Smooth Compatibility",
+					"description": "In Blender 5.2 the APIs to obtain the inputs of the Geonode modifier have changed, this made it incompatible causing an error during the use of all the properties of Auto Smooth. Now it is compatible with versions prior to Blender 5.2 (Up to 4.0) and later than Blender 5.2"
+				},
+				"3": {
+					"title": "Blender 5.2 Material Override Compatibility",
+					"description": "In Blender 5.2 the APIs to obtain the inputs of the Geonode modifier have changed, this made it incompatible causing an error during the use of Material Override. Now it is compatible with versions prior to Blender 5.2 (Up to 4.0) and later than Blender 5.2"
+				}
+			}
+		},
 		"4.2.105": {
 			"date": "29-07-2026",
 			"name": "Extreme PBR",

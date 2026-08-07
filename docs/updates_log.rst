@@ -3,6 +3,27 @@
 Updates Log
 ===========
 
+4.2.106
+-------
+
+**Release date: 07-08-2026 (D/M/Y)**
+
+- **Bugfix Bake Worn Edges**
+
+    Due to a typo in the code, when pressing the 'Bake Worn Edges' button at the end of the process an error was displayed. This has been resolved
+
+- **Blender 5.2 Auto Smooth Compatibility**
+
+    In Blender 5.2 the APIs to obtain the inputs of the Geonode modifier have changed, this made it incompatible causing an error during the use of all the properties of Auto Smooth. Now it is compatible with versions prior to Blender 5.2 (Up to 4.0) and later than Blender 5.2
+
+- **Blender 5.2 Material Override Compatibility**
+
+    In Blender 5.2 the APIs to obtain the inputs of the Geonode modifier have changed, this made it incompatible causing an error during the use of Material Override. Now it is compatible with versions prior to Blender 5.2 (Up to 4.0) and later than Blender 5.2
+
+
+
+--------------------------------------------------------------------------------------------
+
 4.2.105
 -------
 
