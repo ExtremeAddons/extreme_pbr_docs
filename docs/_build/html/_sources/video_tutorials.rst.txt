@@ -99,12 +99,57 @@ Create your PBR Material (Import your textures)
 Displacement
 -----------------
 
+Displacement basics
+******************************
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/6mu_NHacGEA?si=NWYTcMRguKiJuYcq"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+
+Paint with Displacement
+******************************
+
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/BS4hYEFAKxo?si=vKLE4eSzl1VxgSk9"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+
+Displacement in action
+******************************
+
 
 .. raw:: html
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/qW3HlRwPAE4?si=kGeHORxNIHYbvw7Z"
         title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
         gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+
+
+
+Multiple Displacement Modifier
+**********************************
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/U_ZwEf8uo3w" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
+        web-share" allowfullscreen></iframe>
+
+
+
+
+
+------------------------------------------------------------------------------------------------------------------------
 
 
 ------------------------------------------------------------------------------------------------------------------------
@@ -186,17 +231,6 @@ Add Remove Replace Materials
 ------------------------------------------------------------------------------------------------------------------------
 
 
-Multiple Displacement Modifier
---------------------------------
-
-.. raw:: html
-
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/U_ZwEf8uo3w" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
-        web-share" allowfullscreen></iframe>
-
-
-------------------------------------------------------------------------------------------------------------------------
 
 
 Materials Tag & Search System
