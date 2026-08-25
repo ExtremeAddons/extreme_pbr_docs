@@ -67,6 +67,21 @@ Make Asset Browser
 
 ------------------------------------------------------------------------------------------------------------------------
 
+Add Replace Remove Materials
+--------------------------------
+
+Here below I show the basics of how to add, replace and remove material.
+
+
+.. raw:: html
+
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/ccRgnYqNGiw?si=XDkkAccwnIoGnisd"
+        title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+        gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+
+
+
 How to change textures color
 --------------------------------
 
