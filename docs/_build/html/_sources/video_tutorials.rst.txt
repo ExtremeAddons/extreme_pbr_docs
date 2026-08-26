@@ -277,12 +277,17 @@ Car Paint Material
 Apply Material On Many Objects
 --------------------------------
 
+Add a material on multiple objects in one click, or copy a material on multiple objects
+in one click is the topic of this tutorial.
+
 
 .. raw:: html
 
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/KGZL-qtvNis" title="YouTube video player"
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/taOG3q-RS9U?si=uuS6WHcLdpWavZYF" title="YouTube video player"
         frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;
         web-share" allowfullscreen></iframe>
+
+
 
 
 ------------------------------------------------------------------------------------------------------------------------
