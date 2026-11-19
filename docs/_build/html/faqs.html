@@ -92,6 +92,7 @@
 <li class="toctree-l2"><a class="reference internal" href="#does-it-work-with-blender-asset-browser">Does it work with Blender Asset Browser?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#are-there-any-video-tutorials">Are there any video tutorials?</a></li>
 <li class="toctree-l2"><a class="reference internal" href="#what-is-the-user-library-for">What is the User Library for?</a></li>
+<li class="toctree-l2"><a class="reference internal" href="#blender-crashed-after-an-operation-with-the-addon-what-should-i-do">Blender crashed after an operation with the addon, what should I do?</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="troubleshooting.html">Troubleshooting</a></li>
@@ -218,6 +219,28 @@ or on the documentation page here: <a class="reference internal" href="video_tut
 <p>The User Library is a library that by default will be empty, it will be a real folder on your computer, and will be
 managed directly by the addon, it is used to save the materials you have created or modified,
 to save a material in the user Library take a look at this section: <a class="reference internal" href="save_editor.html#save-editor"><span class="std std-ref">Save Editor</span></a></p>
+</section>
+<hr class="docutils" />
+<section id="blender-crashed-after-an-operation-with-the-addon-what-should-i-do">
+<h2>Blender crashed after an operation with the addon, what should I do?<a class="headerlink" href="#blender-crashed-after-an-operation-with-the-addon-what-should-i-do" title="Permalink to this heading"></a></h2>
+<p>Feel free to contact me and attach the crash log file (a <code class="docutils literal notranslate"><span class="pre">.crash.txt</span></code> file named after your project). You can easily find it depending on your operating system:</p>
+<p><strong>Windows:</strong></p>
+<p>Press <code class="docutils literal notranslate"><span class="pre">Win</span> <span class="pre">+</span> <span class="pre">R</span></code> on your keyboard, paste the path below into the box that pops up, and hit Enter:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>%LOCALAPPDATA%\Blender Foundation\Blender\Cache\
+</pre></div>
+</div>
+<p><em>(Note: If you don’t see it there, try checking</em> <code class="docutils literal notranslate"><span class="pre">%TEMP%</span></code> <em>using the same method).</em></p>
+<p><strong>macOS:</strong></p>
+<p>Open <strong>Finder</strong>, press <code class="docutils literal notranslate"><span class="pre">Cmd</span> <span class="pre">+</span> <span class="pre">Shift</span> <span class="pre">+</span> <span class="pre">G</span></code> on your keyboard, paste the path below, and hit Enter:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>~/Library/Caches/Blender/
+</pre></div>
+</div>
+<p><strong>Linux:</strong></p>
+<p>Open your file manager, press <code class="docutils literal notranslate"><span class="pre">Ctrl</span> <span class="pre">+</span> <span class="pre">H</span></code> to show hidden folders, and navigate to:</p>
+<div class="highlight-text notranslate"><div class="highlight"><pre><span></span>Home &gt; .cache &gt; blender
+</pre></div>
+</div>
+<p><em>(If you use a custom cache directory, check your</em> <code class="docutils literal notranslate"><span class="pre">$XDG_CACHE_HOME/blender/</span></code> <em>folder).</em></p>
 </section>
 </section>
 

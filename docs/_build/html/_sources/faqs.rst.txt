@@ -136,3 +136,41 @@ managed directly by the addon, it is used to save the materials you have created
 to save a material in the user Library take a look at this section: :ref:`save_editor`
 
 
+------------------------------------------------------------------------------------------------------------------------
+
+
+Blender crashed after an operation with the addon, what should I do?
+************************************************************************
+
+Feel free to contact me and attach the crash log file (a ``.crash.txt`` file named after your project). You can easily find it depending on your operating system:
+
+**Windows:**
+
+Press ``Win + R`` on your keyboard, paste the path below into the box that pops up, and hit Enter:
+
+.. code-block:: text
+
+    %LOCALAPPDATA%\Blender Foundation\Blender\Cache\
+
+*(Note: If you don't see it there, try checking* ``%TEMP%`` *using the same method).*
+
+**macOS:**
+
+Open **Finder**, press ``Cmd + Shift + G`` on your keyboard, paste the path below, and hit Enter:
+
+.. code-block:: text
+
+    ~/Library/Caches/Blender/
+
+**Linux:**
+
+Open your file manager, press ``Ctrl + H`` to show hidden folders, and navigate to:
+
+.. code-block:: text
+
+    Home > .cache > blender
+
+*(If you use a custom cache directory, check your* ``$XDG_CACHE_HOME/blender/`` *folder).*
+
+
+
